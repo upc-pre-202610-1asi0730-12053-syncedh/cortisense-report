@@ -1,5 +1,5 @@
 <div align="center">
-<img src="Resources/UPC_logo_transparente.png"></img><br>
+<img src="Resources/UPC_logo_transparente.png?raw=true"></img><br>
 
 
 <h3>Universidad Peruana de Ciencias Aplicadas</h3>
@@ -61,11 +61,11 @@ https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-Sy
 + **Evidencias de colaboración y commits - Github:**
     * **Análiticos de colaboración** <br><br>
         + **Pulse Image of Github Insights**
-        <div align="center"><img src="/Resources/Collaboration-Insights/Insight-1.png"></div><br><br>
+        <div align="center"><img src="/Resources/Collaboration-Insights/Insight-1.png?raw=true"></div><br><br>
 
 
         + **Contributors Image of Github Insights**
-        <div align="center"><img src="/Resources/Collaboration-Insights/Insight-2.png"></div><br><br>
+        <div align="center"><img src="/Resources/Collaboration-Insights/Insight-2.png?raw=true"></div><br><br>
 
 
     * **Commits**
@@ -74,25 +74,25 @@ https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-Sy
 
         + **Marcelo Pareja**
             <div style="display: flex; align-items: center;">
-            <img src="/Resources/Collaboration-Insights/Insight-Marcelo-Commits.png" >
+            <img src="/Resources/Collaboration-Insights/Insight-Marcelo-Commits.png?raw=true" >
             </div><br>
 
         + **Guiou Mauricio**
             <div style="display: flex; align-items: center;">
-            <img src="/Resources/Collaboration-Insights/Insight-Justinn-Commits.png">
+            <img src="/Resources/Collaboration-Insights/Insight-Justinn-Commits.png?raw=true">
             </div><br>
 
         + **Sebastian Gutierrez**
             <div style="display: flex; align-items: center;">
-            <img src="/Resources/Collaboration-Insights/Insight-Sebastian-Commits.png">
+            <img src="/Resources/Collaboration-Insights/Insight-Sebastian-Commits.png?raw=true">
             </div><br>
         + **Johan Yonel**
             <div style="display: flex; align-items: center;">
-            <img src="/Resources/Collaboration-Insights/Insight-Johan-Commits.png">
+            <img src="/Resources/Collaboration-Insights/Insight-Johan-Commits.png?raw=true">
             </div><br>
         + **Jairo Santiago**
             <div style="display: flex; align-items: center;">
-            <img src="/Resources/Collaboration-Insights/Insight-Jairo-Commits.png">
+            <img src="/Resources/Collaboration-Insights/Insight-Jairo-Commits.png?raw=true">
             </div><br><br>
 
 
@@ -312,7 +312,7 @@ La visión de SyncedHealth es consolidarse como el estándar global en el monito
   
 | **Integrante**                         | **Perfil**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                | **Imagen**                                                                                                       |
 | -------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
-| **Gutierrez Santillán, Sebastián Augusto - u202417329** | Soy Sebastian Augusto Gutierrez Santillan, estudiante del 6to Ciclo de la carrera de Ingenieria de Software. He experimentado con diversas tecnologias, entre las cuales se encuentran React, React Native, Tauri, entre otras, considerando los lenguajes de programacion de cada Framework mencionado. He desarrollado multiples aplicaciones funcionales, pues me apasiona el desarrollo y la experimentacion. Personalmente me considero una persona bastante atraida por el arte en todas sus formas, y me agrada la interpretacion artistica. Siento que mi rol en el equipo es ser capaz de comunicar los mensajes que mis compañeros deseen transmitir los unos a los otros.| <img src="Resources/Profiles/sebastian.jpg" alt="Foto de Gutierrez Santillán, Sebastián Augusto" width="150"/> |
+| **Gutierrez Santillán, Sebastián Augusto - u202417329** | Soy Sebastian Augusto Gutierrez Santillan, estudiante del 6to Ciclo de la carrera de Ingenieria de Software. He experimentado con diversas tecnologias, entre las cuales se encuentran React, React Native, Tauri, entre otras, considerando los lenguajes de programacion de cada Framework mencionado. He desarrollado multiples aplicaciones funcionales, pues me apasiona el desarrollo y la experimentacion. Personalmente me considero una persona bastante atraida por el arte en todas sus formas, y me agrada la interpretacion artistica. Siento que mi rol en el equipo es ser capaz de comunicar los mensajes que mis compañeros deseen transmitir los unos a los otros.| <img src="Resources/Profiles/sebastian.jpg?raw=true" alt="Foto de Gutierrez Santillán, Sebastián Augusto" width="150"/> |
 | **León Morales, Johan Yonel - u20231h055** |Soy Johan Yonel León Morales, estudiante del 5to ciclo de la carrera de Ingeniería de Software, identificado con el código u20231h055. Cuento con conocimientos en programación en C++, así como en el desarrollo de interfaces web utilizando HTML, CSS y JavaScript. Mi enfoque se basa en el aprendizaje continuo y la atención al detalle, complementado con habilidades de comunicación, empatía y adaptabilidad. Estas competencias me permiten integrarme de manera efectiva en equipos de trabajo, aportar en el desarrollo de soluciones y colaborar activamente en el cumplimiento de los objetivos del proyecto.| <img src="Resources/Profiles/Johan.png?raw=true" alt="Imagen de León Morales, Johan Yonel"/> |
 | **Mauricio Silva, Guiou Justinn - u20241e242** |Soy Ghiou Justinn Mauricio Silva, tengo 19 años y curso el  5to ciclo de la carrera de Ingeniería de Software.  Me caracterizo por ser una persona responsable y comprometida con mis actividades académicas, manteniendo siempre una actitud proactiva dentro del trabajo en equipo. Me caracterizo por ser una persona responsable y comprometida con mis actividades académicas, mantengo una actitud proactiva en el trabajo en grupo, además de tener conocimientos en programación en C++, desarrollo web (HTML, CSS y JavaScript). Entre mis principales fortalezas destaca mi capacidad para colaborar eficazmente en entornos grupales, aportando soluciones y manteniendo una comunicación adecuada con los integrantes del equipo. Mi enfoque se centra en el aprendizaje continuo y en la adquisición de nuevos conocimientos, con el objetivo de seguir formándome y consolidarme como un profesional competente en el ámbito de la ingeniería de software. | <img src="Resources/Profiles/Justinn.jpeg?raw=true" alt="Imagen de Mauricio Silva, Guiou Justinn"/> |
 | **Pareja Calloapaza, Marcelo Fausto - u202411627** |Mi nombre es Marcelo Fausto Pareja Calloapaza, tengo 19 años y curso el 5to ciclo de la carrera de Ingeniería de Software que es identificado mediante el código u202411627. Soy una persona de naturaleza sincera y motivadora, pues siempre me encuentro dispuesto a brindar mi ayuda y colaboración en las diversas situaciones ellas sean requeridas. Algunas de mis mayores fortalezas son mis habilidades relacionadas con la escritura de código, lectura y redacción de textos, las cuales uso activamente para enriquecer múltiples proyectos. El propósito que me guía en cualquiera de ellos es la búsqueda de la perfección de mis habilidades sociales y conocimientos, los cuales se encuentran centrados en un enfoque de crecimiento personal y profesional.| <img src="Resources/Profiles/marcelo.jpg?raw=true" alt="Imagen de Pareja Calloapaza, Marcelo Fausto"/> |
@@ -845,7 +845,7 @@ En esta sección presentamos los registros de las entrevistas realizadas para ca
   </tr>
   <tr>
     <td>Evidencia</td>
-    <td><div align="center"><img src="Resources/Interview-evidences/interview-ricardo-huaman-proof.png" alt="Entrevista Ricardo Huamán"></div></td>
+    <td><div align="center"><img src="Resources/Interview-evidences/interview-ricardo-huaman-proof.png?raw=true" alt="Entrevista Ricardo Huamán"></div></td>
   </tr>
   <tr>
     <td>Link</td>
@@ -925,7 +925,7 @@ En esta sección presentamos los registros de las entrevistas realizadas para ca
   </tr>
   <tr>
     <td>Evidencia</td>
-    <td><div align="center"><img src="Resources/Interview-evidences/interview-maribel-fernandez-chauca.png" alt="Entrevista MaribelFernandez Chauca"></div></td>
+    <td><div align="center"><img src="Resources/Interview-evidences/interview-maribel-fernandez-chauca.png?raw=true" alt="Entrevista MaribelFernandez Chauca"></div></td>
   </tr>
   <tr>
     <td>Link</td>
@@ -1003,7 +1003,7 @@ En esta sección presentamos los registros de las entrevistas realizadas para ca
   </tr>
   <tr>
     <td>Evidencia</td>
-    <td><div align="center"><img src="Resources/Interview-evidences/interview-rusbel-arnaldo-cajaleon-gamez.jpg" alt="Entrevista Rusbel Cajaleón"></div></td>
+    <td><div align="center"><img src="Resources/Interview-evidences/interview-rusbel-arnaldo-cajaleon-gamez.jpg?raw=true" alt="Entrevista Rusbel Cajaleón"></div></td>
   </tr>
   <tr>
     <td>Link</td>
@@ -1082,7 +1082,7 @@ En esta sección presentamos los registros de las entrevistas realizadas para ca
   </tr>
   <tr>
     <td>Evidencia</td>
-    <td><div align="center"><img src="Resources/Interview-evidences/interview-valeria-vetiz.PNG" alt="Entrevista Valeria Vertiz"></div></td>
+    <td><div align="center"><img src="Resources/Interview-evidences/interview-valeria-vetiz.png?raw=true" alt="Entrevista Valeria Vertiz"></div></td>
   </tr>
   <tr>
     <td>Link</td>
@@ -1167,7 +1167,7 @@ En esta sección presentamos los registros de las entrevistas realizadas para ca
   </tr>
   <tr>
     <td>Evidencia</td>
-    <td><div align="center"><img src="Resources/Interview-evidences/interview-carlos-gutierrez.PNG" alt="Entrevista Carlos Gutierrez"></div></td>
+    <td><div align="center"><img src="Resources/Interview-evidences/interview-carlos-gutierrez.png?raw=true" alt="Entrevista Carlos Gutierrez"></div></td>
   </tr>
   <tr>
     <td>Link</td>
@@ -1267,11 +1267,11 @@ Los User Personas desarrollados permiten comprender de forma integral a los usua
 
 **Segmento 1: Personal Sanitario Operativo**
 
-<img src="Resources/Images/Needfinding/User-Persona-Seg1.png" alt="User Persona del segmento 1 - Personal Sanitario Operativo">
+<img src="Resources/Images/Needfinding/User-Persona-Seg1.png?raw=true" alt="User Persona del segmento 1 - Personal Sanitario Operativo">
 
 **Segmento 2: Administradores y Directores Médicos**
 
-<img src="Resources/Images/Needfinding/User-Persona-Seg2.png" alt="User Persona del segmento 2 - Administradores y Directores Médicos">
+<img src="Resources/Images/Needfinding/User-Persona-Seg2.png?raw=true" alt="User Persona del segmento 2 - Administradores y Directores Médicos">
 
 ---
 
@@ -1311,11 +1311,11 @@ Los User Journey Maps permiten evidenciar oportunidades de mejora en el proceso 
 
 **Segmento 1: Personal Sanitario Operativo**
 
-<img src="Resources/Images/Needfinding/Journey-Seg1.png" alt="User Journey Map del segmento 1 - Personal Sanitario Operativo">
+<img src="Resources/Images/Needfinding/Journey-Seg1.png?raw=true" alt="User Journey Map del segmento 1 - Personal Sanitario Operativo">
 
 **Segmento 2: Administradores y Directores Médicos**
 
-<img src="Resources/Images/Needfinding/Journey-Seg2.png" alt="User Journey Map del segmento 2 - Administradores y Directores Médicos">
+<img src="Resources/Images/Needfinding/Journey-Seg2.png?raw=true" alt="User Journey Map del segmento 2 - Administradores y Directores Médicos">
 
 ---
 
@@ -1329,11 +1329,11 @@ Estos Empathy Maps complementan los artefactos previamente desarrollados, como l
 
 **Segmento 1: Personal Sanitario Operativo**
 
-<img src="Resources/Images/Needfinding/Empathy-Seg1.png" alt="Empathy Map del segmento 1 - Personal Sanitario Operativo">
+<img src="Resources/Images/Needfinding/Empathy-Seg1.png?raw=true" alt="Empathy Map del segmento 1 - Personal Sanitario Operativo">
 
 **Segmento 2: Administradores y Directores Médicos**
 
-<img src="Resources/Images/Needfinding/Empathy-Seg2.png" alt="Empathy Map del segmento 2 - Administradores y Directores Médicos">
+<img src="Resources/Images/Needfinding/Empathy-Seg2.png?raw=true" alt="Empathy Map del segmento 2 - Administradores y Directores Médicos">
 
 ## 2.4. Big Picture Event Storming.
 
@@ -1560,13 +1560,13 @@ En esta sección, nuestro equipo presenta el Impact Mapping, el cual es una herr
 <b>Segmento 1: Personal Sanitario Operativo</b><br>
 
 <div align="center">
-<img src="Resources/Images/impact-mapping/impact-map-segmento1.png" alt="Impact Map segmento 1 - Personal Sanitario Operativo">
+<img src="Resources/Images/impact-mapping/impact-map-segmento1.png?raw=true" alt="Impact Map segmento 1 - Personal Sanitario Operativo">
 </div>
 
 <b>Segmento 2: Administradores y Directores Médicos</b><br>
 
 <div align="center">
-<img src="Resources/Images/impact-mapping/impact-map-segmento2.png" alt="Impact Map segmento 1 - Personal Sanitario Operativo">
+<img src="Resources/Images/impact-mapping/impact-map-segmento2.png?raw=true" alt="Impact Map segmento 1 - Personal Sanitario Operativo">
 </div>
 
 
@@ -1675,7 +1675,7 @@ Este enfoque permite proyectar una identidad visual coherente con el propósito 
 En esta sección podremos encontrar el logo de CortiSence a la izquierda, acompañado del menú de navegación principal (*Home*, *Description*, *Goals*, *Pricing*, *Impact*, *IoT Systems*, *Support*, , *Language*) y el boton de acción *Join US* a la derecha. El fondo es de color blanco *#FFFFFF* y los botones de un cyan un poco mas claro *#41EFF2*.
 
 <div align="center">
-<img src="Resources/Images/Style-Guidelines/Web_Style/header.png" alt="Imagen referencial del header"/> 
+<img src="Resources/Images/Style-Guidelines/Web_Style/header.png?raw=true" alt="Imagen referencial del header"/> 
 <div align="justify"> <br>
 
 **Main Section** <br>
@@ -1683,14 +1683,14 @@ En esta sección podremos encontrar el logo de CortiSence a la izquierda, acompa
 La sección principal de la landing page está diseñada para captar la atención del usuario desde el primer momento, mostrando un título llamativo, una breve descripción del servicio y un botón de búsqueda principal junto a un recurso visual ilustrativo. En su adaptación responsive, la composición se ajusta a un formato vertical propio de dispositivos móviles, conservando la claridad del mensaje y la facilidad de interacción.
 
 <div align="center">
-<img src="Resources/Images/Style-Guidelines/Web_Style/main_section.png" alt="Imagen referencial del main section"/>
+<img src="Resources/Images/Style-Guidelines/Web_Style/main_section.png?raw=true" alt="Imagen referencial del main section"/>
 <div align="justify"> <br>
 
 **Footer**<br>
 El footer de la landing page reúne la información complementaria de la plataforma, incluyendo la identidad visual de la marca. En la versión web, estos elementos se distribuyen de manera horizontal para aprovechar el espacio y mantener un orden visual equilibrado, mientras que, en la versión responsive, se reorganizan verticalmente para facilitar la lectura y conservar la claridad y accesibilidad del contenido en dispositivos móviles.
 
 <div align="center">
-<img src="Resources/Images/Style-Guidelines/Web_Style/footer.png" alt="Imagen referencial del footer""/>
+<img src="Resources/Images/Style-Guidelines/Web_Style/footer.png?raw=true" alt="Imagen referencial del footer""/>
 <div align="justify"> <br>
 
 ## 4.2. Information Architecture.
@@ -1792,24 +1792,24 @@ Barra de Navegación Persistente: Menú lateral (App) y superior (Landing) que p
 
 ### 4.3.1. Landing Page Wireframe.
 El wireframe define la estructura básica de la landing page en bloques principales:
-<img src="Resources/landing-page-wireframe/Landing-Page-Wireframe1.png">
-<img src="Resources/landing-page-wireframe/Landing-Page-Wireframe2.png">
-<img src="Resources/landing-page-wireframe/Landing-Page-Wireframe3.png">
-<img src="Resources/landing-page-wireframe/Landing-Page-Wireframe4.png">
-<img src="Resources/landing-page-wireframe/Landing-Page-Wireframe5.png">
-<img src="Resources/landing-page-wireframe/Landing-Page-Wireframe6.png">
-<img src="Resources/landing-page-wireframe/Landing-Page-Wireframe7.png">
+<img src="Resources/landing-page-wireframe/Landing-Page-Wireframe1.png?raw=true">
+<img src="Resources/landing-page-wireframe/Landing-Page-Wireframe2.png?raw=true">
+<img src="Resources/landing-page-wireframe/Landing-Page-Wireframe3.png?raw=true">
+<img src="Resources/landing-page-wireframe/Landing-Page-Wireframe4.png?raw=true">
+<img src="Resources/landing-page-wireframe/Landing-Page-Wireframe5.png?raw=true">
+<img src="Resources/landing-page-wireframe/Landing-Page-Wireframe6.png?raw=true">
+<img src="Resources/landing-page-wireframe/Landing-Page-Wireframe7.png?raw=true">
 
 
 ### 4.3.2. Landing Page Mock-up.
 
-<img src="Resources/landing-page-mock-up/landing-page-mock-up1.png">
-<img src="Resources/landing-page-mock-up/landing-page-mock-up2.png">
-<img src="Resources/landing-page-mock-up/landing-page-mock-up3.png">
-<img src="Resources/landing-page-mock-up/landing-page-mock-up4.png">
-<img src="Resources/landing-page-mock-up/landing-page-mock-up5.png">
-<img src="Resources/landing-page-mock-up/landing-page-mock-up6.png">
-<img src="Resources/landing-page-mock-up/landing-page-mock-up7.png">
+<img src="Resources/landing-page-mock-up/landing-page-mock-up1.png?raw=true">
+<img src="Resources/landing-page-mock-up/landing-page-mock-up2.png?raw=true">
+<img src="Resources/landing-page-mock-up/landing-page-mock-up3.png?raw=true">
+<img src="Resources/landing-page-mock-up/landing-page-mock-up4.png?raw=true">
+<img src="Resources/landing-page-mock-up/landing-page-mock-up5.png?raw=true">
+<img src="Resources/landing-page-mock-up/landing-page-mock-up6.png?raw=true">
+<img src="Resources/landing-page-mock-up/landing-page-mock-up7.png?raw=true">
 
 
 ## 4.4. Web Applications UX/UI Design.
@@ -1867,7 +1867,7 @@ La sesión fue realizada de manera colaborativa en el programa Miro a partir del
 
 A continuación, se muestra la representación general del Design-Level Event Storming del sistema:
 
-<img src="Resources/Images/Desing-Level-Event-Storming/desing_level_event_storming.jpg" alt="Design level event storming del funcionamiento de CortiSense">
+<img src="Resources/Images/Desing-Level-Event-Storming/desing_level_event_storming.jpg?raw=true" alt="Design level event storming del funcionamiento de CortiSense">
 <br><br>
 
 En conjunto, estos bounded contexts permiten representar el flujo completo del sistema, desde la captura y almacenamiento de datos biométricos, su análisis y detección de estados, hasta la generación de alertas y la gestión operativa y administrativa de la plataforma.
@@ -1877,41 +1877,41 @@ A partir del análisis realizado, se identificaron bounded contexts que cumplen 
 A continuación, se describe cada bounded context de manera individual.
 
   * **Stress and Fatigue Analysis:** Este bounded context se encarga de analizar los datos biométricos capturados por los dispositivos, con el fin de identificar si el estado del médico se encuentra dentro de niveles normales o si presenta valores críticos.<br><br>
-  <img src="Resources/Images/Desing-Level-Event-Storming/stress_and_fatigue.jpg" alt="Event Storming del bounded context de Análisis de Estado">
+  <img src="Resources/Images/Desing-Level-Event-Storming/stress_and_fatigue.jpg?raw=true" alt="Event Storming del bounded context de Análisis de Estado">
 
   * **Biometric Data Management:** Este bounded context gestiona el almacenamiento, actualización y respaldo de los datos biométricos obtenidos desde los dispositivos, asegurando su persistencia y disponibilidad para su posterior análisis. <br><br>
-  <img src="Resources/Images/Desing-Level-Event-Storming/biometric_data.jpg" alt="Event Storming del bounded context de Gestión de Datos Biométricos">
+  <img src="Resources/Images/Desing-Level-Event-Storming/biometric_data.jpg?raw=true" alt="Event Storming del bounded context de Gestión de Datos Biométricos">
 
   * **Alerting and Notification Management:** Este bounded context se encarga de generar y enviar alertas y notificaciones cuando se detectan condiciones relevantes, permitiendo informar tanto al médico como a los administradores del sistema. <br><br>
-  <img src="Resources/Images/Desing-Level-Event-Storming/alerting_and_notification.jpg" alt="Event Storming del bounded context de Gestión de Alertas y Notificaciones">
+  <img src="Resources/Images/Desing-Level-Event-Storming/alerting_and_notification.jpg?raw=true" alt="Event Storming del bounded context de Gestión de Alertas y Notificaciones">
 
   * **Medical Rest Management:** Este bounded context gestiona la programación, modificación y validación de los periodos de descanso del personal médico, incluyendo recomendaciones basadas en el estado del usuario. <br><br>
-  <img src="Resources/Images/Desing-Level-Event-Storming/medical_rest.jpg" alt="Event Storming del bounded context de Gestión de Descansos Médicos">
+  <img src="Resources/Images/Desing-Level-Event-Storming/medical_rest.jpg?raw=true" alt="Event Storming del bounded context de Gestión de Descansos Médicos">
 
   * **Medical Shift Management:** Este bounded context administra la asignación, validación y reprogramación de turnos médicos, asegurando la disponibilidad del personal. <br><br>
-  <img src="Resources/Images/Desing-Level-Event-Storming/medical_shift.jpg" alt="Event Storming del bounded context de Gestión de Turnos Médicos">
+  <img src="Resources/Images/Desing-Level-Event-Storming/medical_shift.jpg?raw=true" alt="Event Storming del bounded context de Gestión de Turnos Médicos">
 
   * **Medical Device Management:** Este bounded context gestiona la vinculación de dispositivos médicos con las cuentas de usuario, así como la configuración de umbrales para el monitoreo. <br><br>
-  <img src="Resources/Images/Desing-Level-Event-Storming/medical_device.jpg" alt="Event Storming del bounded context de Gestión de Dispositivos Médicos">
+  <img src="Resources/Images/Desing-Level-Event-Storming/medical_device.jpg?raw=true" alt="Event Storming del bounded context de Gestión de Dispositivos Médicos">
 
   * **Medical Staff Management:** Este bounded context permite la gestión del personal médico, incluyendo su registro y búsqueda dentro del sistema. <br><br>
-  <img src="Resources/Images/Desing-Level-Event-Storming/medical_staff.jpg" alt="Event Storming del bounded context de Gestión de Personal Médico">
+  <img src="Resources/Images/Desing-Level-Event-Storming/medical_staff.jpg?raw=true" alt="Event Storming del bounded context de Gestión de Personal Médico">
 
   * **Identity and Access Management:** Este bounded context se encarga de la creación, verificación y control de acceso de las cuentas de usuario dentro de la plataforma. <br><br>
-  <img src="Resources/Images/Desing-Level-Event-Storming/identity_and_access.jpg" alt="Event Storming del bounded context de Gestión de Identidad y Acceso">
+  <img src="Resources/Images/Desing-Level-Event-Storming/identity_and_access.jpg?raw=true" alt="Event Storming del bounded context de Gestión de Identidad y Acceso">
 
   * **Subscription and Payment Management:** Este bounded context gestiona los planes de suscripción, pagos y el acceso a funcionalidades del sistema según el estado de la suscripción. <br><br>
-  <img src="Resources/Images/Desing-Level-Event-Storming/subscription_and_payment.jpg" alt="Event Storming del bounded context de Suscripciones y Gestión de Pagos">
+  <img src="Resources/Images/Desing-Level-Event-Storming/subscription_and_payment.jpg?raw=true" alt="Event Storming del bounded context de Suscripciones y Gestión de Pagos">
 
 ### 4.6.2. Software Architecture Context Diagram.
 
-<img src="Resources/Images/C4-Diagrams/Context_Diagram.png" alt="Diseño del diagrama de contexto."> <br>
+<img src="Resources/Images/C4-Diagrams/Context_Diagram.png?raw=true" alt="Diseño del diagrama de contexto."> <br>
 
 El diagrama de contexto presenta a CortiSense como el sistema central. En este se muestran los usuarios principales, personal administrativo y personal médico, junto con los servicios externos que apoyan funciones como autenticación, notificaciones, programación de descansos y pagos.
 
 ### 4.6.3. Software Architecture Container Diagrams.
 
-<img src="Resources/Images/C4-Diagrams/Container_Diagram.png" alt="Diseño del diagrama de contenedores."> <br>
+<img src="Resources/Images/C4-Diagrams/Container_Diagram.png?raw=true" alt="Diseño del diagrama de contenedores."> <br>
 
 El diagrama de contenedores muestra la organización general de CortiSense. Se observa la Web App, encargada de servir el contenido estático y la landing page, y la Single Page Application, que representa la aplicación interactiva usada por el personal médico y administrativo.
 
@@ -1919,61 +1919,61 @@ El diagrama de contenedores muestra la organización general de CortiSense. Se o
 
 ### REST API
 
-<img src="Resources/Images/C4-Diagrams/Backend-Diagrams/RestAPI_Diagram.png" alt="Diseño del diagrama de componentes del Rest API."> <br>
+<img src="Resources/Images/C4-Diagrams/Backend-Diagrams/RestAPI_Diagram.png?raw=true" alt="Diseño del diagrama de componentes del Rest API."> <br>
 
 Este diagrama muestra la relación entre la Single Page Application, la Rest API y la base de datos. Dentro de la Rest API se representan los bounded contexts identificados para organizar la lógica principal del backend.
 
 ### Stress and Fatigue Analysis
 
-<img src="Resources/Images/C4-Diagrams/Backend-Diagrams/Stress_Diagram.png" alt="Diseño del diagrama de componentes de Stress and Fatigue Analysis."> <br>
+<img src="Resources/Images/C4-Diagrams/Backend-Diagrams/Stress_Diagram.png?raw=true" alt="Diseño del diagrama de componentes de Stress and Fatigue Analysis."> <br>
 
 Este diagrama muestra cómo se analiza la información biométrica para determinar los niveles de estrés y fatiga del personal médico.
 
 ### Biometric Data Management
 
-<img src="Resources/Images/C4-Diagrams/Backend-Diagrams/Data_Diagram.png" alt="Diseño del diagrama de componentes de Biometric Data Management."> <br>
+<img src="Resources/Images/C4-Diagrams/Backend-Diagrams/Data_Diagram.png?raw=true" alt="Diseño del diagrama de componentes de Biometric Data Management."> <br>
 
 Este diagrama muestra cómo se registran, consultan y almacenan los datos biométricos provenientes de los dispositivos médicos.
 
 ### Alerting and Notification Management
 
-<img src="Resources/Images/C4-Diagrams/Backend-Diagrams/Alerting_Diagram.png" alt="Diseño del diagrama de componentes de Alerting and Notification Management."> <br>
+<img src="Resources/Images/C4-Diagrams/Backend-Diagrams/Alerting_Diagram.png?raw=true" alt="Diseño del diagrama de componentes de Alerting and Notification Management."> <br>
 
 Este diagrama muestra cómo se generan alertas y se gestionan las notificaciones del sistema.
 
 ### Identity and Access Management
 
-<img src="Resources/Images/C4-Diagrams/Backend-Diagrams/Identity_Diagram.png" alt="Diseño del diagrama de componentes de Identity and Access Management."> <br>
+<img src="Resources/Images/C4-Diagrams/Backend-Diagrams/Identity_Diagram.png?raw=true" alt="Diseño del diagrama de componentes de Identity and Access Management."> <br>
 
 Este diagrama muestra cómo se gestiona la autenticación, validación de usuarios y control de acceso.
 
 ### Medical Staff Management
 
-<img src="Resources/Images/C4-Diagrams/Backend-Diagrams/Staff_Diagram.png" alt="Diseño del diagrama de componentes de Medical Staff Management."> <br>
+<img src="Resources/Images/C4-Diagrams/Backend-Diagrams/Staff_Diagram.png?raw=true" alt="Diseño del diagrama de componentes de Medical Staff Management."> <br>
 
 Este diagrama muestra cómo se administra la información del personal médico, incluyendo registro, consulta y búsqueda.
 
 ### Medical Device Management
 
-<img src="Resources/Images/C4-Diagrams/Backend-Diagrams/Device_Diagram.png" alt="Diseño del diagrama de componentes de Medical Device Management."> <br>
+<img src="Resources/Images/C4-Diagrams/Backend-Diagrams/Device_Diagram.png?raw=true" alt="Diseño del diagrama de componentes de Medical Device Management."> <br>
 
 Este diagrama muestra cómo se gestiona la vinculación, sincronización y configuración de dispositivos médicos.
 
 ### Medical Rest Management
 
-<img src="Resources/Images/C4-Diagrams/Backend-Diagrams/Rest_Diagram.png" alt="Diseño del diagrama de componentes de Medical Rest Management."> <br>
+<img src="Resources/Images/C4-Diagrams/Backend-Diagrams/Rest_Diagram.png?raw=true" alt="Diseño del diagrama de componentes de Medical Rest Management."> <br>
 
 Este diagrama muestra cómo se administran los descansos médicos, incluyendo programación, modificación y recomendaciones.
 
 ### Medical Shift Management
 
-<img src="Resources/Images/C4-Diagrams/Backend-Diagrams/Shift_Diagram.png" alt="Diseño del diagrama de componentes de Medical Shift Management."> <br>
+<img src="Resources/Images/C4-Diagrams/Backend-Diagrams/Shift_Diagram.png?raw=true" alt="Diseño del diagrama de componentes de Medical Shift Management."> <br>
 
 Este diagrama muestra cómo se gestionan los turnos médicos, incluyendo asignación, validación y reprogramación.
 
 ### Subscription and Payment Management
 
-<img src="Resources/Images/C4-Diagrams/Backend-Diagrams/Subscription_Diagram.png" alt="Diseño del diagrama de componentes de Subscription and Payment Management."> <br>
+<img src="Resources/Images/C4-Diagrams/Backend-Diagrams/Subscription_Diagram.png?raw=true" alt="Diseño del diagrama de componentes de Subscription and Payment Management."> <br>
 
 Este diagrama muestra cómo se administran las suscripciones, pagos y acceso a funcionalidades de la plataforma.
 
@@ -1981,61 +1981,61 @@ Este diagrama muestra cómo se administran las suscripciones, pagos y acceso a f
 
 ### CortiSense Single Page Application
 
-<img src="Resources/Images/C4-Diagrams/Frontend-Diagrams/SPA_Diagram.png" alt="Diseño del diagrama frontend de CortiSense Single Page Application."> <br>
+<img src="Resources/Images/C4-Diagrams/Frontend-Diagrams/SPA_Diagram.png?raw=true" alt="Diseño del diagrama frontend de CortiSense Single Page Application."> <br>
 
 Este diagrama muestra la relación entre la Single Page Application y la Rest API. Dentro del SPA se representan los bounded contexts identificados para organizar la lógica principal del fronted.
 
 ### Stress and Fatigue Analysis
 
-<img src="Resources/Images/C4-Diagrams/Frontend-Diagrams/Stress_Diagram.png" alt="Diseño del diagrama frontend de Stress and Fatigue Analysis."> <br>
+<img src="Resources/Images/C4-Diagrams/Frontend-Diagrams/Stress_Diagram.png?raw=true" alt="Diseño del diagrama frontend de Stress and Fatigue Analysis."> <br>
 
 Este diagrama detalla los componentes de la interfaz encargados de la visualización de datos críticos. Incluye la lógica de los servicios de consumo de API que obtienen los resultados del análisis de estrés y los módulos de visualización (gráficos y medidores) que permiten al personal médico interpretar su estado de fatiga en tiempo real.
 
 ### Biometric Data Management
 
-<img src="Resources/Images/C4-Diagrams/Frontend-Diagrams/Data_Diagram.png" alt="Diseño del diagrama frontend de Biometric Data Management."> <br>
+<img src="Resources/Images/C4-Diagrams/Frontend-Diagrams/Data_Diagram.png?raw=true" alt="Diseño del diagrama frontend de Biometric Data Management."> <br>
 
 Representa la lógica de presentación para los datos biométricos. Se enfoca en la gestión del flujo de datos desde los servicios de API hacia el State Store de la aplicación, permitiendo que la información de ritmo cardíaco y otros indicadores se actualicen dinámicamente en la UI sin recargar la página.
 
 ### Alerting and Notification Management
 
-<img src="Resources/Images/C4-Diagrams/Frontend-Diagrams/Alerting_Diagram.png" alt="Diseño del diagrama frontend de Alerting and Notification Management."> <br>
+<img src="Resources/Images/C4-Diagrams/Frontend-Diagrams/Alerting_Diagram.png?raw=true" alt="Diseño del diagrama frontend de Alerting and Notification Management."> <br>
 
 Muestra los componentes encargados de la experiencia de notificación. Incluye el manejador de Service Workers para notificaciones push, el componente de "Feed de Alertas" y los interceptores que reaccionan a eventos críticos del backend para mostrar avisos visuales inmediatos al usuario.
 
 ### Identity and Access Management
 
-<img src="Resources/Images/C4-Diagrams/Frontend-Diagrams/Indentity_Diagram.png" alt="Diseño del diagrama frontend de Identity and Access Management."> <br>
+<img src="Resources/Images/C4-Diagrams/Frontend-Diagrams/Indentity_Diagram.png?raw=true" alt="Diseño del diagrama frontend de Identity and Access Management."> <br>
 
 Este diagrama ilustra la integración con el proveedor de identidad (Auth0) desde la perspectiva del cliente. Detalla la gestión de tokens JWT, la persistencia de la sesión en el navegador y los "Guards" o protectores de rutas que restringen el acceso a vistas específicas según el rol del usuario.
 
 ### Medical Staff Management
 
-<img src="Resources/Images/C4-Diagrams/Frontend-Diagrams/Staff_Diagram.png" alt="Diseño del diagrama frontend de Medical Staff Management."> <br>
+<img src="Resources/Images/C4-Diagrams/Frontend-Diagrams/Staff_Diagram.png?raw=true" alt="Diseño del diagrama frontend de Medical Staff Management."> <br>
 
 Describe los componentes de interfaz para la gestión del personal. Se centra en los módulos de filtrado dinámico, formularios de registro con validación en el lado del cliente y la sincronización con el servicio de búsqueda del backend.
 
 ### Medical Device Management
 
-<img src="Resources/Images/C4-Diagrams/Frontend-Diagrams/Device_Diagram.png" alt="Diseño del diagrama frontend de Medical Device Management."> <br>
+<img src="Resources/Images/C4-Diagrams/Frontend-Diagrams/Device_Diagram.png?raw=true" alt="Diseño del diagrama frontend de Medical Device Management."> <br>
 
 Muestra la lógica necesaria para la vinculación de hardware. Incluye los pasos de configuración guiada (wizards), la visualización del estado de conexión de los dispositivos IoT y la interfaz para el ajuste de umbrales de alerta personalizados.
 
 ### Medical Rest Management
 
-<img src="Resources/Images/C4-Diagrams/Frontend-Diagrams/Rest_Diagram.png" alt="Diseño del diagrama frontend de Medical Rest Management."> <br>
+<img src="Resources/Images/C4-Diagrams/Frontend-Diagrams/Rest_Diagram.png?raw=true" alt="Diseño del diagrama frontend de Medical Rest Management."> <br>
 
 Representa la interfaz de calendario y el sistema de recomendaciones. Detalla cómo los componentes de UI transforman las sugerencias del backend en elementos visuales interactivos para que el personal pueda programar y confirmar sus descansos médicos.
 
 ### Medical Shift Management
 
-<img src="Resources/Images/C4-Diagrams/Frontend-Diagrams/Shift_Diagram.png" alt="Diseño del diagrama frontend de Medical Shift Management."> <br>
+<img src="Resources/Images/C4-Diagrams/Frontend-Diagrams/Shift_Diagram.png?raw=true" alt="Diseño del diagrama frontend de Medical Shift Management."> <br>
 
 Este diagrama detalla la arquitectura de la vista de planificación de turnos. Incluye componentes de drag-and-drop para la asignación de horarios y la lógica de validación visual que previene conflictos de disponibilidad antes de enviar los cambios al servidor.
 
 ### Subscription and Payment Management
 
-<img src="Resources/Images/C4-Diagrams/Frontend-Diagrams/Subscription_Diagram.png" alt="Diseño del diagrama frontend de Subscription and Payment Management."> <br>
+<img src="Resources/Images/C4-Diagrams/Frontend-Diagrams/Subscription_Diagram.png?raw=true" alt="Diseño del diagrama frontend de Subscription and Payment Management."> <br>
 
 Muestra la integración con los elementos de pago seguros (Stripe Elements). Se enfoca en el flujo de navegación para la selección de planes, la gestión de estados de pago (éxito/error) y la visualización del historial de facturación del usuario.
 
@@ -2045,61 +2045,61 @@ Los siguientes diagramas complementan los diagramas de componentes del frontend.
 
 ### Identity and Access Management - Presentation Layer
 
-<img src="Resources/Images/C4-Diagrams/Frontend-Diagrams/Vue-Components/Identity_Presentation.png" alt="Vue components of Identity and Access Management."> <br>
+<img src="Resources/Images/C4-Diagrams/Frontend-Diagrams/Vue-Components/Identity_Presentation.png?raw=true" alt="Vue components of Identity and Access Management."> <br>
 
 Este diagrama muestra los componentes Vue encargados de la autenticación y gestión de acceso, como las vistas de inicio de sesión, registro, perfil y recuperación de contraseña.
 
 ### Medical Staff Management - Presentation Layer
 
-<img src="Resources/Images/C4-Diagrams/Frontend-Diagrams/Vue-Components/Staff_Presentation.png" alt="Vue components of Medical Staff Management."> <br>
+<img src="Resources/Images/C4-Diagrams/Frontend-Diagrams/Vue-Components/Staff_Presentation.png?raw=true" alt="Vue components of Medical Staff Management."> <br>
 
 Este diagrama muestra los componentes Vue usados para gestionar el personal médico, incluyendo vistas de listado, búsqueda, registro y detalle.
 
 ### Medical Device Management - Presentation Layer
 
-<img src="Resources/Images/C4-Diagrams/Frontend-Diagrams/Vue-Components/Device_Presentation.png" alt="Vue components of Medical Device Management."> <br>
+<img src="Resources/Images/C4-Diagrams/Frontend-Diagrams/Vue-Components/Device_Presentation.png?raw=true" alt="Vue components of Medical Device Management."> <br>
 
 Este diagrama muestra los componentes Vue relacionados con la vinculación, visualización y configuración de dispositivos médicos.
 
 ### Biometric Data Management - Presentation Layer
 
-<img src="Resources/Images/C4-Diagrams/Frontend-Diagrams/Vue-Components/Data_Presentation.png" alt="Vue components of Biometric Data Management."> <br>
+<img src="Resources/Images/C4-Diagrams/Frontend-Diagrams/Vue-Components/Data_Presentation.png?raw=true" alt="Vue components of Biometric Data Management."> <br>
 
 Este diagrama muestra los componentes Vue utilizados para visualizar datos biométricos, historial, detalle y sincronización de información.
 
 ### Stress and Fatigue Analysis - Presentation Layer
 
-<img src="Resources/Images/C4-Diagrams/Frontend-Diagrams/Vue-Components/Stress_Presentation.png" alt="Vue components of Stress and Fatigue Analysis."> <br>
+<img src="Resources/Images/C4-Diagrams/Frontend-Diagrams/Vue-Components/Stress_Presentation.png?raw=true" alt="Vue components of Stress and Fatigue Analysis."> <br>
 
 Este diagrama muestra los componentes Vue encargados de presentar el estado de estrés y fatiga, reportes y recomendaciones.
 
 ### Alerting and Notification Management - Presentation Layer
 
-<img src="Resources/Images/C4-Diagrams/Frontend-Diagrams/Vue-Components/Alerting_Presentation.png" alt="Vue components of Alerting and Notification Management."> <br>
+<img src="Resources/Images/C4-Diagrams/Frontend-Diagrams/Vue-Components/Alerting_Presentation.png?raw=true" alt="Vue components of Alerting and Notification Management."> <br>
 
 Este diagrama muestra los componentes Vue utilizados para visualizar alertas, detalles, centro de notificaciones y preferencias del usuario.
 
 ### Medical Rest Management - Presentation Layer
 
-<img src="Resources/Images/C4-Diagrams/Frontend-Diagrams/Vue-Components/Rest_Presentation.png" alt="Vue components of Medical Rest Management."> <br>
+<img src="Resources/Images/C4-Diagrams/Frontend-Diagrams/Vue-Components/Rest_Presentation.png?raw=true" alt="Vue components of Medical Rest Management."> <br>
 
 Este diagrama muestra los componentes Vue asociados a la programación, consulta, detalle y recomendaciones de descansos médicos.
 
 ### Medical Shift Management - Presentation Layer
 
-<img src="Resources/Images/C4-Diagrams/Frontend-Diagrams/Vue-Components/Shift_Presentation.png" alt="Vue components of Medical Shift Management."> <br>
+<img src="Resources/Images/C4-Diagrams/Frontend-Diagrams/Vue-Components/Shift_Presentation.png?raw=true" alt="Vue components of Medical Shift Management."> <br>
 
 Este diagrama muestra los componentes Vue relacionados con la visualización, asignación, detalle y reprogramación de turnos médicos.
 
 ### Subscription and Payment Management - Presentation Layer
 
-<img src="Resources/Images/C4-Diagrams/Frontend-Diagrams/Vue-Components/Subscription_Presentation.png" alt="Vue components of Subscription and Payment Management."> <br>
+<img src="Resources/Images/C4-Diagrams/Frontend-Diagrams/Vue-Components/Subscription_Presentation.png?raw=true" alt="Vue components of Subscription and Payment Management."> <br>
 
 Este diagrama muestra los componentes Vue utilizados para la selección de planes, consulta de suscripción, checkout e historial de pagos.
 
 ### Shared UI Components - Presentation Layer
 
-<img src="Resources/Images/C4-Diagrams/Frontend-Diagrams/Vue-Components/SharedUI_Presentation.png" alt="Shared Vue UI components."> <br>
+<img src="Resources/Images/C4-Diagrams/Frontend-Diagrams/Vue-Components/SharedUI_Presentation.png?raw=true" alt="Shared Vue UI components."> <br>
 
 Este diagrama muestra los componentes Vue reutilizables compartidos entre los bounded contexts, como barra de navegación, sidebar, tablas y modales.
 
@@ -2107,34 +2107,34 @@ Este diagrama muestra los componentes Vue reutilizables compartidos entre los bo
 ### 4.7.1. Class Diagrams.
 
 <h2>Diagrama Completo</h2>
-<img src="Resources/Images/ClassDiagrams/ClassDiagrams.png" alt="Class Diagrams Complete">
+<img src="Resources/Images/ClassDiagrams/ClassDiagrams.png?raw=true" alt="Class Diagrams Complete">
 
 <h3>Alerting and Notification Management</h3>
-<img src="Resources/Images/ClassDiagrams/alertingAndNotificationManagement.png" alt="Alerting and Notification Management Class Diagram">
+<img src="Resources/Images/ClassDiagrams/alertingAndNotificationManagement.png?raw=true" alt="Alerting and Notification Management Class Diagram">
 
 <h3>Biometric Data Management</h3>
-<img src="Resources/Images/ClassDiagrams/biometricDataManagement.png" alt="Biometric Data Management Class Diagram">
+<img src="Resources/Images/ClassDiagrams/biometricDataManagement.png?raw=true" alt="Biometric Data Management Class Diagram">
 
 <h3>Identity and Access Management</h3>
-<img src="Resources/Images/ClassDiagrams/identityAndAccessManagement.png" alt="Identity and Access Management Class Diagram">
+<img src="Resources/Images/ClassDiagrams/identityAndAccessManagement.png?raw=true" alt="Identity and Access Management Class Diagram">
 
 <h3>Medical Device Management</h3>
-<img src="Resources/Images/ClassDiagrams/medicalDeviceManagement.png" alt="Medical Device Management Class Diagram">
+<img src="Resources/Images/ClassDiagrams/medicalDeviceManagement.png?raw=true" alt="Medical Device Management Class Diagram">
 
 <h3>Medical Rest Management</h3>
-<img src="Resources/Images/ClassDiagrams/medicalRestManagement.png" alt="Medical Rest Management Class Diagram">
+<img src="Resources/Images/ClassDiagrams/medicalRestManagement.png?raw=true" alt="Medical Rest Management Class Diagram">
 
 <h3>Medical Shift Management</h3>
-<img src="Resources/Images/ClassDiagrams/medicalShiftManagement.png" alt="Medical Shift Management Class Diagram">
+<img src="Resources/Images/ClassDiagrams/medicalShiftManagement.png?raw=true" alt="Medical Shift Management Class Diagram">
 
 <h3>Medical Staff Management</h3>
-<img src="Resources/Images/ClassDiagrams/medicalStaffManagement.png" alt="Medical Staff Management Class Diagram">
+<img src="Resources/Images/ClassDiagrams/medicalStaffManagement.png?raw=true" alt="Medical Staff Management Class Diagram">
 
 <h3>Subscription and Payment Management</h3>
-<img src="Resources/Images/ClassDiagrams/subscriptionAndPaymentManagement.png" alt="Subscription and Payment Management Class Diagram">
+<img src="Resources/Images/ClassDiagrams/subscriptionAndPaymentManagement.png?raw=true" alt="Subscription and Payment Management Class Diagram">
 
 <h3>Stress and Fatigue Analysis</h3>
-<img src="Resources/Images/ClassDiagrams/stressandfatigueanalysis.png" alt="Stress and Fatigue Analysis Class Diagram">
+<img src="Resources/Images/ClassDiagrams/stressandfatigueanalysis.png?raw=true" alt="Stress and Fatigue Analysis Class Diagram">
 
 ## 4.8. Database Design.
 ### 4.8.1. Database Diagrams.
@@ -2142,7 +2142,7 @@ El Database Diagram general de CortiSense organiza la persistencia del sistema e
 
 Asimismo, el diagrama representa el flujo operativo del sistema mediante la relación entre Medic, BiometricData, Monitoring y Alert, permitiendo registrar datos biométricos, monitorear niveles de fatiga y generar alertas. También se incluyen las tablas Rest, RestModificationRequest y Shift para gestionar descansos, solicitudes de modificación y turnos médicos.
 
-<img src="Resources/Images/ClassDiagrams/Database.png" 
+<img src="Resources/Images/ClassDiagrams/Database.png?raw=true" 
      alt="Database Diagrams"
      width="800">
 
@@ -2220,13 +2220,13 @@ Se implementa la metodología Git Flow para gestionar el desarrollo de CortiSens
 Enlace de la Landing Page: https://syncedhealth-aplicacionesweb.github.io/upc-pre-202610-1asi0730-12053-SyncedHealth-website/
 
 <div align="center">
-    <img src="/Resources/Code_Management/landing-desplegada.png" alt="Landing Page">
+    <img src="/Resources/Code_Management/landing-desplegada.png?raw=true" alt="Landing Page">
 </div><br>
 
 Repositorio GitHub de la Landing Page: https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-website.git <br><br>
 
 <div align="center">
-    <img src="/Resources/Code_Management/landing-repositorio.png"  alt="Repositorio landing page">
+    <img src="/Resources/Code_Management/landing-repositorio.png?raw=true"  alt="Repositorio landing page">
 </div><br>
 
 Repositorio GitHub de los archivos feature:
@@ -2294,7 +2294,7 @@ Ejemplo recomendado:
   <body>
     <main>
       <h1>Account settings</h1>
-      <img src="avatar.png" alt="Profile avatar preview">
+      <img src="avatar.png?raw=true" alt="Profile avatar preview">
       <a href="/comments">All comments</a>
     </main>
   </body>
@@ -2462,7 +2462,7 @@ Con el objetivo de realizar el despliegue de nuestra landing page, seleccionamos
 **1.  Ingresamos al repositorio de la landing page**
 
 <div align="center">
-  <img src="/Resources/Deployment-Landing/deployment-step-1.png" alt="landing repo">
+  <img src="/Resources/Deployment-Landing/deployment-step-1.png?raw=true" alt="landing repo">
 </div>
 
 <br>
@@ -2470,7 +2470,7 @@ Con el objetivo de realizar el despliegue de nuestra landing page, seleccionamos
 **2.  Nos dirigimos al apartado de settings**
 
 <div align="center">
-  <img src="/Resources/Deployment-Landing/deployment-step-2.png" alt="landing repo">
+  <img src="/Resources/Deployment-Landing/deployment-step-2.png?raw=true" alt="landing repo">
 </div>
 
 <br>
@@ -2478,7 +2478,7 @@ Con el objetivo de realizar el despliegue de nuestra landing page, seleccionamos
 **3.  Vamos a la sección de Github Pages**
 
 <div align="center">
-  <img src="/Resources/Deployment-Landing/deployment-step-3.png" alt="landing repo">
+  <img src="/Resources/Deployment-Landing/deployment-step-3.png?raw=true" alt="landing repo">
 </div>
 
 <br>
@@ -2486,7 +2486,7 @@ Con el objetivo de realizar el despliegue de nuestra landing page, seleccionamos
 **4.  Seleccionamos la rama main de github-pages en el apartado de source y damos click en save para desplegar.**
 
 <div align="center">
-  <img src="/Resources/Deployment-Landing/deployment-step-4.png" alt="landing repo">
+  <img src="/Resources/Deployment-Landing/deployment-step-4.png?raw=true" alt="landing repo">
 </div>
 
 <br>
@@ -2494,7 +2494,7 @@ Con el objetivo de realizar el despliegue de nuestra landing page, seleccionamos
 **5.  Finalmente estaría todo listo.**
 
 <div align="center">
-  <img src="/Resources/Deployment-Landing/deployment-step-5.png" alt="landing repo">
+  <img src="/Resources/Deployment-Landing/deployment-step-5.png?raw=true" alt="landing repo">
 </div><br>
 
 En resumen, Github Pages usa la rama main como origen de producción. Paralelamente, se configuró un flujo con GitHub actions que reacciona a los commits de la rama develop que compila con el código estático. Es así que, cuando las modificaciones son revisadas y aprobadas por el equipo en su fase de producción, la plataforma actualiza el sitio en una nueva versión.
@@ -2535,7 +2535,7 @@ Durante este Sprint, el equipo ha organizado el trabajo en base a las Epics defi
 Nuestro objetivo principal con este Sprint 1 es desplegar la versión inicial de la Landing Page de CortiSense con el propósito de atrapar el interés del mercado y establecer un canal de comunicación directo con nuestros prospectos. Para lograr este objetivo, se ha realizado una distribución estratégica de tareas entre los integrantes del equipo. Esto nos permitirá asegurar que cada sección del sitio transmita nuestra propuesta de valor con claridad, genere confianza en el sector construcción y cuente con llamados a la acción funcionales para capturar los primeros registros.
 
 Enlace Sprint Backlog 1 en Trello: https://trello.com/invite/b/69edb4e56f8b545259285224/ATTI4223d4c1388fe29def281fbeae6553a0CD55EAEA/cortisense-app-web
-<img src="Resources/Sprint-1/trello-sprint1.png" alt="Imagen Sprint 1 Trello"/>
+<img src="Resources/Sprint-1/trello-sprint1.png?raw=true" alt="Imagen Sprint 1 Trello"/>
 
 | User Story | Work-Item / Task                                       |        |                              |                                          |                        |                 |            |
 | :-----------| :-------------------------------------------------------| :-------| :-----------------------------| :-----------------------------------------| :-----------------------| :----------------| :-----------|
