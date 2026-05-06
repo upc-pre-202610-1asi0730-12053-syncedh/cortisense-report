@@ -1,5 +1,5 @@
 <div align="center">
-<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/tree/main/Resources/UPC_logo_transparente.png?raw=true"></img><br>
+<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/UPC_logo_transparente.png?raw=true"></img><br>
 
 
 <h3>Universidad Peruana de Ciencias Aplicadas</h3>
