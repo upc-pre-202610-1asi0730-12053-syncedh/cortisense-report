@@ -2585,7 +2585,34 @@ Si bien la arquitectura a nivel de diseño (Domain-Driven Software Architecture)
 Por lo tanto, la relación de endpoints documentados con OpenAPI (Swagger), las capturas de interacción con datos de muestra (Postman/Swagger UI), y los enlaces a los repositorios específicos de los microservicios en Spring Boot serán presentados como evidencia de ejecución en la próxima revisión del proyecto (Sprint Review 2), una vez que los servicios hayan sido desarrollados y desplegados en sus respectivos entornos.
 
 #### 5.2.1.7. Software Deployment Evidence for Sprint Review.
++ **Marcelo Pareja**
+<div style="display: flex; align-items: center;">
+<img src="/https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Collaboration-Insights/Insight-Marcelo-Commits.png?raw=true" >
+</div><br>
+
++ **Guiou Mauricio**
+<div style="display: flex; align-items: center;">
+<img src="/https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Collaboration-Insights/Insight-Justinn-Commits.png?raw=true">
+</div><br>
+
++ **Sebastian Gutierrez**
+<div style="display: flex; align-items: center;">
+<img src="/https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Collaboration-Insights/Insight-Sebastian-Commits.png?raw=true">
+</div><br>
+
++ **Johan Yonel**
+<div style="display: flex; align-items: center;">
+<img src="/https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Collaboration-Insights/Insight-Johan-Commits.png?raw=true">
+</div><br>
+
++ **Jairo Santiago**
+<div style="display: flex; align-items: center;">
+<img src="/https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Collaboration-Insights/Insight-Jairo-Commits.png?raw=true">
+</div><br><br>
+
 #### 5.2.1.8. Team Collaboration Insights during Sprint.
+<div align="center"><img src="/https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Collaboration-Insights/Insight-1.png?raw=true"></div><br><br>
+<div align="center"><img src="/https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Collaboration-Insights/Insight-2.png?raw=true"></div><br><br>
 
 ### 5.2.2. Sprint 2
 #### 5.2.2.1. Sprint Planning 2.
@@ -2610,10 +2637,10 @@ Durante este Sprint, el equipo ha organizado el trabajo en base a las Epics defi
 | Team Member (Last Name, First Name) | GitHub Username | EP01 | EP02 | EP03 | EP04 | EP05 | EP06 | EP07 | EP08 |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | Gutierrez Santillán, Sebastián Augusto | SebastianGutierrezSantillan | C | L | C | C | C | C | C | C |
-| León Morales, Johan Yonel | TheCap213 | C | C | L | C | C | C | L | C |
-| Mauricio Silva, Guiou Justinn | Justinn2006 | L | C | C | C | L | C | C | C |
-| Pareja Calloapaza, Marcelo Fausto | marc3lllob7 | C | C | C | L | C | L | C | C |
-| Santiago Atanacio, Jairo Mathias | Msa-ware | C | C | C | C | C | C | C | L |
+| León Morales, Johan Yonel | TheCap213 | C | C | L | C | C | C | C | C |
+| Mauricio Silva, Guiou Justinn | Justinn2006 | C | C | C | L | C | C | C | C |
+| Pareja Calloapaza, Marcelo Fausto | marc3lllob7 | L | C | C | C | C | L | C | C |
+| Santiago Atanacio, Jairo Mathias | Msa-ware | C | C | C | C | L | C | C | C |
 
 **Leyenda:** L = Líder, C = Colaborador
 
