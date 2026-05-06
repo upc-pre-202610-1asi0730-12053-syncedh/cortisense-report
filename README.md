@@ -1911,7 +1911,7 @@ El diagrama de contexto presenta a CortiSense como el sistema central. En este s
 
 ### 4.6.3. Software Architecture Container Diagrams.
 
-<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/C4-Diagrams/Container_Diagram.png?raw=true" alt="Diseño del diagrama de contenedores."> <br>
+<img src="Resources/Images/C4-Diagrams/Container_Diagram.png" alt="Diseño del diagrama de contenedores."> <br>
 
 El diagrama de contenedores muestra la organización general de CortiSense. Se observa la Web App, encargada de servir el contenido estático y la landing page, y la Single Page Application, que representa la aplicación interactiva usada por el personal médico y administrativo.
 
