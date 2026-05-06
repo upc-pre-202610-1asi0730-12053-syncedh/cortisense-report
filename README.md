@@ -61,11 +61,11 @@ https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-Sy
 + **Evidencias de colaboración y commits - Github:**
     * **Análiticos de colaboración** <br><br>
         + **Pulse Image of Github Insights**
-        <div align="center"><img src="/https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Collaboration-Insights/Insight-1.png?raw=true"></div><br><br>
+        <div align="center"><img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Collaboration-Insights/Insight-1.png?raw=true"></div><br><br>
 
 
         + **Contributors Image of Github Insights**
-        <div align="center"><img src="/https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Collaboration-Insights/Insight-2.png?raw=true"></div><br><br>
+        <div align="center"><img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Collaboration-Insights/Insight-2.png?raw=true"></div><br><br>
 
 
     * **Commits**
@@ -74,25 +74,25 @@ https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-Sy
 
         + **Marcelo Pareja**
             <div style="display: flex; align-items: center;">
-            <img src="/https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Collaboration-Insights/Insight-Marcelo-Commits.png?raw=true" >
+            <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Collaboration-Insights/Insight-Marcelo-Commits.png?raw=true" >
             </div><br>
 
         + **Guiou Mauricio**
             <div style="display: flex; align-items: center;">
-            <img src="/https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Collaboration-Insights/Insight-Justinn-Commits.png?raw=true">
+            <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Collaboration-Insights/Insight-Justinn-Commits.png?raw=true">
             </div><br>
 
         + **Sebastian Gutierrez**
             <div style="display: flex; align-items: center;">
-            <img src="/https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Collaboration-Insights/Insight-Sebastian-Commits.png?raw=true">
+            <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Collaboration-Insights/Insight-Sebastian-Commits.png?raw=true">
             </div><br>
         + **Johan Yonel**
             <div style="display: flex; align-items: center;">
-            <img src="/https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Collaboration-Insights/Insight-Johan-Commits.png?raw=true">
+            <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Collaboration-Insights/Insight-Johan-Commits.png?raw=true">
             </div><br>
         + **Jairo Santiago**
             <div style="display: flex; align-items: center;">
-            <img src="/https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Collaboration-Insights/Insight-Jairo-Commits.png?raw=true">
+            <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Collaboration-Insights/Insight-Jairo-Commits.png?raw=true">
             </div><br><br>
 
 
