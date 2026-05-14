@@ -2176,7 +2176,7 @@ El Context Diagram muestra a CortiSense como el sistema principal de la solució
 
 El Container Diagram detalla la estructura principal de CortiSense a nivel de contenedores. La plataforma se compone de una Landing Page informativa, una Web App que entrega la aplicación Vue, una Single Page Application utilizada por los usuarios, una REST API desarrollada en C#/.NET que concentra la lógica de negocio, y una base de datos SQL para almacenar información del sistema. También se visualizan las integraciones externas con Firebase Authentication, Stripe Sandbox y Resend Email API, las cuales son gestionadas desde el backend para mantener centralizada la lógica de autenticación, suscripciones y notificaciones.
 
-### 4.6.4. Software Architecture Frontend Components Diagrams.
+### 4.6.4. Software Architecture Components Diagrams.
 
 ### 4.6.4.1. Frontend Components Diagram
 
@@ -2234,69 +2234,63 @@ Este diagrama muestra el módulo de auditoría y cumplimiento. Permite consultar
 
 Este diagrama representa el módulo compartido del frontend. Centraliza elementos reutilizables como layout, navegación, componentes visuales, servicios comunes, tipos compartidos e infraestructura HTTP utilizada por los demás módulos de CortiSense.
 
-### 4.6.5. Software Architecture Backend Components Diagrams.
+### 4.6.4.2. Backend Components Diagram
 
-### REST API
++ **REST API Component Diagram** <br>
 
-<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/C4-Diagrams/Backend-Diagrams/RestAPI_Diagram.png?raw=true" alt="Diseño del diagrama de componentes del Rest API."> <br>
+<img src="Resources/Images/C4-Diagrams/Backend-Diagrams/container_restapi_diagram.png" alt="Diseño del diagrama de componentes del backend de CortiSense"/> <br>
 
-Este diagrama muestra la relación entre la Single Page Application, la Rest API y la base de datos. Dentro de la Rest API se representan los bounded contexts identificados para organizar la lógica principal del backend.
+Este diagrama muestra la organización general del backend de CortiSense. La REST API recibe las solicitudes desde la SPA y las distribuye hacia los bounded contexts del sistema, los cuales gestionan la lógica de negocio, acceso a base de datos e integraciones externas.
 
-### Stress and Fatigue Analysis
++ **Identity & Access Management**  <br>
 
-<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/C4-Diagrams/Backend-Diagrams/Stress_Diagram.png?raw=true" alt="Diseño del diagrama de componentes de Stress and Fatigue Analysis."> <br>
+<img src="Resources/Images/C4-Diagrams/Backend-Diagrams/iam_components.png" alt="Diseño del diagrama de componentes del módulo de Identity & Access Management del backend"/> <br>
 
-Este diagrama muestra cómo se analiza la información biométrica para determinar los niveles de estrés y fatiga del personal médico.
+Este diagrama representa el contexto encargado de usuarios, invitaciones, roles y permisos. Sus componentes procesan solicitudes de autenticación y acceso, validan reglas del dominio y se integran con Firebase Authentication y Resend Email API.
 
-### Biometric Data Management
++ **Subscription & Plan Management**  <br>
 
-<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/C4-Diagrams/Backend-Diagrams/Data_Diagram.png?raw=true" alt="Diseño del diagrama de componentes de Biometric Data Management."> <br>
+<img src="Resources/Images/C4-Diagrams/Backend-Diagrams/subscription_components.png" alt="Diseño del diagrama de componentes del módulo de Subscription & Plan Management del backend"/> <br>
 
-Este diagrama muestra cómo se registran, consultan y almacenan los datos biométricos provenientes de los dispositivos médicos.
+Este diagrama muestra el contexto responsable de planes, pagos y suscripciones. Sus componentes gestionan la activación del plan, el acceso a funcionalidades y la integración con Stripe Sandbox para validar pagos.
 
-### Alerting and Notification Management
++ **Clinical Risk Assessment**  <br>
 
-<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/C4-Diagrams/Backend-Diagrams/Alerting_Diagram.png?raw=true" alt="Diseño del diagrama de componentes de Alerting and Notification Management."> <br>
+<img src="Resources/Images/C4-Diagrams/Backend-Diagrams/clinical_risk_components.png" alt="Diseño del diagrama de componentes del módulo de Clinical Risk Assessment del backend"/> <br>
 
-Este diagrama muestra cómo se generan alertas y se gestionan las notificaciones del sistema.
+Este diagrama representa el contexto encargado de procesar datos biométricos, calcular indicadores asociados al estrés, fatiga y riesgo clínico, y determinar niveles de riesgo del personal médico. También registra información relacionada con evaluaciones de riesgo en la base de datos.
 
-### Identity and Access Management
++ **Incident & Escalation Management**  <br>
 
-<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/C4-Diagrams/Backend-Diagrams/Identity_Diagram.png?raw=true" alt="Diseño del diagrama de componentes de Identity and Access Management."> <br>
+<img src="Resources/Images/C4-Diagrams/Backend-Diagrams/incident_components.png" alt="Diseño del diagrama de componentes del módulo de Incident & Escalation Management del backend"/> <br>
 
-Este diagrama muestra cómo se gestiona la autenticación, validación de usuarios y control de acceso.
+Este diagrama muestra el contexto que gestiona incidentes de riesgo, alertas al supervisor, escalamiento al director médico y cierre de incidentes. Además, utiliza Resend Email API para enviar notificaciones importantes.
 
-### Medical Staff Management
++ **Shift Coordination**  <br>
 
-<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/C4-Diagrams/Backend-Diagrams/Staff_Diagram.png?raw=true" alt="Diseño del diagrama de componentes de Medical Staff Management."> <br>
+<img src="Resources/Images/C4-Diagrams/Backend-Diagrams/coordination_components.png" alt="Diseño del diagrama de componentes del módulo de Shift Coordination del backend"/> <br>
 
-Este diagrama muestra cómo se administra la información del personal médico, incluyendo registro, consulta y búsqueda.
+Este diagrama representa el contexto encargado de turnos críticos, bloqueos preventivos, sugerencias de reemplazo y redistribución de carga médica. Sus componentes permiten proteger la continuidad operacional de la institución sin comprometer el bienestar del personal médico.
 
-### Medical Device Management
++ **Staff Recovery**  <br>
 
-<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/C4-Diagrams/Backend-Diagrams/Device_Diagram.png?raw=true" alt="Diseño del diagrama de componentes de Medical Device Management."> <br>
+<img src="Resources/Images/C4-Diagrams/Backend-Diagrams/staff_components.png" alt="Diseño del diagrama de componentes del módulo de Staff Recovery del backend"/> <br>
 
-Este diagrama muestra cómo se gestiona la vinculación, sincronización y configuración de dispositivos médicos.
+Este diagrama muestra el contexto responsable de recomendaciones de descanso y planes de recuperación. Gestiona aceptación, rechazo o confirmación del plan, y puede enviar notificaciones mediante Resend Email API.
 
-### Medical Rest Management
++ **Audit & Compliance**  <br>
 
-<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/C4-Diagrams/Backend-Diagrams/Rest_Diagram.png?raw=true" alt="Diseño del diagrama de componentes de Medical Rest Management."> <br>
+<img src="Resources/Images/C4-Diagrams/Backend-Diagrams/audit_components.png" alt="Diseño del diagrama de componentes del módulo de Audit & Compliance del backend"/> <br>
 
-Este diagrama muestra cómo se administran los descansos médicos, incluyendo programación, modificación y recomendaciones.
+Este diagrama representa el contexto encargado de registrar decisiones críticas, acciones relevantes y reportes de cumplimiento. Su objetivo es mantener trazabilidad institucional sobre los eventos importantes del sistema.
 
-### Medical Shift Management
++ **Shared Kernel**  <br>
 
-<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/C4-Diagrams/Backend-Diagrams/Shift_Diagram.png?raw=true" alt="Diseño del diagrama de componentes de Medical Shift Management."> <br>
+<img src="Resources/Images/C4-Diagrams/Backend-Diagrams/shared_kernel_components.png" alt="Diseño del diagrama de componentes del módulo compartido del backend"/> <br>
 
-Este diagrama muestra cómo se gestionan los turnos médicos, incluyendo asignación, validación y reprogramación.
+Este diagrama muestra los elementos compartidos del backend, como tipos base, value objects, eventos de dominio, excepciones y contratos comunes. Estos elementos son reutilizados por los bounded contexts sin centralizar su lógica de negocio.
 
-### Subscription and Payment Management
-
-<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/C4-Diagrams/Backend-Diagrams/Subscription_Diagram.png?raw=true" alt="Diseño del diagrama de componentes de Subscription and Payment Management."> <br>
-
-Este diagrama muestra cómo se administran las suscripciones, pagos y acceso a funcionalidades de la plataforma.
-
-### 4.6.6. Vue Components by Presentation Layer
+### 4.6.5. Vue Components by Presentation Layer
 
 Los siguientes diagramas complementan los diagramas de componentes del frontend. En ellos se detalla la capa de presentación de cada bounded context, mostrando los componentes `.vue` que conforman las vistas principales de la Single Page Application.
 
