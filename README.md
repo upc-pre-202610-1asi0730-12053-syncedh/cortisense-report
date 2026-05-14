@@ -2178,65 +2178,61 @@ El Container Diagram detalla la estructura principal de CortiSense a nivel de co
 
 ### 4.6.4. Software Architecture Frontend Components Diagrams.
 
-### CortiSense Single Page Application
+### 4.6.4.1. Frontend Components Diagram
 
-<img src="Resources/Images/C4-Diagrams/Frontend-Diagrams/SPA_Diagram.png?raw=true" alt="Diseño del diagrama frontend de CortiSense Single Page Application."> <br>
++ **SPA Component Diagram** <br>
 
-Este diagrama muestra la relación entre la Single Page Application y la Rest API. Dentro del SPA se representan los bounded contexts identificados para organizar la lógica principal del fronted.
+<img src="Resources/Images/C4-Diagrams/Frontend-Diagrams/container_spa_diagram.png" alt="Diseño del diagrama de componentes del frontend de CortiSense"/> <br>
 
-### Stress and Fatigue Analysis
+Este diagrama muestra la organización interna del frontend de CortiSense. La Web App carga la aplicación Angular, que se apoya en un Shared Module para navegación, servicios comunes y componentes reutilizables. Cada bounded context del frontend representa un módulo funcional independiente que consume endpoints de la REST API.
 
-<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/C4-Diagrams/Frontend-Diagrams/Stress_Diagram.png?raw=true" alt="Diseño del diagrama frontend de Stress and Fatigue Analysis."> <br>
++ **Identity and Access Management** <br>
 
-Este diagrama detalla los componentes de la interfaz encargados de la visualización de datos críticos. Incluye la lógica de los servicios de consumo de API que obtienen los resultados del análisis de estrés y los módulos de visualización (gráficos y medidores) que permiten al personal médico interpretar su estado de fatiga en tiempo real.
+<img src="Resources/Images/C4-Diagrams/Frontend-Diagrams/iam_components.png" alt="Diseño del diagrama de componentes del módulo de Identity and Access Management"/> <br>
 
-### Biometric Data Management
+Este diagrama muestra el módulo de Identity & Access Management en el frontend. Se encarga de las vistas de login, registro, invitaciones, roles y control de acceso, organizando su lógica en capas de presentación, aplicación, dominio e infraestructura.
 
-<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/C4-Diagrams/Frontend-Diagrams/Data_Diagram.png?raw=true" alt="Diseño del diagrama frontend de Biometric Data Management."> <br>
++ **Subscription & Plan Management** <br>
 
-Representa la lógica de presentación para los datos biométricos. Se enfoca en la gestión del flujo de datos desde los servicios de API hacia el State Store de la aplicación, permitiendo que la información de ritmo cardíaco y otros indicadores se actualicen dinámicamente en la UI sin recargar la página.
+<img src="Resources/Images/C4-Diagrams/Frontend-Diagrams/subscription_components.png" alt="Diseño del diagrama de componentes del módulo de Subscription & Plan Management"/> <br>
 
-### Alerting and Notification Management
+Este diagrama representa el módulo de planes y suscripciones. Permite visualizar planes, estado de suscripción y funcionalidades habilitadas, comunicándose con la REST API para gestionar la información comercial del hospital.
 
-<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/C4-Diagrams/Frontend-Diagrams/Alerting_Diagram.png?raw=true" alt="Diseño del diagrama frontend de Alerting and Notification Management."> <br>
++ **Clinical Risk Assessment** <br>
 
-Muestra los componentes encargados de la experiencia de notificación. Incluye el manejador de Service Workers para notificaciones push, el componente de "Feed de Alertas" y los interceptores que reaccionan a eventos críticos del backend para mostrar avisos visuales inmediatos al usuario.
+<img src="Resources/Images/C4-Diagrams/Frontend-Diagrams/clinical_risk_components.png" alt="Diseño del diagrama de componentes del módulo de Clinical Risk Assessment"/> <br>
 
-### Identity and Access Management
+Este diagrama muestra el módulo encargado de visualizar datos biométricos, puntaje de fatiga y nivel de riesgo clínico. Sus componentes permiten consultar el estado personal del médico y los indicadores de riesgo para supervisión.
 
-<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/C4-Diagrams/Frontend-Diagrams/Indentity_Diagram.png?raw=true" alt="Diseño del diagrama frontend de Identity and Access Management."> <br>
++ **Incident & Escalation Management** <br> 
 
-Este diagrama ilustra la integración con el proveedor de identidad (Auth0) desde la perspectiva del cliente. Detalla la gestión de tokens JWT, la persistencia de la sesión en el navegador y los "Guards" o protectores de rutas que restringen el acceso a vistas específicas según el rol del usuario.
+<img src="Resources/Images/C4-Diagrams/Frontend-Diagrams/incident_components.png" alt="Diseño del diagrama de componentes del módulo de Incident & Escalation Management"/> <br>
 
-### Medical Staff Management
+Este diagrama representa el módulo de incidentes y escalamiento. Permite visualizar incidentes abiertos, alertas pendientes y casos escalados, apoyando la respuesta del supervisor clínico o director médico ante riesgos detectados.
 
-<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/C4-Diagrams/Frontend-Diagrams/Staff_Diagram.png?raw=true" alt="Diseño del diagrama frontend de Medical Staff Management."> <br>
++ **Shift Coordination**  <br>
 
-Describe los componentes de interfaz para la gestión del personal. Se centra en los módulos de filtrado dinámico, formularios de registro con validación en el lado del cliente y la sincronización con el servicio de búsqueda del backend.
+<img src="Resources/Images/C4-Diagrams/Frontend-Diagrams/coordination_components.png" alt="Diseño del diagrama de componentes del módulo de Shift Coordination"/> <br>
 
-### Medical Device Management
+Este diagrama muestra el módulo de coordinación de turnos. Sus componentes permiten revisar turnos críticos, bloqueos preventivos, sugerencias de reemplazo y redistribución de carga médica.
 
-<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/C4-Diagrams/Frontend-Diagrams/Device_Diagram.png?raw=true" alt="Diseño del diagrama frontend de Medical Device Management."> <br>
++ **Staff Recovery**  <br>
 
-Muestra la lógica necesaria para la vinculación de hardware. Incluye los pasos de configuración guiada (wizards), la visualización del estado de conexión de los dispositivos IoT y la interfaz para el ajuste de umbrales de alerta personalizados.
+<img src="Resources/Images/C4-Diagrams/Frontend-Diagrams/staff_recovery_components.png" alt="Diseño del diagrama de componentes del módulo de Staff Recovery"/> <br>
 
-### Medical Rest Management
+Este diagrama representa el módulo de recuperación del personal médico. Permite visualizar recomendaciones de descanso, planes de recuperación y el estado de aceptación o rechazo por parte del personal médico.
 
-<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/C4-Diagrams/Frontend-Diagrams/Rest_Diagram.png?raw=true" alt="Diseño del diagrama frontend de Medical Rest Management."> <br>
++ **Audit & Compliance**  <br>
 
-Representa la interfaz de calendario y el sistema de recomendaciones. Detalla cómo los componentes de UI transforman las sugerencias del backend en elementos visuales interactivos para que el personal pueda programar y confirmar sus descansos médicos.
+<img src="Resources/Images/C4-Diagrams/Frontend-Diagrams/audit_components.png" alt="Diseño del diagrama de componentes del módulo de Audit & Compliance"/> <br>
 
-### Medical Shift Management
+Este diagrama muestra el módulo de auditoría y cumplimiento. Permite consultar registros de auditoría, decisiones críticas y reportes de cumplimiento generados a partir de eventos importantes del sistema.
 
-<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/C4-Diagrams/Frontend-Diagrams/Shift_Diagram.png?raw=true" alt="Diseño del diagrama frontend de Medical Shift Management."> <br>
++ **Shared Module**  <br>
 
-Este diagrama detalla la arquitectura de la vista de planificación de turnos. Incluye componentes de drag-and-drop para la asignación de horarios y la lógica de validación visual que previene conflictos de disponibilidad antes de enviar los cambios al servidor.
+<img src="Resources/Images/C4-Diagrams/Frontend-Diagrams/shared_module_components.png" alt="Diseño del diagrama de componentes del módulo compartido del frontend"/> <br>
 
-### Subscription and Payment Management
-
-<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/C4-Diagrams/Frontend-Diagrams/Subscription_Diagram.png?raw=true" alt="Diseño del diagrama frontend de Subscription and Payment Management."> <br>
-
-Muestra la integración con los elementos de pago seguros (Stripe Elements). Se enfoca en el flujo de navegación para la selección de planes, la gestión de estados de pago (éxito/error) y la visualización del historial de facturación del usuario.
+Este diagrama representa el módulo compartido del frontend. Centraliza elementos reutilizables como layout, navegación, componentes visuales, servicios comunes, tipos compartidos e infraestructura HTTP utilizada por los demás módulos de CortiSense.
 
 ### 4.6.5. Software Architecture Backend Components Diagrams.
 
