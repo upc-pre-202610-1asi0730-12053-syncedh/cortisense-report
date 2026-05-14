@@ -1860,48 +1860,316 @@ En esta sección se detallan los esquemas de baja fidelidad, estructurados segú
 ## 4.5. Web Applications Prototyping.
 ## 4.6. Domain-Driven Software Architecture.
 ### 4.6.1. Design-Level Event Storming.
+#### 4.6.1.1. Event Storming Notation Guide.
 
-En esta sección se presenta el Design-Level Event Storming desarrollado para CortiSense, con el objetivo de refinar el dominio del problema e identificar con mayor nivel de detalle los eventos, comandos, políticas, agregados y bounded contexts del sistema. Esta etapa permitió mejorar la comprensión de los principales procesos y definir con mayor precisión las responsabilidades de cada parte del sistema.
+Para la elaboración del Design-Level Event Storming de CortiSense se utilizó una notación visual basada en colores, con el propósito de diferenciar actores, comandos, eventos, políticas, agregados, vistas de consulta y sistemas externos dentro del flujo de dominio.
 
-La sesión fue realizada de manera colaborativa en el programa Miro a partir del Big Picture Event Storming previamente elaborado. Durante el proceso se identificaron los flujos principales del sistema, se definieron comandos, eventos de dominio y políticas, y posteriormente se agruparon en bounded contexts. Para mantener consistencia con los artefactos de arquitectura, la nomenclatura utilizada en los diagramas se encuentra en inglés.
+| Element | Color | Descripción |
+|---|---|---|
+| Actor | Amarillo | Rol de usuario que ejecuta acciones dentro del sistema. |
+| Command | Azul | Intención o acción que desencadena un evento dentro de CortiSense. |
+| Domain Event | Naranja | Hecho relevante que ya ocurrió en el dominio de monitoreo y gestión de salud. |
+| Policy | Morado | Regla de negocio que reacciona ante eventos del sistema. |
+| Aggregate | Amarillo claro | Objeto de dominio que protege reglas e invariantes del sistema. |
+| Read Model | Verde | Vista de consulta usada para apoyar decisiones clínicas, preventivas o de seguimiento. |
+| External System | Rosado | Servicio externo integrado con CortiSense. |
 
-A continuación, se muestra la representación general del Design-Level Event Storming del sistema:
+<br>
+<img src="Resources/Images/Desing-Level-Event-Storming/notation_guide.jpg" alt="Guía de notación para el Event Storming de diseño de CortiSense"/>
 
-<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/Desing-Level-Event-Storming/desing_level_event_storming.jpg?raw=true" alt="Design level event storming del funcionamiento de CortiSense">
-<br><br>
+#### 4.6.1.2. Domain Event Discovery
 
-En conjunto, estos bounded contexts permiten representar el flujo completo del sistema, desde la captura y almacenamiento de datos biométricos, su análisis y detección de estados, hasta la generación de alertas y la gestión operativa y administrativa de la plataforma.
+<img src="Resources/Images/Desing-Level-Event-Storming/domain_event_discovery.jpg" alt="Diseño del diagrama de descubrimiento de eventos de dominio."> <br>
 
-A partir del análisis realizado, se identificaron bounded contexts que cumplen distintos roles dentro del sistema. Algunos representan el núcleo funcional de la solución, como Stress and Fatigue Analysis y Medical Rest Management, mientras que otros cumplen funciones de soporte, como Identity and Access Management y Subscription and Payment Management.
+En esta fase inicial, el objetivo fue reconocer los hechos importantes que ocurren dentro del sistema y que permiten representar el dominio desde una perspectiva orientada al monitoreo preventivo del estrés, la fatiga laboral, la continuidad operativa hospitalaria y la gestión segura del bienestar del personal médico.
 
-A continuación, se describe cada bounded context de manera individual.
+Los eventos fueron agrupados en siete bounded contexts:
 
-  * **Stress and Fatigue Analysis:** Este bounded context se encarga de analizar los datos biométricos capturados por los dispositivos, con el fin de identificar si el estado del médico se encuentra dentro de niveles normales o si presenta valores críticos.<br><br>
-  <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/Desing-Level-Event-Storming/stress_and_fatigue.jpg?raw=true" alt="Event Storming del bounded context de Análisis de Estado">
++ **Subscription & Plan Management:**  
+Gestiona la selección del plan, confirmación del pago, activación de la suscripción y habilitación de funcionalidades contratadas dentro de CortiSense.
 
-  * **Biometric Data Management:** Este bounded context gestiona el almacenamiento, actualización y respaldo de los datos biométricos obtenidos desde los dispositivos, asegurando su persistencia y disponibilidad para su posterior análisis. <br><br>
-  <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/Desing-Level-Event-Storming/biometric_data.jpg?raw=true" alt="Event Storming del bounded context de Gestión de Datos Biométricos">
++ **Identity & Access Management:**  
+Administra el registro, autenticación, invitaciones, asignación de roles y control de acceso de los usuarios dentro de la cuenta institucional.
 
-  * **Alerting and Notification Management:** Este bounded context se encarga de generar y enviar alertas y notificaciones cuando se detectan condiciones relevantes, permitiendo informar tanto al médico como a los administradores del sistema. <br><br>
-  <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/Desing-Level-Event-Storming/alerting_and_notification.jpg?raw=true" alt="Event Storming del bounded context de Gestión de Alertas y Notificaciones">
++ **Clinical Risk Assessment:**  
+Procesa datos biométricos relacionados con el nivel de cortisol, la variabilidad de la frecuencia cardíaca y otros indicadores fisiológicos para calcular niveles de estrés, fatiga y posibles riesgos asociados al agotamiento del personal médico.
 
-  * **Medical Rest Management:** Este bounded context gestiona la programación, modificación y validación de los periodos de descanso del personal médico, incluyendo recomendaciones basadas en el estado del usuario. <br><br>
-  <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/Desing-Level-Event-Storming/medical_rest.jpg?raw=true" alt="Event Storming del bounded context de Gestión de Descansos Médicos">
++ **Incident & Escalation Management:**  
+Gestiona la apertura de incidentes, asignación de prioridad, envío de alertas al supervisor y escalamiento a responsables médicos o administrativos cuando se detectan condiciones críticas o no existe una respuesta oportuna.
 
-  * **Medical Shift Management:** Este bounded context administra la asignación, validación y reprogramación de turnos médicos, asegurando la disponibilidad del personal. <br><br>
-  <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/Desing-Level-Event-Storming/medical_shift.jpg?raw=true" alt="Event Storming del bounded context de Gestión de Turnos Médicos">
++ **Shift Coordination:**  
+Evalúa turnos críticos, detecta sobrecarga laboral, bloquea asignaciones riesgosas y permite sugerir reemplazos para mantener la continuidad operativa sin comprometer el bienestar del personal sanitario.
 
-  * **Medical Device Management:** Este bounded context gestiona la vinculación de dispositivos médicos con las cuentas de usuario, así como la configuración de umbrales para el monitoreo. <br><br>
-  <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/Desing-Level-Event-Storming/medical_device.jpg?raw=true" alt="Event Storming del bounded context de Gestión de Dispositivos Médicos">
++ **Staff Recovery:**  
+Gestiona recomendaciones de descanso, notificación al personal médico y seguimiento de la aceptación o rechazo del plan de recuperación sugerido por CortiSense.
 
-  * **Medical Staff Management:** Este bounded context permite la gestión del personal médico, incluyendo su registro y búsqueda dentro del sistema. <br><br>
-  <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/Desing-Level-Event-Storming/medical_staff.jpg?raw=true" alt="Event Storming del bounded context de Gestión de Personal Médico">
++ **Audit & Compliance:**  
+Registra decisiones críticas, acciones del supervisor, bloqueos de turno, alertas generadas y reportes de cumplimiento para asegurar trazabilidad institucional y respaldo en la toma de decisiones.
 
-  * **Identity and Access Management:** Este bounded context se encarga de la creación, verificación y control de acceso de las cuentas de usuario dentro de la plataforma. <br><br>
-  <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/Desing-Level-Event-Storming/identity_and_access.jpg?raw=true" alt="Event Storming del bounded context de Gestión de Identidad y Acceso">
+#### 4.6.1.3. Operational Event Flows
 
-  * **Subscription and Payment Management:** Este bounded context gestiona los planes de suscripción, pagos y el acceso a funcionalidades del sistema según el estado de la suscripción. <br><br>
-  <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/Desing-Level-Event-Storming/subscription_and_payment.jpg?raw=true" alt="Event Storming del bounded context de Suscripciones y Gestión de Pagos">
+<img src="Resources/Images/Desing-Level-Event-Storming/operational_event_flows.jpg" alt="Diseño del diagrama de flujos operativos de eventos."> <br>
+
+En esta etapa, los eventos identificados previamente fueron organizados en secuencias operativas para representar cómo evoluciona cada proceso dentro de CortiSense. A diferencia de la fase inicial, aquí se define un orden lógico entre eventos, permitiendo visualizar cómo una acción, condición fisiológica o situación operativa puede desencadenar nuevos procesos dentro del sistema.
+
+Los flujos fueron organizados según los bounded contexts definidos:
+
++ **Subscription & Plan Management:**  
+Representa el flujo comercial inicial de la institución, desde la selección del plan hasta la activación de la suscripción y habilitación de funcionalidades contratadas en CortiSense. También contempla la restricción de acceso cuando la suscripción expira.
+
++ **Identity & Access Management:**  
+Describe el proceso de incorporación de usuarios mediante invitaciones. El administrador institucional invita a los usuarios, estos aceptan la invitación, completan su registro, reciben un rol y acceden al sistema según los permisos asignados.
+
++ **Clinical Risk Assessment:**  
+Muestra cómo CortiSense recibe datos biométricos relacionados con el cortisol, la variabilidad de la frecuencia cardíaca y otros indicadores fisiológicos, calcula el nivel de estrés o fatiga y actualiza el nivel de riesgo del personal médico. A partir de esta evaluación, el sistema puede detectar estrés elevado, anomalías biométricas o riesgo crítico de agotamiento.
+
++ **Incident & Escalation Management:**  
+Representa el flujo de gestión de incidentes cuando se detecta un riesgo asociado al estrés, fatiga o agotamiento del personal médico. El incidente se abre, se asigna una prioridad y se alerta al supervisor correspondiente. Si no existe una respuesta oportuna, el riesgo puede escalarse a responsables médicos o administrativos.
+
++ **Shift Coordination:**  
+Describe el proceso de evaluación de turnos críticos. Cuando se identifica riesgo elevado, sobrecarga laboral o una condición fisiológica desfavorable, CortiSense puede bloquear una asignación riesgosa, sugerir un reemplazo y apoyar la redistribución de la carga laboral para mantener la continuidad operativa.
+
++ **Staff Recovery:**  
+Representa el flujo de recuperación del personal médico. El sistema identifica la necesidad de descanso, emite una recomendación preventiva, notifica al profesional y registra si el plan de recuperación fue aceptado o rechazado.
+
++ **Audit & Compliance:**  
+Funciona como un flujo transversal. Registra evaluaciones de riesgo, alertas generadas, decisiones críticas, acciones del supervisor y bloqueos de turno, manteniendo trazabilidad institucional para reportes de cumplimiento y respaldo en la toma de decisiones.
+
+#### 4.6.1.4. Friction and Risk Points
+
+<img src="Resources/Images/Desing-Level-Event-Storming/friction_and_risk_points.jpg" alt="Diseño del diagrama de puntos de fricción y riesgo."> <br>
+
+En esta etapa, se identificaron los principales puntos de fricción que pueden afectar los procesos operativos, administrativos y preventivos de CortiSense. Estos puntos representan situaciones donde el flujo puede retrasarse, generar errores, producir alertas incorrectas o requerir mayor atención por parte de los usuarios responsables.
+
+Los principales friction and risk points identificados fueron:
+
++ **Payment Confirmation Delay:**  
+Puede ocurrir cuando la confirmación del pago de la suscripción tarda o falla, retrasando la activación del servicio para la institución.
+
++ **Invitation Acceptance Friction:**  
+Se presenta cuando un usuario invitado no comprende el proceso de aceptación o intenta registrarse sin estar vinculado a una cuenta institucional.
+
++ **Incomplete Biometric Data:**  
+Ocurre cuando los datos biométricos recibidos son incompletos, desactualizados o inconsistentes, afectando el cálculo del nivel de estrés, fatiga o riesgo asociado al personal médico.
+
++ **Risk Misclassification:**  
+Puede generarse cuando el sistema clasifica incorrectamente el nivel de riesgo, provocando alertas innecesarias o la omisión de un caso crítico relacionado con estrés elevado, fatiga extrema o agotamiento laboral.
+
++ **Supervisor Response Delay:**  
+Se produce cuando el supervisor no atiende oportunamente una alerta de riesgo, retrasando la intervención preventiva sobre el personal médico afectado.
+
++ **Escalation Delay:**  
+Aparece cuando un incidente crítico no escala a tiempo hacia los responsables médicos o administrativos luego de que el supervisor no responde.
+
++ **Replacement Not Available:**  
+Se presenta cuando el sistema bloquea una asignación riesgosa, pero no existe un reemplazo disponible para mantener la continuidad operativa del servicio.
+
++ **Unresolved Recovery Refusal:**  
+Ocurre cuando el personal médico rechaza una recomendación de descanso o recuperación y el rechazo queda pendiente de seguimiento.
+
++ **Missing Audit Evidence:**  
+Se genera cuando una decisión crítica, alerta, acción del supervisor, recomendación de descanso o bloqueo de turno no queda correctamente registrada en el historial de auditoría.
+
+#### 4.6.1.5. Critical Decision Events
+
+<img src="Resources/Images/Desing-Level-Event-Storming/critical_decision_events.jpg" alt="Diseño del diagrama de eventos de decisión crítica."> <br>
+
+En esta etapa, se identificaron los eventos que representan puntos clave de decisión dentro de CortiSense. Estos eventos marcan cambios importantes en el flujo del sistema, ya que pueden activar procesos críticos como apertura de incidentes, escalamiento, bloqueo de asignaciones, recuperación del personal médico o generación de evidencia institucional.
+
+Los principales critical decision events identificados fueron:
+
++ **SubscriptionActivated:**  
+Indica que la suscripción de la institución se encuentra activa y que CortiSense puede habilitar las funcionalidades correspondientes al plan contratado.
+
++ **RoleAssigned:**  
+Define el nivel de acceso del usuario dentro de la cuenta institucional, permitiendo diferenciar responsabilidades entre administrador, personal médico, supervisor y responsables médicos o administrativos.
+
++ **ClinicalRiskDetected:**  
+Marca el momento en que CortiSense identifica un riesgo asociado al estrés, fatiga o agotamiento del personal médico a partir de los datos biométricos y fisiológicos procesados.
+
++ **ExtremeRiskDetected:**  
+Representa una condición crítica relacionada con estrés elevado, fatiga extrema o indicadores fisiológicos desfavorables, la cual puede activar procesos de bloqueo de turno o evaluación de asignaciones riesgosas.
+
++ **RiskIncidentOpened:**  
+Convierte un riesgo detectado en un incidente formal que debe ser gestionado por el personal responsable.
+
++ **SupervisorResponseTimedOut:**  
+Indica que el supervisor no respondió dentro del tiempo esperado, por lo que el sistema debe activar un proceso de escalamiento.
+
++ **RiskEscalated:**  
+Señala que el incidente fue elevado a una autoridad superior o responsable institucional para asegurar una atención oportuna.
+
++ **ShiftBlocked:**  
+Representa una acción preventiva para evitar que un profesional médico en condición de riesgo sea asignado a un turno, procedimiento o actividad crítica.
+
++ **ShiftReassigned:**  
+Confirma que la carga laboral fue reasignada para mantener la continuidad operativa de la institución sin comprometer el bienestar del personal médico.
+
++ **RecoveryPlanRejected:**  
+Indica que el personal médico rechazó una recomendación de descanso o recuperación, por lo que CortiSense debe registrar esta decisión y mantenerla disponible para seguimiento.
+
++ **RecoveryConfirmed:**  
+Confirma que el proceso de recuperación fue completado satisfactoriamente o que el personal médico aceptó y cumplió la recomendación preventiva.
+
++ **AuditLogUpdated:**  
+Consolida la trazabilidad de las decisiones críticas, alertas, intervenciones y acciones tomadas dentro de CortiSense.
+
+#### 4.6.1.6. Actor and System Commands
+
+<img src="Resources/Images/Desing-Level-Event-Storming/actor_and_system_commands.jpg" alt="Diseño del diagrama de comandos impulsados por actores y el sistema"> <br>
+
+En esta etapa, se identificaron los comandos que permiten desencadenar eventos dentro de CortiSense. Estos comandos representan acciones intencionales que pueden ser ejecutadas directamente por los actores del sistema o disparadas automáticamente por políticas de negocio relacionadas con el monitoreo del estrés, la fatiga y el bienestar del personal médico.
+
+Para mantener claridad en el modelo, los comandos se clasificaron en dos tipos: comandos ejecutados por usuarios y comandos ejecutados como respuesta automática del sistema ante eventos del dominio.
+
++ **Subscription & Plan Management:**  
+Este contexto agrupa los comandos relacionados con la selección del plan, confirmación de pago y activación de funcionalidades contratadas. El `Institutional Administrator` ejecuta comandos como `SelectSubscriptionPlan` y `ConfirmSubscriptionPayment`, mientras que el sistema puede ejecutar `ActivateSubscription`, `EnablePlanFeatures` y `RestrictFeatureAccess` según el estado de la suscripción.
+
++ **Identity & Access Management:**  
+Incluye los comandos necesarios para registrar usuarios, aceptar invitaciones, asignar roles y controlar accesos dentro de la cuenta institucional. El `Institutional Administrator` puede ejecutar `RegisterInstitutionalAdministrator`, `InviteUser` y `AssignUserRole`. Los demás usuarios pueden ejecutar `AcceptInvitation`, `CompleteUserRegistration`, `SignIn`, `RequestAccess` y `SignOut`. En caso de permisos inválidos, el sistema puede ejecutar `RejectUnauthorizedAccess`.
+
++ **Clinical Risk Assessment:**  
+Contiene los comandos encargados de procesar datos biométricos y evaluar el nivel de riesgo asociado al estrés, fatiga o agotamiento del personal médico. El `Medical Staff` puede iniciar la sincronización mediante `SyncBiometricData`. A partir de ello, el sistema ejecuta comandos como `CalculateStressLevel`, `CalculateFatigueScore`, `UpdateRiskLevel`, `DetectCortisolThreshold`, `DetectBiometricAnomaly`, `DetectClinicalRisk` y `DetectExtremeRisk`.
+
++ **Incident & Escalation Management:**  
+Este contexto reúne los comandos relacionados con la apertura, atención y escalamiento de incidentes generados por condiciones de estrés elevado, fatiga extrema o riesgo crítico. El sistema puede ejecutar `OpenRiskIncident`, `AssignIncidentPriority`, `AlertSupervisor`, `MarkSupervisorResponseTimeout`, `EscalateRisk` y `NotifyResponsibleAuthority`. Por su parte, el `Clinical Supervisor` y los responsables médicos o administrativos pueden ejecutar comandos como `AcknowledgeRisk`, `ResolveIncident`, `ReviewEscalatedRisk`, `ResolveEscalatedIncident` y `CloseIncident`.
+
++ **Shift Coordination:**  
+Agrupa los comandos orientados a evaluar turnos críticos, bloquear asignaciones riesgosas y reasignar carga laboral. El `Clinical Supervisor` puede ejecutar `EvaluateCriticalShift`, `RequestShiftReassignment` y `ReassignShift`. Los responsables institucionales pueden autorizar decisiones críticas mediante `AuthorizeShiftReassignment`. Además, el sistema puede ejecutar `DetectShiftOverload`, `BlockShift`, `SuggestReplacement` y `RedistributeWorkload`.
+
++ **Staff Recovery:**  
+Este contexto contiene comandos asociados a la recomendación y seguimiento de recuperación del personal médico. El `Clinical Supervisor` puede ejecutar `IssueRecoveryRecommendation`, `SuggestRestPeriod` y `ConfirmRecovery`. El `Medical Staff` puede ejecutar `AcceptRecoveryPlan` o `RejectRecoveryPlan`. El sistema puede complementar el flujo con `DetectRecoveryNeed`, `NotifyMedicalStaff` y `RecordRecoveryRejection`.
+
++ **Audit & Compliance:**  
+Incluye comandos destinados a registrar evidencia y generar trazabilidad institucional. La mayoría son ejecutados automáticamente por políticas de auditoría, como `RecordRiskAssessment`, `RecordCriticalDecision`, `RecordSupervisorAction`, `RecordShiftBlocking` y `UpdateAuditLog`. Finalmente, el `Institutional Administrator` o los responsables médicos y administrativos pueden ejecutar `GenerateComplianceReport` para consultar evidencia consolidada sobre riesgos detectados, intervenciones realizadas y decisiones preventivas tomadas dentro de CortiSense.
+
+#### 4.6.1.7. Business Policies and Automated Reactions
+
+<img src="Resources/Images/Desing-Level-Event-Storming/business_policies_and_automated_reactions.jpg" alt="Diseño del diagrama de políticas de negocio y reacciones automatizadas."> <br>
+
+En esta etapa, se definieron las políticas de negocio que permiten que CortiSense reaccione automáticamente ante eventos relevantes del dominio. Estas políticas representan reglas que conectan eventos con nuevos comandos, permitiendo automatizar decisiones como activación de suscripciones, evaluación de indicadores biométricos, clasificación del riesgo por estrés o fatiga, apertura de incidentes, escalamiento, bloqueo de turnos, recomendaciones de recuperación y registro de auditoría.
+
++ **Subscription & Plan Management:**  
+Las políticas de este contexto controlan la activación del servicio según el estado de pago y suscripción. `PaidSubscriptionConfirmedPolicy` permite activar la suscripción después de confirmar el pago, `ActiveSubscriptionFeaturePolicy` habilita las funcionalidades del plan contratado y `ExpiredSubscriptionRestrictionPolicy` restringe el acceso cuando la suscripción vence.
+
++ **Identity & Access Management:**  
+Este contexto usa políticas para validar el acceso de los usuarios según sus roles dentro de la cuenta institucional. `RoleBasedAccessPolicy` permite conceder acceso después de asignar un rol, mientras que `PermissionValidationPolicy` verifica si el usuario tiene permisos suficientes para ejecutar una acción dentro de CortiSense.
+
++ **Clinical Risk Assessment:**  
+Las políticas de este contexto procesan los datos biométricos y determinan el nivel de riesgo asociado al estrés, fatiga o agotamiento del personal médico. `StressLevelEvaluationPolicy` calcula el nivel de estrés a partir de indicadores como cortisol, variabilidad de la frecuencia cardíaca y otros datos fisiológicos. `RiskLevelClassificationPolicy` clasifica el nivel de riesgo, `CortisolThresholdPolicy` detecta umbrales elevados, `BiometricAnomalyPolicy` identifica anomalías y `ExtremeRiskPolicy` reconoce condiciones críticas que requieren intervención preventiva.
+
++ **Incident & Escalation Management:**  
+Este contexto aplica políticas para gestionar incidentes generados por riesgos asociados al bienestar del personal médico. `DetectedRiskIncidentPolicy` abre un incidente cuando se detecta un riesgo clínico u ocupacional, `IncidentPriorityPolicy` asigna su prioridad, `SupervisorNotificationPolicy` alerta al supervisor, `SupervisorTimeoutPolicy` detecta la falta de respuesta y `UnattendedRiskEscalationPolicy` escala el caso a los responsables médicos o administrativos correspondientes.
+
++ **Shift Coordination:**  
+Las políticas de este contexto apoyan la continuidad operativa sin comprometer el bienestar del personal sanitario. `UnsafeShiftDetectionPolicy` detecta asignaciones riesgosas, `CriticalShiftBlockingPolicy` bloquea turnos críticos, `ReplacementSelectionPolicy` sugiere reemplazos disponibles y `WorkloadRedistributionPolicy` actualiza la distribución de carga laboral.
+
++ **Staff Recovery:**  
+Este contexto utiliza políticas para gestionar la recuperación del personal médico. `RecoveryNeedPolicy` detecta la necesidad de descanso o recuperación, `RecoveryNotificationPolicy` notifica al personal médico sobre recomendaciones preventivas y `RecoveryRefusalTrackingPolicy` registra el rechazo de un plan de recuperación para mantener seguimiento posterior.
+
++ **Audit & Compliance:**  
+Las políticas de auditoría registran evidencia de eventos críticos dentro de CortiSense. `RiskAssessmentAuditPolicy`, `CriticalDecisionAuditPolicy`, `SupervisorActionAuditPolicy` y `ShiftBlockingAuditPolicy` guardan trazabilidad de evaluaciones, alertas, decisiones preventivas, acciones del supervisor y bloqueos de turno. Finalmente, `AuditTrailSynchronizationPolicy` actualiza el historial de auditoría para mantener evidencia institucional consolidada.
+
+#### 4.6.1.8. Decision Support Read Models
+
+<img src="Resources/Images/Desing-Level-Event-Storming/read_models.jpg" alt="Diseño del diagrama de read models de soporte a la decisión."> <br>
+
+En esta etapa, se identificaron los read models necesarios para que los usuarios de CortiSense puedan consultar información relevante y tomar decisiones dentro del sistema. Estas vistas no representan la lógica principal del dominio, sino proyecciones de información generadas a partir de los eventos, comandos y políticas previamente definidos.
+
++ **Subscription & Plan Management:**  
+Incluye vistas como `Subscription Plan View`, `Active Subscription Summary` y `Available Features View`, que permiten al `Institutional Administrator` revisar el plan contratado, el estado de la suscripción y las funcionalidades disponibles dentro de CortiSense.
+
++ **Identity & Access Management:**  
+Considera read models como `User Management View`, `Role Assignment View` y `Access Status View`, utilizados para visualizar usuarios invitados, cuentas registradas, roles asignados y permisos activos dentro de la cuenta institucional.
+
++ **Clinical Risk Assessment:**  
+Contiene vistas como `Personal Risk Status View`, `Clinical Risk Dashboard` y `Biometric Data Summary`. Estas permiten al personal médico consultar su propio estado de riesgo y a los supervisores revisar indicadores relacionados con cortisol, estrés, fatiga, anomalías biométricas o riesgo de agotamiento laboral.
+
++ **Incident & Escalation Management:**  
+Incluye `Incident Management View`, `Supervisor Alert Queue` y `Escalated Incident View`, que permiten gestionar incidentes abiertos, alertas pendientes y casos escalados a responsables médicos o administrativos.
+
++ **Shift Coordination:**  
+Utiliza vistas como `Shift Risk View`, `Replacement Suggestions View` y `Workload Distribution View`, orientadas a revisar turnos críticos, reemplazos sugeridos y redistribución de carga laboral cuando se detectan condiciones de riesgo en el personal médico.
+
++ **Staff Recovery:**  
+Considera `Recovery Recommendation View` y `Recovery Status View`, que permiten al personal médico revisar recomendaciones de descanso y al supervisor monitorear la aceptación, rechazo o confirmación de recuperación.
+
++ **Audit & Compliance:**  
+Incluye `Audit Log View` y `Compliance Report View`, destinadas a consultar registros de auditoría, decisiones críticas, alertas generadas, bloqueos de turno y reportes de cumplimiento institucional.
+
+#### 4.6.1.9. Integrated External Services
+
+<img src="Resources/Images/Desing-Level-Event-Storming/integrated_external_services.jpg" alt="Diseño del diagrama de servicios externos integrados."> <br>
+
+En esta etapa, se identificaron los sistemas externos que interactúan con CortiSense para complementar sus procesos principales. Estos servicios permiten cubrir funcionalidades relacionadas con pagos, autenticación, envío de correos y simulación o recepción de datos biométricos asociados al monitoreo del estrés y la fatiga del personal médico.
+
++ **Stripe Sandbox:**  
+Se utiliza para simular el pago de suscripciones de los planes contratados por la institución. Este servicio se relaciona con el flujo de `Subscription & Plan Management`, especialmente entre el comando `ConfirmSubscriptionPayment` y el evento `SubscriptionPaymentConfirmed`.
+
++ **Firebase Authentication:**  
+Permite gestionar el registro, inicio de sesión y cierre de sesión de los usuarios. Este sistema externo apoya al contexto de `Identity & Access Management`, principalmente en eventos como `UserRegistered`, `UserAuthenticated` y `UserLoggedOut`.
+
++ **Resend Email API:**  
+Se utiliza para enviar correos relacionados con invitaciones, alertas y notificaciones importantes. Participa en procesos como `UserInvited`, `SupervisorAlerted`, `ResponsibleAuthorityNotified` y `MedicalStaffNotified`.
+
+#### 4.6.1.10. Domain Aggregates and Responsibility Boundaries
+
+<img src="Resources/Images/Desing-Level-Event-Storming/domain_aggregates.jpg" alt="Diseño del diagrama de aggregates y límites de responsabilidad."> <br>
+
+En esta etapa, se identificaron los aggregates principales de CortiSense. Cada aggregate representa un objeto de dominio encargado de proteger reglas, validar cambios de estado y mantener la consistencia dentro de su bounded context.
+
++ **Subscription:**  
+Pertenece a `Subscription & Plan Management` y controla la selección del plan, activación de la suscripción, habilitación de funcionalidades y restricción de acceso cuando la suscripción expira.
+
++ **InstitutionalWorkspace:**  
+Pertenece a `Identity & Access Management` y representa el espacio institucional donde se gestionan los usuarios vinculados a CortiSense. Administra invitaciones, roles y accesos dentro de una cuenta institucional.
+
++ **UserAccount:**  
+También pertenece a `Identity & Access Management` y representa la cuenta individual del usuario. Controla el registro, autenticación y cierre de sesión.
+
++ **RiskAssessment:**  
+Pertenece a `Clinical Risk Assessment` y centraliza la evaluación de datos biométricos y fisiológicos. Permite calcular niveles de estrés, fatiga y riesgo asociado al agotamiento del personal médico, considerando indicadores como cortisol, variabilidad de la frecuencia cardíaca y anomalías biométricas.
+
++ **RiskIncident:**  
+Pertenece a `Incident & Escalation Management` y gestiona el ciclo de vida de un incidente, desde su apertura hasta su resolución o escalamiento a responsables médicos o administrativos.
+
++ **ShiftAssignment:**  
+Pertenece a `Shift Coordination` y controla la evaluación de turnos críticos, bloqueo de asignaciones riesgosas, sugerencia de reemplazos y redistribución de carga laboral.
+
++ **RecoveryPlan:**  
+Pertenece a `Staff Recovery` y gestiona las recomendaciones de descanso, aceptación o rechazo del plan y confirmación de recuperación del personal médico.
+
++ **AuditTrail:**  
+Pertenece a `Audit & Compliance` y registra las decisiones críticas del sistema, manteniendo trazabilidad sobre evaluaciones de riesgo, incidentes, alertas, acciones del supervisor, recomendaciones de recuperación y bloqueos de turno.
+
+#### 4.6.1.11. Bounded Contexts
+
+<img src="Resources/Images/Desing-Level-Event-Storming/bounded_contexts.jpg" alt="Diseño del event storming por bounded contexts."> <br>
+
+Enlace: https://miro.com/app/board/uXjVHfjcSSw=/
+
+A partir del Design-Level Event Storming, se definieron los bounded contexts principales de CortiSense. Cada contexto delimita una responsabilidad específica del dominio y evita mezclar reglas de negocio que pertenecen a procesos distintos.
+
++ **Subscription & Plan Management:**  
+Gestiona los planes de pago, la activación de suscripciones y la habilitación de funcionalidades según el plan contratado por la institución.
+
++ **Identity & Access Management:**  
+Administra el registro de usuarios, invitaciones, autenticación, asignación de roles y control de acceso dentro de una cuenta institucional.
+
++ **Clinical Risk Assessment:**  
+Procesa datos biométricos y fisiológicos del personal médico, calcula niveles de estrés y fatiga, y determina riesgos asociados al agotamiento laboral o a condiciones críticas de salud ocupacional.
+
++ **Incident & Escalation Management:**  
+Gestiona incidentes generados por riesgos asociados al estrés, fatiga o agotamiento del personal médico, incluyendo alertas al supervisor, reconocimiento del riesgo y escalamiento a responsables médicos o administrativos.
+
++ **Shift Coordination:**  
+Evalúa turnos críticos, detecta sobrecarga laboral, bloquea asignaciones riesgosas y permite coordinar reemplazos para mantener la continuidad operativa sin comprometer el bienestar del personal médico.
+
++ **Staff Recovery:**  
+Gestiona recomendaciones de descanso, notificaciones al personal médico y seguimiento de los planes de recuperación sugeridos por CortiSense.
+
++ **Audit & Compliance:**  
+Registra decisiones críticas, acciones relevantes, alertas, evaluaciones de riesgo y eventos auditables para mantener trazabilidad institucional y generar reportes de cumplimiento.
 
 ### 4.6.2. Software Architecture Context Diagram.
 
@@ -1915,7 +2183,69 @@ El diagrama de contexto presenta a CortiSense como el sistema central. En este s
 
 El diagrama de contenedores muestra la organización general de CortiSense. Se observa la Web App, encargada de servir el contenido estático y la landing page, y la Single Page Application, que representa la aplicación interactiva usada por el personal médico y administrativo.
 
-### 4.6.4. Software Architecture Backend Components Diagrams.
+### 4.6.4. Software Architecture Frontend Components Diagrams.
+
+### CortiSense Single Page Application
+
+<img src="Resources/Images/C4-Diagrams/Frontend-Diagrams/SPA_Diagram.png?raw=true" alt="Diseño del diagrama frontend de CortiSense Single Page Application."> <br>
+
+Este diagrama muestra la relación entre la Single Page Application y la Rest API. Dentro del SPA se representan los bounded contexts identificados para organizar la lógica principal del fronted.
+
+### Stress and Fatigue Analysis
+
+<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/C4-Diagrams/Frontend-Diagrams/Stress_Diagram.png?raw=true" alt="Diseño del diagrama frontend de Stress and Fatigue Analysis."> <br>
+
+Este diagrama detalla los componentes de la interfaz encargados de la visualización de datos críticos. Incluye la lógica de los servicios de consumo de API que obtienen los resultados del análisis de estrés y los módulos de visualización (gráficos y medidores) que permiten al personal médico interpretar su estado de fatiga en tiempo real.
+
+### Biometric Data Management
+
+<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/C4-Diagrams/Frontend-Diagrams/Data_Diagram.png?raw=true" alt="Diseño del diagrama frontend de Biometric Data Management."> <br>
+
+Representa la lógica de presentación para los datos biométricos. Se enfoca en la gestión del flujo de datos desde los servicios de API hacia el State Store de la aplicación, permitiendo que la información de ritmo cardíaco y otros indicadores se actualicen dinámicamente en la UI sin recargar la página.
+
+### Alerting and Notification Management
+
+<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/C4-Diagrams/Frontend-Diagrams/Alerting_Diagram.png?raw=true" alt="Diseño del diagrama frontend de Alerting and Notification Management."> <br>
+
+Muestra los componentes encargados de la experiencia de notificación. Incluye el manejador de Service Workers para notificaciones push, el componente de "Feed de Alertas" y los interceptores que reaccionan a eventos críticos del backend para mostrar avisos visuales inmediatos al usuario.
+
+### Identity and Access Management
+
+<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/C4-Diagrams/Frontend-Diagrams/Indentity_Diagram.png?raw=true" alt="Diseño del diagrama frontend de Identity and Access Management."> <br>
+
+Este diagrama ilustra la integración con el proveedor de identidad (Auth0) desde la perspectiva del cliente. Detalla la gestión de tokens JWT, la persistencia de la sesión en el navegador y los "Guards" o protectores de rutas que restringen el acceso a vistas específicas según el rol del usuario.
+
+### Medical Staff Management
+
+<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/C4-Diagrams/Frontend-Diagrams/Staff_Diagram.png?raw=true" alt="Diseño del diagrama frontend de Medical Staff Management."> <br>
+
+Describe los componentes de interfaz para la gestión del personal. Se centra en los módulos de filtrado dinámico, formularios de registro con validación en el lado del cliente y la sincronización con el servicio de búsqueda del backend.
+
+### Medical Device Management
+
+<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/C4-Diagrams/Frontend-Diagrams/Device_Diagram.png?raw=true" alt="Diseño del diagrama frontend de Medical Device Management."> <br>
+
+Muestra la lógica necesaria para la vinculación de hardware. Incluye los pasos de configuración guiada (wizards), la visualización del estado de conexión de los dispositivos IoT y la interfaz para el ajuste de umbrales de alerta personalizados.
+
+### Medical Rest Management
+
+<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/C4-Diagrams/Frontend-Diagrams/Rest_Diagram.png?raw=true" alt="Diseño del diagrama frontend de Medical Rest Management."> <br>
+
+Representa la interfaz de calendario y el sistema de recomendaciones. Detalla cómo los componentes de UI transforman las sugerencias del backend en elementos visuales interactivos para que el personal pueda programar y confirmar sus descansos médicos.
+
+### Medical Shift Management
+
+<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/C4-Diagrams/Frontend-Diagrams/Shift_Diagram.png?raw=true" alt="Diseño del diagrama frontend de Medical Shift Management."> <br>
+
+Este diagrama detalla la arquitectura de la vista de planificación de turnos. Incluye componentes de drag-and-drop para la asignación de horarios y la lógica de validación visual que previene conflictos de disponibilidad antes de enviar los cambios al servidor.
+
+### Subscription and Payment Management
+
+<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/C4-Diagrams/Frontend-Diagrams/Subscription_Diagram.png?raw=true" alt="Diseño del diagrama frontend de Subscription and Payment Management."> <br>
+
+Muestra la integración con los elementos de pago seguros (Stripe Elements). Se enfoca en el flujo de navegación para la selección de planes, la gestión de estados de pago (éxito/error) y la visualización del historial de facturación del usuario.
+
+### 4.6.5. Software Architecture Backend Components Diagrams.
 
 ### REST API
 
@@ -1976,68 +2306,6 @@ Este diagrama muestra cómo se gestionan los turnos médicos, incluyendo asignac
 <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/C4-Diagrams/Backend-Diagrams/Subscription_Diagram.png?raw=true" alt="Diseño del diagrama de componentes de Subscription and Payment Management."> <br>
 
 Este diagrama muestra cómo se administran las suscripciones, pagos y acceso a funcionalidades de la plataforma.
-
-### 4.6.5. Software Architecture Frontend Components Diagrams.
-
-### CortiSense Single Page Application
-
-<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/C4-Diagrams/Frontend-Diagrams/SPA_Diagram.png?raw=true" alt="Diseño del diagrama frontend de CortiSense Single Page Application."> <br>
-
-Este diagrama muestra la relación entre la Single Page Application y la Rest API. Dentro del SPA se representan los bounded contexts identificados para organizar la lógica principal del fronted.
-
-### Stress and Fatigue Analysis
-
-<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/C4-Diagrams/Frontend-Diagrams/Stress_Diagram.png?raw=true" alt="Diseño del diagrama frontend de Stress and Fatigue Analysis."> <br>
-
-Este diagrama detalla los componentes de la interfaz encargados de la visualización de datos críticos. Incluye la lógica de los servicios de consumo de API que obtienen los resultados del análisis de estrés y los módulos de visualización (gráficos y medidores) que permiten al personal médico interpretar su estado de fatiga en tiempo real.
-
-### Biometric Data Management
-
-<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/C4-Diagrams/Frontend-Diagrams/Data_Diagram.png?raw=true" alt="Diseño del diagrama frontend de Biometric Data Management."> <br>
-
-Representa la lógica de presentación para los datos biométricos. Se enfoca en la gestión del flujo de datos desde los servicios de API hacia el State Store de la aplicación, permitiendo que la información de ritmo cardíaco y otros indicadores se actualicen dinámicamente en la UI sin recargar la página.
-
-### Alerting and Notification Management
-
-<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/C4-Diagrams/Frontend-Diagrams/Alerting_Diagram.png?raw=true" alt="Diseño del diagrama frontend de Alerting and Notification Management."> <br>
-
-Muestra los componentes encargados de la experiencia de notificación. Incluye el manejador de Service Workers para notificaciones push, el componente de "Feed de Alertas" y los interceptores que reaccionan a eventos críticos del backend para mostrar avisos visuales inmediatos al usuario.
-
-### Identity and Access Management
-
-<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/C4-Diagrams/Frontend-Diagrams/Indentity_Diagram.png?raw=true" alt="Diseño del diagrama frontend de Identity and Access Management."> <br>
-
-Este diagrama ilustra la integración con el proveedor de identidad (Auth0) desde la perspectiva del cliente. Detalla la gestión de tokens JWT, la persistencia de la sesión en el navegador y los "Guards" o protectores de rutas que restringen el acceso a vistas específicas según el rol del usuario.
-
-### Medical Staff Management
-
-<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/C4-Diagrams/Frontend-Diagrams/Staff_Diagram.png?raw=true" alt="Diseño del diagrama frontend de Medical Staff Management."> <br>
-
-Describe los componentes de interfaz para la gestión del personal. Se centra en los módulos de filtrado dinámico, formularios de registro con validación en el lado del cliente y la sincronización con el servicio de búsqueda del backend.
-
-### Medical Device Management
-
-<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/C4-Diagrams/Frontend-Diagrams/Device_Diagram.png?raw=true" alt="Diseño del diagrama frontend de Medical Device Management."> <br>
-
-Muestra la lógica necesaria para la vinculación de hardware. Incluye los pasos de configuración guiada (wizards), la visualización del estado de conexión de los dispositivos IoT y la interfaz para el ajuste de umbrales de alerta personalizados.
-
-### Medical Rest Management
-
-<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/C4-Diagrams/Frontend-Diagrams/Rest_Diagram.png?raw=true" alt="Diseño del diagrama frontend de Medical Rest Management."> <br>
-
-Representa la interfaz de calendario y el sistema de recomendaciones. Detalla cómo los componentes de UI transforman las sugerencias del backend en elementos visuales interactivos para que el personal pueda programar y confirmar sus descansos médicos.
-
-### Medical Shift Management
-
-<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/C4-Diagrams/Frontend-Diagrams/Shift_Diagram.png?raw=true" alt="Diseño del diagrama frontend de Medical Shift Management."> <br>
-
-Este diagrama detalla la arquitectura de la vista de planificación de turnos. Incluye componentes de drag-and-drop para la asignación de horarios y la lógica de validación visual que previene conflictos de disponibilidad antes de enviar los cambios al servidor.
-
-### Subscription and Payment Management
-
-<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/C4-Diagrams/Frontend-Diagrams/Subscription_Diagram.png?raw=true" alt="Diseño del diagrama frontend de Subscription and Payment Management."> <br>
-
-Muestra la integración con los elementos de pago seguros (Stripe Elements). Se enfoca en el flujo de navegación para la selección de planes, la gestión de estados de pago (éxito/error) y la visualización del historial de facturación del usuario.
 
 ### 4.6.6. Vue Components by Presentation Layer
 
