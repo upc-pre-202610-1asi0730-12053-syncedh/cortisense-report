@@ -437,8 +437,8 @@ SyncedHealth  responde a esta problemática mediante una plataforma de monitoreo
     13. **¿Qué otras suposiciones tenemos?**Suponemos que las instituciones de salud están dispuestas a invertir en biotecnología para mejorar su seguridad clínica.
 
 #### 1.2.2.3 Lean UX Hypothesis Statements
-###### Hipótesis 1:
- Creemos que al monitorear los niveles de cortisol y HRV en tiempo real, lograremos reducir los casos de burnout en un 20% durante el primer año. Esto será posible mediante el uso de wearables IoT que envíen alertas preventivas antes de que el médico alcance un estado de agotamiento crítico.
+###### Hipótesis 1: Reducción de Burnout
+Creemos que una reducción del 20% en bajas médicas por estrés se logrará si los médicos residentes alcanzan una gestión proactiva de su fatiga física con un wearable IoT que monitorea cortisol y HRV en tiempo real. Sabremos que es cierto cuando el registro de ausentismo por agotamiento disminuya un 15% en el primer semestre de uso.
 
 -   **Business Outcome:** Reducción de bajas médicas por estrés y mejora en la tasa de retención de especialistas.
     
@@ -448,8 +448,8 @@ SyncedHealth  responde a esta problemática mediante una plataforma de monitoreo
     
 -   **Feature:** Wearable IoT con sensores de biomarcadores de estrés.
 
-###### Hipótesis 2:
-Consideramos que si automatizamos la gestión de horarios basándonos en datos fisiológicos reales, la incidencia de errores médicos disminuirá significativamente. Esto se logrará permitiendo que el sistema sugiera descansos o rotaciones cuando detecte fatiga acumulada.
+###### Hipótesis 2: Optimización de Turnos
+Creemos que una disminución en los costos por negligencia médica se logrará si los directores médicos alcanzan una distribución de personal basada en evidencia fisiológica con un algoritmo de optimización de turnos impulsado por datos biométricos. Sabremos que es cierto cuando el reporte de errores clínicos nocturnos se reduzca en un 10% comparado con el año anterior.
 
 -   **Business Outcome:** Incremento en la seguridad del paciente y reducción de costos por negligencias médicas.
     
@@ -460,8 +460,8 @@ Consideramos que si automatizamos la gestión de horarios basándonos en datos f
 -   **Feature:** Algoritmo de optimización de turnos impulsado por datos biométricos.
 
 
-###### Hipótesis 3:
-Suponemos que si garantizamos un manejo ético y privado de la información de salud del trabajador, la aceptación del sistema por parte del personal médico superará el 80%.
+###### Hipótesis 3: Adopción y Privacidad
+Creemos que una tasa de adopción tecnológica del 80% se logrará si el personal sanitario alcanza un sentimiento de seguridad y control sobre sus datos privados con un protocolo de cifrado de grado médico y perfiles de acceso restringido. Sabremos que es cierto cuando el 85% del personal mantenga el dispositivo activo y sincronizado durante más de 22 días al mes.
 
 -   **Business Outcome:** Alta tasa de adopción de la tecnología dentro de la institución hospitalaria.
     
