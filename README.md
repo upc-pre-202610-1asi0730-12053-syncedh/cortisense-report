@@ -4060,15 +4060,15 @@ Durante el Sprint 2, el equipo logró el despliegue de la versión inicial de la
 
 A continuación, se presentan las evidencias de ejecución correspondientes a las principales funcionalidades implementadas durante el Sprint 2:
 
-<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/app-frontend/login.png?raw=true"></img><br>
+<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/app-frontend/login.jpeg?raw=true"></img><br>
 
-<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/app-frontend/signup.png?raw=true"></img><br>
+<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/app-frontend/signup.jpeg?raw=true"></img><br>
 
-<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/app-frontend/medicpersonnel.png?raw=true"></img><br>
+<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/app-frontend/medicpersonnel.jpeg?raw=true"></img><br>
 
-<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/app-frontend/registermedicpersonnel.png?raw=true"></img><br>
+<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/app-frontend/registermedicpersonnel.jpeg?raw=true"></img><br>
 
-<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/app-frontend/invitations.png?raw=true"></img><br>
+<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/app-frontend/invitations.jpeg?raw=true"></img><br>
 
 #### 5.2.2.6. Services Documentation Evidence for Sprint Review.
 
