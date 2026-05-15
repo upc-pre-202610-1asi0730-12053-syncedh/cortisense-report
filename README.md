@@ -47,11 +47,17 @@
 
 # Project Report Collaboration Insights
 
-URL de Organización de GITHUB del equipo SyncedHealth:
-[https://github.com/SyncedHealth-AplicacionesWeb](https://github.com/upc-pre-202610-1asi0730-12053-syncedh)
+URL de la Organización de Github del equipo SyncedHealth: [syncedhealth](https://github.com/upc-pre-202610-1asi0730-12053-syncedh)
 
-URL de Repositorio del Project Report:
-https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report
+URL del Repositorio del Project Report: [cortisense-report](https://github.com/upc-pre-202610-1asi0730-12053-syncedh/cortisense-report)
+
+URL del Repositorio de la Landing Page: [cortisense-website](https://github.com/upc-pre-202610-1asi0730-12053-syncedh/cortisense-website)
+
+URL de la Landing Page desplegada: [cortisense-website](https://upc-pre-202610-1asi0730-12053-syncedh.github.io/cortisense-website/)
+
+URL del Repositorio de la App Web: 
+
+URL del Repositorio de la Platform: [cortisense-platform](https://github.com/upc-pre-202610-1asi0730-12053-syncedh/cortisense-platform)
 
 <strong>*Entrega TB1:*</strong>
 
