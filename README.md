@@ -2357,35 +2357,152 @@ Este diagrama muestra los componentes Vue reutilizables compartidos entre los bo
 ## 4.7. Software Object-Oriented Design.
 ### 4.7.1. Class Diagrams.
 
-<h2>Diagrama Completo</h2>
-<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/ClassDiagrams/ClassDiagrams.png?raw=true" alt="Class Diagrams Complete">
+<p>
+  En esta sección se presentan los diagramas de clases del sistema CortiSense, organizados según la estructura del frontend y backend. 
+  Estos diagramas permiten visualizar las clases, componentes, servicios, relaciones y responsabilidades principales de cada bounded context.
+</p>
 
-<h3>Alerting and Notification Management</h3>
-<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/ClassDiagrams/alertingAndNotificationManagement.png?raw=true" alt="Alerting and Notification Management Class Diagram">
+<h3>Diagramas de Clases del Frontend</h3>
 
-<h3>Biometric Data Management</h3>
-<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/ClassDiagrams/biometricDataManagement.png?raw=true" alt="Biometric Data Management Class Diagram">
+<p>
+  Los diagramas de clases del frontend representan la estructura de la aplicación del lado del cliente. 
+  Muestran cómo se organizan las vistas, componentes, servicios, rutas y módulos compartidos para permitir la interacción de los usuarios con la plataforma CortiSense.
+</p>
 
-<h3>Identity and Access Management</h3>
-<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/ClassDiagrams/identityAndAccessManagement.png?raw=true" alt="Identity and Access Management Class Diagram">
+<h4>Audit and Compliance - Diagrama de Clases del Frontend</h4>
+<img src="Resources/Images/ClassDiagrams/audit-and-compilance.png" alt="Diagrama de Clases Frontend de Audit and Compliance">
 
-<h3>Medical Device Management</h3>
-<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/ClassDiagrams/medicalDeviceManagement.png?raw=true" alt="Medical Device Management Class Diagram">
+<p>
+  Este diagrama representa la estructura frontend del bounded context Audit and Compliance. 
+  Incluye los componentes y servicios utilizados para visualizar auditorías, información regulatoria, reportes de cumplimiento y herramientas administrativas de monitoreo.
+</p>
 
-<h3>Medical Rest Management</h3>
-<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/ClassDiagrams/medicalRestManagement.png?raw=true" alt="Medical Rest Management Class Diagram">
+<h4>Clinical Risk Assessment - Diagrama de Clases del Frontend</h4>
+<img src="Resources/Images/ClassDiagrams/clinical-risk-assessment.png" alt="Diagrama de Clases Frontend de Clinical Risk Assessment">
 
-<h3>Medical Shift Management</h3>
-<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/ClassDiagrams/medicalShiftManagement.png?raw=true" alt="Medical Shift Management Class Diagram">
+<p>
+  Este diagrama representa la estructura frontend del bounded context Clinical Risk Assessment. 
+  Incluye los componentes relacionados con el resumen biométrico, la visualización de anomalías, el personal médico en riesgo y la evaluación clínica del riesgo.
+</p>
 
-<h3>Medical Staff Management</h3>
-<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/ClassDiagrams/medicalStaffManagement.png?raw=true" alt="Medical Staff Management Class Diagram">
+<h4>Identity and Access Management - Diagrama de Clases del Frontend</h4>
+<img src="Resources/Images/ClassDiagrams/identity-and-access-management.png" alt="Diagrama de Clases Frontend de Identity and Access Management">
 
-<h3>Subscription and Payment Management</h3>
-<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/ClassDiagrams/subscriptionAndPaymentManagement.png?raw=true" alt="Subscription and Payment Management Class Diagram">
+<p>
+  Este diagrama representa la estructura frontend del bounded context Identity and Access Management. 
+  Incluye los componentes relacionados con el inicio de sesión, registro, invitaciones, roles y validación de accesos dentro de la aplicación.
+</p>
 
-<h3>Stress and Fatigue Analysis</h3>
-<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/ClassDiagrams/stressandfatigueanalysis.png?raw=true" alt="Stress and Fatigue Analysis Class Diagram">
+<h4>Incident and Escalation Management - Diagrama de Clases del Frontend</h4>
+<img src="Resources/Images/ClassDiagrams/incident-and-escalation-management.png" alt="Diagrama de Clases Frontend de Incident and Escalation Management">
+
+<p>
+  Este diagrama representa la estructura frontend del bounded context Incident and Escalation Management. 
+  Muestra los componentes utilizados para gestionar alertas clínicas, acciones preventivas y procesos de escalamiento de incidentes.
+</p>
+
+<h4>Shift Coordination - Diagrama de Clases del Frontend</h4>
+<img src="Resources/Images/ClassDiagrams/shift-coordination.png" alt="Diagrama de Clases Frontend de Shift Coordination">
+
+<p>
+  Este diagrama representa la estructura frontend del bounded context Shift Coordination. 
+  Incluye los componentes y servicios relacionados con la visualización de turnos, coordinación de horarios y gestión de la jornada del personal médico.
+</p>
+
+<h4>Staff Recovery - Diagrama de Clases del Frontend</h4>
+<img src="Resources/Images/ClassDiagrams/staff-recovery.png" alt="Diagrama de Clases Frontend de Staff Recovery">
+
+<p>
+  Este diagrama representa la estructura frontend del bounded context Staff Recovery. 
+  Muestra los componentes utilizados para gestionar recomendaciones de recuperación, descansos y apoyo en la reducción de fatiga del personal médico.
+</p>
+
+<h4>Subscription and Plan Management - Diagrama de Clases del Frontend</h4>
+<img src="Resources/Images/ClassDiagrams/subscription-and-plan-management.png" alt="Diagrama de Clases Frontend de Subscription and Plan Management">
+
+<p>
+  Este diagrama representa la estructura frontend del bounded context Subscription and Plan Management. 
+  Incluye los componentes relacionados con suscripciones, planes, pagos y control de acceso según el plan activo de la organización.
+</p>
+
+<h4>Shared Module - Diagrama de Clases del Frontend</h4>
+<img src="Resources/Images/ClassDiagrams/shared-module.png" alt="Diagrama de Clases Frontend del Shared Module">
+
+<p>
+  Este diagrama representa el módulo compartido del frontend de CortiSense. 
+  Incluye componentes reutilizables de layout, navegación, configuración de idioma, servicios compartidos y elementos comunes de interfaz utilizados en distintos bounded contexts.
+</p>
+
+<h3>Diagramas de Clases del Backend</h3>
+
+<p>
+  Los diagramas de clases del backend representan la estructura interna del lado del servidor. 
+  Describen los modelos de dominio, controladores, servicios de aplicación, repositorios, objetos de valor y relaciones que soportan la lógica de negocio de cada bounded context.
+</p>
+
+<h4>Audit and Compliance - Diagrama de Clases del Backend</h4>
+<img src="Resources/Images/ClassDiagrams/audit-and-compilanceB.png" alt="Diagrama de Clases Backend de Audit and Compliance">
+
+<p>
+  Este diagrama representa la estructura backend del bounded context Audit and Compliance. 
+  Incluye las entidades, servicios y repositorios responsables de los registros de auditoría, verificaciones de cumplimiento, reportes regulatorios y trazabilidad del sistema.
+</p>
+
+<h4>Clinical Risk Assessment - Diagrama de Clases del Backend</h4>
+<img src="Resources/Images/ClassDiagrams/clinical-risk-assessmentB.png" alt="Diagrama de Clases Backend de Clinical Risk Assessment">
+
+<p>
+  Este diagrama representa la estructura backend del bounded context Clinical Risk Assessment. 
+  Incluye las entidades y servicios responsables de procesar datos biométricos, detectar anomalías, evaluar el riesgo clínico y apoyar la toma de decisiones médicas.
+</p>
+
+<h4>Identity and Access Management - Diagrama de Clases del Backend</h4>
+<img src="Resources/Images/ClassDiagrams/identity-and-access-managementB.png" alt="Diagrama de Clases Backend de Identity and Access Management">
+
+<p>
+  Este diagrama representa la estructura backend del bounded context Identity and Access Management. 
+  Incluye entidades de dominio, servicios, controladores y repositorios responsables de la autenticación, registro de usuarios, invitaciones, roles y permisos de acceso.
+</p>
+
+<h4>Incident and Escalation Management - Diagrama de Clases del Backend</h4>
+<img src="Resources/Images/ClassDiagrams/incident-and-escalation-managementB.png" alt="Diagrama de Clases Backend de Incident and Escalation Management">
+
+<p>
+  Este diagrama representa la estructura backend del bounded context Incident and Escalation Management. 
+  Muestra las entidades, servicios y repositorios involucrados en alertas clínicas, acciones preventivas, escalamiento de incidentes y seguimiento de respuestas.
+</p>
+
+<h4>Shift Coordination - Diagrama de Clases del Backend</h4>
+<img src="Resources/Images/ClassDiagrams/shift-coordinationB.png" alt="Diagrama de Clases Backend de Shift Coordination">
+
+<p>
+  Este diagrama representa la estructura backend del bounded context Shift Coordination. 
+  Incluye la lógica de dominio relacionada con turnos médicos, gestión de horarios, asignaciones de turno y coordinación entre el personal médico y los supervisores.
+</p>
+
+<h4>Staff Recovery - Diagrama de Clases del Backend</h4>
+<img src="Resources/Images/ClassDiagrams/staff-recoveryB.png" alt="Diagrama de Clases Backend de Staff Recovery">
+
+<p>
+  Este diagrama representa la estructura backend del bounded context Staff Recovery. 
+  Incluye las entidades y servicios responsables de planes de recuperación, descansos, recomendaciones y acciones para reducir la fatiga del personal médico.
+</p>
+
+<h4>Subscription and Plan Management - Diagrama de Clases del Backend</h4>
+<img src="Resources/Images/ClassDiagrams/subscription-and-plan-managementB.png" alt="Diagrama de Clases Backend de Subscription and Plan Management">
+
+<p>
+  Este diagrama representa la estructura backend del bounded context Subscription and Plan Management. 
+  Incluye la lógica de dominio relacionada con planes, suscripciones, pagos, estado de facturación y limitaciones de acceso según el plan activo de la organización.
+</p>
+
+<h4>Shared Kernel - Diagrama de Clases del Backend</h4>
+<img src="Resources/Images/ClassDiagrams/shared-kernel.png" alt="Diagrama de Clases Backend del Shared Kernel">
+
+<p>
+  Este diagrama representa el shared kernel del backend de CortiSense. 
+  Incluye elementos comunes del dominio, entidades base, objetos de valor, excepciones compartidas y estructuras reutilizables entre distintos bounded contexts.
+</p>
 
 ## 4.8. Database Design.
 
