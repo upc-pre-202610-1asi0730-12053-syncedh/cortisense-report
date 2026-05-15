@@ -227,12 +227,12 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
         <b>TF1</b><p></p>
       <h3>León Morales, Johan Yonel</h3>
         <b>AV1</b><p>Durante el desarrollo de este oroyecto, gestione la participacion grupal en la elaboración de las secciones como Style Guidelines y como Domain-Driven Software Architecture, contribuyendo tanto en el diseño visual como en la estructuración lógica del sistema.</p>
-        <b>TP1</b><p></p>
+        <b>TP1</b><p>Durante esta etapa del proyecto, contribuí al despliegue de la Web App enfocándome en la verificación del funcionamiento de las secciones implementadas, la revisión de rutas, archivos de configuración y conexión con el mock server. Además, apoyé en la detección de problemas durante la ejecución local, facilitando que el equipo pudiera probar la aplicación de manera ordenada.</p>
         <b>AV2</b><p></p>
         <b>TF1</b><p></p>
       <h3>Mauricio Silva, Ghiou Justinn</h3>
         <b>AV1</b><p>Durante el desarrollo del proyecto, contribuí al trabajo en equipo participando activamente en el análisis de la problemática mediante la metodología 5W2H. Asimismo, lideré parte de la fase de Need Finding, elaborando el User Persona, User Task Matrix , User Journey Mapping y Empathy Mapping, lo que permitió al equipo comprender mejor las necesidades del usuario. También apoyé en la construcción de User Stories y el Product Backlog, facilitando la organización del trabajo y la toma de decisiones en conjunto.</p>
-        <b>TP1</b><p></p>
+        <b>TP1</b><p>Durante esta etapa del proyecto, participé en la preparación técnica de la Web App para su despliegue, revisando la configuración del proyecto, la instalación de dependencias y la correcta ejecución de la aplicación. Esta participación permitió apoyar al equipo en la validación inicial del entorno y en la organización de las tareas necesarias para presentar un avance funcional.</p>
         <b>AV2</b><p></p>
         <b>TF1</b><p></p>
       <h3>Pareja Calloapaza, Marcelo Fausto</h3>
@@ -264,12 +264,12 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
         <b>TF1</b><p></p>
       <h3>León Morales, Johan Yonel</h3>
         <b>AV1</b><p>Durante el desarrollo de este proyecto, apoyé en la coordinación de las actividades y reuniones. Cumpliendo con los objetivos en la gestión del diseño del Desing Level Event Storming como su implementación en el Domain-Driven Software Architecture.</p>
-        <b>TP1</b><p></p>
+        <b>TP1</b><p>Durante esta etapa del proyecto, contribuí al despliegue de la Web App enfocándome en la verificación del funcionamiento de las secciones implementadas, la revisión de rutas, archivos de configuración y conexión con el mock server. Además, apoyé en la detección de problemas durante la ejecución local, facilitando que el equipo pudiera probar la aplicación de manera ordenada.</p>
         <b>AV2</b><p></p>
         <b>TF1</b><p></p>
       <h3>Mauricio Silva, Ghiou Justinn</h3>
         <b>AV1</b><p>Durante esta etapa, cumplí con las tareas asignadas de manera responsable, desarrollando el análisis 5W2H y la fase de Need Finding. Además, contribuí en la planificación del proyecto mediante la elaboración de User Stories y el Product Backlog, lo que permitió definir claramente las tareas del equipo. Finalmente, apoyé en el diseño del sistema mediante la creación de diagramas (clases y base de datos) y wireframes y wireflow, asegurando el cumplimiento de los objetivos establecidos.</p>
-        <b>TP1</b><p></p>
+        <b>TP1</b><p>Durante esta etapa del proyecto, participé en la preparación técnica de la Web App para su despliegue, revisando la configuración del proyecto, la instalación de dependencias y la correcta ejecución de la aplicación. Esta participación permitió apoyar al equipo en la validación inicial del entorno y en la organización de las tareas necesarias para presentar un avance funcional.</p>
         <b>AV2</b><p></p>
         <b>TF1</b><p></p>
       <h3>Pareja Calloapaza, Marcelo Fausto</h3>
