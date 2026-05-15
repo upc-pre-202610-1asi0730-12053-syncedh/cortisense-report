@@ -3248,39 +3248,55 @@ Este bounded context registra trazabilidad, evidencia de decisiones críticas, a
 
 ---
 
-#### 4.8.1. Database Diagrams
+### 4.8.1. Database Diagrams
 
-En esta sección se presentan los diagramas de base de datos correspondientes a SyncedHealth. Primero se muestra el diagrama general, donde se visualizan las tablas principales y relaciones entre los siete bounded contexts. Luego se presentan los diagramas individuales por cada bounded context para mostrar con mayor detalle su estructura de persistencia.
+En esta sección se presentan los diagramas de base de datos correspondientes a SyncedHealth. Primero se muestra el diagrama general, donde se visualizan las tablas principales y relaciones entre los siete bounded contexts. Luego se presentan los diagramas individuales por cada bounded context para mostrar con mayor detalle su estructura de persistencia. :contentReference[oaicite:0]{index=0}
 
 **General Database Diagram**
+
+El diagrama general integra las tablas principales de los siete bounded contexts de SyncedHealth, mostrando las relaciones entre hospitales, usuarios, suscripciones, evaluaciones clínicas, incidentes, turnos, recuperación del personal y auditoría. Este diagrama permite visualizar cómo las claves foráneas conectan los distintos contextos y cómo se mantiene la trazabilidad de la información dentro del sistema.
 
 <img src="Resources/Images/DiagramDatabase/Diagrams-Database.png" alt="General Database Diagram">
 
 **Identity & Access Management**
 
+Este bounded context persiste las entidades centrales de identidad, autenticación y acceso del sistema. La tabla `hospitals` actúa como raíz organizacional, mientras que `users` centraliza las credenciales y datos principales de los usuarios. `roles` define los perfiles disponibles dentro del sistema, e `invitations` y `access_grants` permiten registrar invitaciones, solicitudes y accesos concedidos.
+
 <img src="Resources/Images/DiagramDatabase/identity-and-access-management-db.png" alt="Identity and Access Management Database Diagram">
 
 **Subscription & Plan Management**
+
+Este bounded context gestiona los planes comerciales, suscripciones, pagos y acceso a funcionalidades. La tabla `plans` define los planes disponibles, `subscriptions` vincula cada hospital con un plan, `subscription_payments` registra los pagos realizados, y `plan_features` junto con `feature_access` permiten controlar las funcionalidades habilitadas o restringidas según el estado de la suscripción.
 
 <img src="Resources/Images/DiagramDatabase/subscription-and-plan-management-db.png" alt="Subscription and Plan Management Database Diagram">
 
 **Clinical Risk Assessment**
 
-<img src="Resources/Images/DiagramDatabase/clinical-risk-assesment-db.png" alt="Clinical Risk Assessment Database Diagram">
+Este bounded context almacena la información relacionada con datos biométricos, cálculo de fatiga, indicadores de riesgo y alertas clínicas. `biometric_records` registra mediciones provenientes de dispositivos IoT, `risk_assessments` representa la evaluación principal de riesgo clínico, y las tablas `fatigue_scores`, `risk_indicators` y `clinical_risk_alerts` permiten completar el proceso de análisis y detección de riesgos.
+
+<img src="Resources/Images/DiagramDatabase/clinical-risk-assessment-db.png" alt="Clinical Risk Assessment Database Diagram">
 
 **Incident & Escalation Management**
+
+Este bounded context registra incidentes de riesgo, prioridades, notificaciones a supervisores y procesos de escalamiento. `risk_incidents` almacena el ciclo de vida del incidente, `incident_priorities` define su nivel de prioridad, `supervisor_notifications` registra alertas enviadas, y `risk_escalations`, `escalation_reviews` y `medical_director_notifications` permiten mantener trazabilidad cuando el caso escala hacia un director médico.
 
 <img src="Resources/Images/DiagramDatabase/incident-escalation-management-db.png" alt="Incident and Escalation Management Database Diagram">
 
 **Shift Coordination**
 
+Este bounded context persiste la coordinación de turnos, asignaciones, evaluaciones críticas, reemplazos y carga laboral. `shifts` almacena la información base de los turnos, `shift_assignments` vincula turnos con personal médico, `critical_shift_evaluations` registra evaluaciones de criticidad, `replacement_suggestions` almacena sugerencias de reemplazo y `workload_distributions` permite controlar la distribución de carga del personal.
+
 <img src="Resources/Images/DiagramDatabase/shift-coordination-db.png" alt="Shift Coordination Database Diagram">
 
 **Staff Recovery**
 
+Este bounded context gestiona los planes de recuperación del personal médico, necesidades de descanso, recomendaciones, periodos sugeridos, notificaciones y decisiones del personal. `recovery_plans` funciona como tabla principal del contexto, mientras que `recovery_needs`, `recovery_recommendations`, `rest_periods`, `recovery_notifications` y `recovery_decisions` registran el flujo completo desde la detección de necesidad hasta la aceptación o rechazo del plan.
+
 <img src="Resources/Images/DiagramDatabase/staff-recovery-db.png" alt="Staff Recovery Database Diagram">
 
 **Audit & Compliance**
+
+Este bounded context registra la trazabilidad de acciones críticas, decisiones clínicas, evaluaciones de riesgo, bloqueos de turno y reportes de cumplimiento. `audit_trails` agrupa los registros de auditoría, `audit_records` almacena eventos auditados generales, y las tablas especializadas como `supervisor_action_records`, `critical_decision_records`, `risk_assessment_records` y `shift_blocking_records` permiten detallar cada tipo de acción registrada. Finalmente, `compliance_reports` almacena los reportes generados para revisión administrativa.
 
 <img src="Resources/Images/DiagramDatabase/audit-compliance-db.png" alt="Audit and Compliance Database Diagram">
 
