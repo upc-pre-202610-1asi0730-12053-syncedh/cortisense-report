@@ -55,7 +55,7 @@ URL del Repositorio de la Landing Page: [cortisense-website](https://github.com/
 
 URL de la Landing Page desplegada: [cortisense-website](https://upc-pre-202610-1asi0730-12053-syncedh.github.io/cortisense-website/)
 
-URL del Repositorio de la App Web: 
+URL del Repositorio de la App Web: [cortisense-webapp](https://github.com/upc-pre-202610-1asi0730-12053-syncedh/cortisense-webapp)
 
 URL del Repositorio de la Platform: [cortisense-platform](https://github.com/upc-pre-202610-1asi0730-12053-syncedh/cortisense-platform)
 
