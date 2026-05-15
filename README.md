@@ -2983,7 +2983,25 @@ A continuación, se presentan las evidencias de ejecución correspondientes a la
 
 Durante el Sprint 2, el esfuerzo técnico del equipo se concentró exclusivamente en la capa de presentación (Frontend), utilizando HTML, CSS y JavaScript bajo el modelo de ramificación Git Flow. El objetivo de este primer incremento (MVP) fue construir la primera versión de la aplicación CortiSense para establecer la presencia digital, validar la propuesta de valor y asegurar el correcto uso del cliente.
 
-
+| Endpoint                                   | Verbo HTTP | Acción                                                 | Parámetros                                   | Response       |
+|--------------------------------------------|------------|--------------------------------------------------------|----------------------------------------------|----------------|
+| /users                                     | GET        | Encontrar usuario por credenciales (Login)             | email, password, status='active'             | AxiosResponse  |
+| /invitations                               | GET        | Encontrar invitación pendiente por email                | email, status='pending'                      | AxiosResponse  |
+| /users                                     | POST       | Crear una cuenta de usuario activa                     | resource (objeto usuario)                    | AxiosResponse  |
+| /invitations/{id}                          | PATCH      | Actualizar una invitación                              | id (path), resource (parcial)                | AxiosResponse  |
+| /medicalStaff                              | POST       | Crear perfil de personal médico                        | resource (perfil médico)                     | AxiosResponse  |
+| /billing/checkout                          | POST       | Crear sesión de pago (Stripe/Checkout)                 | command (datos de sesión)                    | { checkoutUrl }|
+| /users/{userId}/subscription               | GET        | Obtener suscripción activa de un usuario               | userId (path)                                | AxiosResponse  |
+| /subscriptions/{id}                        | GET        | Obtener detalles de una suscripción por ID             | id (path)                                    | AxiosResponse  |
+| /subscriptions/{subscriptionId}            | PATCH      | Cancelar una suscripción                               | subscriptionId (path), cancel_at_period_end  | AxiosResponse  |
+| /billing/invoices                          | GET        | Obtener historial de facturas de un usuario             | userId (query)                               | AxiosResponse  |
+| /users                                     | GET        | Obtener lista de todos los usuarios                    | -                                            | AxiosResponse  |
+| /medicalDevices                            | GET        | Obtener lista de dispositivos médicos                  | -                                            | AxiosResponse  |
+| /biometricData                             | GET        | Obtener todos los datos biométricos                    | -                                            | AxiosResponse  |
+| /biometricData                             | GET        | Obtener datos biométricos por personal médico          | medicalStaffId (query)                       | AxiosResponse  |
+| /medicalDevices                            | POST       | Registrar un nuevo dispositivo médico                  | resource (datos dispositivo)                 | AxiosResponse  |
+| /medicalDevices/{id}                       | PATCH      | Actualizar datos de un dispositivo médico              | id (path), resource (cambios)                | AxiosResponse  |
+| /biometricData                             | POST       | Registrar nuevos datos biométricos                     | resource (mediciones)                        | AxiosResponse  |
 
 #### 5.2.2.7. Software Deployment Evidence for Sprint Review.
 
