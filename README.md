@@ -48,7 +48,7 @@
 # Project Report Collaboration Insights
 
 URL de Organización de GITHUB del equipo SyncedHealth:
-https://github.com/SyncedHealth-AplicacionesWeb
+[https://github.com/SyncedHealth-AplicacionesWeb](https://github.com/upc-pre-202610-1asi0730-12053-syncedh)
 
 URL de Repositorio del Project Report:
 https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report
