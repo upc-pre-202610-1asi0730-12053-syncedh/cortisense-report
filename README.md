@@ -4078,7 +4078,11 @@ Durante el Sprint 2, el equipo mantuvo un flujo de trabajo colaborativo constant
 
 A continuación, se presentan las estadísticas de colaboración obtenidas desde los insights de GitHub durante el Sprint 2:
 
+
+
 #### 5.2.2.8. Team Collaboration Insights during Sprint.
+
+<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Collaboration-Insights/insights-webapp.png"></img><br>
 
 ## 5.3. Validation Interviews.
 ### 5.3.1. Diseño de Entrevistas.
