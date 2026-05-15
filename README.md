@@ -2897,7 +2897,36 @@ Durante este Sprint, el equipo ha organizado el trabajo en base a las Epics defi
 
 #### 5.2.2.3. Sprint Backlog 2.
 
+Nuestro objetivo principal con este Sprint 2 es desplegar la versión inicial de la App Web de CortiSense con el propósito de validar nuestra arquitectura técnica en un entorno real y facilitar la captación de early adopters mediante una interfaz funcional que demuestre el monitoreo de niveles de cortisol y estrés en tiempo real.
+
+| User Story | Work-Item / Task                                        |        |                              |                                           |                        |                 |            |
+| :-----------| :-------------------------------------------------------| :-------| :-----------------------------| :-----------------------------------------| :-----------------------| :----------------| :-----------|
+| **Id** | **Title** | **Id** | **Title** | **Description** | **Estimation (Hours)** | **Assigned To** | **Status** |
+| US-01      | Registro de Médico                                      | TK-09  | Auth Form UI                 | Implementación de formulario de registro  | 4                      | Marcelo Pareja      | In Progress|
+| US-01      | Registro de Médico                                      | TK-10  | Auth Backend                 | Lógica de creación de cuenta en DB        | 6                      | Marcelo Pareja      | To Do      |
+| US-03      | Login Biométrico                                        | TK-11  | Biometric API                | Integración con FaceID/Huella             | 8                      | Marcelo Pareja      | To Do      |
+| US-20      | Checkout de Plan                                        | TK-24  | Stripe Integration           | Pasarela de pagos de suscripción          | 10                     | Marcelo Pareja      | To Do      |
+| US-39      | Descarga Facturas                                       | TK-25  | PDF Generator                | Generación automática de comprobantes      | 4                      | Marcelo Pareja      | To Do      |
+| US-04      | Búsqueda de Personal                                    | TK-12  | Search Engine                | Implementación de filtros de búsqueda     | 5                      | Johan Yonel         | In Progress|
+| US-05      | Vinculación de Wearable                                  | TK-13  | BLE Connection               | Conectividad Bluetooth Low Energy         | 10                     | Johan Yonel         | To Do      |
+| US-06      | Configuración de Umbrales                                | TK-14  | Threshold UI                 | Slider de configuración de niveles        | 3                      | Johan Yonel         | To Do      |
+| US-27      | Actualización Firmware                                  | TK-26  | OTA Service                  | Update remoto de firmware                 | 8                      | Johan Yonel         | To Do      |
+| US-08      | Iniciar Monitoreo                                       | TK-15  | Real-time Engine             | Motor de captura de datos en tiempo real  | 7                      | Sebastián Gutierrez | In Progress|
+| US-09      | Detección de Fatiga                                     | TK-16  | Analysis Algorithm           | Algoritmo de patrones críticos            | 12                     | Sebastián Gutierrez | To Do      |
+| US-10      | Almacenamiento de Datos                                 | TK-17  | Persistence Layer            | Repositorio de datos biométricos          | 6                      | Sebastián Gutierrez | To Do      |
+| US-31      | Sincronización Manual                                   | TK-27  | Cache Sync                   | Sincronización de caché local             | 5                      | Sebastián Gutierrez | To Do      |
+| US-12      | Generación de Alerta                                    | TK-18  | Notification Dispatch        | Servicio de despacho de alertas           | 5                      | Guiou Justinn       | In Progress|
+| US-13      | Escalamiento a Admin                                    | TK-19  | Escalation Logic             | Política de reenvío a supervisores        | 4                      | Guiou Justinn       | To Do      |
+| US-32      | Modo Silencioso                                         | TK-20  | Silence Profile              | Gestión de estados de notificación        | 3                      | Guiou Justinn       | To Do      |
+| US-14      | Programación de Descansos                                | TK-21  | Calendar Sync                | Integración con Google Calendar           | 8                      | Jairo Santiago      | In Progress|
+| US-17      | Subir Horarios                                          | TK-22  | CSV Parser                   | Lectura de archivos de horarios           | 5                      | Jairo Santiago      | To Do      |
+| US-19      | Reprogramación por Fatiga                               | TK-23  | Reassignment Logic           | Sugerencia de suplentes                   | 9                      | Jairo Santiago      | To Do      |
+| US-36      | Check-in de Turno                                       | TK-28  | Shift Attendance             | Control de asistencia y entrada           | 4                      | Jairo Santiago      | To Do      |
+
+
 #### 5.2.2.4. Development Evidence for Sprint Review.
+
+
 
 #### 5.2.2.5. Execution Evidence for Sprint Review.
 #### 5.2.2.6. Services Documentation Evidence for Sprint Review.
