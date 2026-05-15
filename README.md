@@ -2926,12 +2926,67 @@ Nuestro objetivo principal con este Sprint 2 es desplegar la versión inicial de
 
 #### 5.2.2.4. Development Evidence for Sprint Review.
 
-
+| HASH    | FECHA                    | ASUNTO                                                                                                   |
+|---------|--------------------------|----------------------------------------------------------------------------------------------------------|
+| 90a4763 | Fri May 15 02:51:15 2026 | fix: resolver conflictos de merge con main [cite: 1]                                                     |
+| a49a245 | Fri May 15 02:43:27 2026 | feat(metrics): Implement interactive dashboards for admin and doctor with i18n support [cite: 1]         |
+| ba747a2 | Fri May 15 02:37:05 2026 | chore: fix routing. [cite: 1]                                                                            |
+| 339ca84 | Fri May 15 02:26:47 2026 | chore: merge [cite: 2]                                                                                   |
+| 910e7e9 | Fri May 15 02:17:41 2026 | feat(billing): add billing bc prototype. [cite: 2]                                                       |
+| 67aeb18 | Fri May 15 02:06:38 2026 | feat(iam): implement login and invited registration flow [cite: 3]                                       |
+| 79654b0 | Thu May 14 20:46:32 2026 | chore: update README. [cite: 3]                                                                          |
+| af792bc | Thu May 14 19:10:13 2026 | feat(iam): add i18n component to login and register views. [cite: 4]                                     |
+| 2990b2c | Thu May 14 18:53:35 2026 | chore: merge items [cite: 4]                                                                             |
+| 91c29b2 | Thu May 14 18:49:57 2026 | feat(i18n): add language converter on register view. [cite: 5]                                           |
+| 1351113 | Thu May 14 18:45:04 2026 | feat: implement CRA biometric and device management [cite: 5]                                            |
+| 8ba3a47 | Thu May 14 17:40:53 2026 | feat(i18n): add language converter on login view. [cite: 6]                                              |
+| a6ab495 | Thu May 14 14:48:42 2026 | feat(iam): incorporated i18n on iam and dashboard. [cite: 7]                                             |
+| 78ce85c | Thu May 14 14:10:35 2026 | chore: labeling 4. [cite: 8]                                                                             |
+| ee9ef66 | Thu May 14 12:12:26 2026 | chore: labeling 4. [cite: 8]                                                                             |
+| c96b628 | Thu May 14 11:42:15 2026 | chore: labeling 3. [cite: 8]                                                                             |
+| ea2bfb2 | Thu May 14 11:40:49 2026 | chore: labeling 2 [cite: 8]                                                                              |
+| 2bc5e35 | Thu May 14 11:38:34 2026 | chore: labeling [cite: 8]                                                                                |
+| 946f083 | Thu May 14 11:35:23 2026 | fix(iam): path errors. [cite: 8]                                                                         |
+| 606a8d4 | Thu May 14 10:30:20 2026 | feat(shared): added landing page. [cite: 9]                                                              |
+| 27172b5 | Thu May 14 10:28:21 2026 | feat(shared): add unauthorized [cite: 9]                                                                 |
+| a82a8b6 | Thu May 14 10:27:31 2026 | feat(shared): add placeholder [cite: 9]                                                                  |
+| e17467e | Thu May 14 10:26:42 2026 | feat(shared): add sidenav bar [cite: 9]                                                                  |
+| 56727df | Thu May 14 10:25:41 2026 | feat(shared): add layout [cite: 9]                                                                       |
+| f17d345 | Thu May 14 10:24:25 2026 | feat(shared): add header [cite: 9]                                                                       |
+| 6f73714 | Thu May 14 00:23:09 2026 | feat(iam): implement user assembler for entity-resource conversions. [cite: 10]                          |
+| 024b285 | Thu May 14 00:16:47 2026 | feat(publishing): add user api class with crud operations for users. [cite: 11]                          |
+| cdb3da6 | Wed May 13 23:47:27 2026 | feat(shared): add base api and endpoint classes. [cite: 12]                                              |
+| 3942c21 | Wed May 13 23:43:53 2026 | feat(env): add environment configuration files for production and development. [cite: 13]                |
+| 41452de | Wed May 13 23:41:23 2026 | feat(publishing): add pinia store for managing categories and tutorials... [cite: 14]                    |
+| a64dc1a | Wed May 13 22:27:17 2026 | feat(state): initialize pinia in the app. [cite: 15]                                                     |
+| 073f822 | Wed May 13 22:07:32 2026 | feat(iam): add user entity model for identity access management context. [cite: 16]                      |
+| 796213d | Wed May 13 20:22:37 2026 | feat(env): add environment configuration files for production and development. [cite: 17]                |
+| 5b0ccf1 | Wed May 13 20:20:00 2026 | feat(i18n): add i18n support. [cite: 18]                                                                |
+| 9561ff4 | Wed May 13 20:15:14 2026 | feat(fake-api): add json-server and configure fake api. [cite: 19]                                       |
+| 1b1565b | Wed May 13 20:07:25 2026 | chore: added dependencies. [cite: 20]                                                                    |
+| 65fe6cb | Wed May 13 20:06:51 2026 | docs: add license file. [cite: 21]                                                                       |
+| f89e98b | Wed May 13 20:04:29 2026 | docs: add user stories and epics [cite: 22]                                                              |
+| e5d40a8 | Wed May 13 13:51:08 2026 | chore: update package.json. [cite: 22]                                                                   |
+| 5ce6e67 | Wed May 13 13:42:54 2026 | chore: initial commit 3 [cite: 23]                                                                       |
+| a3953d9 | Wed May 13 13:40:21 2026 | chore: initial commit p2 [cite: 23]                                                                      |
+| b21b5de | Wed May 13 13:25:17 2026 | Update README.md [cite: 23]                                                                              |
+| 9773f6a | Wed May 13 13:24:53 2026 | Update README.md [cite: 23]                                                                              |
+| ae9a851 | Wed May 13 13:00:03 2026 | initial commit: project setup [cite: 23]                                                                 |
 
 #### 5.2.2.5. Execution Evidence for Sprint Review.
+
+Durante el Sprint 2, el equipo logró el despliegue de la versión inicial de la aplicación web de CortiSense. Se implementó el consumo de una Fake API (JSON Server) para simular los servicios backend, permitiendo el desarrollo paralelo del frontend sin dependencia de una API real. Se completó gran número de los módulos funcionales. Asimismo, se consolidó la arquitectura de navegación principal, la gestión de rutas y los servicios de consumo de datos.
+
+A continuación, se presentan las evidencias de ejecución correspondientes a las principales funcionalidades implementadas durante el Sprint 2:
+
 #### 5.2.2.6. Services Documentation Evidence for Sprint Review.
 
+Durante el Sprint 2, el esfuerzo técnico del equipo se concentró exclusivamente en la capa de presentación (Frontend), utilizando HTML, CSS y JavaScript bajo el modelo de ramificación Git Flow. El objetivo de este primer incremento (MVP) fue construir la primera versión de la aplicación CortiSense para establecer la presencia digital, validar la propuesta de valor y asegurar el correcto uso del cliente.
+
+
+
 #### 5.2.2.7. Software Deployment Evidence for Sprint Review.
+
 #### 5.2.2.8. Team Collaboration Insights during Sprint.
 
 ## 5.3. Validation Interviews.
