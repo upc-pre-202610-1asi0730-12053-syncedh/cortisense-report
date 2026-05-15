@@ -855,7 +855,7 @@ En esta sección presentamos los registros de las entrevistas realizadas para ca
   </tr>
   <tr>
     <td>Link</td>
-    <td><p><a target="_blank" href="https://drive.google.com/file/d/19Fxu5Uje6tJ5yvmaLG-n29ecyy0aN1oS/view?usp=sharing" title="Title">Ver grabación aquí</a></p></td>
+    <td><p><a target="_blank" href="https://drive.google.com/file/d/19Fxu5Uje6tJ5yvmaLG-n29ecyy0aN1oS/view?usp=sharing" title="Title">Ver grabación aquí</a> https://drive.google.com/file/d/19Fxu5Uje6tJ5yvmaLG-n29ecyy0aN1oS/view?usp=sharing</p></td>
   </tr>
   <tr>
     <td>Duración / Timing:<br></td>
@@ -935,7 +935,7 @@ En esta sección presentamos los registros de las entrevistas realizadas para ca
   </tr>
   <tr>
     <td>Link</td>
-    <td><p><a target="_blank" href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231h055_upc_edu_pe/IQD9tsnTkZMFSaHIhyzRkJJQAU37_QdwuOtgMt3qLLnsloE?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=tx72Ux" title="Title">Ver grabación aquí</a></p></td>
+    <td><p><a target="_blank" href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231h055_upc_edu_pe/IQD9tsnTkZMFSaHIhyzRkJJQAU37_QdwuOtgMt3qLLnsloE?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=tx72Ux" title="Title">Ver grabación aquí</a> https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231h055_upc_edu_pe/IQD9tsnTkZMFSaHIhyzRkJJQAU37_QdwuOtgMt3qLLnsloE?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=tx72Ux </p></td>
   </tr>
   <tr>
     <td>Duración / Timing<br></td>
@@ -1009,11 +1009,11 @@ En esta sección presentamos los registros de las entrevistas realizadas para ca
   </tr>
   <tr>
     <td>Evidencia</td>
-    <td><div align="center"><img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Interview-evidences/interview-rusbel-arnaldo-cajaleon-gamez.jpg?raw=true" alt="Entrevista Rusbel Cajaleón"></div></td>
+    <td><div align="center"><img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Interview-evidences/interview-rusbel-arnaldo-cajaleon-gamez.jpg?raw=true" alt="Entrevista Rusbel Cajaleón"></div>https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Interview-evidences/interview-rusbel-arnaldo-cajaleon-gamez.jpg?raw=true</td>
   </tr>
   <tr>
     <td>Link</td>
-<td><p><a target="_blank" href="https://drive.google.com/file/d/1UQImqgqti3vEYj3E6a5n4xnxFt9Vop8O/view?usp=sharing" title="Title">Link del video</a></p></td>
+<td><p><a target="_blank" href="https://drive.google.com/file/d/1UQImqgqti3vEYj3E6a5n4xnxFt9Vop8O/view?usp=sharing" title="Title">Link del video</a>https://drive.google.com/file/d/1UQImqgqti3vEYj3E6a5n4xnxFt9Vop8O/view?usp=sharing</p></td>
   </tr>
   <tr>
     <td>Duración / Timing<br></td>
@@ -1092,7 +1092,7 @@ En esta sección presentamos los registros de las entrevistas realizadas para ca
   </tr>
   <tr>
     <td>Link</td>
-    <td><p><a target="_blank" href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202418755_upc_edu_pe/IQCSJixvUAiVQYU7PPuGFn5QAeCNk1McHMV2_GJeQT7m8qI?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=vXh6If" title="Video de la entrevista">Ver grabación aquí</a></p></td>
+    <td><p><a target="_blank" href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202418755_upc_edu_pe/IQCSJixvUAiVQYU7PPuGFn5QAeCNk1McHMV2_GJeQT7m8qI?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=vXh6If" title="Video de la entrevista">Ver grabación aquí</a>https://upcedupe-my.sharepoint.com/:v:/g/personal/u202418755_upc_edu_pe/IQCSJixvUAiVQYU7PPuGFn5QAeCNk1McHMV2_GJeQT7m8qI?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=vXh6If</p></td>
   </tr>
   <tr>
     <td>Duracion<br></td>
@@ -1177,10 +1177,10 @@ En esta sección presentamos los registros de las entrevistas realizadas para ca
   </tr>
   <tr>
     <td>Link</td>
-    <td><p><a target="_blank" href="https://drive.google.com/file/d/1DsKAj6ceQ0UX6NWjwXI8-3jTV6jH7xYH/view?usp=drive_link" title="Video de la entrevista">Ver grabación aquí</a></p></td>
+    <td><p><a target="_blank" href="https://drive.google.com/file/d/1DsKAj6ceQ0UX6NWjwXI8-3jTV6jH7xYH/view?usp=drive_link" title="Video de la entrevista">Ver grabación aquí</a>https://drive.google.com/file/d/1DsKAj6ceQ0UX6NWjwXI8-3jTV6jH7xYH/view?usp=drive_link</p></td>
   </tr>
   <tr>
-    <td>Duración</td>
+    <td>Duración/ Timing</td>
     <td>20:00 min</td>
   </tr>
   <tr>
@@ -4108,3 +4108,7 @@ Qlerify (s.f.). *What is Big Picture Event Storming?*. Qlerify. https://www.qler
 # Anexos
 
 Entrevista 1: https://drive.google.com/file/d/19Fxu5Uje6tJ5yvmaLG-n29ecyy0aN1oS/view?usp=sharing
+Entrevista 2: https://upcedupe-my.sharepoint.com/personal/u20231h055_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu20231h055%5Fupc%5Fedu%5Fpe%2FDocuments%2F5to%20Ciclo%2FOpenSource%2FRegistro%20de%20Entrevistas%2FEntrevista%20a%20Maribel%20Fernandez%20por%20Johan%20Yonel%20%28Personal%20Medico%20Operativo%29%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E703f7f77%2D7734%2D4bda%2Dac35%2Df8381afd44b1
+Entrevista 3: https://drive.google.com/file/d/1UQImqgqti3vEYj3E6a5n4xnxFt9Vop8O/view?usp=sharing
+Entrevista 4: https://upcedupe-my.sharepoint.com/personal/u202418755_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202418755%5Fupc%5Fedu%5Fpe%2FDocuments%2FEntrevista%2DSyncedHealth%2Fvideo3945078754%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E6e776555%2D8d61%2D486b%2D81a5%2D4367b6a10779
+Entrevista 5: https://drive.google.com/file/d/1DsKAj6ceQ0UX6NWjwXI8-3jTV6jH7xYH/view?usp=drive_link
