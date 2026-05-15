@@ -61,12 +61,18 @@ https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-Sy
 + **Evidencias de colaboración y commits - Github:**
     * **Análiticos de colaboración** <br><br>
         + **Pulse Image of Github Insights**
-        <div align="center"><img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Collaboration-Insights/Insight-1.png?raw=true"></div><br><br>
-
+        	- **AV1**
+        	<div align="center"><img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Collaboration-Insights/Insight-1.png?raw=true"></div><br><br>
+        	
+			- **TB1**
+			<div align="center"><img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Collaboration-Insights/insights-webapp.png"></img></div><br>
 
         + **Contributors Image of Github Insights**
+			- **AV1**
         <div align="center"><img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Collaboration-Insights/Insight-2.png?raw=true"></div><br><br>
-
+			
+			- **TB1**
+			<div align="center"><img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Collaboration-Insights/insights-webapp.png"></img></div><br>
 
     * **Commits**
 
@@ -849,10 +855,10 @@ En esta sección presentamos los registros de las entrevistas realizadas para ca
   </tr>
   <tr>
     <td>Link</td>
-    <td><p><a target="_blank" href="https://drive.google.com/file/d/19Fxu5Uje6tJ5yvmaLG-n29ecyy0aN1oS/view?usp=sharing" title="Title">Google Drive file</a></p></td>
+    <td><p><a target="_blank" href="https://drive.google.com/file/d/19Fxu5Uje6tJ5yvmaLG-n29ecyy0aN1oS/view?usp=sharing" title="Title">Ver grabación aquí</a></p></td>
   </tr>
   <tr>
-    <td>Duracion<br></td>
+    <td>Duración / Timing:<br></td>
     <td>00:00 min - 25:13 min</td>
   </tr>
   <tr>
@@ -932,7 +938,7 @@ En esta sección presentamos los registros de las entrevistas realizadas para ca
     <td><p><a target="_blank" href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231h055_upc_edu_pe/IQD9tsnTkZMFSaHIhyzRkJJQAU37_QdwuOtgMt3qLLnsloE?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=tx72Ux" title="Title">Ver grabación aquí</a></p></td>
   </tr>
   <tr>
-    <td>Duracion<br></td>
+    <td>Duración / Timing<br></td>
     <td>11:57 min</td>
   </tr>
   <tr>
@@ -1010,7 +1016,7 @@ En esta sección presentamos los registros de las entrevistas realizadas para ca
 <td><p><a target="_blank" href="https://drive.google.com/file/d/1UQImqgqti3vEYj3E6a5n4xnxFt9Vop8O/view?usp=sharing" title="Title">Link del video</a></p></td>
   </tr>
   <tr>
-    <td>Duracion<br></td>
+    <td>Duración / Timing<br></td>
     <td>07:24 min</td>
   </tr>
   <tr>
@@ -4100,3 +4106,5 @@ Draft.io (s.f.). *EventStorming*. Draft.io. https://draft.io/example/eventstormi
 Qlerify (s.f.). *What is Big Picture Event Storming?*. Qlerify. https://www.qlerify.com/event-storming-concepts/what-is-big-picture-event-storming
 
 # Anexos
+
+Entrevista 1: https://drive.google.com/file/d/19Fxu5Uje6tJ5yvmaLG-n29ecyy0aN1oS/view?usp=sharing
