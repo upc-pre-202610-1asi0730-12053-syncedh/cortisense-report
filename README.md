@@ -4160,3 +4160,4 @@ Repositorio de la Platform: [cortisense-platform](https://github.com/upc-pre-202
 
 Landing Page desplegada: [cortisense-website](https://upc-pre-202610-1asi0730-12053-syncedh.github.io/cortisense-website/)
 
+Web App desplegada: [cortisense-webapp](https://agreeable-smoke-0581ac810.7.azurestaticapps.net/)
