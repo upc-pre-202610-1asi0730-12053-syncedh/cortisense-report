@@ -1868,6 +1868,104 @@ En esta sección se detallan los esquemas de baja fidelidad, estructurados segú
 <br>
 
 ### 4.4.3. Web Applications Mock-ups.
+
+**Iniciar Sesión**
+<img src="https://github.com/upc-pre-202610-1asi0730-12053-syncedh/cortisense-report/blob/main/Resources/web-app-ux-design/mock-ups/login.png?raw=true" alt=""/>
+<br>
+
+**Registrarse**
+<img src="https://github.com/upc-pre-202610-1asi0730-12053-syncedh/cortisense-report/blob/main/Resources/web-app-ux-design/mock-ups/register.png?raw=true" alt=""/>
+<br>
+
+**Inicio de Sesión no Aceptada**
+<img src="https://github.com/upc-pre-202610-1asi0730-12053-syncedh/cortisense-report/blob/main/Resources/web-app-ux-design/mock-ups/not-accepted.png?raw=true" alt=""/>
+<br>
+
+**Registro Completo**
+<img src="https://github.com/upc-pre-202610-1asi0730-12053-syncedh/cortisense-report/blob/main/Resources/web-app-ux-design/mock-ups/filled-register.png?raw=true" alt=""/>
+<br>
+
+**Registro Completo (Autocompletado)**
+<img src="https://github.com/upc-pre-202610-1asi0730-12053-syncedh/cortisense-report/blob/main/Resources/web-app-ux-design/mock-ups/filled-register-autocomplete.png?raw=true" alt=""/>
+<br>
+
+**Dashboard - Admin**
+<img src="https://github.com/upc-pre-202610-1asi0730-12053-syncedh/cortisense-report/blob/main/Resources/web-app-ux-design/mock-ups/admin-dashboard.png?raw=true" alt=""/>
+<br>
+
+**Personal Médico - Admin**
+<img src="https://github.com/upc-pre-202610-1asi0730-12053-syncedh/cortisense-report/blob/main/Resources/web-app-ux-design/mock-ups/admin-medic-personnel.png?raw=true" alt=""/>
+<br>
+
+**Personal Médico - Editar Personal Médico**
+<img src="https://github.com/upc-pre-202610-1asi0730-12053-syncedh/cortisense-report/blob/main/Resources/web-app-ux-design/mock-ups/edit-medic-personnel.png?raw=true" alt=""/>
+<br>
+
+**Personal Médico - Eliminar Personal Médico**
+<img src="https://github.com/upc-pre-202610-1asi0730-12053-syncedh/cortisense-report/blob/main/Resources/web-app-ux-design/mock-ups/delete-medic-personnel.png?raw=true" alt=""/>
+<br>
+
+**Invitaciones - Admin**
+<img src="https://github.com/upc-pre-202610-1asi0730-12053-syncedh/cortisense-report/blob/main/Resources/web-app-ux-design/mock-ups/admin-invitations.png?raw=true" alt=""/>
+<br>
+
+**Invitaciones - Enviar Invitación**
+<img src="https://github.com/upc-pre-202610-1asi0730-12053-syncedh/cortisense-report/blob/main/Resources/web-app-ux-design/mock-ups/send-invitation.png?raw=true" alt=""/>
+<br>
+
+**Invitaciones - Agregar Invitación**
+<img src="https://github.com/upc-pre-202610-1asi0730-12053-syncedh/cortisense-report/blob/main/Resources/web-app-ux-design/mock-ups/added-invitation.png?raw=true" alt=""/>
+<br>
+
+**Invitaciones - Revocar Invitación**
+<img src="https://github.com/upc-pre-202610-1asi0730-12053-syncedh/cortisense-report/blob/main/Resources/web-app-ux-design/mock-ups/revoke-invitation.png?raw=true" alt=""/>
+<br>
+
+**Suscripciones**
+<img src="https://github.com/upc-pre-202610-1asi0730-12053-syncedh/cortisense-report/blob/main/Resources/web-app-ux-design/mock-ups/subscriptions.png?raw=true" alt=""/>
+<br>
+
+**Suscripciones - Cambiar Suscripción**
+<img src="https://github.com/upc-pre-202610-1asi0730-12053-syncedh/cortisense-report/blob/main/Resources/web-app-ux-design/mock-ups/reports.png?raw=true" alt=""/>
+<br>
+
+**Reportes**
+<img src="https://github.com/upc-pre-202610-1asi0730-12053-syncedh/cortisense-report/blob/main/Resources/web-app-ux-design/mock-ups/reports.png?raw=true" alt=""/>
+<br>
+
+**Reportes - Generar Reporte**
+<img src="https://github.com/upc-pre-202610-1asi0730-12053-syncedh/cortisense-report/blob/main/Resources/web-app-ux-design/mock-ups/generate-report.png?raw=true" alt=""/>
+<br>
+
+**Reportes - Descargar Reporte**
+<img src="https://github.com/upc-pre-202610-1asi0730-12053-syncedh/cortisense-report/blob/main/Resources/web-app-ux-design/mock-ups/download-report.png?raw=true" alt=""/>
+<br>
+
+**Auditoría**
+<img src="https://github.com/upc-pre-202610-1asi0730-12053-syncedh/cortisense-report/blob/main/Resources/web-app-ux-design/mock-ups/auditory.png?raw=true" alt=""/>
+<br>
+
+**Configuración (Admin)**
+<img src="https://github.com/upc-pre-202610-1asi0730-12053-syncedh/cortisense-report/blob/main/Resources/web-app-ux-design/mock-ups/configuration.png?raw=true" alt=""/>
+<br>
+
+**Configuración (Admin) - Guardar Configuración**
+<img src="https://github.com/upc-pre-202610-1asi0730-12053-syncedh/cortisense-report/blob/main/Resources/web-app-ux-design/mock-ups/save-configuration.png?raw=true" alt=""/>
+<br>
+
+**Dashboard - Doctor**
+
+**Vitales**
+
+**Turnos**
+
+**Recuperación**
+
+**Recuperación - Aceptar Recuperación**
+
+**Configuración (Doctor)**
+
+
 ### 4.4.4. Web Applications User Flow Diagrams.
 ## 4.5. Web Applications Prototyping.
 ## 4.6. Domain-Driven Software Architecture.
