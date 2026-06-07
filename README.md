@@ -1892,6 +1892,8 @@ En esta sección se detallan los esquemas de baja fidelidad, estructurados segú
 **Dashboard - Admin**
 <img src="https://github.com/upc-pre-202610-1asi0730-12053-syncedh/cortisense-report/blob/main/Resources/web-app-ux-design/mock-ups/admin-dashboard.png?raw=true" alt=""/>
 <br>
+<img src="https://github.com/upc-pre-202610-1asi0730-12053-syncedh/cortisense-report/blob/main/Resources/web-app-ux-design/mock-ups/admin-dashboard-2.png?raw=true" alt=""/>
+<br>
 
 **Personal Médico - Admin**
 <img src="https://github.com/upc-pre-202610-1asi0730-12053-syncedh/cortisense-report/blob/main/Resources/web-app-ux-design/mock-ups/admin-medic-personnel.png?raw=true" alt=""/>
@@ -1946,7 +1948,7 @@ En esta sección se detallan los esquemas de baja fidelidad, estructurados segú
 <br>
 
 **Configuración (Admin)**
-<img src="https://github.com/upc-pre-202610-1asi0730-12053-syncedh/cortisense-report/blob/main/Resources/web-app-ux-design/mock-ups/configuration.png?raw=true" alt=""/>
+<img src="https://github.com/upc-pre-202610-1asi0730-12053-syncedh/cortisense-report/blob/main/Resources/web-app-ux-design/mock-ups/admin-configuration.png?raw=true" alt=""/>
 <br>
 
 **Configuración (Admin) - Guardar Configuración**
@@ -1954,17 +1956,28 @@ En esta sección se detallan los esquemas de baja fidelidad, estructurados segú
 <br>
 
 **Dashboard - Doctor**
+<img src="https://github.com/upc-pre-202610-1asi0730-12053-syncedh/cortisense-report/blob/main/Resources/web-app-ux-design/mock-ups/doctor-dashboard.png?raw=true" alt=""/>
+<br>
 
 **Vitales**
+<img src="https://github.com/upc-pre-202610-1asi0730-12053-syncedh/cortisense-report/blob/main/Resources/web-app-ux-design/mock-ups/vitals.png?raw=true" alt=""/>
+<br>
 
 **Turnos**
+<img src="https://github.com/upc-pre-202610-1asi0730-12053-syncedh/cortisense-report/blob/main/Resources/web-app-ux-design/mock-ups/schedule.png?raw=true" alt=""/>
+<br>
 
 **Recuperación**
+<img src="https://github.com/upc-pre-202610-1asi0730-12053-syncedh/cortisense-report/blob/main/Resources/web-app-ux-design/mock-ups/rests.png?raw=true" alt=""/>
+<br>
 
 **Recuperación - Aceptar Recuperación**
+<img src="https://github.com/upc-pre-202610-1asi0730-12053-syncedh/cortisense-report/blob/main/Resources/web-app-ux-design/mock-ups/accepted-rest.png?raw=true" alt=""/>
+<br>
 
 **Configuración (Doctor)**
-
+<img src="https://github.com/upc-pre-202610-1asi0730-12053-syncedh/cortisense-report/blob/main/Resources/web-app-ux-design/mock-ups/doctor-configuration.png?raw=true" alt=""/>
+<br>
 
 ### 4.4.4. Web Applications User Flow Diagrams.
 ## 4.5. Web Applications Prototyping.
