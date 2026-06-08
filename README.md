@@ -2008,6 +2008,7 @@ En esta sección se detallan los esquemas de baja fidelidad, estructurados segú
 
 ### 4.4.4. Web Applications User Flow Diagrams.
 ## 4.5. Web Applications Prototyping.
+<img width="1918" height="1027" alt="image" src="https://github.com/user-attachments/assets/9f0f91e1-62e0-4690-98b8-cb8c4b3146f1" />
 
 [![Ver Prototipo Interactivo]()](https://embed.figma.com/proto/w0FV2ep55UuqSE6KLTt37Z/Sin-t%C3%ADtulo?node-id=10-1085&p=f&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=10%3A1085&embed-host=share)
 
