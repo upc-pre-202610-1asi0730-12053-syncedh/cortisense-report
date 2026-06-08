@@ -2009,7 +2009,7 @@ En esta sección se detallan los esquemas de baja fidelidad, estructurados segú
 ### 4.4.4. Web Applications User Flow Diagrams.
 ## 4.5. Web Applications Prototyping.
 
-[![Ver Prototipo Interactivo](https://github.com/upc-pre-202610-1asi0730-12053-syncedh/cortisense-report/blob/main/Resources/web-app-prototyping/image.png?raw=true)](https://embed.figma.com/proto/w0FV2ep55UuqSE6KLTt37Z/Sin-t%C3%ADtulo?node-id=10-1085&p=f&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=10%3A1085&embed-host=share)
+[![Ver Prototipo Interactivo](https://github.com/upc-pre-202610-1asi0730-12053-syncedh/cortisense-report/blob/main/Resources/web-apps-prototyping/image.png?raw=true)](https://embed.figma.com/proto/w0FV2ep55UuqSE6KLTt37Z/Sin-t%C3%ADtulo?node-id=10-1085&p=f&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=10%3A1085&embed-host=share)
 
 ## 4.6. Domain-Driven Software Architecture.
 ### 4.6.1. Design-Level Event Storming.
