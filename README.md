@@ -2009,7 +2009,7 @@ En esta sección se detallan los esquemas de baja fidelidad, estructurados segú
 ### 4.4.4. Web Applications User Flow Diagrams.
 ## 4.5. Web Applications Prototyping.
 
-<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/proto/w0FV2ep55UuqSE6KLTt37Z/Sin-t%C3%ADtulo?node-id=10-1085&p=f&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=10%3A1085&embed-host=share" allowfullscreen></iframe>
+[![Prototipo de Figma](https://url-de-tu-captura-de-pantalla.com/imagen.png)](https://embed.figma.com/proto/w0FV2ep55UuqSE6KLTt37Z/Sin-t%C3%ADtulo?node-id=10-1085&p=f&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=10%3A1085&embed-host=share)
 
 ## 4.6. Domain-Driven Software Architecture.
 ### 4.6.1. Design-Level Event Storming.
