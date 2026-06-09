@@ -1484,6 +1484,128 @@ En esta sección, profundizaremos en la definición y elaboración de las User S
 |**EP07**|**Recursos de Resiliencia y Capacitación**|Como médico usuario, quiero acceder a contenido educativo para mejorar mi manejo del estrés y resiliencia.|<p>**Escenario 1: Recomendación de Contenido Personalizado**</p><p>**Given** el usuario ha tenido picos de estrés recurrentes,</p><p>**When** accede a la sección de "Recursos",</p><p>**Then** el sistema sugiere artículos y técnicas de respiración específicas para su caso.</p><p>**Escenario 2: Seguimiento de Progreso de Capacitación**</p><p>**Given** el médico completa un taller de manejo de fatiga,</p><p>**When** marca la actividad como terminada,</p><p>**Then** el sistema otorga un distintivo de "Perfil Resiliente" visible en su dashboard.</p>|
 |**EP08**|**Desarrollo de Landing Page y Adquisición**|Como cliente potencial de SyncedHealth, quiero acceder a un portal público informativo y persuasiva para conocer los beneficios de CortiSense y evaluar su adopción en mi institución de salud.|<p>**Escenario 1: Comunicación Efectiva de la Propuesta de Valor**</p><p>**Given** que un director médico accede al sitio web oficial de CortiSense,</p><p>**When** navega por las secciones de propuesta de valor (Hero), descripción de la App y especificaciones de Wearables,</p><p>**Then** el sistema debe presentar la información de forma jerárquica, visualmente atractiva y responsive, asegurando que el usuario entienda el beneficio clínico en menos de 10 segundos.</p><p>**Escenario 2: Facilitación del Embudo de Adquisición**</p><p>**Given** que un usuario está interesado en implementar la solución en su clínica,</p><p>**When** consulta la sección de planes de pago y utiliza los enlaces de navegación del Header o Footer,</p><p>**Then** el sistema debe permitirle visualizar los niveles de suscripción de forma clara y ofrecer un canal de contacto directo para solicitar una demo o soporte técnico.</p>|
 
+| Epic ID | Título | Descripción | Criterios de Aceptación |
+| --- | --- | --- | --- |
+| **EP01** | Gestión de Suscripciones y Planes | Como administrador institucional, quiero gestionar los planes de pago y la activación de suscripciones para habilitar las funcionalidades contratadas por el hospital. | **Escenario 1: Activación tras confirmación de pago**<br>
+
+<br>• **Given** que el administrador ha completado el pago de un plan,<br>
+
+<br>• **When** Stripe Sandbox confirma la transacción exitosa,<br>
+
+<br>• **Then** la plataforma cambia el estado de la suscripción a 'Activa' y notifica al usuario.<br>
+
+<br>
+
+<br>**Escenario 2: Restricción automática por expiración**<br>
+
+<br>• **Given** que la suscripción de la institución ha llegado a su fecha de vencimiento sin renovación,<br>
+
+<br>• **When** un usuario intenta ingresar a los tableros del hospital,<br>
+
+<br>• **Then** el sistema bloquea el acceso a las herramientas premium y muestra una alerta de renovación de plan. |
+| **EP02** | Gestión de Identidad y Accesos | Como usuario de la plataforma, quiero registrarme, autenticarme y recibir roles dentro del sistema para acceder de manera segura a mi espacio de trabajo hospitalario. | **Escenario 1: Verificación de usuario invitado**<br>
+
+<br>• **Given** que un profesional médico recibe un correo de invitación,<br>
+
+<br>• **When** acepta los términos y completa su registro a través de Firebase Auth,<br>
+
+<br>• **Then** el sistema lo asocia correctamente al workspace de su hospital con su estado activo.<br>
+
+<br>
+
+<br>**Escenario 2: Denegación por permisos insuficientes**<br>
+
+<br>• **Given** que un usuario con el rol 'Medical Staff' intenta ingresar a la configuración de la organización,<br>
+
+<br>• **When** el sistema evalúa su perfil,<br>
+
+<br>• **Then** la política de accesos deniega la entrada y registra un intento no autorizado en el sistema. |
+| **EP03** | Evaluación de Riesgo Clínico | Como sistema, quiero procesar los datos biométricos del personal médico para calcular su puntaje de fatiga e identificar riesgos clínicos inminentes. | **Escenario 1: Cálculo en tiempo real**<br>
+
+<br>• **Given** que el flujo de datos biométricos del wearable se está transmitiendo activamente,<br>
+
+<br>• **When** el motor de análisis aplica la política de evaluación,<br>
+
+<br>• **Then** actualiza el puntaje de fatiga y refresca el nivel de riesgo en el panel del usuario.<br>
+
+<br>
+
+<br>**Escenario 2: Identificación de riesgo extremo**<br>
+
+<br>• **Given** que un médico presenta variabilidad cardíaca y cortisol fuera de los umbrales tolerables,<br>
+
+<br>• **When** se excede el límite crítico preestablecido,<br>
+
+<br>• **Then** el sistema emite un evento de alerta por riesgo clínico extremo. |
+| **EP04** | Gestión de Incidentes y Escalamiento | Como supervisor clínico, quiero que el sistema registre incidentes de riesgo y me alerte de forma inmediata para poder mitigar el agotamiento del personal. | **Escenario 1: Apertura automática de incidentes**<br>
+
+<br>• **Given** que el motor de riesgo detecta una anomalía fisiológica grave en un médico,<br>
+
+<br>• **When** se dispara el evento de riesgo clínico,<br>
+
+<br>• **Then** el sistema abre automáticamente un incidente formal y le asigna prioridad alta.<br>
+
+<br>
+
+<br>**Escenario 2: Notificación al supervisor**<br>
+
+<br>• **Given** un nuevo incidente de prioridad crítica abierto en el sistema,<br>
+
+<br>• **When** se ejecuta la política de despacho,<br>
+
+<br>• **Then** se envía una alerta push/email inmediata al supervisor en turno utilizando Resend Email API. |
+| **EP05** | Coordinación de Turnos | Como supervisor clínico, quiero evaluar turnos críticos, bloquear asignaciones peligrosas y coordinar reemplazos para salvaguardar al personal y asegurar la continuidad operativa. | **Escenario 1: Bloqueo preventivo de turno**<br>
+
+<br>• **Given** que un médico programado para un turno nocturno entra en estado de riesgo extremo,<br>
+
+<br>• **When** se evalúa la asignación del turno,<br>
+
+<br>• **Then** el sistema bloquea automáticamente dicho turno para evitar incidentes laborales.<br>
+
+<br>
+
+<br>**Escenario 2: Proposición automática de suplentes**<br>
+
+<br>• **Given** que un turno ha sido bloqueado de forma preventiva,<br>
+
+<br>• **When** el supervisor consulta las alternativas disponibles,<br>
+
+<br>• **Then** el sistema muestra una lista filtrada de médicos con bajo nivel de fatiga aptos para el reemplazo. |
+| **EP06** | Recuperación del Personal | Como profesional médico o supervisor, quiero recibir y gestionar recomendaciones de descanso para recuperarme fisiológicamente de la fatiga. | **Escenario 1: Notificación de descanso sugerido**<br>
+
+<br>• **Given** que se ha detectado la necesidad imperativa de un descanso para un médico,<br>
+
+<br>• **When** el supervisor aprueba la pausa activa,<br>
+
+<br>• **Then** el sistema envía una alerta de recuperación directamente a la aplicación del profesional.<br>
+
+<br>
+
+<br>**Escenario 2: Seguimiento de rechazo de plan**<br>
+
+<br>• **Given** que un médico decide denegar la recomendación de pausa por una urgencia,<br>
+
+<br>• **When** presiona la opción de rechazar plan,<br>
+
+<br>• **Then** el sistema cambia el estado del plan de recuperación a 'Rechazado' y levanta un punto de fricción para su revisión. |
+| **EP07** | Auditoría y Cumplimiento | Como administrador institucional, quiero que el sistema guarde trazabilidad inmutable de todas las evaluaciones de riesgo y decisiones críticas para generar reportes de cumplimiento. | **Escenario 1: Sincronización inmutable del historial**<br>
+
+<br>• **Given** que un supervisor toma una decisión crítica sobre un turno o incidente,<br>
+
+<br>• **When** la acción se completa con éxito,<br>
+
+<br>• **Then** el sistema registra de forma automática e inmediata el evento en el log de auditoría.<br>
+
+<br>
+
+<br>**Escenario 2: Consolidación de reportes institucionales**<br>
+
+<br>• **Given** el administrador necesita presentar evidencia ante un comité de salud ocupacional,<br>
+
+<br>• **When** solicita el reporte mensual de intervenciones,<br>
+
+<br>• **Then** el sistema procesa el historial y genera un informe de cumplimiento inalterable con estadísticas clave. |
+
 <br><br>
 
 **USER STORIES**
