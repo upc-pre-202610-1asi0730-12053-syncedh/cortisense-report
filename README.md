@@ -4059,19 +4059,25 @@ Durante este Sprint, el equipo ha organizado el trabajo en base a las Epics defi
 
 Nuestro objetivo principal con este Sprint 2 es desplegar la versión inicial de la App Web de CortiSense con el propósito de validar nuestra arquitectura técnica en un entorno real y facilitar la captación de early adopters mediante una interfaz funcional que demuestre el monitoreo de niveles de cortisol y estrés en tiempo real.
 
-| User Story | Work-Item / Task                                        |        |                              |                                           |                        |                 |            |
-| :-----------| :-------------------------------------------------------| :-------| :-----------------------------| :-----------------------------------------| :-----------------------| :----------------| :-----------|
+Aquí tienes el **Sprint Backlog 2 actualizado** con el estado real de los avances, y un **Sprint Backlog 3 tentativo** planeado con la nueva estructura de Domain-Driven Design (DDD).
+
+Este Backlog refleja lo que realmente se ejecutó y validó en tu repositorio para conformar la versión inicial del MVP, enfocándose fuertemente en **Identity & Access Management (IAM)**, el prototipo de **Subscription & Plan Management** y las vistas preliminares de **Clinical Risk Assessment (CRA)**.
+
+| User Story | Work-Item / Task | | | | | | |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | **Id** | **Title** | **Id** | **Title** | **Description** | **Estimation (Hours)** | **Assigned To** | **Status** |
-| US-01      | Registro de Médico                                      | TK-09  | Auth Form UI                 | Implementación de formulario de registro  | 4                      | Marcelo Pareja      | Done       |
-| US-01      | Registro de Médico                                      | TK-10  | Auth Backend                 | Lógica de creación de cuenta en DB        | 6                      | Marcelo Pareja      | Done       |
-| US-20      | Checkout de Plan                                        | TK-24  | Stripe Integration           | Pasarela de pagos de suscripción          | 10                     | Marcelo Pareja      | Done       |
-| US-04      | Búsqueda de Personal                                    | TK-12  | Search Engine                | Implementación de filtros de búsqueda     | 5                      | Johan Yonel         | Done       |
-| US-05      | Vinculación de Wearable                                  | TK-13  | BLE Connection               | Conectividad Bluetooth Low Energy         | 10                     | Johan Yonel         | Done       |
-| US-08      | Iniciar Monitoreo                                       | TK-15  | Real-time Engine             | Motor de captura de datos en tiempo real  | 7                      | Sebastián Gutierrez | Done       |
-| US-09      | Detección de Fatiga                                     | TK-16  | Analysis Algorithm           | Algoritmo de patrones críticos            | 12                     | Sebastián Gutierrez | Done       |
-| US-10      | Almacenamiento de Datos                                 | TK-17  | Persistence Layer            | Repositorio de datos biométricos          | 6                      | Sebastián Gutierrez | Done       |
-| US-12      | Generación de Alerta                                    | TK-18  | Notification Dispatch        | Servicio de despacho de alertas           | 5                      | Guiou Justinn       | Done       |
-| US-14      | Programación de Descansos                                | TK-21  | Calendar Sync                | Integración con Google Calendar           | 8                      | Jairo Santiago      | Done      |
+| US-01 | Registro de Adm. Institucional | TK-01 | Auth Registration UI | Flujo de creación inicial de workspace. | 6 | Marcelo Pareja | **Done** |
+| US-02 | Invitación a Personal Médico | TK-02 | Invite API & UI | Módulo de invitaciones para el *staff* médico. | 5 | Marcelo Pareja | **Done** |
+| US-03 | Aceptación de Invitación | TK-03 | Invited Reg. Flow | Aceptación de invitación y vinculación al sistema. | 4 | Marcelo Pareja | **Done** |
+| US-05 | Autenticación Segura | TK-04 | Login IAM Flow | Integración del login centralizado de la app. | 5 | Marcelo Pareja | **Done** |
+| US-06 | Selección de Plan de Suscripción | TK-05 | Billing BC Prototype | Prototipo de vistas para facturación y selección de planes. | 8 | Sebastián Gutierrez | **Done** |
+| US-07 | Confirmación de Pago | TK-06 | Checkout Simulator | Integración con pasarela simulada en frontend. | 6 | Sebastián Gutierrez | **Done** |
+| US-38 | Consulta de Resumen de Suscripción | TK-07 | Billing Summary UI | Dashboard administrativo de estado de suscripción. | 4 | Sebastián Gutierrez | **Done** |
+| US-10 | Sincronización Biométrica | TK-08 | Device Mgt. CRA | Gestión base de dispositivos para lectura. | 10 | Johan Yonel | **Done** |
+| US-11 | Cálculo de Puntaje de Fatiga | TK-09 | Dashboard Mockup | Construcción de tableros interactivos de métricas. | 8 | Johan Yonel | **Done** |
+| US-12 | Detección de Anomalías | TK-10 | Clinical Alerts View | Vistas estáticas para la detección de anomalías. | 6 | Guiou Justinn | **Done** |
+| US-13 | Clasificación de Nivel de Riesgo | TK-11 | Risk Staff View | Vistas de personal bajo diferentes umbrales de riesgo. | 6 | Guiou Justinn | **Done** |
+| US-15 | Apertura de Incidente Clínico | TK-12 | Incident Initial UI | Pantalla de recepción de alertas para el supervisor. | 5 | Jairo Santiago | **Done** |
 
 #### 5.2.2.4. Development Evidence for Sprint Review.
 
