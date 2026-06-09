@@ -4186,14 +4186,6 @@ A continuación, se presentan las estadísticas de colaboración obtenidas desde
 
 #### 5.2.2.8. Team Collaboration Insights during Sprint.
 
-<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Collaboration-Insights/insights-webapp.png?raw=true"></img><br>l equipo mantuvo un flujo de trabajo colaborativo constante a través de la organización en GitHub. Se utilizaron ramas `feature/*` para el desarrollo de nuevas funcionalidades, las cuales fueron integradas a la rama `develop` mediante Pull Requests revisados por al menos dos miembros del equipo. Las tareas fueron gestionadas en el tablero de Jira, actualizando el estado de cada work-item a medida que avanzaba su implementación.
-
-A continuación, se presentan las estadísticas de colaboración obtenidas desde los insights de GitHub durante el Sprint 2:
-
-
-
-#### 5.2.2.8. Team Collaboration Insights during Sprint.
-
 <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Collaboration-Insights/insights-webapp.png?raw=true"></img><br>
 
 ### 5.2.3. Sprint 3
