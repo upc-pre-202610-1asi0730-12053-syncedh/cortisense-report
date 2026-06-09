@@ -53,11 +53,15 @@ URL del Repositorio del Project Report: [cortisense-report](https://github.com/u
 
 URL del Repositorio de la Landing Page: [cortisense-website](https://github.com/upc-pre-202610-1asi0730-12053-syncedh/cortisense-website)
 
-URL de la Landing Page desplegada: [cortisense-website](https://upc-pre-202610-1asi0730-12053-syncedh.github.io/cortisense-website/)
-
-URL del Repositorio de la App Web: [cortisense-webapp](https://github.com/upc-pre-202610-1asi0730-12053-syncedh/cortisense-webapp)
+URL del Repositorio de la Aplicación Web: [cortisense-webapp](https://github.com/upc-pre-202610-1asi0730-12053-syncedh/cortisense-webapp)
 
 URL del Repositorio de la Platform: [cortisense-platform](https://github.com/upc-pre-202610-1asi0730-12053-syncedh/cortisense-platform)
+
+URL del Repositorio del trabajo de Responsabilidad Social: [webdev-course-syncedhealth](https://github.com/upc-pre-202610-1asi0730-12053-syncedh/webdev-course-syncedhealth)
+
+URL de la Landing Page desplegada: [cortisense-website](https://upc-pre-202610-1asi0730-12053-syncedh.github.io/cortisense-website/)
+
+URL de la Aplicación Web desplegada: [cortisense-webapp](https://agreeable-smoke-0581ac810.7.azurestaticapps.net/)
 
 <strong>*Entrega TB1:*</strong>
 
@@ -4256,7 +4260,7 @@ Entrevista 5:
 
 https://drive.google.com/file/d/1DsKAj6ceQ0UX6NWjwXI8-3jTV6jH7xYH/view?usp=drive_link
 
-## Repoitorios de Github
+## Repositorios de Github
 
 Organización de Github del equipo SyncedHealth: [syncedhealth](https://github.com/upc-pre-202610-1asi0730-12053-syncedh)
 
@@ -4267,6 +4271,8 @@ Repositorio de la Landing Page: [cortisense-website](https://github.com/upc-pre-
 Repositorio de la App Web: [cortisense-webapp](https://github.com/upc-pre-202610-1asi0730-12053-syncedh/cortisense-webapp)
 
 Repositorio de la Platform: [cortisense-platform](https://github.com/upc-pre-202610-1asi0730-12053-syncedh/cortisense-platform)
+
+Repositorio del trabajo de Responsabilidad Social: [webdev-course-syncedhealth](https://github.com/upc-pre-202610-1asi0730-12053-syncedh/webdev-course-syncedhealth)
 
 ## Despliegues y servicios API
 
