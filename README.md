@@ -4036,16 +4036,6 @@ Por lo tanto, la relación de endpoints documentados con OpenAPI (Swagger), las 
 <div align="center"><img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Collaboration-Insights/Insight-1.png?raw=true"></div><br><br>
 <div align="center"><img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Collaboration-Insights/Insight-2.png?raw=true"></div><br><br>
 
-Listed directory upc-pre-202610-1asi0730-12053-SyncedHealth-webapp
-Ran command: `git log --pretty=format:"| %h | %ad | %s |" --date=local -n 50`
-Ran command: `git log --pretty=format:"| %h | %ad | %s |" --date=local -n 50`
-
-Aquí tienes la sección actualizada y adecuada según el historial de commits recientes, características añadidas y el despliegue realizado en tu repositorio local (`upc-pre-202610-1asi0730-12053-SyncedHealth-webapp`).
-
-He consolidado la evidencia de desarrollo (que estaba duplicada), actualizado el estado del Sprint Backlog (muchas tareas pasaron a *Done* con base en tus *commits* como "complete project implementation", "staff-management" y "clinical-alerts"), y he añadido evidencia sobre el despliegue automatizado en Azure que se puede ver en los *commits* recientes.
-
-***
-
 ### 5.2.2. Sprint 2
 #### 5.2.2.1. Sprint Planning 2.
 | Sprint #                               | Sprint 2                                                                                                                                                  |
