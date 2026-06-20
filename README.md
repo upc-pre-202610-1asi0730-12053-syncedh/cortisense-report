@@ -4428,8 +4428,8 @@ A continuación, la evidencia de compilación y la visualización de las operaci
 
 El backend ha sido dividido en controladores que siguen las convenciones RESTful bajo CQRS, proveyendo los siguientes endpoints representativos por módulo:
 
-| Bounded Context | Endpoint | Verbo HTTP | Acción |
-| --- | --- | --- | --- |
+| Bounded Context(Frontend) | Endpoint | Verbo HTTP | Acción |
+|-- - | -- - | -- - | -- - |
 | Audit Compliance | / api / v1 / audit - logs | GET | Obtiene todos los logs de auditoría |
 | Audit Compliance | / api / v1 / audit - logs | POST | Crea un log de auditoría |
 | Audit Compliance | / api / v1 / audit - logs / {auditLogId} | GET | Obtiene un log de auditoría por identificador |
@@ -4452,22 +4452,22 @@ El backend ha sido dividido en controladores que siguen las convenciones RESTful
 | Clinical Risk Assessment | / api / v1 / riskassessments | GET | Obtiene evaluaciones de riesgo |
 | Clinical Risk Assessment | / api / v1 / riskassessments | POST | Crea una evaluación de riesgo |
 | Clinical Risk Assessment | / api / v1 / riskassessments / {id} | GET | Obtiene una evaluación de riesgo por Id |
-Shift Coordination	/api/v1/shiftrecords	GET	Obtiene registros de turnos médicos
-Shift Coordination	/api/v1/shiftrecords	POST	Crea un registro de turno
-Shift Coordination	/api/v1/shiftrecords/{id}	GET	Obtiene un turno por Id
-Shift Coordination	/api/v1/shiftrecords/{id}	PATCH	Actualiza el estado de un turno
-Subscription Plan Management	/api/v1/subscriptions	GET	Obtiene las suscripciones adquiridas
-Subscription Plan Management	/api/v1/subscriptions	POST	Crea una nueva suscripción
-Subscription Plan Management	/api/v1/subscriptions/{id}	PATCH	Actualiza una suscripción
-IAM (Identity & Access)	/api/v1/users/{id}	GET	Obtiene un usuario por Id
-IAM (Identity & Access)	/api/v1/users	GET	Obtiene todos los usuarios
-Clinical Risk Assessment	/api/v1/vitalsignanomalies	GET	Obtiene anomalías de signos vitales
-Clinical Risk Assessment	/api/v1/vitalsignanomalies	POST	Crea una anomalía de signos vitales
-Clinical Risk Assessment	/api/v1/vitalsignanomalies/{id}	GET	Obtiene anomalía por Id
-Clinical Risk Assessment	/api/v1/vitalsignanomalies/{id}	PATCH	Actualiza el estado de una anomalía
-Clinical Risk Assessment	/api/v1/vitalsignreadings	GET	Obtiene lecturas de signos vitales
-Clinical Risk Assessment	/api/v1/vitalsignreadings	POST	Crea una lectura de signo vital
-Clinical Risk Assessment	/api/v1/vitalsignreadings/{id}	GET	Obtiene lectura por Id
+| Shift Coordination | / api / v1 / shiftrecords | GET | Obtiene registros de turnos médicos |
+| Shift Coordination | / api / v1 / shiftrecords | POST | Crea un registro de turno |
+| Shift Coordination | / api / v1 / shiftrecords / {id} | GET | Obtiene un turno por Id |
+| Shift Coordination | / api / v1 / shiftrecords / {id} | PATCH | Actualiza el estado de un turno |
+| Subscription Plan Management | / api / v1 / subscriptions | GET | Obtiene las suscripciones adquiridas |
+| Subscription Plan Management | / api / v1 / subscriptions | POST | Crea una nueva suscripción |
+| Subscription Plan Management | / api / v1 / subscriptions / {id} | PATCH | Actualiza una suscripción |
+| IAM(Identity& Access) | / api / v1 / users / {id} | GET | Obtiene un usuario por Id |
+| IAM(Identity& Access) | / api / v1 / users | GET | Obtiene todos los usuarios |
+| Clinical Risk Assessment | / api / v1 / vitalsignanomalies | GET | Obtiene anomalías de signos vitales |
+| Clinical Risk Assessment | / api / v1 / vitalsignanomalies | POST | Crea una anomalía de signos vitales |
+| Clinical Risk Assessment | / api / v1 / vitalsignanomalies / {id} | GET | Obtiene anomalía por Id |
+| Clinical Risk Assessment | / api / v1 / vitalsignanomalies / {id} | PATCH | Actualiza el estado de una anomalía |
+| Clinical Risk Assessment | / api / v1 / vitalsignreadings | GET | Obtiene lecturas de signos vitales |
+| Clinical Risk Assessment | / api / v1 / vitalsignreadings | POST | Crea una lectura de signo vital |
+| Clinical Risk Assessment | / api / v1 / vitalsignreadings / {id} | GET | Obtiene lectura por Id |
 
 #### 5.2.3.7. Software Deployment Evidence for Sprint Review.
 
