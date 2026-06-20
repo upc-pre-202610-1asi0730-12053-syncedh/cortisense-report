@@ -4247,6 +4247,17 @@ Durante este Sprint, el equipo ha organizado el trabajo en base a las Epics defi
 
 #### 5.2.3.3. Sprint Backlog 3.
 
+El Sprint Backlog agrupa el modelado de dominio, la capa de infraestructura y los servicios RESTful para cada uno de los subsistemas del proyecto CortiSense Platform.
+
+| User Story | Work-Item / Task | | | | | | |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **Id** | **Title** | **Id** | **Title** | **Description** | **Estimation (Hours)** | **Assigned To** | **Status** |
+| US-01 | Autenticación Segura | TK-10 | IAM Bounded Context | Diseño de JWT, Registro, y Login de Usuarios. Configuración de Repositorios. | 8 | Marcelo Pareja | Done |
+| US-12 | Detección de Anomalías | TK-11 | Clinical Risk Domain | Modelado de Alertas Clínicas, Anomalías Biométricas y Evaluaciones de Riesgo. | 10 | Johan Yonel | Done |
+| US-15 | Trazabilidad del Sistema | TK-12 | Audit Compliance | Creación de Logs de Auditoría para trazabilidad de acciones críticas en BD. | 6 | Jairo Santiago | Done |
+| US-08 | Gestión de Turnos Médicos | TK-13 | Shift Coordination | Servicios REST para asignar y actualizar el estado de turnos (Shift Records). | 7 | Guiou Justinn | Done |
+| US-06 | Integración de Pagos | TK-14 | Subscription Billing | Módulo de membresías, checkout sessions e integración externa con Stripe. | 12 | Marcelo Pareja | Done |
+| US-All | Base de Datos Relacional | TK-15 | EF Core Migrations | Sincronización de Fluent API y mapeo de persistencia hacia base de datos MySQL. | 5 | Equipo Completo | Done |
 
 #### 5.2.3.4. Development Evidence for Sprint Review.
 
