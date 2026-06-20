@@ -4236,9 +4236,183 @@ A continuación, se presentan las estadísticas de colaboración obtenidas desde
 | **Suma de puntos de historia**                | **25 Story Points**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 #### 5.2.3.2. Aspect Leaders and Collaborators.
 
-#### 5.2.3.3. Sprint Backlog 2.
+Durante este Sprint, el equipo ha organizado el trabajo en base a las Epics definidas en el Product Backlog. La asignación de líderes y colaboradores se ha realizado considerando la responsabilidad real de cada miembro en los distintos aspectos del proyecto, según se documenta en la planificación interna del equipo.
+
+| Team Member (Last Name, First Name) | GitHub Username | EP01 | EP02 | EP03 | EP04 | EP05 | EP06 | EP07 | EP08 |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| León Morales, Johan Yonel | TheCap213 | C | C | L | C | C | C | C | C |
+| Mauricio Silva, Guiou Justinn | Justinn2006 | C | C | C | L | C | C | C | C |
+| Pareja Calloapaza, Marcelo Fausto | marc3lllob7 | L | C | C | C | C | L | C | C |
+| Santiago Atanacio, Jairo Mathias | Msa-ware | C | C | C | C | L | C | C | C |
+
+#### 5.2.3.3. Sprint Backlog 3.
+
 
 #### 5.2.3.4. Development Evidence for Sprint Review.
+
+| HASH | FECHA | USUARIO | ASUNTO |
+|---|---|---|---|
+| 80ea4a7 | Sat Jun 20 03:11:02 2026 | Marce | Merge branch 'develop' of https://github.com/upc-pre-202610-1asi0730-12053-syncedh/cortisense-platform into develop |
+| 9c81184 | Sat Jun 20 03:10:42 2026 | Marce | test |
+| ad6fbee | Sat Jun 20 03:08:58 2026 | Marce | feat(subscription): add subscription bounded context and migrations |
+| c884a0a | Sat Jun 20 02:01:44 2026 | Justinn2006 | Merge pull request #5 from upc-pre-202610-1asi0730-12053-syncedh/feature/audit-compliance |
+| f93358a | Sat Jun 20 01:59:28 2026 | Ghiou Justinn Mauricio Silva | fix: restore problem details factory |
+| 9df0e36 | Sat Jun 20 01:53:38 2026 | Ghiou Justinn Mauricio Silva | merge develop into audit compliance |
+| 7034de1 | Sat Jun 20 01:30:01 2026 | Ghiou Justinn Mauricio Silva | chore: update database connection placeholders |
+| 18857d0 | Sat Jun 20 01:26:32 2026 | Ghiou Justinn Mauricio Silva | feat: add audit logs database migration |
+| 22a3aa3 | Sat Jun 20 00:24:23 2026 | Marce | test |
+| f06e2b4 | Sat Jun 20 00:22:27 2026 | Marce | Merge branch 'develop' of https://github.com/upc-pre-202610-1asi0730-12053-syncedh/cortisense-platform into develop |
+| 859809f | Sat Jun 20 00:22:12 2026 | Marce | chore: fix multiple errors. |
+| bb90398 | Fri Jun 19 23:46:17 2026 | Ghiou Justinn Mauricio Silva | feat: register audit compliance services |
+| ed3b6e3 | Fri Jun 19 23:44:03 2026 | Ghiou Justinn Mauricio Silva | feat: add audit logs rest controller |
+| 1162c50 | Fri Jun 19 23:33:10 2026 | Ghiou Justinn Mauricio Silva | feat: add audit log rest assemblers |
+| bcab9b1 | Fri Jun 19 23:24:29 2026 | Ghiou Justinn Mauricio Silva | feat: add audit log rest resources |
+| 5aae2b0 | Fri Jun 19 23:22:54 2026 | Waza Leon | Merge pull request #4 from upc-pre-202610-1asi0730-12053-syncedh/feature/clinical-risk-assessment |
+| 2f52aef | Fri Jun 19 23:19:18 2026 | TheCap213 | fix(shared): update problem details namespace usage |
+| f06485b | Fri Jun 19 23:13:09 2026 | Ghiou Justinn Mauricio Silva | chore: add audit compliance rest structure |
+| d71ca0f | Fri Jun 19 23:12:08 2026 | TheCap213 | Merge remote-tracking branch 'origin/develop' into feature/clinical-risk-assessment |
+| c25ce95 | Fri Jun 19 23:10:33 2026 | Ghiou Justinn Mauricio Silva | feat: add audit log application services |
+| da875bf | Fri Jun 19 22:57:54 2026 | Ghiou Justinn Mauricio Silva | feat: add audit log command application service |
+| 276575b | Fri Jun 19 22:57:28 2026 | TheCap213 | chore(database): add clinical risk assessment migration |
+| 689ab7a | Fri Jun 19 22:54:50 2026 | Ghiou Justinn Mauricio Silva | chore: add audit compliance application structure |
+| a703b28 | Fri Jun 19 22:52:58 2026 | TheCap213 | chore(clinical-risk-assessment): register services and mappings |
+| 3a6051d | Fri Jun 19 22:52:32 2026 | Ghiou Justinn Mauricio Silva | feat: add audit log repository implementation |
+| f12955f | Fri Jun 19 22:47:46 2026 | Ghiou Justinn Mauricio Silva | feat: register audit compliance entity configuration |
+| 96cd46f | Fri Jun 19 22:44:17 2026 | TheCap213 | feat(clinical-risk-assessment): add clinical risk endpoints |
+| 7db9cbb | Fri Jun 19 22:35:48 2026 | TheCap213 | refactor(shared): normalize rest namespace casing |
+| 83f1212 | Fri Jun 19 22:34:18 2026 | Ghiou Justinn Mauricio Silva | feat: add audit compliance entity configuration |
+| 9e741f4 | Fri Jun 19 22:29:35 2026 | Ghiou Justinn Mauricio Silva | chore: add audit compliance infrastructure structure |
+| d994a75 | Fri Jun 19 22:28:40 2026 | Ghiou Justinn Mauricio Silva | refactor: normalize REST folder casing |
+| ec56c5b | Fri Jun 19 22:21:00 2026 | TheCap213 | feat(clinical-risk-assessment): add action result assembler |
+| 5bdc4aa | Fri Jun 19 22:14:14 2026 | TheCap213 | feat(clinical-risk-assessment): add rest assemblers |
+| 2e1aeae | Fri Jun 19 22:12:58 2026 | Ghiou Justinn Mauricio Silva | feat: add audit compliance errors and messages |
+| 4ba8b2c | Fri Jun 19 22:05:34 2026 | TheCap213 | feat(clinical-risk-assessment): add rest resources |
+| 2adeab4 | Fri Jun 19 21:57:43 2026 | TheCap213 | feat(clinical-risk-assessment): add command services |
+| 09430f6 | Fri Jun 19 21:56:55 2026 | Marce | test |
+| 98792da | Fri Jun 19 21:39:17 2026 | Ghiou Justinn Mauricio Silva | feat: add audit log service contracts |
+| 3fad276 | Fri Jun 19 21:32:16 2026 | Ghiou Justinn Mauricio Silva | feat: add audit log repository contract |
+| 332f9fc | Fri Jun 19 21:29:35 2026 | TheCap213 | feat(clinical-risk-assessment): add query services |
+| 9e3b06d | Fri Jun 19 21:28:27 2026 | Ghiou Justinn Mauricio Silva | feat: add audit log audit metadata |
+| 3fe58e9 | Fri Jun 19 21:22:57 2026 | Ghiou Justinn Mauricio Silva | feat: add audit log aggregate |
+| 10e1600 | Fri Jun 19 21:20:30 2026 | TheCap213 | feat(clinical-risk-assessment): add persistence repositories |
+| ed2542e | Fri Jun 19 21:10:24 2026 | Ghiou Justinn Mauricio Silva | feat: add audit log query records |
+| bfc54e5 | Fri Jun 19 21:09:38 2026 | TheCap213 | feat(clinical-risk-assessment): add vital sign reading domain model |
+| ac52fdc | Fri Jun 19 21:02:59 2026 | TheCap213 | feat(clinical-risk-assessment): add vital sign anomaly domain model |
+| 1c4f49a | Fri Jun 19 20:50:41 2026 | TheCap213 | feat(clinical-risk-assessment): add clinical alert domain model |
+| ff42eef | Fri Jun 19 20:50:37 2026 | Ghiou Justinn Mauricio Silva | feat: add create audit log command |
+| aa15b6f | Fri Jun 19 20:43:59 2026 | Ghiou Justinn Mauricio Silva | feat: add audit action source enum |
+| 3a31cfb | Fri Jun 19 20:39:29 2026 | Ghiou Justinn Mauricio Silva | feat: add audit resource type enum |
+| ba6f587 | Fri Jun 19 20:38:19 2026 | TheCap213 | feat(clinical-risk-assessment): add risk assessment domain model |
+| 6b692c3 | Fri Jun 19 20:36:51 2026 | Ghiou Justinn Mauricio Silva | feat: add audit severity enum |
+| 1b6ada6 | Fri Jun 19 20:31:20 2026 | Ghiou Justinn Mauricio Silva | feat: add audit log type enum |
+| ec59990 | Fri Jun 19 20:29:16 2026 | TheCap213 | feat(clinical-risk-assessment): add error definitions |
+| 62cd5ca | Fri Jun 19 20:15:55 2026 | Ghiou Justinn Mauricio Silva | chore: add audit compliance domain structure |
+| 7deff06 | Fri Jun 19 20:13:07 2026 | Ghiou Justinn Mauricio Silva | chore: add audit compliance bounded context readme |
+| 15e60b7 | Fri Jun 19 19:59:05 2026 | Marce | test |
+| 699470d | Fri Jun 19 19:58:04 2026 | Marce | test |
+| 042b1f3 | Fri Jun 19 19:54:23 2026 | Marce | chore: updated doc |
+| eb24b68 | Fri Jun 19 19:52:39 2026 | tree_hugger | Merge pull request #3 from upc-pre-202610-1asi0730-12053-syncedh/main |
+| c60b033 | Fri Jun 19 19:49:35 2026 | Marce | Merge branch 'develop' |
+| 8791d68 | Fri Jun 19 19:48:53 2026 | Marce | chore: updated gitignore |
+| 271e55c | Fri Jun 19 19:47:06 2026 | Marce | chore: eliminar archivos de cache y compilacion del rastreo de git |
+| cbcab2f | Fri Jun 19 19:45:42 2026 | Marce | merge: resolver conflictos de archivos temporales |
+| 3f13e8d | Fri Jun 19 19:41:40 2026 | Marce | test |
+| 9686c70 | Fri Jun 19 19:38:23 2026 | Marce | chore: update program. |
+| 20cf3d3 | Fri Jun 19 19:36:01 2026 | Marce | feat(iam): add user command service. |
+| ab2777c | Fri Jun 19 19:29:46 2026 | Marce | chore: add iam configuration on app db context. |
+| 2c79d45 | Fri Jun 19 19:11:48 2026 | Marce | chore: delete weather forecast references. |
+| 5a3794b | Fri Jun 19 19:01:15 2026 | Marce | feat(iam): add users controller. |
+| 43a4a75 | Fri Jun 19 18:56:47 2026 | Marce | feat(iam): add authentication controller and iam messages. |
+| 9365e85 | Fri Jun 19 17:54:43 2026 | Marce | feat(iam): add user resource from entity assembler. |
+| 2076544 | Fri Jun 19 17:53:37 2026 | Marce | feat(iam): add sign up command from resource assemblers. |
+| 47c5310 | Fri Jun 19 17:42:28 2026 | Marce | feat(iam): add sign in command from resource assemblers. |
+| d097313 | Fri Jun 19 17:27:41 2026 | tree_hugger | Merge pull request #2 from upc-pre-202610-1asi0730-12053-syncedh/develop |
+| 3450b94 | Fri Jun 19 17:24:30 2026 | Marce | feat(iam): add iam action result assembler. |
+| b81f86d | Fri Jun 19 17:14:43 2026 | Marce | feat(iam): add authenticated user resource from entity assembler. |
+| a51a534 | Fri Jun 19 17:05:58 2026 | Marce | feat(iam): add user resource. |
+| bb54244 | Fri Jun 19 17:05:16 2026 | Marce | feat(iam): add sign up resource. |
+| 946294b | Fri Jun 19 17:04:38 2026 | Marce | feat(iam): add sign in resource. |
+| 15fce9c | Fri Jun 19 17:03:50 2026 | Marce | feat(iam): add authenticated user resource. |
+| 5c4b92f | Fri Jun 19 17:02:11 2026 | Marce | feat(iam): add iam context facade. |
+| 85d4937 | Fri Jun 19 17:00:33 2026 | Marce | feat(iam): add iam context facade interface. |
+| 71d1622 | Fri Jun 19 16:56:59 2026 | Marce | feat(iam): add token service. |
+| d9668a4 | Fri Jun 19 16:50:07 2026 | Marce | feat(iam): add token settings. |
+| 13e85f9 | Fri Jun 19 16:47:23 2026 | Marce | feat(iam): add request authorization middleware extensions. |
+| ed812b2 | Fri Jun 19 16:46:05 2026 | Marce | feat(iam): add request authorization middleware. |
+| 3af8466 | Fri Jun 19 16:43:28 2026 | Marce | feat(iam): add authorize atribute. |
+| 61db522 | Fri Jun 19 16:42:42 2026 | Marce | feat(iam): add allow anonumous attribute. |
+| 0d65b49 | Fri Jun 19 16:40:34 2026 | Marce | feat(iam): add user repository. |
+| 6c90636 | Fri Jun 19 14:55:22 2026 | Marce | feat(iam): add model builder extensions. |
+| 00cf994 | Fri Jun 19 14:47:24 2026 | Marce | feat(iam): add iam spanish messages resource. |
+| 3399408 | Fri Jun 19 14:45:47 2026 | Marce | feat(iam): add iam english messages resource. |
+| 94fb59b | Fri Jun 19 14:43:52 2026 | Marce | feat(iam): add user audit. |
+| 4d38ae8 | Fri Jun 19 14:37:24 2026 | Marce | feat(iam): add hashing service implementation. |
+| 6b7eae8 | Fri Jun 19 14:34:42 2026 | Marce | feat(iam): add user query service. |
+| e401fc3 | Fri Jun 19 14:32:48 2026 | Marce | feat(iam): add iuser query service. |
+| 9f5a7d6 | Fri Jun 19 14:30:51 2026 | Marce | feat(iam): add iuser command service. |
+| bcf7442 | Fri Jun 19 14:24:41 2026 | Marce | feat(iam): add ihashing service. |
+| c6fdeac | Fri Jun 19 14:22:28 2026 | Marce | feat(iam): add itokenservice. |
+| e2cfcd1 | Fri Jun 19 14:13:51 2026 | Marce | feat(iam): add iuser repository. |
+| a58ff9c | Fri Jun 19 14:09:30 2026 | Marce | feat(iam): add get user by username query. |
+| 4bf014c | Fri Jun 19 14:08:43 2026 | Marce | feat(iam): add get user by id query. |
+| b95460d | Fri Jun 19 14:08:08 2026 | Marce | feat(iam): add get all users query. |
+| a94924b | Fri Jun 19 14:06:56 2026 | Marce | feat(iam): add iam error enum. |
+| e86f55a | Fri Jun 19 14:06:04 2026 | Marce | feat(iam): add iam errors static class. |
+| 1e1484e | Fri Jun 19 14:04:26 2026 | Marce | feat(iam): add iam spanish errors for i18n. |
+| ada10a6 | Fri Jun 19 14:02:04 2026 | Marce | feat(iam): add iam english errors for i18n. |
+| 7020bfa | Fri Jun 19 13:59:44 2026 | Marce | feat(iam): add sign up command. |
+| a0ec4a9 | Fri Jun 19 13:57:35 2026 | Marce | feat(iam): add sign in command. |
+| b0f6a11 | Fri Jun 19 13:54:20 2026 | Marce | feat(iam): add partial user aggregate. |
+| ce07268 | Fri Jun 19 13:11:13 2026 | Marce | feat(subcriptions): add subcription aggregate. |
+| 9cb2939 | Fri Jun 19 13:09:22 2026 | Marce | feat(subcriptions): add subcription plan aggregate. |
+| b1b8394 | Fri Jun 19 13:06:46 2026 | Marce | feat(subcriptions): add subcription status enum. |
+| 1f67069 | Fri Jun 19 12:43:49 2026 | tree_hugger | Merge pull request #1 from upc-pre-202610-1asi0730-12053-syncedh/develop |
+| 7e78039 | Fri Jun 19 12:33:03 2026 | Marce | test |
+| 0362b6c | Sun Jun 14 14:36:49 2026 | Marce | feat(shared): add problem details factory class. |
+| cb5ced9 | Sun Jun 14 14:12:35 2026 | Marce | feat(shared): add middleware extensions class. |
+| aa4a52d | Sun Jun 14 14:09:26 2026 | Marce | feat(shared): add global exception handler middleware class. |
+| aa9ab50 | Sun Jun 14 13:09:13 2026 | Marce | feat(shared): add loggin command behavior class. |
+| 46542a6 | Sun Jun 14 13:08:12 2026 | Marce | feat(shared): add kebab case route naming convention public class. |
+| 40f9e9c | Sun Jun 14 12:51:46 2026 | Marce | feat(shared): add string extensions partial class. |
+| 3352a6f | Sun Jun 14 12:39:14 2026 | Marce | merge |
+| d48f8c4 | Sun Jun 14 12:38:50 2026 | Marce | merge |
+| 1e07cd8 | Sun Jun 14 12:29:08 2026 | Marce | feat(shared): add base repository class |
+| e38cb2f | Sun Jun 14 12:24:38 2026 | Marce | feat(shared): add unit of work class. |
+| 9a8d7d3 | Sun Jun 14 12:22:44 2026 | Marce | add app db context class. |
+| 91db065 | Sun Jun 14 12:10:59 2026 | Marce | add auditable entity interceptor sealed class. |
+| dd6edf2 | Sun Jun 14 12:06:26 2026 | Marce | feat(shared): add model builder extension static class and string extensions static class. |
+| 0cca81b | Sun Jun 14 11:02:26 2026 | Marce | feat(shared): add error record. |
+| 8082244 | Sun Jun 14 10:19:52 2026 | Marce | delete: delete open api dependencies on program.cs. |
+| d4c4057 | Sun Jun 14 10:17:58 2026 | Marce | fix(shared): fix ieventhandler dependencies. |
+| ce209d6 | Sun Jun 14 10:00:37 2026 | Marce | feat: update platform components |
+| 431cbd1 | Sun Jun 14 09:52:52 2026 | Marce | fix(shared): fix ieventhandler dependencies. |
+| ce4e3ac | Sat Jun 13 11:10:17 2026 | Llummo | Create IEventHandler.cs |
+| 5c7dc79 | Sat Jun 13 10:40:36 2026 | Llummo | feat(shared): add ievent interface. |
+| 8ed1b96 | Sat Jun 13 10:38:14 2026 | Llummo | feat(shared): add iauditableentity interface. |
+| b76b444 | Sat Jun 13 10:33:10 2026 | Llummo | feat(shared): add error messages, base respository and unit of work |
+| 592f406 | Sat Jun 13 10:09:03 2026 | Llummo | chore: initial commit. |
+| 5ca653c | Sat Jun 13 10:02:09 2026 | Llummo | Merge branch 'main' of https://github.com/upc-pre-202610-1asi0730-12053-syncedh/cortisense-platform |
+| 5c847a9 | Sat Jun 13 10:02:01 2026 | Llummo | initial commit |
+| 74ceda9 | Sat Jun 13 10:00:07 2026 | Msa_ware | dx |
+| 781af5d | Sat Jun 13 09:56:59 2026 | Msa_ware | a |
+| fe85674 | Sat Jun 13 09:51:54 2026 | Msa_ware | a |
+| 3503954 | Sat Jun 13 09:49:45 2026 | Msa_ware | text |
+| 28a5f2b | Sat Jun 13 09:46:35 2026 | Msa_ware | Update README.md |
+| ddb574b | Sat Jun 13 09:35:26 2026 | Alumnos | texto |
+| 74d17bc | Sat Jun 13 09:31:44 2026 | Llummo | test |
+| b3f5c74 | Sat Jun 13 09:29:00 2026 | Llummo | update: read em |
+| e5f5a69 | Sat Jun 13 09:17:01 2026 | Llummo | first commit |
+| 5ca653c | Sat Jun 13 10:02:09 2026 | Llummo | Merge branch 'main' of https://github.com/upc-pre-202610-1asi0730-12053-syncedh/cortisense-platform |
+| 5c847a9 | Sat Jun 13 10:02:01 2026 | Llummo | initial commit |
+| 74ceda9 | Sat Jun 13 10:00:07 2026 | Msa_ware | dx |
+| 781af5d | Sat Jun 13 09:56:59 2026 | Msa_ware | a |
+| fe85674 | Sat Jun 13 09:51:54 2026 | Msa_ware | a |
+| 3503954 | Sat Jun 13 09:49:45 2026 | Msa_ware | text |
+| 28a5f2b | Sat Jun 13 09:46:35 2026 | Msa_ware | Update README.md |
+| ddb574b | Sat Jun 13 09:35:26 2026 | Alumnos | texto |
+| 74d17bc | Sat Jun 13 09:31:44 2026 | Llummo | test |
+| b3f5c74 | Sat Jun 13 09:29:00 2026 | Llummo | update: read em |
+| e5f5a69 | Sat Jun 13 09:17:01 2026 | Llummo | first commit |
 
 #### 5.2.3.5. Execution Evidence for Sprint Review.
 
