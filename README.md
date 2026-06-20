@@ -4617,11 +4617,126 @@ El desarrollo completo del Backend SyncedHealth.Center.Platform aplicó Git Flow
 
 ## 5.3. Validation Interviews.
 ### 5.3.1. Diseño de Entrevistas.
+
+#### Segmento #1: Personal Sanitario Operativo (Médicos Residentes, Especialistas y Enfermeros)
+
+**Objetivo de la validación:** Evaluar la aceptación del wearable, la claridad del monitoreo biométrico propio, la interfaz de la Web App (`cortisense-webapp`), la pertinencia de las alertas de fatiga y la confianza en la privacidad de los datos.
+
+##### I. Introducción y Contextualización (Script para el entrevistador)
+
+> "Hola, un gusto saludarte nuevamente. En esta oportunidad queremos mostrarte el prototipo interactivo de **CortiSense**, la solución en la que hemos venido trabajando a partir de las necesidades de descanso y sobrecarga que conversamos anteriormente. Te guiaremos a través de la interfaz para que interactúes con ella y nos des tu opinión honesta sobre su utilidad, facilidad de uso y diseño."
+
+##### II. Preguntas de Interacción General con el Prototipo (Usabilidad y Primeras Impresiones)
+
+1. Al observar la pantalla principal de tu perfil dentro de la aplicación móvil/web, ¿es clara la visualización de tu **Resilience Score (Índice de resiliencia)** y tu **Fatigue State (Estado de fatiga)**? ¿Qué te transmite el uso de los colores (verde, amarillo, rojo)?
+
+
+2. ¿Qué opinas de la disposición de los datos crudos de **Cortisol Level** y **Heart Rate Variability (HRV)**? ¿Consideras que la gráfica te ayuda a entender en qué momento de la guardia empezaste a colapsar físicamente?
+
+
+3. Durante la navegación, ¿encontraste alguna dificultad para emparejar el dispositivo (*Device Pairing*) o para acceder a tu historial de bienestar?
+
+
+
+##### III. Validación de Funcionalidades Críticas (Alineadas con las Épicas del Proyecto)
+
+4. **[Épica: Recuperación del Personal]** Si el sistema te envía una **Rest Suggestion (Sugerencia de pausa)** debido a que detectó una anomalía biométrica, ¿la interfaz te facilita tomar la decisión de aceptar la pausa activa o rechazarla en caso de una urgencia médica real? ¿El flujo te parece intuitivo?
+
+
+5. **[Épica: Gestión de Identidad y Accesos]** Sabiendo que el sistema cuenta con un **Private Profile**, donde tus superiores solo ven tu estado de fatiga agregado en un mapa de calor y no tus niveles exactos de hormonas a menos que haya una crisis, ¿esta capa de privacidad disminuye tu temor a la vigilancia administrativa? ¿Te inspira confianza el proceso de autenticación implementada?
+
+
+6. ¿Cómo evalúas físicamente la propuesta de diseño del wearable? ¿Consideras que su tamaño, peso y discreción visual cumplen con tus expectativas para no interferir en procedimientos de alta complejidad como cirugías o intubaciones en emergencias?
+
+
+
+##### IV. Conclusión y Adopción
+
+7. Si tu institución implementara oficialmente **CortiSense** y te entregara el dispositivo para tus guardias de 12 o 24 horas, ¿cuál sería tu principal motivación para usarlo diariamente?
+
+
+8. ¿Hay algún elemento visual o comportamiento de las alertas dentro de la aplicación que consideres que añade "carga cognitiva" o estrés adicional en lugar de ayudarte? ¿Qué cambiarías o eliminarías por completo?
+
+
+
+---
+
+##### Segmento #2: Administradores y Directores Médicos
+
+**Objetivo de la validación:** Evaluar la efectividad del dashboard administrativo, la utilidad del algoritmo de optimización y reasignación de turnos, el sistema de escalamiento de incidentes, la viabilidad del modelo de suscripción y la conformidad con los reportes de auditoría.
+
+##### I. Introducción y Contextualización (Script para el entrevistador)
+
+> "Estimado/a, agradecemos su tiempo. Hoy queremos validar con usted el dashboard estratégico de **CortiSense**. Diseñamos esta herramienta para transformar la gestión de turnos estática en una asignación dinámica basada en evidencia biológica en tiempo real, respondiendo a los problemas de ausentismo y costos por negligencia que identificamos previamente. Nos interesa su feedback crítico sobre la operatividad del sistema."
+
+##### II. Preguntas de Interacción General con el Dashboard Administrativo
+
+1. Al ingresar al panel gerencial, ¿el **Heat Map (Mapa de calor)** y la identificación de las **At-Risk Units (Áreas en riesgo)** le permiten diagnosticar de manera inmediata el estado de fatiga colectiva de sus departamentos (UCI, Emergencias, Cirugía)?
+
+
+2. ¿La densidad de la información en el panel interactivo interfiere con su toma de decisiones rápida o considera que la visualización es limpia y de grado médico profesional?
+
+
+
+##### III. Validación de Funcionalidades Críticas y Operativas (Alineadas con las Épicas del Proyecto)
+
+3. **[Épica: Coordinación de Turnos]** Cuando el sistema detecta un **Critical Shift (Turno crítico)** y le propone automáticamente una lista de médicos disponibles con bajo nivel de fatiga para un relevo (*Relief Assignment*), ¿considera que el flujo de aprobación o rechazo de esa reprogramación se adapta a la velocidad que requiere su centro de salud?
+
+
+4. **[Épica: Gestión de Incidentes y Escalamiento]** El prototipo abre de manera automatizada un incidente formal de prioridad alta cuando un médico ignora una alerta por riesgo clínico crítico. Como supervisor, ¿le resulta útil recibir esta **Escalated Alert** en su smartphone mediante notificaciones push/email en tiempo real? ¿Le ayuda a mitigar crisis antes de que ocurra un evento adverso con un paciente?
+
+
+5. **[Épica: Auditoría y Cumplimiento]** Al revisar la sección de reportes de cumplimiento e historial inmutable (*Wellbeing Report*), ¿estos informes exportables cumplen con los requisitos mínimos que le exigiría una auditoría interna de Salud Ocupacional o una inspección del Ministerio de Salud (MINSA)?
+
+
+6. **[Épica: Gestión de Suscripciones y Planes]** Al observar el módulo de planes de pago integrados con la pasarela de Stripe, ¿considera que el esquema de software como servicio (SaaS) combinado con la adquisición inicial de los wearables IoT se ajusta a los modelos presupuestarios de su institución?
+
+
+
+##### IV. Conclusión y Adopción
+
+7. Pensando en el Retorno de la Inversión (ROI), ¿cree que contar con este panel de visualización en tiempo real justifica la adquisición del ecosistema tecnológico para reducir costos por negligencias, bajas médicas y rotación de especialistas?
+
+
+8. ¿Qué integraciones técnicas considera indispensables agregar al prototipo antes de un despliegue masivo en producción (por ejemplo, sincronización bidireccional inmediata con su sistema HIS actual o planillas de nómina)?
+
+
 ### 5.3.2. Registro de Entrevistas.
 ### 5.3.3. Evaluaciones según heurísticas.
 ## 5.4. Video About-the-Product.
 ---
 # Conclusiones
+
+### Conclusiones del Proyecto
+
+* **Validación de la Propuesta de Valor:** El proceso de entrevistas de validación demostró que el enfoque en la gestión de turnos médicos y el control de los contextos de descanso responde de manera efectiva a una necesidad crítica de optimización operativa en los centros de salud, permitiendo refinar y priorizar las historias de usuario (*User Stories*) en función del feedback directo del usuario final.
+
+
+* **Solidez de la Arquitectura de Software:** La definición e implementación de los *Bounded Contexts* garantizó un diseño arquitectónico modular, limpio y altamente cohesivo para la gestión de turnos del personal médico, facilitando el mantenimiento del código y previniendo el acoplamiento innecesario entre los diferentes módulos del sistema.
+
+
+* **Viabilidad y Rendimiento Tecnológico:** La suite tecnológica seleccionada —utilizando Angular para el desarrollo de componentes en el frontend y el SDK de .NET para el backend— demostró la robustez necesaria para soportar la lógica de negocio del personal sanitario, validando su compatibilidad para un despliegue seguro y escalable en la infraestructura de la nube de Azure utilizando bases de datos MySQL.
+
+
+* **Efectividad de la Gestión Ágil:** La adopción del marco de trabajo Scrum y las metodologías ágiles fue un pilar clave para el éxito del proyecto, permitiendo una colaboración fluida y transparente en herramientas como Jira y GitHub, asegurando entregas incrementales funcionales y una rápida capacidad de respuesta ante los cambios de diseño.
+
+
+
+---
+
+### Recomendaciones del Proyecto
+
+* **Optimización de la Experiencia de Usuario (UX):** Se recomienda profundizar en el diseño y la estilización de los componentes en Angular para asegurar una interfaz sumamente limpia, intuitiva y con baja carga cognitiva, teniendo en cuenta que el personal sanitario operativo utilizará la aplicación bajo condiciones extremas de fatiga y durante guardias nocturnas.
+
+
+* **Robustecimiento de la Infraestructura y Seguridad en la Nube:** Es fundamental configurar minuciosamente las reglas de firewall, el rendimiento de las consultas y los planes de respaldo en Azure para la base de datos MySQL, garantizando la alta disponibilidad del sistema y la protección estricta de la información de los turnos y descansos del personal.
+
+
+* **Automatización Basada en Monitoreo IoT:** Se sugiere expandir las capacidades actuales del backend en .NET para procesar de forma automatizada las métricas de monitoreo IoT, permitiendo que el sistema genere sugerencias de descanso en tiempo real e interactúe dinámicamente con los algoritmos de reasignación y coordinación de turnos.
+
+
+* **Continuidad del Ciclo de Desarrollo y Pruebas:** Para las fases posteriores del ciclo de vida del software, se aconseja que el equipo de desarrollo —incluyendo a colaboradores clave como Paula Montoya y Marcelo Pareja— implemente pipelines de integración y despliegue continuo (CI/CD) en GitHub y mantenga la rigurosidad en los tableros de Jira para el seguimiento de pruebas de carga, garantizando la estabilidad de la plataforma antes de un lanzamiento masivo en entornos hospitalarios reales.
+
 # Bibliografía
 
 Chatuev, M. (2020, 21 de setiembre). *Big Picture Event Storming*. Medium. https://medium.com/@chatuev/big-picture-event-storming-7a1fe18ffabb
