@@ -4229,21 +4229,21 @@ A continuación, se presentan las estadísticas de colaboración obtenidas desde
 | **Preparada por**                        | Pareja Callaoapaza, Marcelo Fausto                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 | **Asistentes (a la reunión de planificación)**    | León Morales, Johan Yonel; Gutierrez Santillán, Sebastián Augusto; Mauricio Silva, Guiou Justinn                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 | **Asistentes (a la reunión de planificación)**        | En el sprint 1, el equipo se centra en desarrollar la primera versión de la página de destino. Consideramos que este esfuerzo es importante para el desarrollo de nuestro software, ya que nos permite obtener información valiosa de nuestros usuarios objetivo y realizar mejoras progresivas.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| **Resumen retrospectivo del Sprint 2** | En retrospectiva, el trabajo realizado por el equipo durante el sprint 1 nos ayudó a mejorar y generar mejores ideas que nos permitieron abordar el problema correctamente, facilitando así la captación de interés por parte de nuevos usuarios.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-| **Objetivo del sprint e historias de usuario**         | Desarrollar la parte frontal del MVP (producto mínimo viable).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-| **Objetivo del sprint 3**                      | El equipo de CortiSense ha decidido lanzar la versión inicial del producto mínimo viable para presentar su valor como propuesta al sector sanitario, traduciendo a código las historias de usuario previas. El objetivo es consolidar la credibilidad de la monitorización del cortisol y la fatiga mediante tecnología IoT. Buscamos generar interés directo entre los administradores hospitalarios y los responsables de recursos humanos del sector médico, ofreciendo una solución clara para reducir el agotamiento profesional. El éxito se confirmará cuando la página registre al menos 10 solicitudes de demostración o registros válidos a través de los formularios de contacto. |
-| **Velocidad de Sprint 3**                  | 25 Story Points                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| **Suma de puntos de historia**                | **25 Story Points**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| **Resumen retrospectivo del Sprint 2** | En retrospectiva, el trabajo realizado por el equipo durante el sprint 1 nos ayudó a mejorar y generar mejores ideas que nos permitieron abordar el problema correctamente, facilitando así la captación de interés por parte de nuevos usuarios.Durante el Sprint 2 logramos tener una versión visual del MVP consumiendo una Fake API (JSON Server) que nos permitió validar los flujos de usuario de la Web App en Vue/HTML. Sin embargo, para que CortiSense funcione operativa y comercialmente, es estrictamente necesario desarrollar un Backend robusto y seguro que maneje toda la lógica de negocio y la persistencia de datos reales.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| **Objetivo del sprint e historias de usuario**         | Implementar la arquitectura integral del Backend (CortiSense Platform) en .NET utilizando principios de Clean Architecture, Domain-Driven Design (DDD) y CQRS.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| **Objetivo del sprint 3**                      | El equipo se ha centrado en construir desde cero la API RESTful de CortiSense (SyncedHealth.Center.Platform). Este gigantesco esfuerzo abarca la consolidación de 5 grandes Bounded Contexts: IAM (Seguridad y Usuarios), Clinical Risk Assessment (Alertas y Anomalías), Audit Compliance (Trazabilidad), Shift Coordination (Turnos) y Subscription Billing (Cobros con Stripe). El objetivo principal es migrar por completo la plataforma desde los mocks hacia una base de datos MySQL real gestionada mediante Entity Framework Core, asegurando la escalabilidad del sistema. El éxito se probará mediante la compilación exitosa del proyecto, el correcto enrutamiento de Swagger y la superación de las pruebas de los endpoints principales. |
+| **Velocidad de Sprint 3**                  | 65 Story Points                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| **Suma de puntos de historia**                | **65 Story Points**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 #### 5.2.3.2. Aspect Leaders and Collaborators.
 
 Durante este Sprint, el equipo ha organizado el trabajo en base a las Epics definidas en el Product Backlog. La asignación de líderes y colaboradores se ha realizado considerando la responsabilidad real de cada miembro en los distintos aspectos del proyecto, según se documenta en la planificación interna del equipo.
 
 | Team Member (Last Name, First Name) | GitHub Username | EP01 | EP02 | EP03 | EP04 | EP05 | EP06 | EP07 | EP08 |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| León Morales, Johan Yonel | TheCap213 | C | C | L | C | C | C | C | C |
-| Mauricio Silva, Guiou Justinn | Justinn2006 | C | C | C | L | C | C | C | C |
-| Pareja Calloapaza, Marcelo Fausto | marc3lllob7 | L | C | C | C | C | L | C | C |
-| Santiago Atanacio, Jairo Mathias | Msa-ware | C | C | C | C | L | C | C | C |
+| León Morales, Johan Yonel | TheCap213 | C | C | L | L | C | L | C | L |
+| Mauricio Silva, Guiou Justinn | Justinn2006 | C | C | C | C | L | L | C | C |
+| Pareja Calloapaza, Marcelo Fausto | marc3lllob7 | L | C | C | C | C | C | C | C |
+| Santiago Atanacio, Jairo Mathias | Msa-ware | C | L | C | C | C | C | C | C |
 
 #### 5.2.3.3. Sprint Backlog 3.
 
@@ -4416,7 +4416,58 @@ Durante este Sprint, el equipo ha organizado el trabajo en base a las Epics defi
 
 #### 5.2.3.5. Execution Evidence for Sprint Review.
 
+Durante el Sprint 3, el equipo finalizó con éxito el desarrollo íntegro de la arquitectura backend de CortiSense (.NET). La integración de los distintos Bounded Contexts resultó en una sólida interfaz Swagger con categorización completa de esquemas DTOs.
+
+A continuación, la evidencia de compilación y la visualización de las operaciones disponibles en Swagger para el consumo del Frontend.
+
+**Swagger Full CortiSense API**
+
+**EF Core MySQL Migrations**
+
 #### 5.2.3.6. Services Documentation Evidence for Sprint Review.
+
+El backend ha sido dividido en controladores que siguen las convenciones RESTful bajo CQRS, proveyendo los siguientes endpoints representativos por módulo:
+
+| Bounded Context | Endpoint | Verbo HTTP | Acción |
+| --- | --- | --- | --- |
+| Audit Compliance | / api / v1 / audit - logs | GET | Obtiene todos los logs de auditoría |
+| Audit Compliance | / api / v1 / audit - logs | POST | Crea un log de auditoría |
+| Audit Compliance | / api / v1 / audit - logs / {auditLogId} | GET | Obtiene un log de auditoría por identificador |
+| Audit Compliance | / api / v1 / audit - logs / organizations / {organizationId} | GET | Obtiene logs de auditoría por organización |
+| Audit Compliance | / api / v1 / audit - logs / actors / {actorUserId} | GET | Obtiene logs de auditoría por usuario actor |
+| IAM(Identity & Access) | / api / v1 / authentication / sign - in | POST | Inicia sesión y autentica a un usuario |
+| IAM(Identity & Access) | / api / v1 / authentication / sign - up | POST | Registra y crea un nuevo usuario |
+| Subscription Plan Management | / api / v1 / billing / create - checkout - session | POST | Crea una sesión de cobro en Stripe |
+| Subscription Plan Management | / api / v1 / billing / checkout - session - status | GET | Obtiene el estado de una sesión de Stripe |
+| Subscription Plan Management | / api / v1 / billing / cancel - checkout - session | POST | Cancela una sesión de cobro |
+| Subscription Plan Management | / api / v1 / billing / webhook | POST | Recibe eventos y webhooks de Stripe |
+| Subscription Plan Management | / api / v1 / checkoutsessions | GET | Obtiene todas las sesiones de pago internas |
+| Subscription Plan Management | / api / v1 / checkoutsessions | POST | Crea una sesión de pago interna |
+| Clinical Risk Assessment | / api / v1 / clinicalalerts | GET | Obtiene alertas clínicas |
+| Clinical Risk Assessment | / api / v1 / clinicalalerts | POST | Crea una alerta clínica |
+| Clinical Risk Assessment | / api / v1 / clinicalalerts / {id} | GET | Obtiene una alerta clínica por Id |
+| Clinical Risk Assessment | / api / v1 / clinicalalerts / {id} | PATCH | Actualiza el estado de una alerta clínica |
+| Subscription Plan Management | / api / v1 / plans | GET | Obtiene todos los planes de suscripción |
+| Subscription Plan Management | / api / v1 / plans / {id} | GET | Obtiene un plan por Id |
+| Clinical Risk Assessment | / api / v1 / riskassessments | GET | Obtiene evaluaciones de riesgo |
+| Clinical Risk Assessment | / api / v1 / riskassessments | POST | Crea una evaluación de riesgo |
+| Clinical Risk Assessment | / api / v1 / riskassessments / {id} | GET | Obtiene una evaluación de riesgo por Id |
+Shift Coordination	/api/v1/shiftrecords	GET	Obtiene registros de turnos médicos
+Shift Coordination	/api/v1/shiftrecords	POST	Crea un registro de turno
+Shift Coordination	/api/v1/shiftrecords/{id}	GET	Obtiene un turno por Id
+Shift Coordination	/api/v1/shiftrecords/{id}	PATCH	Actualiza el estado de un turno
+Subscription Plan Management	/api/v1/subscriptions	GET	Obtiene las suscripciones adquiridas
+Subscription Plan Management	/api/v1/subscriptions	POST	Crea una nueva suscripción
+Subscription Plan Management	/api/v1/subscriptions/{id}	PATCH	Actualiza una suscripción
+IAM (Identity & Access)	/api/v1/users/{id}	GET	Obtiene un usuario por Id
+IAM (Identity & Access)	/api/v1/users	GET	Obtiene todos los usuarios
+Clinical Risk Assessment	/api/v1/vitalsignanomalies	GET	Obtiene anomalías de signos vitales
+Clinical Risk Assessment	/api/v1/vitalsignanomalies	POST	Crea una anomalía de signos vitales
+Clinical Risk Assessment	/api/v1/vitalsignanomalies/{id}	GET	Obtiene anomalía por Id
+Clinical Risk Assessment	/api/v1/vitalsignanomalies/{id}	PATCH	Actualiza el estado de una anomalía
+Clinical Risk Assessment	/api/v1/vitalsignreadings	GET	Obtiene lecturas de signos vitales
+Clinical Risk Assessment	/api/v1/vitalsignreadings	POST	Crea una lectura de signo vital
+Clinical Risk Assessment	/api/v1/vitalsignreadings/{id}	GET	Obtiene lectura por Id
 
 #### 5.2.3.7. Software Deployment Evidence for Sprint Review.
 
