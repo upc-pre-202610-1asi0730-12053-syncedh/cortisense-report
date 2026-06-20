@@ -4005,6 +4005,21 @@ Enlace Sprint Backlog 1 en Trello: https://trello.com/invite/b/69edb4e56f8b54525
 
 #### 5.2.1.4. Development Evidence for Sprint Review.
 
+| Hash | Fecha | Asunto |
+| --- | --- | --- |
+| e3c8149 | May 14, 2026 | Update scripts.js |
+| fe0a10b | May 14, 2026 | Update styles.css |
+| ffccd47 | May 14, 2026 | Update styles.css |
+| 3afbdce | May 14, 2026 | Update index.html |
+| ba10549 | Apr 25, 2026 | Update index.html |
+| 3710bda | Apr 25, 2026 | Delete img / doctor.PNG |
+| d16f70d | Apr 25, 2026 | Delete README.md |
+| f347c9a | Apr 25, 2026 | Update README.md |
+| 83bb373 | Apr 25, 2026 | Create README.md |
+| d857913 | Apr 25, 2026 | Add files via upload |
+| da63305 | Apr 25, 2026 | Delete CortiSenseWeb directory |
+| e129bd1 | Apr 25, 2026 | Add files via upload |
+
 #### 5.2.1.5. Execution Evidence for Sprint Review.
 El principal logro del Sprint 1 consistió en el despliegue de la versión inicial de la landing page. Se completó el desarrollo del header, hero y footer, junto con las secciones de Propuesta, Diferencias, Roles, Creadores, Planes y Formulario. Asimismo, se implementó la metodología GitFlow, gestionando el avance mediante ramas feat: integradas posteriormente en el branch develop.
 
@@ -4023,7 +4038,7 @@ El principal logro del Sprint 1 consistió en el despliegue de la versión inici
 <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/Style-Guidelines/Web_Style/footer.png?raw=true" alt="Imagen referencial del footer""/>
 <div align="justify"> <br>
 
-Enlace: 
+Enlace: [cortisense-website](https://upc-pre-202610-1asi0730-12053-syncedh.github.io/cortisense-website/)
 
 #### 5.2.1.6. Services Documentation Evidence for Sprint Review.
 Introducción y Estado Actual
@@ -4100,10 +4115,6 @@ Durante este Sprint, el equipo ha organizado el trabajo en base a las Epics defi
 #### 5.2.2.3. Sprint Backlog 2.
 
 Nuestro objetivo principal con este Sprint 2 es desplegar la versión inicial de la App Web de CortiSense con el propósito de validar nuestra arquitectura técnica en un entorno real y facilitar la captación de early adopters mediante una interfaz funcional que demuestre el monitoreo de niveles de cortisol y estrés en tiempo real.
-
-Aquí tienes el **Sprint Backlog 2 actualizado** con el estado real de los avances, y un **Sprint Backlog 3 tentativo** planeado con la nueva estructura de Domain-Driven Design (DDD).
-
-Este Backlog refleja lo que realmente se ejecutó y validó en tu repositorio para conformar la versión inicial del MVP, enfocándose fuertemente en **Identity & Access Management (IAM)**, el prototipo de **Subscription & Plan Management** y las vistas preliminares de **Clinical Risk Assessment (CRA)**.
 
 | User Story | Work-Item / Task | | | | | | |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -4224,9 +4235,21 @@ Durante el Sprint 2, el equipo mantuvo un flujo de trabajo colaborativo constant
 
 **Además, como gran avance de este Sprint, se configuró y desplegó la aplicación utilizando Azure Static Web Apps mediante un flujo de trabajo automatizado de CI/CD (GitHub Actions con `deploy.yml`), permitiendo así la visualización de la versión de producción en tiempo real.**
 
-A continuación, se presentan las estadísticas de colaboración obtenidas desde los insights de GitHub durante el Sprint 2:
+- **Mock Api**
+
+<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Sprint-2/cortisense-mock-api.png?raw=true"></img><br>
+
+[cortisense-mock-api](https://cortisense-mockapi-fedxdhcshpa5djfe.canadacentral-01.azurewebsites.net/)
+
+- **Static Web Application**
+
+<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Sprint-2/cortisense-swa.png?raw=true"></img><br>
+
+[cortisense-swa](https://agreeable-smoke-0581ac810.7.azurestaticapps.net)
 
 #### 5.2.2.8. Team Collaboration Insights during Sprint.
+
+A continuación, se presentan las estadísticas de colaboración obtenidas desde los insights de GitHub durante el Sprint 2:
 
 <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Collaboration-Insights/insights-webapp.png?raw=true"></img><br>
 
@@ -4234,10 +4257,10 @@ A continuación, se presentan las estadísticas de colaboración obtenidas desde
 #### 5.2.3.1. Sprint Planning 3.
 | Sprint #                               | Sprint 3                                                                                                                                                  |
 | :---------------------------------------| :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Antecedentes de la planificación de sprints**         |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| **Fecha**                               |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-| **Hora**                               |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-| **Ubicación**                           |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| **Antecedentes de la planificación de sprints**         | Previo al inicio de este sprint, el equipo finalizó exitosamente el prototipo visual del Frontend consumiendo una Fake API. El feedback principal de los stakeholders indicó que la prioridad absoluta era sustituir los datos simulados por una base de datos relacional y construir las reglas de negocio reales. Por ello, se definió como antecedente crítico establecer la arquitectura base del Backend en .NET (DDD y CQRS) antes de continuar sumando funcionalidades visuales.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| **Fecha**                               | 2026-06-20                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| **Hora**                               | 8:00 PM                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| **Ubicación**                           | Reunión virtual por Google Meet                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 | **Preparada por**                        | Pareja Callaoapaza, Marcelo Fausto                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 | **Asistentes (a la reunión de planificación)**    | León Morales, Johan Yonel; Gutierrez Santillán, Sebastián Augusto; Mauricio Silva, Guiou Justinn                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 | **Asistentes (a la reunión de planificación)**        | En el sprint 1, el equipo se centra en desarrollar la primera versión de la página de destino. Consideramos que este esfuerzo es importante para el desarrollo de nuestro software, ya que nos permite obtener información valiosa de nuestros usuarios objetivo y realizar mejoras progresivas.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
