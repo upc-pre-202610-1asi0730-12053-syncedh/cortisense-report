@@ -4448,89 +4448,89 @@ A continuación, la evidencia de compilación y la visualización de las operaci
 - **Swagger:**
 
 <div align="center">
-    <img src="https://github.com/PircaIndustries-OpenSource/upc-pre-202610-1asi0729-17952-PircaIndustries-report/blob/main/Resources/Sprint3Evidence/SwaggerEvidence/authentication-swagger.png?raw=true" width="600px" alt="Evidencia ejecución Sprint 3 - 1">
+    <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Sprint3Evidence/SwaggerEvidence/authentication-swagger.png?raw=true" width="600px" alt="Evidencia ejecución Sprint 3 - 1">
 </div>
 <br>
 
 <div align="center">
-    <img src="https://github.com/PircaIndustries-OpenSource/upc-pre-202610-1asi0729-17952-PircaIndustries-report/blob/main/Resources/Sprint3Evidence/SwaggerEvidence/audit-logs-swagger.png?raw=true" width="600px" alt="Evidencia ejecución Sprint 3 - 2">
+    <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Sprint3Evidence/SwaggerEvidence/audit-logs-swagger.png?raw=true" width="600px" alt="Evidencia ejecución Sprint 3 - 2">
 </div>
 <br>
 
 <div align="center">
-    <img src="https://github.com/PircaIndustries-OpenSource/upc-pre-202610-1asi0729-17952-PircaIndustries-report/blob/main/Resources/Sprint3Evidence/SwaggerEvidence/authentication-swagger.png?raw=true" width="600px" alt="Evidencia ejecución Sprint 3 - 3">
+    <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Sprint3Evidence/SwaggerEvidence/authentication-swagger.png?raw=true" width="600px" alt="Evidencia ejecución Sprint 3 - 3">
 </div>
 <br>
 
 <div align="center">
-    <img src="https://github.com/PircaIndustries-OpenSource/upc-pre-202610-1asi0729-17952-PircaIndustries-report/blob/main/Resources/Sprint3Evidence/SwaggerEvidence/billing-swagger.png?raw=true" width="600px" alt="Evidencia ejecución Sprint 3 - 4">
+    <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Sprint3Evidence/SwaggerEvidence/billing-swagger.png?raw=true" width="600px" alt="Evidencia ejecución Sprint 3 - 4">
 </div>
 <br>
 
 <div align="center">
-    <img src="https://github.com/PircaIndustries-OpenSource/upc-pre-202610-1asi0729-17952-PircaIndustries-report/blob/main/Resources/Sprint3Evidence/SwaggerEvidence/checkout-sessions-swagger.png?raw=true" width="600px" alt="Evidencia ejecución Sprint 3 - 5">
+    <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Sprint3Evidence/SwaggerEvidence/checkout-sessions-swagger.png?raw=true" width="600px" alt="Evidencia ejecución Sprint 3 - 5">
 </div>
 <br>
 
 <div align="center">
-    <img src="https://github.com/PircaIndustries-OpenSource/upc-pre-202610-1asi0729-17952-PircaIndustries-report/blob/main/Resources/Sprint3Evidence/SwaggerEvidence/clinical-alerts-swagger.png?raw=true" width="600px" alt="Evidencia ejecución Sprint 3 - 6">
+    <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Sprint3Evidence/SwaggerEvidence/clinical-alerts-swagger.png?raw=true" width="600px" alt="Evidencia ejecución Sprint 3 - 6">
 </div>
 <br>
 
 <div align="center">
-    <img src="https://github.com/PircaIndustries-OpenSource/upc-pre-202610-1asi0729-17952-PircaIndustries-report/blob/main/Resources/Sprint3Evidence/SwaggerEvidence/plans-swagger.png?raw=true" width="600px" alt="Evidencia ejecución Sprint 3 - 7">
+    <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Sprint3Evidence/SwaggerEvidence/plans-swagger.png?raw=true" width="600px" alt="Evidencia ejecución Sprint 3 - 7">
 </div>
 <br>
 
 <div align="center">
-    <img src="https://github.com/PircaIndustries-OpenSource/upc-pre-202610-1asi0729-17952-PircaIndustries-report/blob/main/Resources/Sprint3Evidence/SwaggerEvidence/risk-assessments-swagger.png?raw=true" width="600px" alt="Evidencia ejecución Sprint 3 - 8">
+    <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Sprint3Evidence/SwaggerEvidence/risk-assessments-swagger.png?raw=true" width="600px" alt="Evidencia ejecución Sprint 3 - 8">
 </div>
 <br>
 
 <div align="center">
-    <img src="https://github.com/PircaIndustries-OpenSource/upc-pre-202610-1asi0729-17952-PircaIndustries-report/blob/main/Resources/Sprint3Evidence/SwaggerEvidence/shift-records.png?raw=true" width="600px" alt="Evidencia ejecución Sprint 3 - 9">
+    <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Sprint3Evidence/SwaggerEvidence/shift-records.png?raw=true" width="600px" alt="Evidencia ejecución Sprint 3 - 9">
 </div>
 <br>
 
 <div align="center">
-    <img src="https://github.com/PircaIndustries-OpenSource/upc-pre-202610-1asi0729-17952-PircaIndustries-report/blob/main/Resources/Sprint3Evidence/SwaggerEvidence/subscriptions-swagger.png?raw=true" width="600px" alt="Evidencia ejecución Sprint 3 - 10">
+    <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Sprint3Evidence/SwaggerEvidence/subscriptions-swagger.png?raw=true" width="600px" alt="Evidencia ejecución Sprint 3 - 10">
 </div>
 <br>
 
 <div align="center">
-    <img src="https://github.com/PircaIndustries-OpenSource/upc-pre-202610-1asi0729-17952-PircaIndustries-report/blob/main/Resources/Sprint3Evidence/SwaggerEvidence/syncedhealth.center.platform.png?raw=true" width="600px" alt="Evidencia ejecución Sprint 3 - 11">
+    <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Sprint3Evidence/SwaggerEvidence/syncedhealth.center.platform.png?raw=true" width="600px" alt="Evidencia ejecución Sprint 3 - 11">
 </div>
 <br>
 
 <div align="center">
-    <img src="https://github.com/PircaIndustries-OpenSource/upc-pre-202610-1asi0729-17952-PircaIndustries-report/blob/main/Resources/Sprint3Evidence/SwaggerEvidence/users-swagger.png?raw=true" width="600px" alt="Evidencia ejecución Sprint 3 - 12">
+    <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Sprint3Evidence/SwaggerEvidence/users-swagger.png?raw=true" width="600px" alt="Evidencia ejecución Sprint 3 - 12">
 </div>
 <br>
 
 <div align="center">
-    <img src="https://github.com/PircaIndustries-OpenSource/upc-pre-202610-1asi0729-17952-PircaIndustries-report/blob/main/Resources/Sprint3Evidence/SwaggerEvidence/vital-sign-anomalies-swagger.png?raw=true" width="600px" alt="Evidencia ejecución Sprint 3 - 13">
+    <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Sprint3Evidence/SwaggerEvidence/vital-sign-anomalies-swagger.png?raw=true" width="600px" alt="Evidencia ejecución Sprint 3 - 13">
 </div>
 <br>
 
 <div align="center">
-    <img src="https://github.com/PircaIndustries-OpenSource/upc-pre-202610-1asi0729-17952-PircaIndustries-report/blob/main/Resources/Sprint3Evidence/SwaggerEvidence/vital-sign-readings-swagger.png?raw=true" width="600px" alt="Evidencia ejecución Sprint 3 - 14">
+    <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Sprint3Evidence/SwaggerEvidence/vital-sign-readings-swagger.png?raw=true" width="600px" alt="Evidencia ejecución Sprint 3 - 14">
 </div>
 <br>
 
 - **Schemas:**
 
 <div align="center">
-    <img src="https://github.com/PircaIndustries-OpenSource/upc-pre-202610-1asi0729-17952-PircaIndustries-report/blob/main/Resources/Sprint3Evidence/SwaggerEvidence/schemas-1.png?raw=true" width="600px" alt="Evidencia ejecución Sprint 3 - 15">
+    <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Sprint3Evidence/SwaggerEvidence/schemas-1.png?raw=true" width="600px" alt="Evidencia ejecución Sprint 3 - 15">
 </div>
 <br>
 
 <div align="center">
-    <img src="https://github.com/PircaIndustries-OpenSource/upc-pre-202610-1asi0729-17952-PircaIndustries-report/blob/main/Resources/Sprint3Evidence/SwaggerEvidence/schemas-2.png?raw=true" width="600px" alt="Evidencia ejecución Sprint 3 - 16">
+    <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Sprint3Evidence/SwaggerEvidence/schemas-2.png?raw=true" width="600px" alt="Evidencia ejecución Sprint 3 - 16">
 </div>
 <br>
 
 <div align="center">
-    <img src="https://github.com/PircaIndustries-OpenSource/upc-pre-202610-1asi0729-17952-PircaIndustries-report/blob/main/Resources/Sprint3Evidence/SwaggerEvidence/schemas-3.png?raw=true" width="600px" alt="Evidencia ejecución Sprint 3 - 17">
+    <img src="}https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Sprint3Evidence/SwaggerEvidence/schemas-3.png?raw=true" width="600px" alt="Evidencia ejecución Sprint 3 - 17">
 </div>
 <br>
 
