@@ -4536,6 +4536,11 @@ A continuación, la evidencia de compilación y la visualización de las operaci
 
 **EF Core MySQL Migrations**
 
+<div align="center">
+    <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Sprint3Evidence/MigrationsEvidence/migrations.png?raw=true" width="600px" alt="Evidencia ejecución Sprint 3 - 18">
+</div>
+<br>
+
 #### 5.2.3.6. Services Documentation Evidence for Sprint Review.
 
 El backend ha sido dividido en controladores que siguen las convenciones RESTful bajo CQRS, proveyendo los siguientes endpoints representativos por módulo:
