@@ -4439,7 +4439,7 @@ A continuación, la evidencia de compilación y la visualización de las operaci
 
 El backend ha sido dividido en controladores que siguen las convenciones RESTful bajo CQRS, proveyendo los siguientes endpoints representativos por módulo:
 
-| Bounded Context(Frontend) | Endpoint | Verbo HTTP | Acción |
+| Bounded Context | Endpoint | Verbo HTTP | Acción |
 | --- | --- | --- | --- |
 | Audit Compliance | / api / v1 / audit - logs | GET | Obtiene todos los logs de auditoría |
 | Audit Compliance | / api / v1 / audit - logs | POST | Crea un log de auditoría |
