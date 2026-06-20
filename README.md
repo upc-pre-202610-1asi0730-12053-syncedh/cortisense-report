@@ -4488,7 +4488,7 @@ A continuación, la evidencia de compilación y la visualización de las operaci
 <br>
 
 <div align="center">
-    <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Sprint3Evidence/SwaggerEvidence/shift-records.png?raw=true" width="600px" alt="Evidencia ejecución Sprint 3 - 9">
+    <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Sprint3Evidence/SwaggerEvidence/shift-records-swagger.png?raw=true" width="600px" alt="Evidencia ejecución Sprint 3 - 9">
 </div>
 <br>
 
@@ -4530,7 +4530,7 @@ A continuación, la evidencia de compilación y la visualización de las operaci
 <br>
 
 <div align="center">
-    <img src="}https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Sprint3Evidence/SwaggerEvidence/schemas-3.png?raw=true" width="600px" alt="Evidencia ejecución Sprint 3 - 17">
+    <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Sprint3Evidence/SwaggerEvidence/schemas-3.png?raw=true" width="600px" alt="Evidencia ejecución Sprint 3 - 17">
 </div>
 <br>
 
