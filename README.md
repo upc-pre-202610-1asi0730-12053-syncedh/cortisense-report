@@ -4429,7 +4429,7 @@ A continuación, la evidencia de compilación y la visualización de las operaci
 El backend ha sido dividido en controladores que siguen las convenciones RESTful bajo CQRS, proveyendo los siguientes endpoints representativos por módulo:
 
 | Bounded Context(Frontend) | Endpoint | Verbo HTTP | Acción |
-|-- - | -- - | -- - | -- - |
+| --- | --- | --- | --- |
 | Audit Compliance | / api / v1 / audit - logs | GET | Obtiene todos los logs de auditoría |
 | Audit Compliance | / api / v1 / audit - logs | POST | Crea un log de auditoría |
 | Audit Compliance | / api / v1 / audit - logs / {auditLogId} | GET | Obtiene un log de auditoría por identificador |
@@ -4470,6 +4470,8 @@ El backend ha sido dividido en controladores que siguen las convenciones RESTful
 | Clinical Risk Assessment | / api / v1 / vitalsignreadings / {id} | GET | Obtiene lectura por Id |
 
 #### 5.2.3.7. Software Deployment Evidence for Sprint Review.
+
+El desarrollo completo del Backend SyncedHealth.Center.Platform aplicó Git Flow de forma estricta. Cada Bounded Context fue modelado en una rama independiente (feature/*), siendo validado y fusionado paulatinamente hacia develop tras pasar las validaciones de compilación con dotnet build. Para la capa de datos, se aplicaron migraciones iterativas mediante Entity Framework Core, conectando la lógica del dominio a una base de datos centralizada MySQL (Pomelo) sin romper la abstracción. Todo el código sigue prácticas de Clean Architecture.
 
 #### 5.2.3.8. Team Collaboration Insights during Sprint.
 
