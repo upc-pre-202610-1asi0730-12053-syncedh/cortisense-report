@@ -24,7 +24,7 @@
 
 </div>
 
-<br><div align="center"><h3>Abril 2026</h3></div><br>
+<br><div align="center"><h3>Junio 2026</h3></div><br>
 <div style="text-align: justify;">
 
 <br><br>
