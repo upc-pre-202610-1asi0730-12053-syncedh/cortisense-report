@@ -63,6 +63,8 @@ URL de la Landing Page desplegada: [cortisense-website](https://upc-pre-202610-1
 
 URL de la Aplicación Web desplegada: [cortisense-webapp](https://agreeable-smoke-0581ac810.7.azurestaticapps.net/)
 
+URL de la Platform desplegada: [cortisense-platform](https://cortisense-platform-api.azurewebsites.net/swagger/index.html)
+
 <strong>*Entrega TB1:*</strong>
 
 + Desarrollo de Actividades
@@ -4922,3 +4924,5 @@ Repositorio del trabajo de Responsabilidad Social: [webdev-course-syncedhealth](
 Landing Page desplegada: [cortisense-website](https://upc-pre-202610-1asi0730-12053-syncedh.github.io/cortisense-website/)
 
 Web App desplegada: [cortisense-webapp](https://agreeable-smoke-0581ac810.7.azurestaticapps.net/)
+
+Platform desplegada: [cortisense-platform](https://cortisense-platform-api.azurewebsites.net/swagger/index.html)
