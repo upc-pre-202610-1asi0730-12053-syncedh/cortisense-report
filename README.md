@@ -4657,11 +4657,11 @@ A continuación, se presentan las estadísticas de colaboración obtenidas desde
 
 ### Top Commits
 
-<img src="./resources/sprint3/Top_Commits.png" alt="Top Commits Sprint 3"><br>
+<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Sprint-3/Top_Commits.png" alt="Top Commits Sprint 3"><br>
 
 ### Commits
 
-<img src="./resources/sprint3/Commits.png" alt="Commits Sprint 3"><br>
+<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Sprint-3/Commits.png" alt="Commits Sprint 3"><br>
 
 ## 5.3. Validation Interviews.
 ### 5.3.1. Diseño de Entrevistas.
