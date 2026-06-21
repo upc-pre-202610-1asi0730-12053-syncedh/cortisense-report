@@ -4702,6 +4702,87 @@ El desarrollo completo del Backend SyncedHealth.Center.Platform aplicó Git Flow
 
 
 ### 5.3.2. Registro de Entrevistas.
+
+**Segmento #1: Personal Sanitario Operativo**
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="2">Entrevista #1<br></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Nombre</td>
+      <td>Ricardo</td>
+    </tr>
+    <tr>
+      <td>Apellidos</td>
+      <td>Huamán Ochoa</td>
+    </tr>
+    <tr>
+      <td>Edad</td>
+      <td>50 años</td>
+    </tr>
+    <tr>
+      <td>Distrito</td>
+      <td>Lince</td>
+    </tr>
+    <tr>
+      <td>Centro de Trabajo</td>
+      <td>Hospital Paraestatal</td>
+    </tr>
+	<tr>
+      <td>Área</td>
+      <td>Emergencias</td>
+    </tr>
+	<tr>
+      <td>Tecnologías usadas en su campo laboral</td>
+      <td>Gmail, Google como navegador, monitores cardiacos, desfribiladores, ventiladores mecánicos y oxímetros</td>
+    </tr>
+    <tr>
+      <td>Motivación</td>
+      <td>El deseo de mejorar y acelerar los procesos de detección y atención de casos extremos de agotamiento por horas repetidas continuas o factores externos es un factor que lo motiva a buscar una solución. Manifiesta la necesidad de que dicha solución sea rápida, segura y eficaz, que puede ser útil sobre todo para aquel personal novato que puede resultar afectado por su inexperiencia en el manejo de estrés o aquel médico que se encuentre presionado por agentes externos. De esta manera, busca reducir los casos de somatización en sus colegas y mejorar el desempeño del cuerpo médico.</td>
+    </tr>
+    <tr>
+      <td>Frustración</td>
+      <td>La falta de mecanismos ágiles para la detección de casos de estrés laboral en el área médica es algo que le preocupa. Menciona la existencia del programa de Salud Ocupacional, que se encarga de generar tamizajes con el propósito de evitar ausentismo en los médicos, sin embargo, también menciona que dicho tamizaje demora días en enviar resultados concretos. Explica que aquellos médicos con dichos cuadros suelen ser complicados de tratar a nivel de colega debido a estar en un estado de presencia física pero no mental y emocional, lo que perjudica gravemente el flujo de trabajo. Añade que problemas anímicos pueden resultar en mayor carga externa, lo que genera menor desempeño.</td>
+    </tr>
+    <tr>
+      <td>Sistemas que usa para detectar o reducir el impacto de la carga laboral</td>
+      <td>Seguimiento y seminarios de Salud Ocupacional, uso de wearables (relojes), Ceprit de EsSalud</td>
+    </tr>
+    <tr>
+      <td>Preferencias Visuales</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Evidencia</td>
+      <td><div align="center"><img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Validation/Ricardo-Ochoa.png?raw=true" alt="Entrevista Ricardo Ochoa"></div></td>
+    </tr>
+    <tr>
+      <td>Link</td>
+      <td><p><a target="_blank" href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202411627_upc_edu_pe/IQDYxFcE1mG-Qo5V-aAK7n5wAQnhtWj2vDWpUj-ss5MgRhE?e=tZ61Mw&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D" title="Title">Microsoft Stream</a></p></td>
+    </tr>
+    <tr>
+      <td>Duración<br></td>
+      <td>00:02 min - 20:38 min</td>
+    </tr>
+    <tr>
+      <td>Timing<br></td>
+      <td>0:00</td>
+    </tr>
+    <tr>
+      <td>Resumen</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<br><br>
+
+**Segmento Objetivo 2: Administradores y Directores Médicos**<br>
+
 ### 5.3.3. Evaluaciones según heurísticas.
 ## 5.4. Video About-the-Product.
 ---
