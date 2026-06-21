@@ -4631,6 +4631,24 @@ El backend ha sido dividido en controladores que siguen las convenciones RESTful
 
 El desarrollo completo del Backend SyncedHealth.Center.Platform aplicó Git Flow de forma estricta. Cada Bounded Context fue modelado en una rama independiente (feature/*), siendo validado y fusionado paulatinamente hacia develop tras pasar las validaciones de compilación con dotnet build. Para la capa de datos, se aplicaron migraciones iterativas mediante Entity Framework Core, conectando la lógica del dominio a una base de datos centralizada MySQL (Pomelo) sin romper la abstracción. Todo el código sigue prácticas de Clean Architecture.
 
+- **MySQL Flexible DB**
+
+<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Sprint-3/cortisense-mysql8.png?raw=true"></img><br>
+
+[cortisense-mysql8](https://cortisense-platform-api.azurewebsites.net)
+
+- **Api Service**
+
+<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Sprint-3/cortisense-platform-api.png?raw=true"></img><br>
+
+[cortisense-platform-api](https://cortisense-platform-api.azurewebsites.net)
+
+- **Deployed Swagger**
+
+<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Sprint-3/cortisense-deployed-swagger.png?raw=true"></img><br>
+
+[cortisense-deployed-swagger](https://cortisense-platform-api.azurewebsites.net/swagger/index.html)
+
 #### 5.2.3.8. Team Collaboration Insights during Sprint.
 
 ## 5.3. Validation Interviews.
