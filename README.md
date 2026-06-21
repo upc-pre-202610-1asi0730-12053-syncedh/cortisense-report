@@ -4651,6 +4651,16 @@ El desarrollo completo del Backend SyncedHealth.Center.Platform aplicó Git Flow
 
 #### 5.2.3.8. Team Collaboration Insights during Sprint.
 
+A continuación, se presentan las estadísticas de colaboración obtenidas desde los insights de GitHub durante el Sprint 3:
+
+### Top Commits
+
+<img src="./resources/sprint3/Top_Commits.png" alt="Top Commits Sprint 3"><br>
+
+### Commits
+
+<img src="./resources/sprint3/Commits.png" alt="Commits Sprint 3"><br>
+
 ## 5.3. Validation Interviews.
 ### 5.3.1. Diseño de Entrevistas.
 
