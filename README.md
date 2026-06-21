@@ -4840,6 +4840,87 @@ A continuación, se presentan las estadísticas de colaboración obtenidas desde
 **Segmento Objetivo 2: Administradores y Directores Médicos**<br>
 
 ### 5.3.3. Evaluaciones según heurísticas.
+
+# UX Heuristics & Principles Evaluation
+**Usability – Inclusive Design – Information Architecture**
+
+**SITE o APP A EVALUAR:**
+CortiSense
+
+**TAREAS A EVALUAR:**
+El alcance de esta evaluación incluye la revisión de la usabilidad de las siguientes vistas auditadas a partir de las capturas compartidas:
+1. Inicio de Sesión
+2. Mi Salud (Dashboard Médico)
+3. Mis signos vitales
+4. Mis turnos (Médico)
+5. Mi recuperación
+6. Dashboard de Supervisión
+7. Personal en Riesgo
+8. Anomalías biométricas
+9. Acciones preventivas
+10. Turnos del equipo (Supervisor)
+11. Configuración
+
+---
+
+## ESCALA DE SEVERIDAD:
+Los errores serán puntuados tomando en cuenta la siguiente escala de severidad
+
+| Nivel | Descripción |
+| :--- | :--- |
+| **1** | **Problema superficial:** puede ser fácilmente superado por el usuario o ocurre con muy poca frecuencia. No necesita ser arreglado a no ser que exista disponibilidad de tiempo. |
+| **2** | **Problema menor:** puede ocurrir un poco más frecuentemente o es un poco más difícil de superar para el usuario. Se le debería asignar una prioridad baja resolverlo de cara al siguiente release. |
+| **3** | **Problema mayor:** ocurre frecuentemente o los usuarios no son capaces de resolverlos. Es importante que sean corregidos y se les debe asignar una prioridad alta. |
+| **4** | **Problema muy grave:** un error de gran impacto que impide al usuario continuar con el uso de la herramienta. Es imperativo que sea corregido antes del lanzamiento. |
+
+---
+
+## TABLA RESUMEN:
+
+| # | Problema | Escala de severidad | Heurística/Principio violada(o) |
+| :--- | :--- | :--- | :--- |
+| 1 | Inconsistencia de idioma (Spanglish) en el panel del supervisor. | 3 | Consistencia y estándares / Visibilidad del estado del sistema. |
+| 2 | Contradicción crítica de datos biométricos (HRV) en la vista 'Mi Salud'. | 4 | Consistencia y estándares / Prevención de errores / Coincidencia con el mundo real. |
+| 3 | Falta de contexto en el gráfico principal de 'Mis signos vitales'. | 3 | Visibilidad del estado del sistema / Diseño estético y minimalista. |
+| 4 | Error tipográfico y de espaciado en el estado vacío de 'Turnos'. | 1 | Diseño estético y minimalista. |
+| 5 | Bajo contraste en el botón deshabilitado de 'Crear turno'. | 2 | Visibilidad del estado del sistema / Diseño Inclusivo - Jerarquía visual. |
+
+---
+
+## DESCRIPCIÓN DE PROBLEMAS:
+
+### PROBLEMA #1: Inconsistencia de idioma (Spanglish) en el panel del supervisor
+**Severidad:** 3
+**Heurística violada:** Consistencia y estándares / Visibilidad del estado del sistema.
+**Problema:** En el Panel de Supervisión principal (vista de Resumen clínico), se mezclan términos en inglés ("Assigned staff", "High/critical risk", "Today's actions", "Active clinical alerts") y en español ("Fatiga del equipo", "Alertas activas"). Esta inconsistencia de internacionalización afecta negativamente la legibilidad, la curva de aprendizaje y la confianza en la profesionalidad de la plataforma.
+**Recomendación:** Unificar todos los textos de la interfaz al idioma seleccionado (Español) utilizando correctamente las variables del archivo de internacionalización (i18n).
+
+### PROBLEMA #2: Contradicción crítica de datos biométricos (HRV) en la vista 'Mi Salud'
+**Severidad:** 4
+**Heurística violada:** Consistencia y estándares / Prevención de errores / Coincidencia entre el sistema y el mundo real.
+**Problema:** En la pantalla 'Mi salud' del médico, la tarjeta superior indica un valor de HRV de "17" (omitiendo la unidad de medida), mientras que el panel inferior "Estado actual" muestra en la misma vista una "Variabilidad HRV" de "21 ms". Mostrar datos distintos y contradictorios para la misma métrica biométrica en la misma pantalla destruye por completo la credibilidad del monitoreo.
+**Recomendación:** Asegurar que todos los componentes consuman la misma fuente de datos (estado global). Adicionalmente, se debe agregar la unidad de medida ("ms") en la tarjeta superior para mantener el estándar visual.
+
+### PROBLEMA #3: Falta de contexto en el gráfico principal de 'Mis signos vitales'
+**Severidad:** 3
+**Heurística violada:** Visibilidad del estado del sistema / Diseño estético y minimalista.
+**Problema:** En la sección "Mis signos vitales", el gráfico de barras superior carece de un título explicativo, de leyenda y de una etiqueta en el eje Y que indique qué métrica (Cortisol, HRV, Frecuencia cardíaca, Fatiga) se está visualizando. Además, el eje Y presenta una escala atípica de 100 a 106 sin contexto, lo que hace que la gráfica sea imposible de interpretar de forma aislada.
+**Recomendación:** Añadir un título descriptivo al gráfico, especificar las unidades de medida en el eje Y, y proporcionar una leyenda o un selector interactivo para que el usuario sepa de forma unívoca qué signo vital está analizando.
+
+### PROBLEMA #4: Error tipográfico y de espaciado en el estado vacío de 'Turnos'
+**Severidad:** 1
+**Heurística violada:** Diseño estético y minimalista.
+**Problema:** En la vista de "Turnos del equipo" del supervisor, al visualizar el historial operativo, el mensaje de estado vacío (empty state) aparece con el texto concatenado sin espacio: "No hay turnos programadosNo se encontraron turnos para los filtros seleccionados." Esta falta de espaciado rompe la limpieza visual de la interfaz.
+**Recomendación:** Añadir un espacio, un punto seguido o preferiblemente un salto de línea (`<br>`) entre el título principal del estado vacío y su subdescripción para mejorar la legibilidad y la jerarquía de texto.
+
+### PROBLEMA #5: Bajo contraste en el botón deshabilitado de 'Crear turno'
+**Severidad:** 2
+**Heurística violada:** Visibilidad del estado del sistema / Diseño Inclusivo - Jerarquía visual.
+**Problema:** En el formulario lateral de "Nuevo turno", el botón primario "Crear turno" se encuentra en estado inactivo (disabled), pero el color de su texto gris/blanco sobre el fondo color cyan pálido tiene una relación de contraste sumamente baja. Esto dificulta la lectura del texto, especialmente para usuarios con problemas de visión.
+**Recomendación:** Ajustar la paleta de colores del botón en su estado 'disabled' (por ejemplo, utilizando un fondo gris claro con texto gris oscuro) para asegurar el cumplimiento de estándares de accesibilidad visual y comunicar claramente que la acción está bloqueada momentáneamente.
+
+
+
 ## 5.4. Video About-the-Product.
 
 <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/ATP/about-the-product.png?raw=true"></img><br>
