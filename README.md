@@ -4635,7 +4635,7 @@ El desarrollo completo del Backend SyncedHealth.Center.Platform aplicó Git Flow
 
 <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Sprint-3/cortisense-mysql8.png?raw=true"></img><br>
 
-[cortisense-mysql8](https://cortisense-platform-api.azurewebsites.net)
+[cortisense-mysql8](mysql-8-cortisense.mysql.database.azure.com)
 
 - **Api Service**
 
