@@ -4754,7 +4754,7 @@ El desarrollo completo del Backend SyncedHealth.Center.Platform aplicó Git Flow
     </tr>
     <tr>
       <td>Preferencias Visuales</td>
-      <td></td>
+      <td>Valora el uso de un sistema de colores tipo semáforo (rojo, amarillo, verde) para transmitir niveles de riesgo de forma rápida e intuitiva, donde el rojo capta la atención como señal de peligro, el amarillo indica riesgo y el verde transmite seguridad. Prefiere que los cuadros e indicadores informativos (como "Estado actual", "Resumen por personal médico", "Nueva invitación") ocupen todo el ancho de la página en un solo renglón en lugar de quedar divididos en columnas pequeñas, para evitar espacios en blanco innecesarios y reducir el desplazamiento (scroll) excesivo. Sugiere que las listas largas (como el staff médico) se ordenen alfabéticamente para facilitar la ubicación de la información. En general, valora pantallas amplias, con información directa y precisa, evitando el exceso de texto o páginas demasiado largas.</td>
     </tr>
     <tr>
       <td>Evidencia</td>
@@ -4766,15 +4766,23 @@ El desarrollo completo del Backend SyncedHealth.Center.Platform aplicó Git Flow
     </tr>
     <tr>
       <td>Duración<br></td>
-      <td>00:02 min - 20:38 min</td>
+      <td>00:00 min - 20:38 min</td>
     </tr>
     <tr>
       <td>Timing<br></td>
-      <td>0:00</td>
+      <td>
+        00:00 - 01:30: Introducción y presentación del prototipo interactivo.<br>
+        01:30 - 04:00: Recorrido por panel de "Administrador" (Personal, Equipos, Invitaciones, Suscripción).<br>
+        04:00 - 06:30: Revisión de "Reportes" y "Auditoría" en panel de Administrador.<br>
+        06:30 - 10:00: Recorrido por panel de "Doctor" (Estado actual, Signos vitales, Turnos, Recuperación).<br>
+        10:00 - 12:00: Revisión de "Configuración" y panel de "Supervisor".<br>
+        12:00 - 19:05: Alertas clínicas, comentarios sobre colores y disposición general (incluye pausa por llamada telefónica de Ricardo).<br>
+        19:05 - 20:38: Preguntas finales sobre confianza, autenticación y motivación de uso diario; cierre de la entrevista.
+      </td>
     </tr>
     <tr>
       <td>Resumen</td>
-      <td></td>
+      <td>En esta segunda entrevista, Ricardo evaluó el prototipo interactivo de la aplicación web mostrada por el equipo, navegando por los distintos paneles (Administrador, Doctor y Supervisor). En general, consideró que la interfaz es comprensible, manejable y que el uso de colores (rojo, amarillo, verde) ayuda a identificar rápidamente niveles de riesgo o alertas. Como principales sugerencias de mejora, recomendó ampliar ciertos cuadros (como "Nueva invitación", "Resumen por personal médico" y "Estado actual") para ocupar todo el ancho de la página y así reducir espacios vacíos y desplazamiento innecesario, además de ordenar alfabéticamente las listas de personal. No reportó haberse perdido durante la navegación y valoró que el sistema de autenticación y verificación de datos le genera confianza tanto para su propio uso como para la supervisión del personal. Finalmente, indicó que usaría la herramienta diariamente si fuera implementada oficialmente, siempre que sea amigable, rápida y no resulte tediosa.</td>
     </tr>
   </tbody>
 </table>
