@@ -4841,6 +4841,11 @@ A continuación, se presentan las estadísticas de colaboración obtenidas desde
 
 ### 5.3.3. Evaluaciones según heurísticas.
 ## 5.4. Video About-the-Product.
+
+<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/ATP/about-the-product.png?raw=true"></img><br>
+
+[About-The-Product](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202411627_upc_edu_pe/IQD1j94HPdPuRZiIJUMf-g7oAXduyFxavSN96fqqm7U2mUk?e=RIMrS8&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
+
 ---
 # Conclusiones
 
@@ -4872,7 +4877,7 @@ A continuación, se presentan las estadísticas de colaboración obtenidas desde
 * **Automatización Basada en Monitoreo IoT:** Se sugiere expandir las capacidades actuales del backend en .NET para procesar de forma automatizada las métricas de monitoreo IoT, permitiendo que el sistema genere sugerencias de descanso en tiempo real e interactúe dinámicamente con los algoritmos de reasignación y coordinación de turnos.
 
 
-* **Continuidad del Ciclo de Desarrollo y Pruebas:** Para las fases posteriores del ciclo de vida del software, se aconseja que el equipo de desarrollo —incluyendo a colaboradores clave como Paula Montoya y Marcelo Pareja— implemente pipelines de integración y despliegue continuo (CI/CD) en GitHub y mantenga la rigurosidad en los tableros de Jira para el seguimiento de pruebas de carga, garantizando la estabilidad de la plataforma antes de un lanzamiento masivo en entornos hospitalarios reales.
+* **Continuidad del Ciclo de Desarrollo y Pruebas:** Para las fases posteriores del ciclo de vida del software, se aconseja que el equipo de desarrollo implemente pipelines de integración y despliegue continuo (CI/CD) en GitHub y mantenga la rigurosidad en los tableros para el seguimiento de pruebas de carga, garantizando la estabilidad de la plataforma antes de un lanzamiento masivo en entornos hospitalarios reales.
 
 # Bibliografía
 
