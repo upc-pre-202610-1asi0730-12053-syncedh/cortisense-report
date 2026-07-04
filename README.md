@@ -4916,7 +4916,11 @@ Los errores serán puntuados tomando en cuenta la siguiente escala de severidad
 
 * **Efectividad de la Gestión Ágil:** La adopción del marco de trabajo Scrum y las metodologías ágiles fue un pilar clave para el éxito del proyecto, permitiendo una colaboración fluida y transparente en herramientas como Jira y GitHub, asegurando entregas incrementales funcionales y una rápida capacidad de respuesta ante los cambios de diseño.
 
+* **Video About The Team:**
 
+<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/ATT/about-the-team.png?raw=true"></img><br>
+
+[About-The-Team](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202411627_upc_edu_pe/IQAzEodPTay_SZZsD3vV6xIbARAWJazEOKeEc71UzGE4LAs?e=Xb4U1r)
 
 ---
 
