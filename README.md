@@ -23,8 +23,8 @@
 
 </div>
 
-<br><div align="center"><h3>Julio 2026</h3></div><br>
-<br><div align="center"><h3>Periodo: 202610</h3></div><br>
+<br><div align="center"><h3>Julio 2026</h3></div>
+<div align="center"><h3>Periodo: 202610</h3></div><br>
 <div style="text-align: justify;">
 
 <br><br>
