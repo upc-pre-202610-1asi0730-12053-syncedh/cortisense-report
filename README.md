@@ -4806,36 +4806,34 @@ Los errores serán puntuados tomando en cuenta la siguiente escala de severidad
 ## DESCRIPCIÓN DE PROBLEMAS:
 
 ### PROBLEMA #1: Inconsistencia de idioma (Spanglish) en el panel del supervisor
-**Severidad:** 3
-**Heurística violada:** Consistencia y estándares / Visibilidad del estado del sistema.
-**Problema:** En el Panel de Supervisión principal (vista de Resumen clínico), se mezclan términos en inglés ("Assigned staff", "High/critical risk", "Today's actions", "Active clinical alerts") y en español ("Fatiga del equipo", "Alertas activas"). Esta inconsistencia de internacionalización afecta negativamente la legibilidad, la curva de aprendizaje y la confianza en la profesionalidad de la plataforma.
-**Recomendación:** Unificar todos los textos de la interfaz al idioma seleccionado (Español) utilizando correctamente las variables del archivo de internacionalización (i18n).
+**Severidad:** 3<br>
+**Heurística violada:** Consistencia y estándares / Visibilidad del estado del sistema.<br>
+**Problema:** En el Panel de Supervisión principal (vista de Resumen clínico), se mezclan términos en inglés ("Assigned staff", "High/critical risk", "Today's actions", "Active clinical alerts") y en español ("Fatiga del equipo", "Alertas activas"). Esta inconsistencia de internacionalización afecta negativamente la legibilidad, la curva de aprendizaje y la confianza en la profesionalidad de la plataforma.<br>
+**Recomendación:** Unificar todos los textos de la interfaz al idioma seleccionado (Español) utilizando correctamente las variables del archivo de internacionalización (i18n).<br>
 
 ### PROBLEMA #2: Contradicción crítica de datos biométricos (HRV) en la vista 'Mi Salud'
-**Severidad:** 4
-**Heurística violada:** Consistencia y estándares / Prevención de errores / Coincidencia entre el sistema y el mundo real.
-**Problema:** En la pantalla 'Mi salud' del médico, la tarjeta superior indica un valor de HRV de "17" (omitiendo la unidad de medida), mientras que el panel inferior "Estado actual" muestra en la misma vista una "Variabilidad HRV" de "21 ms". Mostrar datos distintos y contradictorios para la misma métrica biométrica en la misma pantalla destruye por completo la credibilidad del monitoreo.
-**Recomendación:** Asegurar que todos los componentes consuman la misma fuente de datos (estado global). Adicionalmente, se debe agregar la unidad de medida ("ms") en la tarjeta superior para mantener el estándar visual.
+**Severidad:** 4<br>
+**Heurística violada:** Consistencia y estándares / Prevención de errores / Coincidencia entre el sistema y el mundo real.<br>
+**Problema:** En la pantalla 'Mi salud' del médico, la tarjeta superior indica un valor de HRV de "17" (omitiendo la unidad de medida), mientras que el panel inferior "Estado actual" muestra en la misma vista una "Variabilidad HRV" de "21 ms". Mostrar datos distintos y contradictorios para la misma métrica biométrica en la misma pantalla destruye por completo la credibilidad del monitoreo.<br>
+**Recomendación:** Asegurar que todos los componentes consuman la misma fuente de datos (estado global). Adicionalmente, se debe agregar la unidad de medida ("ms") en la tarjeta superior para mantener el estándar visual.<br>
 
 ### PROBLEMA #3: Falta de contexto en el gráfico principal de 'Mis signos vitales'
-**Severidad:** 3
-**Heurística violada:** Visibilidad del estado del sistema / Diseño estético y minimalista.
-**Problema:** En la sección "Mis signos vitales", el gráfico de barras superior carece de un título explicativo, de leyenda y de una etiqueta en el eje Y que indique qué métrica (Cortisol, HRV, Frecuencia cardíaca, Fatiga) se está visualizando. Además, el eje Y presenta una escala atípica de 100 a 106 sin contexto, lo que hace que la gráfica sea imposible de interpretar de forma aislada.
-**Recomendación:** Añadir un título descriptivo al gráfico, especificar las unidades de medida en el eje Y, y proporcionar una leyenda o un selector interactivo para que el usuario sepa de forma unívoca qué signo vital está analizando.
+**Severidad:** 3<br>
+**Heurística violada:** Visibilidad del estado del sistema / Diseño estético y minimalista.<br>
+**Problema:** En la sección "Mis signos vitales", el gráfico de barras superior carece de un título explicativo, de leyenda y de una etiqueta en el eje Y que indique qué métrica (Cortisol, HRV, Frecuencia cardíaca, Fatiga) se está visualizando. Además, el eje Y presenta una escala atípica de 100 a 106 sin contexto, lo que hace que la gráfica sea imposible de interpretar de forma aislada.<br>
+**Recomendación:** Añadir un título descriptivo al gráfico, especificar las unidades de medida en el eje Y, y proporcionar una leyenda o un selector interactivo para que el usuario sepa de forma unívoca qué signo vital está analizando.<br>
 
 ### PROBLEMA #4: Error tipográfico y de espaciado en el estado vacío de 'Turnos'
-**Severidad:** 1
-**Heurística violada:** Diseño estético y minimalista.
-**Problema:** En la vista de "Turnos del equipo" del supervisor, al visualizar el historial operativo, el mensaje de estado vacío (empty state) aparece con el texto concatenado sin espacio: "No hay turnos programadosNo se encontraron turnos para los filtros seleccionados." Esta falta de espaciado rompe la limpieza visual de la interfaz.
-**Recomendación:** Añadir un espacio, un punto seguido o preferiblemente un salto de línea (`<br>`) entre el título principal del estado vacío y su subdescripción para mejorar la legibilidad y la jerarquía de texto.
+**Severidad:** 1<br>
+**Heurística violada:** Diseño estético y minimalista.<br>
+**Problema:** En la vista de "Turnos del equipo" del supervisor, al visualizar el historial operativo, el mensaje de estado vacío (empty state) aparece con el texto concatenado sin espacio: "No hay turnos programadosNo se encontraron turnos para los filtros seleccionados." Esta falta de espaciado rompe la limpieza visual de la interfaz.<br>
+**Recomendación:** Añadir un espacio, un punto seguido o preferiblemente un salto de línea (`<br>`) entre el título principal del estado vacío y su subdescripción para mejorar la legibilidad y la jerarquía de texto.<br>
 
 ### PROBLEMA #5: Bajo contraste en el botón deshabilitado de 'Crear turno'
-**Severidad:** 2
-**Heurística violada:** Visibilidad del estado del sistema / Diseño Inclusivo - Jerarquía visual.
-**Problema:** En el formulario lateral de "Nuevo turno", el botón primario "Crear turno" se encuentra en estado inactivo (disabled), pero el color de su texto gris/blanco sobre el fondo color cyan pálido tiene una relación de contraste sumamente baja. Esto dificulta la lectura del texto, especialmente para usuarios con problemas de visión.
-**Recomendación:** Ajustar la paleta de colores del botón en su estado 'disabled' (por ejemplo, utilizando un fondo gris claro con texto gris oscuro) para asegurar el cumplimiento de estándares de accesibilidad visual y comunicar claramente que la acción está bloqueada momentáneamente.
-
-
+**Severidad:** 2<br>
+**Heurística violada:** Visibilidad del estado del sistema / Diseño Inclusivo - Jerarquía visual.<br>
+**Problema:** En el formulario lateral de "Nuevo turno", el botón primario "Crear turno" se encuentra en estado inactivo (disabled), pero el color de su texto gris/blanco sobre el fondo color cyan pálido tiene una relación de contraste sumamente baja. Esto dificulta la lectura del texto, especialmente para usuarios con problemas de visión.<br>
+**Recomendación:** Ajustar la paleta de colores del botón en su estado 'disabled' (por ejemplo, utilizando un fondo gris claro con texto gris oscuro) para asegurar el cumplimiento de estándares de accesibilidad visual y comunicar claramente que la acción está bloqueada momentáneamente.<br>
 
 ## 5.4. Video About-the-Product.
 
