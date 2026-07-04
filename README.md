@@ -5,7 +5,7 @@
 <h3>Universidad Peruana de Ciencias Aplicadas</h3>
 <h4>Facultad de Ingeniería</h4>
 <h4>Carrera de Ingeniería de Software</h4>
-<h4>Ciclo: 2026-10</h4>
+<h4>Periodo: 2026-10</h4>
 <h4>Código y Nombre del Curso: 1asi0730 - Aplicaciones Web</h4>
 <h4>NRC 12053</h4>
 <h4>Docente: Efraín Ricardo Bautista Ubillús</h4>
@@ -18,13 +18,13 @@
 |---------------------------------|----------------|
 | Gutierrez Santillán, Sebastián Augusto             | u202417329     |
 | León Morales, Johan Yonel             | u20231h055     |
-| Mauricio Silva, Guiou Justinn        | u20241e242     |
+| Mauricio Silva, Ghiou Justinn        | u20241e242     |
 | Pareja Calloapaza, Marcelo Fausto          | u202411627     |
 | Santiago Atanacio, Jairo Mathias                   | u202418755     |
 
 </div>
 
-<br><div align="center"><h3>Junio 2026</h3></div><br>
+<br><div align="center"><h3>Julio 2026</h3></div><br>
 <div style="text-align: justify;">
 
 <br><br>
