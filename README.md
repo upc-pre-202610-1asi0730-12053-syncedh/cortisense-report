@@ -4223,15 +4223,22 @@ Durante este Sprint, el equipo ha organizado el trabajo en base a las Epics defi
 
 El Sprint Backlog agrupa el modelado de dominio, la capa de infraestructura y los servicios RESTful para cada uno de los subsistemas del proyecto CortiSense Platform.
 
-| User Story | Work-Item / Task | | | | | | |
+| User Story Id | User Story Title | Task Id | Task Title | Description | Estimation (Hours) | Assigned To | Status |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Id** | **Title** | **Id** | **Title** | **Description** | **Estimation (Hours)** | **Assigned To** | **Status** |
-| US-01 | Autenticación Segura | TK-10 | IAM Bounded Context | Diseño de JWT, Registro, y Login de Usuarios. Configuración de Repositorios. | 8 | Marcelo Pareja | Done |
-| US-12 | Detección de Anomalías | TK-11 | Clinical Risk Domain | Modelado de Alertas Clínicas, Anomalías Biométricas y Evaluaciones de Riesgo. | 10 | Johan Yonel | Done |
-| US-15 | Trazabilidad del Sistema | TK-12 | Audit Compliance | Creación de Logs de Auditoría para trazabilidad de acciones críticas en BD. | 6 | Jairo Santiago | Done |
-| US-08 | Gestión de Turnos Médicos | TK-13 | Shift Coordination | Servicios REST para asignar y actualizar el estado de turnos (Shift Records). | 7 | Guiou Justinn | Done |
-| US-06 | Integración de Pagos | TK-14 | Subscription Billing | Módulo de membresías, checkout sessions e integración externa con Stripe. | 12 | Marcelo Pareja | Done |
-| US-All | Base de Datos Relacional | TK-15 | EF Core Migrations | Sincronización de Fluent API y mapeo de persistencia hacia base de datos MySQL. | 5 | Equipo Completo | Done |
+| **US-01** | Registro de Administrador Institucional | TK-10 | IAM Bounded Context | Diseño y configuración del Registro de Usuarios. | 4 | Marcelo Pareja | Done |
+| **US-05** | Autenticación Segura | TK-10 | IAM Bounded Context | Diseño de JWT y Login de Usuarios. | 4 | Marcelo Pareja | Done |
+| **US-11** | Cálculo de Puntaje de Fatiga | TK-11 | Clinical Risk Domain | Evaluaciones de riesgo mediante datos biométricos. | 3 | Johan Yonel | Done |
+| **US-12** | Detección de Anomalías | TK-11 | Clinical Risk Domain | Modelado y registro de Anomalías Biométricas. | 3 | Johan Yonel | Done |
+| **US-13** | Clasificación de Nivel de Riesgo | TK-11 | Clinical Risk Domain | Reglas para categorizar las evaluaciones de riesgo. | 2 | Johan Yonel | Done |
+| **US-14** | Detección de Riesgo Extremo | TK-11 | Clinical Risk Domain | Modelado de Alertas Clínicas por agotamiento severo. | 2 | Johan Yonel | Done |
+| **US-31** | Registro de Evaluación de Riesgo | TK-12 | Audit Compliance | Creación de Logs de Auditoría en BD. | 3 | Jairo Santiago | Done |
+| **US-32** | Auditoría de Decisión Crítica | TK-12 | Audit Compliance | Trazabilidad inmutable de acciones críticas. | 3 | Jairo Santiago | Done |
+| **US-20** | Evaluación de Turno Crítico | TK-13 | Shift Coordination | Servicios REST para evaluar asignaciones de turnos. | 2 | Guiou Justinn | Done |
+| **US-21** | Bloqueo de Turno | TK-13 | Shift Coordination | Actualizar el estado de turnos (Shift Records) a bloqueado. | 2 | Guiou Justinn | Done |
+| **US-23** | Reasignación de Carga Laboral | TK-13 | Shift Coordination | Asignar turnos y despachar actualizaciones. | 3 | Guiou Justinn | Done |
+| **US-06** | Selección de Plan de Suscripción | TK-14 | Subscription Billing | Módulo de membresías institucionales. | 5 | Marcelo Pareja | Done |
+| **US-07** | Confirmación de Pago | TK-14 | Subscription Billing | Checkout sessions e integración externa con Stripe. | 7 | Marcelo Pareja | Done |
+| **US-All**| Base de Datos Relacional | TK-15 | EF Core Migrations | Sincronización de Fluent API y mapeo de persistencia hacia base de datos MySQL. | 5 | Equipo Completo | Done |
 
 #### 5.2.3.4. Development Evidence for Sprint Review.
 
@@ -4587,7 +4594,7 @@ A continuación, se presentan las estadísticas de colaboración obtenidas desde
 | Sprint # | Sprint 4 |
 | :--- | :--- |
 | **Antecedentes de la planificación de sprints** | Tras sentar las bases de datos y la arquitectura inicial en el Sprint 3, el equipo ahora debe completar el abanico de Endpoints restantes. El reto crítico es interconectar los dominios: que un incidente clínico derive en un bloqueo de turno y una recomendación de recuperación, y que todo quede correctamente auditado. |
-| **Fecha** | *(Fecha de hoy)* |
+| **Fecha** | 4/07/2026 |
 | **Hora** | 8:00 PM |
 | **Ubicación** | Reunión virtual por Google Meet |
 | **Preparada por** | Pareja Calloapaza, Marcelo Fausto |
@@ -4611,10 +4618,10 @@ Durante este Sprint, el equipo ha organizado el trabajo en base a las Epics defi
 
 | User Story Id | User Story Title | Task Id | Task Title | Description | Estimation (Hours) | Assigned To | Status |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **US-02** | Invitación a Personal Médico | TK-16 | IAM & Accesos | Endpoints de invitación por email. | 2 | Sebastián Augusto | Done |
-| **US-03** | Aceptación de Invitación | TK-16 | IAM & Accesos | Verificación de token y vinculación a Workspace. | 2 | Sebastián Augusto | Done |
-| **US-04** | Asignación de Roles | TK-16 | IAM & Accesos | Reglas de negocio para otorgamiento de roles. | 2 | Sebastián Augusto | Done |
-| **US-37** | Cierre de Sesión Seguro | TK-16 | IAM & Accesos | Endpoint de SignOut y revocación de JWT. | 2 | Sebastián Augusto | Done |
+| **US-02** | Invitación a Personal Médico | TK-16 | IAM & Accesos | Endpoints de invitación por email. | 2 | Marcelo Pareja | Done |
+| **US-03** | Aceptación de Invitación | TK-16 | IAM & Accesos | Verificación de token y vinculación a Workspace. | 2 | Marcelo Pareja | Done |
+| **US-04** | Asignación de Roles | TK-16 | IAM & Accesos | Reglas de negocio para otorgamiento de roles. | 2 | Marcelo Pareja | Done |
+| **US-37** | Cierre de Sesión Seguro | TK-16 | IAM & Accesos | Endpoint de SignOut y revocación de JWT. | 2 | Marcelo Pareja | Done |
 | **US-15** | Apertura de Incidente Clínico | TK-17 | Incident Mgmt. | Aggregate RiskIncident ante riesgos detectados. | 2 | Johan Yonel | Done |
 | **US-16** | Asignación de Prioridad | TK-17 | Incident Mgmt. | Clasificación automática (Crítico, Observación). | 2 | Johan Yonel | Done |
 | **US-18** | Reconocimiento de Riesgo | TK-17 | Incident Mgmt. | Endpoint AcknowledgeRisk para el supervisor. | 2 | Johan Yonel | Done |
