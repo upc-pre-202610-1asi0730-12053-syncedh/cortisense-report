@@ -4579,6 +4579,56 @@ A continuación, se presentan las estadísticas de colaboración obtenidas desde
 
 <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Sprint-3/Commits.png" alt="Commits Sprint 3"><br>
 
+### 5.2.4. Sprint 4
+#### 5.2.4.1. Sprint Planning 4.
+| Sprint #                               | Sprint 4                                                                                                                                                  |
+| :---------------------------------------| :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Antecedentes de la planificación de sprints**         |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| **Fecha**                               | 2026-06-20                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| **Hora**                               | 8:00 PM                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| **Ubicación**                           | Reunión virtual por Google Meet                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| **Preparada por**                        | Pareja Callaoapaza, Marcelo Fausto                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| **Asistentes (a la reunión de planificación)**    | León Morales, Johan Yonel; Mauricio Silva, Guiou Justinn                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| **Asistentes (a la reunión de planificación)**        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| **Resumen retrospectivo del Sprint 3** |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| **Objetivo del sprint e historias de usuario**         |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| **Objetivo del sprint 4**                      |  |
+| **Velocidad de Sprint 4**                  | 65 Story Points                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| **Suma de puntos de historia**                | **65 Story Points**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+#### 5.2.4.2. Aspect Leaders and Collaborators.
+
+Durante este Sprint, el equipo ha organizado el trabajo en base a las Epics definidas en el Product Backlog. La asignación de líderes y colaboradores se ha realizado considerando la responsabilidad real de cada miembro en los distintos aspectos del proyecto, según se documenta en la planificación interna del equipo.
+
+| Team Member (Last Name, First Name) | GitHub Username | EP01 | EP02 | EP03 | EP04 | EP05 | EP06 | EP07 | EP08 |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| León Morales, Johan Yonel | TheCap213 | C | C | L | L | C | L | C | L |
+| Mauricio Silva, Guiou Justinn | Justinn2006 | C | C | C | C | L | L | C | C |
+| Pareja Calloapaza, Marcelo Fausto | marc3lllob7 | L | C | C | C | C | C | C | C |
+| Santiago Atanacio, Jairo Mathias | Msa-ware | C | L | C | C | C | C | C | C |
+
+#### 5.2.4.3. Sprint Backlog 4.
+
+#### 5.2.4.4. Development Evidence for Sprint Review.
+
+#### 5.2.4.5. Execution Evidence for Sprint Review.
+
+Durante el Sprint 3, el equipo finalizó con éxito el desarrollo íntegro de la arquitectura backend de CortiSense (.NET). La integración de los distintos Bounded Contexts resultó en una sólida interfaz Swagger con categorización completa de esquemas DTOs.
+
+A continuación, la evidencia de compilación y la visualización de las operaciones disponibles en Swagger para el consumo del Frontend.
+
+#### 5.2.4.6. Services Documentation Evidence for Sprint Review.
+
+#### 5.2.4.7. Software Deployment Evidence for Sprint Review.
+
+#### 5.2.4.8. Team Collaboration Insights during Sprint.
+
+A continuación, se presentan las estadísticas de colaboración obtenidas desde los insights de GitHub durante el Sprint 4:
+
+### Top Commits
+
+### Commits
+
+
 ## 5.3. Validation Interviews.
 ### 5.3.1. Diseño de Entrevistas.
 
