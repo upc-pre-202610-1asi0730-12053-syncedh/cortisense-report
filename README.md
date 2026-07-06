@@ -2570,81 +2570,71 @@ Este diagrama representa la estructura backend del bounded context Identity and 
 <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/ClassDiagrams/shared-kernelB.svg?raw=true" alt="Diagrama de Clases Backend del Shared Kernel">
 
 Este diagrama representa el shared kernel del backend de CortiSense. Incluye elementos comunes del dominio, entidades base, objetos de valor, excepciones compartidas y estructuras reutilizables entre distintos bounded contexts.
-
 ## 4.8. Database Design.
 
-Esta sección presenta y explica el diseño de base de datos de SyncedHealth, organizado según los siete bounded contexts definidos en la arquitectura del sistema. El diseño modela la persistencia relacional, especificando tablas, atributos, tipos de dato, claves primarias y claves foráneas.
+Esta sección presenta y explica el diseño de base de datos de SyncedHealth, implementado en el backend (CortiSense Platform) mediante Code-First con Entity Framework Core. El esquema modela la persistencia relacional definiendo las tablas, atributos, y claves (Primary y Foreign Keys) correspondientes a cada Bounded Context.
 
-Todos los identificadores principales utilizan `CHAR(36)` para soportar UUIDs. Las tablas de catálogo, como `roles` y `plans`, pueden utilizar `INT` como clave primaria. Las relaciones entre bounded contexts se representan mediante columnas FK que referencian identificadores de otros contextos, manteniendo la trazabilidad entre hospitales, usuarios, personal médico, suscripciones, datos biométricos, turnos, incidentes, recuperación y auditoría.
+Todos los identificadores principales utilizan `CHAR(36)` para soportar UUIDs o en su defecto `INT` autoincrementales, según la configuración del agregado. Las relaciones entre Bounded Contexts mantienen la trazabilidad entre organizaciones, usuarios, planes, signos vitales, turnos y recuperación.
 
 **- Identity & Access Management**
 
-Este bounded context gestiona la identidad, autenticación, invitaciones, roles y accesos dentro de SyncedHealth. La tabla `hospitals` actúa como raíz organizacional del sistema. `users` centraliza las cuentas de usuario, sus credenciales, datos principales y estado. `roles` funciona como catálogo de perfiles disponibles, como administrador hospitalario, personal médico, supervisor clínico y director médico. `invitations` registra invitaciones enviadas a usuarios para completar su registro, mientras que `access_grants` almacena solicitudes y accesos concedidos dentro de un hospital.
-
-**Tabla: hospitals**
-
-| Atributo | Tipo |
-|---|---|
-| id | CHAR(36) (PK) |
-| name | VARCHAR(100) |
-| status | VARCHAR(20) |
-| created_at | DATETIME |
-
-**Métodos**
-
-| Método | Descripción |
-|---|---|
-| Create() | Crea un nuevo hospital dentro del sistema. |
-| Activate() | Activa el hospital para operar en la plataforma. |
-| Suspend() | Suspende temporalmente el hospital. |
-| IsActive() | Verifica si el hospital se encuentra activo. |
-
----
-
-**Tabla: roles**
-
-| Atributo | Tipo |
-|---|---|
-| id | INT (PK) |
-| name | VARCHAR(50) |
-
-**Métodos**
-
-| Método | Descripción |
-|---|---|
-| GetRoleName() | Retorna el nombre del rol. |
-| IsHospitalAdministrator() | Verifica si el rol corresponde a administrador hospitalario. |
-| IsMedicalStaff() | Verifica si el rol corresponde a personal médico. |
-| IsClinicalSupervisor() | Verifica si el rol corresponde a supervisor clínico. |
-| IsMedicalDirector() | Verifica si el rol corresponde a director médico. |
-
----
+Este bounded context gestiona la identidad, autenticación, invitaciones, roles y accesos dentro de SyncedHealth. La tabla `organizations` actúa como raíz organizacional del sistema (reemplazando el concepto de hospital aislado). `users` centraliza las cuentas de usuario, sus credenciales, datos principales (como nombres y área asignada) y estado en el sistema. Finalmente, `invitations` registra las invitaciones enviadas a futuros usuarios para completar su registro y unirse a la plataforma bajo un rol específico.
 
 **Tabla: users**
 
 | Atributo | Tipo |
 |---|---|
-| id | CHAR(36) (PK) |
-| hospital_id | CHAR(36) (FK) |
-| role_id | INT (FK) |
-| first_name | VARCHAR(100) |
-| last_name | VARCHAR(100) |
-| email | VARCHAR(255) |
+| id | CHAR(36) / INT (PK) |
+| organization_id | CHAR(36) / INT (FK) |
+| first_name | VARCHAR(80) |
+| last_name | VARCHAR(80) |
+| email | VARCHAR(160) |
 | password_hash | VARCHAR(255) |
-| status | VARCHAR(20) |
+| phone | VARCHAR(30) |
+| work_area_id | CHAR(36) / INT (FK) |
+| specialty_id | CHAR(36) / INT (FK) |
+| role | VARCHAR(40) |
+| status | VARCHAR(30) |
+| registration_status | VARCHAR(30) |
+| activated_at | DATETIME |
+| cancelled_at | DATETIME |
 | created_at | DATETIME |
+| updated_at | DATETIME |
 
 **Métodos**
 
 | Método | Descripción |
 |---|---|
-| RegisterHospitalAdministrator() | Registra un administrador hospitalario. |
-| CompleteRegistration() | Completa el registro de un usuario invitado. |
-| SignIn() | Inicia sesión en el sistema. |
-| SignOut() | Cierra sesión en el sistema. |
-| AssignRole(role) | Asigna un rol al usuario. |
-| RequestAccess() | Solicita acceso a funcionalidades del sistema. |
-| GrantAccess() | Concede acceso al usuario. |
+| CrearUser() | Persiste un nuevo objeto User en la tabla users. |
+| ActualizarUser() | Actualiza los datos de User. |
+| ObtenerPorId() | Recupera el registro mediante su identificador único. |
+
+---
+
+**Tabla: organizations**
+
+| Atributo | Tipo |
+|---|---|
+| id | CHAR(36) / INT (PK) |
+| name | VARCHAR(120) |
+| ruc | VARCHAR(20) |
+| email | VARCHAR(160) |
+| phone | VARCHAR(30) |
+| address | VARCHAR(250) |
+| status | VARCHAR(30) |
+| registration_status | VARCHAR(30) |
+| activated_at | DATETIME |
+| cancelled_at | DATETIME |
+| created_at | DATETIME |
+| updated_at | DATETIME |
+
+**Métodos**
+
+| Método | Descripción |
+|---|---|
+| CrearOrganization() | Persiste un nuevo objeto Organization en la tabla organizations. |
+| ActualizarOrganization() | Actualiza los datos de Organization. |
+| ObtenerPorId() | Recupera el registro mediante su identificador único. |
 
 ---
 
@@ -2652,70 +2642,67 @@ Este bounded context gestiona la identidad, autenticación, invitaciones, roles 
 
 | Atributo | Tipo |
 |---|---|
-| id | CHAR(36) (PK) |
-| hospital_id | CHAR(36) (FK) |
-| email | VARCHAR(255) |
-| status | VARCHAR(20) |
-| invited_at | DATETIME |
-| accepted_at | DATETIME |
+| id | CHAR(36) / INT (PK) |
+| organization_id | CHAR(36) / INT (FK) |
+| email | VARCHAR(160) |
+| role | VARCHAR(40) |
+| status | VARCHAR(30) |
+| token | VARCHAR(120) |
+| email_status | VARCHAR(30) |
+| resend_email_id | CHAR(36) / INT (FK) |
+| email_error | VARCHAR(500) |
 | expires_at | DATETIME |
+| sent_at | DATETIME |
+| accepted_at | DATETIME |
+| cancelled_at | DATETIME |
+| created_at | DATETIME |
+| updated_at | DATETIME |
 
 **Métodos**
 
 | Método | Descripción |
 |---|---|
-| InviteUser() | Envía una invitación a un nuevo usuario. |
-| AcceptInvitation() | Acepta una invitación pendiente. |
-| ResendInvitation() | Reenvía una invitación al usuario. |
-| ExpireInvitation() | Marca una invitación como expirada. |
+| CrearInvitation() | Persiste un nuevo objeto Invitation en la tabla invitations. |
+| ActualizarInvitation() | Actualiza los datos de Invitation. |
+| ObtenerPorId() | Recupera el registro mediante su identificador único. |
 
 ---
 
-**Tabla: access_grants**
+**- Subscription Management**
 
-| Atributo | Tipo |
-|---|---|
-| id | CHAR(36) (PK) |
-| user_id | CHAR(36) (FK) |
-| hospital_id | CHAR(36) (FK) |
-| status | VARCHAR(20) |
-| requested_at | DATETIME |
-| granted_at | DATETIME |
-
-**Métodos**
-
-| Método | Descripción |
-|---|---|
-| RequestAccess() | Registra una solicitud de acceso. |
-| GrantAccess() | Concede el acceso solicitado. |
-| RejectAccess() | Rechaza una solicitud de acceso. |
-| RevokeAccess() | Revoca un acceso concedido. |
-| DetectUnauthorizedAccess() | Detecta intentos de acceso no autorizados. |
-
----
-
-**- Subscription & Plan Management**
-
-Este bounded context administra los planes comerciales, pagos, suscripciones y acceso a funcionalidades del sistema. La tabla `plans` funciona como catálogo de planes disponibles. `subscriptions` vincula un hospital con un plan y registra su estado de activación o expiración. `subscription_payments` almacena la confirmación de pagos. `plan_features` define las funcionalidades incluidas en cada plan, mientras que `feature_access` registra si una funcionalidad se encuentra habilitada o restringida según la suscripción.
+Este bounded context administra los planes comerciales, procesos de pago (checkout) y suscripciones. La tabla `plans` funciona como catálogo base de los planes disponibles, definiendo límites de usuarios y precios. `subscriptions` vincula a una organización con su plan activo y guarda el rastreo hacia la pasarela de pagos. `checkout_sessions` administra de manera transaccional cada intento de compra o mejora de plan.
 
 **Tabla: plans**
 
 | Atributo | Tipo |
 |---|---|
-| id | INT (PK) |
-| plan_tier | VARCHAR(20) |
-| description | TEXT |
+| id | CHAR(36) / INT (PK) |
+| code | VARCHAR(255) |
+| name | VARCHAR(255) |
 | price | DECIMAL(10,2) |
+| currency | VARCHAR(10) |
+| billing_period | VARCHAR(30) |
+| max_doctors | INT |
+| max_supervisors | INT |
+| max_teams | INT |
+| max_work_areas | INT |
+| monthly_invitations | INT |
+| data_history_days | INT |
+| support_level | VARCHAR(50) |
+| recommended | BOOLEAN |
+| feature_keys | VARCHAR(255) |
+| enabled_modules | VARCHAR(255) |
+| disabled_modules | VARCHAR(255) |
 | created_at | DATETIME |
+| updated_at | DATETIME |
 
 **Métodos**
 
 | Método | Descripción |
 |---|---|
-| SelectSubscriptionPlan() | Selecciona un plan de suscripción. |
-| MarkSubscriptionPlanSelected() | Marca el plan como seleccionado. |
-| GetPlanTier() | Retorna el nivel del plan. |
-| GetPrice() | Retorna el precio del plan. |
+| CrearPlan() | Persiste un nuevo objeto Plan en la tabla plans. |
+| ActualizarPlan() | Actualiza los datos de Plan. |
+| ObtenerPorId() | Recupera el registro mediante su identificador único. |
 
 ---
 
@@ -2723,712 +2710,320 @@ Este bounded context administra los planes comerciales, pagos, suscripciones y a
 
 | Atributo | Tipo |
 |---|---|
-| id | CHAR(36) (PK) |
-| hospital_id | CHAR(36) (FK) |
-| plan_id | INT (FK) |
-| status | VARCHAR(20) |
-| activated_at | DATETIME |
-| expires_at | DATETIME |
-
-**Métodos**
-
-| Método | Descripción |
-|---|---|
-| ConfirmSubscriptionPayment() | Confirma el pago de la suscripción. |
-| MarkSubscriptionPaymentConfirmed() | Marca el pago como confirmado. |
-| ApplyPaidSubscriptionConfirmedPolicy() | Aplica la política de confirmación de pago. |
-| ActivateSubscription() | Activa la suscripción. |
-| MarkSubscriptionActivated() | Marca la suscripción como activada. |
-| MarkSubscriptionExpired() | Marca la suscripción como expirada. |
-| ApplyExpiredSubscriptionRestrictionPolicy() | Aplica restricciones cuando la suscripción expira. |
-
----
-
-**Tabla: subscription_payments**
-
-| Atributo | Tipo |
-|---|---|
-| id | CHAR(36) (PK) |
-| subscription_id | CHAR(36) (FK) |
-| payment_reference | VARCHAR(100) |
-| status | VARCHAR(20) |
-| amount | DECIMAL(10,2) |
-| paid_at | DATETIME |
-
-**Métodos**
-
-| Método | Descripción |
-|---|---|
-| ConfirmSubscriptionPayment() | Confirma el pago realizado. |
-| MarkSubscriptionPaymentConfirmed() | Marca el pago como confirmado. |
-| ApplyPaidSubscriptionConfirmedPolicy() | Valida que el pago confirmado permita activar la suscripción. |
-
----
-
-**Tabla: plan_features**
-
-| Atributo | Tipo |
-|---|---|
-| id | CHAR(36) (PK) |
-| plan_id | INT (FK) |
-| name | VARCHAR(100) |
-| access_status | VARCHAR(20) |
-| enabled_at | DATETIME |
-
-**Métodos**
-
-| Método | Descripción |
-|---|---|
-| EnablePlanFeatures() | Habilita las funcionalidades del plan. |
-| MarkPlanFeaturesEnabled() | Marca las funcionalidades como habilitadas. |
-| ApplyActiveSubscriptionFeaturePolicy() | Aplica la política de funcionalidades activas. |
-
----
-
-**Tabla: feature_access**
-
-| Atributo | Tipo |
-|---|---|
-| id | CHAR(36) (PK) |
-| subscription_id | CHAR(36) (FK) |
-| feature_name | VARCHAR(100) |
-| status | VARCHAR(20) |
-| restricted_at | DATETIME |
-
-**Métodos**
-
-| Método | Descripción |
-|---|---|
-| RestrictFeatureAccess() | Restringe el acceso a una funcionalidad. |
-| MarkFeatureAccessRestricted() | Marca la funcionalidad como restringida. |
-| ApplyExpiredSubscriptionRestrictionPolicy() | Aplica restricciones por suscripción expirada. |
-
----
-
-**- Clinical Risk Assessment**
-
-Este bounded context persiste los datos biométricos, evaluaciones de riesgo clínico, puntajes de fatiga, indicadores de riesgo y alertas clínicas. La tabla `biometric_records` registra mediciones provenientes de dispositivos, como frecuencia cardíaca, variabilidad cardíaca y niveles de cortisol. `risk_assessments` representa la evaluación principal del riesgo asociado a un miembro del personal médico. `fatigue_scores`, `risk_indicators` y `clinical_risk_alerts` complementan el proceso de cálculo, clasificación y detección de riesgo clínico.
-
-**Tabla: biometric_records**
-
-| Atributo | Tipo |
-|---|---|
-| id | CHAR(36) (PK) |
-| staff_id | CHAR(36) (FK) |
-| device_id | CHAR(36) (FK) |
-| heart_rate | INT |
-| heart_rate_variability | DECIMAL(10,2) |
-| cortisol_level | DECIMAL(10,2) |
-| recorded_at | DATETIME |
-
-**Métodos**
-
-| Método | Descripción |
-|---|---|
-| SyncBiometricData() | Sincroniza datos biométricos desde un dispositivo. |
-| ValidateRecord() | Valida que el registro biométrico sea consistente. |
-| DetectBiometricAnomaly() | Detecta anomalías en los datos biométricos. |
-
----
-
-**Tabla: risk_assessments**
-
-| Atributo | Tipo |
-|---|---|
-| id | CHAR(36) (PK) |
-| staff_id | CHAR(36) (FK) |
-| risk_score | DECIMAL(10,2) |
-| risk_level | VARCHAR(20) |
-| status | VARCHAR(20) |
-| evaluated_at | DATETIME |
-
-**Métodos**
-
-| Método | Descripción |
-|---|---|
-| CalculateFatigueScore() | Calcula el puntaje de fatiga. |
-| UpdateRiskLevel(riskLevel) | Actualiza el nivel de riesgo. |
-| DetectFatigueThreshold() | Detecta si se supera el umbral de fatiga. |
-| DetectExtremeRisk() | Detecta un riesgo extremo. |
-| DetectClinicalRisk() | Detecta un riesgo clínico relevante. |
-
----
-
-**Tabla: fatigue_scores**
-
-| Atributo | Tipo |
-|---|---|
-| id | CHAR(36) (PK) |
-| risk_assessment_id | CHAR(36) (FK) |
-| value | DECIMAL(10,2) |
-| threshold_value | DECIMAL(10,2) |
-| calculated_at | DATETIME |
-
-**Métodos**
-
-| Método | Descripción |
-|---|---|
-| EvaluateFatigueScore() | Evalúa el puntaje de fatiga. |
-| ExceedsThreshold() | Verifica si el puntaje supera el umbral. |
-
----
-
-**Tabla: risk_indicators**
-
-| Atributo | Tipo |
-|---|---|
-| id | CHAR(36) (PK) |
-| risk_assessment_id | CHAR(36) (FK) |
-| name | VARCHAR(100) |
-| score | DECIMAL(10,2) |
-| level | VARCHAR(20) |
-
-**Métodos**
-
-| Método | Descripción |
-|---|---|
-| ClassifyRiskLevel() | Clasifica el nivel de riesgo. |
-| UpdateRiskLevel() | Actualiza el nivel de riesgo asociado al indicador. |
-
----
-
-**Tabla: clinical_risk_alerts**
-
-| Atributo | Tipo |
-|---|---|
-| id | CHAR(36) (PK) |
-| risk_assessment_id | CHAR(36) (FK) |
-| risk_level | VARCHAR(20) |
-| status | VARCHAR(20) |
-| description | TEXT |
-| detected_at | DATETIME |
-
-**Métodos**
-
-| Método | Descripción |
-|---|---|
-| ConfirmClinicalRisk() | Confirma la existencia de riesgo clínico. |
-| MarkAsExtremeRisk() | Marca el riesgo como extremo. |
-
----
-
-**- Incident & Escalation Management**
-
-Este bounded context registra incidentes de riesgo, asignación de prioridad, notificaciones a supervisores, escalamiento hacia directores médicos y cierre de incidentes. La tabla `risk_incidents` almacena el ciclo de vida del incidente. `incident_priorities` registra la prioridad asignada. `supervisor_notifications` almacena alertas enviadas a supervisores. Cuando el incidente requiere mayor atención, `risk_escalations`, `escalation_reviews` y `medical_director_notifications` permiten mantener trazabilidad del proceso de escalamiento.
-
-**Tabla: risk_incidents**
-
-| Atributo | Tipo |
-|---|---|
-| id | CHAR(36) (PK) |
-| reported_staff_id | CHAR(36) (FK) |
-| supervisor_id | CHAR(36) (FK) |
-| risk_level | VARCHAR(20) |
-| status | VARCHAR(20) |
-| opened_at | DATETIME |
-| acknowledged_at | DATETIME |
-| resolved_at | DATETIME |
-| closed_at | DATETIME |
-
-**Métodos**
-
-| Método | Descripción |
-|---|---|
-| DetectRiskIncident() | Detecta un incidente de riesgo. |
-| OpenRiskIncident() | Abre un nuevo incidente de riesgo. |
-| AssignIncidentPriority(priority) | Asigna prioridad al incidente. |
-| NotifySupervisor(notification) | Notifica al supervisor clínico. |
-| AcknowledgeRisk() | Reconoce el riesgo reportado. |
-| ResolveIncident() | Resuelve el incidente. |
-| CloseIncident() | Cierra el incidente. |
-
----
-
-**Tabla: incident_priorities**
-
-| Atributo | Tipo |
-|---|---|
-| id | CHAR(36) (PK) |
-| incident_id | CHAR(36) (FK) |
-| level | VARCHAR(20) |
-| assigned_at | DATETIME |
-
-**Métodos**
-
-| Método | Descripción |
-|---|---|
-| AssignIncidentPriority() | Asigna una prioridad al incidente. |
-| MarkIncidentPriorityAssigned() | Marca la prioridad como asignada. |
-
----
-
-**Tabla: supervisor_notifications**
-
-| Atributo | Tipo |
-|---|---|
-| id | CHAR(36) (PK) |
-| incident_id | CHAR(36) (FK) |
-| supervisor_id | CHAR(36) (FK) |
-| status | VARCHAR(20) |
-| sent_at | DATETIME |
-
-**Métodos**
-
-| Método | Descripción |
-|---|---|
-| AlertSupervisor() | Envía una alerta al supervisor. |
-| MarkSupervisorAlerted() | Marca al supervisor como alertado. |
-
----
-
-**Tabla: risk_escalations**
-
-| Atributo | Tipo |
-|---|---|
-| id | CHAR(36) (PK) |
-| incident_id | CHAR(36) (FK) |
-| medical_director_id | CHAR(36) (FK) |
-| status | VARCHAR(20) |
-| escalated_at | DATETIME |
-| reviewed_at | DATETIME |
-| resolved_at | DATETIME |
-| closed_at | DATETIME |
-
-**Métodos**
-
-| Método | Descripción |
-|---|---|
-| DetectSupervisorTimeout() | Detecta que el supervisor no respondió a tiempo. |
-| MarkSupervisorResponseTimeout() | Marca el timeout de respuesta del supervisor. |
-| ApplyUnattendedRiskEscalationPolicy() | Aplica la política de escalamiento por riesgo no atendido. |
-| EscalateRisk() | Escala el riesgo al director médico. |
-| NotifyMedicalDirector(notification) | Notifica al director médico. |
-| ReviewEscalatedRisk(review) | Revisa el riesgo escalado. |
-| ResolveEscalatedIncident() | Resuelve el incidente escalado. |
-| CloseIncident() | Cierra el incidente escalado. |
-
----
-
-**Tabla: escalation_reviews**
-
-| Atributo | Tipo |
-|---|---|
-| id | CHAR(36) (PK) |
-| escalation_id | CHAR(36) (FK) |
-| reviewed_by | CHAR(36) (FK) |
-| status | VARCHAR(20) |
-| reviewed_at | DATETIME |
-
-**Métodos**
-
-| Método | Descripción |
-|---|---|
-| ReviewEscalatedRisk() | Revisa un riesgo escalado. |
-| AcknowledgeEscalatedRisk() | Reconoce el riesgo escalado. |
-| ResolveEscalatedIncident() | Resuelve el incidente escalado. |
-
----
-
-**Tabla: medical_director_notifications**
-
-| Atributo | Tipo |
-|---|---|
-| id | CHAR(36) (PK) |
-| escalation_id | CHAR(36) (FK) |
-| medical_director_id | CHAR(36) (FK) |
-| status | VARCHAR(20) |
-| sent_at | DATETIME |
-
-**Métodos**
-
-| Método | Descripción |
-|---|---|
-| NotifyMedicalDirector() | Notifica al director médico. |
-| MarkMedicalDirectorNotified() | Marca al director médico como notificado. |
-
----
-
-**- Shift Coordination**
-
-Este bounded context persiste la coordinación de turnos, asignaciones, evaluación de turnos críticos, bloqueos, reasignaciones, sugerencias de reemplazo y redistribución de carga laboral. La tabla `shifts` almacena la información base del turno. `shift_assignments` relaciona un turno con personal médico y supervisor. `critical_shift_evaluations` registra la criticidad o sobrecarga del turno. `replacement_suggestions` guarda sugerencias de reemplazo y `workload_distributions` registra la carga laboral del personal.
-
-**Tabla: shifts**
-
-| Atributo | Tipo |
-|---|---|
-| id | CHAR(36) (PK) |
-| hospital_id | CHAR(36) (FK) |
-| start_time | DATETIME |
-| end_time | DATETIME |
-| status | VARCHAR(20) |
-
-**Métodos**
-
-| Método | Descripción |
-|---|---|
-| AssignShift() | Asigna un turno. |
-| BlockShift() | Bloquea un turno crítico. |
-| ReassignShift(staffId) | Reasigna el turno a otro miembro del personal. |
-
----
-
-**Tabla: shift_assignments**
-
-| Atributo | Tipo |
-|---|---|
-| id | CHAR(36) (PK) |
-| shift_id | CHAR(36) (FK) |
-| assigned_staff_id | CHAR(36) (FK) |
-| supervisor_id | CHAR(36) (FK) |
-| status | VARCHAR(20) |
-| criticality | VARCHAR(20) |
-| assigned_at | DATETIME |
-
-**Métodos**
-
-| Método | Descripción |
-|---|---|
-| EvaluateCriticalShift() | Evalúa si el turno es crítico. |
-| BlockShift() | Bloquea el turno asignado. |
-| RequestShiftReassignment() | Solicita una reasignación de turno. |
-| ReassignShift(replacement) | Reasigna el turno con un reemplazo sugerido. |
-
----
-
-**Tabla: critical_shift_evaluations**
-
-| Atributo | Tipo |
-|---|---|
-| id | CHAR(36) (PK) |
-| shift_id | CHAR(36) (FK) |
-| criticality | VARCHAR(20) |
-| overload_status | VARCHAR(20) |
-| evaluated_at | DATETIME |
-
-**Métodos**
-
-| Método | Descripción |
-|---|---|
-| EvaluateCriticalShift() | Evalúa la criticidad del turno. |
-| MarkCriticalShiftEvaluated() | Marca el turno crítico como evaluado. |
-| DetectShiftOverload() | Detecta sobrecarga en el turno. |
-| ApplyCriticalShiftBlockingPolicy() | Aplica la política de bloqueo de turno crítico. |
-
----
-
-**Tabla: replacement_suggestions**
-
-| Atributo | Tipo |
-|---|---|
-| id | CHAR(36) (PK) |
-| shift_assignment_id | CHAR(36) (FK) |
-| suggested_staff_id | CHAR(36) (FK) |
-| status | VARCHAR(20) |
-| suggested_at | DATETIME |
-
-**Métodos**
-
-| Método | Descripción |
-|---|---|
-| SuggestReplacement() | Sugiere un reemplazo para el turno. |
-| MarkReplacementSuggested() | Marca el reemplazo como sugerido. |
-| EvaluateReplacementSelection() | Evalúa la selección del reemplazo. |
-| SelectReplacement() | Selecciona el reemplazo. |
-
----
-
-**Tabla: workload_distributions**
-
-| Atributo | Tipo |
-|---|---|
-| id | CHAR(36) (PK) |
-| staff_id | CHAR(36) (FK) |
-| workload_level | VARCHAR(20) |
-| period_start | DATETIME |
-| period_end | DATETIME |
-
-**Métodos**
-
-| Método | Descripción |
-|---|---|
-| EvaluateWorkloadDistribution() | Evalúa la distribución de carga laboral. |
-| RedistributeWorkload() | Redistribuye la carga laboral. |
-
----
-
-**- Staff Recovery**
-
-Este bounded context gestiona planes de recuperación, detección de necesidad de descanso, recomendaciones, periodos de descanso, notificaciones y decisiones del personal médico. La tabla `recovery_plans` representa el plan principal de recuperación. `recovery_needs` almacena la necesidad detectada. `recovery_recommendations` registra recomendaciones emitidas. `rest_periods` guarda periodos de descanso sugeridos. `recovery_notifications` registra notificaciones enviadas al personal y `recovery_decisions` almacena la aceptación, confirmación o rechazo del plan.
-
-**Tabla: recovery_plans**
-
-| Atributo | Tipo |
-|---|---|
-| id | CHAR(36) (PK) |
-| staff_id | CHAR(36) (FK) |
-| status | VARCHAR(20) |
+| id | CHAR(36) / INT (PK) |
+| organization_id | CHAR(36) / INT (FK) |
+| plan_id | CHAR(36) / INT (FK) |
+| status | VARCHAR(30) |
+| started_at | DATETIME |
+| cancelled_at | DATETIME |
+| stripe_subscription_id | VARCHAR(255) |
+| stripe_customer_id | VARCHAR(255) |
 | created_at | DATETIME |
-| accepted_at | DATETIME |
-| rejected_at | DATETIME |
-
-**Métodos**
-
-| Método | Descripción |
-|---|---|
-| DetectRecoveryNeed() | Detecta la necesidad de recuperación. |
-| IssueRecoveryRecommendation() | Emite una recomendación de recuperación. |
-| SuggestRestPeriod() | Sugiere un periodo de descanso. |
-| NotifyMedicalStaff() | Notifica al personal médico. |
-| AcceptRecoveryPlan() | Acepta el plan de recuperación. |
-| RejectRecoveryPlan() | Rechaza el plan de recuperación. |
-
----
-
-**Tabla: recovery_needs**
-
-| Atributo | Tipo |
-|---|---|
-| id | CHAR(36) (PK) |
-| recovery_plan_id | CHAR(36) (FK) |
-| staff_id | CHAR(36) (FK) |
-| status | VARCHAR(20) |
-| detected_at | DATETIME |
-
-**Métodos**
-
-| Método | Descripción |
-|---|---|
-| DetectRecoveryNeed() | Detecta la necesidad de recuperación. |
-| MarkRecoveryNeedDetected() | Marca la necesidad como detectada. |
-| ApplyRecoveryNeedPolicy() | Aplica la política de necesidad de recuperación. |
-
----
-
-**Tabla: recovery_recommendations**
-
-| Atributo | Tipo |
-|---|---|
-| id | CHAR(36) (PK) |
-| recovery_plan_id | CHAR(36) (FK) |
-| type | VARCHAR(50) |
-| description | TEXT |
-| issued_at | DATETIME |
-
-**Métodos**
-
-| Método | Descripción |
-|---|---|
-| IssueRecoveryRecommendation() | Emite una recomendación de recuperación. |
-| MarkRecoveryRecommendationIssued() | Marca la recomendación como emitida. |
-
----
-
-**Tabla: rest_periods**
-
-| Atributo | Tipo |
-|---|---|
-| id | CHAR(36) (PK) |
-| recovery_plan_id | CHAR(36) (FK) |
-| start_date | DATETIME |
-| end_date | DATETIME |
-| status | VARCHAR(20) |
-| suggested_at | DATETIME |
-
-**Métodos**
-
-| Método | Descripción |
-|---|---|
-| SuggestRestPeriod() | Sugiere un periodo de descanso. |
-| MarkRestPeriodSuggested() | Marca el periodo de descanso como sugerido. |
-
----
-
-**Tabla: recovery_notifications**
-
-| Atributo | Tipo |
-|---|---|
-| id | CHAR(36) (PK) |
-| recovery_plan_id | CHAR(36) (FK) |
-| staff_id | CHAR(36) (FK) |
-| message | TEXT |
-| sent_at | DATETIME |
-
-**Métodos**
-
-| Método | Descripción |
-|---|---|
-| NotifyMedicalStaff() | Notifica al personal médico. |
-| MarkMedicalStaffNotified() | Marca al personal médico como notificado. |
-
----
-
-**Tabla: recovery_decisions**
-
-| Atributo | Tipo |
-|---|---|
-| id | CHAR(36) (PK) |
-| recovery_plan_id | CHAR(36) (FK) |
-| staff_id | CHAR(36) (FK) |
-| status | VARCHAR(20) |
-| decided_at | DATETIME |
-| rejection_reason | TEXT |
-
-**Métodos**
-
-| Método | Descripción |
-|---|---|
-| AcceptRecoveryPlan() | Acepta el plan de recuperación. |
-| ConfirmRecovery() | Confirma la recuperación. |
-| RejectRecoveryPlan() | Rechaza el plan de recuperación. |
-| TrackRecoveryRefusal() | Registra seguimiento del rechazo. |
-| RecordRecoveryRejection() | Registra formalmente el rechazo del plan. |
-
----
-
-**- Audit & Compliance**
-
-Este bounded context registra trazabilidad, evidencia de decisiones críticas, acciones de supervisores, evaluaciones de riesgo, bloqueos de turno y reportes de cumplimiento. La tabla `audit_trails` agrupa registros de auditoría. `audit_records` almacena registros generales. Las tablas `supervisor_action_records`, `critical_decision_records`, `risk_assessment_records` y `shift_blocking_records` permiten especializar cada tipo de registro auditado. Finalmente, `compliance_reports` almacena los reportes generados para revisión administrativa y cumplimiento.
-
-**Tabla: audit_trails**
-
-| Atributo | Tipo |
-|---|---|
-| id | CHAR(36) (PK) |
-| actor_id | CHAR(36) (FK) |
-| staff_id | CHAR(36) (FK) |
-| status | VARCHAR(20) |
-| sync_status | VARCHAR(20) |
 | updated_at | DATETIME |
 
 **Métodos**
 
 | Método | Descripción |
 |---|---|
-| RecordSupervisorAction(record) | Registra una acción de supervisor. |
-| RecordCriticalDecision(record) | Registra una decisión crítica. |
-| RecordRiskAssessment(record) | Registra una evaluación de riesgo. |
-| RecordShiftBlocking(record) | Registra un bloqueo de turno. |
-| SynchronizeAuditTrail() | Sincroniza el rastro de auditoría. |
-| UpdateAuditLog() | Actualiza el log de auditoría. |
+| CrearSubscription() | Persiste un nuevo objeto Subscription en la tabla subscriptions. |
+| ActualizarSubscription() | Actualiza los datos de Subscription. |
+| ObtenerPorId() | Recupera el registro mediante su identificador único. |
 
 ---
 
-**Tabla: audit_records**
+**Tabla: checkout_sessions**
 
 | Atributo | Tipo |
 |---|---|
-| id | CHAR(36) (PK) |
-| audit_trail_id | CHAR(36) (FK) |
+| id | CHAR(36) / INT (PK) |
+| organization_id | CHAR(36) / INT (FK) |
+| administrator_id | CHAR(36) / INT (FK) |
+| subscription_id | CHAR(36) / INT (FK) |
+| plan_id | CHAR(36) / INT (FK) |
+| plan_code | VARCHAR(100) |
+| status | VARCHAR(30) |
+| stripe_session_id | VARCHAR(255) |
+| stripe_url | VARCHAR(500) |
+| stripe_subscription_id | VARCHAR(255) |
+| stripe_customer_id | VARCHAR(255) |
+| completed_at | DATETIME |
+| failed_at | DATETIME |
+| cancelled_at | DATETIME |
+| error_message | VARCHAR(500) |
+| created_at | DATETIME |
+| updated_at | DATETIME |
+
+**Métodos**
+
+| Método | Descripción |
+|---|---|
+| CrearCheckoutSession() | Persiste un nuevo objeto CheckoutSession en la tabla checkout_sessions. |
+| ActualizarCheckoutSession() | Actualiza los datos de CheckoutSession. |
+| ObtenerPorId() | Recupera el registro mediante su identificador único. |
+
+---
+
+**- Clinical Risk Assessment**
+
+Este bounded context gestiona de forma continua los datos biométricos y la evaluación de riesgo por fatiga. La tabla `vital_sign_readings` registra métricas del dispositivo (frecuencia cardíaca, VFC, cortisol). Las anomalías biométricas aisladas que sobrepasan un límite se registran en `vital_sign_anomalies`. Toda esta data converge en `risk_assessments`, que emite un nivel general de riesgo. Las situaciones graves disparan registros en `clinical_alerts`.
+
+**Tabla: risk_assessments**
+
+| Atributo | Tipo |
+|---|---|
+| id | CHAR(36) / INT (PK) |
+| organization_id | CHAR(36) / INT (FK) |
+| user_id | CHAR(36) / INT (FK) |
+| fatigue_level | VARCHAR(255) |
+| risk_level | VARCHAR(30) |
+| heart_rate | INT |
+| hrv | DECIMAL(10,2) |
+| last_updated_at | DATETIME |
+
+**Métodos**
+
+| Método | Descripción |
+|---|---|
+| CrearRiskAssessment() | Persiste un nuevo objeto RiskAssessment en la tabla risk_assessments. |
+| ActualizarRiskAssessment() | Actualiza los datos de RiskAssessment. |
+| ObtenerPorId() | Recupera el registro mediante su identificador único. |
+
+---
+
+**Tabla: clinical_alerts**
+
+| Atributo | Tipo |
+|---|---|
+| id | CHAR(36) / INT (PK) |
+| organization_id | CHAR(36) / INT (FK) |
+| user_id | CHAR(36) / INT (FK) |
+| severity | VARCHAR(30) |
+| status | VARCHAR(30) |
+| message | VARCHAR(300) |
+| created_at | DATETIME |
+
+**Métodos**
+
+| Método | Descripción |
+|---|---|
+| CrearClinicalAlert() | Persiste un nuevo objeto ClinicalAlert en la tabla clinical_alerts. |
+| ActualizarClinicalAlert() | Actualiza los datos de ClinicalAlert. |
+| ObtenerPorId() | Recupera el registro mediante su identificador único. |
+
+---
+
+**Tabla: vital_sign_anomalies**
+
+| Atributo | Tipo |
+|---|---|
+| id | CHAR(36) / INT (PK) |
+| organization_id | CHAR(36) / INT (FK) |
+| user_id | CHAR(36) / INT (FK) |
+| type | VARCHAR(80) |
+| severity | VARCHAR(30) |
+| status | VARCHAR(30) |
+| value | VARCHAR(80) |
+| threshold | VARCHAR(80) |
+| message | VARCHAR(300) |
+| detected_at | DATETIME |
+
+**Métodos**
+
+| Método | Descripción |
+|---|---|
+| CrearVitalSignAnomaly() | Persiste un nuevo objeto VitalSignAnomaly en la tabla vital_sign_anomalies. |
+| ActualizarVitalSignAnomaly() | Actualiza los datos de VitalSignAnomaly. |
+| ObtenerPorId() | Recupera el registro mediante su identificador único. |
+
+---
+
+**Tabla: vital_sign_readings**
+
+| Atributo | Tipo |
+|---|---|
+| id | CHAR(36) / INT (PK) |
+| organization_id | CHAR(36) / INT (FK) |
+| user_id | CHAR(36) / INT (FK) |
+| heart_rate | INT |
+| hrv | DECIMAL(10,2) |
+| fatigue_level | VARCHAR(255) |
+| cortisol_level | DECIMAL(10,2) |
+| sensor_status | VARCHAR(30) |
+| recorded_at | DATETIME |
+
+**Métodos**
+
+| Método | Descripción |
+|---|---|
+| CrearVitalSignReading() | Persiste un nuevo objeto VitalSignReading en la tabla vital_sign_readings. |
+| ActualizarVitalSignReading() | Actualiza los datos de VitalSignReading. |
+| ObtenerPorId() | Recupera el registro mediante su identificador único. |
+
+---
+
+**- Audit & Compliance**
+
+Este bounded context tiene como finalidad asegurar la trazabilidad y la responsabilidad de las decisiones críticas tomadas en el sistema. La tabla `audit_logs` funciona como un repositorio inmutable que captura cualquier evento de sistema, modificación de riesgo, alerta enviada o acceso administrativo, incluyendo el identificador del usuario que realizó la acción.
+
+**Tabla: audit_logs**
+
+| Atributo | Tipo |
+|---|---|
+| id | CHAR(36) / INT (PK) |
+| organization_id | CHAR(36) / INT (FK) |
+| actor_user_id | CHAR(36) / INT (FK) |
+| type | VARCHAR(100) |
+| severity | VARCHAR(30) |
+| resource_type | VARCHAR(100) |
+| resource_id | CHAR(36) / INT (FK) |
+| source | VARCHAR(100) |
+| description | VARCHAR(500) |
+| created_at | DATETIME |
+| updated_at | DATETIME |
+
+**Métodos**
+
+| Método | Descripción |
+|---|---|
+| CrearAuditLog() | Persiste un nuevo objeto AuditLog en la tabla audit_logs. |
+| ActualizarAuditLog() | Actualiza los datos de AuditLog. |
+| ObtenerPorId() | Recupera el registro mediante su identificador único. |
+
+---
+
+**- Shift Coordination**
+
+Este bounded context persiste toda la estructura operativa del hospital/organización. `work_areas` define los departamentos, mientras que `specialties` clasifica a los médicos. `care_teams` permite agrupar al personal con un supervisor, logrando escalar jerárquicamente a través de `team_members`. Finalmente, `shift_records` mantiene el historial detallado del inicio y fin de las jornadas laborales de cada médico.
+
+**Tabla: shift_records**
+
+| Atributo | Tipo |
+|---|---|
+| id | CHAR(36) / INT (PK) |
+| organization_id | CHAR(36) / INT (FK) |
+| user_id | CHAR(36) / INT (FK) |
+| work_area_id | CHAR(36) / INT (FK) |
 | type | VARCHAR(50) |
-| actor_id | CHAR(36) (FK) |
-| description | TEXT |
-| recorded_at | DATETIME |
+| status | VARCHAR(30) |
+| scheduled_start | DATETIME |
+| scheduled_end | DATETIME |
+| check_in_at | DATETIME |
+| check_out_at | DATETIME |
+| created_at | DATETIME |
+| updated_at | DATETIME |
 
 **Métodos**
 
 | Método | Descripción |
 |---|---|
-| RecordSupervisorAction() | Registra una acción de supervisor. |
-| RecordCriticalDecision() | Registra una decisión crítica. |
-| RecordRiskAssessment() | Registra una evaluación de riesgo. |
-| RecordShiftBlocking() | Registra un bloqueo de turno. |
+| CrearShiftRecord() | Persiste un nuevo objeto ShiftRecord en la tabla shift_records. |
+| ActualizarShiftRecord() | Actualiza los datos de ShiftRecord. |
+| ObtenerPorId() | Recupera el registro mediante su identificador único. |
 
 ---
 
-**Tabla: supervisor_action_records**
+**Tabla: work_areas**
 
 | Atributo | Tipo |
 |---|---|
-| id | CHAR(36) (PK) |
-| audit_record_id | CHAR(36) (FK) |
-| supervisor_id | CHAR(36) (FK) |
-| description | TEXT |
-| recorded_at | DATETIME |
+| id | CHAR(36) / INT (PK) |
+| name | VARCHAR(100) |
+| created_at | DATETIME |
+| updated_at | DATETIME |
 
 **Métodos**
 
 | Método | Descripción |
 |---|---|
-| RecordSupervisorAction() | Registra la acción realizada por un supervisor. |
-| MarkSupervisorActionRecorded() | Marca la acción del supervisor como registrada. |
+| CrearWorkArea() | Persiste un nuevo objeto WorkArea en la tabla work_areas. |
+| ActualizarWorkArea() | Actualiza los datos de WorkArea. |
+| ObtenerPorId() | Recupera el registro mediante su identificador único. |
 
 ---
 
-**Tabla: critical_decision_records**
+**Tabla: specialties**
 
 | Atributo | Tipo |
 |---|---|
-| id | CHAR(36) (PK) |
-| audit_record_id | CHAR(36) (FK) |
-| recorded_by | CHAR(36) (FK) |
-| decision_type | VARCHAR(50) |
-| description | TEXT |
-| recorded_at | DATETIME |
+| id | CHAR(36) / INT (PK) |
+| name | VARCHAR(100) |
+| created_at | DATETIME |
+| updated_at | DATETIME |
 
 **Métodos**
 
 | Método | Descripción |
 |---|---|
-| RecordCriticalDecision() | Registra una decisión crítica. |
-| MarkCriticalDecisionRecorded() | Marca la decisión crítica como registrada. |
+| CrearSpecialty() | Persiste un nuevo objeto Specialty en la tabla specialties. |
+| ActualizarSpecialty() | Actualiza los datos de Specialty. |
+| ObtenerPorId() | Recupera el registro mediante su identificador único. |
 
 ---
 
-**Tabla: risk_assessment_records**
+**Tabla: care_teams**
 
 | Atributo | Tipo |
 |---|---|
-| id | CHAR(36) (PK) |
-| audit_record_id | CHAR(36) (FK) |
-| staff_id | CHAR(36) (FK) |
-| description | TEXT |
-| recorded_at | DATETIME |
+| id | CHAR(36) / INT (PK) |
+| organization_id | CHAR(36) / INT (FK) |
+| name | VARCHAR(100) |
+| work_area_id | CHAR(36) / INT (FK) |
+| supervisor_id | CHAR(36) / INT (FK) |
+| status | VARCHAR(30) |
+| created_at | DATETIME |
+| updated_at | DATETIME |
 
 **Métodos**
 
 | Método | Descripción |
 |---|---|
-| RecordRiskAssessment() | Registra una evaluación de riesgo. |
-| MarkRiskAssessmentRecorded() | Marca la evaluación de riesgo como registrada. |
+| CrearCareTeam() | Persiste un nuevo objeto CareTeam en la tabla care_teams. |
+| ActualizarCareTeam() | Actualiza los datos de CareTeam. |
+| ObtenerPorId() | Recupera el registro mediante su identificador único. |
 
 ---
 
-**Tabla: shift_blocking_records**
+**Tabla: team_members**
 
 | Atributo | Tipo |
 |---|---|
-| id | CHAR(36) (PK) |
-| audit_record_id | CHAR(36) (FK) |
-| staff_id | CHAR(36) (FK) |
-| reason | TEXT |
-| recorded_at | DATETIME |
+| id | CHAR(36) / INT (PK) |
+| team_id | CHAR(36) / INT (FK) |
+| user_id | CHAR(36) / INT (FK) |
+| created_at | DATETIME |
+| updated_at | DATETIME |
 
 **Métodos**
 
 | Método | Descripción |
 |---|---|
-| RecordShiftBlocking() | Registra un bloqueo de turno. |
-| MarkShiftBlockingRecorded() | Marca el bloqueo de turno como registrado. |
+| CrearTeamMember() | Persiste un nuevo objeto TeamMember en la tabla team_members. |
+| ActualizarTeamMember() | Actualiza los datos de TeamMember. |
+| ObtenerPorId() | Recupera el registro mediante su identificador único. |
 
 ---
 
-**Tabla: compliance_reports**
+**- Staff Recovery**
+
+Este bounded context define el manejo posterior a una alerta grave de fatiga. En lugar de procesar métricas puras, trabaja sobre las acciones de mejora de los usuarios. La tabla `recovery_plans` documenta las indicaciones sugeridas por el sistema y el estatus de cumplimiento por parte del médico, asignando días de descanso u otras recomendaciones puntuales.
+
+**Tabla: recovery_plans**
 
 | Atributo | Tipo |
 |---|---|
-| id | CHAR(36) (PK) |
-| generated_by | CHAR(36) (FK) |
-| period_start | DATETIME |
-| period_end | DATETIME |
-| status | VARCHAR(20) |
-| generated_at | DATETIME |
+| id | INT (PK) |
+| medical_staff_id | INT (FK) |
+| description | VARCHAR(255) |
+| suggested_rest_days | INT |
+| status | VARCHAR(30) |
 
 **Métodos**
 
 | Método | Descripción |
 |---|---|
-| GenerateComplianceReport() | Genera un reporte de cumplimiento. |
-| MarkComplianceReportGenerated() | Marca el reporte como generado. |
+| CrearRecoveryPlan() | Persiste un nuevo objeto RecoveryPlan en la tabla recovery_plans. |
+| ActualizarRecoveryPlan() | Actualiza los datos de RecoveryPlan. |
+| ObtenerPorId() | Recupera el registro mediante su identificador único. |
 
 ---
 
