@@ -3026,56 +3026,49 @@ Este bounded context define el manejo posterior a una alerta grave de fatiga. En
 | ObtenerPorId() | Recupera el registro mediante su identificador único. |
 
 ---
-
 ### 4.8.1. Database Diagrams
 
-En esta sección se presentan los diagramas de base de datos correspondientes a SyncedHealth. Primero se muestra el diagrama general, donde se visualizan las tablas principales y relaciones entre los siete bounded contexts. Luego se presentan los diagramas individuales por cada bounded context para mostrar con mayor detalle su estructura de persistencia. :contentReference[oaicite:0]{index=0}
+En esta sección se presentan los diagramas de base de datos correspondientes a SyncedHealth. Primero se muestra el diagrama general, donde se visualizan las tablas principales y relaciones entre los bounded contexts. Luego se presentan los diagramas individuales por cada bounded context para mostrar con mayor detalle su estructura de persistencia.
 
 **General Database Diagram**
 
-El diagrama general integra las tablas principales de los siete bounded contexts de SyncedHealth, mostrando las relaciones entre hospitales, usuarios, suscripciones, evaluaciones clínicas, incidentes, turnos, recuperación del personal y auditoría. Este diagrama permite visualizar cómo las claves foráneas conectan los distintos contextos y cómo se mantiene la trazabilidad de la información dentro del sistema.
+El diagrama general integra las tablas principales de los Bounded Contexts de SyncedHealth, mostrando las relaciones entre organizaciones, usuarios, suscripciones, evaluaciones clínicas, turnos, recuperación del personal y auditoría. Este diagrama permite visualizar cómo las claves foráneas conectan los distintos contextos y cómo se mantiene la trazabilidad de la información dentro del sistema.
 
 <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/DiagramDatabase/Diagrams-Database.png?raw=true" alt="General Database Diagram">
 
 **Identity & Access Management**
 
-Este bounded context persiste las entidades centrales de identidad, autenticación y acceso del sistema. La tabla `hospitals` actúa como raíz organizacional, mientras que `users` centraliza las credenciales y datos principales de los usuarios. `roles` define los perfiles disponibles dentro del sistema, e `invitations` y `access_grants` permiten registrar invitaciones, solicitudes y accesos concedidos.
+Este bounded context persiste las entidades centrales de identidad, autenticación y acceso del sistema. La tabla `organizations` actúa como raíz organizacional, mientras que `users` centraliza las credenciales, roles y datos principales de los usuarios. Finalmente, `invitations` permite registrar el estado de las invitaciones enviadas a los nuevos miembros.
 
 <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/DiagramDatabase/identity-and-access-management-db.png?raw=true" alt="Identity and Access Management Database Diagram">
 
-**Subscription & Plan Management**
+**Subscription Management**
 
-Este bounded context gestiona los planes comerciales, suscripciones, pagos y acceso a funcionalidades. La tabla `plans` define los planes disponibles, `subscriptions` vincula cada hospital con un plan, `subscription_payments` registra los pagos realizados, y `plan_features` junto con `feature_access` permiten controlar las funcionalidades habilitadas o restringidas según el estado de la suscripción.
+Este bounded context gestiona los planes comerciales, procesos de pago y suscripciones. La tabla `plans` define el catálogo de planes disponibles y sus características, `subscriptions` vincula a cada organización con su plan activo, y `checkout_sessions` administra de manera transaccional cada intento de suscripción o pago mediante la pasarela integrada (Stripe).
 
 <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/DiagramDatabase/subscription-and-plan-management-db.png?raw=true" alt="Subscription and Plan Management Database Diagram">
 
 **Clinical Risk Assessment**
 
-Este bounded context almacena la información relacionada con datos biométricos, cálculo de fatiga, indicadores de riesgo y alertas clínicas. `biometric_records` registra mediciones provenientes de dispositivos IoT, `risk_assessments` representa la evaluación principal de riesgo clínico, y las tablas `fatigue_scores`, `risk_indicators` y `clinical_risk_alerts` permiten completar el proceso de análisis y detección de riesgos.
+Este bounded context almacena la información relacionada con datos biométricos y alertas clínicas. `vital_sign_readings` registra las mediciones base continuas (frecuencia cardíaca, VFC, cortisol). Las métricas fuera de umbrales se registran en `vital_sign_anomalies`. Esta data converge en `risk_assessments`, que representa la evaluación general de fatiga, y en caso de gravedad extrema, se registran eventos en `clinical_alerts`.
 
 <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/DiagramDatabase/clinical-risk-assessment-db.png?raw=true" alt="Clinical Risk Assessment Database Diagram">
 
-**Incident & Escalation Management**
-
-Este bounded context registra incidentes de riesgo, prioridades, notificaciones a supervisores y procesos de escalamiento. `risk_incidents` almacena el ciclo de vida del incidente, `incident_priorities` define su nivel de prioridad, `supervisor_notifications` registra alertas enviadas, y `risk_escalations`, `escalation_reviews` y `medical_director_notifications` permiten mantener trazabilidad cuando el caso escala hacia un director médico.
-
-<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/DiagramDatabase/incident-escalation-management-db.png?raw=true" alt="Incident and Escalation Management Database Diagram">
-
 **Shift Coordination**
 
-Este bounded context persiste la coordinación de turnos, asignaciones, evaluaciones críticas, reemplazos y carga laboral. `shifts` almacena la información base de los turnos, `shift_assignments` vincula turnos con personal médico, `critical_shift_evaluations` registra evaluaciones de criticidad, `replacement_suggestions` almacena sugerencias de reemplazo y `workload_distributions` permite controlar la distribución de carga del personal.
+Este bounded context persiste la estructura operativa y coordinación de turnos. `work_areas` define los departamentos disponibles y `specialties` las especialidades médicas. `care_teams` agrupa al personal bajo un supervisor, relacionándolos a través de `team_members`. Finalmente, `shift_records` mantiene el historial detallado de las jornadas laborales y horarios de cada médico.
 
 <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/DiagramDatabase/shift-coordination-db.png?raw=true" alt="Shift Coordination Database Diagram">
 
 **Staff Recovery**
 
-Este bounded context gestiona los planes de recuperación del personal médico, necesidades de descanso, recomendaciones, periodos sugeridos, notificaciones y decisiones del personal. `recovery_plans` funciona como tabla principal del contexto, mientras que `recovery_needs`, `recovery_recommendations`, `rest_periods`, `recovery_notifications` y `recovery_decisions` registran el flujo completo desde la detección de necesidad hasta la aceptación o rechazo del plan.
+Este bounded context gestiona los planes de recuperación del personal médico tras detecciones graves de fatiga. La tabla `recovery_plans` funciona como registro central para documentar las indicaciones y días de descanso sugeridos por el sistema, así como el estatus de cumplimiento por parte del médico afectado.
 
 <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/DiagramDatabase/staff-recovery-db.png?raw=true" alt="Staff Recovery Database Diagram">
 
 **Audit & Compliance**
 
-Este bounded context registra la trazabilidad de acciones críticas, decisiones clínicas, evaluaciones de riesgo, bloqueos de turno y reportes de cumplimiento. `audit_trails` agrupa los registros de auditoría, `audit_records` almacena eventos auditados generales, y las tablas especializadas como `supervisor_action_records`, `critical_decision_records`, `risk_assessment_records` y `shift_blocking_records` permiten detallar cada tipo de acción registrada. Finalmente, `compliance_reports` almacena los reportes generados para revisión administrativa.
+Este bounded context asegura la trazabilidad y la responsabilidad de las decisiones críticas. La tabla `audit_logs` funciona como un repositorio inmutable que captura cualquier evento de sistema, modificación de riesgo, alerta enviada o acceso administrativo, incluyendo al usuario responsable (actor) de cada acción para fines de cumplimiento.
 
 <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/DiagramDatabase/audit-compliance-db.png?raw=true" alt="Audit and Compliance Database Diagram">
 
@@ -3090,7 +3083,7 @@ Para el ciclo de vida de CortiSense, el equipo de PircaIndustries utiliza el sig
 
 + **Project Management**<br>Esta sección se encarga de planificar, estructurar, coordinar y supervisar los recursos y actividades necesarios para llevar a cabo un proyecto de software con éxito. Abarca aspectos como la definición del alcance, la gestión del tiempo, los costos, la calidad, los riesgos, el trabajo colaborativo y la comunicación. Su propósito es asegurar que el proyecto se entregue dentro de los plazos y presupuestos previstos, cumpliendo con los objetivos y requisitos establecidos.<br><br>
 
-  +	<b>Jira Software:</b> Herramienta de gestión de proyectos ágil que permite planificar, rastrear y gestionar el trabajo de seguimiento para tareas mediante tableros Scrum o Kanban, facilitando la colaboración entre equipos de desarrollo. <br>https://www.atlassian.com/software/jira<br><br>
+  +	**Jira Software:** Herramienta de gestión de proyectos ágil que permite planificar, rastrear y gestionar el trabajo de seguimiento para tareas mediante tableros Scrum o Kanban, facilitando la colaboración entre equipos de desarrollo. <br>https://www.atlassian.com/software/jira<br><br>
 
 + **Requirements Management**<br>Corresponde al conjunto de actividades orientadas a identificar, documentar, validar y administrar los requisitos tanto del sistema como del software. Este proceso implica comprender las necesidades de los usuarios y de los stakeholders, transformándolas en requisitos funcionales y no funcionales bien definidos. Su finalidad es asegurar que el producto desarrollado cumpla con las expectativas y necesidades del usuario final.<br><br>
 
