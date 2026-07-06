@@ -4627,7 +4627,7 @@ Durante este Sprint, el equipo ha organizado el trabajo en base a las Epics defi
 | **US-18** | Reconocimiento de Riesgo | TK-17 | Incident Mgmt. | Endpoint AcknowledgeRisk para el supervisor. | 2 | Johan Yonel | Done |
 | **US-19** | Resolución de Incidente | TK-17 | Incident Mgmt. | Endpoint ResolveIncident tras mitigar el riesgo. | 2 | Johan Yonel | Done |
 | **US-40** | Filtrado de Cola de Alertas | TK-17 | Incident Mgmt. | Endpoint para obtener alertas ordenadas por prioridad. | 2 | Johan Yonel | Done |
-| **US-25** | Detección de Necesidad Descanso| TK-18 | Staff Recovery | Evaluación y comando DetectRecoveryNeed. | 2 | Guiou Justinn | Done |
+| **US-25** | Detección de Necesidad Descanso | TK-18 | Staff Recovery | Evaluación y comando DetectRecoveryNeed. | 2 | Guiou Justinn | Done |
 | **US-26** | Emisión de Recomendación | TK-18 | Staff Recovery | Endpoint SuggestRestPeriod para pausar actividad. | 2 | Guiou Justinn | Done |
 | **US-28** | Aceptación de Plan | TK-18 | Staff Recovery | Endpoint AcceptRecoveryPlan y actualización de UI. | 2 | Guiou Justinn | Done |
 | **US-29** | Rechazo de Plan | TK-18 | Staff Recovery | Emisión de evento RejectRecoveryPlan. | 2 | Guiou Justinn | Done |
@@ -4642,15 +4642,149 @@ Durante este Sprint, el equipo ha organizado el trabajo en base a las Epics defi
 
 #### 5.2.4.4. Development Evidence for Sprint Review.
 
+Durante el Sprint 4, el equipo consolidó la integración completa entre el backend (.NET 9 / ASP.NET Core) y el frontend (Vue 3 / Vite), desplegados respectivamente en Azure App Service y Azure Static Web Apps. El trabajo se centró en tres pilares clave: **interconexión de Bounded Contexts** (generación automática de anomalías, alertas clínicas y registros de auditoría a partir de lecturas de signos vitales), **robustez del despliegue continuo** (migraciones automáticas, seed data con credenciales BCrypt y configuración de variables de entorno para producción), y **pulimiento de la experiencia de usuario** (normalización de roles, sistema de internacionalización completo en español/inglés, corrección de rutas protegidas y optimización visual para pantallas grandes).
+
+A continuación, el registro de commits que evidencia el trabajo realizado:
+
+**Backend Development — `cortisense-platform`**
+
+| Repository | Branch | Commit Id | Commit Message | Committed on (Date) |
+| :--- | :--- | :--- | :--- | :--- |
+| upc-pre-202610-1asi0730-12053-syncedh/cortisense-platform | main | `94cae01` | mayor fixes | 2026-07-04 |
+| upc-pre-202610-1asi0730-12053-syncedh/cortisense-platform | main | `42dcacf` | fix 2 | 2026-07-04 |
+| upc-pre-202610-1asi0730-12053-syncedh/cortisense-platform | main | `e8e9ea4` | Enable auto-migration for production deployment | 2026-07-04 |
+| upc-pre-202610-1asi0730-12053-syncedh/cortisense-platform | main | `26cdd70` | Remove seed plans and add more fake data for simulation | 2026-07-04 |
+| upc-pre-202610-1asi0730-12053-syncedh/cortisense-platform | main | `4f3f5a8` | Fix: repair seed data — real BCrypt passwords, care teams, team members, clinical alerts, work area/specialty assignments for org 101 | 2026-07-04 |
+| upc-pre-202610-1asi0730-12053-syncedh/cortisense-platform | main | `7ab846c` | fixes | 2026-07-05 |
+| upc-pre-202610-1asi0730-12053-syncedh/cortisense-platform | main | `7ab0e72` | more additions | 2026-07-05 |
+| upc-pre-202610-1asi0730-12053-syncedh/cortisense-platform | main | `980ab9b` | more additions 2 | 2026-07-05 |
+
+**Frontend Development — `cortisense-webapp`**
+
+| Repository | Branch | Commit Id | Commit Message | Committed on (Date) |
+| :--- | :--- | :--- | :--- | :--- |
+| upc-pre-202610-1asi0730-12053-syncedh/cortisense-webapp | main | `cd15ee0` | mayor fixes | 2026-07-04 |
+| upc-pre-202610-1asi0730-12053-syncedh/cortisense-webapp | main | `6499837` | fix 2 | 2026-07-04 |
+| upc-pre-202610-1asi0730-12053-syncedh/cortisense-webapp | main | `cfc0784` | Fix: no-cache headers for index.html to prevent stale page loads on Azure SWA | 2026-07-04 |
+| upc-pre-202610-1asi0730-12053-syncedh/cortisense-webapp | main | `6ed14aa` | Fix: normalize user roles to handle 'Medical Staff'/'Clinical Supervisor' DB strings vs 'DOCTOR'/'SUPERVISOR' legacy values — supervisor pages now load data automatically | 2026-07-04 |
+| upc-pre-202610-1asi0730-12053-syncedh/cortisense-webapp | main | `4ce1db1` | Fix: correct sign-in redirect logic and final role normalization issues | 2026-07-04 |
+| upc-pre-202610-1asi0730-12053-syncedh/cortisense-webapp | main | `f5a4cd9` | Fix: improve i18n and fix reactivity crash in account-settings | 2026-07-04 |
+| upc-pre-202610-1asi0730-12053-syncedh/cortisense-webapp | main | `2193eed` | Fix: add missing Vue and API imports to supervisor clinical alerts view | 2026-07-04 |
+| upc-pre-202610-1asi0730-12053-syncedh/cortisense-webapp | main | `dcdb424` | Fix: correct reversed English to Spanish mappings in static-i18n-sync to prevent translating Spanish to English | 2026-07-04 |
+| upc-pre-202610-1asi0730-12053-syncedh/cortisense-webapp | main | `fad6c13` | Fix: handled null status causing white screens in supervisor views and fixed missing translations | 2026-07-04 |
+| upc-pre-202610-1asi0730-12053-syncedh/cortisense-webapp | main | `f525293` | mayor additions. | 2026-07-05 |
+| upc-pre-202610-1asi0730-12053-syncedh/cortisense-webapp | main | `e99bb4a` | add multiple fixes | 2026-07-05 |
+| upc-pre-202610-1asi0730-12053-syncedh/cortisense-webapp | main | `5f86766` | feat: mejoras en auditoria, traducciones, reportes y optimizacion de UI para pantallas grandes | 2026-07-05 |
+
 #### 5.2.4.5. Execution Evidence for Sprint Review.
 
-Durante el Sprint 3, el equipo finalizó con éxito el desarrollo íntegro de la arquitectura backend de CortiSense (.NET). La integración de los distintos Bounded Contexts resultó en una sólida interfaz Swagger con categorización completa de esquemas DTOs.
+Durante el Sprint 4, el equipo finalizó con éxito el desarrollo íntegro de la arquitectura backend de CortiSense (.NET 9 / ASP.NET Core) y su integración en tiempo real con el frontend (Vue 3). La interconexión de los distintos Bounded Contexts resultó en una plataforma funcional que cubre el ciclo completo: desde la lectura de signos vitales hasta la generación automática de anomalías, alertas clínicas, planes de recuperación y su trazabilidad mediante un log de auditoría.
 
-A continuación, la evidencia de compilación y la visualización de las operaciones disponibles en Swagger para el consumo del Frontend.
+A continuación se describen las funcionalidades e interfaces implementadas y verificadas durante el Sprint:
+
+**Panel de Auditoría (`/admin/audit`):**
+El módulo de auditoría registra automáticamente eventos accionables de la plataforma: check-in de médicos, aceptación/rechazo de planes de descanso, creación de anomalías, creación de acciones preventivas, alta y baja de equipos (care teams), y operaciones administrativas. Los registros incluyen el nombre del actor, el tipo de acción y la marca de tiempo, permitiendo la trazabilidad completa de todas las operaciones críticas.
+
+**Panel de Supervisor — Anomalías (`/supervisor/anomalies`):**
+Listado de anomalías vitales detectadas automáticamente, con filtros por estado (Abierta / Revisada / Descartada) y severidad (CRÍTICA / ALTA / MODERADA / BAJA). El supervisor puede revisar o descartar anomalías directamente desde la interfaz.
+
+**Panel de Supervisor — Alertas Clínicas (`/supervisor/alerts`):**
+Visualización de las alertas clínicas en tiempo real generadas por el motor de riesgo del backend. Cada alerta muestra el médico afectado, la severidad, el mensaje de diagnóstico y las métricas biométricas que la desencadenaron.
+
+**Gestión de Acciones Preventivas (`/preventive-actions`):**
+Los supervisores pueden crear acciones preventivas para el personal médico de sus equipos (pausas de recuperación, hidratación, evaluación médica, etc.) y confirmar la recuperación una vez que los planes han sido aceptados por el doctor.
+
+**Turno de Doctores (`/doctor/shifts`):**
+Los médicos pueden visualizar, aceptar y rechazar los turnos asignados. El sistema genera automáticamente un evento de auditoría cuando un médico acepta un turno.
+
+**Panel del Sistema de Suscripción (`/admin/subscription`):**
+Panel administrativo que muestra el estado de la licencia activa de la organización, la fecha de vencimiento y el plan contratado, vinculado al sistema de facturación Stripe configurado en el backend.
+
+**Internacionalización completa (ES / EN):**
+La plataforma soporta plenamente el cambio de idioma en tiempo real (español / inglés) para todas las páginas: auditoría, riesgo clínico, coordinación de turnos, recuperación de personal y administración.
 
 #### 5.2.4.6. Services Documentation Evidence for Sprint Review.
 
+La API REST de CortiSense está completamente documentada mediante Swagger (OpenAPI 3) y expuesta en el entorno de producción (Azure App Service). Cada Bounded Context posee su propio controlador, y los esquemas de datos (DTOs) están fuertemente tipados para garantizar la integridad de la comunicación entre capas.
+
+##### Bounded Context: IAM (Identity & Access Management)
+
+| Endpoint | Método | Acción / Descripción | Parámetros |
+| :--- | :--- | :--- | :--- |
+| `/api/v1/authentication/sign-up` | POST | Registrar una nueva organización y su usuario administrador | Body |
+| `/api/v1/authentication/sign-in` | POST | Autenticar usuario y obtener JWT | Body |
+| `/api/v1/users` | GET | Listar todos los usuarios de la organización | `organizationId` (Query) |
+| `/api/v1/users/{id}` | GET | Obtener perfil de usuario por ID | id (Path) |
+| `/api/v1/users/{id}` | PATCH | Actualizar datos del perfil de usuario | id (Path), Body |
+| `/api/v1/invitations` | POST | Enviar invitación por email a nuevo personal médico | Body |
+| `/api/v1/invitations/accept` | POST | Aceptar invitación y vincular al workspace de la organización | Body |
+
+##### Bounded Context: Clinical Risk Assessment
+
+| Endpoint | Método | Acción / Descripción | Parámetros |
+| :--- | :--- | :--- | :--- |
+| `/api/v1/vitalSignReadings` | POST | Registrar una nueva lectura de signos vitales | Body |
+| `/api/v1/vitalSignReadings` | GET | Listar lecturas de signos vitales | `userId` (Query) |
+| `/api/v1/vitalSignAnomalies` | GET | Listar anomalías detectadas automáticamente | `organizationId` (Query) |
+| `/api/v1/vitalSignAnomalies/{id}` | PATCH | Actualizar estado de anomalía (Revisada/Descartada) | id (Path), Body |
+| `/api/v1/clinicalAlerts` | GET | Listar alertas clínicas activas | `organizationId` (Query) |
+| `/api/v1/clinicalAlerts/{id}` | PATCH | Reconocer y cerrar una alerta clínica | id (Path), Body |
+
+##### Bounded Context: Shift Coordination
+
+| Endpoint | Método | Acción / Descripción | Parámetros |
+| :--- | :--- | :--- | :--- |
+| `/api/v1/careTeams` | GET | Listar equipos de atención de la organización | `organizationId` (Query) |
+| `/api/v1/careTeams` | POST | Crear un nuevo equipo de atención | Body |
+| `/api/v1/careTeams/{id}` | PUT | Actualizar datos de un equipo | id (Path), Body |
+| `/api/v1/careTeams/{id}` | DELETE | Eliminar un equipo de atención | id (Path) |
+| `/api/v1/teamMembers` | GET | Listar miembros asignados a equipos | `organizationId` (Query) |
+| `/api/v1/teamMembers` | POST | Agregar un miembro a un equipo | Body |
+| `/api/v1/teamMembers/{id}` | DELETE | Remover un miembro de un equipo | id (Path) |
+| `/api/v1/shifts` | GET | Listar turnos programados | `organizationId` (Query) |
+| `/api/v1/shifts` | POST | Crear nuevo turno | Body |
+| `/api/v1/shifts/{id}` | PATCH | Actualizar estado del turno (Aceptado/Rechazado) | id (Path), Body |
+
+##### Bounded Context: Staff Recovery
+
+| Endpoint | Método | Acción / Descripción | Parámetros |
+| :--- | :--- | :--- | :--- |
+| `/api/v1/recoveryPlans` | GET | Listar planes de recuperación | `organizationId` (Query) |
+| `/api/v1/recoveryPlans` | POST | Emitir nuevo plan de recuperación (SuggestRestPeriod) | Body |
+| `/api/v1/recoveryPlans/{id}` | PATCH | Actualizar estado del plan (Aceptado/Rechazado/Confirmado) | id (Path), Body |
+| `/api/v1/preventiveActions` | GET | Listar acciones preventivas asignadas | `organizationId` (Query) |
+| `/api/v1/preventiveActions` | POST | Crear nueva acción preventiva para personal médico | Body |
+| `/api/v1/preventiveActions/{id}` | PATCH | Completar o cancelar una acción preventiva | id (Path), Body |
+
+##### Bounded Context: Audit & Compliance
+
+| Endpoint | Método | Acción / Descripción | Parámetros |
+| :--- | :--- | :--- | :--- |
+| `/api/v1/auditLogs` | GET | Listar log de auditoría filtrado por organización | `organizationId` (Query) |
+| `/api/v1/auditLogs` | POST | Registrar un nuevo evento de auditoría (uso interno) | Body |
+
+##### Bounded Context: Subscription & Billing
+
+| Endpoint | Método | Acción / Descripción | Parámetros |
+| :--- | :--- | :--- | :--- |
+| `/api/v1/subscriptions` | GET | Consultar estado de suscripción activa de la organización | `organizationId` (Query) |
+| `/api/v1/subscriptions` | POST | Crear suscripción inicial y sesión de checkout Stripe | Body |
+| `/api/v1/subscriptions/plans` | GET | Listar planes de suscripción disponibles | — |
+| `/api/v1/billing/webhook` | POST | Recibir eventos de Stripe (pago exitoso, expiración) | Body |
+
 #### 5.2.4.7. Software Deployment Evidence for Sprint Review.
+
+Durante el Sprint 4, el equipo completó el despliegue en producción de todos los componentes de la plataforma CortiSense:
+
+**Backend — Azure App Service:**
+El API REST se despliega automáticamente desde el repositorio `cortisense-platform` en GitHub hacia un servicio de Azure App Service. Se habilitó la migración automática de base de datos (`Database.MigrateAsync()`) al iniciar la aplicación, lo que garantiza que cualquier nuevo push a `main` aplica los cambios de esquema en la base de datos de producción (Azure SQL) sin intervención manual. Las credenciales de conexión, claves JWT, llaves de Stripe y configuración SMTP son inyectadas como variables de entorno en el panel de Azure.
+
+**Frontend — Azure Static Web Apps:**
+El frontend Vue 3 se despliega automáticamente desde el repositorio `cortisense-webapp` mediante GitHub Actions. El pipeline ejecuta `npm run build` y publica la carpeta `dist/` en Azure Static Web Apps. Se agregaron cabeceras `no-cache` para `index.html` (`staticwebapp.config.json`) para garantizar que los usuarios siempre reciban la versión más reciente de la aplicación tras cada despliegue.
+
+**URLs de producción:**
+- **Frontend:** Azure Static Web Apps (URL configurada en el proyecto)
+- **Backend:** Azure App Service (URL configurada como `VITE_API_URL` en el frontend)
 
 #### 5.2.4.8. Team Collaboration Insights during Sprint.
 
@@ -4660,6 +4794,7 @@ A continuación, se presentan las estadísticas de colaboración obtenidas desde
 
 ### Commits
 
+> **Nota:** Durante el Sprint 4 (04–05/07/2026), el foco principal de los commits fue la integración de extremo a extremo, la corrección de bugs de producción críticos (normalización de roles, i18n, rutas protegidas, seed data) y el refinamiento del panel de auditoría. La mayor carga de trabajo fue liderada por Marcelo Pareja, apoyado en las bases de infraestructura de backend establecidas por Johan León en sprints anteriores.
 
 ## 5.3. Validation Interviews.
 ### 5.3.1. Diseño de Entrevistas.
