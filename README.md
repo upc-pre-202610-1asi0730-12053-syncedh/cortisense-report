@@ -60,11 +60,11 @@ URL del Repositorio de la Platform: [cortisense-platform](https://github.com/upc
 
 URL del Repositorio del trabajo de Responsabilidad Social: [webdev-course-syncedhealth](https://github.com/upc-pre-202610-1asi0730-12053-syncedh/webdev-course-syncedhealth)
 
-URL de la Landing Page desplegada: [cortisense-website](https://upc-pre-202610-1asi0730-12053-syncedh.github.io/cortisense-website/)
+URL de la Landing Page desplegada: [cortisense-website](https://www.cortisense.space/)
 
-URL de la Aplicación Web desplegada: [cortisense-webapp](https://agreeable-smoke-0581ac810.7.azurestaticapps.net/)
+URL de la Aplicación Web desplegada: [cortisense-webapp](https://app.cortisense.space/)
 
-URL de la Platform desplegada: [cortisense-platform](https://cortisense-platform-api.azurewebsites.net/swagger/index.html)
+URL de la Platform desplegada: [cortisense-platform](https://api.cortisense.space/swagger/index.html)
 
 <strong>*Entrega TB1:*</strong>
 
@@ -3977,7 +3977,7 @@ El principal logro del Sprint 1 consistió en el despliegue de la versión inici
 <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/Style-Guidelines/Web_Style/footer.png?raw=true" alt="Imagen referencial del footer""/>
 <div align="justify"> <br>
 
-Enlace: [cortisense-website](https://upc-pre-202610-1asi0730-12053-syncedh.github.io/cortisense-website/)
+Enlace: [cortisense-website](https://www.cortisense.space/)
 
 #### 5.2.1.6. Services Documentation Evidence for Sprint Review.
 Introducción y Estado Actual
@@ -4575,7 +4575,7 @@ El desarrollo completo del Backend SyncedHealth.Center.Platform aplicó Git Flow
 
 <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Sprint-3/cortisense-deployed-swagger.png?raw=true"></img><br>
 
-[cortisense-deployed-swagger](https://cortisense-platform-api.azurewebsites.net/swagger/index.html)
+[cortisense-deployed-swagger](https://api.cortisense.space/swagger/index.html)
 
 #### 5.2.3.8. Team Collaboration Insights during Sprint.
 
@@ -4783,8 +4783,8 @@ El API REST se despliega automáticamente desde el repositorio `cortisense-platf
 El frontend Vue 3 se despliega automáticamente desde el repositorio `cortisense-webapp` mediante GitHub Actions. El pipeline ejecuta `npm run build` y publica la carpeta `dist/` en Azure Static Web Apps. Se agregaron cabeceras `no-cache` para `index.html` (`staticwebapp.config.json`) para garantizar que los usuarios siempre reciban la versión más reciente de la aplicación tras cada despliegue.
 
 **URLs de producción:**
-- **Frontend:** Azure Static Web Apps (URL configurada en el proyecto)
-- **Backend:** Azure App Service (URL configurada como `VITE_API_URL` en el frontend)
+- **Frontend:** Azure Static Web Apps (URL configurada en el proyecto) - [cortisense-webapp](https://app.cortisense.space/)
+- **Backend:** Azure App Service (URL configurada como `VITE_API_URL` en el frontend) - [cortisense-platform](https://api.cortisense.space/swagger/index.html)
 
 #### 5.2.4.8. Team Collaboration Insights during Sprint.
 
@@ -5142,8 +5142,8 @@ Repositorio del trabajo de Responsabilidad Social: [webdev-course-syncedhealth](
 
 ## Despliegues y servicios API
 
-Landing Page desplegada: [cortisense-website](https://upc-pre-202610-1asi0730-12053-syncedh.github.io/cortisense-website/)
+Landing Page desplegada: [cortisense-website](https://www.cortisense.space/)
 
-Web App desplegada: [cortisense-webapp](https://agreeable-smoke-0581ac810.7.azurestaticapps.net/)
+Web App desplegada: [cortisense-webapp](https://app.cortisense.space/)
 
-Platform desplegada: [cortisense-platform](https://cortisense-platform-api.azurewebsites.net/swagger/index.html)
+Platform desplegada: [cortisense-platform](https://api.cortisense.space/swagger/index.html)
