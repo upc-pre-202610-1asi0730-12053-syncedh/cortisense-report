@@ -2476,84 +2476,56 @@ Este diagrama muestra los componentes Vue utilizados para la selección de plane
 
 Este diagrama muestra los componentes Vue reutilizables compartidos entre los bounded contexts, como barra de navegación, sidebar, tablas y modales.
 
-## 4.7. Software Object-Oriented Design.
-### 4.7.1. Class Diagrams.
+## 4.7. Software Object-Oriented Design
+### 4.7.1. Class Diagrams
 
-<p>
-  En esta sección se presentan los diagramas de clases del sistema CortiSense, organizados según la estructura del frontend y backend. 
-  Estos diagramas permiten visualizar las clases, componentes, servicios, relaciones y responsabilidades principales de cada bounded context.
-</p>
+En esta sección se presentan los diagramas de clases del sistema CortiSense. Para el caso del frontend, la arquitectura se ha modelado siguiendo principios de *Domain-Driven Design (DDD)* adaptados al framework Vue 3, organizando cada módulo en capas lógicas: **Domain** (Entidades), **Infrastructure** (APIs y ensambladores), **Application** (Stores de Pinia) y **Presentation** (Vistas y componentes).
 
-<h3>Diagramas de Clases del Frontend</h3>
+Estos diagramas permiten visualizar cómo los componentes de la interfaz de usuario interactúan con el estado global de la aplicación, las reglas de negocio en el cliente y cómo los servicios se comunican con los endpoints RESTful del backend.
 
-<p>
-  Los diagramas de clases del frontend representan la estructura de la aplicación del lado del cliente. 
-  Muestran cómo se organizan las vistas, componentes, servicios, rutas y módulos compartidos para permitir la interacción de los usuarios con la plataforma CortiSense.
-</p>
+#### Diagramas de Clases del Frontend
 
-<h4>Audit and Compliance - Diagrama de Clases del Frontend</h4>
-<img src="Resources/Images/ClassDiagrams/audit-and-compilance.png?raw=true" alt="Diagrama de Clases Frontend de Audit and Compliance">
+A continuación, se detalla la estructura orientada a objetos del lado del cliente, separada por *Bounded Contexts* para facilitar su mantenibilidad y escalabilidad, junto con un diagrama general que engrana toda la plataforma.
 
-<p>
-  Este diagrama representa la estructura frontend del bounded context Audit and Compliance. 
-  Incluye los componentes y servicios utilizados para visualizar auditorías, información regulatoria, reportes de cumplimiento y herramientas administrativas de monitoreo.
-</p>
+##### General - Arquitectura Completa del Frontend
+<img src="Resources/Images/ClassDiagrams/general.png?raw=true" alt="Diagrama de Clases Frontend General">
 
-<h4>Clinical Risk Assessment - Diagrama de Clases del Frontend</h4>
+Este diagrama ofrece una vista panorámica de la plataforma web. Muestra la jerarquía completa y las dependencias lógicas entre los 6 Bounded Contexts principales y el módulo Shared, ilustrando cómo los distintos *Stores* (como `AuthStore` o `ClinicalRiskStore`) y servicios base (`BaseEndpoint`) se interconectan para sostener toda la experiencia del usuario.
+
+##### Clinical Risk Assessment
 <img src="Resources/Images/ClassDiagrams/clinical-risk-assessment.png?raw=true" alt="Diagrama de Clases Frontend de Clinical Risk Assessment">
 
-<p>
-  Este diagrama representa la estructura frontend del bounded context Clinical Risk Assessment. 
-  Incluye los componentes relacionados con el resumen biométrico, la visualización de anomalías, el personal médico en riesgo y la evaluación clínica del riesgo.
-</p>
+Este diagrama ilustra el núcleo de monitoreo biométrico. Define la relación entre las lecturas de signos vitales (`VitalSignReading`), la detección de anomalías, las alertas clínicas y la evaluación de la fatiga (`RiskAssessment`). Muestra cómo el `ClinicalRiskStore` centraliza estos datos para ser consumidos por los tableros de control (Dashboards) tanto de médicos como de supervisores.
 
-<h4>Identity and Access Management - Diagrama de Clases del Frontend</h4>
-<img src="Resources/Images/ClassDiagrams/identity-and-access-management.png?raw=true" alt="Diagrama de Clases Frontend de Identity and Access Management">
-
-<p>
-  Este diagrama representa la estructura frontend del bounded context Identity and Access Management. 
-  Incluye los componentes relacionados con el inicio de sesión, registro, invitaciones, roles y validación de accesos dentro de la aplicación.
-</p>
-
-<h4>Incident and Escalation Management - Diagrama de Clases del Frontend</h4>
-<img src="Resources/Images/ClassDiagrams/incident-and-escalation-management.png?raw=true" alt="Diagrama de Clases Frontend de Incident and Escalation Management">
-
-<p>
-  Este diagrama representa la estructura frontend del bounded context Incident and Escalation Management. 
-  Muestra los componentes utilizados para gestionar alertas clínicas, acciones preventivas y procesos de escalamiento de incidentes.
-</p>
-
-<h4>Shift Coordination - Diagrama de Clases del Frontend</h4>
+##### Shift Coordination
 <img src="Resources/Images/ClassDiagrams/shift-coordination.png?raw=true" alt="Diagrama de Clases Frontend de Shift Coordination">
 
-<p>
-  Este diagrama representa la estructura frontend del bounded context Shift Coordination. 
-  Incluye los componentes y servicios relacionados con la visualización de turnos, coordinación de horarios y gestión de la jornada del personal médico.
-</p>
+Modela la gestión de la jornada laboral. Define las entidades `ShiftRecord`, `CareTeam` y `TeamMember`, y detalla cómo el `ShiftStore` gestiona las acciones de *check-in*, *check-out*, reasignaciones y el bloqueo automático de turnos preventivos, integrándose con las vistas de coordinación de horarios.
 
-<h4>Staff Recovery - Diagrama de Clases del Frontend</h4>
+##### Staff Recovery
 <img src="Resources/Images/ClassDiagrams/staff-recovery.png?raw=true" alt="Diagrama de Clases Frontend de Staff Recovery">
 
-<p>
-  Este diagrama representa la estructura frontend del bounded context Staff Recovery. 
-  Muestra los componentes utilizados para gestionar recomendaciones de recuperación, descansos y apoyo en la reducción de fatiga del personal médico.
-</p>
+Describe la estructura orientada a la mitigación de la fatiga. Incluye las entidades `RecoveryPlan` y `PreventiveAction`, mostrando cómo los supervisores asignan acciones y cómo los médicos interactúan con sus planes de recuperación a través del `RecoveryStore` y sus vistas correspondientes.
 
-<h4>Subscription and Plan Management - Diagrama de Clases del Frontend</h4>
+##### Audit and Compliance
+<img src="Resources/Images/ClassDiagrams/audit-and-compliance.png?raw=true" alt="Diagrama de Clases Frontend de Audit and Compliance">
+
+Representa el módulo de trazabilidad. Detalla la estructura exhaustiva de la entidad `AuditLog` y cómo el `AuditStore` consume el historial inmutable de eventos del sistema para renderizar los reportes administrativos y facilitar las herramientas de monitoreo institucional.
+
+##### Subscription and Plan Management
 <img src="Resources/Images/ClassDiagrams/subscription-and-plan-management.png?raw=true" alt="Diagrama de Clases Frontend de Subscription and Plan Management">
 
-<p>
-  Este diagrama representa la estructura frontend del bounded context Subscription and Plan Management. 
-  Incluye los componentes relacionados con suscripciones, planes, pagos y control de acceso según el plan activo de la organización.
-</p>
+Muestra el flujo comercial y de tenencia múltiple (*Multi-tenant*). Incluye las entidades `Plan` y `Subscription`, y abarca desde las vistas de registro inicial (*Onboarding*) hasta la pasarela de pagos con Stripe y el control de suscripciones caducadas, todo administrado por el `SubscriptionStore`.
 
-<h4>Shared Module - Diagrama de Clases del Frontend</h4>
+##### Identity and Access Management (IAM)
+<img src="Resources/Images/ClassDiagrams/identity-and-access-management.png?raw=true" alt="Diagrama de Clases Frontend de Identity and Access Management">
+
+Representa el control de acceso e identidades. Modela las entidades de `User` e `Invitation` y sus *Commands* asociados. Destaca el papel central del `AuthStore` para inyectar el estado de autenticación y los roles del usuario a través de componentes como el inicio de sesión, la configuración de cuentas y la administración del personal médico.
+
+##### Shared Module
 <img src="Resources/Images/ClassDiagrams/shared-module.png?raw=true" alt="Diagrama de Clases Frontend del Shared Module">
 
-<p>
-  Este diagrama representa el módulo compartido del frontend de CortiSense. 
-  Incluye componentes reutilizables de layout, navegación, configuración de idioma, servicios compartidos y elementos comunes de interfaz utilizados en distintos bounded contexts.
-</p>
+Ilustra la infraestructura transversal de la aplicación. Contiene las clases base de conexión HTTP (`BaseEndpoint`, `ApiService`), así como los componentes visuales genéricos que construyen el esqueleto de la plataforma: el Layout principal, la barra lateral de navegación, la cabecera y el selector de idiomas.
 
 <h3>Diagramas de Clases del Backend</h3>
 
