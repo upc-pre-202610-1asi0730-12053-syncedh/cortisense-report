@@ -2513,7 +2513,7 @@ Describe la estructura orientada a la mitigación de la fatiga. Incluye las enti
 Representa el módulo de trazabilidad. Detalla la estructura exhaustiva de la entidad `AuditLog` y cómo el `AuditStore` consume el historial inmutable de eventos del sistema para renderizar los reportes administrativos y facilitar las herramientas de monitoreo institucional.
 
 ##### Subscription and Plan Management
-<img src="Resources/Images/ClassDiagrams/subscription-and-plan-management.png?raw=true" alt="Diagrama de Clases Frontend de Subscription and Plan Management">
+<img src="Resources/Images/ClassDiagrams/subscription-plan-management.png?raw=true" alt="Diagrama de Clases Frontend de Subscription and Plan Management">
 
 Muestra el flujo comercial y de tenencia múltiple (*Multi-tenant*). Incluye las entidades `Plan` y `Subscription`, y abarca desde las vistas de registro inicial (*Onboarding*) hasta la pasarela de pagos con Stripe y el control de suscripciones caducadas, todo administrado por el `SubscriptionStore`.
 
