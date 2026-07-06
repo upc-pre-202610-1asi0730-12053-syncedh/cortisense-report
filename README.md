@@ -2493,7 +2493,7 @@ A continuación, se detalla la estructura orientada a objetos del lado del clien
 Este diagrama ofrece una vista panorámica de la plataforma web. Muestra la jerarquía completa y las dependencias lógicas entre los 6 Bounded Contexts principales y el módulo Shared, ilustrando cómo los distintos *Stores* (como `AuthStore` o `ClinicalRiskStore`) y servicios base (`BaseEndpoint`) se interconectan para sostener toda la experiencia del usuario.
 
 ##### Clinical Risk Assessment
-<img src="Resources/Images/ClassDiagrams/clinical-risk-assessment.svg?raw=true" alt="Diagrama de Clases Frontend de Clinical Risk Assessment">
+<img src="Resources/Images/ClassDiagrams/clinical-risk.svg?raw=true" alt="Diagrama de Clases Frontend de Clinical Risk Assessment">
 
 Este diagrama ilustra el núcleo de monitoreo biométrico. Define la relación entre las lecturas de signos vitales (`VitalSignReading`), la detección de anomalías, las alertas clínicas y la evaluación de la fatiga (`RiskAssessment`). Muestra cómo el `ClinicalRiskStore` centraliza estos datos para ser consumidos por los tableros de control (Dashboards) tanto de médicos como de supervisores.
 
@@ -2508,7 +2508,7 @@ Modela la gestión de la jornada laboral. Define las entidades `ShiftRecord`, `C
 Describe la estructura orientada a la mitigación de la fatiga. Incluye las entidades `RecoveryPlan` y `PreventiveAction`, mostrando cómo los supervisores asignan acciones y cómo los médicos interactúan con sus planes de recuperación a través del `RecoveryStore` y sus vistas correspondientes.
 
 ##### Audit and Compliance
-<img src="Resources/Images/ClassDiagrams/audit-and-compliance.svg?raw=true" alt="Diagrama de Clases Frontend de Audit and Compliance">
+<img src="Resources/Images/ClassDiagrams/audit-compliance.svg?raw=true" alt="Diagrama de Clases Frontend de Audit and Compliance">
 
 Representa el módulo de trazabilidad. Detalla la estructura exhaustiva de la entidad `AuditLog` y cómo el `AuditStore` consume el historial inmutable de eventos del sistema para renderizar los reportes administrativos y facilitar las herramientas de monitoreo institucional.
 
