@@ -2488,42 +2488,42 @@ Estos diagramas permiten visualizar cómo los componentes de la interfaz de usua
 A continuación, se detalla la estructura orientada a objetos del lado del cliente, separada por *Bounded Contexts* para facilitar su mantenibilidad y escalabilidad, junto con un diagrama general que engrana toda la plataforma.
 
 ##### General - Arquitectura Completa del Frontend
-<img src="Resources/Images/ClassDiagrams/general.png?raw=true" alt="Diagrama de Clases Frontend General">
+<img src="Resources/Images/ClassDiagrams/general.svg?raw=true" alt="Diagrama de Clases Frontend General">
 
 Este diagrama ofrece una vista panorámica de la plataforma web. Muestra la jerarquía completa y las dependencias lógicas entre los 6 Bounded Contexts principales y el módulo Shared, ilustrando cómo los distintos *Stores* (como `AuthStore` o `ClinicalRiskStore`) y servicios base (`BaseEndpoint`) se interconectan para sostener toda la experiencia del usuario.
 
 ##### Clinical Risk Assessment
-<img src="Resources/Images/ClassDiagrams/clinical-risk-assessment.png?raw=true" alt="Diagrama de Clases Frontend de Clinical Risk Assessment">
+<img src="Resources/Images/ClassDiagrams/clinical-risk-assessment.svg?raw=true" alt="Diagrama de Clases Frontend de Clinical Risk Assessment">
 
 Este diagrama ilustra el núcleo de monitoreo biométrico. Define la relación entre las lecturas de signos vitales (`VitalSignReading`), la detección de anomalías, las alertas clínicas y la evaluación de la fatiga (`RiskAssessment`). Muestra cómo el `ClinicalRiskStore` centraliza estos datos para ser consumidos por los tableros de control (Dashboards) tanto de médicos como de supervisores.
 
 ##### Shift Coordination
-<img src="Resources/Images/ClassDiagrams/shift-coordination.png?raw=true" alt="Diagrama de Clases Frontend de Shift Coordination">
+<img src="Resources/Images/ClassDiagrams/shift-coordination.svg?raw=true" alt="Diagrama de Clases Frontend de Shift Coordination">
 
 Modela la gestión de la jornada laboral. Define las entidades `ShiftRecord`, `CareTeam` y `TeamMember`, y detalla cómo el `ShiftStore` gestiona las acciones de *check-in*, *check-out*, reasignaciones y el bloqueo automático de turnos preventivos, integrándose con las vistas de coordinación de horarios.
 
 ##### Staff Recovery
-<img src="Resources/Images/ClassDiagrams/staff-recovery.png?raw=true" alt="Diagrama de Clases Frontend de Staff Recovery">
+<img src="Resources/Images/ClassDiagrams/staff-recovery.svg?raw=true" alt="Diagrama de Clases Frontend de Staff Recovery">
 
 Describe la estructura orientada a la mitigación de la fatiga. Incluye las entidades `RecoveryPlan` y `PreventiveAction`, mostrando cómo los supervisores asignan acciones y cómo los médicos interactúan con sus planes de recuperación a través del `RecoveryStore` y sus vistas correspondientes.
 
 ##### Audit and Compliance
-<img src="Resources/Images/ClassDiagrams/audit-and-compliance.png?raw=true" alt="Diagrama de Clases Frontend de Audit and Compliance">
+<img src="Resources/Images/ClassDiagrams/audit-and-compliance.svg?raw=true" alt="Diagrama de Clases Frontend de Audit and Compliance">
 
 Representa el módulo de trazabilidad. Detalla la estructura exhaustiva de la entidad `AuditLog` y cómo el `AuditStore` consume el historial inmutable de eventos del sistema para renderizar los reportes administrativos y facilitar las herramientas de monitoreo institucional.
 
 ##### Subscription and Plan Management
-<img src="Resources/Images/ClassDiagrams/subscription-plan-management.png?raw=true" alt="Diagrama de Clases Frontend de Subscription and Plan Management">
+<img src="Resources/Images/ClassDiagrams/subscription-plan-management.svg?raw=true" alt="Diagrama de Clases Frontend de Subscription and Plan Management">
 
 Muestra el flujo comercial y de tenencia múltiple (*Multi-tenant*). Incluye las entidades `Plan` y `Subscription`, y abarca desde las vistas de registro inicial (*Onboarding*) hasta la pasarela de pagos con Stripe y el control de suscripciones caducadas, todo administrado por el `SubscriptionStore`.
 
 ##### Identity and Access Management (IAM)
-<img src="Resources/Images/ClassDiagrams/identity-access-management.png?raw=true" alt="Diagrama de Clases Frontend de Identity and Access Management">
+<img src="Resources/Images/ClassDiagrams/iam.svg?raw=true" alt="Diagrama de Clases Frontend de Identity and Access Management">
 
 Representa el control de acceso e identidades. Modela las entidades de `User` e `Invitation` y sus *Commands* asociados. Destaca el papel central del `AuthStore` para inyectar el estado de autenticación y los roles del usuario a través de componentes como el inicio de sesión, la configuración de cuentas y la administración del personal médico.
 
 ##### Shared Module
-<img src="Resources/Images/ClassDiagrams/shared-module.png?raw=true" alt="Diagrama de Clases Frontend del Shared Module">
+<img src="Resources/Images/ClassDiagrams/shared-module.svg?raw=true" alt="Diagrama de Clases Frontend del Shared Module">
 
 Ilustra la infraestructura transversal de la aplicación. Contiene las clases base de conexión HTTP (`BaseEndpoint`, `ApiService`), así como los componentes visuales genéricos que construyen el esqueleto de la plataforma: el Layout principal, la barra lateral de navegación, la cabecera y el selector de idiomas.
 
