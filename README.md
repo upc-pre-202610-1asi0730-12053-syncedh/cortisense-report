@@ -2552,7 +2552,7 @@ Este diagrama representa la estructura backend del bounded context Shift Coordin
 Este diagrama representa la estructura backend del bounded context Staff Recovery. Incluye las entidades y servicios responsables de planes de recuperación, descansos, recomendaciones y acciones para reducir la fatiga del personal médico.
 
 ##### Audit and Compliance - Diagrama de Clases del Backend
-<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/ClassDiagrams/audit-and-compilanceB.svg?raw=true" alt="Diagrama de Clases Backend de Audit and Compliance">
+<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/ClassDiagrams/audit-and-complianceB.svg?raw=true" alt="Diagrama de Clases Backend de Audit and Compliance">
 
 Este diagrama representa la estructura backend del bounded context Audit and Compliance. Incluye las entidades, servicios y repositorios responsables de los registros de auditoría, verificaciones de cumplimiento, reportes regulatorios y trazabilidad del sistema.
 
