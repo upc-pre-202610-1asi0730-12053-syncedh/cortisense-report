@@ -2518,7 +2518,7 @@ Representa el módulo de trazabilidad. Detalla la estructura exhaustiva de la en
 Muestra el flujo comercial y de tenencia múltiple (*Multi-tenant*). Incluye las entidades `Plan` y `Subscription`, y abarca desde las vistas de registro inicial (*Onboarding*) hasta la pasarela de pagos con Stripe y el control de suscripciones caducadas, todo administrado por el `SubscriptionStore`.
 
 ##### Identity and Access Management (IAM)
-<img src="Resources/Images/ClassDiagrams/identity-and-access-management.png?raw=true" alt="Diagrama de Clases Frontend de Identity and Access Management">
+<img src="Resources/Images/ClassDiagrams/identity-access-management.png?raw=true" alt="Diagrama de Clases Frontend de Identity and Access Management">
 
 Representa el control de acceso e identidades. Modela las entidades de `User` e `Invitation` y sus *Commands* asociados. Destaca el papel central del `AuthStore` para inyectar el estado de autenticación y los roles del usuario a través de componentes como el inicio de sesión, la configuración de cuentas y la administración del personal médico.
 
