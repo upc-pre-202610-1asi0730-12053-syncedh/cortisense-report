@@ -3034,7 +3034,7 @@ En esta sección se presentan los diagramas de base de datos correspondientes a 
 
 El diagrama general integra las tablas principales de los Bounded Contexts de SyncedHealth, mostrando las relaciones entre organizaciones, usuarios, suscripciones, evaluaciones clínicas, turnos, recuperación del personal y auditoría. Este diagrama permite visualizar cómo las claves foráneas conectan los distintos contextos y cómo se mantiene la trazabilidad de la información dentro del sistema.
 
-<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/DiagramDatabase/Diagrams-Database.png?raw=true" alt="General Database Diagram">
+<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/DiagramDatabase/general-db.png?raw=true" alt="General Database Diagram">
 
 **Identity & Access Management**
 
