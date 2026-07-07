@@ -47,40 +47,37 @@ Julio, 2026
 
 <div style="page-break-after: always"></div>
 
-### Registro de Versiones del Informe
-
-
+## REGISTRO DE VERSIONES DEL INFORME
 | Versión | Fecha | Autor | Descripción de modificación |
 | :---: | :---: | :---: | :---: |
-| 1.0.0 | 05/04/2026 | Marcelo Fausto Pareja Calloapaza | Se agregó la estructura inicial del proyecto (`main`) |
-| 1.1.0 | 06/04/2026 | Marcelo Fausto Pareja Calloapaza | Se agregó la Descripción de la StartUp (`feature/startup-profile`) |
-| 1.1.1 | 06/04/2026 | Marcelo Pareja / Jairo Santiago / Ghiou Mauricio | Se agregaron los perfiles de los integrantes del equipo (`feature/team-profiles`) |
-| 1.1.2 | 06/04/2026 | Jairo Mathias Santiago Atanacio | Se agregó el Lean Ux Process (`feature/lean-ux`) |
-| 1.2.0 | 09/04/2026 | Johan Yonel León Morales | Adición de subcapítulos de análisis de mercado y Needfinding (`feature/market-analysis`) |
-| 1.3.0 | 12/04/2026 | Ghiou Justinn Mauricio Silva | Elaboración de artefactos de UX: Empathy Maps y Persona Dynamics (`feature/ux-artifacts`) |
-| 1.4.0 | 15/04/2026 | Jairo Mathias Santiago Atanacio | Elaboración del Impact Mapping y definición de las primeras User Stories (`feature/impact-mapping`) |
-| 1.5.0 | 18/04/2026 | Johan León / Marcelo Pareja | Definición preliminar del Product Backlog y priorización de tareas (`feature/product-backlog`) |
-| 1.6.0 | 22/04/2026 | Todos los integrantes | Consolidación del informe, corrección de formato y revisión previa a entrega (`feature/review-av1`) |
-| 2.0.0 | 24/04/2026 | Jairo Mathias Santiago Atanacio | **AV1 Report** |
-| 2.1.0 | 01/05/2026 | Jairo Mathias Santiago Atanacio | Diseño e implementación de la primera versión de la Landing Page (`feature/landing-page`) |
-| 2.2.0 | 05/05/2026 | Johan Yonel León Morales | Modelado inicial con EventStorming y delimitación de contextos (`feature/event-storming`) |
-| 2.3.0 | 09/05/2026 | Marcelo Fausto Pareja Calloapaza | Diseño de arquitectura de software y diagramas C4 de nivel 1 y 2 (`feature/architecture-c4`) |
-| 2.4.0 | 12/05/2026 | Ghiou Justinn Mauricio Silva | Redacción de requerimientos no funcionales y matriz de trazabilidad (`feature/requirements`) |
-| 2.5.0 | 13/05/2026 | Todos los integrantes | Sprint Backlog 2, documentación de despliegues tempranos en la nube y anexos (`feature/sprint2-close`) |
-| 3.0.0 | 14/05/2026 | Marcelo Fausto Pareja Calloapaza | **TB1 Report** |
-| 3.1.0 | 10/06/2026 | Ghiou Justinn Mauricio Silva | Configuración de la sección de validación heurística y escala de severidad (`feature/heuristics`) |
-| 3.2.0 | 13/06/2026 | Jairo Mathias Santiago Atanacio | Desarrollo e integración del Bounded Context del Dashboard en el Frontend (`feature/dashboard`) |
-| 3.3.0 | 16/06/2026 | Johan Yonel León Morales | Diagramación de componentes backend y refinamiento del modelo de datos (`feature/components-design`) |
-| 3.4.0 | 19/06/2026 | Todos los integrantes | Redacción de secciones corporativas "About the product" y "About the team" (`feature/sprint3-review`) |
-| 4.0.0 | 21/06/2026 | Johan Yonel León Morales | **AV2 Report** |
-| 4.1.0 | 25/06/2026 | Jairo Mathias Santiago Atanacio | Desarrollo e integración full-stack del Bounded Context de Staff Recovery (`feature/staff-recovery`) |
-| 4.2.0 | 28/06/2026 | Marcelo Fausto Pareja Calloapaza | Corrección de diagramas lógicos, físicos de bases de datos y diagramas de clases (`feature/db-refactoring`) |
-| 4.3.0 | 01/07/2026 | Ghiou Justinn Mauricio Silva | Transcripción de entrevistas de validación de prototipos con especialistas (`feature/interviews-validation`) |
-| 4.4.0 | 04/07/2026 | Todos los integrantes | Recopilación de evidencias del Sprint 4, capturas de despliegue en Azure y conclusiones (`feature/final-deployment`) |
-| 5.0.0 | 05/07/2026 | Marcelo Fausto Pareja Calloapaza | **TB2 Report** |
+| 0.1.0 | 05/04/2026 | Marcelo Fausto Pareja Calloapaza | Se agregó la estructura inicial del proyecto (`main`) |
+| 0.2.0 | 06/04/2026 | Marcelo Fausto Pareja Calloapaza | Se agregó la Descripción de la StartUp (`feature/startup-profile`) |
+| 0.3.0 | 06/04/2026 | Marcelo Pareja / Jairo Santiago / Ghiou Mauricio | Se agregaron los perfiles de los integrantes del equipo (`feature/team-profiles`) |
+| 0.4.0 | 06/04/2026 | Jairo Mathias Santiago Atanacio | Se agregó el Lean Ux Process (`feature/lean-ux`) |
+| 0.5.0 | 09/04/2026 | Johan Yonel León Morales | Adición de subcapítulos de análisis de mercado y Needfinding (`feature/market-analysis`) |
+| 0.6.0 | 12/04/2026 | Ghiou Justinn Mauricio Silva | Elaboración de artefactos de UX: Empathy Maps y Persona Dynamics (`feature/ux-artifacts`) |
+| 0.7.0 | 15/04/2026 | Jairo Mathias Santiago Atanacio | Elaboración del Impact Mapping y definición de las primeras User Stories (`feature/impact-mapping`) |
+| 0.8.0 | 18/04/2026 | Johan León / Marcelo Pareja | Definición preliminar del Product Backlog y priorización de tareas (`feature/product-backlog`) |
+| 0.9.0 | 22/04/2026 | Todos los integrantes | Consolidación del informe, corrección de formato y revisión previa a entrega (`feature/review-av1`) |
+| 1.0.0 | 24/04/2026 | Jairo Mathias Santiago Atanacio | **AV1 Report** |
+| 1.1.0 | 01/05/2026 | Jairo Mathias Santiago Atanacio | Diseño e implementación de la primera versión de la Landing Page (`feature/landing-page`) |
+| 1.2.0 | 05/05/2026 | Johan Yonel León Morales | Modelado inicial con EventStorming y delimitación de contextos (`feature/event-storming`) |
+| 1.3.0 | 09/05/2026 | Marcelo Fausto Pareja Calloapaza | Diseño de arquitectura de software y diagramas C4 de nivel 1 y 2 (`feature/architecture-c4`) |
+| 1.4.0 | 12/05/2026 | Ghiou Justinn Mauricio Silva | Redacción de requerimientos no funcionales y matriz de trazabilidad (`feature/requirements`) |
+| 1.5.0 | 13/05/2026 | Todos los integrantes | Sprint Backlog 2, documentación de despliegues tempranos en la nube y anexos (`feature/sprint2-close`) |
+| 2.0.0 | 14/05/2026 | Marcelo Fausto Pareja Calloapaza | **TB1 Report** |
+| 2.1.0 | 10/06/2026 | Ghiou Justinn Mauricio Silva | Configuración de la sección de validación heurística y escala de severidad (`feature/heuristics`) |
+| 2.2.0 | 13/06/2026 | Jairo Mathias Santiago Atanacio | Desarrollo e integración del Bounded Context del Dashboard en el Frontend (`feature/dashboard`) |
+| 2.3.0 | 16/06/2026 | Johan Yonel León Morales | Diagramación de componentes backend y refinamiento del modelo de datos (`feature/components-design`) |
+| 2.4.0 | 19/06/2026 | Todos los integrantes | Redacción de secciones corporativas "About the product" y "About the team" (`feature/sprint3-review`) |
+| 3.0.0 | 21/06/2026 | Johan Yonel León Morales | **AV2 Report** |
+| 3.1.0 | 25/06/2026 | Jairo Mathias Santiago Atanacio | Desarrollo e integración full-stack del Bounded Context de Staff Recovery (`feature/staff-recovery`) |
+| 3.2.0 | 28/06/2026 | Marcelo Fausto Pareja Calloapaza | Corrección de diagramas lógicos, físicos de bases de datos y diagramas de clases (`feature/db-refactoring`) |
+| 3.3.0 | 01/07/2026 | Ghiou Justinn Mauricio Silva | Transcripción de entrevistas de validación de prototipos con especialistas (`feature/interviews-validation`) |
+| 3.4.0 | 04/07/2026 | Todos los integrantes | Recopilación de evidencias del Sprint 4, capturas de despliegue en Azure y conclusiones (`feature/final-deployment`) |
+| 4.0.0 | 05/07/2026 | Marcelo Fausto Pareja Calloapaza | **TB2 Report** |
 
 <div style="page-break-after: always"></div>
-
 
 
 # Project Report Collaboration Insights
