@@ -119,6 +119,11 @@ URL de la Platform desplegada: [cortisense-platform](https://api.cortisense.spac
 			- **AV2**
 			<div align="center"><img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Collaboration-Insights/insights-webapp.png?raw=true"></img></div><br><br>
 
+			- **TB2**
+			<div align="center"><img src="https://github.com/upc-pre-202610-1asi0730-12053-syncedh/cortisense-report/blob/main/Resources/Collaboration-Insights/insight-tb2.PNG?raw=true"></img></div><br><br>
+
+
+
         + **Contributors Image of Github Insights**
 			- **AV1**
      		<div align="center"><img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Collaboration-Insights/Insight-2.png?raw=true"></div><br>
