@@ -4609,7 +4609,7 @@ A continuación, se presentan las estadísticas de colaboración obtenidas desde
     </tr>
   <tr>
     <td>Evidencia</td>
-    <td><div align="center"><img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Interview-evidences/interview-valeria-vetiz.png?raw=true" alt="Entrevista Valeria Vertiz"></div></td>
+    <td><div align="center"><img src="https://github.com/upc-pre-202610-1asi0730-12053-syncedh/cortisense-report/blob/main/Resources/Validation/validation-interview-valeria.PNG" alt="Entrevista Valeria Vertiz"></div></td>
   </tr>
   <tr>
     <td>Link</td>
