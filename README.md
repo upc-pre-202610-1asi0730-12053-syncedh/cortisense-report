@@ -2346,59 +2346,55 @@ Este diagrama representa el módulo compartido del frontend. Centraliza elemento
 
 ### 4.6.4.2. Backend Components Diagram
 
-#### **REST API Component Diagram**
+#### REST API Component Diagram
 
-<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/C4-Diagrams/Backend-Diagrams/container_restapi_diagram.png?raw=true" alt="Diseño del diagrama de componentes del backend de CortiSense"/> <br>
+<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/C4-Diagrams/Backend-Diagrams/BackendComponents.png?raw=true" alt="Diseño del diagrama de componentes del backend de CortiSense"/> <br>
 
 Este diagrama muestra la organización general del backend de CortiSense. La REST API recibe las solicitudes desde la SPA y las distribuye hacia los bounded contexts del sistema, los cuales gestionan la lógica de negocio, acceso a base de datos e integraciones externas.
 
-#### **Identity & Access Management**
+Los siguientes diagramas detallan la arquitectura interna del backend de CortiSense. Se aplica un enfoque de *Domain-Driven Design* (DDD) y *Clean Architecture*, dividiendo cada Bounded Context en 4 capas principales: Interface, Application, Infrastructure y Domain.
 
-<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/C4-Diagrams/Backend-Diagrams/iam_components.png?raw=true" alt="Diseño del diagrama de componentes del módulo de Identity & Access Management del backend"/> <br>
+#### Clinical Risk Assessment
 
-Este diagrama representa el contexto encargado de usuarios, invitaciones, roles y permisos. Sus componentes procesan solicitudes de autenticación y acceso, validan reglas del dominio y se integran con Firebase Authentication y Resend Email API.
+<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/C4-Diagrams/Backend-Diagrams/RiskComponents_Backend.svg?raw=true" alt="Diseño del diagrama de componentes del módulo de Clinical Risk Assessment del backend"/> <br>
 
-#### **Subscription & Plan Management**
+Este diagrama representa el núcleo operativo encargado de procesar datos de telemetría y calcular los indicadores de fatiga y riesgo clínico del personal. Sus componentes evalúan las anomalías biométricas en tiempo real y presentan una dependencia explícita hacia el contexto de Auditoría para registrar estas anomalías críticas.
 
-<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/C4-Diagrams/Backend-Diagrams/subscription_components.png?raw=true" alt="Diseño del diagrama de componentes del módulo de Subscription & Plan Management del backend"/> <br>
+#### Shift Coordination
 
-Este diagrama muestra el contexto responsable de planes, pagos y suscripciones. Sus componentes gestionan la activación del plan, el acceso a funcionalidades y la integración con Stripe Sandbox para validar pagos.
+<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/C4-Diagrams/Backend-Diagrams/ShiftComponents_Backend.svg?raw=true" alt="Diseño del diagrama de componentes del módulo de Shift Coordination del backend"/> <br>
 
-#### **Clinical Risk Assessment**
+Este diagrama muestra el contexto que gestiona la asignación de turnos médicos y la distribución del equipo de atención (Care Team). Sus capas permiten organizar los calendarios y coordinar reemplazos para proteger la continuidad operacional de la institución de salud.
 
-<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/C4-Diagrams/Backend-Diagrams/clinical_risk_components.png?raw=true" alt="Diseño del diagrama de componentes del módulo de Clinical Risk Assessment del backend"/> <br>
+#### Staff Recovery
 
-Este diagrama representa el contexto encargado de procesar datos biométricos, calcular indicadores asociados al estrés, fatiga y riesgo clínico, y determinar niveles de riesgo del personal médico. También registra información relacionada con evaluaciones de riesgo en la base de datos.
+<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/C4-Diagrams/Backend-Diagrams/RecoveryComponents_Backend.svg?raw=true" alt="Diseño del diagrama de componentes del módulo de Staff Recovery del backend"/> <br>
 
-#### **Incident & Escalation Management**
+Este diagrama muestra el contexto responsable de orquestar los planes de recuperación y descansos médicos. A través de sus componentes, se gestionan las acciones preventivas impuestas por supervisores y se procesan las confirmaciones del estado de bienestar de los doctores.
 
-<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/C4-Diagrams/Backend-Diagrams/incident_components.png?raw=true" alt="Diseño del diagrama de componentes del módulo de Incident & Escalation Management del backend"/> <br>
+#### Audit & Compliance
 
-Este diagrama muestra el contexto que gestiona incidentes de riesgo, alertas al supervisor, escalamiento al director médico y cierre de incidentes. Además, utiliza Resend Email API para enviar notificaciones importantes.
+<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/C4-Diagrams/Backend-Diagrams/AuditComponents_Backend.svg?raw=true" alt="Diseño del diagrama de componentes del módulo de Audit & Compliance del backend"/> <br>
 
-#### **Shift Coordination**
+Este diagrama representa el contexto dedicado a mantener un registro inmutable de auditoría sobre eventos críticos y generar reportes de cumplimiento. Su capa de aplicación recibe invocaciones transversales para asegurar la trazabilidad institucional ante cualquier alerta o incidente de riesgo.
 
-<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/C4-Diagrams/Backend-Diagrams/coordination_components.png?raw=true" alt="Diseño del diagrama de componentes del módulo de Shift Coordination del backend"/> <br>
+#### Subscription & Plan Management
 
-Este diagrama representa el contexto encargado de turnos críticos, bloqueos preventivos, sugerencias de reemplazo y redistribución de carga médica. Sus componentes permiten proteger la continuidad operacional de la institución sin comprometer el bienestar del personal médico.
+<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/C4-Diagrams/Backend-Diagrams/SubscriptionComponents_Backend.svg?raw=true" alt="Diseño del diagrama de componentes del módulo de Subscription & Plan Management del backend"/> <br>
 
-#### **Staff Recovery**  <br>
+Este diagrama muestra el contexto responsable de los planes, pagos y el onboarding de las organizaciones de salud. Sus componentes gestionan la selección de suscripciones, validan la facturación, utilizan el middleware transversal de autorización provisto por IAM, y persisten el estado de las membresías.
 
-<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/C4-Diagrams/Backend-Diagrams/staff_components.png?raw=true" alt="Diseño del diagrama de componentes del módulo de Staff Recovery del backend"/> <br>
+#### Identity & Access Management
 
-Este diagrama muestra el contexto responsable de recomendaciones de descanso y planes de recuperación. Gestiona aceptación, rechazo o confirmación del plan, y puede enviar notificaciones mediante Resend Email API.
+<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/C4-Diagrams/Backend-Diagrams/IAMComponents_Backend.svg?raw=true" alt="Diseño del diagrama de componentes del módulo de Identity & Access Management del backend"/> <br>
 
-#### **Audit & Compliance**
+Este diagrama representa el contexto encargado de la autenticación, roles y gestión de cuentas del personal médico y administrativo. Sus componentes procesan solicitudes de inicio de sesión, invitaciones institucionales, validan reglas del dominio, se integran de manera externa con Resend Email API, e interactúan con la base de datos MySQL.
 
-<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/C4-Diagrams/Backend-Diagrams/audit_components.png?raw=true" alt="Diseño del diagrama de componentes del módulo de Audit & Compliance del backend"/> <br>
+#### Shared Kernel
 
-Este diagrama representa el contexto encargado de registrar decisiones críticas, acciones relevantes y reportes de cumplimiento. Su objetivo es mantener trazabilidad institucional sobre los eventos importantes del sistema.
+<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/C4-Diagrams/Backend-Diagrams/SharedKernelComponents_Backend.svg?raw=true" alt="Diseño del diagrama de componentes del módulo compartido del backend"/> <br>
 
-#### **Shared Kernel**
-
-<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/C4-Diagrams/Backend-Diagrams/shared_kernel_components.png?raw=true" alt="Diseño del diagrama de componentes del módulo compartido del backend"/> <br>
-
-Este diagrama muestra los elementos compartidos del backend, como tipos base, value objects, eventos de dominio, excepciones y contratos comunes. Estos elementos son reutilizados por los bounded contexts sin centralizar su lógica de negocio.
+Este diagrama ilustra la estructura centralizada de elementos compartidos, como clases base, respuestas de API estándar y utilidades comunes (CQRS behaviors, interceptores). Se evidencia visualmente cómo los demás Bounded Contexts invocan de manera generalizada las 4 capas de este módulo sin acoplar su propia lógica de negocio.
 
 ### 4.6.5. Vue Components by Presentation Layer
 
