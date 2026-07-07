@@ -37,14 +37,16 @@ CortiSense
 | Pareja Calloapaza, Marcelo Fausto          | u202411627     |
 | Santiago Atanacio, Jairo Mathias                   | u202418755     |
 
+
+
+
+**Período 202610**
+
+Julio, 2026
+
 </div>
 
-<br><div align="center"><h3>Julio 2026</h3></div>
-<div align="center"><h3>Periodo: 202610</h3></div><br>
-<div style="text-align: justify;">
-
-<br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<div style="page-break-after: always"></div>
 
 ### Registro de Versiones del Informe
 
