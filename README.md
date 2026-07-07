@@ -327,85 +327,79 @@ El curso contribuye al cumplimiento del Student Outcome ABET:<br><br>
 En el siguiente cuadro se describe las acciones realizadas y enunciados de conclusiones por parte del grupo, que permiten sustentar el haber alcanzado el logro del ABET – EAC - Student Outcome 5.<br><br>
 
 <table>
-    <thead>
-        <tr>
-            <th colspan="3"><b>Criterio específico</b></th>
-            <th colspan="3"><b>Acciones realizadas</b></th>
-            <th colspan="3"><b>Conclusiones</b></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td colspan="3">Trabaja en equipo para proporcionar liderazgo en forma conjunta.</td>
-            <td colspan="3" align="justify">
-                <h3>León Morales, Johan Yonel</h3>
-                <b>AV1</b><p>Durante el desarrollo de este proyecto, gestioné la participación grupal en la elaboración de las secciones como Style Guidelines y como Domain-Driven Software Architecture, contribuyendo tanto en el diseño visual como en la estructuración lógica del sistema. Además, fomenté el trabajo en equipo durante la creación, redacción y despliegue de la Landing Page.</p>
-                <b>TB1</b><p>Durante esta etapa del proyecto, contribuí al despliegue de la Web App enfocándome en la verificación del funcionamiento de las secciones implementadas, la revisión de rutas, archivos de configuración y conexión con el mock server. Además, apoyé en la detección de problemas, impulsando al equipo en la creación, redacción y despliegue del Frontend.</p>
-                <b>AV2</b><p>Durante este avance, participé activamente en el desarrollo del Backend del proyecto CortiSense, apoyando en la creación, revisión y organización de servicios necesarios para el funcionamiento de la plataforma. Asimismo, contribuí en la documentación técnica de los Web Services, la revisión de endpoints y la preparación de evidencias relacionadas con el despliegue y funcionamiento del sistema. Mi participación permitió fortalecer el liderazgo compartido dentro del equipo, aportando en la toma de decisiones técnicas y en la coordinación de actividades para cumplir con los objetivos establecidos en el Sprint.</p>
-                <b>TB2</b><p>En esta etapa final, coordiné la integración del Frontend con el Backend y tomé el liderazgo en la verificación del despliegue definitivo en la nube. Además, orienté al equipo en la planificación y elaboración del video About-the-Team y la redacción de las conclusiones finales del proyecto.</p>
-
-                <h3>Mauricio Silva, Ghiou Justinn</h3>
-                <b>AV1</b><p>Durante el desarrollo del proyecto, contribuí al trabajo en equipo participando activamente en el análisis de la problemática mediante la metodología 5W2H. Asimismo, lideré parte de la fase de Need Finding, elaborando el User Persona, User Task Matrix, User Journey Mapping y Empathy Mapping. También apoyé en la construcción de User Stories y el Product Backlog. Además, tomé la iniciativa junto con mis compañeros en la creación, redacción y despliegue de la Landing Page.</p>
-                <b>TB1</b><p>Durante esta etapa del proyecto, participé en la preparación técnica de la Web App para su despliegue, revisando la configuración del proyecto, la instalación de dependencias y la correcta ejecución de la aplicación. Asimismo, aporté liderazgo en la resolución de problemas durante la creación, redacción y despliegue del Frontend en este sprint.</p>
-                <b>AV2</b><p>Durante este avance, participé activamente en el desarrollo y mejora de los principales componentes del proyecto CortiSense. Contribuí en la implementación y corrección del Frontend Web Application, revisando vistas, flujos funcionales y elementos de navegación para mantener coherencia con la propuesta del producto. Asimismo, apoyé en una parte del Backend, colaborando en la revisión de servicios, endpoints y evidencias técnicas necesarias para sustentar el avance de los Web Services. Además, me encargué de realizar correcciones importantes en la Landing Page, actualizando el branding de CortiSense, la paleta de colores, imágenes, enlaces de acceso, botones de suscripción y sección de términos. También apoyé en la documentación del informe, incorporando evidencias relacionadas con desarrollo, despliegue, mejora continua y funcionamiento de los componentes del proyecto. Estas actividades me permitieron asumir un rol activo dentro del equipo, aportando liderazgo compartido, coordinación técnica y apoyo en la solución de observaciones para cumplir con los entregables solicitados en el AV2.</p>
-                <b>TB2</b><p>Durante el TB2, lideré la revisión y mejora de calidad final de la Landing Page y el Frontend, asegurando una experiencia de usuario fluida y libre de errores. También apoyé activamente al equipo en la producción del video About-the-Product y en la estructuración de la documentación final para asegurar un cierre exitoso.</p>
-
-                <h3>Pareja Calloapaza, Marcelo Fausto</h3>
-                <b>AV1</b><p>Contribuí al desarrollo del proyecto mediante la implementación del Big Picture Event Storming e Information Architecture. Ello me permitió definir los contextos de forma sencilla del dominio y también definir la arquitectura del sistema. De esa manera, pude generar un orden respecto a cómo han de ser respetados los avances.</p>
-                <b>TB1</b><p>Lideré aspectos clave de la estructuración técnica del Frontend y colaboré de forma constante con mis compañeros en la resolución de problemas de integración de componentes y despliegue continuo en el entorno cloud.</p>
-                <b>AV2</b><p>Asumí un rol de liderazgo en la configuración inicial y organización de los servicios en el Backend, guiando al equipo en la correcta aplicación de Clean Architecture y Domain-Driven Design para los distintos Bounded Contexts.</p>
-                <b>TB2</b><p>Durante el último sprint, impulsé la validación de la integración final del sistema, coordiné la revisión de las entrevistas de validación y lideré las correcciones finales del proyecto, asegurando la máxima calidad del entregable.</p>
-
-                <h3>Santiago Atanacio, Jairo Mathias</h3>
-                <b>AV1</b><p>Contribuí al desarrollo del proyecto mediante la implementación del Big Picture Event Storming e Information Architecture. Ello me permitió definir los contextos de forma sencilla del dominio y también definir la arquitectura del sistema. Además, brindé dirección al equipo participando en la creación, redacción y despliegue de la Landing Page.</p>
-                <b>TB1</b><p>Asumí un rol importante coordinando con el equipo para la creación, redacción y despliegue del Frontend, asegurando el avance correcto de este sprint.</p>
-                <b>AV2</b><p>Tomé la iniciativa y dirigí conjuntamente los esfuerzos técnicos para la creación, redacción y despliegue del Backend, garantizando un avance estructurado.</p>
-                <b>TB2</b><p>Contribuí a la mejora continua del proyecto, asumiendo el liderazgo en la corrección de errores finales en conjunto con mis compañeros, y apoyando activamente en la edición y publicación de los videos de presentación final.</p>
-                <br>
-            </td>
-            <td colspan="3" align="justify">
-                <b>AV1</b><p>Se logró completar la primera parte del trabajo sin problemas mayores. De esta manera, hemos asegurado nuestro avance como grupo.</p>
-                <b>TB1</b><p>Se logró avanzar con la creación, redacción y despliegue del Frontend Web Application, fortaleciendo el liderazgo compartido del equipo y la coordinación técnica para cumplir con los objetivos del sprint.</p>
-                <b>AV2</b><p>Durante el AV2, el equipo fortaleció el liderazgo compartido mediante la distribución de responsabilidades en el desarrollo del Backend, la mejora del Frontend, la actualización del Landing Page, la documentación técnica y la preparación de evidencias del proyecto. La participación conjunta permitió avanzar de manera organizada en los principales componentes de CortiSense y cumplir con los objetivos establecidos para esta etapa.</p>
-                <b>TB2</b><p>En la entrega final (TB2), el equipo demostró un liderazgo consolidado y maduro. La integración completa de la solución, la elaboración de los videos y la redacción de las conclusiones se lograron gracias a que cada miembro asumió la dirección proactiva de distintos componentes, colaborando estrechamente para superar los últimos retos técnicos.</p>
-            </td>
-        </tr>
-        <tr>
-            <td colspan="3">Crea un entorno colaborativo e inclusivo, establece metas, planifica tareas y cumple objetivos.</td>
-            <td colspan="3" align="justify">
-                <h3>León Morales, Johan Yonel</h3>
-                <b>AV1</b><p>Se logró completar la primera parte del trabajo sin problemas mayores. Todos asumimos un liderazgo compartido en la creación, redacción y despliegue de la Landing Page, asegurando nuestro avance como grupo.</p>
-                <b>TB1</b><p>El equipo demostró un liderazgo conjunto durante la creación, redacción y despliegue del Frontend, permitiéndonos cumplir exitosamente con los objetivos trazados para este sprint.</p>
-                <b>AV2</b><p>Durante el AV2, colaboré en la planificación y ejecución de tareas relacionadas con el Backend de CortiSense, aportando en la organización del trabajo técnico, revisión de servicios desarrollados y preparación de evidencias para sustentar el avance del sistema. Asimismo, mantuve comunicación con el equipo para coordinar pendientes, resolver observaciones y apoyar en el cumplimiento de los objetivos definidos para el Sprint.</p>
-                <b>TB2</b><p>Contribuí a mantener un entorno de trabajo colaborativo durante el cierre del proyecto, planificando las últimas tareas de validación y asegurando que todos los miembros del equipo alcanzaran sus metas individuales para el Release final.</p>
-
-                <h3>Mauricio Silva, Ghiou Justinn</h3>
-                <b>AV1</b><p>Durante esta etapa, cumplí con las tareas asignadas de manera responsable, desarrollando el análisis 5W2H y la fase de Need Finding. Además, contribuí en la planificación del proyecto mediante la elaboración de User Stories y el Product Backlog. Asimismo, participé colaborativamente en la creación, redacción y despliegue de la Landing Page para alcanzar nuestros primeros objetivos.</p>
-                <b>TB1</b><p>Durante esta etapa del proyecto, participé en la preparación técnica de la Web App para su despliegue, revisando la configuración del proyecto y la instalación de dependencias. Además, cumplí con las metas del sprint trabajando en equipo en la creación, redacción y despliegue del Frontend.</p>
-                <b>AV2</b><p>Durante esta etapa, contribuí a la planificación y cumplimiento de tareas relacionadas con el Frontend Web Application, la corrección del Product Landing Page, el apoyo en Backend y la actualización de la documentación del proyecto. Trabajé de forma colaborativa con mis compañeros para revisar observaciones, corregir errores, validar enlaces desplegados, mejorar la presentación visual del producto y organizar evidencias técnicas para el reporte. También participé en la mejora continua de artefactos previamente desarrollados, asegurando que la Landing Page mantenga coherencia con la identidad de CortiSense y que los botones de acceso y planes redirijan correctamente a las rutas desplegadas. Estas acciones permitieron fortalecer el trabajo en equipo, mantener una comunicación constante y cumplir con los objetivos establecidos para el AV2, aportando al desarrollo de una solución digital más completa, ordenada y alineada con los criterios del Final Project.</p>
-                <b>TB2</b><p>Mantuve una comunicación inclusiva y activa para la asignación de las últimas correcciones del sistema. Colaboré en la planificación de los tiempos de grabación de los videos requeridos y garanticé que cumpliéramos puntualmente con los estándares de nuestra meta final.</p>
-
-                <h3>Pareja Calloapaza, Marcelo Fausto</h3>
-                <b>AV1</b><p>Contribuí en la entrega de tareas responsablemente, desarrollando el análisis del Big Picture y de las reglas de arquitectura, además de otros apartados. De esa manera, pude asegurar el cumplimiento de los objetivos establecidos.</p>
-                <b>TB1</b><p>Contribuí en la entrega de tareas responsablemente, desarrollando el análisis del Big Picture y de las reglas de arquitectura. Asimismo, colaboré en el desarrollo de la Landing Page aportando en su creación, redacción y despliegue para lograr los hitos del sprint.</p>
-                <b>AV2</b><p>Contribuí a la planificación y cumplimiento de los objetivos establecidos, participando en equipo en la creación, redacción y despliegue del Backend.</p>
-                <b>TB2</b><p>Fomenté un ambiente de cooperación y respeto para la resolución de los últimos bugs del sistema. Planifiqué, junto con el equipo, las tareas de revisión y la estructuración del informe final, logrando entregar a tiempo el producto.</p>
-
-                <h3>Santiago Atanacio, Jairo Mathias</h3>
-                <b>AV1</b><p>Apoyé en la planificación del equipo redactando las Technical Stories. Además, cumplí puntualmente con mis objetivos asignados en este sprint: diseñé los wireframes de la Landing Page, programé su código fuente y la desplegué exitosamente en GitHub Pages.</p>
-                <b>TB1</b><p>Fomenté un entorno colaborativo e inclusivo, planificando y cumpliendo con las tareas de creación, redacción y despliegue del Frontend.</p>
-                <b>AV2</b><p>Colaboré de forma proactiva en el sprint, organizando las tareas y apoyando a mis compañeros en la creación, redacción y despliegue del Backend.</p>
-                <b>TB2</b><p>Participé en la organización exhaustiva de las tareas de cierre y colaboré de forma equitativa en la redacción de la versión final del informe, garantizando el éxito de nuestras metas para el sprint y la calidad del producto entregado.</p>
-                <br>
-            </td>
-            <td colspan="3" align="justify">
-                <b>AV1</b><p>Se logró culminar el primer avance de manera correcta. Ello nos permitirá seguir para la próxima actividad.</p>
-                <b>TB1</b><p>Se logró cumplir con los objetivos del sprint mediante la planificación de tareas, coordinación del equipo y avance del Frontend Web Application, manteniendo un entorno colaborativo orientado al cumplimiento de los entregables.</p>
-                <b>AV2</b><p>En el AV2, el equipo logró consolidar un entorno colaborativo mediante la planificación de tareas, coordinación de responsabilidades y cumplimiento de objetivos relacionados con el desarrollo del Backend, actualización del Landing Page, avance del Frontend, despliegue y documentación. A pesar de las dificultades técnicas y ajustes requeridos, se mantuvo una comunicación constante para corregir observaciones y mejorar la calidad de los entregables.</p>
-                <b>TB2</b><p>Se alcanzó satisfactoriamente el Release final del proyecto gracias a un entorno de trabajo altamente inclusivo y sinérgico. La correcta y ágil planificación de las tareas de cierre, la distribución equitativa de esfuerzos para la edición de videos y la revisión conjunta del código nos permitieron cumplir con todos los objetivos del curso con total éxito.</p>
-            </td>
-        </tr>
-    </tbody>
+<thead>
+<tr>
+<th colspan="3"><b>Criterio específico</b></th>
+<th colspan="3"><b>Acciones realizadas</b></th>
+<th colspan="3"><b>Conclusiones</b></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="3">Trabaja en equipo para proporcionar liderazgo en forma conjunta.</td>
+<td colspan="3" align="justify">
+<h3>León Morales, Johan Yonel</h3>
+<b>AV1</b><p>Durante el desarrollo de este proyecto, gestioné la participación grupal en la elaboración de las secciones como Style Guidelines y como Domain-Driven Software Architecture, contribuyendo tanto en el diseño visual como en la estructuración lógica del sistema. Además, fomenté el trabajo en equipo durante la creación, redacción y despliegue de la Landing Page.</p>
+<b>TB1</b><p>Durante esta etapa del proyecto, contribuí al despliegue de la Web App enfocándome en la verificación del funcionamiento de las secciones implementadas, la revisión de rutas, archivos de configuración y conexión con el mock server. Además, apoyé en la detección de problemas, impulsando al equipo en la creación, redacción y despliegue del Frontend.</p>
+<b>AV2</b><p>Durante este avance, participé activamente en el desarrollo del Backend del proyecto CortiSense, apoyando en la creación, revisión y organización de servicios necesarios para el funcionamiento de la plataforma. Asimismo, contribuí en la documentación técnica de los Web Services, la revisión de endpoints y la preparación de evidencias relacionadas con el despliegue y funcionamiento del sistema. Mi participación permitió fortalecer el liderazgo compartido dentro del equipo, aportando en la toma de decisiones técnicas y en la coordinación de actividades para cumplir con los objetivos establecidos en el Sprint.</p>
+<b>TB2</b><p>En esta etapa final, coordiné la integración del Frontend con el Backend y tomé el liderazgo en la verificación del despliegue definitivo en la nube. Además, orienté al equipo en la planificación y elaboración del video About-the-Team y la redacción de las conclusiones finales del proyecto.</p>
+<h3>Mauricio Silva, Ghiou Justinn</h3>
+<b>AV1</b><p>Durante el desarrollo del proyecto, contribuí al trabajo en equipo participando activamente en el análisis de la problemática mediante la metodología 5W2H. Asimismo, lideré parte de la fase de Need Finding, elaborando el User Persona, User Task Matrix, User Journey Mapping y Empathy Mapping. También apoyé en la construcción de User Stories y el Product Backlog. Además, tomé la iniciativa junto con mis compañeros en la creación, redacción y despliegue de la Landing Page.</p>
+<b>TB1</b><p>Durante esta etapa del proyecto, participé en la preparación técnica de la Web App para su despliegue, revisando la configuración del proyecto, la instalación de dependencias y la correcta ejecución de la aplicación. Asimismo, aporté liderazgo en la resolución de problemas durante la creación, redacción y despliegue del Frontend en este sprint.</p>
+<b>AV2</b><p>Durante este avance, participé activamente en el desarrollo y mejora de los principales componentes del proyecto CortiSense. Contribuí en la implementación y corrección del Frontend Web Application, revisando vistas, flujos funcionales y elementos de navegación para mantener coherencia con la propuesta del producto. Asimismo, apoyé en una parte del Backend, colaborando en la revisión de servicios, endpoints y evidencias técnicas necesarias para sustentar el avance de los Web Services. Además, me encargué de realizar correcciones importantes en la Landing Page, actualizando el branding de CortiSense, la paleta de colores, imágenes, enlaces de acceso, botones de suscripción y sección de términos. También apoyé en la documentación del informe, incorporando evidencias relacionadas con desarrollo, despliegue, mejora continua y funcionamiento de los componentes del proyecto. Estas actividades me permitieron asumir un rol activo dentro del equipo, aportando liderazgo compartido, coordinación técnica y apoyo en la solución de observaciones para cumplir con los entregables solicitados en el AV2.</p>
+<b>TB2</b><p>Durante el TB2, lideré la revisión y mejora de calidad final de la Landing Page y el Frontend, asegurando una experiencia de usuario fluida y libre de errores. También apoyé activamente al equipo en la producción del video About-the-Product y en la estructuración de la documentación final para asegurar un cierre exitoso.</p>
+<h3>Pareja Calloapaza, Marcelo Fausto</h3>
+<b>AV1</b><p>Contribuí al desarrollo del proyecto mediante la implementación del Big Picture Event Storming e Information Architecture. Ello me permitió definir los contextos de forma sencilla del dominio y también definir la arquitectura del sistema. De esa manera, pude generar un orden respecto a cómo han de ser respetados los avances.</p>
+<b>TB1</b><p>Lideré aspectos clave de la estructuración técnica del Frontend y colaboré de forma constante con mis compañeros en la resolución de problemas de integración de componentes y despliegue continuo en el entorno cloud.</p>
+<b>AV2</b><p>Asumí un rol de liderazgo en la configuración inicial y organización de los servicios en el Backend, guiando al equipo en la correcta aplicación de Clean Architecture y Domain-Driven Design para los distintos Bounded Contexts.</p>
+<b>TB2</b><p>Durante el último sprint, impulsé la validación de la integración final del sistema, coordiné la revisión de las entrevistas de validación y lideré las correcciones finales del proyecto, asegurando la máxima calidad del entregable.</p>
+<h3>Santiago Atanacio, Jairo Mathias</h3>
+<b>AV1</b><p>Contribuí al desarrollo del proyecto mediante la implementación del Big Picture Event Storming e Information Architecture. Ello me permitió definir los contextos de forma sencilla del dominio y también definir la arquitectura del sistema. Además, brindé dirección al equipo participando en la creación, redacción y despliegue de la Landing Page.</p>
+<b>TB1</b><p>Asumí un rol importante coordinando con el equipo para la creación, redacción y despliegue del Frontend, asegurando el avance correcto de este sprint.</p>
+<b>AV2</b><p>Tomé la iniciativa y dirigí conjuntamente los esfuerzos técnicos para la creación, redacción y despliegue del Backend, garantizando un avance estructurado.</p>
+<b>TB2</b><p>Contribuí a la mejora continua del proyecto, asumiendo el liderazgo en la corrección de errores finales en conjunto con mis compañeros, y apoyando activamente en la edición y publicación de los videos de presentación final.</p>
+<br>
+</td>
+<td colspan="3" align="justify">
+<b>AV1</b><p>Se logró completar la primera parte del trabajo sin problemas mayores. De esta manera, hemos asegurado nuestro avance como grupo.</p>
+<b>TB1</b><p>Se logró avanzar con la creación, redacción y despliegue del Frontend Web Application, fortaleciendo el liderazgo compartido del equipo y la coordinación técnica para cumplir con los objetivos del sprint.</p>
+<b>AV2</b><p>Durante el AV2, el equipo fortaleció el liderazgo compartido mediante la distribución de responsabilidades en el desarrollo del Backend, la mejora del Frontend, la actualización del Landing Page, la documentación técnica y la preparación de evidencias del proyecto. La participación conjunta permitió avanzar de manera organizada en los principales componentes de CortiSense y cumplir con los objetivos establecidos para esta etapa.</p>
+<b>TB2</b><p>En la entrega final (TB2), el equipo demostró un liderazgo consolidado y maduro. La integración completa de la solución, la elaboración de los videos y la redacción de las conclusiones se lograron gracias a que cada miembro asumió la dirección proactiva de distintos componentes, colaborando estrechamente para superar los últimos retos técnicos.</p>
+</td>
+</tr>
+<tr>
+<td colspan="3">Crea un entorno colaborativo e inclusivo, establece metas, planifica tareas y cumple objetivos.</td>
+<td colspan="3" align="justify">
+<h3>León Morales, Johan Yonel</h3>
+<b>AV1</b><p>Se logró completar la primera parte del trabajo sin problemas mayores. Todos asumimos un liderazgo compartido en la creación, redacción y despliegue de la Landing Page, asegurando nuestro avance como grupo.</p>
+<b>TB1</b><p>El equipo demostró un liderazgo conjunto durante la creación, redacción y despliegue del Frontend, permitiéndonos cumplir exitosamente con los objetivos trazados para este sprint.</p>
+<b>AV2</b><p>Durante el AV2, colaboré en la planificación y ejecución de tareas relacionadas con el Backend de CortiSense, aportando en la organización del trabajo técnico, revisión de servicios desarrollados y preparación de evidencias para sustentar el avance del sistema. Asimismo, mantuve comunicación con el equipo para coordinar pendientes, resolver observaciones y apoyar en el cumplimiento de los objetivos definidos para el Sprint.</p>
+<b>TB2</b><p>Contribuí a mantener un entorno de trabajo colaborativo durante el cierre del proyecto, planificando las últimas tareas de validación y asegurando que todos los miembros del equipo alcanzaran sus metas individuales para el Release final.</p>
+<h3>Mauricio Silva, Ghiou Justinn</h3>
+<b>AV1</b><p>Durante esta etapa, cumplí con las tareas asignadas de manera responsable, desarrollando el análisis 5W2H y la fase de Need Finding. Además, contribuí en la planificación del proyecto mediante la elaboración de User Stories y el Product Backlog. Asimismo, participé colaborativamente en la creación, redacción y despliegue de la Landing Page para alcanzar nuestros primeros objetivos.</p>
+<b>TB1</b><p>Durante esta etapa del proyecto, participé en la preparación técnica de la Web App para su despliegue, revisando la configuración del proyecto y la instalación de dependencias. Además, cumplí con las metas del sprint trabajando en equipo en la creación, redacción y despliegue del Frontend.</p>
+<b>AV2</b><p>Durante esta etapa, contribuí a la planificación y cumplimiento de tareas relacionadas con el Frontend Web Application, la corrección del Product Landing Page, el apoyo en Backend y la actualización de la documentación del proyecto. Trabajé de forma colaborativa con mis compañeros para revisar observaciones, corregir errores, validar enlaces desplegados, mejorar la presentación visual del producto y organizar evidencias técnicas para el reporte. También participé en la mejora continua de artefactos previamente desarrollados, asegurando que la Landing Page mantenga coherencia con la identidad de CortiSense y que los botones de acceso y planes redirijan correctamente a las rutas desplegadas. Estas acciones permitieron fortalecer el trabajo en equipo, mantener una comunicación constante y cumplir con los objetivos establecidos para el AV2, aportando al desarrollo de una solución digital más completa, ordenada y alineada con los criterios del Final Project.</p>
+<b>TB2</b><p>Mantuve una comunicación inclusiva y activa para la asignación de las últimas correcciones del sistema. Colaboré en la planificación de los tiempos de grabación de los videos requeridos y garanticé que cumpliéramos puntualmente con los estándares de nuestra meta final.</p>
+<h3>Pareja Calloapaza, Marcelo Fausto</h3>
+<b>AV1</b><p>Contribuí en la entrega de tareas responsablemente, desarrollando el análisis del Big Picture y de las reglas de arquitectura, además de otros apartados. De esa manera, pude asegurar el cumplimiento de los objetivos establecidos.</p>
+<b>TB1</b><p>Contribuí en la entrega de tareas responsablemente, desarrollando el análisis del Big Picture y de las reglas de arquitectura. Asimismo, colaboré en el desarrollo de la Landing Page aportando en su creación, redacción y despliegue para lograr los hitos del sprint.</p>
+<b>AV2</b><p>Contribuí a la planificación y cumplimiento de los objetivos establecidos, participando en equipo en la creación, redacción y despliegue del Backend.</p>
+<b>TB2</b><p>Fomenté un ambiente de cooperación y respeto para la resolución de los últimos bugs del sistema. Planifiqué, junto con el equipo, las tareas de revisión y la estructuración del informe final, logrando entregar a tiempo el producto.</p>
+<h3>Santiago Atanacio, Jairo Mathias</h3>
+<b>AV1</b><p>Apoyé en la planificación del equipo redactando las Technical Stories. Además, cumplí puntualmente con mis objetivos asignados en este sprint: diseñé los wireframes de la Landing Page, programé su código fuente y la desplegué exitosamente en GitHub Pages.</p>
+<b>TB1</b><p>Fomenté un entorno colaborativo e inclusivo, planificando y cumpliendo con las tareas de creación, redacción y despliegue del Frontend.</p>
+<b>AV2</b><p>Colaboré de forma proactiva en el sprint, organizando las tareas y apoyando a mis compañeros en la creación, redacción y despliegue del Backend.</p>
+<b>TB2</b><p>Participé en la organización exhaustiva de las tareas de cierre y colaboré de forma equitativa en la redacción de la versión final del informe, garantizando el éxito de nuestras metas para el sprint y la calidad del producto entregado.</p>
+<br>
+</td>
+<td colspan="3" align="justify">
+<b>AV1</b><p>Se logró culminar el primer avance de manera correcta. Ello nos permitirá seguir para la próxima actividad.</p>
+<b>TB1</b><p>Se logró cumplir con los objetivos del sprint mediante la planificación de tareas, coordinación del equipo y avance del Frontend Web Application, manteniendo un entorno colaborativo orientado al cumplimiento de los entregables.</p>
+<b>AV2</b><p>En el AV2, el equipo logró consolidar un entorno colaborativo mediante la planificación de tareas, coordinación de responsabilidades y cumplimiento de objetivos relacionados con el desarrollo del Backend, actualización del Landing Page, avance del Frontend, despliegue y documentación. A pesar de las dificultades técnicas y ajustes requeridos, se mantuvo una comunicación constante para corregir observaciones y mejorar la calidad de los entregables.</p>
+<b>TB2</b><p>Se alcanzó satisfactoriamente el Release final del proyecto gracias a un entorno de trabajo altamente inclusivo y sinérgico. La correcta y ágil planificación de las tareas de cierre, la distribución equitativa de esfuerzos para la edición de videos y la revisión conjunta del código nos permitieron cumplir con todos los objetivos del curso con total éxito.</p>
+</td>
+</tr>
+</tbody>
 </table>
 
 # Capítulo I: Introducción
