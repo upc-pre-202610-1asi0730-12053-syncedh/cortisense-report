@@ -53,31 +53,31 @@ Julio, 2026
 
 | Versión | Fecha | Autor | Descripción de modificación |
 | :---: | :---: | :---: | :---: |
-| 0.1.0 | 05/04/2026 | Marcelo Fausto Pareja Calloapaza | Commit inicial; estructura base del repositorio y esquemas de todos los capítulos (`main`) |
-| 0.2.0 | 06/04/2026 | Marcelo Fausto Pareja Calloapaza | Reorganización de carpetas, adición de logo y descripción de la StartUp (`feature/report-restructure`) |
-| 0.3.0 | 06/04/2026 | Marcelo Pareja / Jairo Santiago / Ghiou Mauricio / Johan León | Adición de subcapítulos 1.1.1, 1.2.1, 1.2.2 y perfiles de los integrantes (`feature/chapter1-student-profile`) |
-| 0.4.0 | 08/04/2026 | Jairo Mathias Santiago Atanacio | Adición del Lean UX Process y estructuración de la plantilla base (`feature/readme`) |
-| 0.5.0 | 11/04/2026 | Johan Yonel León Morales / Ghiou Justinn Mauricio Silva | Cap. 2: Needfinding, segmentación de mercado y análisis de competidores (`feature/chapter2-needfinding`, `feature/chapter2-competitors`) |
-| 0.6.0 | 14/04/2026 | Ghiou Justinn Mauricio Silva | Cap. 2: Empathy Maps, As-is Scenario Map y User Journey Mapping (`feature/chapter2-needfinding`) |
-| 0.7.0 | 15/04/2026 | Jairo Mathias Santiago Atanacio | Cap. 3 y 4: Impact Mapping, User Stories iniciales y primeros wireframes (`feature/chapter3`, `feature/chapter4-ui`) |
-| 0.8.0 | 18/04/2026 | Johan León / Marcelo Pareja | Sprint Planning 1, Sprint Backlog 1 y evidencia de ejecución del Sprint 1 (`feature/chapter5-sprint1`) |
-| 0.9.0 | 22/04/2026 | Todos los integrantes | Conclusiones, bibliografía y consolidación de secciones previas a entrega (`feature/final-sections`) |
+| 0.1.0 | 05/04/2026 | Marcelo Fausto Pareja Calloapaza | Commit inicial; estructura base del repositorio y creación del documento (`main`) |
+| 0.2.0 | 06/04/2026 | Marcelo Fausto Pareja Calloapaza | Adición de la carátula y registro de versiones (`feat/chapter-0-cover-sheet`) |
+| 0.3.0 | 06/04/2026 | Marcelo Pareja / Jairo Santiago / Ghiou Mauricio / Johan León | Perfiles de los integrantes del equipo y descripción de StartUp (`feat/chapter-1-introduction-and-lean-ux`) |
+| 0.4.0 | 08/04/2026 | Jairo Mathias Santiago Atanacio | Adición del Lean UX Process completo (`feat/chapter-1-introduction-and-lean-ux`) |
+| 0.5.0 | 11/04/2026 | Johan Yonel León Morales / Ghiou Justinn Mauricio Silva | Segmentación de mercado, Needfinding y competidores (`feat/chapter-2-requeriments-elicitation-and-analysis`) |
+| 0.6.0 | 14/04/2026 | Ghiou Justinn Mauricio Silva | Empathy Maps, As-is Scenario Map y Journey Mapping (`feat/chapter-2-requeriments-elicitation-and-analysis`) |
+| 0.7.0 | 15/04/2026 | Jairo Mathias Santiago Atanacio | Impact Mapping y redacción inicial de User Stories (`feat/chapter-3-requeriments-specification`) |
+| 0.8.0 | 18/04/2026 | Johan León / Marcelo Pareja | Primeros wireframes, mockups y diseño conceptual (`feat/chapter-4-product-design`) |
+| 0.9.0 | 22/04/2026 | Todos los integrantes | Revisión general y unificación de ramas previas a la primera entrega (`main`) |
 | 1.0.0 | 24/04/2026 | Jairo Mathias Santiago Atanacio | **AV1 Report** |
-| 1.1.0 | 01/05/2026 | Johan Yonel León Morales | Actualización de EventStorming y diseño del modelo de dominio (`feature/chapter4-ddd`) |
-| 1.2.0 | 05/05/2026 | Jairo Mathias Santiago Atanacio | Diagramas C4 renovados, correcciones en arquitectura y etiquetado (`feature/chapter4-ood`) |
-| 1.3.0 | 09/05/2026 | Ghiou Mauricio / Marcelo Pareja | Student outcomes actualizados, Style guidelines web e Information Architecture (`feature/student-outcome`, `feature/chapter4-information-architecture`) |
-| 1.4.0 | 12/05/2026 | Todos los integrantes | Sprint 2: planning, backlog, retrospectiva y evidencias de despliegue temprano (`feature/sprint2`) |
-| 1.5.0 | 13/05/2026 | Johan León / Jairo Santiago | Diagramas de clases frontend/backend y actualización de C4 (`feature/chapter4-class-diagrams`) |
+| 1.1.0 | 01/05/2026 | Johan Yonel León Morales | Actualización de EventStorming y definición del modelo de dominio (`Domain-Driven-Software-Architecture`) |
+| 1.2.0 | 05/05/2026 | Jairo Mathias Santiago Atanacio | Elaboración de diagramas C4 de Contexto y Contenedores (`docs/Domain-Software-Arquitecture-Diagrams`) |
+| 1.3.0 | 09/05/2026 | Ghiou Mauricio / Marcelo Pareja | Definición de estilo tipográfico, colores y UI/UX (`General-Style-Guidelines`, `doc/Web-Style-Guidelines`) |
+| 1.4.0 | 12/05/2026 | Todos los integrantes | Evidencias de ejecución y despliegue del Sprint 1 y 2 (`feat/chapter-5-product-implementation-validation-and-deployment`) |
+| 1.5.0 | 13/05/2026 | Johan León / Jairo Santiago | Actualización de wireframes finales y diseño de producto (`feat/chapter-4-product-design`) |
 | 2.0.0 | 14/05/2026 | Marcelo Fausto Pareja Calloapaza | **TB1 Report** |
-| 2.1.0 | 10/06/2026 | Ghiou Justinn Mauricio Silva | Configuración de evaluación heurística, escala de severidad e issues (`feature/heuristics-validation`) |
-| 2.2.0 | 14/06/2026 | Jairo Mathias Santiago Atanacio | Documentación de interfaces de Bounded Contexts y validación de mockups (`feature/chapter4-ui`) |
-| 2.3.0 | 17/06/2026 | Johan León / Marcelo Pareja | Actualización de diagramas de contexto, contenedores y base de datos (`feature/chapter4-ddd`) |
-| 2.4.0 | 19/06/2026 | Todos los integrantes | About-the-product, About-the-team y Sprint 3 Web Services (`feature/sprint-3`) |
+| 2.1.0 | 10/06/2026 | Ghiou Justinn Mauricio Silva | Inclusión de evaluación heurística, escala de severidad y correcciones (`feat/chapter-5-product-implementation-validation-and-deployment`) |
+| 2.2.0 | 14/06/2026 | Jairo Mathias Santiago Atanacio | Diagramas de componentes, clases y arquitectura física (`docs/Domain-Software-Arquitecture-Diagrams`) |
+| 2.3.0 | 17/06/2026 | Johan León / Marcelo Pareja | Refinamiento técnico de requerimientos funcionales y no funcionales (`feat/chapter-3-requeriments-specification`) |
+| 2.4.0 | 19/06/2026 | Todos los integrantes | Evidencias de Web Services, integraciones del Sprint 3 (`feat/chapter-5-product-implementation-validation-and-deployment`) |
 | 3.0.0 | 21/06/2026 | Johan Yonel León Morales | **AV2 Report** |
-| 3.1.0 | 26/06/2026 | Ghiou Justinn Mauricio Silva | Transcripción e insights de Entrevistas de Validación (`feature/conclusions-annexes`) |
-| 3.2.0 | 28/06/2026 | Jairo Mathias Santiago Atanacio | Refinamiento de especificación de requerimientos, User Stories y Product Design (`feature/chapter3`, `feature/chapter4-wireframes`) |
-| 3.3.0 | 01/07/2026 | Johan Yonel León Morales | Actualización final de Student Outcome y Requirements Elicitation (`feature/student-outcome`) |
-| 3.4.0 | 04/07/2026 | Todos los integrantes | Evidencias del Sprint 4, screenshots de despliegue y Product Implementation (`feature/chapter5-sprint4`) |
+| 3.1.0 | 26/06/2026 | Ghiou Justinn Mauricio Silva | Creación de sección de anexos y transcripciones de entrevistas (`feat/chapter-8-annexes`) |
+| 3.2.0 | 28/06/2026 | Jairo Mathias Santiago Atanacio | Recopilación de fuentes y formato APA para bibliografía (`feat/chapter-7-bibliography`) |
+| 3.3.0 | 01/07/2026 | Johan Yonel León Morales | Redacción de conclusiones del proyecto y student outcomes (`feat/chapter-6-conclusions`) |
+| 3.4.0 | 04/07/2026 | Todos los integrantes | Screenshots de despliegue final en Azure, variables de entorno y evidencias Sprint 4 (`feat/chapter-5-product-implementation-validation-and-deployment`) |
 | 4.0.0 | 05/07/2026 | Marcelo Fausto Pareja Calloapaza | **TB2 Report** |
 
 <div style="page-break-after: always"></div>
