@@ -51,12 +51,33 @@ Julio, 2026
 
 <div align="justify">
 
-|**Versión**|**Fecha**|**Autor**|**Descripción de modificación**|
-| - | - | - | - |
-|1\.0|05/04/2026|Marcelo Fausto Pareja Calloapaza|Se agregó la estructura inicial del proyecto|
-|1\.1\.0|06/04/2026|Marcelo Fausto Pareja Calloapaza|Se agregó la Descripción de la StartUp|
-|1\.1\.1|06/04/2026|Marcelo Fausto Pareja Calloapaza, Jairo Mathias Santiago Atanacio, Guiou Justinn Mauricio Silva|Se agregaron los perfiles de los integrantes del equipo|
-|1\.1\.2|06/04/2026|Jairo Mathias Santiago Atanacio|Se agregó el Lean Ux Process|
+| Versión | Fecha | Autor | Descripción de modificación | 
+| :---: | :---: | :---: | :---: | 
+| 0.1.0 | 05/04/2026 | Marcelo Fausto Pareja Calloapaza | Commit inicial; estructura base del repositorio y creación del documento (`main`) | 
+| 0.2.0 | 06/04/2026 | Marcelo Fausto Pareja Calloapaza | Adición de la descripción de la StartUp y antecedentes (`feature/startup-profile`) |
+| 0.3.0 | 06/04/2026 | Marcelo Pareja / Jairo Santiago / Ghiou Mauricio / Johan León | Perfiles de los integrantes del equipo, roles y responsabilidades (`feature/team-profiles`) | 
+| 0.4.0 | 08/04/2026 | Jairo Mathias Santiago Atanacio | Adición del Lean UX Process, Impact Mapping y primeras User Stories (`feature/lean-ux-design`) | 
+| 0.5.0 | 11/04/2026 | Johan Yonel León Morales / Ghiou Justinn Mauricio Silva | Cap. 2: Segmentación de mercado, Needfinding y análisis de competidores (`feature/chapter2-needfinding`) | 
+| 0.6.0 | 14/04/2026 | Ghiou Mauricio / Marcelo Pareja | Cap. 2: Empathy Maps, As-is Scenario Map y User Journey Mapping (`feature/chapter2-ux-mapping`) | 
+| 0.7.0 | 17/04/2026 | Jairo Mathias Santiago Atanacio | Primeros wireframes de Landing Page y Web App; definición preliminar de Bounded Contexts (`feature/chapter4-wireframes`) | 
+| 0.8.0 | 20/04/2026 | Johan León / Jairo Santiago | Sprint Planning 1, Product Backlog, configuración de GitHub y Trello (`feature/sprint1-planning`) | 
+| 0.9.0 | 22/04/2026 | Todos los integrantes | Revisión general, corrección de formato y consolidación de ramas previas a la primera entrega (`feature/review-av1`) | 
+| 1.0.0 | 24/04/2026 | Marcelo Fausto Pareja Calloapaza | **AV1 Report** | 
+| 1.1.0 | 02/05/2026 | Johan Yonel León Morales | Diseño de EventStorming y estructuración del modelo de dominio (DDD) (`feature/chapter4-ddd`) | 
+| 1.2.0 | 06/05/2026 | Jairo Mathias Santiago Atanacio | Corrección y actualización de diagramas de arquitectura C4 (Contexto y Contenedores) (`feature/c4-diagrams`) |
+| 1.3.0 | 09/05/2026 | Ghiou Mauricio / Marcelo Pareja | Documentación de API REST, actualización de Student Outcomes y requerimientos no funcionales (`feature/api-docs`) | 
+| 1.4.0 | 12/05/2026 | Todos los integrantes | Ejecución del Sprint 2, revisión, retrospectiva y evidencias de despliegue temprano (`feature/sprint2-execution`) | 
+| 2.0.0 | 14/05/2026 | Jairo Mathias Santiago Atanacio | **TB1 Report** | 
+| 2.1.0 | 10/06/2026 | Ghiou Justinn Mauricio Silva | Configuración de evaluación heurística, análisis de severidad e issues de usabilidad (`feature/heuristics-validation`) | 
+| 2.2.0 | 14/06/2026 | Johan León / Marcelo Pareja | Diagramas de componentes, actualización de diagramas de base de datos y esquema relacional (`feature/chapter4-components`) | 
+| 2.3.0 | 17/06/2026 | Jairo Mathias Santiago Atanacio | Integración frontend/backend del Bounded Context de Dashboard y Staff Recovery; Entrevistas de validación (`feature/validation-and-integration`) | 
+| 2.4.0 | 19/06/2026 | Todos los integrantes | Redacción de "About the product" y "About the team", Sprint 3 Web Services (`feature/sprint3-review`) | 
+| 3.0.0 | 21/06/2026 | Johan Yonel León Morales | **AV2 Report** | 
+| 3.1.0 | 28/06/2026 | Johan Yonel León Morales | Actualización final de EventStorming y refinamiento técnico de requerimientos (`feature/final-requirements`) | 
+| 3.2.0 | 01/07/2026 | Jairo Mathias Santiago Atanacio | Actualización final de Landing Page, corrección de diagramas restantes y revisión de código (`feature/frontend-updates`) | 
+| 3.3.0 | 03/07/2026 | Ghiou Mauricio / Marcelo Pareja | Redacción de conclusiones finales, bibliografía, anexos y recopilación de enlaces de videos (`feature/conclusions-outcomes`) | 
+| 3.4.0 | 04/07/2026 | Todos los integrantes | Screenshots de despliegue en Azure, variables de entorno, evidencias del Sprint 4 y Product Implementation (`feature/sprint4-deployment`) | 
+| 4.0.0 | 05/07/2026 | Marcelo Fausto Pareja Calloapaza | **TB2 Report** |
 
 </div><br><br>
 
