@@ -2248,13 +2248,13 @@ Administra usuarios, organizaciones, invitaciones, roles y perfiles privados.
 
 ### 4.6.2. Software Architecture Context Diagram.
 
-<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/C4-Diagrams/context_diagram.png?raw=true" alt="Diseño del diagrama de contexto de CortiSense"/> <br>
+<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/C4-Diagrams/SystemContext.svg?raw=true" alt="Diseño del diagrama de contexto de CortiSense"/> <br>
 
 El Context Diagram muestra a CortiSense como el sistema principal de la solución, interactuando con dos grupos de usuarios: Personal Administrativo y Personal Médico. El Personal Administrativo representa a los responsables de gestionar usuarios, turnos, suscripciones, incidentes, auditoría y reportes, mientras que el Personal Médico consulta su estado de riesgo, alertas, recomendaciones de descanso y turnos asignados. Además, se muestran los sistemas externos que apoyan funciones específicas, como autenticación, pagos y envío de correos.
 
 ### 4.6.3. Software Architecture Container Diagrams.
 
-<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/C4-Diagrams/container_diagram.png?raw=true" alt="Diseño del diagrama de contenedores de CortiSense"/> <br>
+<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/C4-Diagrams/Containers.svg?raw=true" alt="Diseño del diagrama de contenedores de CortiSense"/> <br>
 
 El Container Diagram detalla la estructura principal de CortiSense a nivel de contenedores. La plataforma se compone de una Landing Page informativa, una Web App que entrega la aplicación Vue, una Single Page Application utilizada por los usuarios, una REST API desarrollada en C#/.NET que concentra la lógica de negocio, y una base de datos SQL para almacenar información del sistema. También se visualizan las integraciones externas con Firebase Authentication, Stripe Sandbox y Resend Email API, las cuales son gestionadas desde el backend para mantener centralizada la lógica de autenticación, suscripciones y notificaciones.
 
