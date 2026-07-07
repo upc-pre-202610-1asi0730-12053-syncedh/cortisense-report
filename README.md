@@ -3341,11 +3341,11 @@ Estas referencias serán aplicadas de manera complementaria. Si existiera confli
 
 En esta sección mostraremos los pasos que hemos realizado para poder desplegar cada uno de nuestros proyectos.
 
-**Landing Page**
+#### 5.1.4.1. Landing Page
 
 Con el objetivo de realizar el despliegue de nuestra landing page, seleccionamos la plataforma GitHub Pages, ya que permite alojar sitios web estáticos de forma totalmente gratuita.
 
-**1.  Ingresamos al repositorio de la landing page**
+##### 5.1.4.1.1.  Ingresamos al repositorio de la landing page
 
 <div align="center">
   <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Deployment-Landing/deployment-step-1.png?raw=true" alt="landing repo">
@@ -3353,7 +3353,7 @@ Con el objetivo de realizar el despliegue de nuestra landing page, seleccionamos
 
 <br>
 
-**2.  Nos dirigimos al apartado de settings**
+##### 5.1.4.1.2.  Nos dirigimos al apartado de settings
 
 <div align="center">
   <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Deployment-Landing/deployment-step-2.png?raw=true" alt="landing repo">
@@ -3361,7 +3361,7 @@ Con el objetivo de realizar el despliegue de nuestra landing page, seleccionamos
 
 <br>
 
-**3.  Vamos a la sección de Github Pages**
+##### 5.1.4.1.3.  Vamos a la sección de Github Pages
 
 <div align="center">
   <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Deployment-Landing/deployment-step-3.png?raw=true" alt="landing repo">
@@ -3369,7 +3369,7 @@ Con el objetivo de realizar el despliegue de nuestra landing page, seleccionamos
 
 <br>
 
-**4.  Seleccionamos la rama main de github-pages en el apartado de source y damos click en save para desplegar.**
+##### 5.1.4.1.4.  Seleccionamos la rama main de github-pages en el apartado de source y damos click en save para desplegar.
 
 <div align="center">
   <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Deployment-Landing/deployment-step-4.png?raw=true" alt="landing repo">
@@ -3377,13 +3377,105 @@ Con el objetivo de realizar el despliegue de nuestra landing page, seleccionamos
 
 <br>
 
-**5.  Finalmente estaría todo listo.**
+##### 5.1.4.1.5.  Finalmente estaría todo listo.
 
 <div align="center">
   <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Deployment-Landing/deployment-step-5.png?raw=true" alt="landing repo">
 </div><br>
 
 En resumen, Github Pages usa la rama main como origen de producción. Paralelamente, se configuró un flujo con GitHub actions que reacciona a los commits de la rama develop que compila con el código estático. Es así que, cuando las modificaciones son revisadas y aprobadas por el equipo en su fase de producción, la plataforma actualiza el sitio en una nueva versión.
+
+---
+
+#### 5.1.4.2. Web App (Frontend)
+
+Para realizar el despliegue de nuestra aplicación cliente (Web App), seleccionamos el servicio **Azure Static Web Apps**, ya que se integra de manera nativa con GitHub Actions y nos permite inyectar variables de entorno de manera segura durante el proceso de compilación (Vite).
+
+##### 5.1.4.2.1. Ingresamos al portal de Azure y creamos un nuevo recurso de Static Web App.
+
+<div align="center">
+  <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Deployment-WebApp/deployment-webapp-step-1.png?raw=true" alt="webapp repo">
+</div>
+
+<br>
+
+##### 5.1.4.2.2. Conectamos nuestro repositorio de GitHub (`cortisense-webapp`) y seleccionamos la rama `main`.
+
+<div align="center">
+  <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Deployment-WebApp/deployment-webapp-step-2.png?raw=true" alt="webapp repo">
+</div>
+
+<br>
+
+##### 5.1.4.2.3. Configuramos los detalles de construcción (App location: `/`, Output location: `dist`) y generamos el token de despliegue.
+
+<div align="center">
+  <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Deployment-WebApp/deployment-webapp-step-3.png?raw=true" alt="webapp repo">
+</div>
+
+<br>
+
+##### 5.1.4.2.4. Agregamos el Token y la URL de nuestra API (`VITE_CORTISENSE_API_URL`) a los Secrets de GitHub para que el archivo YAML de CI/CD los consuma durante el build.
+
+<div align="center">
+  <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Deployment-WebApp/deployment-webapp-step-4.png?raw=true" alt="webapp repo">
+</div>
+
+<br>
+
+##### 5.1.4.2.5. El Action de GitHub completa exitosamente el `build_and_deploy_job`, exponiendo nuestra Web App en producción.
+
+<div align="center">
+  <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Deployment-WebApp/deployment-webapp-step-5.png?raw=true" alt="webapp repo">
+</div><br>
+
+En resumen, Azure Static Web Apps generó automáticamente el flujo de trabajo en `.github/workflows`. De esta manera, cada `push` o `Pull Request` dirigido a la rama `main` compila los componentes estáticos y los actualiza en la nube sin intervención manual.
+
+---
+
+#### 5.1.4.3. Platform (Backend)
+
+Para alojar nuestra API y lógica de negocio, utilizamos una arquitectura basada en contenedores. Seleccionamos **Azure Container Registry (ACR)** para almacenar nuestras imágenes Docker y **Azure Web App for Containers** para ejecutar el servicio en la nube.
+
+##### 5.1.4.3.1. Creamos nuestro Container Registry (`cortisenseacr2026`) y nuestro Web App en el grupo de recursos de Azure.
+
+<div align="center">
+  <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Deployment-Platform/deployment-platform-step-1.png?raw=true" alt="platform repo">
+</div>
+
+<br>
+
+##### 5.1.4.3.2. Obtenemos las credenciales de acceso del Registry y el perfil de publicación (Publish Profile) del Web App.
+
+<div align="center">
+  <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Deployment-Platform/deployment-platform-step-2.png?raw=true" alt="platform repo">
+</div>
+
+<br>
+
+##### 5.1.4.3.3. Guardamos estas credenciales como Secrets dentro de nuestro repositorio `cortisense-platform` en GitHub.
+
+<div align="center">
+  <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Deployment-Platform/deployment-platform-step-3.png?raw=true" alt="platform repo">
+</div>
+
+<br>
+
+##### 5.1.4.3.4. Configuramos el archivo `deploy.yml` para que inicie sesiòn en Docker, construya la imagen con el tag del `github.sha` y la suba a Azure Container Registry.
+
+<div align="center">
+  <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Deployment-Platform/deployment-platform-step-4.png?raw=true" alt="platform repo">
+</div>
+
+<br>
+
+##### 5.1.4.3.5. El job `Deploy to Azure Web App` finaliza exitosamente lanzando la imagen Docker actualizada, habilitando nuestros endpoints de la API en producción.
+
+<div align="center">
+  <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Deployment-Platform/deployment-platform-step-5.png?raw=true" alt="platform repo">
+</div><br>
+
+De esta forma, logramos implementar un flujo CI/CD altamente escalable. Cualquier integración hacia la rama `main` actualiza el contenedor de Docker asegurando que los usuarios de CortiSense consuman siempre la última versión estable del Platform.
 
 ## 5.2. Landing Page, Services & Applications Implementation.
 ### 5.2.1. Sprint 1
