@@ -4958,3 +4958,9 @@ Landing Page desplegada: [cortisense-website](https://www.cortisense.space/)
 Web App desplegada: [cortisense-webapp](https://app.cortisense.space/)
 
 Platform desplegada: [cortisense-platform](https://api.cortisense.space/swagger/index.html)
+
+## Credenciales de prueba
+
+Admin: admin101@hospitalcentral.com / Admin123!
+Supervisor: supervisor101@hospitalcentral.com / Supervisor123!
+Doctor: lgomez101@hospitalcentral.com / Doctor123!
