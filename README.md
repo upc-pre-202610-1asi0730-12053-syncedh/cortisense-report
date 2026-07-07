@@ -3103,19 +3103,60 @@ Para el ciclo de vida de CortiSense, el equipo de PircaIndustries utiliza el sig
 
 Se implementa la metodología Git Flow para gestionar el desarrollo de CortiSense, garantizando que el monitoreo de salud nunca se vea interrumpido por código inestable. Adicionalmente, se eligió GitHub como plataforma de control de versiones, aprovechando su funcionalidad GitHub Pages. Esta característica permite desplegar el proyecto de manera sencilla, facilitando la visualización del sitio web a partir de archivos en formato .html mediante la generación de un enlace accesible. Respecto a la documentación de nuevas funcionalidades, se decidió crear ramas bajo la nomenclatura "feature/sprint-1-development" para cada componente iplementado. De esta forma, se asegura el orden y progreso al momento de desarrollar el proyecto.<br><br>
 
-Enlace de la Landing Page: https://syncedhealth-aplicacionesweb.github.io/upc-pre-202610-1asi0730-12053-SyncedHealth-website/
+**Enlace del Website (Landing Page):** [https://www.cortisense.space](https://www.cortisense.space/)
 
 <div align="center">
     <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Code_Management/landing-desplegada.png?raw=true" alt="Landing Page">
 </div><br>
 
-Repositorio GitHub de la Landing Page: https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-website.git <br><br>
+**Repositorio GitHub del Website (Landing Page):** https://github.com/upc-pre-202610-1asi0730-12053-syncedh/cortisense-website
+<br><br>
 
 <div align="center">
     <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Code_Management/landing-repositorio.png?raw=true"  alt="Repositorio landing page">
 </div><br>
 
-Repositorio GitHub de los archivos feature:
+**Enlace de la WebApp (Frontend):** [https://app.cortisense.space](https://app.cortisense.space)
+<br><br>
+
+<div align="center">
+    <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Code_Management/webapp-desplegada.png?raw=true"  alt="Repositorio Web App">
+</div><br>
+
+**Repositorio GitHub del WebApp (Frontend):** https://github.com/upc-pre-202610-1asi0730-12053-syncedh/cortisense-webapp
+<br><br>
+
+<div align="center">
+    <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Code_Management/webapp-repositorio.png?raw=true"  alt="Repositorio Web App">
+</div><br>
+
+**Enlace de la Platform (Backend):** [https://api.cortisense.space/swagger/index.html](https://api.cortisense.space/swagger/index.html)
+<br><br>
+
+<div align="center">
+    <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Code_Management/platform-desplegada.png?raw=true"  alt="Repositorio Platform">
+</div><br>
+
+**Repositorio GitHub de la Platform (Backend):** https://github.com/upc-pre-202610-1asi0730-12053-syncedh/cortisense-platform
+<br><br>
+
+<div align="center">
+    <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Code_Management/platform-repositorio.png?raw=true"  alt="Repositorio Platform">
+</div><br>
+
+**Evidencia de Gestión de Ramas (Git Flow)**
+
+Para aislar el desarrollo de nuevas características sin afectar el código estable, todo el equipo trabaja bajo una nomenclatura estandarizada:
+
+* `main`: Rama de producción, contiene el código 100% testeado que se despliega automáticamente en Azure y GitHub Pages.
+* `develop`: Rama principal de integración para el equipo.
+* `feature/[nombre]`: Ramas temporales para tareas específicas (ej. `feature/sprint-1-development`). 
+
+A continuación, se evidencia la correcta aplicación de estas ramas y los flujos de trabajo (Pull Requests) integrados en nuestros repositorios durante el desarrollo del Sprint:
+
+<div align="center">
+    <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Code_Management/git-flow-branches.png?raw=true"  alt="Ramas Git Flow en repositorios">
+</div><br>
 
 ### 5.1.3. Source Code Style Guide & Conventions.
 
