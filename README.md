@@ -4501,6 +4501,93 @@ A continuación, se presentan las estadísticas de colaboración obtenidas desde
   </tbody>
 </table>
 
+<table>
+  <thead>
+    <tr>
+      <th colspan="2">Entrevista #2<br></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Nombre</td>
+      <td>Rusbel Arnaldo</td>
+    </tr>
+    <tr>
+      <td>Apellidos</td>
+      <td>Cajaleón Gámez</td>
+    </tr>
+    <tr>
+      <td>Edad</td>
+      <td>28 años</td>
+    </tr>
+    <tr>
+      <td>Distrito</td>
+      <td>San Borja - Lima</td>
+    </tr>
+    <tr>
+      <td>Centro de Trabajo</td>
+      <td>Clínica privada</td>
+    </tr>
+    <tr>
+      <td>Área</td>
+      <td>Emergencias</td>
+    </tr>
+    <tr>
+      <td>Tecnologías usadas en su campo laboral</td>
+      <td>Celular, computadora del área, monitores de signos vitales</td>
+    </tr>
+    <tr>
+      <td>Motivación</td>
+      <td>Durante la validación, el interés principal se centra en evaluar si CortiSense puede ser útil para monitorear el agotamiento del personal médico mediante una Web App conectada a un dispositivo IoT. Se revisa cómo la plataforma organiza la información por roles, permite visualizar signos vitales, niveles de fatiga, alertas clínicas y acciones de recuperación, lo cual podría apoyar una detección más rápida de casos críticos y mejorar la toma de decisiones dentro del entorno médico.</td>
+    </tr>
+    <tr>
+      <td>Frustración</td>
+      <td>En la validación se evidencia la necesidad de que el sistema sea claro, rápido y fácil de interpretar, especialmente porque la información sobre fatiga, signos vitales, alertas y recuperación debe entenderse sin dificultad. También se identifica que una plataforma con datos desordenados, pantallas saturadas o indicadores poco claros podría dificultar el seguimiento del estado del personal médico y retrasar la respuesta ante casos críticos.</td>
+    </tr>
+    <tr>
+      <td>Sistemas que usa para detectar o reducir el impacto de la carga laboral</td>
+      <td>Durante la validación se comentó el uso de una pulsera o dispositivo wearable con tecnología IoT para monitorear indicadores biométricos del personal médico. Este dispositivo permitiría registrar datos relacionados con fatiga, estrés o signos vitales, los cuales luego serían visualizados en la Web App CortiSense para generar alertas tempranas y apoyar la toma de decisiones.</td>
+    </tr>
+    <tr>
+      <td>Preferencias Visuales</td>
+      <td>Durante la validación se revisan distintos paneles de CortiSense y se observa la importancia de mostrar la información de manera clara mediante tarjetas, tablas, gráficos, porcentajes, etiquetas de estado y niveles de riesgo. La organización por roles facilita que el Administrador gestione personal, equipos, invitaciones y suscripción; que el Supervisor revise alertas clínicas, personal en riesgo, anomalías, acciones preventivas y turnos; y que el Doctor consulte su estado, signos vitales, turnos y recuperación. En general, se valora que los datos provenientes del dispositivo IoT/wearable se presenten de forma simple, visual y directa, evitando saturar la pantalla.</td>
+    </tr>
+    <tr>
+      <td>Evidencia</td>
+      <td><div align="center"><img src="link" alt="Entrevista Rusbel Cajaleón"></div></td>
+    </tr>
+    <tr>
+      <td>Link</td>
+      <td><p><a target="_blank" href="https://upcedupe-my.sharepoint.com/personal/u202411627_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202411627%5Fupc%5Fedu%5Fpe%2FDocuments%2Fvalidation%2Dinterviews%2Fvalidation%2Dinterviews%2Drusbel%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ecedc5163%2D1b4c%2D4c9c%2D880d%2D0635aaa077b9" title="Title">Link del video</a></p></td>
+    </tr>
+    <tr>
+      <td>Duración<br></td>
+      <td>00:00 min - 14:20 min</td>
+    </tr>
+    <tr>
+      <td>Timing<br></td>
+      <td>
+        00:00 - 00:30: Introducción y presentación de CortiSense como solución para prevenir el agotamiento médico con monitoreo inteligente.<br>
+        00:30 - 01:00: Acceso a la Web App e inicio de sesión.<br>
+        01:00 - 03:30: Recorrido por panel de "Administrador" (Resumen general, Personal, Equipos e Invitaciones).<br>
+        03:30 - 05:30: Revisión del flujo de invitaciones y registro de usuario mediante correo, rol, área de trabajo y especialidad.<br>
+        05:30 - 06:30: Revisión de "Suscripción" y planes disponibles en panel de Administrador.<br>
+        06:30 - 07:30: Revisión de "Configuración" y transición entre roles.<br>
+        07:30 - 09:30: Recorrido por panel de "Supervisor" (Alertas clínicas, Personal en riesgo, Turnos y Personal asignado).<br>
+        09:30 - 10:30: Inicio de sesión como Doctor para validar la experiencia del personal médico.<br>
+        10:30 - 11:30: Revisión de "Mis signos vitales" con datos como cortisol, HRV, frecuencia cardiaca, nivel de fatiga y estado crítico.<br>
+        11:30 - 13:30: Revisión de "Mi recuperación", acciones preventivas, historial y recomendaciones.<br>
+        13:30 - 14:20: Comentarios finales sobre el uso del sistema, monitoreo mediante dispositivo IoT/wearable y cierre de la validación.
+      </td>
+    </tr>
+    <tr>
+      <td>Resumen</td>
+      <td>En esta segunda entrevista, Rusbel evaluó el prototipo interactivo de CortiSense, navegando por los distintos paneles de la aplicación web: Administrador, Supervisor y Doctor. Durante el recorrido se revisaron funciones como gestión de personal, equipos, invitaciones, suscripción, alertas clínicas, turnos, signos vitales, recuperación y recomendaciones preventivas. La validación permitió observar cómo la Web App puede presentar información biométrica asociada a una pulsera o dispositivo IoT/wearable, transformándola en indicadores como fatiga, frecuencia cardiaca, HRV, cortisol, estados críticos y acciones de recuperación. En general, el video se enfoca en validar la claridad, organización y utilidad del prototipo para apoyar el monitoreo del agotamiento médico y facilitar la toma de decisiones en contextos de alta carga laboral.</td>
+    </tr>
+  </tbody>
+</table>
+
+
 <br><br>
 
 **Segmento Objetivo 2: Administradores y Directores Médicos**<br>
