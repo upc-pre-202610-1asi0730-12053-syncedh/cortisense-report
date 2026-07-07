@@ -2,15 +2,31 @@
 <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/UPC_logo_transparente.png?raw=true"></img><br>
 
 
-<h3>Universidad Peruana de Ciencias Aplicadas</h3>
-<h4>Facultad de Ingeniería</h4>
-<h4>Carrera de Ingeniería de Software</h4>
-<h4>Código y Nombre del Curso: 1asi0730 - Aplicaciones Web</h4>
-<h4>NRC: 12053</h4>
-<h4>Docente: Efraín Ricardo Bautista Ubillús</h4>
-<h4>Informe del Trabajo Final</h4>
-<h4>Startup: SyncedHealth</h4>
-<h4>Producto: CortiSense</h4>
+# Universidad Peruana de Ciencias Aplicadas
+
+## Carrera de Ingeniería de Software
+
+### 1ASI0730
+
+### Aplicaciones Web
+
+**NRC**
+
+12053
+
+**Informe de Trabajo: TB2**
+
+**Docente**
+
+Bautista Ubillús, Efrain Ricardo
+
+**Startup**
+
+SyncedHealth
+
+**Producto**
+
+CortiSense
 
 #### Relación de integrantes 
 | Integrante                  | Código         |
