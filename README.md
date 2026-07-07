@@ -31,7 +31,6 @@ CortiSense
 #### Relación de integrantes 
 | Integrante                  | Código         |
 |---------------------------------|----------------|
-| Gutierrez Santillán, Sebastián Augusto             | u202417329     |
 | León Morales, Johan Yonel             | u20231h055     |
 | Mauricio Silva, Ghiou Justinn        | u20241e242     |
 | Pareja Calloapaza, Marcelo Fausto          | u202411627     |
