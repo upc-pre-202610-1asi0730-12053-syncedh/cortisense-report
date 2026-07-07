@@ -1350,99 +1350,88 @@ La sesión fue desarrollada mediante el uso de la *Step by Step Guide to run you
 **Big Picture Event Storming - Mapa**
 
 <div align="center">
-  <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/big-picture-event-storming/big-picture-event-storming.png?raw=true" alt="iam-bc">
+  <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/big-picture-event-storming/big-picture-event-storming.png?raw=true" alt="big-picture-event-storming">
 </div>
 
 **Interpretación de hallazgos clave**
-* **Interpretación por función de notas:** Las notas anaranjadas nos permitieron la definición de los eventos del dominio, los cuales constituyen el registro histórico del estado biométrico del personal médico. En CortiSense destaca el intercontexto entre el monitoreo de salud y la gestión de turnos, formando un flujo de información continuo que vincula la fatiga con la operación. Por otro lado, gracias a las notas rosadas, el software funciona como un hub tecnológico capaz de integrarse con los Sistemas de Información Hospitalaria (HIS) existentes, aprovechando la infraestructura de la clínica. Finalmente, las notas amarillas permiten identificar la división de responsabilidades entre el personal operativo (médicos) y los gestores estratégicos (directores).
-* **Hallazgos clave del análisis:** Gracias a las notas rojas, es posible el descubrimiento de zonas de fricción críticas, como los dilemas éticos sobre la privacidad de datos biométricos o la precisión de los sensores en entornos de alta interferencia. Estos hallazgos servirán para mejorar iterativamente la arquitectura del sistema y los protocolos de consentimiento. Además, mediante las notas rosadas, CortiSense garantiza que el monitoreo no sea solo diagnóstico, sino una herramienta de intervención inmediata ante riesgos de salud ocupacional.
-* **Conclusiones:** El Big Picture Event Storming revela a CortiSense no solo como una aplicación de monitoreo, sino como un mecanismo de sincronización vital entre el bienestar biológico y la logística administrativa de los hospitales inteligentes. Este mapeo permitió ordenar los comportamientos del software, donde cada nota azul se convierte en una funcionalidad del sistema y cada nota lila en una regla de negocio clínica que protege tanto al profesional sanitario como la seguridad del paciente.
+* **Interpretación por función de notas:** Las notas anaranjadas nos permitieron definir los eventos del dominio, los cuales constituyen el registro histórico del estado biométrico y administrativo del personal médico. En CortiSense destaca la interacción crítica entre **Clinical Risk Assessment** y **Shift Coordination**, formando un flujo de información continuo que vincula la fatiga operativa con la asignación segura de guardias. Por otro lado, la incorporación de **Staff Recovery** permite que el sistema ofrezca planes de recuperación personalizados y no solo alertas. Finalmente, las notas amarillas diferencian claramente las responsabilidades entre el personal operativo (médicos), los supervisores clínicos y los administradores, los cuales son gestionados íntegramente por el **Identity & Access Management (IAM)**.
+* **Hallazgos clave del análisis:** Gracias a las notas rojas, descubrimos zonas de fricción críticas, como la estricta necesidad de llevar un registro inmutable de acciones sensibles y decisiones médicas, lo que derivó en la creación formal del contexto de **Audit & Compliance**. Además, el modelo de negocio B2B requirió la integración temprana del contexto de **Subscription Management** para controlar la facturación, los límites operativos por clínica y la integración con pasarelas de pago (Stripe).
+* **Conclusiones:** El Big Picture Event Storming revela a CortiSense no solo como una aplicación de monitoreo, sino como un ecosistema modular de 6 Bounded Contexts core. Este mapeo permitió organizar los comportamientos del software, donde la evaluación de riesgos clínicos (Clinical Risk Assessment) protege al personal, la coordinación logística de turnos y equipos (Shift Coordination) asegura la operatividad ininterrumpida, y el motor de auditoría (Audit Compliance) garantiza la transparencia y cumplimiento normativo de las decisiones hospitalarias inteligentes.
 
 ## 2.5. Ubiquitous Language
-Este glosario define los términos clave del dominio de CortiSense, producto desarrollado por SyncedHealth, con el propósito de mantener un lenguaje común y sin ambigüedades entre los equipos de desarrollo, el personal sanitario, los proveedores de dispositivos IoT y los demás stakeholders involucrados.
+Este glosario define los términos clave del dominio de CortiSense, alineados directamente con los Bounded Contexts (BC) reales descubiertos en la arquitectura del código, con el propósito de mantener un lenguaje común y sin ambigüedades entre desarrolladores, personal sanitario y stakeholders.
 
-El proceso de elaboración se realizó en conjunto con el equipo multidisciplinario, tomando como referencia el libro "Domain-Driven Design: Tackling Complexity in the Heart of Software" de Eric Evans (2003). Durante la fase de Event Storming y Needfinding, se identificaron los conceptos más recurrentes en entrevistas, flujos y artefactos clínicos, los cuales se estandarizaron en el presente glosario.
-
----
-
-### IoT Telemetry
-
-| Term (English) | Definición (Español) |
-| - | - |
-| Wearable Device (Dispositivo wearable) | Sensor portátil usado por el personal médico durante su jornada para capturar biomarcadores en tiempo real. |
-| Biomarker (Biomarcador) | Indicador fisiológico medible —cortisol y HRV— que refleja el estado físico y mental del médico en un momento determinado. |
-| Telemetry (Telemetría) | Transmisión continua de datos biométricos desde el wearable hacia la plataforma para su procesamiento. |
-| Pulse Signal (Señal de pulso) | Dato crudo de frecuencia cardíaca emitido por el sensor antes de ser procesado por el sistema de análisis. |
-| Device Pairing (Emparejamiento) | Proceso de vinculación Bluetooth entre el wearable y la cuenta del médico dentro de la plataforma. |
-| Signal Loss (Pérdida de señal) | Interrupción en la transmisión de datos del sensor que activa de forma automática una alerta de desconexión. |
-| Sampling Threshold (Umbral de muestreo) | Frecuencia mínima con la que el sensor debe enviar lecturas para que el análisis biométrico sea considerado válido. |
+El proceso de elaboración se realizó en conjunto con el equipo multidisciplinario, tomando como referencia el libro "Domain-Driven Design: Tackling Complexity in the Heart of Software" de Eric Evans (2003).
 
 ---
 
-### Health Analytics
+### Identity & Access Management (IAM)
 
 | Term (English) | Definición (Español) |
 | - | - |
-| Cortisol Level (Nivel de cortisol) | Concentración de la hormona del estrés medida en el organismo del médico, utilizada como indicador primario de fatiga ocupacional. |
-| Heart Rate Variability — HRV (Variabilidad de frecuencia cardíaca) | Variación en el intervalo entre latidos cardíacos; a menor HRV, mayor estado de estrés acumulado en el profesional. |
-| Resilience Score (Índice de resiliencia) | Puntuación calculada por el algoritmo que resume la capacidad actual del médico para responder a la demanda laboral sin riesgo de colapso. |
-| Fatigue State (Estado de fatiga) | Clasificación del nivel de agotamiento del médico en tres categorías: Normal, Medio y Crítico. |
-| Risk Threshold (Umbral de riesgo) | Valor límite de cortisol o HRV a partir del cual el sistema considera que el médico se encuentra en peligro de colapso por burnout. |
-| Biometric Baseline (Línea base biológica) | Perfil fisiológico individual calibrado durante las primeras sesiones de uso, sobre el cual se comparan todas las lecturas posteriores. |
-| Biometric Anomaly (Anomalía biométrica) | Patrón inusual en los datos que se desvía significativamente de la línea base registrada para el médico. |
-| Burnout Trend (Tendencia de agotamiento) | Proyección algorítmica de la probabilidad de colapso por burnout en el corto plazo, basada en el historial biométrico acumulado. |
+| Organization (Organización) | Entidad principal (hospital o clínica) que contrata el servicio de CortiSense. Posee un RUC y un estado de registro. |
+| User (Usuario) | Cuenta individual dentro de la plataforma que pertenece a una Organización. Puede tener roles como Admin, Clinical Supervisor o Medical Staff. |
+| Invitation (Invitación) | Token temporal enviado por correo electrónico para que un nuevo usuario se registre y se una a una organización específica. |
+| Role (Rol) | Nivel de permisos dentro de IAM que define el Control de Acceso de un usuario en el sistema. |
+| Private Profile (Perfil privado) | Configuración de seguridad donde los datos biométricos sensibles son visibles únicamente para el usuario y personal autorizado. |
 
 ---
 
-### Shift Orchestrator
+### Subscription Management
 
 | Term (English) | Definición (Español) |
 | - | - |
-| Shift (Guardia) | Período de trabajo asignado a un médico, con hora de inicio, hora de fin y área clínica definida. |
-| Critical Shift (Turno crítico) | Guardia en la que el médico asignado presenta niveles de fatiga que superan el umbral de riesgo establecido por el sistema. |
-| Shift Rescheduling (Reprogramación de turno) | Acción de reasignar o modificar una guardia basándose en el estado biométrico actual del médico. |
-| Relief Assignment (Relevo) | Asignación de un médico de reemplazo cuando el titular de la guardia supera el umbral de riesgo crítico. |
-| Workload (Carga laboral) | Volumen y complejidad de las atenciones asignadas a un médico durante su guardia. |
-| Availability (Disponibilidad) | Estado de un médico que indica si puede ser asignado a un turno según su descanso acumulado y su índice de resiliencia. |
-| Rest Block (Bloque de descanso) | Período protegido dentro del cronograma en el que el médico no puede recibir nuevas asignaciones de guardia. |
+| Subscription (Suscripción) | Contrato activo que vincula a una Organización con un Plan de facturación específico (ej. Básico, Pro, Enterprise). |
+| Plan (Plan) | Paquete de características comerciales que define límites operativos (máx. doctores, supervisores, áreas) y el nivel de soporte. |
+| Checkout Session (Sesión de pago) | Transacción temporal generada vía integración con Stripe para procesar el pago o actualización de una suscripción de forma segura. |
+| Stripe Customer (Cliente de Stripe) | Identificador externo utilizado para sincronizar la facturación de la organización con la pasarela de pagos. |
 
 ---
 
-### Notification Engine
+### Clinical Risk Assessment
 
 | Term (English) | Definición (Español) |
 | - | - |
-| Fatigue Alert (Alerta de fatiga) | Notificación generada cuando los biomarcadores superan el umbral de riesgo, dirigida al médico y, de corresponder, al administrador. |
-| Escalated Alert (Alerta escalada) | Notificación enviada automáticamente al dashboard gerencial cuando el médico ignora una alerta inicial por más de diez minutos. |
-| Preventive Notification (Notificación preventiva) | Aviso emitido antes de alcanzar el umbral crítico, con el fin de anticipar el agotamiento y permitir una intervención temprana. |
-| Rest Suggestion (Sugerencia de pausa) | Recomendación personalizada de descanso generada a partir del estado biométrico actual del médico. |
-| Omission Incident (Incidencia de omisión) | Registro automático que se genera cuando un médico no responde a una alerta de fatiga crítica. |
+| Risk Assessment (Evaluación de riesgo) | Registro unificado del estado actual de fatiga y riesgo del personal en un momento dado, generado por el algoritmo de CortiSense. |
+| Vital Sign Reading (Lectura de signos vitales) | Captura de telemetría proveniente del wearable (IoT) que incluye frecuencia cardíaca (Heart Rate) y variabilidad cardíaca (HRV). |
+| Fatigue Level (Nivel de fatiga) | Puntuación biométrica (ej. 0-100) que determina el grado de cansancio acumulado u operativo del médico. |
+| Risk Level (Nivel de riesgo) | Clasificación categórica (LOW, MEDIUM, HIGH) derivada de la correlación entre el nivel de fatiga y las lecturas vitales. |
+| Vital Sign Anomaly (Anomalía de signo vital) | Detección automática de una métrica (ej. taquicardia) que supera un umbral de seguridad (Threshold) predefinido por el sistema. |
+| Clinical Alert (Alerta clínica) | Notificación crítica generada cuando el Risk Level es alto o se detecta una anomalía severa que requiere intervención inmediata. |
 
 ---
 
-### Identity & Access Management
+### Shift Coordination
 
 | Term (English) | Definición (Español) |
 | - | - |
-| Medical Staff (Personal sanitario operativo) | Médicos, residentes y enfermeros que usan el wearable y consultan sus propios datos de salud en la plataforma. |
-| Medical Director (Director médico) | Administrador con acceso al dashboard gerencial y capacidad de aprobar reprogramaciones de turno basadas en datos biométricos. |
-| Medical License Number (Número de colegiatura) | Identificador único de un médico registrado, utilizado para vincular su perfil profesional con la plataforma. |
-| Private Profile (Perfil privado) | Configuración en la que los datos biométricos del médico son visibles únicamente para él mismo. |
-| Access Control (Control de acceso) | Conjunto de permisos que define qué información puede visualizar o modificar cada rol dentro del sistema. |
+| Work Area (Área de trabajo) | Departamento o unidad clínica dentro del hospital (ej. Emergencias, UCI) donde se asignan turnos y equipos médicos. |
+| Specialty (Especialidad) | Rama médica de especialización a la que pertenece un miembro del personal (ej. Cardiología, Pediatría). |
+| Shift Record (Registro de turno) | Periodo de guardia programado (Scheduled Start/End) que incluye eventos operativos de entrada (Check-in) y salida (Check-out). |
+| Care Team (Equipo de atención) | Agrupación de usuarios liderada por un Clinical Supervisor, asignada a responder a las necesidades de una Work Area específica. |
+| Team Member (Miembro del equipo) | Relación de pertenencia que vincula a un Usuario operativo (Medical Staff) con un Care Team determinado. |
 
 ---
 
-### Medical Staff & Rest Management
+### Staff Recovery
 
 | Term (English) | Definición (Español) |
 | - | - |
-| Burnout (Burnout) | Síndrome de agotamiento profesional crónico producido por la sobrecarga laboral sostenida sin recuperación adecuada. |
-| Mandatory Rest (Descanso obligatorio) | Período de reposo que el sistema impone automáticamente cuando el índice de resiliencia cae por debajo del mínimo operativo. |
-| Cortisol Recovery (Recuperación de cortisol) | Proceso fisiológico de normalización hormonal durante un período de descanso, monitorizado en tiempo real por la plataforma. |
-| Active Break (Pausa activa) | Interrupción breve guiada —respiración, movimiento— sugerida por la aplicación para reducir el cortisol entre procedimientos. |
-| Wellbeing Report (Reporte de bienestar) | Documento generado por la plataforma con el historial de fatiga, alertas y recuperación de un médico en un período definido. |
-| Heat Map (Mapa de calor) | Visualización del dashboard que muestra el nivel de estrés agregado del personal por área del hospital. |
-| At-Risk Unit (Área en riesgo) | Departamento hospitalario donde el nivel de fatiga colectiva supera el umbral seguro de operación clínica. |
+| Recovery Plan (Plan de recuperación) | Recomendación oficial emitida por el sistema para mitigar el Burnout cuando un médico sufre alertas clínicas recurrentes. |
+| Suggested Rest Days (Días de descanso sugeridos) | Cantidad de días de reposo calculados por la plataforma basados en el historial de fatiga y el índice de riesgo del usuario. |
+| Status (Estado del plan) | Condición actual de la recuperación del médico, indicando si el plan de reposo está PENDING (pendiente) o COMPLETED (completado). |
+| Burnout (Agotamiento) | Síndrome de estrés crónico operativo que el Bounded Context de recuperación busca prevenir activamente. |
+
+---
+
+### Audit & Compliance
+
+| Term (English) | Definición (Español) |
+| - | - |
+| Audit Log (Registro de auditoría) | Entrada inmutable que documenta quién (Actor), qué (Resource) y cuándo (Timestamp) realizó una acción crítica en el sistema. |
+| Actor User (Usuario actor) | El usuario que desencadenó el evento registrado en la auditoría (ej. un supervisor aprobando una reprogramación de turno). |
+| Resource Type (Tipo de recurso) | Entidad core del sistema que fue modificada (ej. "ShiftRecord", "RiskAssessment") para garantizar trazabilidad. |
+| Severity (Severidad de auditoría) | Nivel de importancia de la acción registrada (INFO, WARNING, CRITICAL) vital para reportes de cumplimiento normativo y legal. |
 
 ---
 
@@ -1450,6 +1439,7 @@ El proceso de elaboración se realizó en conjunto con el equipo multidisciplina
 
 El Ubiquitous Language establece una base de comunicación compartida entre los dominios médico, tecnológico y de negocio de CortiSense. Gracias a este glosario, el equipo puede mantener coherencia conceptual en el modelado del software, los flujos de trabajo clínico y la documentación del proyecto. Este lenguaje será actualizado de manera iterativa conforme se avance hacia el modelado de dominio y la implementación del MVP.
 
+---
 
 # Capítulo III: Requirements Specification
 
