@@ -1451,7 +1451,6 @@ El proceso de elaboración se realizó en conjunto con el equipo multidisciplina
 El Ubiquitous Language establece una base de comunicación compartida entre los dominios médico, tecnológico y de negocio de CortiSense. Gracias a este glosario, el equipo puede mantener coherencia conceptual en el modelado del software, los flujos de trabajo clínico y la documentación del proyecto. Este lenguaje será actualizado de manera iterativa conforme se avance hacia el modelado de dominio y la implementación del MVP.
 
 
-
 # Capítulo III: Requirements Specification
 
 ## 3.1. User Stories.
