@@ -1994,28 +1994,25 @@ Para la elaboración del Design-Level Event Storming de CortiSense se utilizó u
 
 En esta fase inicial, el objetivo fue reconocer los hechos importantes que ocurren dentro del sistema y que permiten representar el dominio desde una perspectiva orientada al monitoreo preventivo del estrés, la fatiga laboral, la continuidad operativa hospitalaria y la gestión segura del bienestar del personal médico.
 
-Los eventos fueron agrupados en siete bounded contexts:
+Los eventos fueron agrupados en seis bounded contexts:
 
-+ **Subscription & Plan Management:**  
-Gestiona la selección del plan, confirmación del pago, activación de la suscripción y habilitación de funcionalidades contratadas.
++ **Clinical Risk Assessment:**
+Procesa datos biométricos, calcula el nivel de fatiga y detecta riesgos clínicos. Además, gestiona la generación de alertas y su escalamiento al supervisor cuando el médico entra en estado crítico.
 
-+ **Identity & Access Management:**  
++ **Shift Coordination:**
+Evalúa turnos críticos, detecta sobrecarga, bloquea asignaciones riesgosas y coordina reemplazos para mantener la continuidad operativa.
+
++ **Staff Recovery:**
+Gestiona los planes de recuperación, recomendaciones de descanso, notificación al personal médico y seguimiento de la aceptación o rechazo del reposo.
+
++ **Audit & Compliance:**
+Registra decisiones críticas, acciones del supervisor, bloqueos de turno y mantiene la evidencia auditable para asegurar trazabilidad institucional.
+
++ **Subscription Management:**
+Gestiona la selección del plan, confirmación del pago, activación de la suscripción y habilitación de funcionalidades contratadas por el hospital.
+
++ **Identity & Access Management:**
 Administra el registro, autenticación, invitaciones, asignación de roles y control de acceso de los usuarios dentro de la cuenta hospitalaria.
-
-+ **Clinical Risk Assessment:**  
-Procesa datos biométricos, calcula el nivel de fatiga y detecta riesgos clínicos o condiciones extremas en el personal médico.
-
-+ **Incident & Escalation Management:**  
-Gestiona la apertura de incidentes, asignación de prioridad, alertas al supervisor.
-
-+ **Shift Coordination:**  
-Evalúa turnos críticos, detecta sobrecarga, bloquea asignaciones riesgosas y permite sugerir reemplazos para mantener la continuidad operativa.
-
-+ **Staff Recovery:**  
-Gestiona recomendaciones de descanso, notificación al personal médico y seguimiento de la aceptación o rechazo del plan de recuperación.
-
-+ **Audit & Compliance:**  
-Registra decisiones críticas, acciones del supervisor, bloqueos de turno y reportes de cumplimiento para asegurar trazabilidad institucional.
 
 #### 4.6.1.3. Operational Event Flows
 
@@ -2025,26 +2022,23 @@ En esta etapa, los eventos identificados previamente fueron organizados en secue
 
 Los flujos fueron organizados según los bounded contexts definidos:
 
++ **Clinical Risk Assessment:**  
+Muestra cómo CortiSense recibe datos biométricos, calcula el puntaje de fatiga y actualiza el nivel de riesgo. A partir de esta evaluación, el sistema detecta anomalías biométricas y genera alertas clínicas, notificando de inmediato a los supervisores para atención prioritaria.
+
++ **Shift Coordination:**  
+Describe el proceso de evaluación de turnos críticos. Cuando se identifica un riesgo extremo o una sobrecarga en un médico, el sistema bloquea preventivamente el turno, sugiere reemplazos en el Care Team y apoya la redistribución de la carga laboral.
+
++ **Staff Recovery:**  
+Representa el flujo de recuperación del personal médico. El sistema identifica la necesidad de descanso crónico, emite un plan de recuperación, notifica al profesional y registra si el plan fue aceptado (iniciando el reposo) o rechazado.
+
++ **Audit & Compliance:**  
+Funciona como un flujo transversal. Captura evaluaciones de riesgo, decisiones críticas, acciones del supervisor (ej. aprobar turnos) y bloqueos, manteniendo un historial inmutable para reportes normativos.
+
 + **Subscription & Plan Management:**  
 Representa el flujo comercial inicial del hospital, desde la selección del plan hasta la activación de la suscripción y habilitación de funcionalidades. También contempla la restricción de acceso cuando la suscripción expira.
 
 + **Identity & Access Management:**  
 Describe el proceso de incorporación de usuarios mediante invitaciones. El administrador hospitalario invita a los usuarios, estos aceptan la invitación, completan su registro, reciben un rol y acceden al sistema según sus permisos.
-
-+ **Clinical Risk Assessment:**  
-Muestra cómo CortiSense recibe datos biométricos, calcula el puntaje de fatiga y actualiza el nivel de riesgo. A partir de esta evaluación, el sistema puede detectar fatiga elevada, anomalías biométricas o riesgo extremo.
-
-+ **Incident & Escalation Management:**  
-Representa el flujo de gestión de incidentes cuando se detecta un riesgo clínico. El incidente se abre, se asigna prioridad y se alerta al supervisor.
-
-+ **Shift Coordination:**  
-Describe el proceso de evaluación de turnos críticos. Cuando se identifica un riesgo extremo o una sobrecarga, CortiSense puede bloquear el turno, sugerir un reemplazo y apoyar la redistribución de la carga laboral.
-
-+ **Staff Recovery:**  
-Representa el flujo de recuperación del personal médico. El sistema identifica la necesidad de descanso, emite una recomendación, notifica al profesional y registra si el plan fue aceptado o rechazado.
-
-+ **Audit & Compliance:**  
-Funciona como un flujo transversal. Registra evaluaciones de riesgo, decisiones críticas, acciones del supervisor y bloqueos de turno, manteniendo trazabilidad para reportes de cumplimiento.
 
 #### 4.6.1.4. Friction and Risk Points
 
@@ -2054,67 +2048,64 @@ En esta etapa, se identificaron los principales puntos de fricción que pueden a
 
 Los principales friction and risk points identificados fueron:
 
++ **Incomplete Biometric Data:**  
+Ocurre cuando los datos de telemetría (IoT) recibidos son incompletos, desactualizados o inconsistentes, afectando el cálculo de la fatiga o el riesgo del personal.
+
++ **Risk Misclassification:**  
+Puede generarse cuando el sistema clasifica incorrectamente el nivel de riesgo, provocando alertas innecesarias o la omisión de un caso crítico de agotamiento.
+
++ **Supervisor Response Delay:**  
+Se produce cuando el administrador clínico no acusa recibo (Acknowledge) oportunamente de una alerta clínica, retrasando la intervención preventiva.
+
++ **Replacement Not Available:**  
+Se presenta cuando el sistema bloquea una asignación riesgosa, pero no existe un reemplazo disponible en el equipo para mantener la continuidad operativa.
+
++ **Unresolved Recovery Refusal:**  
+Ocurre cuando el personal médico rechaza un plan de recuperación y este rechazo queda desatendido por parte del administrador clínico.
+
++ **Missing Audit Evidence:**  
+Falla técnica donde una decisión crítica, alerta o recomendación de descanso no queda correctamente grabada en el log de auditoría.
+
 + **Payment Confirmation Delay:**  
 Puede ocurrir cuando la confirmación del pago de la suscripción tarda o falla, retrasando la activación del servicio para la institución.
 
 + **Invitation Acceptance Friction:**  
-Se presenta cuando un usuario invitado no comprende el proceso de aceptación o intenta registrarse sin estar vinculado a una cuenta institucional.
-
-+ **Incomplete Biometric Data:**  
-Ocurre cuando los datos biométricos recibidos son incompletos, desactualizados o inconsistentes, afectando el cálculo del nivel de estrés, fatiga o riesgo asociado al personal médico.
-
-+ **Risk Misclassification:**  
-Puede generarse cuando el sistema clasifica incorrectamente el nivel de riesgo, provocando alertas innecesarias o la omisión de un caso crítico relacionado con estrés elevado, fatiga extrema o agotamiento laboral.
-
-+ **Supervisor Response Delay:**  
-Se produce cuando el administrador clínico no revisa oportunamente una alerta de riesgo, retrasando la intervención preventiva sobre el personal médico afectado.
-
-+ **Replacement Not Available:**  
-Se presenta cuando el sistema bloquea una asignación riesgosa, pero no existe un reemplazo disponible para mantener la continuidad operativa del servicio.
-
-+ **Unresolved Recovery Refusal:**  
-Ocurre cuando el personal médico rechaza una recomendación de descanso o recuperación y el rechazo queda pendiente de seguimiento por parte del administrador clínico.
-
-+ **Missing Audit Evidence:**  
-Se genera cuando una decisión crítica, alerta, acción del administrador clínico, recomendación de descanso o bloqueo de turno no queda correctamente registrada en el historial de auditoría.
+Se presenta cuando un usuario invitado no comprende el proceso de aceptación o intenta registrarse sin usar el token de la cuenta institucional.
 
 #### 4.6.1.5. Critical Decision Events
 
 <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/Desing-Level-Event-Storming/critical_decision_events.jpg" alt="Diseño del diagrama de eventos de decisión crítica."> <br>
 
-En esta etapa, se identificaron los eventos que representan puntos clave de decisión dentro de CortiSense. Estos eventos marcan cambios importantes en el flujo del sistema, ya que pueden activar procesos críticos como apertura de incidentes, escalamiento, bloqueo de asignaciones, recuperación del personal médico o generación de evidencia institucional.
+En esta etapa, se identificaron los eventos que representan puntos clave de decisión dentro de CortiSense. Estos eventos marcan cambios importantes en el flujo del sistema, ya que pueden activar procesos críticos como alertas clínicas, bloqueo de asignaciones, o generación de planes de recuperación.
 
 Los principales critical decision events identificados fueron:
 
-+ **SubscriptionActivated:**  
-Indica que la suscripción de la institución se encuentra activa y que CortiSense puede habilitar las funcionalidades correspondientes al plan contratado.
-
-+ **RoleAssigned:**  
-Define el nivel de acceso del usuario dentro de la cuenta institucional, permitiendo diferenciar responsabilidades entre administrador, personal médico, supervisor y responsables médicos o administrativos.
-
 + **ClinicalRiskDetected:**  
-Marca el momento en que CortiSense identifica un riesgo asociado al estrés, fatiga o agotamiento del personal médico a partir de los datos biométricos y fisiológicos procesados.
+Marca el momento en que CortiSense identifica un aumento del riesgo basado en el estrés o fatiga calculada.
 
-+ **ExtremeRiskDetected:**  
-Representa una condición crítica relacionada con estrés elevado, fatiga extrema o indicadores fisiológicos desfavorables, la cual puede activar procesos de bloqueo de turno o evaluación de asignaciones riesgosas.
-
-+ **RiskIncidentOpened:**  
-Convierte un riesgo detectado en un incidente formal que debe ser gestionado por el personal responsable.
++ **ClinicalAlertGenerated**
+Representa una condición crítica o anomalía vital detectada, la cual dispara notificaciones inmediatas al Clinical Supervisor.
 
 + **ShiftBlocked:**  
-Representa una acción preventiva para evitar que un profesional médico en condición de riesgo sea asignado a un turno, procedimiento o actividad crítica.
+Acción preventiva que evita que un médico en condición de alto riesgo sea asignado a un turno o área crítica.
 
 + **ShiftReassigned:**  
-Confirma que la carga laboral fue reasignada para mantener la continuidad operativa de la institución sin comprometer el bienestar del personal médico.
+Confirma que un turno ha sido reasignado exitosamente a un reemplazo para mantener la operatividad hospitalaria.
 
 + **RecoveryPlanRejected:**  
-Indica que el personal médico rechazó una recomendación de descanso o recuperación, por lo que CortiSense debe registrar esta decisión y mantenerla disponible para seguimiento.
+El médico rechaza formalmente la recomendación de descanso, forzando a CortiSense a auditar esta decisión riesgosa.
 
 + **RecoveryConfirmed:**  
-Confirma que el proceso de recuperación fue completado satisfactoriamente o que el personal médico aceptó y cumplió la recomendación preventiva.
+El profesional de la salud acepta y cumple satisfactoriamente su plan de reposo, restaurando sus niveles operativos base.
 
 + **AuditLogUpdated:**  
-Consolida la trazabilidad de las decisiones críticas, alertas, intervenciones y acciones tomadas dentro de CortiSense.
+Consolida la trazabilidad inmutable de todas las acciones preventivas, intervenciones del supervisor y configuraciones administrativas.
+
++ **SubscriptionActivated:**  
+Indica que la suscripción de la institución está activa y que CortiSense habilita las funcionalidades del plan contratado.
+
++ **RoleAssigned:**  
+Define el nivel de acceso del usuario, separando lógicamente a médicos, supervisores y administradores.
 
 #### 4.6.1.6. Actor and System Commands
 
@@ -2124,26 +2115,23 @@ En esta etapa, se identificaron los comandos que permiten desencadenar eventos d
 
 Para mantener claridad en el modelo, los comandos se clasificaron en dos tipos: comandos ejecutados por usuarios y comandos ejecutados como respuesta automática del sistema ante eventos del dominio.
 
-+ **Subscription & Plan Management:**  
-Este contexto agrupa los comandos relacionados con la selección del plan, confirmación de pago y activación de funcionalidades contratadas. El `Institutional Administrator` ejecuta comandos como `SelectSubscriptionPlan` y `ConfirmSubscriptionPayment`, mientras que el sistema puede ejecutar `ActivateSubscription`, `EnablePlanFeatures` y `RestrictFeatureAccess` según el estado de la suscripción.
-
-+ **Identity & Access Management:**  
-Incluye los comandos necesarios para registrar usuarios, aceptar invitaciones, asignar roles y controlar accesos dentro de la cuenta institucional. El `Institutional Administrator` puede ejecutar `RegisterInstitutionalAdministrator`, `InviteUser` y `AssignUserRole`. Los demás usuarios pueden ejecutar `AcceptInvitation`, `CompleteUserRegistration`, `SignIn`, `RequestAccess` y `SignOut`. En caso de permisos inválidos, el sistema puede ejecutar `RejectUnauthorizedAccess`.
-
 + **Clinical Risk Assessment:**  
-Contiene los comandos encargados de procesar datos biométricos y evaluar el nivel de riesgo asociado al estrés, fatiga o agotamiento del personal médico. El `Medical Staff` puede iniciar la sincronización mediante `SyncBiometricData`. A partir de ello, el sistema ejecuta comandos como `CalculateStressLevel`, `CalculateFatigueScore`, `UpdateRiskLevel`, `DetectCortisolThreshold`, `DetectBiometricAnomaly`, `DetectClinicalRisk` y `DetectExtremeRisk`.
-
-+ **Incident & Escalation Management:**  
-Este contexto reúne los comandos relacionados con la apertura, atención y escalamiento de incidentes generados por condiciones de estrés elevado, fatiga extrema o riesgo crítico. El sistema puede ejecutar `OpenRiskIncident`, `AssignIncidentPriority`, `AlertSupervisor`. Por su parte, el `Clinical Supervisor`puede ejecutar comandos como `AcknowledgeRisk`, `ResolveIncident` y `CloseIncident`.
+Contiene los comandos encargados de procesar datos biométricos y evaluar el nivel de riesgo asociado al estrés, fatiga o agotamiento del personal médico. El `Medical Staff` inicia el envío de telemetría con `SyncBiometricData`. El sistema ejecuta en background `CalculateFatigueScore`, `UpdateRiskLevel` y `DetectBiometricAnomaly`. Si hay un problema grave, el sistema dispara `GenerateClinicalAlert`. Posteriormente, el `Clinical Supervisor` ejecuta `AcknowledgeAlert` y `ResolveAlert` para atender el caso.
 
 + **Shift Coordination:**  
-Agrupa los comandos orientados a evaluar turnos críticos, bloquear asignaciones riesgosas y reasignar carga laboral. El `Clinical Supervisor` puede ejecutar `EvaluateCriticalShift`, `RequestShiftReassignment` y `ReassignShift`. Además, el sistema puede ejecutar `DetectShiftOverload`, `BlockShift`, `SuggestReplacement` y `RedistributeWorkload`.
+Agrupa los comandos orientados a evaluar turnos críticos, bloquear asignaciones riesgosas y reasignar carga laboral. El `Clinical Supervisor` ejecuta `RequestShiftReassignment` y `ReassignShift`. El sistema monitorea y ejecuta `DetectShiftOverload`, `BlockShift`, y `SuggestReplacement`.
 
 + **Staff Recovery:**  
-Este contexto contiene comandos asociados a la recomendación y seguimiento de recuperación del personal médico. El `Clinical Supervisor` puede ejecutar `IssueRecoveryRecommendation`, `SuggestRestPeriod` y `ConfirmRecovery`. El `Medical Staff` puede ejecutar `AcceptRecoveryPlan` o `RejectRecoveryPlan`. El sistema puede complementar el flujo con `DetectRecoveryNeed`, `NotifyMedicalStaff` y `RecordRecoveryRejection`.
+Este contexto contiene comandos asociados a la recomendación y seguimiento de recuperación del personal médico. El `Clinical Supervisor` emite `IssueRecoveryPlan`. El `Medical Staff` ejecuta `AcceptRecoveryPlan` o `RejectRecoveryPlan`. El sistema puede sugerir la necesidad con `DetectRecoveryNeed` y `ConfirmRecoveryStatus`.
 
 + **Audit & Compliance:**  
-Incluye comandos destinados a registrar evidencia y generar trazabilidad institucional. La mayoría son ejecutados automáticamente por políticas de auditoría, como `RecordRiskAssessment`, `RecordCriticalDecision`, `RecordSupervisorAction`, `RecordShiftBlocking` y `UpdateAuditLog`. Finalmente, el `Institutional Administrator` puede ejecutar `GenerateComplianceReport` para consultar evidencia consolidada sobre riesgos detectados, intervenciones realizadas y decisiones preventivas tomadas dentro de CortiSense.
+Incluye comandos destinados a registrar evidencia y generar trazabilidad institucional. Mayoritariamente son ejecutados por políticas de forma automática: `RecordRiskAssessmentAudit`, `RecordCriticalDecision`, `RecordSupervisorAction`. El `Admin` puede ejecutar `GenerateComplianceReport`.
+
++ **Subscription & Plan Management:**  
+Este contexto agrupa los comandos relacionados con la selección del plan, confirmación de pago y activación de funcionalidades contratadas. El `Admin` ejecuta comandos como `SelectSubscriptionPlan` y `ConfirmSubscriptionPayment`. El sistema responde ejecutando `ActivateSubscription`, `EnablePlanFeatures` y `RestrictFeatureAccess`.
+
++ **Identity & Access Management:**  
+Incluye los comandos necesarios para registrar usuarios, aceptar invitaciones, asignar roles y controlar accesos dentro de la cuenta institucional. El `Admin` ejecuta `RegisterOrganization`, `InviteUser` y `AssignUserRole`. Los médicos o supervisores ejecutan `AcceptInvitation`, `SignIn` y `SignOut`. El sistema verifica y dispara `RejectUnauthorizedAccess` en caso de fallo.
 
 #### 4.6.1.7. Business Policies and Automated Reactions
 
@@ -2151,26 +2139,23 @@ Incluye comandos destinados a registrar evidencia y generar trazabilidad institu
 
 En esta etapa, se definieron las políticas de negocio que permiten que CortiSense reaccione automáticamente ante eventos relevantes del dominio. Estas políticas representan reglas que conectan eventos con nuevos comandos, permitiendo automatizar decisiones como activación de suscripciones, evaluación de indicadores biométricos, clasificación del riesgo por estrés o fatiga, apertura de incidentes, escalamiento, bloqueo de turnos, recomendaciones de recuperación y registro de auditoría.
 
-+ **Subscription & Plan Management:**  
-Las políticas de este contexto controlan la activación del servicio según el estado de pago y suscripción. `PaidSubscriptionConfirmedPolicy` permite activar la suscripción después de confirmar el pago, `ActiveSubscriptionFeaturePolicy` habilita las funcionalidades del plan contratado y `ExpiredSubscriptionRestrictionPolicy` restringe el acceso cuando la suscripción vence.
-
-+ **Identity & Access Management:**  
-Este contexto usa políticas para validar el acceso de los usuarios según sus roles. `RoleBasedAccessPolicy` permite conceder acceso después de asignar un rol, mientras que `PermissionValidationPolicy` verifica si el usuario tiene permisos suficientes para ejecutar una acción dentro del sistema.
-
 + **Clinical Risk Assessment:**  
-Las políticas de este contexto procesan los datos biométricos y determinan el nivel de riesgo. `FatigueScoreEvaluationPolicy` calcula el puntaje de fatiga, `RiskLevelClassificationPolicy` clasifica el nivel de riesgo, `FatigueThresholdPolicy` detecta umbrales excedidos, `BiometricAnomalyPolicy` identifica anomalías y `ExtremeRiskPolicy` reconoce condiciones críticas.
-
-+ **Incident & Escalation Management:**  
-Este contexto aplica políticas para gestionar incidentes clínicos. `DetectedRiskIncidentPolicy` abre un incidente cuando se detecta riesgo clínico, `IncidentPriorityPolicy` asigna su prioridad, `SupervisorNotificationPolicy` alerta al supervisor.
+Las políticas de este contexto procesan los datos biométricos y determinan el nivel de riesgo. `FatigueScoreEvaluationPolicy` calcula el score cada que llegan datos vitales, `RiskLevelClassificationPolicy` cambia de LOW a HIGH si cruza umbrales, `BiometricAnomalyPolicy` busca picos, y `ClinicalAlertPolicy` genera alertas automáticas a supervisores cuando hay riesgo extremo.
 
 + **Shift Coordination:**  
-Las políticas de este contexto apoyan la continuidad operacional. `UnsafeShiftDetectionPolicy` detecta asignaciones riesgosas, `CriticalShiftBlockingPolicy` bloquea turnos críticos, `ReplacementSelectionPolicy` sugiere reemplazos disponibles y `WorkloadRedistributionPolicy` actualiza la distribución de carga laboral.
+Las políticas de este contexto apoyan la continuidad operacional. `UnsafeShiftDetectionPolicy` audita turnos futuros contra niveles de riesgo actuales, `CriticalShiftBlockingPolicy` detiene operaciones de asignación, y `ReplacementSelectionPolicy` busca médicos con la misma especialidad y bajo riesgo en el mismo Care Team.
 
 + **Staff Recovery:**  
-Este contexto utiliza políticas para gestionar la recuperación del personal médico. `RecoveryNeedPolicy` detecta la necesidad de descanso, `RecoveryNotificationPolicy` notifica al personal médico sobre recomendaciones de recuperación y `RecoveryRefusalTrackingPolicy` registra el rechazo de un plan de recuperación.
+Este contexto utiliza políticas para gestionar la recuperación del personal médico. `RecoveryNeedPolicy` propone descanso cuando las alertas clínicas son frecuentes, y `RecoveryRefusalTrackingPolicy` escala el problema al administrador si el médico se niega a descansar.
 
 + **Audit & Compliance:**  
-Las políticas de auditoría registran evidencia de eventos críticos. `RiskAssessmentAuditPolicy`, `CriticalDecisionAuditPolicy`, `SupervisorActionAuditPolicy` y `ShiftBlockingAuditPolicy` guardan trazabilidad de decisiones importantes. Finalmente, `AuditTrailSynchronizationPolicy` actualiza el historial de auditoría para mantener evidencia institucional consolidada.
+Las políticas de auditoría registran evidencia de eventos críticos. `AuditTrailSynchronizationPolicy` escucha de manera asíncrona todos los Domain Events críticos de los otros BCs y graba los logs de cumplimiento normativo (quién aprobó qué alerta y cuándo).
+
++ **Subscription & Plan Management:**  
+Las políticas de este contexto controlan la activación del servicio según el estado de pago y suscripción. `PaidSubscriptionConfirmedPolicy` activa el tenant al confirmar pago en Stripe, `ActiveSubscriptionFeaturePolicy` desbloquea los límites operativos y `ExpiredSubscriptionRestrictionPolicy` congela cuentas en mora.
+
++ **Identity & Access Management:**  
+Este contexto usa políticas para validar el acceso de los usuarios según sus roles. `RoleBasedAccessPolicy` autoriza endpoints de la API, y `PermissionValidationPolicy` chequea si el usuario pertenece al Work Area correspondiente antes de dejarle ver datos.
 
 #### 4.6.1.8. Decision Support Read Models
 
@@ -2178,27 +2163,23 @@ Las políticas de auditoría registran evidencia de eventos críticos. `RiskAsse
 
 En esta etapa, se identificaron los read models necesarios para que los usuarios de CortiSense puedan consultar información relevante y tomar decisiones dentro del sistema. Estas vistas no representan la lógica principal del dominio, sino proyecciones de información generadas a partir de los eventos, comandos y políticas previamente definidos.
 
-+ **Subscription & Plan Management:**  
-Incluye vistas como `Subscription Plan View`, `Active Subscription Summary` y `Available Features View`, que permiten al `Hospital Administrator` revisar el plan contratado, el estado de la suscripción y las funcionalidades disponibles.
-
-+ **Identity & Access Management:**  
-Considera read models como `User Management View`, `Role Assignment View` y `Access Status View`, utilizados para visualizar usuarios invitados, cuentas registradas, roles asignados y permisos activos dentro de la cuenta hospitalaria.
-
 + **Clinical Risk Assessment:**  
-Contiene vistas como `Personal Risk Status View`, `Clinical Risk Dashboard` y `Biometric Data Summary`. Estas permiten al personal médico consultar su propio estado de riesgo y a los supervisores revisar indicadores de fatiga o riesgo clínico.
-
-+ **Incident & Escalation Management:**  
-Incluye `Incident Management View` y `Supervisor Alert Queue`, que permiten gestionar incidentes abiertos y alertas pendientes.
+Contiene vistas como `Clinical Risk Dashboard` (vista del supervisor con todos los médicos), `Personal Risk Status View` (vista móvil del doctor), y la `Clinical Alert Queue View` donde caen las notificaciones de riesgo.
 
 + **Shift Coordination:**  
-Utiliza vistas como `Shift Risk View`, `Replacement Suggestions View` y `Workload Distribution View`, orientadas a revisar turnos críticos, reemplazos sugeridos y redistribución de carga laboral.
+Utiliza vistas como `Shift Calendar View`, `Replacement Suggestions View` y `Workload Distribution View` para organizar recursos humanos.
 
 + **Staff Recovery:**  
-Considera `Recovery Recommendation View` y `Recovery Status View`, que permiten al personal médico revisar recomendaciones de descanso y al supervisor monitorear la aceptación, rechazo o confirmación de recuperación.
+Considera `Recovery Recommendation View` para los médicos y `Recovery Status View` para los supervisores.
 
 + **Audit & Compliance:**  
 Incluye `Audit Log View` y `Compliance Report View`, destinadas a consultar registros de auditoría, decisiones críticas y reportes de cumplimiento institucional.
 
++ **Subscription & Plan Management:**  
+Incluye vistas como `Subscription Plan View` y `Active Subscription Summary` para que el Admin revise facturación.
+
++ **Identity & Access Management:**  
+Considera read models como `User Management View` y `Role Assignment View`, quienes listan a los doctores y supervisores vinculados al hospital.
 
 #### 4.6.1.9. Integrated External Services
 
@@ -2207,43 +2188,37 @@ Incluye `Audit Log View` y `Compliance Report View`, destinadas a consultar regi
 En esta etapa, se identificaron los sistemas externos que interactúan con CortiSense para complementar sus procesos principales. Estos servicios permiten cubrir funcionalidades relacionadas con pagos, autenticación, envío de correos y simulación o recepción de datos biométricos asociados al monitoreo del estrés y la fatiga del personal médico.
 
 + **Stripe Sandbox:**  
-Se utiliza para simular el pago de suscripciones de los planes contratados por el hospital. Este servicio se relaciona con el flujo de `Subscription & Plan Management`, especialmente entre el comando `ConfirmSubscriptionPayment` y el evento `SubscriptionPaymentConfirmed`.
+Integra la pasarela de pagos con nuestro BC de `Subscription Management`. Simula el checkout session y emite webhooks que nosotros escuchamos. Este servicio se relaciona con el flujo de `Subscription & Plan Management`.
 
-+ **Firebase Authentication:**  
-Permite gestionar el registro, inicio de sesión y cierre de sesión de los usuarios. Este sistema externo apoya al contexto de `Identity & Access Management`, principalmente en eventos como `UserRegistered`, `UserAuthenticated` y `UserLoggedOut`.
++ **Firebase Authentication / JWT Auth:**  
+Permite gestionar el Auth Token. Se alinea con nuestro `Identity & Access Management` para la validación de identidad y claims de rol.
 
 + **Resend Email API:**  
-Se utiliza para enviar correos relacionados con invitaciones, alertas y notificaciones importantes. Participa en procesos como `UserInvited`, `SupervisorAlerted` y `MedicalStaffNotified`.
+Servicio transaccional de correo que usamos a través de Domain Events para despachar invitaciones a usuarios, envío de resúmenes y alertas críticas de salud.
 
 #### 4.6.1.10. Domain Aggregates and Responsibility Boundaries
 
 <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/Desing-Level-Event-Storming/domain_aggregates.jpg" alt="Diseño del diagrama de aggregates y límites de responsabilidad."> <br>
 
-En esta etapa, se identificaron los aggregates principales de CortiSense. Cada aggregate representa un objeto de dominio encargado de proteger reglas, validar cambios de estado y mantener la consistencia dentro de su bounded context.
+En esta etapa, se identificaron los aggregates principales de CortiSense. Cada Aggregate es una entidad raíz que protege la consistencia de sus datos internos y emite Domain Events cuando cambia de estado.
 
-+ **Subscription:**  
-Pertenece a `Subscription & Plan Management` y controla la selección del plan, activación de la suscripción, habilitación de funcionalidades y restricción de acceso cuando la suscripción expira.
++ **RiskAssessment & ClinicalAlert (ClinicalRiskAssessment BC):**
+Centraliza las lecturas de signos vitales (HRV) y calcula internamente el Score de fatiga. Genera alertas inmutables cuando el estrés excede la línea base del médico.
 
-+ **HospitalWorkspace:**  
-Pertenece a `Identity & Access Management` y representa el espacio institucional del hospital. Gestiona invitaciones, roles y accesos de los usuarios vinculados a una cuenta hospitalaria.
++ **ShiftRecord (ShiftCoordination BC):**
+Agregado que bloquea y gestiona la asistencia, el check-in, check-out y se vincula a áreas clínicas (WorkAreas).
 
-+ **UserAccount:**  
-También pertenece a `Identity & Access Management` y representa la cuenta individual del usuario. Controla el registro, autenticación y cierre de sesión.
++ **RecoveryPlan (StaffRecovery BC):**
+Supervisa el ciclo de vida del descanso recomendado, manteniendo el control entre el estado PENDING, ACCEPTED, o REJECTED.
 
-+ **RiskAssessment:**  
-Pertenece a `Clinical Risk Assessment` y centraliza la evaluación de datos biométricos. Permite calcular el puntaje de fatiga, actualizar el nivel de riesgo y detectar condiciones clínicas relevantes.
++ **AuditLog (AuditCompliance BC):**
+Agregado inmutable que se añade por cada acción significativa; no puede ser editado ni borrado.
 
-+ **RiskIncident:**  
-Pertenece a `Incident & Escalation Management` y gestiona el ciclo de vida de un incidente, desde su apertura hasta su resolución.
++ **Subscription (Subscription BC):**
+Protege el plan contratado, las fechas de vigencia y el estado de pago.
 
-+ **ShiftAssignment:**  
-Pertenece a `Shift Coordination` y controla la evaluación de turnos críticos, bloqueo de asignaciones riesgosas, sugerencia de reemplazos y redistribución de carga laboral.
-
-+ **RecoveryPlan:**  
-Pertenece a `Staff Recovery` y gestiona las recomendaciones de descanso, aceptación o rechazo del plan y confirmación de recuperación del personal médico.
-
-+ **AuditTrail:**  
-Pertenece a `Audit & Compliance` y registra las decisiones críticas del sistema, manteniendo trazabilidad sobre riesgos, incidentes, acciones del supervisor y bloqueos de turno.
++ **Organization & User (IAM BC):**
+Controla la información de perfil, las credenciales, el rol del profesional y la pertenencia a un espacio clínico.
 
 #### 4.6.1.11. Bounded Contexts
 
@@ -2251,29 +2226,25 @@ Pertenece a `Audit & Compliance` y registra las decisiones críticas del sistema
 
 Enlace: https://miro.com/app/board/uXjVHfjcSSw=/
 
-A partir del Design-Level Event Storming, se definieron los bounded contexts principales de CortiSense. Cada contexto delimita una responsabilidad específica del dominio y evita mezclar reglas de negocio que pertenecen a procesos distintos.
-
-+ **Subscription & Plan Management:**  
-Gestiona los planes de pago, la activación de suscripciones y la habilitación de funcionalidades según el plan contratado por el hospital.
-
-+ **Identity & Access Management:**  
-Administra el registro de usuarios, invitaciones, autenticación, asignación de roles y control de acceso dentro de una cuenta hospitalaria.
+A partir de nuestro análisis y la reestructuración del backend, consolidamos CortiSense en 6 Bounded Contexts core (más un Shared Kernel). Cada uno delimita una responsabilidad específica del dominio:
 
 +  **Clinical Risk Assessment:**  
-Procesa datos biométricos del personal médico, calcula el puntaje de fatiga y determina niveles de riesgo clínico.
-
-+ **Incident & Escalation Management:**  
-Gestiona incidentes generados por riesgos clínicos, incluyendo alertas al supervisor y reconocimiento del riesgo.
+El núcleo analítico. Ingiere telemetría IoT, evalúa fatiga, calcula niveles de riesgo y dispara Alertas Clínicas que los supervisores deben atender de inmediato.
 
 + **Shift Coordination:**  
-Evalúa turnos críticos, detecta sobrecarga, bloquea asignaciones riesgosas y permite coordinar reemplazos para mantener la continuidad operacional.
+Logística hospitalaria. Gestiona equipos (Care Teams), especialidades y turnos (Shift Records).
 
 + **Staff Recovery:**  
-Gestiona recomendaciones de descanso, notificaciones al personal médico y seguimiento de los planes de recuperación.
+Prevención de burnout. Administra las sugerencias de descanso prolongado y monitorea que los médicos con riesgo extremo recuperen sus capacidades.
 
 + **Audit & Compliance:**  
-Registra decisiones críticas, acciones relevantes y eventos auditables para mantener trazabilidad institucional y generar reportes de cumplimiento.
+Trazabilidad total. Registra en bitácoras inalterables qué supervisor ignoró o aprobó una alerta, proveyendo transparencia médica y legal.
 
++ **Subscription & Plan Management:**  
+Maneja planes, facturación, y límites (ej. cantidad de áreas permitidas por clínica).
+
++ **Identity & Access Management:**  
+Administra usuarios, organizaciones, invitaciones, roles y perfiles privados.
 
 ### 4.6.2. Software Architecture Context Diagram.
 
