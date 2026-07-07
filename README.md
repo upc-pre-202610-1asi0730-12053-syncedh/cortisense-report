@@ -2329,55 +2329,55 @@ Este diagrama representa el módulo compartido del frontend. Centraliza elemento
 
 ### 4.6.4.2. Backend Components Diagram
 
-+ **REST API Component Diagram** <br>
+#### **REST API Component Diagram**
 
 <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/C4-Diagrams/Backend-Diagrams/container_restapi_diagram.png?raw=true" alt="Diseño del diagrama de componentes del backend de CortiSense"/> <br>
 
 Este diagrama muestra la organización general del backend de CortiSense. La REST API recibe las solicitudes desde la SPA y las distribuye hacia los bounded contexts del sistema, los cuales gestionan la lógica de negocio, acceso a base de datos e integraciones externas.
 
-+ **Identity & Access Management**  <br>
+#### **Identity & Access Management**
 
 <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/C4-Diagrams/Backend-Diagrams/iam_components.png?raw=true" alt="Diseño del diagrama de componentes del módulo de Identity & Access Management del backend"/> <br>
 
 Este diagrama representa el contexto encargado de usuarios, invitaciones, roles y permisos. Sus componentes procesan solicitudes de autenticación y acceso, validan reglas del dominio y se integran con Firebase Authentication y Resend Email API.
 
-+ **Subscription & Plan Management**  <br>
+#### **Subscription & Plan Management**
 
 <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/C4-Diagrams/Backend-Diagrams/subscription_components.png?raw=true" alt="Diseño del diagrama de componentes del módulo de Subscription & Plan Management del backend"/> <br>
 
 Este diagrama muestra el contexto responsable de planes, pagos y suscripciones. Sus componentes gestionan la activación del plan, el acceso a funcionalidades y la integración con Stripe Sandbox para validar pagos.
 
-+ **Clinical Risk Assessment**  <br>
+#### **Clinical Risk Assessment**
 
 <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/C4-Diagrams/Backend-Diagrams/clinical_risk_components.png?raw=true" alt="Diseño del diagrama de componentes del módulo de Clinical Risk Assessment del backend"/> <br>
 
 Este diagrama representa el contexto encargado de procesar datos biométricos, calcular indicadores asociados al estrés, fatiga y riesgo clínico, y determinar niveles de riesgo del personal médico. También registra información relacionada con evaluaciones de riesgo en la base de datos.
 
-+ **Incident & Escalation Management**  <br>
+#### **Incident & Escalation Management**
 
 <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/C4-Diagrams/Backend-Diagrams/incident_components.png?raw=true" alt="Diseño del diagrama de componentes del módulo de Incident & Escalation Management del backend"/> <br>
 
 Este diagrama muestra el contexto que gestiona incidentes de riesgo, alertas al supervisor, escalamiento al director médico y cierre de incidentes. Además, utiliza Resend Email API para enviar notificaciones importantes.
 
-+ **Shift Coordination**  <br>
+#### **Shift Coordination**
 
 <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/C4-Diagrams/Backend-Diagrams/coordination_components.png?raw=true" alt="Diseño del diagrama de componentes del módulo de Shift Coordination del backend"/> <br>
 
 Este diagrama representa el contexto encargado de turnos críticos, bloqueos preventivos, sugerencias de reemplazo y redistribución de carga médica. Sus componentes permiten proteger la continuidad operacional de la institución sin comprometer el bienestar del personal médico.
 
-+ **Staff Recovery**  <br>
+#### **Staff Recovery**  <br>
 
 <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/C4-Diagrams/Backend-Diagrams/staff_components.png?raw=true" alt="Diseño del diagrama de componentes del módulo de Staff Recovery del backend"/> <br>
 
 Este diagrama muestra el contexto responsable de recomendaciones de descanso y planes de recuperación. Gestiona aceptación, rechazo o confirmación del plan, y puede enviar notificaciones mediante Resend Email API.
 
-+ **Audit & Compliance**  <br>
+#### **Audit & Compliance**
 
 <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/C4-Diagrams/Backend-Diagrams/audit_components.png?raw=true" alt="Diseño del diagrama de componentes del módulo de Audit & Compliance del backend"/> <br>
 
 Este diagrama representa el contexto encargado de registrar decisiones críticas, acciones relevantes y reportes de cumplimiento. Su objetivo es mantener trazabilidad institucional sobre los eventos importantes del sistema.
 
-+ **Shared Kernel**  <br>
+#### **Shared Kernel**
 
 <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/C4-Diagrams/Backend-Diagrams/shared_kernel_components.png?raw=true" alt="Diseño del diagrama de componentes del módulo compartido del backend"/> <br>
 
@@ -2387,65 +2387,47 @@ Este diagrama muestra los elementos compartidos del backend, como tipos base, va
 
 Los siguientes diagramas complementan los diagramas de componentes del frontend. En ellos se detalla la capa de presentación de cada bounded context, mostrando los componentes `.vue` que conforman las vistas principales de la Single Page Application.
 
-### Identity and Access Management - Presentation Layer
+#### Clinical Risk Assessment - Presentation Layer
 
-<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/C4-Diagrams/Frontend-Diagrams/Vue-Components/Identity_Presentation.png?raw=true" alt="Vue components of Identity and Access Management."> <br>
+<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/C4-Diagrams/Frontend-Diagrams/Vue-Components/RiskUIViews.svg?raw=true" alt="Vue components of Clinical Risk Assessment."> <br>
 
-Este diagrama muestra los componentes Vue encargados de la autenticación y gestión de acceso, como las vistas de inicio de sesión, registro, perfil y recuperación de contraseña.
+Este diagrama expone los componentes Vue que conforman los dashboards de riesgo clínico, visualizando métricas globales de la institución, alertas de fatiga, signos vitales en tiempo real y registro de anomalías biométricas.
 
-### Medical Staff Management - Presentation Layer
+#### Shift Coordination - Presentation Layer
 
-<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/C4-Diagrams/Frontend-Diagrams/Vue-Components/Staff_Presentation.png?raw=true" alt="Vue components of Medical Staff Management."> <br>
+<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/C4-Diagrams/Frontend-Diagrams/Vue-Components/ShiftUIViews.svg?raw=true" alt="Vue components of Shift Coordination."> <br>
 
-Este diagrama muestra los componentes Vue usados para gestionar el personal médico, incluyendo vistas de listado, búsqueda, registro y detalle.
+Este diagrama muestra los componentes Vue relacionados con la visualización y gestión de turnos médicos, incluyendo calendarios de asignación para supervisores, vista de turnos personales para doctores y la organización del equipo de atención.
 
-### Medical Device Management - Presentation Layer
+#### Staff Recovery - Presentation Layer
 
-<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/C4-Diagrams/Frontend-Diagrams/Vue-Components/Device_Presentation.png?raw=true" alt="Vue components of Medical Device Management."> <br>
+<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/C4-Diagrams/Frontend-Diagrams/Vue-Components/RecoveryUIViews.svg?raw=true" alt="Vue components of Staff Recovery."> <br>
 
-Este diagrama muestra los componentes Vue relacionados con la vinculación, visualización y configuración de dispositivos médicos.
+Este diagrama muestra los componentes Vue asociados a la gestión de descansos médicos, incluyendo la vista de acciones preventivas dictadas por el supervisor y la bandeja de confirmación de recuperación para el personal médico.
 
-### Biometric Data Management - Presentation Layer
+#### Audit & Compliance - Presentation Layer
 
-<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/C4-Diagrams/Frontend-Diagrams/Vue-Components/Data_Presentation.png?raw=true" alt="Vue components of Biometric Data Management."> <br>
+<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/C4-Diagrams/Frontend-Diagrams/Vue-Components/AuditUIViews.svg?raw=true" alt="Vue components of Audit and Compliance."> <br>
 
-Este diagrama muestra los componentes Vue utilizados para visualizar datos biométricos, historial, detalle y sincronización de información.
+Este diagrama detalla los componentes Vue utilizados para la trazabilidad institucional, mostrando las vistas del registro inmutable de logs de auditoría y la visualización de reportes de cumplimiento.
 
-### Stress and Fatigue Analysis - Presentation Layer
+#### Subscription and Payment Management - Presentation Layer
 
-<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/C4-Diagrams/Frontend-Diagrams/Vue-Components/Stress_Presentation.png?raw=true" alt="Vue components of Stress and Fatigue Analysis."> <br>
+<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/C4-Diagrams/Frontend-Diagrams/Vue-Components/SubscriptionUIViews.svg?raw=true" alt="Vue components of Subscription and Payment Management."> <br>
 
-Este diagrama muestra los componentes Vue encargados de presentar el estado de estrés y fatiga, reportes y recomendaciones.
+Este diagrama muestra los componentes Vue utilizados para la selección de planes de suscripción, onboarding de la organización, flujo de pago (checkout) y gestión de suscripciones expiradas.
 
-### Alerting and Notification Management - Presentation Layer
+#### Identity and Access Management - Presentation Layer
 
-<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/C4-Diagrams/Frontend-Diagrams/Vue-Components/Alerting_Presentation.png?raw=true" alt="Vue components of Alerting and Notification Management."> <br>
+<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/C4-Diagrams/Frontend-Diagrams/Vue-Components/IAMUIViews.svg?raw=true" alt="Vue components of Identity and Access Management."> <br>
 
-Este diagrama muestra los componentes Vue utilizados para visualizar alertas, detalles, centro de notificaciones y preferencias del usuario.
+Este diagrama detalla los componentes Vue encargados de la autenticación y gestión de acceso, incluyendo las vistas de inicio de sesión, invitación de personal médico, registro institucional y configuración de cuenta.
 
-### Medical Rest Management - Presentation Layer
+#### Shared UI Components - Presentation Layer
 
-<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/C4-Diagrams/Frontend-Diagrams/Vue-Components/Rest_Presentation.png?raw=true" alt="Vue components of Medical Rest Management."> <br>
+<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/C4-Diagrams/Frontend-Diagrams/Vue-Components/SharedUIComponents.svg?raw=true" alt="Shared Vue UI components."> <br>
 
-Este diagrama muestra los componentes Vue asociados a la programación, consulta, detalle y recomendaciones de descansos médicos.
-
-### Medical Shift Management - Presentation Layer
-
-<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/C4-Diagrams/Frontend-Diagrams/Vue-Components/Shift_Presentation.png?raw=true" alt="Vue components of Medical Shift Management."> <br>
-
-Este diagrama muestra los componentes Vue relacionados con la visualización, asignación, detalle y reprogramación de turnos médicos.
-
-### Subscription and Payment Management - Presentation Layer
-
-<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/C4-Diagrams/Frontend-Diagrams/Vue-Components/Subscription_Presentation.png?raw=true" alt="Vue components of Subscription and Payment Management."> <br>
-
-Este diagrama muestra los componentes Vue utilizados para la selección de planes, consulta de suscripción, checkout e historial de pagos.
-
-### Shared UI Components - Presentation Layer
-
-<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/C4-Diagrams/Frontend-Diagrams/Vue-Components/SharedUI_Presentation.png?raw=true" alt="Shared Vue UI components."> <br>
-
-Este diagrama muestra los componentes Vue reutilizables compartidos entre los bounded contexts, como barra de navegación, sidebar, tablas y modales.
+Este diagrama muestra los componentes Vue reutilizables compartidos de manera global en la aplicación, como el layout principal, la barra superior (topbar), la barra lateral de navegación (sidebar) y controles de sesión.
 
 ## 4.7. Software Object-Oriented Design
 ### 4.7.1. Class Diagrams
