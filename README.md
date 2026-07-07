@@ -4325,7 +4325,11 @@ A continuación, se presentan las estadísticas de colaboración obtenidas desde
 
 ### Top Commits
 
+<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Sprint-4/Top_Commits.png" alt="Top Commits Sprint 4"><br>
+
 ### Commits
+
+<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Sprint-4/Commits.png" alt="Commits Sprint 4"><br>
 
 > **Nota:** Durante el Sprint 4 (04–05/07/2026), el foco principal de los commits fue la integración de extremo a extremo, la corrección de bugs de producción críticos (normalización de roles, i18n, rutas protegidas, seed data) y el refinamiento del panel de auditoría. La mayor carga de trabajo fue liderada por Marcelo Pareja, apoyado en las bases de infraestructura de backend establecidas por Johan León en sprints anteriores.
 
