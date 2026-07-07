@@ -1264,11 +1264,11 @@ A partir de la información recolectada, se identificaron patrones comunes en cu
 
 Los User Personas desarrollados permiten comprender de forma integral a los usuarios, facilitando la toma de decisiones en las etapas posteriores del diseño y desarrollo de la solución. Asimismo, estos arquetipos sirven como base para la elaboración de otros artefactos de experiencia de usuario, como el User Task Matrix, User Journey Mapping y Empathy Mapping, asegurando coherencia y alineación con las necesidades reales de los segmentos identificados.
 
-**Segmento 1: Personal Sanitario Operativo**
+#### 2.3.1.1. Segmento 1: Personal Sanitario Operativo
 
 <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/Needfinding/User-Persona-Seg1.png?raw=true" alt="User Persona del segmento 1 - Personal Sanitario Operativo">
 
-**Segmento 2: Administradores y Directores Médicos**
+#### 2.3.1.2. Segmento 2: Administradores y Directores Médicos
 
 <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/Needfinding/User-Persona-Seg2.png?raw=true" alt="User Persona del segmento 2 - Administradores y Directores Médicos">
 
@@ -1290,7 +1290,7 @@ Los User Personas desarrollados permiten comprender de forma integral a los usua
 | Evaluar riesgos en la atención                             | Media            | Alta              | Alta              | Alta               |
 | Elaborar reportes para auditorías                          | Baja             | Media             | Alta              | Alta               |
 
-### Análisis e interpretación del User Task Matrix
+#### 2.3.2.1 Análisis e interpretación del User Task Matrix
 
 A partir del análisis del User Task Matrix, construido en base a la información recolectada en las entrevistas, se observa que el personal sanitario operativo, representado por Liz López, concentra la mayoría de sus tareas en actividades de ejecución directa, como la atención de pacientes en emergencias, el monitoreo de signos vitales y la toma de decisiones bajo presión. Estas tareas presentan tanto una alta frecuencia como una alta importancia, lo que evidencia un entorno de trabajo exigente donde el desempeño individual impacta directamente en la seguridad del paciente.
 
@@ -1308,11 +1308,11 @@ A partir del análisis de entrevistas, se identificaron los momentos clave que d
 
 Los User Journey Maps permiten evidenciar oportunidades de mejora en el proceso actual, sirviendo como base para el diseño de soluciones centradas en el usuario que respondan a sus necesidades reales.
 
-**Segmento 1: Personal Sanitario Operativo**
+#### 2.3.3.1. Segmento 1: Personal Sanitario Operativo
 
 <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/Needfinding/Journey-Seg1.png?raw=true" alt="User Journey Map del segmento 1 - Personal Sanitario Operativo">
 
-**Segmento 2: Administradores y Directores Médicos**
+#### 2.3.3.2. Segmento 2: Administradores y Directores Médicos
 
 <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/Needfinding/Journey-Seg2.png?raw=true" alt="User Journey Map del segmento 2 - Administradores y Directores Médicos">
 
@@ -1326,11 +1326,11 @@ El proceso de elaboración se basó en el análisis de entrevistas realizadas, a
 
 Estos Empathy Maps complementan los artefactos previamente desarrollados, como los User Personas y User Journey Maps, y sirven como base para diseñar soluciones centradas en el usuario que respondan de manera efectiva a sus expectativas y problemáticas.
 
-**Segmento 1: Personal Sanitario Operativo**
+#### 2.3.4.1. Segmento 1: Personal Sanitario Operativo
 
 <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/Needfinding/Empathy-Seg1.png?raw=true" alt="Empathy Map del segmento 1 - Personal Sanitario Operativo">
 
-**Segmento 2: Administradores y Directores Médicos**
+#### 2.3.4.2. Segmento 2: Administradores y Directores Médicos
 
 <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/Needfinding/Empathy-Seg2.png?raw=true" alt="Empathy Map del segmento 2 - Administradores y Directores Médicos">
 
@@ -1338,7 +1338,7 @@ Estos Empathy Maps complementan los artefactos previamente desarrollados, como l
 
 Según Qlerify (s.f.), el Big Picture Event Storming constituye una de las metodologías esenciales dentro de las variantes del Event Storming. Esta técnica se fundamenta en talleres colaborativos destinados al análisis y diseño de dominios de negocio complejos. El Event Storming fue concebido originalmente por Alberto Brandolini como un método para extraer y socializar el conocimiento sobre un dominio de forma rápida, siendo una herramienta clave para la implementación del Domain-Driven Design (DDD). En este sentido, el Big Picture Event Storming actúa como un punto de partida estratégico para una aplicación efectiva del DDD, ya que, como señala Chatuev (2020), resulta prioritario comenzar priorizando el descubrimiento del dominio, el intercambio de saberes y la consolidación del Lenguaje Ubicuo.
 
-**Metodología aplicada**
+### 2.4.1. Metodología aplicada
 La sesión fue desarrollada mediante el uso de la *Step by Step Guide to run your Big Picture Event Storming* de Philippe Bourgau (2022), coach de desarrollo de software, que fue adaptada al contexto del proyecto. También se recurrió a *EventStorming* de la compañía Draft.io. (s.f.) para la consulta de teoría referente a los Event Storming.
 
 **Big Picture Event Storming - Leyenda**
@@ -1347,7 +1347,7 @@ La sesión fue desarrollada mediante el uso de la *Step by Step Guide to run you
 * **Sistemas externos:** Plasman a aquellos sistemas externos involucrados en desencadenar ciertos eventos. Las notas rectangulares o cuadradas de color rosa son usadas para describirlas.
 * **Preguntas:** Cuando alguna nota requiere ser profundizada o clarificada. Son de color rojo.
 
-**Big Picture Event Storming - Mapa**
+### 2.4.2. Big Picture Event Storming - Mapa
 
 <div align="center">
   <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/big-picture-event-storming/big-picture-event-storming.png?raw=true" alt="big-picture-event-storming">
@@ -1365,30 +1365,7 @@ El proceso de elaboración se realizó en conjunto con el equipo multidisciplina
 
 ---
 
-### Identity & Access Management (IAM)
-
-| Term (English) | Definición (Español) |
-| - | - |
-| Organization (Organización) | Entidad principal (hospital o clínica) que contrata el servicio de CortiSense. Posee un RUC y un estado de registro. |
-| User (Usuario) | Cuenta individual dentro de la plataforma que pertenece a una Organización. Puede tener roles como Admin, Clinical Supervisor o Medical Staff. |
-| Invitation (Invitación) | Token temporal enviado por correo electrónico para que un nuevo usuario se registre y se una a una organización específica. |
-| Role (Rol) | Nivel de permisos dentro de IAM que define el Control de Acceso de un usuario en el sistema. |
-| Private Profile (Perfil privado) | Configuración de seguridad donde los datos biométricos sensibles son visibles únicamente para el usuario y personal autorizado. |
-
----
-
-### Subscription Management
-
-| Term (English) | Definición (Español) |
-| - | - |
-| Subscription (Suscripción) | Contrato activo que vincula a una Organización con un Plan de facturación específico (ej. Básico, Pro, Enterprise). |
-| Plan (Plan) | Paquete de características comerciales que define límites operativos (máx. doctores, supervisores, áreas) y el nivel de soporte. |
-| Checkout Session (Sesión de pago) | Transacción temporal generada vía integración con Stripe para procesar el pago o actualización de una suscripción de forma segura. |
-| Stripe Customer (Cliente de Stripe) | Identificador externo utilizado para sincronizar la facturación de la organización con la pasarela de pagos. |
-
----
-
-### Clinical Risk Assessment
+### 2.5.1. Clinical Risk Assessment
 
 | Term (English) | Definición (Español) |
 | - | - |
@@ -1401,7 +1378,7 @@ El proceso de elaboración se realizó en conjunto con el equipo multidisciplina
 
 ---
 
-### Shift Coordination
+### 2.5.2. Shift Coordination
 
 | Term (English) | Definición (Español) |
 | - | - |
@@ -1413,7 +1390,7 @@ El proceso de elaboración se realizó en conjunto con el equipo multidisciplina
 
 ---
 
-### Staff Recovery
+### 2.5.3. Staff Recovery
 
 | Term (English) | Definición (Español) |
 | - | - |
@@ -1424,7 +1401,7 @@ El proceso de elaboración se realizó en conjunto con el equipo multidisciplina
 
 ---
 
-### Audit & Compliance
+### 2.5.4. Audit & Compliance
 
 | Term (English) | Definición (Español) |
 | - | - |
@@ -1435,7 +1412,30 @@ El proceso de elaboración se realizó en conjunto con el equipo multidisciplina
 
 ---
 
-### Conclusión
+### 2.5.5. Subscription Management
+
+| Term (English) | Definición (Español) |
+| - | - |
+| Subscription (Suscripción) | Contrato activo que vincula a una Organización con un Plan de facturación específico (ej. Básico, Pro, Enterprise). |
+| Plan (Plan) | Paquete de características comerciales que define límites operativos (máx. doctores, supervisores, áreas) y el nivel de soporte. |
+| Checkout Session (Sesión de pago) | Transacción temporal generada vía integración con Stripe para procesar el pago o actualización de una suscripción de forma segura. |
+| Stripe Customer (Cliente de Stripe) | Identificador externo utilizado para sincronizar la facturación de la organización con la pasarela de pagos. |
+
+---
+
+### 2.5.6. Identity & Access Management (IAM)
+
+| Term (English) | Definición (Español) |
+| - | - |
+| Organization (Organización) | Entidad principal (hospital o clínica) que contrata el servicio de CortiSense. Posee un RUC y un estado de registro. |
+| User (Usuario) | Cuenta individual dentro de la plataforma que pertenece a una Organización. Puede tener roles como Admin, Clinical Supervisor o Medical Staff. |
+| Invitation (Invitación) | Token temporal enviado por correo electrónico para que un nuevo usuario se registre y se una a una organización específica. |
+| Role (Rol) | Nivel de permisos dentro de IAM que define el Control de Acceso de un usuario en el sistema. |
+| Private Profile (Perfil privado) | Configuración de seguridad donde los datos biométricos sensibles son visibles únicamente para el usuario y personal autorizado. |
+
+---
+
+### 2.5.7. Conclusión
 
 El Ubiquitous Language establece una base de comunicación compartida entre los dominios médico, tecnológico y de negocio de CortiSense. Gracias a este glosario, el equipo puede mantener coherencia conceptual en el modelado del software, los flujos de trabajo clínico y la documentación del proyecto. Este lenguaje será actualizado de manera iterativa conforme se avance hacia el modelado de dominio y la implementación del MVP.
 
