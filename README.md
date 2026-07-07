@@ -4518,7 +4518,8 @@ A continuación, se presentan las estadísticas de colaboración obtenidas desde
     </tr>
     <tr>
       <td>Evidencia</td>
-      <td><div align="center"><img src="link" alt="Entrevista Rusbel Cajaleón"></div></td>
+      <td><div align="center"><img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Validation/Rusbel-Cajaleón.png?raw=true" alt="Entrevista Rusbel Cajaleón"></div>
+</td>
     </tr>
     <tr>
       <td>Link</td>
