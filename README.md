@@ -4563,7 +4563,7 @@ A continuación, se presentan las estadísticas de colaboración obtenidas desde
 <colgroup></colgroup>
 <thead>
   <tr>
-    <th colspan="2">Entrevista #4<br></th>
+    <th colspan="2">Entrevista #3<br></th>
   </tr>
 </thead>
 <tbody>
@@ -4593,28 +4593,20 @@ A continuación, se presentan las estadísticas de colaboración obtenidas desde
   </tr>
   <tr>
     <td>Motivación</td>
-    <td>Su principal motor es la transformación de la gestión hospitalaria reactiva en una proactiva basada en datos científicos. Busca eliminar el "factor adivinanza" en la asignación de turnos y tener argumentos técnicos (biomarcadores) para justificar ante la gerencia financiera la necesidad de mayor presupuesto o personal. Su meta final es reducir la tasa de eventos adversos y asegurar que el personal bajo su mando trabaje en condiciones humanas y seguras.</td>
+    <td>Durante la validación, su principal interés fue comprobar cómo la Web App de CortiSense puede transformar la gestión hospitalaria reactiva en una proactiva. Le motivó ver en el dashboard cómo el sistema elimina el "factor adivinanza" al mostrar argumentos técnicos y biomarcadores en tiempo real, lo cual validó como una herramienta perfecta para justificar ante la gerencia la necesidad de mayor presupuesto o rotación de personal.</td>
   </tr>
   <tr>
     <td>Frustración</td>
-    <td>La ineficiencia de los procesos manuales; le frustra depender de cuadros de Excel que no reflejan la realidad biológica del médico. Siente una gran presión por la responsabilidad de los errores médicos derivados del cansancio acumulado, los cuales solo detecta cuando el incidente ya ocurrió. Además, le preocupa la falta de protocolos formales de "burnout" y la desconexión entre los sistemas de asistencia actuales y el bienestar real del personal.</td>
+    <td>Al revisar la plataforma, enfatizó que le frustraría si el sistema fuera lento o si la interfaz terminara siendo tan confusa como sus antiguos cuadros de Excel. Mencionó que la Web App debe mantener la claridad visual en todo momento, ya que una pantalla con alertas desordenadas no resolvería su preocupación principal: actuar rápido para evitar errores médicos derivados del cansancio acumulado del personal.</td>
   </tr>
   <tr>
     <td>Sistemas que usa para detectar o reducir el impacto de la carga laboral</td>
-    <td>Uso de roles de retén (personal de reserva), reuniones de jefatura de guardia, y seguimiento manual por parte de Salud Ocupacional ante quejas o incidentes reportados.</td>
+    <td>Al interactuar con el prototipo, validó que el uso del dispositivo wearable (IoT) conectado a la Web App reemplazaría por completo su sistema actual de seguimiento manual y reuniones reactivas. Destacó cómo la automatización de la recolección de datos agiliza la toma de decisiones para activar al personal de retén sin esperar a que ocurra un incidente.</td>
   </tr>
   <tr>
-    <td>Preferencias</td>
-    <td>
-		<ul>
-			<li>Dashboard administrativo con mapas de calor (rojo/amarillo/verde) por departamentos.</li>
-			<li>Alertas push inmediatas al smartphone en caso de niveles de fatiga roja en áreas críticas.</li>
-			<li>Integración total con el sistema HIS y planillas para automatizar reemplazos.</li>
-			<li>Cumplimiento estricto de la Ley de Protección de Datos Personales en Salud.</li>
-			<li>Reportes exportables para auditorías internas y sustento presupuestario.</li>
-		</ul>
-	</td>
-  </tr>
+      <td>Preferencias Visuales</td>
+      <td>Durante el recorrido por la plataforma, mostró gran preferencia por el panel del Supervisor/Administrador. Validó positivamente el uso de mapas de calor (colores rojo/amarillo/verde) para identificar de un vistazo al personal en áreas críticas. Apreció mucho que la interfaz organice la información en tarjetas limpias y resaltó la importancia de contar con una sección clara para exportar reportes y la futura integración de notificaciones push para la gestión de turnos y reemplazos.</td>
+    </tr>
   <tr>
     <td>Evidencia</td>
     <td><div align="center"><img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Interview-evidences/interview-valeria-vetiz.png?raw=true" alt="Entrevista Valeria Vertiz"></div></td>
@@ -4625,29 +4617,25 @@ A continuación, se presentan las estadísticas de colaboración obtenidas desde
   </tr>
   <tr>
     <td>Duracion<br></td>
-    <td>10:57 min</td>
+    <td>00:00 min - 13:00 min</td>
   </tr>
 
 <tr>
       <td>Timing<br></td>
       <td>
-        00:00 - 00:30: Introducción y presentación de CortiSense como solución para prevenir el agotamiento médico con monitoreo inteligente.<br>
-        00:30 - 01:00: Acceso a la Web App e inicio de sesión.<br>
-        01:00 - 03:30: Recorrido por panel de "Administrador" (Resumen general, Personal, Equipos e Invitaciones).<br>
-        03:30 - 05:30: Revisión del flujo de invitaciones y registro de usuario mediante correo, rol, área de trabajo y especialidad.<br>
-        05:30 - 06:30: Revisión de "Suscripción" y planes disponibles en panel de Administrador.<br>
-        06:30 - 07:30: Revisión de "Configuración" y transición entre roles.<br>
-        07:30 - 09:30: Recorrido por panel de "Supervisor" (Alertas clínicas, Personal en riesgo, Turnos y Personal asignado).<br>
-        09:30 - 10:30: Inicio de sesión como Doctor para validar la experiencia del personal médico.<br>
-        10:30 - 11:30: Revisión de "Mis signos vitales" con datos como cortisol, HRV, frecuencia cardiaca, nivel de fatiga y estado crítico.<br>
-        11:30 - 13:30: Revisión de "Mi recuperación", acciones preventivas, historial y recomendaciones.<br>
-        13:30 - 14:20: Comentarios finales sobre el uso del sistema, monitoreo mediante dispositivo IoT/wearable y cierre de la validación.
+        00:00 - 01:30: Introducción, contexto de la validación y primera impresión de la Landing Page de CortiSense.<br>
+        01:30 - 03:00: Ingreso a la Web App e inicio de sesión. Exploración inicial del panel de Administrador (Gestión de personal y áreas).<br>
+        03:00 - 06:00: Revisión exhaustiva del panel de Supervisor. Validación de los indicadores de fatiga, mapas de calor (rojo/amarillo/verde) y alertas de personal en riesgo.<br>
+        06:00 - 08:30: Análisis de la sección de turnos, acciones preventivas y cómo el sistema recomienda descansos basados en los datos del wearable.<br>
+        08:30 - 10:00: Revisión de la vista de reportes exportables, destacando su utilidad para justificar presupuestos gerenciales.<br>
+        10:00 - 11:30: Navegación rápida por el panel del Doctor para entender cómo el médico visualiza sus propios signos vitales (cortisol, fatiga).<br>
+        11:30 - 13:00: Comentarios finales sobre la viabilidad del proyecto, la privacidad de los datos médicos y cierre de la entrevista.
       </td>
     </tr>
 	
   <tr>
     <td>Resumen</td>
-    <td>Directora Médica con amplia experiencia que supervisa a más de 100 profesionales. Describe un entorno de alta presión donde la gestión de turnos es arcaica y manual. Valora a CortiSense como una herramienta estratégica para la toma de decisiones gerenciales, destacando que la capacidad de ver la fatiga en tiempo real "salva vidas" al permitir retirar a un médico del área crítica antes de que ocurra un error. Considera indispensable la precisión del hardware y la confidencialidad de la data para la aprobación institucional.</td>
+    <td>En esta segunda entrevista de validación, Valeria interactuó con el prototipo web de CortiSense, evaluando principalmente los paneles gerenciales (Administrador y Supervisor). Validó de forma muy positiva cómo la plataforma recoge los datos del wearable y los transforma en mapas de calor e indicadores de fatiga en tiempo real. Destacó que esta visualización clara y proactiva "salva vidas", ya que permite retirar a un médico del área crítica antes de que cometa un error. La sesión confirmó que la interfaz intuitiva, las alertas y la generación de reportes cumplen con sus expectativas para reemplazar los procesos manuales y servir como una herramienta gerencial sólida.</td></td>
   </tr>
 </tbody>
 </table>
