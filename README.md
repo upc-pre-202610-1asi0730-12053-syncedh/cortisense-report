@@ -4621,12 +4621,30 @@ A continuación, se presentan las estadísticas de colaboración obtenidas desde
   </tr>
   <tr>
     <td>Link</td>
-    <td><p><a target="_blank" href="https://upcedupe-my.sharepoint.com/personal/u202411627_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202411627_upc_edu_pe%2FDocuments%2Fvalidation-interviews%2Fvalidation-interviews-valeria%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E6ecbeee4-369d-434d-9e7a-6c2c3a0a7f04" title="Video de la entrevista">Ver grabación aquí</a>https://upcedupe-my.sharepoint.com/:v:/g/personal/u202418755_upc_edu_pe/IQCSJixvUAiVQYU7PPuGFn5QAeCNk1McHMV2_GJeQT7m8qI?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=vXh6If</p></td>
+    <td><p><a target="_blank" href="https://upcedupe-my.sharepoint.com/personal/u202411627_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202411627_upc_edu_pe%2FDocuments%2Fvalidation-interviews%2Fvalidation-interviews-valeria%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E6ecbeee4-369d-434d-9e7a-6c2c3a0a7f04" title="Video de la entrevista">Link del video</a></p></td>
   </tr>
   <tr>
     <td>Duracion<br></td>
     <td>10:57 min</td>
   </tr>
+
+<tr>
+      <td>Timing<br></td>
+      <td>
+        00:00 - 00:30: Introducción y presentación de CortiSense como solución para prevenir el agotamiento médico con monitoreo inteligente.<br>
+        00:30 - 01:00: Acceso a la Web App e inicio de sesión.<br>
+        01:00 - 03:30: Recorrido por panel de "Administrador" (Resumen general, Personal, Equipos e Invitaciones).<br>
+        03:30 - 05:30: Revisión del flujo de invitaciones y registro de usuario mediante correo, rol, área de trabajo y especialidad.<br>
+        05:30 - 06:30: Revisión de "Suscripción" y planes disponibles en panel de Administrador.<br>
+        06:30 - 07:30: Revisión de "Configuración" y transición entre roles.<br>
+        07:30 - 09:30: Recorrido por panel de "Supervisor" (Alertas clínicas, Personal en riesgo, Turnos y Personal asignado).<br>
+        09:30 - 10:30: Inicio de sesión como Doctor para validar la experiencia del personal médico.<br>
+        10:30 - 11:30: Revisión de "Mis signos vitales" con datos como cortisol, HRV, frecuencia cardiaca, nivel de fatiga y estado crítico.<br>
+        11:30 - 13:30: Revisión de "Mi recuperación", acciones preventivas, historial y recomendaciones.<br>
+        13:30 - 14:20: Comentarios finales sobre el uso del sistema, monitoreo mediante dispositivo IoT/wearable y cierre de la validación.
+      </td>
+    </tr>
+	
   <tr>
     <td>Resumen</td>
     <td>Directora Médica con amplia experiencia que supervisa a más de 100 profesionales. Describe un entorno de alta presión donde la gestión de turnos es arcaica y manual. Valora a CortiSense como una herramienta estratégica para la toma de decisiones gerenciales, destacando que la capacidad de ver la fatiga en tiempo real "salva vidas" al permitir retirar a un médico del área crítica antes de que ocurra un error. Considera indispensable la precisión del hardware y la confidencialidad de la data para la aprobación institucional.</td>
