@@ -151,12 +151,17 @@ URL de la Platform desplegada: [cortisense-platform](https://api.cortisense.spac
 			
 			- **TB1**
      		<div style="display: flex; align-items: center;">
-				<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Collaboration-Insights/TB1/marcelo-commits.png?raw=true" >
+				<img src="https://github.com/upc-pre-202610-1asi0730-12053-syncedh/cortisense-report/blob/main/Resources/Collaboration-Insights/insight-marcelo-tb1.PNG?raw=true" >
             </div><br>
 			
 			- **AV2**
      		<div style="display: flex; align-items: center;">
-				<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Collaboration-Insights/AV2/marcelo-commits.png?raw=true" >
+				<img src="https://github.com/upc-pre-202610-1asi0730-12053-syncedh/cortisense-report/blob/main/Resources/Collaboration-Insights/insight-marcelo-av2.PNG?raw=true" >
+            </div><br>
+			
+			- **TB2**
+     		<div style="display: flex; align-items: center;">
+				<img src="https://github.com/upc-pre-202610-1asi0730-12053-syncedh/cortisense-report/blob/main/Resources/Collaboration-Insights/insight-marcelo-tb2.PNG?raw=true" >
             </div><br>
 			
         + **Guiou Mauricio**
@@ -166,18 +171,22 @@ URL de la Platform desplegada: [cortisense-platform](https://api.cortisense.spac
             </div><br>
 			
 			- **TB1**
-      
-			- **AV2**
-
-        + **Sebastian Gutierrez**
-			- **AV1**
-            <div style="display: flex; align-items: center;">
-				<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Collaboration-Insights/Insight-Sebastian-Commits.png?raw=true">
+     		 <div style="display: flex; align-items: center;">
+				<img src="https://github.com/upc-pre-202610-1asi0730-12053-syncedh/cortisense-report/blob/main/Resources/Collaboration-Insights/justin-tb1.PNG?raw=true">
             </div><br>
 			
-			- **TB1**
-      
 			- **AV2**
+
+			<div style="display: flex; align-items: center;">
+				<img src="https://github.com/upc-pre-202610-1asi0730-12053-syncedh/cortisense-report/blob/main/Resources/Collaboration-Insights/justin-av2.PNG?raw=true">
+            </div><br>
+
+			- **TB2**
+
+			<div style="display: flex; align-items: center;">
+				<img src=https://github.com/upc-pre-202610-1asi0730-12053-syncedh/cortisense-report/blob/main/Resources/Collaboration-Insights/justin-tb2.PNG?raw=true">
+            </div><br>
+
 
         + **Johan Yonel**
 			- **AV1**
@@ -186,8 +195,20 @@ URL de la Platform desplegada: [cortisense-platform](https://api.cortisense.spac
             </div><br>
 			
 			- **TB1**
-    
+			<div style="display: flex; align-items: center;">
+				<img src="https://github.com/upc-pre-202610-1asi0730-12053-syncedh/cortisense-report/blob/main/Resources/Collaboration-Insights/johan-av1.PNG?raw=true">
+            </div><br>
+	
 			- **AV2**
+     		 <div style="display: flex; align-items: center;">
+				<img src=https://github.com/upc-pre-202610-1asi0730-12053-syncedh/cortisense-report/blob/main/Resources/Collaboration-Insights/johan-av2.PNG?raw=true">
+            </div><br>
+   
+  			- **TB2**
+     		<div style="display: flex; align-items: center;">
+				<img src="https://github.com/upc-pre-202610-1asi0730-12053-syncedh/cortisense-report/blob/main/Resources/Collaboration-Insights/johan-tb2.PNG?raw=true">
+            </div><br>
+			
   
         + **Jairo Santiago**
 			- **AV1**
@@ -196,8 +217,19 @@ URL de la Platform desplegada: [cortisense-platform](https://api.cortisense.spac
             </div><br>
 			
 			- **TB1**
-    
+     		<div style="display: flex; align-items: center;">
+				<img src="https://github.com/upc-pre-202610-1asi0730-12053-syncedh/cortisense-report/blob/main/Resources/Collaboration-Insights/jairo-tb1.PNG?raw=true">
+            </div><br>
+			
 			- **AV2**
+     		<div style="display: flex; align-items: center;">
+				<img src="https://github.com/upc-pre-202610-1asi0730-12053-syncedh/cortisense-report/blob/main/Resources/Collaboration-Insights/jairo-av2.PNG?raw=true">
+            </div><br>
+
+	  		- **TB2**
+     		<div style="display: flex; align-items: center;">
+				<img src="https://github.com/upc-pre-202610-1asi0730-12053-syncedh/cortisense-report/blob/main/Resources/Collaboration-Insights/jairo-tb2.PNG?raw=true">
+            </div><br>
 
 
 
