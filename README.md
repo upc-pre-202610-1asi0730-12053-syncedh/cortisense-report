@@ -4925,3 +4925,8 @@ Para facilitar la revisión y evaluación del producto, se proporcionan las sigu
   * Contraseña: `Doctor123!`
 
 ## Anexo E. Videos de Exposiciones
+
+* **Avance 1:** [Ver video del primer avance](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241e242_upc_edu_pe/IQByd3SXu9K_RKMIo0QJVOmdAUrAuNU6Y8xnqcTYnRG6EQo?e=wgzp6D&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
+* **Trabajo 1:** [Ver video del primer trabajo](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241e242_upc_edu_pe/IQC25p4TqsaESLYDkgz2semAAW-z9ozlUPNP6kHm4W6CiNg?e=Dsf9sR&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
+* **Avance 2:** [Ver video del segundo avance](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241e242_upc_edu_pe/IQDJcK3KEbvnRIPhy37KnyHbAYNK-iOWZU7cR9zLKxtCHzg?e=YcUsyb&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
+* **Trabajo 2:** [Ver video del segundo trabajo](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241e242_upc_edu_pe/IQBrRhfNlB12Trl-fkmOxN6jAaX0TlmKV9rAgwFUfYsCGRk?e=hgyM1q&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
