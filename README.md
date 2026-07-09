@@ -346,8 +346,9 @@ La visión de SyncedHealth es consolidarse como el estándar global en el monito
 
 ### 1.2.1 Antecedentes y problemática
 
+El agotamiento profesional y la fatiga extrema en el personal médico representan una problemática crítica a nivel global, con un impacto directo y perjudicial en la calidad de la atención sanitaria. A pesar de los avances tecnológicos en los recintos de salud, la gestión del recurso humano se sigue realizando de forma administrativa, sin contar con herramientas que permitan monitorear el estado físico y cognitivo del personal de primera línea en tiempo real. Esta carencia de monitoreo preventivo es particularmente riesgosa en áreas críticas como las Unidades de Cuidados Intensivos (UCI) y Emergencias, donde jornadas prolongadas y turnos nocturnos deterioran la capacidad de atención y precisión diagnóstica de los médicos. Como resultado, la sobrecarga laboral se traduce en un incremento de errores y negligencias médicas, lo que no solo afecta gravemente la seguridad de los pacientes, sino que genera sobrecostos de miles de millones de dólares anuales para el sistema de salud global por hospitalizaciones prolongadas y procesos legales.
 
-**5W's y 2H's**
+**Análisis 5W's y 2H's**
 
 * **What?**  
 ¿Qué problema se está presentando?  
