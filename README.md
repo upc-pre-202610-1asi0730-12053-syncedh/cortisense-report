@@ -2317,7 +2317,7 @@ Este diagrama representa el módulo compartido del frontend. Centraliza elemento
 
 #### REST API Component Diagram
 
-<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/C4-Diagrams/Backend-Diagrams/BackendComponents.png?raw=true" alt="Diseño del diagrama de componentes del backend de CortiSense"/> <br>
+<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/C4-Diagrams/Backend-Diagrams/BackendComponents.svg?raw=true" alt="Diseño del diagrama de componentes del backend de CortiSense"/> <br>
 
 Este diagrama muestra la organización general del backend de CortiSense. La REST API recibe las solicitudes desde la SPA y las distribuye hacia los bounded contexts del sistema, los cuales gestionan la lógica de negocio, acceso a base de datos e integraciones externas.
 
