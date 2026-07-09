@@ -590,40 +590,18 @@ En el marco de Lean UX, las declaraciones de problemas de negocio reemplazan a l
     13. **¿Qué otras suposiciones tenemos?** Suponemos que las instituciones de salud están dispuestas a invertir en biotecnología para mejorar su seguridad clínica.
 
 #### 1.2.2.3 Lean UX Hypothesis Statements
-###### Hipótesis 1: Reducción de Burnout
-Creemos que una reducción del 20% en bajas médicas por estrés se logrará si los médicos residentes alcanzan una gestión proactiva de su fatiga física con un wearable IoT que monitorea cortisol y HRV en tiempo real. Sabremos que es cierto cuando el registro de ausentismo por agotamiento disminuya un 15% en el primer semestre de uso.
 
--   **Business Outcome:** Reducción de bajas médicas por estrés y mejora en la tasa de retención de especialistas.
-    
--   **Users:** Médicos residentes y especialistas en áreas de alta intensidad (Emergencias/Cirugía).
-    
--   **User Outcome:** Mejora en el bienestar físico y mental durante las guardias.
-    
--   **Feature:** Wearable IoT con sensores de biomarcadores de estrés.
+**Hipótesis 1: Riesgo Operativo y Legal**
+- **Creemos que lograremos** reducir las pérdidas financieras institucionales por demandas y errores médicos en un 15% (Business Outcome)
+- **Si** los directores médicos y administradores hospitalarios (Personas)
+- **Alcanzan** a gestionar proactivamente el riesgo de su planta y garantizan la seguridad del paciente (User Benefit)
+- **Con** un dashboard predictivo de redistribución de turnos impulsado por datos biométricos. (Feature)
 
-###### Hipótesis 2: Optimización de Turnos
-Creemos que una disminución en los costos por negligencia médica se logrará si los directores médicos alcanzan una distribución de personal basada en evidencia fisiológica con un algoritmo de optimización de turnos impulsado por datos biométricos. Sabremos que es cierto cuando el reporte de errores clínicos nocturnos se reduzca en un 10% comparado con el año anterior.
-
--   **Business Outcome:** Incremento en la seguridad del paciente y reducción de costos por negligencias médicas.
-    
--   **Users:** Directores médicos y administradores de clínicas.
-    
--   **User Outcome:** Capacidad de gestionar el personal de manera humana y basada en evidencia científica.
-    
--   **Feature:** Algoritmo de optimización de turnos impulsado por datos biométricos.
-
-
-###### Hipótesis 3: Adopción y Privacidad
-Creemos que una tasa de adopción tecnológica del 80% se logrará si el personal sanitario alcanza un sentimiento de seguridad y control sobre sus datos privados con un protocolo de cifrado de grado médico y perfiles de acceso restringido. Sabremos que es cierto cuando el 85% del personal mantenga el dispositivo activo y sincronizado durante más de 22 días al mes.
-
--   **Business Outcome:** Alta tasa de adopción de la tecnología dentro de la institución hospitalaria.
-    
--   **Users:** Todo el personal sanitario de la red hospitalaria.
-    
--   **User Outcome:** Sentimiento de protección y respaldo por parte de la institución.
-    
--   **Feature:** Protocolo de cifrado de datos y perfiles de acceso restringido.
-
+**Hipótesis 2: Retención de Talento Clínico**
+- **Creemos que lograremos** reducir los costos de rotación y reclutamiento de talento clínico en un 20% (Business Outcome)
+- **Si** el personal médico de alta intensidad (Personas)
+- **Alcanzan** a prevenir colapsos físicos (burnout) y proteger su prestigio/licencia profesional (User Benefit)
+- **Con** un wearable IoT que monitorea sus niveles de fatiga en tiempo real y sugiere descansos obligatorios. (Feature)
 
 #### 1.2.2.4 Lean UX Canvas
 
