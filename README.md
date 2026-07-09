@@ -520,13 +520,22 @@ El problema se presenta de manera frecuente y recurrente en entornos hospitalari
   Los eventos adversos en la atención sanitaria representan un alto impacto económico a nivel global. Según la World Health Organization, los daños a los pacientes derivados de errores en la atención generan costos de miles de millones de dólares anuales, debido a tratamientos adicionales, prolongación de hospitalizaciones y procesos legales.
 
 ### 1.2.2 Lean UX Process
+
+El enfoque Lean UX desplaza la atención de los entregables y la documentación pesada hacia un modelo basado en la experimentación y el aprendizaje validado. Como señalan Gothelf y Seiden (2021), "Lean UX cambia radicalmente la forma en que enmarcamos nuestro trabajo al reintroducir el contexto estratégico para nuestras elecciones de diseño y funcionalidad y, lo que es más importante, cómo definimos el éxito" (p. 48).
+
 #### 1.2.2.1 Lean UX Problem Statement
-El personal sanitario en el Perú y el mundo enfrenta niveles críticos de estrés crónico y agotamiento profesional, fenómeno conocido como burnout. Actualmente, la gestión de horarios en hospitales y clínicas se realiza de forma administrativa y estática, sin considerar el estado físico o mental del médico. Esta falta de monitoreo preventivo no solo deteriora la salud de los profesionales, sino que incrementa exponencialmente el riesgo de errores médicos, mermando la seguridad del paciente y la calidad del servicio de salud.
 
-El problema central es que las instituciones de salud carecen de herramientas tecnológicas que vinculen la carga laboral con datos fisiológicos reales. Aunque existen dispositivos de consumo masivo, estos no están integrados a sistemas de gestión hospitalaria que permitan una toma de decisiones basada en biomarcadores críticos como el cortisol y la variabilidad de la frecuencia cardíaca (HRV). La ausencia de una solución preventiva genera una cultura de trabajo basada en la fatiga, lo que se traduce en una alta rotación de personal y costos operativos elevados por negligencias o bajas médicas.
+En el marco de Lean UX, las declaraciones de problemas de negocio reemplazan a los requerimientos tradicionales, ya que exigen explícitamente que se lleve a cabo un trabajo de descubrimiento del producto (Gothelf & Seiden, 2021, p. 68). Siguiendo la plantilla oficial para nuevas iniciativas (Gothelf & Seiden, 2021, p. 71), definimos el problema de nuestra startup de la siguiente manera:
 
-SyncedHealth  responde a esta problemática mediante una plataforma de monitoreo IoT avanzada que sincroniza el bienestar del médico con la gestión de su jornada laboral. Al integrar dispositivos de medición en tiempo real con algoritmos de optimización de horarios, permitimos que los administradores identifiquen síntomas de agotamiento antes de que ocurra una crisis. De esta manera, transformamos los hospitales en centros proactivos e inteligentes, garantizando un personal resiliente y una atención médica humana, segura y científicamente respaldada.
+**El estado actual de** la gestión de recursos humanos en la industria hospitalaria **se ha centrado principalmente en** la cobertura administrativa de turnos médicos y el cumplimiento de guardias, ignorando el estado físico y mental del personal (burnout crónico).
 
+**Lo que los productos y servicios existentes no logran abordar es** la brecha entre la exigencia de la carga laboral asignada y los niveles de fatiga reales del médico, lo que deriva en millonarias fugas de capital para las clínicas debido a la alta rotación de especialistas y demandas por negligencias médicas inducidas por el cansancio.
+
+**Nuestro producto, CortiSense, abordará esta brecha mediante** una plataforma IoT acoplada a un algoritmo predictivo que redistribuirá turnos basándose en biometría en tiempo real (Cortisol y HRV), operando bajo un modelo de negocio SaaS (Software as a Service) B2B.
+
+**Nuestro enfoque inicial será** en directores médicos y administradores de clínicas privadas de alta complejidad con áreas de cuidados críticos (UCI y Urgencias).
+
+**Sabremos que hemos tenido éxito cuando veamos** una reducción del 15% en los costos por negligencias médicas y una disminución del 20% en la tasa de rotación por agotamiento en las instituciones de nuestro público objetivo.
 
 #### 1.2.2.2 Lean UX Assumptions
 
@@ -578,7 +587,7 @@ SyncedHealth  responde a esta problemática mediante una plataforma de monitoreo
 
     11. **Resolveremos esto a través de** Una política de privacidad estricta y demostrando que el sistema busca proteger su salud, no castigar su rendimiento.
     
-    13. **¿Qué otras suposiciones tenemos?**Suponemos que las instituciones de salud están dispuestas a invertir en biotecnología para mejorar su seguridad clínica.
+    13. **¿Qué otras suposiciones tenemos?** Suponemos que las instituciones de salud están dispuestas a invertir en biotecnología para mejorar su seguridad clínica.
 
 #### 1.2.2.3 Lean UX Hypothesis Statements
 ###### Hipótesis 1: Reducción de Burnout
