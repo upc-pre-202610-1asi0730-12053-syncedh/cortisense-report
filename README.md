@@ -5004,9 +5004,13 @@ Los errores serán puntuados tomando en cuenta la siguiente escala de severidad
 # Bibliografía
 
 Chatuev, M. (2020, 21 de setiembre). *Big Picture Event Storming*. Medium. https://medium.com/@chatuev/big-picture-event-storming-7a1fe18ffabb
+
 Draft.io (s.f.). *EventStorming*. Draft.io. https://draft.io/example/eventstorming
+
 Landrigan, C. P., Rothschild, J. M., Cronin, J. W., Kaushal, R., Burdick, E., Katz, J. T., Lilly, C. M., Stone, P. H., Lockley, S. W., Bates, D. W., & Czeisler, C. A. (2004). Effect of reducing interns' work hours on serious medical errors in intensive care units. The New England Journal of Medicine, 351(18), 1838–1848. https://doi.org/10.1056/NEJMoa041406
+
 Gothelf, J., & Seiden, J. (2021). Lean UX: Designing Great Products with Agile Teams (3ra ed.). O'Reilly Media, Inc.
+
 Qlerify (s.f.). *What is Big Picture Event Storming?*. Qlerify. https://www.qlerify.com/event-storming-concepts/what-is-big-picture-event-storming
 World Health Organization. (2019). Patient safety: Global action on patient safety (Report No. A72/26). https://apps.who.int/iris/handle/10665/327456
 
