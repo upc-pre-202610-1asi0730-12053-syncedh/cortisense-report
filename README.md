@@ -4877,12 +4877,11 @@ Los errores serán puntuados tomando en cuenta la siguiente escala de severidad
 # Bibliografía
 
 Chatuev, M. (2020, 21 de setiembre). *Big Picture Event Storming*. Medium. https://medium.com/@chatuev/big-picture-event-storming-7a1fe18ffabb
-
 Draft.io (s.f.). *EventStorming*. Draft.io. https://draft.io/example/eventstorming
-
+Landrigan, C. P., Rothschild, J. M., Cronin, J. W., Kaushal, R., Burdick, E., Katz, J. T., Lilly, C. M., Stone, P. H., Lockley, S. W., Bates, D. W., & Czeisler, C. A. (2004). Effect of reducing interns' work hours on serious medical errors in intensive care units. The New England Journal of Medicine, 351(18), 1838–1848. https://doi.org/10.1056/NEJMoa041406
 Gothelf, J., & Seiden, J. (2021). Lean UX: Designing Great Products with Agile Teams (3ra ed.). O'Reilly Media, Inc.
-
 Qlerify (s.f.). *What is Big Picture Event Storming?*. Qlerify. https://www.qlerify.com/event-storming-concepts/what-is-big-picture-event-storming
+World Health Organization. (2019). Patient safety: Global action on patient safety (Report No. A72/26). https://apps.who.int/iris/handle/10665/327456
 
 # Anexos
 
@@ -4892,7 +4891,6 @@ Qlerify (s.f.). *What is Big Picture Event Storming?*. Qlerify. https://www.qler
 * **Entrevista 2:** [Ver video de entrevista 2 en Microsoft Stream](https://upcedupe-my.sharepoint.com/personal/u20231h055_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu20231h055%5Fupc%5Fedu%5Fpe%2FDocuments%2F5to%20Ciclo%2FOpenSource%2FRegistro%20de%20Entrevistas%2FEntrevista%20a%20Maribel%20Fernandez%20por%20Johan%20Yonel%20%28Personal%20Medico%20Operativo%29%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E703f7f77%2D7734%2D4bda%2Dac35%2Df8381afd44b1)
 * **Entrevista 3:** [Ver video de entrevista 3](https://drive.google.com/file/d/1UQImqgqti3vEYj3E6a5n4xnxFt9Vop8O/view?usp=sharing)
 * **Entrevista 4:** [Ver video de entrevista 4 en Microsoft Stream](https://upcedupe-my.sharepoint.com/personal/u202418755_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202418755%5Fupc%5Fedu%5Fpe%2FDocuments%2FEntrevista%2DSyncedHealth%2Fvideo3945078754%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E6e776555%2D8d61%2D486b%2D81a5%2D4367b6a10779)
-
 * **Entrevista 5:** [Ver video de entrevista 5](https://drive.google.com/file/d/1DsKAj6ceQ0UX6NWjwXI8-3jTV6jH7xYH/view?usp=drive_link)
 
 ## Anexo B. Repositorios de GitHub
