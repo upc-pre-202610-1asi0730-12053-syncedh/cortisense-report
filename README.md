@@ -2266,11 +2266,11 @@ El Container Diagram detalla la estructura principal de CortiSense a nivel de co
 
 ### 4.6.4.1. Frontend Components Diagram
 
-+ **SPA Component Diagram** <br>
+#### **SPA Component Diagram**
 
 <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/C4-Diagrams/Frontend-Diagrams/FrontendComponents.svg?raw=true" alt="Diseño del diagrama de componentes del frontend de CortiSense"/> <br>
 
-Este diagrama muestra la organización interna del frontend de CortiSense. La Web App carga la aplicación Angular, que se apoya en un Shared Module para navegación, servicios comunes y componentes reutilizables. Cada bounded context del frontend representa un módulo funcional independiente que consume endpoints de la REST API.
+Este diagrama muestra la organización interna del frontend de CortiSense. La Web App carga la aplicación Angular, que se apoya en un Shared para navegación, servicios comunes y componentes reutilizables. Cada bounded context del frontend representa un módulo funcional independiente que consume endpoints de la REST API.
 
 #### Clinical Risk Assessment
 
@@ -2308,7 +2308,7 @@ Este diagrama representa el módulo de planes y suscripciones. Permite visualiza
 
 Este diagrama muestra el módulo de Identity & Access Management en el frontend. Se encarga de las vistas de login, registro, invitaciones, roles y control de acceso, organizando su lógica en capas de presentación, aplicación, dominio e infraestructura.
 
-#### Shared Module
+#### Shared
 
 <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/C4-Diagrams/Frontend-Diagrams/SharedComponents.svg?raw=true" alt="Diseño del diagrama de componentes del módulo compartido del frontend"/> <br>
 
@@ -2458,7 +2458,7 @@ Muestra el flujo comercial y de tenencia múltiple (*Multi-tenant*). Incluye las
 
 Representa el control de acceso e identidades. Modela las entidades de `User` e `Invitation` y sus *Commands* asociados. Destaca el papel central del `AuthStore` para inyectar el estado de autenticación y los roles del usuario a través de componentes como el inicio de sesión, la configuración de cuentas y la administración del personal médico.
 
-##### Shared Module
+##### Shared
 <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/ClassDiagrams/shared-module.svg?raw=true" alt="Diagrama de Clases Frontend del Shared Module">
 
 Ilustra la infraestructura transversal de la aplicación. Contiene las clases base de conexión HTTP (`BaseEndpoint`, `ApiService`), así como los componentes visuales genéricos que construyen el esqueleto de la plataforma: el Layout principal, la barra lateral de navegación, la cabecera y el selector de idiomas.
