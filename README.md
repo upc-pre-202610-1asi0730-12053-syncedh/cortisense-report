@@ -539,6 +539,8 @@ En el marco de Lean UX, las declaraciones de problemas de negocio reemplazan a l
 
 #### 1.2.2.2 Lean UX Assumptions
 
+En el desarrollo de software, rara vez se cuenta con certezas absolutas. Por ello, Gothelf y Seiden (2021) recomiendan reconocer que la mayoría de los requisitos son simplemente "supuestos expresados con autoridad" (p. 61). A partir del análisis del problema, declaramos y priorizamos los siguientes supuestos que guiarán la validación de CortiSense:
+
  + **User Assumptions:** 
 
     + **¿Quién es el usuario?** <br> Los usuarios se dividen en dos grupos: el personal médico y de enfermería (usuarios operativos) que visten los dispositivos IoT para monitorear su salud, y los directivos o administradores de hospitales (usuarios estratégicos) que utilizan el dashboard para optimizar turnos y proteger a su personal.<br><br>
@@ -591,6 +593,8 @@ En el marco de Lean UX, las declaraciones de problemas de negocio reemplazan a l
 
 #### 1.2.2.3 Lean UX Hypothesis Statements
 
+Una hipótesis es una solución empresarial propuesta que debe validarse de la manera más eficiente posible utilizando los comentarios de los clientes (Gothelf & Seiden, 2021, p. 35). Siguiendo estrictamente el formato de declaración de hipótesis de Lean UX (Gothelf & Seiden, 2021, p. 110), formulamos:
+
 **Hipótesis 1: Riesgo Operativo y Legal**
 - **Creemos que lograremos** reducir las pérdidas financieras institucionales por demandas y errores médicos en un 15% (Business Outcome)
 - **Si** los directores médicos y administradores hospitalarios (Personas)
@@ -605,43 +609,44 @@ En el marco de Lean UX, las declaraciones de problemas de negocio reemplazan a l
 
 #### 1.2.2.4 Lean UX Canvas
 
+El *Lean UX Canvas* consolida los métodos y procesos de esta metodología en un solo documento para facilitar el entendimiento compartido del equipo (Gothelf & Seiden, 2021, p. 57).
+
 <table>
     <tr>
         <td valign="top" >
-            <div align="center"> <br><b>Buiness Problem</b> </div><br>
-            <p>- Burnout crónico por horarios estáticos que ignoran el estado físico del médico<br> - Incremento de errores médicos y costos operativos por fatiga no monitoreada.</p><br>
+            <div align="center"> <br><b>1. Business Problem</b> </div><br>
+            <p>Fuga de capital por alta rotación de talento clínico (costos de reclutamiento) y altas primas de seguros/riesgos legales derivados de errores médicos causados por una fuerza laboral fatigada que opera bajo horarios estáticos y no monitoreados.</p><br>
         </td>
         <td rowspan="2" valign="top">
-            <div align="center"><br><b>Solutions</b> </div><br>
-            <p>- Wearables IoT para monitoreo de cortisol y plataforma de gestión de turnos.<br> - Alertas automáticas de descanso basadas en niveles de fatiga en tiempo real.
+            <div align="center"><br><b>5. Solutions</b> </div><br>
+            <p>- Wearables IoT para el monitoreo continuo de biomarcadores de estrés (Cortisol y HRV).<br>- Plataforma SaaS con algoritmos para la redistribución inteligente de turnos basados en la fatiga médica en tiempo real.
             </p><br>
         </td>
             <td valign="top">
-            <div align="center"> <br><b>Business Outcomes</b> </div><br>
-            <p>- Reducción del 20% en casos de agotamiento y del 15% en errores clínicos.<br>- Mayor retención de especialistas y optimización de la seguridad del paciente.</p><br>
+            <div align="center"> <br><b>2. Business Outcomes</b> </div><br>
+            <p>- Reducción del 15% en costos financieros por demandas de mala praxis.<br>- Reducción del 20% en gastos de rotación de talento médico por burnout.<br>- Generación de MRR (Ingresos Recurrentes Mensuales) vía modelo SaaS.</p><br>
             </td>
         </tr>
     <tr>
         <td valign="top">
-            <div align="center"><br><b>Users</b></div><br>
-            <p>-Personal sanitario operativo (médicos residentes, enfermeras y especialistas) que laboran en áreas de alta intensidad.<br> - Administradores y Directores Médicos de hospitales y clínicas de alta complejidad que gestionan el capital humano.</p><br>
+            <div align="center"><br><b>3. Users</b></div><br>
+            <p>- Supervisores Clínicos y Administradores Hospitalarios (compradores y gestores de riesgo).<br> - Personal médico y de enfermería de alta intensidad (usuarios operativos de los dispositivos).</p><br>
         </td>
         <td valign="top">
-            <div align="center"><br><b>User Outcomes & Benefits</b></div><br>
-            <p>- Obtención de datos objetivos sobre su propia salud física (cortisol y HRV) para prevenir colapsos. <br> - Jornadas laborales equilibradas y prevención de crisis físicas mediante biometría. <br> - Mayor seguridad y plenitud de capacidades durante la atención al paciente.</p><br>
+            <div align="center"><br><b>4. User Outcomes & Benefits</b></div><br>
+            <p>- <b>Administradores:</b> Capacidad de gestionar el riesgo proactivamente, reduciendo el ausentismo y garantizando la seguridad del paciente. <br> - <b>Médicos:</b> Resguardo de su salud física, prevención de crisis y protección de su licencia profesional frente a errores inducidos por cansancio extremo.</p><br>
         </td>
     </tr>
     <tr>
         <td valign="top">
-            <div align="center"> <br><b>Hypotheses</b> </div><br>
-            <p>- El monitoreo de biomarcadores facilitará la prevención temprana del burnout.<br> - La gestión de horarios por bio-datos reducirá los errores en el servicio médico.</p> <br>
+            <div align="center"> <br><b>6. Hypotheses</b> </div><br>
+            <p>1. Proveer biometría en tiempo real permitirá a los administradores reducir el riesgo de demandas.<br> 2. Implementar descansos automatizados en base a la fatiga aumentará la retención del talento clave y reducirá costos operativos institucionales.</p> <br>
         </td>
         <td valign="top">
-            <div align="center"> <br><b>What’s the most important thing we
-need to learn first?  </b> </div><br><p>- ¿Las clínicas rotarán personal basándose en alertas biotecnológicas automáticas? <br> - ¿La precisión de los sensores IoT cumple con el estándar de rigor médico?</p> <br>
+            <div align="center"> <br><b>7. What’s the most important thing we need to learn first?</b> </div><br><p>Riesgos de Valor y Adopción:<br>- ¿Estarán dispuestos los directores a alterar su logística de turnos basándose en las alertas del software? <br> - ¿Aceptarán los médicos usar los dispositivos IoT sin percibirlo como vigilancia corporativa punitiva?</p> <br>
         </td>
         <td valign="top">
-            <div align="center">  <br><b>What's the least amount of work we need Done to learn the next most important thing?</b> </div><br><p>Entrevistas con directores médicos y prototipo de baja fidelidad del dashboard. <br> - Pruebas de laboratorio del hardware para validar la lectura de cortisol y HRV.</p> <br>
+            <div align="center">  <br><b>8. What's the least amount of work we need to do to learn the next most important thing?</b> </div><br><p>- Ejecutar un <i>Wizard of Oz MVP</i>: simular alertas de fatiga manualmente (sin hardware funcional real) y enviarlas por email a un supervisor de guardia para medir si reasigna tareas. <br>- Entrevistas a profundidad con médicos sobre resguardos de privacidad.</p> <br>
         </td>
     </tr>
 </table>
@@ -5013,6 +5018,8 @@ Los errores serán puntuados tomando en cuenta la siguiente escala de severidad
 Chatuev, M. (2020, 21 de setiembre). *Big Picture Event Storming*. Medium. https://medium.com/@chatuev/big-picture-event-storming-7a1fe18ffabb
 
 Draft.io (s.f.). *EventStorming*. Draft.io. https://draft.io/example/eventstorming
+
+Gothelf, J., & Seiden, J. (2021). Lean UX: Designing Great Products with Agile Teams (3ra ed.). O'Reilly Media, Inc.
 
 Qlerify (s.f.). *What is Big Picture Event Storming?*. Qlerify. https://www.qlerify.com/event-storming-concepts/what-is-big-picture-event-storming
 
