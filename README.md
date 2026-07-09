@@ -4886,51 +4886,42 @@ Qlerify (s.f.). *What is Big Picture Event Storming?*. Qlerify. https://www.qler
 
 # Anexos
 
-## Entrevistas Needfinding
-Entrevista 1:
+## Anexo A. Entrevistas de Needfinding
 
-https://drive.google.com/file/d/19Fxu5Uje6tJ5yvmaLG-n29ecyy0aN1oS/view?usp=sharing
+* **Entrevista 1:** [Ver video de entrevista 1](https://drive.google.com/file/d/19Fxu5Uje6tJ5yvmaLG-n29ecyy0aN1oS/view?usp=sharing)
+* **Entrevista 2:** [Ver video de entrevista 2 en Microsoft Stream](https://upcedupe-my.sharepoint.com/personal/u20231h055_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu20231h055%5Fupc%5Fedu%5Fpe%2FDocuments%2F5to%20Ciclo%2FOpenSource%2FRegistro%20de%20Entrevistas%2FEntrevista%20a%20Maribel%20Fernandez%20por%20Johan%20Yonel%20%28Personal%20Medico%20Operativo%29%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E703f7f77%2D7734%2D4bda%2Dac35%2Df8381afd44b1)
+* **Entrevista 3:** [Ver video de entrevista 3](https://drive.google.com/file/d/1UQImqgqti3vEYj3E6a5n4xnxFt9Vop8O/view?usp=sharing)
+* **Entrevista 4:** [Ver video de entrevista 4 en Microsoft Stream](https://upcedupe-my.sharepoint.com/personal/u202418755_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202418755%5Fupc%5Fedu%5Fpe%2FDocuments%2FEntrevista%2DSyncedHealth%2Fvideo3945078754%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E6e776555%2D8d61%2D486b%2D81a5%2D4367b6a10779)
 
-Entrevista 2:
+* **Entrevista 5:** [Ver video de entrevista 5](https://drive.google.com/file/d/1DsKAj6ceQ0UX6NWjwXI8-3jTV6jH7xYH/view?usp=drive_link)
 
-https://upcedupe-my.sharepoint.com/personal/u20231h055_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu20231h055%5Fupc%5Fedu%5Fpe%2FDocuments%2F5to%20Ciclo%2FOpenSource%2FRegistro%20de%20Entrevistas%2FEntrevista%20a%20Maribel%20Fernandez%20por%20Johan%20Yonel%20%28Personal%20Medico%20Operativo%29%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E703f7f77%2D7734%2D4bda%2Dac35%2Df8381afd44b1
+## Anexo B. Repositorios de GitHub
 
-Entrevista 3:
+* **Organización de Github del equipo SyncedHealth:** [syncedhealth](https://github.com/upc-pre-202610-1asi0730-12053-syncedh)
+* **Repositorio del Project Report:** [cortisense-report](https://github.com/upc-pre-202610-1asi0730-12053-syncedh/cortisense-report)
+* **Repositorio de la Landing Page:** [cortisense-website](https://github.com/upc-pre-202610-1asi0730-12053-syncedh/cortisense-website)
+* **Repositorio de la App Web:** [cortisense-webapp](https://github.com/upc-pre-202610-1asi0730-12053-syncedh/cortisense-webapp)
+* **Repositorio de la Platform:** [cortisense-platform](https://github.com/upc-pre-202610-1asi0730-12053-syncedh/cortisense-platform)
+* **Repositorio del trabajo de Responsabilidad Social:** [webdev-course-syncedhealth](https://github.com/upc-pre-202610-1asi0730-12053-syncedh/webdev-course-syncedhealth)
 
-https://drive.google.com/file/d/1UQImqgqti3vEYj3E6a5n4xnxFt9Vop8O/view?usp=sharing
+## Anexo C. Despliegues y servicios API
 
-Entrevista 4:
+* **Landing Page desplegada:** [cortisense-website](https://www.cortisense.space/)
+* **Web App desplegada:** [cortisense-webapp](https://app.cortisense.space/)
+* **Platform desplegada (Swagger):** [cortisense-platform](https://api.cortisense.space/swagger/index.html)
 
-https://upcedupe-my.sharepoint.com/personal/u202418755_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202418755%5Fupc%5Fedu%5Fpe%2FDocuments%2FEntrevista%2DSyncedHealth%2Fvideo3945078754%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E6e776555%2D8d61%2D486b%2D81a5%2D4367b6a10779
+## Anexo D. Credenciales de prueba
 
-Entrevista 5:
+Para facilitar la revisión y evaluación del producto, se proporcionan las siguientes cuentas de prueba preconfiguradas:
 
-https://drive.google.com/file/d/1DsKAj6ceQ0UX6NWjwXI8-3jTV6jH7xYH/view?usp=drive_link
+* **Rol Administrador:** 
+  * Correo: `admin101@hospitalcentral.com`
+  * Contraseña: `Admin123!`
+* **Rol Supervisor:** 
+  * Correo: `supervisor101@hospitalcentral.com`
+  * Contraseña: `Supervisor123!`
+* **Rol Médico / Doctor:** 
+  * Correo: `lgomez101@hospitalcentral.com`
+  * Contraseña: `Doctor123!`
 
-## Repositorios de Github
-
-Organización de Github del equipo SyncedHealth: [syncedhealth](https://github.com/upc-pre-202610-1asi0730-12053-syncedh)
-
-Repositorio del Project Report: [cortisense-report](https://github.com/upc-pre-202610-1asi0730-12053-syncedh/cortisense-report)
-
-Repositorio de la Landing Page: [cortisense-website](https://github.com/upc-pre-202610-1asi0730-12053-syncedh/cortisense-website)
-
-Repositorio de la App Web: [cortisense-webapp](https://github.com/upc-pre-202610-1asi0730-12053-syncedh/cortisense-webapp)
-
-Repositorio de la Platform: [cortisense-platform](https://github.com/upc-pre-202610-1asi0730-12053-syncedh/cortisense-platform)
-
-Repositorio del trabajo de Responsabilidad Social: [webdev-course-syncedhealth](https://github.com/upc-pre-202610-1asi0730-12053-syncedh/webdev-course-syncedhealth)
-
-## Despliegues y servicios API
-
-Landing Page desplegada: [cortisense-website](https://www.cortisense.space/)
-
-Web App desplegada: [cortisense-webapp](https://app.cortisense.space/)
-
-Platform desplegada: [cortisense-platform](https://api.cortisense.space/swagger/index.html)
-
-## Credenciales de prueba
-
-Admin: admin101@hospitalcentral.com / Admin123!
-Supervisor: supervisor101@hospitalcentral.com / Supervisor123!
-Doctor: lgomez101@hospitalcentral.com / Doctor123!
+## Anexo E. Videos de Exposiciones
