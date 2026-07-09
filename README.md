@@ -414,55 +414,42 @@ En el marco de Lean UX, las declaraciones de problemas de negocio reemplazan a l
 
 En el desarrollo de software, rara vez se cuenta con certezas absolutas. Por ello, Gothelf y Seiden (2021) recomiendan reconocer que la mayoría de los requisitos son simplemente "supuestos expresados con autoridad" (p. 61). A partir del análisis del problema, declaramos y priorizamos los siguientes supuestos que guiarán la validación de CortiSense:
 
- + **User Assumptions:** 
+**Supuestos de Negocio (Business Assumptions):**
 
-    + **¿Quién es el usuario?** <br> Los usuarios se dividen en dos grupos: el personal médico y de enfermería (usuarios operativos) que visten los dispositivos IoT para monitorear su salud, y los directivos o administradores de hospitales (usuarios estratégicos) que utilizan el dashboard para optimizar turnos y proteger a su personal.<br><br>
+1.  **Creo que nuestros usuarios necesitan:** Optimizar su presupuesto operativo reduciendo los costos ocultos de la rotación de talento y mitigando las pérdidas económicas por mala praxis médica.
 
-    + **¿Dónde encaja nuestro producto en su trabajo o en su vida?** <br>SyncedHealth se integra directamente en el entorno clínico y la jornada laboral. Es una herramienta de salud ocupacional que acompaña al médico durante sus guardias y procedimientos, asegurando que su rendimiento se mantenga en niveles óptimos para la seguridad propia y del paciente. <br><br>
+2.  **Estas necesidades se pueden resolver con:** Una plataforma y un algoritmo que vincule biometría en tiempo real (Cortisol/HRV) con la programación de turnos.
 
-    + **¿Cuándo y cómo se utiliza nuestro producto?** <br>Resolvemos el agotamiento extremo (burnout) y la falta de datos objetivos sobre el estrés médico. Nuestra solución previene errores fatales causados por la fatiga y optimiza la distribución de la carga de trabajo basándose en ciencia y biotecnología. <br><br>
+3.  **Nuestros usuarios iniciales son:** Clínicas privadas y hospitales de alta complejidad en Lima con personal en áreas críticas (UCI, Emergencias).
 
-    + **¿Qué problemas resuelve nuestro producto?** <br> Se utiliza de manera permanente durante las horas de servicio. El personal sanitario utiliza el wearable IoT de forma discreta, mientras que el sistema procesa los datos de cortisol y frecuencia cardíaca para generar alertas automáticas a los administradores si se detectan niveles críticos de estrés.<br><br>
+4.  **El valor #1 que un cliente quiere de nuestro servicio es:** Un retorno de inversión (ROI) claro a través de la mitigación de riesgos legales y la maximización de la productividad de sus especialistas.
 
-    + **¿Qué características son importantes?** <br>
-  
-  - Monitoreo preciso de biomarcadores (Cortisol y HRV) mediante sensores IoT.
-    
--   Algoritmo de gestión y reprogramación de horarios basado en niveles de fatiga.
-    
--   Dashboard administrativo para la visualización de la salud del capital humano.
-    
--   Sistema de alertas preventivas en tiempo real para evitar crisis de burnout. <br><br>
+5.  **El usuario también puede obtener beneficios adicionales como:** Reducción en las primas de seguros de responsabilidad civil médica y un mejor *employer branding*.
 
-    + **¿Cómo debe verse y comportarse nuestro producto?** <br>
-   Debe transmitir rigor científico, confianza y ética. La interfaz debe ser limpia, de grado médico y profesional, asegurando la privacidad de los datos sensibles y funcionando de manera fluida para no añadir carga cognitiva adicional al médico.
- <br><br>
+6.  **Vamos a adquirir la mayoría de nuestros clientes a través de:** Congresos de gestión hospitalaria B2B y pilotos institucionales.
 
- + **Business Outcomes:** 
+7.  **Haremos dinero a través de:** Venta de hardware IoT y un modelo SaaS (Software as a Service) mensual por usuario monitoreado.
 
-    1. **Creo que nuestros usuarios necesitan** Una herramienta objetiva para prevenir el burnout y reducir errores médicos por fatiga.
+8.  **Nuestras competencias principales son:** Sistemas de RR.HH. hospitalarios tradicionales y wearables genéricos (Apple Watch, Fitbit).
 
-    2. **Estas necesidades se pueden resolver con** Una plataforma IoT que monitoree biomarcadores de estrés y optimice los horarios laborales.
+9.  **Los venceremos debido a:** Nuestra integración clínica orientada específicamente a prevenir el burnout y mejorar la seguridad del paciente.
 
-    3. **Nuestros usuarios iniciales son** Clínicas privadas y hospitales de alta complejidad en Lima con personal en áreas críticas (UCI, Emergencias).
+10. **Nuestro mayor riesgo es:** La resistencia del personal médico a ser "vigilado" biométricamente por su empleador.
 
-    4. **El valor #1 que un cliente quiere de nuestro servicio es que** Reducción de riesgos médicos y mejora en el bienestar y retención de su personal.
+11. **Resolveremos esto a través de:** Protocolos estrictos de privacidad de datos, demostrando que el sistema solo busca resguardar su salud y no medir su eficiencia productiva.
 
-    5. **El usuario también puede obtener beneficios adicionales como** Optimización de costos operativos y cumplimiento de normativas de salud ocupacional.
 
-    6. **Vamos a adquirir la mayoría de nuestros clientes a través de** Congresos de gestión hospitalaria, marketing B2B y demostraciones directas a directores médicos.
 
-    7. **Haremos dinero a través de** Venta de dispositivos IoT y una suscripción mensual por el software de gestión (SaaS).
+**Supuestos de Usuario (User Assumptions):**
 
-    8. **Nuestras competencias principales son** Sistemas de RR.HH. tradicionales y aplicaciones de bienestar de consumo (Fitbit, Apple Health).
+1.  **¿Quién es el usuario?** Administradores hospitalarios/supervisores (usuarios estratégicos) y el personal médico (usuarios operativos).
 
-    9. **Los venceremos debido a** Nuestra especialización en biomarcadores médicos (cortisol) y la integración directa con la gestión de horarios.
+2.  **¿Dónde encaja nuestro producto en su trabajo o en su vida?** En la gestión diaria de la planta y durante la jornada operativa crítica del médico.
 
-    10. **Nuestro mayor riesgo es** a resistencia del personal médico a ser monitoreado constantemente por temor a la vigilancia administrativa.
+3.  **¿Qué características son importantes?** Monitoreo continuo sin fricción, dashboard predictivo de riesgos y alertas automatizadas de redistribución de carga.
 
-    11. **Resolveremos esto a través de** Una política de privacidad estricta y demostrando que el sistema busca proteger su salud, no castigar su rendimiento.
-    
-    13. **¿Qué otras suposiciones tenemos?** Suponemos que las instituciones de salud están dispuestas a invertir en biotecnología para mejorar su seguridad clínica.
+4.  **¿Cómo debe verse y comportarse nuestro producto?** Interfaz de grado clínico, confiable, segura, y que requiera mínima carga cognitiva para su operación.
+
 
 #### 1.2.2.3 Lean UX Hypothesis Statements
 
