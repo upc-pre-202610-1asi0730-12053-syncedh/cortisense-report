@@ -4959,7 +4959,7 @@ Los errores serán puntuados tomando en cuenta la siguiente escala de severidad
 
 <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/ATP/about-the-product.png?raw=true"></img><br>
 
-[About-The-Product](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202411627_upc_edu_pe/IQAzEodPTay_SZZsD3vV6xIbAUrbVT2L5BgIwhFNc4IfI-0?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=ZMlXQU)
+[About-The-Product](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202411627_upc_edu_pe/IQBUnhTK6XbKT4EvPwV3JUFmARDuxwMT3opJj_LNzVyTJms?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=AsCGpS)
 
 ---
 # Conclusiones
@@ -4981,7 +4981,7 @@ Los errores serán puntuados tomando en cuenta la siguiente escala de severidad
 
 <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/ATT/about-the-team.png?raw=true"></img><br>
 
-[About-The-Team](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202411627_upc_edu_pe/IQBUnhTK6XbKT4EvPwV3JUFmARDuxwMT3opJj_LNzVyTJms?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=AsCGpS)
+[About-The-Team](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202411627_upc_edu_pe/IQAzEodPTay_SZZsD3vV6xIbAUrbVT2L5BgIwhFNc4IfI-0?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=ZMlXQU)
 
 ---
 
