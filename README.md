@@ -2272,43 +2272,43 @@ El Container Diagram detalla la estructura principal de CortiSense a nivel de co
 
 Este diagrama muestra la organización interna del frontend de CortiSense. La Web App carga la aplicación Angular, que se apoya en un Shared Module para navegación, servicios comunes y componentes reutilizables. Cada bounded context del frontend representa un módulo funcional independiente que consume endpoints de la REST API.
 
-+ **Clinical Risk Assessment** <br>
+#### Clinical Risk Assessment
 
 <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/C4-Diagrams/Frontend-Diagrams/RiskComponents.svg?raw=true" alt="Diseño del diagrama de componentes del módulo de Clinical Risk Assessment"/> <br>
 
 Este diagrama muestra el módulo encargado de visualizar datos biométricos, puntaje de fatiga y nivel de riesgo clínico. Sus componentes permiten consultar el estado personal del médico y los indicadores de riesgo para supervisión.
 
-+ **Shift Coordination**  <br>
+#### Shift Coordination
 
 <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/C4-Diagrams/Frontend-Diagrams/ShiftComponents.svg?raw=true" alt="Diseño del diagrama de componentes del módulo de Shift Coordination"/> <br>
 
 Este diagrama muestra el módulo de coordinación de turnos. Sus componentes permiten revisar turnos críticos, bloqueos preventivos, sugerencias de reemplazo y redistribución de carga médica.
 
-+ **Staff Recovery**  <br>
+#### Staff Recovery
 
 <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/C4-Diagrams/Frontend-Diagrams/RecoveryComponents.svg?raw=true" alt="Diseño del diagrama de componentes del módulo de Staff Recovery"/> <br>
 
 Este diagrama representa el módulo de recuperación del personal médico. Permite visualizar recomendaciones de descanso, planes de recuperación y el estado de aceptación o rechazo por parte del personal médico.
 
-+ **Audit & Compliance**  <br>
+#### Audit & Compliance
 
 <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/C4-Diagrams/Frontend-Diagrams/AuditComponents.svg?raw=true" alt="Diseño del diagrama de componentes del módulo de Audit & Compliance"/> <br>
 
 Este diagrama muestra el módulo de auditoría y cumplimiento. Permite consultar registros de auditoría, decisiones críticas y reportes de cumplimiento generados a partir de eventos importantes del sistema.
 
-+ **Subscription & Plan Management** <br>
+#### Subscription & Plan Management
 
 <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/C4-Diagrams/Frontend-Diagrams/SubscriptionComponents.svg?raw=true" alt="Diseño del diagrama de componentes del módulo de Subscription & Plan Management"/> <br>
 
 Este diagrama representa el módulo de planes y suscripciones. Permite visualizar planes, estado de suscripción y funcionalidades habilitadas, comunicándose con la REST API para gestionar la información comercial del hospital.
 
-+ **Identity and Access Management** <br>
+#### Identity and Access Management
 
 <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/C4-Diagrams/Frontend-Diagrams/IAMComponents.svg?raw=true" alt="Diseño del diagrama de componentes del módulo de Identity and Access Management"/> <br>
 
 Este diagrama muestra el módulo de Identity & Access Management en el frontend. Se encarga de las vistas de login, registro, invitaciones, roles y control de acceso, organizando su lógica en capas de presentación, aplicación, dominio e infraestructura.
 
-+ **Shared Module**  <br>
+#### Shared Module
 
 <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/C4-Diagrams/Frontend-Diagrams/SharedComponents.svg?raw=true" alt="Diseño del diagrama de componentes del módulo compartido del frontend"/> <br>
 
