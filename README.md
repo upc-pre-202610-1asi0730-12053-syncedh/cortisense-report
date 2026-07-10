@@ -834,30 +834,33 @@ En esta sección, se llevará a cabo el análisis de las estrategias y tácticas
 
 ## 2.2 Entrevistas
 
-En esta sección se abordará la investigación en base a la información que se obtendrá de los segmentos entrevistados con el objetivo de conocer mejor a nuestros segmentos objetivos y aprender de ellos y sus procesos.
+En esta sección se abordará la investigación cualitativa en base a la información que se obtendrá de los segmentos entrevistados, con el objetivo de conocer a profundidad a nuestros usuarios, mapear sus puntos de dolor (pain points) y comprender sus flujos de trabajo actuales.
 
 ### 2.2.1 Diseño de entrevistas
 
-> Buenos días / tardes / noches. Agradecemos mucho que haya aceptado esta entrevista. Somos estudiantes de Ingeniería de Software de la UPC y estamos desarrollando **CortiSense**, una plataforma IoT para la prevención del agotamiento profesional (burnout) en el personal médico, mediante el monitoreo de biomarcadores de estrés y la variabilidad de la frecuencia cardíaca (HRV). Su perspectiva es fundamental para que podamos construir una solución útil, ética y adaptada a la realidad del sector salud en el Perú.
+> **Script de introducción (para ambos segmentos):**
+> "Buenos días / tardes / noches. Agradecemos mucho que haya aceptado esta entrevista. Somos estudiantes de Ingeniería de Software de la UPC y estamos desarrollando **CortiSense**, una plataforma IoT para la prevención del agotamiento profesional (*burnout*) en el personal médico, mediante el monitoreo de biomarcadores de estrés y la variabilidad de la frecuencia cardíaca (HRV). Su perspectiva es fundamental para que podamos construir una solución útil, ética y adaptada a la realidad del sector salud en el Perú. No hay respuestas correctas o incorrectas; solo queremos conocer su experiencia real."
 
 ---
+
 #### Segmento #1: Personal Sanitario Operativo (Médicos Residentes, Especialistas y Enfermeros)
 
-**Preguntas complementarias:**
+**Objetivo y alineamiento:** 
+El diseño de estas preguntas está alineado con la necesidad de validar nuestra hipótesis de usuario operativo. El objetivo es descubrir las barreras físicas y psicológicas reales frente al uso de *wearables* durante jornadas críticas, entender el flujo actual frente al agotamiento extremo y, sobre todo, identificar los resguardos de privacidad de datos necesarios para que el personal no perciba la herramienta como un instrumento de vigilancia punitiva, sino como un respaldo a su salud.
 
+**Preguntas de perfilamiento (Complementarias):**
 1. ¿Cuál es su nombre completo?
 2. ¿Cuántos años tiene?
 3. ¿En qué distrito o ciudad se ubica su centro de trabajo?
-4. ¿En qué tipo de institución trabaja actualmente? (hospital público, clínica privada, mixta)
+4. ¿En qué tipo de institución trabaja actualmente? (hospital público, clínica privada, mixta).
 5. ¿Cuál es su especialidad o rol dentro del equipo clínico?
-6. ¿En qué área o servicio trabaja con mayor frecuencia? (UCI, Emergencias, Cirugía, etc.)
+6. ¿En qué área o servicio trabaja con mayor frecuencia? (UCI, Emergencias, Cirugía, etc.).
 7. ¿Qué dispositivos tecnológicos usa con mayor frecuencia durante su jornada laboral?
 8. ¿Qué navegador web utiliza normalmente?
-9. ¿Cuáles son los métodos que utiliza más para autenticarse en plataformas digitales? (correo institucional, Gmail, doble factor, etc.)
+9. ¿Cuáles son los métodos que más utiliza para autenticarse en plataformas digitales? (correo institucional, Gmail, doble factor, etc.).
 
-**Preguntas principales:** 
-
-10. ¿Cuántas horas trabaja seguidas en una guardia típica y con qué frecuencia se repiten a la semana?
+**Preguntas de descubrimiento (Principales):** 
+10. ¿Cuántas horas seguidas trabaja en una guardia típica y con qué frecuencia se repiten a la semana?
 11. Cuando usted o un colega llega a un punto de agotamiento extremo durante una guardia, ¿cómo describiría ese momento? ¿Qué nombre le daría a ese estado dentro de su entorno de trabajo?
 12. ¿Qué sucede exactamente en su institución cuando un médico colapsa por fatiga durante un turno? ¿Qué pasos se siguen y quiénes intervienen?
 13. ¿Existe actualmente algún mecanismo formal en su institución para detectar o prevenir el agotamiento del personal? ¿Considera que es suficiente?
@@ -866,30 +869,31 @@ En esta sección se abordará la investigación en base a la información que se
 16. Si un sistema detectara automáticamente que usted ha superado ese umbral de riesgo, ¿qué debería ocurrir a continuación? ¿Qué acción del sistema consideraría que resuelve correctamente esa situación?
 17. ¿Cómo sabría usted que esa acción automática del sistema funcionó bien? ¿Qué resultado esperaría ver para considerarla exitosa?
 18. ¿Qué información sobre su propia salud durante la guardia le resultaría más valiosa consultar? Si tuviera que ordenarlas por importancia, ¿cuál iría primero?
-19. ¿Qué tan dispuesto estaría a usar un wearable durante sus horas de servicio si este le ayudara a prevenir un error clínico o un colapso físico?
-20. ¿Qué condiciones serían indispensables para que usted aceptara este tipo de monitoreo continuo? (privacidad de datos, anonimización, control sobre quién accede a su información, etc.)
-21. ¿Cómo debería ser físicamente el dispositivo para que no interfiera con su trabajo clínico? (tamaño, peso, zona del cuerpo, discreción visual)
+19. ¿Qué tan dispuesto estaría a usar un *wearable* durante sus horas de servicio si este le ayudara a prevenir un error clínico o un colapso físico?
+20. ¿Qué condiciones serían indispensables para que usted aceptara este tipo de monitoreo continuo? (Privacidad de datos, anonimización, control sobre quién accede a su información, etc.).
+21. ¿Cómo debería ser físicamente el dispositivo para que no interfiera con su trabajo clínico? (Tamaño, peso, zona del cuerpo, discreción visual).
 22. ¿Existe alguna funcionalidad que definitivamente NO querría que tuviera el sistema? ¿Por qué?
 
 ---
 
 #### Segmento #2: Administradores y Directores Médicos
 
-**Preguntas complementarias:**
+**Objetivo y alineamiento:** 
+El cuestionario para este segmento estratégico está alineado con la validación de nuestros supuestos de negocio B2B. Busca entender los procesos administrativos actuales de gestión de crisis de personal, los criterios financieros/operativos que motivarían la compra de la suscripción SaaS, y los requisitos técnicos (integraciones de *software*, reportes de auditoría) exigidos para una implementación a nivel hospitalario.
 
+**Preguntas de perfilamiento (Complementarias):**
 1. ¿Cuál es su nombre completo?
 2. ¿Cuántos años tiene?
-3. ¿En qué tipo de institución ejerce actualmente su cargo? (hospital público, clínica privada, red hospitalaria, etc.)
+3. ¿En qué tipo de institución ejerce actualmente su cargo? (hospital público, clínica privada, red hospitalaria, etc.).
 4. ¿Cuántos años de experiencia tiene en roles de gestión hospitalaria o administración de personal sanitario?
-5. ¿Cuál es su cargo o campo principal de responsabilidad? (dirección médica, jefatura de departamento, coordinación de recursos humanos, etc.)
+5. ¿Cuál es su cargo o campo principal de responsabilidad? (dirección médica, jefatura de departamento, coordinación de RR.HH., etc.).
 6. ¿Cuántas personas conforman aproximadamente el equipo médico bajo su supervisión directa?
-7. ¿Qué dispositivos tecnológicos utiliza con mayor frecuencia en su trabajo administrativo? (laptop, tablet, smartphone, etc.)
-8. ¿Qué herramientas o software emplea habitualmente para la gestión de horarios y turnos del personal?
+7. ¿Qué dispositivos tecnológicos utiliza con mayor frecuencia en su trabajo administrativo? (laptop, tablet, smartphone, etc.).
+8. ¿Qué herramientas o *software* emplea habitualmente para la gestión de horarios y turnos del personal?
 9. ¿Qué navegador web utiliza normalmente para su trabajo?
-10. ¿Cuáles son los métodos que utiliza más para autenticarse en sistemas institucionales? (correo corporativo, SSO, autenticación en dos pasos, etc.)
+10. ¿Cuáles son los métodos que utiliza más para autenticarse en sistemas institucionales? (correo corporativo, SSO, autenticación en dos pasos, etc.).
 
-**Preguntas principales:** 
-
+**Preguntas de descubrimiento (Principales):** 
 11. ¿Cómo elabora actualmente los horarios y turnos del personal médico? ¿Qué criterios utiliza para distribuir la carga de trabajo entre los especialistas?
 12. Cuando ocurre una situación de agotamiento extremo del personal durante un turno, ¿cómo se llama ese evento dentro de su institución? ¿Existe un protocolo formal para manejarlo?
 13. ¿Qué pasos sigue usted desde que detecta que un médico está en riesgo de fatiga hasta que toma una acción correctiva? ¿Quiénes más intervienen en ese proceso?
@@ -898,10 +902,10 @@ En esta sección se abordará la investigación en base a la información que se
 16. Si el sistema le mostrara en tiempo real el nivel de fatiga acumulada de cada médico en turno, ¿qué decisiones concretas tomaría con esa información? ¿Quién dentro de la institución debería tener acceso a esos datos?
 17. Cuando el sistema detecte automáticamente que un médico ha superado el umbral de riesgo y genere una sugerencia de reprogramación de turno, ¿qué resultado esperaría ver para considerar que esa acción fue exitosa? ¿Cómo mediría que funcionó correctamente?
 18. De las siguientes capacidades del sistema, ¿cuál le resulta más urgente e importante: visualización de fatiga en tiempo real, sugerencias automáticas de reprogramación, reportes exportables para auditoría, o alertas preventivas al personal? ¿Por qué?
-19. ¿Cuáles serían los criterios mínimos que un sistema de monitoreo biométrico debería cumplir para que usted lo aprobara e implementara en su institución? (seguridad de datos, cumplimiento normativo, costo, facilidad de uso, aceptación del personal, etc.)
-20. ¿Cómo debería estructurarse el dashboard administrativo para que encaje en su flujo de trabajo diario? ¿Prefiere resúmenes consolidados, alertas en tiempo real o una combinación de ambos?
+19. ¿Cuáles serían los criterios mínimos que un sistema de monitoreo biométrico debería cumplir para que usted lo aprobara e implementara en su institución? (seguridad de datos, cumplimiento normativo, costo, facilidad de uso, aceptación del personal, etc.).
+20. ¿Cómo debería estructurarse el *dashboard* administrativo para que encaje en su flujo de trabajo diario? ¿Prefiere resúmenes consolidados, alertas en tiempo real o una combinación de ambos?
 21. ¿Qué tipo de reportes necesitaría exportar desde la plataforma para cumplimiento normativo o auditorías internas?
-22. ¿Qué integración esperaría que tuviera esta plataforma con los sistemas que ya utiliza en su institución? (HIS, planillas, nómina, etc.)
+22. ¿Qué integración esperaría que tuviera esta plataforma con los sistemas que ya utiliza en su institución? (sistemas HIS, planillas, nómina, etc.).
 
 ---
 
