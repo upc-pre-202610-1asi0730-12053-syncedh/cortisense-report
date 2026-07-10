@@ -4788,6 +4788,87 @@ A continuación, se presentan las estadísticas de colaboración obtenidas desde
   </tbody>
 </table>
 
+<table>
+  <thead>
+    <tr>
+      <th colspan="2">Entrevista #3<br></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Nombre</td>
+      <td>Max Danilo</td>
+    </tr>
+    <tr>
+      <td>Apellidos</td>
+      <td>Mesa Huamán</td>
+    </tr>
+    <tr>
+      <td>Edad</td>
+      <td>24 años</td>
+    </tr>
+    <tr>
+      <td>Distrito</td>
+      <td>Lima</td>
+    </tr>
+    <tr>
+      <td>Centro de Trabajo</td>
+      <td>Clínica privada (Prácticas pre-profesionales)</td>
+    </tr>
+    <tr>
+      <td>Área</td>
+      <td>Medicina (Internado / Prácticas)</td>
+    </tr>
+    <tr>
+      <td>Tecnologías usadas en su campo laboral</td>
+      <td>Smartwatch, celular, equipos de monitoreo médico</td>
+    </tr>
+    <tr>
+      <td>Motivación</td>
+      <td>Durante la entrevista, Max muestra un fuerte interés en la plataforma porque atiende un problema real que vive en sus prácticas: el agotamiento en los turnos nocturnos ("trasnochadas"). Le motiva la idea de un sistema automatizado que use un smartwatch (IoT) para monitorear el ritmo cardíaco y la fatiga, generando reportes detallados y alertas en tiempo real para evitar negligencias médicas y obligar al personal a tomar pausas de recuperación.</td>
+    </tr>
+    <tr>
+      <td>Frustración</td>
+      <td>Max señala que actualmente hay una falta de cuidado hacia el propio personal médico. Menciona que a veces los doctores, por exceso de confianza ("egocentrismo" o sentir que son capaces), se mantienen trabajando pese a la fatiga porque "no tienen a alguien que los vigile", lo que lleva a caídas en el rendimiento y aumenta el riesgo de accidentes o negligencias que pueden afectar a los pacientes.</td>
+    </tr>
+    <tr>
+      <td>Sistemas que usa para detectar o reducir el impacto de la carga laboral</td>
+      <td>En la validación se discute la integración de la aplicación con un Smartwatch o wearable que el médico llevaría puesto durante sus guardias. Este dispositivo se encargaría de recolectar signos vitales (como variabilidad de ritmo cardíaco y cortisol) y enviarlos a la Web App CortiSense para que los supervisores tomen acciones inmediatas.</td>
+    </tr>
+    <tr>
+      <td>Preferencias Visuales</td>
+      <td>Max considera que la interfaz tiene "mucho orden" y que la información clave es muy fácil de entender. Valora positivamente la distribución de las gráficas de signos vitales, el historial de lecturas y la claridad del panel de alertas. Destaca que el diseño de las notificaciones, tanto para el Doctor como para el Supervisor, resulta muy intuitivo y directo, sin saturar al usuario, permitiendo tomar decisiones rápidas.</td>
+    </tr>
+    <tr>
+      <td>Evidencia</td>
+      <td><div align="center"><img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Validation/Max-Mesa.png?raw=true" alt="Entrevista Max Mesa"></div>
+</td>
+    </tr>
+    <tr>
+      <td>Link</td>
+      <td><p><a target="_blank" href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202411627_upc_edu_pe/IQAw4npiY8z9RZH6-tjImbD0Afjb89leVZquw-rZ8J3d6bU?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=Eop75P" title="Title">Link del video</a></p></td>
+    </tr>
+    <tr>
+      <td>Duración<br></td>
+      <td>00:00 min - 14:48 min</td>
+    </tr>
+    <tr>
+      <td>Timing<br></td>
+      <td>
+        00:00 - 01:40: Presentación de Max Danilo Mesa Huamán. Relato sobre sus prácticas pre-profesionales en turnos nocturnos y cómo la fatiga afecta el rendimiento del personal, aumentando el riesgo de negligencia.<br>
+        01:40 - 04:00: Presentación de la Landing Page de CortiSense, explicación de la propuesta de valor, los tipos de usuarios y los planes de suscripción.<br>
+        04:00 - 07:10: Revisión del perfil "Doctor" (Mi Salud, Mis signos vitales, Mis turnos, Mi recuperación). Max destaca que el panel es ordenado y muestra la información clave claramente.<br>
+        07:10 - 10:15: Exploración del perfil "Supervisor". Revisión de las alertas clínicas, anomalías biométricas y acciones preventivas. Max considera muy innovador que el sistema notifique anomalías en tiempo real para intervenir inmediatamente.<br>
+        10:15 - 14:25: Recorrido por el perfil "Administrador". Revisión de la gestión de personal, rotación de supervisores, creación de equipos de trabajo y envío de invitaciones por correo electrónico.<br>
+        14:25 - 14:48: Reflexión final de Max. Menciona que actualmente "a los médicos no los terminan cuidando" y resalta cómo esta plataforma mejoraría la eficiencia y el bienestar en los centros de salud.
+      </td>
+    </tr>
+    <tr>
+      <td>Resumen</td>
+      <td>En esta entrevista, Max Danilo Mesa Huamán, estudiante de los últimos ciclos de medicina y practicante en una clínica privada, evaluó el prototipo de CortiSense. Max validó la problemática central del proyecto, confirmando que las guardias y turnos nocturnos generan caídas severas en el rendimiento que pueden derivar en negligencias médicas. Durante la navegación por los roles de Doctor, Supervisor y Administrador, destacó el orden visual y la claridad de los datos. Consideró altamente innovador el uso de un smartwatch conectado a la plataforma para enviar alertas automáticas, ya que obliga a los médicos a tomar pausas de recuperación que por sí solos muchas veces ignoran, cuidando así la salud del propio personal médico y garantizando una mejor atención a los pacientes.</td>
+    </tr>
+  </tbody>
+</table>
 
 <br><br>
 
