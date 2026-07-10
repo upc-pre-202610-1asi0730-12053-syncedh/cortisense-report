@@ -478,7 +478,7 @@ El agotamiento profesional y la fatiga extrema en el personal médico representa
 **Análisis 5W's y 2H's**
 
 * **What?**  
-¿Qué problema se está presentando?  
+¿Qué problema se está presentando?
 Falta de monitoreo del estado físico y mental del personal médico, lo que puede generar errores o negligencias durante la atención de pacientes.
 
 * **Why?**  
@@ -510,15 +510,15 @@ El problema se presenta en hospitales, clínicas y centros de atención de emerg
 ¿Cómo se diferencia el problema del estado óptimo?  
 El problema se diferencia del estado óptimo en que el personal médico presenta fatiga, estrés y disminución del rendimiento, lo que afecta su capacidad de concentración, análisis y toma de decisiones. En un estado óptimo, el profesional mantiene atención sostenida, precisión diagnóstica y respuesta eficiente. Sin embargo, bajo condiciones de sobrecarga laboral y falta de descanso, estas capacidades se ven deterioradas, incrementando la probabilidad de errores durante la atención médica.  
   
-¿La tendencia del problema es aleatoria o sigue un patrón?  
-El problema no es aleatorio, sino que sigue un patrón identificable, presentándose con mayor frecuencia en turnos prolongados, horarios nocturnos y contextos de alta demanda. Diversos estudios han demostrado que los médicos que trabajan jornadas extendidas, especialmente en turnos de 24 horas o más, cometen significativamente más errores que aquellos con horarios reducidos (Landrigan et al., 2004).
+  ¿La tendencia del problema es aleatoria o sigue un patrón?  
+  El problema no es aleatorio, sino que sigue un patrón identificable, presentándose con mayor frecuencia en turnos prolongados, horarios nocturnos y contextos de alta demanda. Diversos estudios han demostrado que los médicos que trabajan jornadas extendidas, especialmente en turnos de 24 horas o más, cometen significativamente más errores que aquellos con horarios reducidos (Landrigan et al., 2004).
 
 * **How much?**  
 ¿Cuántos problemas se dan en un día, semana o mes?  
 El problema se presenta de manera frecuente y recurrente en entornos hospitalarios. A nivel diario, un médico en áreas críticas puede atender entre 20 y 40 pacientes por turno, lo que incrementa la carga cognitiva y el riesgo de errores durante la atención. A nivel semanal y mensual, la exposición continua a jornadas prolongadas y alta demanda genera una acumulación progresiva de fatiga, aumentando la probabilidad de errores médicos y eventos adversos.  
   
-¿Cuánto dinero está implicado?  
-Los eventos adversos en la atención sanitaria representan un alto impacto económico a nivel global. Según la World Health Organization [WHO] (2019), los daños a los pacientes derivados de errores en la atención generan costos de miles de millones de dólares anuales, debido a tratamientos adicionales, prolongación de hospitalizaciones y procesos legales.
+  ¿Cuánto dinero está implicado?  
+  Los eventos adversos en la atención sanitaria representan un alto impacto económico a nivel global. Según la World Health Organization [WHO] (2019), los daños a los pacientes derivados de errores en la atención generan costos de miles de millones de dólares anuales, debido a tratamientos adicionales, prolongación de hospitalizaciones y procesos legales.
 
 ### 1.2.2 Lean UX Process
 
@@ -645,12 +645,12 @@ El *Lean UX Canvas* consolida los métodos y procesos de esta metodología en un
 + **Personal Sanitario Operativo**
     + **Características demográficas:** Médicos asistentes, médicos residentes y profesionales de enfermería de entre 24 y 50 años. Soportan jornadas laborales extensas (a menudo guardias de 24 horas) y rotativas en áreas de alta intensidad clínica como UCI, Emergencias y Cirugía. Son profesionales con formación universitaria avanzada, alto nivel de responsabilidad y exposición constante a situaciones de estrés agudo y crónico. En su mayoría son nativos digitales o adoptantes tempranos que utilizan dispositivos móviles (smartphones y wearables) y plataformas digitales institucionales en su rutina laboral.
     + **Características geográficas:** Profesionales que ejercen principalmente en hospitales públicos de alta complejidad (MINSA, EsSalud) y clínicas privadas especializadas ubicadas en Lima Metropolitana, con potencial de expansión hacia otras ciudades con infraestructura hospitalaria desarrollada como Arequipa, Trujillo y Cusco.
-    + **Información estadítica de sustento:** Según el Colegio Médico del Perú (CMP) existen más de 90,000 médicos colegiados a nivel nacional, concentrándose cerca del 55% en Lima. Diversos estudios locales e internacionales sobre salud ocupacional revelan que entre el 45% y el 50% de los médicos residentes y especialistas en áreas críticas en Perú padecen del Síndrome de Burnout o agotamiento profesional grave, un factor directamente correlacionado con el incremento de la ideación suicida y la comisión de errores médicos adversos.
+    + **Información estadítica de sustento:** Según el Colegio Médico del Perú [CMP] (2024), existen más de 90,000 médicos colegiados a nivel nacional, concentrándose cerca del 55% en Lima. Diversos estudios locales e internacionales sobre salud ocupacional revelan que casi la mitad de los médicos especialistas en áreas críticas en Perú padecen del Síndrome de Burnout o agotamiento profesional grave (Maticorena-Quevedo et al., 2016), un factor directamente correlacionado con el incremento de la ideación suicida y la comisión de errores médicos adversos.
 
 + **Administradores y Directores Médicos**
-    + **Características demográficas:** Directores médicos, gerentes de operaciones, jefes de departamento y coordinadores de recursos humanos de entre 35 y 60 años. Poseen formación mixta en medicina, administración en salud o gestión hospitalaria (maestrías/MBA). Son tomadores de decisiones estratégicas con amplia experiencia en planificación de turnos, gestión de personal, presupuestos operativos y cumplimiento de normativas laborales del sector salud. Utilizan habitualmente computadoras de escritorio, laptops y software de gestión ERP en su trabajo diario para el monitoreo de indicadores de desempeño (KPIs).<br>
+    + **Características demográficas:** Directores médicos, gerentes de operaciones, jefes de departamento y coordinadores de recursos humanos de entre 35 y 60 años. Poseen formación mixta en medicina, administración en salud o gestión hospitalaria (maestrías/MBA). Son tomadores de decisiones estratégicas con amplia experiencia en planificación de turnos, gestión de personal, presupuestos operativos y cumplimiento de normativas laborales del sector salud. Utilizan habitualmente computadoras de escritorio, laptops y software de gestión ERP en su trabajo diario para el monitoreo de indicadores de desempeño (KPIs).
     + **Características geográficas:** Se desempeñan en clínicas privadas de mediana y alta complejidad, redes hospitalarias (ej. Red Auna, Clínica Internacional, San Pablo) y centros médicos corporativos concentrados en Lima Metropolitana, particularmente en distritos con alta densidad de infraestructura sanitaria privada y alta rentabilidad como Miraflores, San Isidro, Surco y San Borja.
-    + **Información de sustento:** El sector salud privado en el Perú ha mostrado un crecimiento sostenido, contando con más de 1,800 Instituciones Prestadoras de Servicios de Salud (IPRESS) privadas a nivel nacional con capacidad de internamiento y áreas críticas. Los administradores de estos recintos enfrentan el reto de gestionar altos costos de rotación; estudios de recursos humanos en salud estiman que reemplazar a un médico especialista debido a renuncias por estrés cuesta a la institución entre 1.5 y 2 veces el salario anual del profesional, además del riesgo latente de enfrentar litigios millonarios por negligencias derivadas de la fatiga.
+    + **Información de sustento:** El sector salud privado en el Perú ha mostrado un crecimiento sostenido, contando con más de 1,800 Instituciones Prestadoras de Servicios de Salud (IPRESS) privadas a nivel nacional con capacidad de internamiento y áreas críticas, según el padrón de la Superintendencia Nacional de Salud [SUSALUD] (2024). Los administradores de estos recintos enfrentan el reto de gestionar altos costos de rotación; estudios de recursos humanos en salud estiman que reemplazar a un médico especialista debido a renuncias por estrés cuesta a la institución al menos 1.2 veces el salario anual del profesional (Waldman et al., 2004), además del riesgo latente de enfrentar litigios millonarios por negligencias derivadas de la fatiga.
 
 ---
 
@@ -5163,13 +5163,21 @@ Los errores serán puntuados tomando en cuenta la siguiente escala de severidad
 
 Chatuev, M. (2020, 21 de setiembre). *Big Picture Event Storming*. Medium. https://medium.com/@chatuev/big-picture-event-storming-7a1fe18ffabb
 
-Draft.io (s.f.). *EventStorming*. Draft.io. https://draft.io/example/eventstorming
+Colegio Médico del Perú. (2024). Conoce a tu médico: Registro Nacional de Médicos Colegiados. https://www.cmp.org.pe/conoce-a-tu-medico/
 
-Landrigan, C. P., Rothschild, J. M., Cronin, J. W., Kaushal, R., Burdick, E., Katz, J. T., Lilly, C. M., Stone, P. H., Lockley, S. W., Bates, D. W., & Czeisler, C. A. (2004). Effect of reducing interns' work hours on serious medical errors in intensive care units. The New England Journal of Medicine, 351(18), 1838–1848. https://doi.org/10.1056/NEJMoa041406
+Draft.io (s.f.). *EventStorming*. Draft.io. https://draft.io/example/eventstorming
 
 Gothelf, J., & Seiden, J. (2021). Lean UX: Designing Great Products with Agile Teams (3ra ed.). O'Reilly Media, Inc.
 
+Landrigan, C. P., Rothschild, J. M., Cronin, J. W., Kaushal, R., Burdick, E., Katz, J. T., Lilly, C. M., Stone, P. H., Lockley, S. W., Bates, D. W., & Czeisler, C. A. (2004). Effect of reducing interns' work hours on serious medical errors in intensive care units. The New England Journal of Medicine, 351(18), 1838–1848. https://doi.org/10.1056/NEJMoa041406
+
+Maticorena-Quevedo, J., Beas, R., Anduaga-Beramendi, A., & Mayta-Tristán, P. (2016). Prevalencia del síndrome de burnout en médicos y enfermeras del Perú, Ensusalud 2014. Revista Peruana de Medicina Experimental y Salud Pública, 33(2), 241-247. https://doi.org/10.17843/rpmesp.2016.332.2170
+
 Qlerify (s.f.). *What is Big Picture Event Storming?*. Qlerify. https://www.qlerify.com/event-storming-concepts/what-is-big-picture-event-storming
+
+Superintendencia Nacional de Salud. (2024). Registro Nacional de Instituciones Prestadoras de Servicios de Salud (RENIPRESS). Plataforma Digital Única del Estado Peruano. Recuperado de https://renipress.susalud.gob.pe/
+
+Waldman, J. D., Kelly, F., Arora, S., & Smith, H. L. (2004). The shocking cost of turnover in health care. Health care management review, 29(1), 2-7. https://doi.org/10.1097/00004010-200401000-00002
 
 World Health Organization. (2019). Patient safety: Global action on patient safety (Report No. A72/26). https://apps.who.int/iris/handle/10665/327456
 
