@@ -672,7 +672,7 @@ Dropstat es una plataforma de gestión de personal diseñada específicamente pa
 * **Oura Bussiness / Oura Teams**<br>
 Oura es el referente en *wearables* de formato discreto (anillos inteligentes) que monitorean sueño, temperatura y HRV. A través de su división corporativa, ofrecen *dashboards* para que los administradores vean el estado de preparación ("Readiness") de sus miembros (Oura Health Oy, 2024). Es un competidor fuerte por la comodidad de su *hardware*. No obstante, su enfoque es de bienestar preventivo general y no está optimizado para la gestión técnica de guardias médicas ni posee la especificidad química para medir cortisol que caracteriza a CortiSense.
 
-* **UKG (Kronos) - Healthcare Solutions**
+* **UKG (Kronos) - Healthcare Solutions**<br>
 UKG es un gigante global en *software* de gestión de capital humano (HCM) y control de horarios a gran escala (Ultimate Kronos Group, 2024). Su nicho es la eficiencia administrativa y el cumplimiento de normativas laborales en instituciones masivas. Si bien es el estándar en muchos hospitales para marcar asistencia, carece de la capa de biotecnología aplicada que ofrece SyncedHealth; es decir, gestiona horarios de forma estática sin considerar el estado fisiológico real del médico.
 
 ### 2.1.1 Análisis Competitivo
@@ -692,7 +692,7 @@ En esta sección se realizará el análisis competitivo de los competidores iden
 			<td colspan="2">
 				<div align="center">Nombre</div>
 			</td>
-			<td><div align="center"><b>CortiSense (Su startup)</b></div></td>
+			<td><div align="center"><b>CortiSense</b></div></td>
 			<td><div align="center"><b>Competidor 1: Firstbeat Life</b></div></td>
 			<td><div align="center"><b>Competidor 2: Dropstat</b></div></td>
 			<td><div align="center"><b>Competidor 3: Oura Business</b></div></td>
