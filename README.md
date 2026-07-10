@@ -659,21 +659,21 @@ El *Lean UX Canvas* consolida los métodos y procesos de esta metodología en un
 
 ## 2.1 Competidores
 
-En esta sección se identificarán los mejores referentes para posteriormente realizar un análisis competitivo que nos ayudará a saber nuestro posicionamiento y el valor agregado que ofreceremos en el mercado. 
+En esta sección se identificarán los mejores referentes para posteriormente realizar un análisis competitivo que nos ayudará a saber nuestro posicionamiento y el valor agregado que ofreceremos en el mercado.
 
-Según la investigación, se descubrieron apps webs y/o aplicaciones similares. Sin embargo, estamos considerando cuatro competidores directos o indirectos que se parezcan más a nuestra startup.
+Según la investigación, se descubrieron *apps*, webs y/o aplicaciones similares. Sin embargo, estamos considerando cuatro competidores directos o indirectos que se parezcan más a nuestra *startup*.
 
 * **FirstBeat**<br>
-Firstbeat es el líder mundial en análisis de la Variabilidad de la Frecuencia Cardíaca (HRV) con un enfoque de alto rigor científico. Su modelo de negocio es del tipo SaaS corporativo, donde proporcionan un sensor de grado profesional y una plataforma de análisis para empresas. Su similitud con CortiSense reside en la identificación de estados de estrés y recuperación; sin embargo, se centran en el bienestar corporativo general y carecen de una integración directa con la gestión de horarios críticos o la medición de cortisol que SyncedHealth propone.
+Firstbeat es el líder mundial en análisis de la Variabilidad de la Frecuencia Cardíaca (HRV) con un enfoque de alto rigor científico. Su modelo de negocio es del tipo SaaS corporativo, donde proporcionan un sensor de grado profesional y una plataforma de análisis para empresas (Firstbeat Technologies, 2024). Su similitud con CortiSense reside en la identificación de estados de estrés y recuperación; sin embargo, se centran en el bienestar corporativo general y carecen de una integración directa con la gestión de horarios críticos o la medición de cortisol que SyncedHealth propone.
 
 * **Dropstat**<br>
-Dropstat es una plataforma de gestión de personal diseñada específicamente para el sector salud y la retención de personal en hospitales. Su modelo de negocio se basa en una suscripción institucional por centro médico. Es un competidor directo frente a nuestra aplicación en el ámbito operativo, ya que utiliza IA para predecir cuándo una unidad hospitalaria está en riesgo de fatiga y sugiere rotaciones de turnos. A diferencia de CortiSense, Dropstat se apoya más en datos administrativos e históricos que en biomarcadores fisiológicos en tiempo real (IoT).
+Dropstat es una plataforma de gestión de personal diseñada específicamente para el sector salud y la retención de personal en hospitales. Su modelo de negocio se basa en una suscripción institucional por centro médico (Dropstat, 2024). Es un competidor directo frente a nuestra aplicación en el ámbito operativo, ya que utiliza IA para predecir cuándo una unidad hospitalaria está en riesgo de fatiga y sugiere rotaciones de turnos. A diferencia de CortiSense, Dropstat se apoya más en datos administrativos e históricos que en biomarcadores fisiológicos en tiempo real (IoT).
 
 * **Oura Bussiness / Oura Teams**<br>
-Oura es el referente en wearables de formato discreto (anillos inteligentes) que monitorean sueño, temperatura y HRV. A través de su división corporativa, ofrecen dashboards para que administradores vean el estado de preparación ("Readiness") de sus miembros. Es un competidor fuerte por la comodidad de su hardware. No obstante, su enfoque es de bienestar preventivo general y no está optimizado para la gestión técnica de guardias médicas ni posee la especificidad química para medir cortisol que caracteriza a CortiSense.
+Oura es el referente en *wearables* de formato discreto (anillos inteligentes) que monitorean sueño, temperatura y HRV. A través de su división corporativa, ofrecen *dashboards* para que los administradores vean el estado de preparación ("Readiness") de sus miembros (Oura Health Oy, 2024). Es un competidor fuerte por la comodidad de su *hardware*. No obstante, su enfoque es de bienestar preventivo general y no está optimizado para la gestión técnica de guardias médicas ni posee la especificidad química para medir cortisol que caracteriza a CortiSense.
 
 * **UKG (Kronos) - Healthcare Solutions**
-UKG es un gigante global en software de gestión de capital humano (HCM) y control de horarios a gran escala. Su nicho es la eficiencia administrativa y el cumplimiento de normativas laborales en instituciones masivas. Si bien es el estándar en muchos hospitales para marcar asistencia, carece de la capa de biotecnología aplicada que ofrece SyncedHealth; es decir, gestiona horarios de forma estática sin considerar el estado fisiológico real del médico.
+UKG es un gigante global en *software* de gestión de capital humano (HCM) y control de horarios a gran escala (Ultimate Kronos Group, 2024). Su nicho es la eficiencia administrativa y el cumplimiento de normativas laborales en instituciones masivas. Si bien es el estándar en muchos hospitales para marcar asistencia, carece de la capa de biotecnología aplicada que ofrece SyncedHealth; es decir, gestiona horarios de forma estática sin considerar el estado fisiológico real del médico.
 
 ### 2.1.1 Análisis Competitivo
 
@@ -692,34 +692,34 @@ En esta sección se realizará el análisis competitivo de los competidores iden
 			<td colspan="2">
 				<div align="center">Nombre</div>
 			</td>
-			<td><div align="center"><b>CortiSense</b></div></td>
-			<td><div align="center"><b>Firstbeat Life</b></div></td>
-			<td><div align="center"><b>Dropstat</b></div></td>
-			<td><div align="center"><b>Oura Business</b></div></td>
-			<td><div align="center"><b>UKG Healthcare</b></div></td>
+			<td><div align="center"><b>CortiSense (Su startup)</b></div></td>
+			<td><div align="center"><b>Competidor 1: Firstbeat Life</b></div></td>
+			<td><div align="center"><b>Competidor 2: Dropstat</b></div></td>
+			<td><div align="center"><b>Competidor 3: Oura Business</b></div></td>
+			<td><div align="center"><b>Competidor 4: UKG Healthcare</b></div></td>
 		</tr>
 		<tr>
 			<td colspan="2">
 				<div align="center">Logo</div>
 			</td>
 			<td><div align="center">
-				<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/Style-Guidelines/logo.png?raw=true" alt="CortiSense logo"/>
+				<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/Style-Guidelines/logo.png?raw=true" alt="CortiSense logo" width="100"/>
 			</div></td>
 			<td><div align="center">
-				<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/rivals/firstbeatlife.png?raw=true" alt="Firstbeat logo"/>
+				<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/rivals/firstbeatlife.png?raw=true" alt="Firstbeat logo" width="100"/>
 			</div></td>
 			<td><div align="center">
-				<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/rivals/dropstat.png?raw=true" alt="Dropstat logo"/>
+				<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/rivals/dropstat.png?raw=true" alt="Dropstat logo" width="100"/>
 			</div></td>
 			<td><div align="center">
-				<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/rivals/oura.png?raw=true" alt="Oura logo"/>
+				<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/rivals/oura.png?raw=true" alt="Oura logo" width="100"/>
 			</div></td>
 			<td><div align="center">
-				<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/rivals/ukg.png?raw=true" alt="UKG logo"/>
+				<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/rivals/ukg.png?raw=true" alt="UKG logo" width="100"/>
 			</div></td>
 		</tr>
 		<tr>
-			<td rowspan="2">Perfil</td>
+			<td rowspan="2"><b>Perfil</b></td>
 			<td>Overview</td>
 			<td>Ecosistema IoT que mide cortisol y HRV para optimizar horarios médicos y prevenir burnout.</td>
 			<td>Plataforma de análisis fisiológico basada en HRV para bienestar corporativo y alto rendimiento.</td>
@@ -728,7 +728,7 @@ En esta sección se realizará el análisis competitivo de los competidores iden
 			<td>Solución masiva de gestión de capital humano y control de asistencia hospitalaria.</td>
 		</tr>
 		<tr>
-			<td>Ventaja Competitiva</td>
+			<td>Ventaja competitiva<br>¿Qué valor ofrece a los clientes?</td>
 			<td>Medición directa de cortisol y reprogramación automática de turnos basada en fatiga real.</td>
 			<td>Rigor científico extremo en el análisis de la Variabilidad Cardíaca (HRV).</td>
 			<td>Algoritmo especializado en la escasez de personal y seguridad de la unidad médica.</td>
@@ -736,8 +736,8 @@ En esta sección se realizará el análisis competitivo de los competidores iden
 			<td>Dominio del mercado administrativo e integración con nóminas y recursos humanos.</td>
 		</tr>
 		<tr>
-			<td rowspan="2">Marketing</td>
-			<td>Mercado Objetivo</td>
+			<td rowspan="2"><b>Perfil de Marketing</b></td>
+			<td>Mercado objetivo</td>
 			<td>Clínicas privadas y hospitales de alta complejidad (UCI, Emergencias) en Perú.</td>
 			<td>Empresas corporativas y atletas de élite interesados en rendimiento físico.</td>
 			<td>Redes hospitalarias y administradores de enfermería (principalmente EE.UU.).</td>
@@ -745,7 +745,7 @@ En esta sección se realizará el análisis competitivo de los competidores iden
 			<td>Grandes instituciones de salud y organismos gubernamentales.</td>
 		</tr>
 		<tr>
-			<td>Estrategias</td>
+			<td>Estrategias de marketing</td>
 			<td>B2B directo a directores médicos, participación en congresos de salud ocupacional.</td>
 			<td>Marketing de contenido científico y alianzas con centros de alto rendimiento.</td>
 			<td>Marketing de datos sobre seguridad del paciente y ahorro en costos de rotación.</td>
@@ -753,8 +753,8 @@ En esta sección se realizará el análisis competitivo de los competidores iden
 			<td>Venta consultiva a gran escala y relaciones gubernamentales.</td>
 		</tr>
 		<tr>
-			<td rowspan="3">Producto</td>
-			<td>Servicios</td>
+			<td rowspan="3"><b>Perfil de Producto</b></td>
+			<td>Productos & Servicios</td>
 			<td>Wearable IoT + Dashboard de gestión de horarios + Alertas en tiempo real.</td>
 			<td>Sensor ECG profesional + App de reporte de salud trimestral.</td>
 			<td>Plataforma SaaS de programación de turnos y comunicación de personal.</td>
@@ -762,7 +762,7 @@ En esta sección se realizará el análisis competitivo de los competidores iden
 			<td>Software de marcado, nómina y gestión de cumplimiento laboral.</td>
 		</tr>
 		<tr>
-			<td>Precios</td>
+			<td>Precios & Costos</td>
 			<td>Suscripción mensual (SaaS) + Venta inicial de dispositivos.</td>
 			<td>Costo por evaluación o suscripción anual por empleado.</td>
 			<td>Suscripción por número de camas o personal activo en el sistema.</td>
@@ -770,17 +770,17 @@ En esta sección se realizará el análisis competitivo de los competidores iden
 			<td>Licenciamiento empresarial por volumen de empleados.</td>
 		</tr>
 		<tr>
-			<td>Canales</td>
-			<td>Venta directa B2B y soporte técnico especializado.</td>
-			<td>Web oficial, distribuidores autorizados y consultores de salud.</td>
+			<td>Canales de distribución (Web y/o Móvil)</td>
+			<td>Venta directa B2B y soporte técnico especializado (Web y Móvil).</td>
+			<td>Web oficial, distribuidores autorizados y consultores de salud (Web y Móvil).</td>
 			<td>Plataforma Web y aplicaciones móviles para el personal.</td>
-			<td>E-commerce directo y canal corporativo (Oura for Business).</td>
-			<td>Consultores de implementación y fuerza de ventas global.</td>
+			<td>E-commerce directo y canal corporativo (Web y Móvil).</td>
+			<td>Consultores de implementación y fuerza de ventas global (Web).</td>
 		</tr>
 		<tr>
-			<td rowspan="4">SWOT</td>
+			<td rowspan="4"><b>Análisis SWOT</b></td>
 			<td>Fortalezas</td>
-			<td>Unicidad en el uso de cortisol. Integración directa con el flujo de trabajo (horarios).</td>
+			<td>Unicidad en el uso de cortisol. Integración directa con el flujo de trabajo operativo.</td>
 			<td>Precisión de grado médico. Base de datos fisiológicos masiva para comparativa.</td>
 			<td>Enfoque profundo en la retención de personal y seguridad clínica.</td>
 			<td>Diseño superior y gran autonomía de batería del dispositivo.</td>
@@ -789,25 +789,25 @@ En esta sección se realizará el análisis competitivo de los competidores iden
 		<tr>
 			<td>Debilidades</td>
 			<td>Marca nueva en el mercado. Resistencia inicial al monitoreo constante.</td>
-			<td>No soluciona el problema de los horarios; solo entrega el diagnóstico.</td>
+			<td>No soluciona el problema logístico de los horarios; solo entrega el diagnóstico.</td>
 			<td>No utiliza datos biométricos en tiempo real, solo datos históricos.</td>
-			<td>Menor precisión en actividades de alta intensidad comparado con sensores de pecho.</td>
-			<td>Sistema rígido y "antiguo" que no prioriza la salud mental del médico.</td>
+			<td>Menor precisión en actividades de alta intensidad comparado con sensores clínicos.</td>
+			<td>Sistema rígido que no prioriza el estado fisiológico del médico.</td>
 		</tr>
 		<tr>
 			<td>Oportunidades</td>
 			<td>Creciente legislación sobre salud ocupacional y prevención de estrés en Perú.</td>
 			<td>Expansión a mercados de salud pública post-pandemia.</td>
 			<td>Integración con dispositivos médicos de terceros para enriquecer su IA.</td>
-			<td>Nuevos sensores de temperatura para detección temprana de enfermedades.</td>
+			<td>Nuevos sensores de temperatura para detección temprana de patologías.</td>
 			<td>Adquisición de startups de biometría para modernizar su oferta.</td>
 		</tr>
 		<tr>
 			<td>Amenazas</td>
-			<td>Gigantes tecnológicos (Apple/Google) lanzando funciones de estrés médico.</td>
+			<td>Gigantes tecnológicos (Apple/Google) lanzando funciones de estrés clínico.</td>
 			<td>Saturación del mercado de wearables de bienestar corporativo.</td>
 			<td>Competidores locales que ofrecen gestión de turnos a precios muy bajos.</td>
-			<td>Problemas de privacidad de datos sensibles a nivel internacional (GDPR).</td>
+			<td>Regulaciones estrictas de privacidad de datos sensibles (Ley de Protección de Datos).</td>
 			<td>Cambios bruscos en las leyes laborales que afecten el control de horarios.</td>
 		</tr>
 	</tbody>
@@ -815,25 +815,22 @@ En esta sección se realizará el análisis competitivo de los competidores iden
 
 ### 2.1.2. Estrategias y tácticas frente a competidores.
 
-En esta sección, se llevará a cabo el análisis de las estrategias y tácticas que serán usadas con el objetivo de buscar provecho a las debilidades de la competencia y afrontar sus fortalezas. Además, gracias al analisis FODA, se lograron identificar las oportunidades y amenazas de mercado presentes, debido a la evaluación de las fortalezas que ofrece nuestro software y las debilidades frente a empresas con un mayor control en la industria y trayectoria empresarial. De esa manera, este enfoque nos permite concebir estrategias adecuadas para nuestros segmentos objetivos en el sector salud.
+En esta sección, se llevará a cabo el análisis de las estrategias y tácticas que serán implementadas con el objetivo de capitalizar las debilidades de la competencia y hacer frente a sus fortalezas. Gracias al análisis FODA realizado, se lograron identificar las oportunidades y amenazas de mercado presentes, evaluando las ventajas tecnológicas que ofrece nuestro *software* frente a empresas con un mayor control en la industria. Guiados por las teorías clásicas de ventaja competitiva (Porter, 1980), este enfoque nos permite estructurar acciones altamente efectivas para penetrar nuestro segmento objetivo en el sector salud.
 
 **Estrategia de Diferenciación:**
-* Con el propósito de satisfacer las necesidades del Personal Sanitario Operativo (Médicos y Enfermeros), es imperante la búsqueda de un enfoque orientado al rigor clínico y la protección del trabajador. Contraria a las perspectivas que ofrecen productos de consumo masivo como Oura con manejo de datos generales de bienestar, CortiSense se desasemeja de sus pares gracias a su monitoreo especializado como cortisol y HRV. Ello garantiza que el personal médico no sea solo tratado como un recurso humano, sino como un verdadero profesional cuya integridad física y mental es de valor y se encuentra monitoreada científicamente con el propósito de prevenir colapsos. De esa manera, se eliminará la percepción de "vigilancia administrativa" por una de verdadero respaldo.
+* Con el propósito de satisfacer las necesidades del Personal Sanitario Operativo (médicos y enfermeros), es imperante mantener un enfoque orientado al rigor clínico y la protección del trabajador. Contrario a las perspectivas que ofrecen productos de consumo masivo o corporativo como Oura, cuyo manejo de datos se limita al bienestar general, CortiSense se desmarca de sus competidores gracias a su monitoreo especializado en cortisol y HRV. Ello garantiza que el personal médico no sea tratado simplemente como un recurso administrativo, sino como un profesional cuya integridad física y mental es de alto valor y se encuentra resguardada científicamente para prevenir colapsos. De esta manera, se elimina la percepción de "vigilancia corporativa punitiva", reemplazándola por una de verdadero respaldo laboral.
 
-* En vista de enriquecer la experiencia de usuario de los Administradores y Directores Médicos, es importante hacernos percibir mediante la gestión dinámica basada en evidencias. Mientras la competencia impone módulos de horarios estáticos que pasan por alto la fatiga acumulada. CortiSense apuesta por el fomento de una toma de decisiones inteligente. De esa manera, nuestra plataforma permite la reprogramación de turnos en tiempo real que se encuentran basados en biomarcadores. En consecuencia, nuestra plataforma brinda una gestión proactiva que reduce de manera drástica el riesgo de la negligencia médica producto de errores médicos o agotamiento.
+* En vista de enriquecer la experiencia de usuario de los Administradores y Directores Médicos, es fundamental posicionar a CortiSense como una herramienta de gestión dinámica basada en evidencias. Mientras la competencia (ej. UKG) impone módulos de horarios estáticos que pasan por alto la fatiga acumulada del usuario operativo, CortiSense apuesta por una toma de decisiones inteligente. Nuestra plataforma permite la reprogramación de turnos en tiempo real basándose en alertas de biomarcadores, brindando una gestión proactiva que reduce drásticamente el riesgo de negligencias producto de errores médicos por agotamiento.
 
 **Estrategia de Liderazgo en Costos:**
-* Como resultado de la busqueda de la complacencia de los Médicos, se ofrecerán modelos de implementación por niveles críticos. Ello permitirá que hospitales adopten CortiSense de manera inicial en sectores donde se evidencia un alto riesgo (UCI, Emergencia, Cirugía) sin la necesidad de comprometer el presupuesto de dichas instituciones. Al demostrar una reducción significativa de los costos operativos derivados de bajas médicas o errores clínicos en dichas áreas. De esa manera, facilitaremos el escalamiento de la solución a toda la red hospitalaria de manera orgánica.
+* Con el objetivo de ganar tracción institucional, se ofrecerán modelos de implementación escalonados por niveles de criticidad. Esto permitirá que los hospitales adopten CortiSense de manera inicial en sectores donde se evidencia un riesgo clínico altísimo (UCI, Emergencia, Centro Quirúrgico) sin comprometer el presupuesto general de la institución. Al demostrar en la práctica una reducción significativa de los costos operativos derivados de bajas médicas, absentismo o errores clínicos, facilitaremos el escalamiento horizontal de la solución a toda la red hospitalaria de manera orgánica.
 
-* A manera de buscar la satisfacción de las instituciones, la estrategia empleada se basará en el ROI por reducción de riesgos. En lugar de competir únicamente por el precio del hardware, nuestra monetización se enfocará en el valor del software de gestión (SaaS) que previene pérdidas económicas masivas por negligencias médicas. Proveemos una plataforma de alta disponibilidad cuya inversión se recupera mediante la retención de especialistas y la optimización de la productividad del personal, eliminando sobrecostos por rotación de talento.
+* Para lograr la convicción de las instituciones de salud, la estrategia comercial se sustentará en el Retorno de Inversión (ROI) por mitigación de riesgos. Diversos estudios demuestran que el agotamiento médico (*burnout*) cuesta miles de millones al año debido a la reducción de productividad y la altísima rotación de especialistas **(Han et al., 2019)**. En lugar de competir en precio por el hardware IoT, nuestra monetización se justificará en el inmenso valor financiero que nuestro modelo SaaS aporta al prevenir pérdidas masivas por juicios de mala praxis y eliminar los sobrecostos por rotación de talento crítico.
 
-**Estrategia de Marketing:**
+**Estrategia de Marketing y Tácticas Operativas:**
+* Para ambos segmentos, la estrategia de comunicación estará centrada en el concepto de *"Seguridad Clínica basada en la Resiliencia del Personal"*. Teniendo esta premisa como eje central, desarrollaremos casos de estudio piloto en instituciones de salud de Lima Metropolitana; así, demostraremos con métricas cómo el monitoreo de CortiSense reduce la fatiga crónica y mejora directamente los indicadores de seguridad del paciente. El mensaje rector será claro: **un médico sano es la mejor garantía para un hospital eficiente.**
 
-Para ambos segmentos, la estrategia estará centrada en la "Seguridad Clínica basada en la Resiliencia del Personal". Teniendo esa visión como eje central, nosotros desarrollaremos casos de estudio enfocados en instituciones de salud en Lima Metropolitana; así, demostraremos cómo el monitoreo de CortiSense reduce la fatiga crónica y, por consecuencia, mejora los indicadores de seguridad del paciente. El mensaje central será que un médico sano es la mejor garantía para un hospital eficiente.
-
-**Tácticas:**
-
-Establecer convenios con aseguradoras de salud en Perú para explorar cómo la implementación de CortiSense puede reducir las primas de seguros de responsabilidad civil médica para las clínicas que utilicen nuestra plataforma.
+* **Táctica Principal:** Estableceremos mesas de trabajo y convenios estratégicos con las principales aseguradoras de salud en Perú (EPS y Seguros Privados). El objetivo será explorar cómo la implementación de los algoritmos predictivos de CortiSense puede catalogarse como una "medida de prevención de riesgos", lo cual permitiría reducir las primas anuales de seguros de responsabilidad civil médica (seguros contra mala praxis) para las clínicas que utilicen y mantengan activa nuestra plataforma.
 
 ## 2.2 Entrevistas
 
@@ -5167,15 +5164,27 @@ Colegio Médico del Perú. (2024). Conoce a tu médico: Registro Nacional de Mé
 
 Draft.io (s.f.). *EventStorming*. Draft.io. https://draft.io/example/eventstorming
 
+Dropstat. (2024). *Dropstat: AI-powered healthcare staffing and shift management*. https://dropstat.com/
+
+Firstbeat Technologies. (2024). *Firstbeat Life: Corporate wellness and stress management*. https://www.firstbeat.com/
+
 Gothelf, J., & Seiden, J. (2021). Lean UX: Designing Great Products with Agile Teams (3ra ed.). O'Reilly Media, Inc.
+
+Han, S., Shanafelt, T. D., Sinsky, C. A., Awad, K. M., Dyrbye, L. N., Fiscus, L. C., Trockel, M., & Goh, J. (2019). Estimating the attributable cost of physician burnout in the United States. *Annals of Internal Medicine*, *170*(11), 784–790. https://doi.org/10.7326/M18-1422
 
 Landrigan, C. P., Rothschild, J. M., Cronin, J. W., Kaushal, R., Burdick, E., Katz, J. T., Lilly, C. M., Stone, P. H., Lockley, S. W., Bates, D. W., & Czeisler, C. A. (2004). Effect of reducing interns' work hours on serious medical errors in intensive care units. The New England Journal of Medicine, 351(18), 1838–1848. https://doi.org/10.1056/NEJMoa041406
 
 Maticorena-Quevedo, J., Beas, R., Anduaga-Beramendi, A., & Mayta-Tristán, P. (2016). Prevalencia del síndrome de burnout en médicos y enfermeras del Perú, Ensusalud 2014. Revista Peruana de Medicina Experimental y Salud Pública, 33(2), 241-247. https://doi.org/10.17843/rpmesp.2016.332.2170
 
+Oura Health Oy. (2024). *Oura for Business: Corporate wellness wearable*. https://ouraring.com/business
+
+Porter, M. E. (1980). *Competitive strategy: Techniques for analyzing industries and competitors*. Free Press.
+
 Qlerify (s.f.). *What is Big Picture Event Storming?*. Qlerify. https://www.qlerify.com/event-storming-concepts/what-is-big-picture-event-storming
 
 Superintendencia Nacional de Salud. (2024). Registro Nacional de Instituciones Prestadoras de Servicios de Salud (RENIPRESS). Plataforma Digital Única del Estado Peruano. Recuperado de https://renipress.susalud.gob.pe/
+
+Ultimate Kronos Group. (2024). *UKG for Healthcare: Workforce management solutions*. https://www.ukg.com/
 
 Waldman, J. D., Kelly, F., Arora, S., & Smith, H. L. (2004). The shocking cost of turnover in health care. Health care management review, 29(1), 2-7. https://doi.org/10.1097/00004010-200401000-00002
 
