@@ -862,19 +862,19 @@ El diseño de estas preguntas está alineado con la necesidad de validar nuestra
 
 **Preguntas de descubrimiento (Principales):** 
 
-10. ¿Cuántas horas seguidas trabaja en una guardia típica y con qué frecuencia se repiten a la semana?
-11. Cuando usted o un colega llega a un punto de agotamiento extremo durante una guardia, ¿cómo describiría ese momento? ¿Qué nombre le daría a ese estado dentro de su entorno de trabajo?
-12. ¿Qué sucede exactamente en su institución cuando un médico colapsa por fatiga durante un turno? ¿Qué pasos se siguen y quiénes intervienen?
-13. ¿Existe actualmente algún mecanismo formal en su institución para detectar o prevenir el agotamiento del personal? ¿Considera que es suficiente?
-14. De todas las dificultades que enfrenta relacionadas con la fatiga en guardia, ¿cuál considera que es la más urgente de resolver? ¿Por qué?
-15. Si tuviera que describir en sus propias palabras qué significa para usted estar en un "estado de riesgo por fatiga", ¿cómo lo definiría? ¿Qué señales físicas o mentales lo identifican?
-16. Si un sistema detectara automáticamente que usted ha superado ese umbral de riesgo, ¿qué debería ocurrir a continuación? ¿Qué acción del sistema consideraría que resuelve correctamente esa situación?
-17. ¿Cómo sabría usted que esa acción automática del sistema funcionó bien? ¿Qué resultado esperaría ver para considerarla exitosa?
-18. ¿Qué información sobre su propia salud durante la guardia le resultaría más valiosa consultar? Si tuviera que ordenarlas por importancia, ¿cuál iría primero?
-19. ¿Qué tan dispuesto estaría a usar un *wearable* durante sus horas de servicio si este le ayudara a prevenir un error clínico o un colapso físico?
-20. ¿Qué condiciones serían indispensables para que usted aceptara este tipo de monitoreo continuo? (Privacidad de datos, anonimización, control sobre quién accede a su información, etc.).
-21. ¿Cómo debería ser físicamente el dispositivo para que no interfiera con su trabajo clínico? (Tamaño, peso, zona del cuerpo, discreción visual).
-22. ¿Existe alguna funcionalidad que definitivamente NO querría que tuviera el sistema? ¿Por qué?
+1. ¿Cuántas horas seguidas trabaja en una guardia típica y con qué frecuencia se repiten a la semana?
+2. Cuando usted o un colega llega a un punto de agotamiento extremo durante una guardia, ¿cómo describiría ese momento? ¿Qué nombre le daría a ese estado dentro de su entorno de trabajo?
+3. ¿Qué sucede exactamente en su institución cuando un médico colapsa por fatiga durante un turno? ¿Qué pasos se siguen y quiénes intervienen?
+4. ¿Existe actualmente algún mecanismo formal en su institución para detectar o prevenir el agotamiento del personal? ¿Considera que es suficiente?
+5. De todas las dificultades que enfrenta relacionadas con la fatiga en guardia, ¿cuál considera que es la más urgente de resolver? ¿Por qué?
+6. Si tuviera que describir en sus propias palabras qué significa para usted estar en un "estado de riesgo por fatiga", ¿cómo lo definiría? ¿Qué señales físicas o mentales lo identifican?
+7. Si un sistema detectara automáticamente que usted ha superado ese umbral de riesgo, ¿qué debería ocurrir a continuación? ¿Qué acción del sistema consideraría que resuelve correctamente esa situación?
+8. ¿Cómo sabría usted que esa acción automática del sistema funcionó bien? ¿Qué resultado esperaría ver para considerarla exitosa?
+9. ¿Qué información sobre su propia salud durante la guardia le resultaría más valiosa consultar? Si tuviera que ordenarlas por importancia, ¿cuál iría primero?
+10. ¿Qué tan dispuesto estaría a usar un *wearable* durante sus horas de servicio si este le ayudara a prevenir un error clínico o un colapso físico?
+11. ¿Qué condiciones serían indispensables para que usted aceptara este tipo de monitoreo continuo? (Privacidad de datos, anonimización, control sobre quién accede a su información, etc.).
+12. ¿Cómo debería ser físicamente el dispositivo para que no interfiera con su trabajo clínico? (Tamaño, peso, zona del cuerpo, discreción visual).
+13. ¿Existe alguna funcionalidad que definitivamente NO querría que tuviera el sistema? ¿Por qué?
 
 ---
 
@@ -898,18 +898,18 @@ El cuestionario para este segmento estratégico está alineado con la validació
 
 **Preguntas de descubrimiento (Principales):** 
 
-11. ¿Cómo elabora actualmente los horarios y turnos del personal médico? ¿Qué criterios utiliza para distribuir la carga de trabajo entre los especialistas?
-12. Cuando ocurre una situación de agotamiento extremo del personal durante un turno, ¿cómo se llama ese evento dentro de su institución? ¿Existe un protocolo formal para manejarlo?
-13. ¿Qué pasos sigue usted desde que detecta que un médico está en riesgo de fatiga hasta que toma una acción correctiva? ¿Quiénes más intervienen en ese proceso?
-14. De todos los problemas que enfrenta en la gestión del personal relacionados con la fatiga y los turnos, ¿cuál considera que es el más urgente de resolver con apoyo tecnológico?
-15. Si tuviera que describir en sus propias palabras qué significa un "turno de riesgo" o una "unidad en estado crítico de fatiga", ¿cómo lo definiría? ¿Qué indicadores utilizaría para identificarlo?
-16. Si el sistema le mostrara en tiempo real el nivel de fatiga acumulada de cada médico en turno, ¿qué decisiones concretas tomaría con esa información? ¿Quién dentro de la institución debería tener acceso a esos datos?
-17. Cuando el sistema detecte automáticamente que un médico ha superado el umbral de riesgo y genere una sugerencia de reprogramación de turno, ¿qué resultado esperaría ver para considerar que esa acción fue exitosa? ¿Cómo mediría que funcionó correctamente?
-18. De las siguientes capacidades del sistema, ¿cuál le resulta más urgente e importante: visualización de fatiga en tiempo real, sugerencias automáticas de reprogramación, reportes exportables para auditoría, o alertas preventivas al personal? ¿Por qué?
-19. ¿Cuáles serían los criterios mínimos que un sistema de monitoreo biométrico debería cumplir para que usted lo aprobara e implementara en su institución? (seguridad de datos, cumplimiento normativo, costo, facilidad de uso, aceptación del personal, etc.).
-20. ¿Cómo debería estructurarse el *dashboard* administrativo para que encaje en su flujo de trabajo diario? ¿Prefiere resúmenes consolidados, alertas en tiempo real o una combinación de ambos?
-21. ¿Qué tipo de reportes necesitaría exportar desde la plataforma para cumplimiento normativo o auditorías internas?
-22. ¿Qué integración esperaría que tuviera esta plataforma con los sistemas que ya utiliza en su institución? (sistemas HIS, planillas, nómina, etc.).
+1. ¿Cómo elabora actualmente los horarios y turnos del personal médico? ¿Qué criterios utiliza para distribuir la carga de trabajo entre los especialistas?
+2. Cuando ocurre una situación de agotamiento extremo del personal durante un turno, ¿cómo se llama ese evento dentro de su institución? ¿Existe un protocolo formal para manejarlo?
+3. ¿Qué pasos sigue usted desde que detecta que un médico está en riesgo de fatiga hasta que toma una acción correctiva? ¿Quiénes más intervienen en ese proceso?
+4. De todos los problemas que enfrenta en la gestión del personal relacionados con la fatiga y los turnos, ¿cuál considera que es el más urgente de resolver con apoyo tecnológico?
+5. Si tuviera que describir en sus propias palabras qué significa un "turno de riesgo" o una "unidad en estado crítico de fatiga", ¿cómo lo definiría? ¿Qué indicadores utilizaría para identificarlo?
+6. Si el sistema le mostrara en tiempo real el nivel de fatiga acumulada de cada médico en turno, ¿qué decisiones concretas tomaría con esa información? ¿Quién dentro de la institución debería tener acceso a esos datos?
+7. Cuando el sistema detecte automáticamente que un médico ha superado el umbral de riesgo y genere una sugerencia de reprogramación de turno, ¿qué resultado esperaría ver para considerar que esa acción fue exitosa? ¿Cómo mediría que funcionó correctamente?
+8. De las siguientes capacidades del sistema, ¿cuál le resulta más urgente e importante: visualización de fatiga en tiempo real, sugerencias automáticas de reprogramación, reportes exportables para auditoría, o alertas preventivas al personal? ¿Por qué?
+9. ¿Cuáles serían los criterios mínimos que un sistema de monitoreo biométrico debería cumplir para que usted lo aprobara e implementara en su institución? (seguridad de datos, cumplimiento normativo, costo, facilidad de uso, aceptación del personal, etc.).
+10. ¿Cómo debería estructurarse el *dashboard* administrativo para que encaje en su flujo de trabajo diario? ¿Prefiere resúmenes consolidados, alertas en tiempo real o una combinación de ambos?
+11. ¿Qué tipo de reportes necesitaría exportar desde la plataforma para cumplimiento normativo o auditorías internas?
+12. ¿Qué integración esperaría que tuviera esta plataforma con los sistemas que ya utiliza en su institución? (sistemas HIS, planillas, nómina, etc.).
 
 ---
 
