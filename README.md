@@ -914,411 +914,430 @@ El cuestionario para este segmento estratégico está alineado con la validació
 ---
 
 ### 2.2.2 Registro de entrevistas
-En esta sección presentamos los registros de las entrevistas realizadas para cada segmento objetivo de nuestra aplicación.
 
-**Segmento #1: Personal Sanitario Operativo**<br>
+En esta sección presentamos los registros de las entrevistas realizadas para cada segmento objetivo de nuestra aplicación. Se incluye la información demográfica, el análisis cualitativo (motivaciones y frustraciones) y las evidencias de las sesiones.
+
+<br>
+
+**Segmento #1: Personal Sanitario Operativo**
 
 <table>
-<colgroup></colgroup>
-<thead>
-  <tr>
-    <th colspan="2">Entrevista #1<br></th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td>Nombre</td>
-    <td>Ricardo</td>
-  </tr>
-  <tr>
-    <td>Apellidos</td>
-    <td>Huamán Ochoa</td>
-  </tr>
-  <tr>
-    <td>Edad</td>
-    <td>50 años</td>
-  </tr>
-  <tr>
-    <td>Distrito</td>
-    <td>Lince</td>
-  </tr>
-	<tr>
-    <td>Centro de trabajo</td>
-    <td>Hospital paraestatal</td>
-  </tr>
-<tr>
-    <td>Área</td>
-    <td>Emergencias</td>
-  </tr>
-  <tr>
-    <td>Tecnologías usadas en su campo laboral</td>
-    <td>Gmail, Google como navegador, monitores cardiacos, desfribiladores, ventiladores mecánicos y oxímetros</td>
-  </tr>
-  <tr>
-    <td>Motivación</td>
-    <td>El deseo de mejorar y acelerar los procesos de detección y atención de casos extremos de agotamiento por horas repetidas continuas o factores externos es un factor que lo motiva a buscar una solución. Manifiesta la necesidad de que dicha solución sea rápida, segura y eficaz, que puede ser útil sobre todo para aquel personal novato que puede resultar afectado por su inexperiencia en el manejo de estrés o aquel médico que se encuentre presionado por agentes externos. De esta manera, busca reducir los casos de somatización en sus colegas y mejorar el desempeño del cuerpo médico.</td>
-  </tr>
-  <tr>
-    <td>Frustración</td>
-    <td>La falta de mecanismos ágiles para la detección de casos de estrés laboral en el área médica es algo que le preocupa. Menciona la existencia del programa de Salud Ocupacional, que se encarga de generar tamizajes con el propósito de evitar ausentismo en los médicos, sin embargo, también menciona que dicho tamizaje demora días en enviar resultados concretos. Explica que aquellos médicos con dichos cuadros suelen ser complicados de tratar a nivel de colega debido a estar en un estado de presencia física pero no mental y emocional, lo que perjudica gravemente el flujo de trabajo. Añade que problemas anímicos pueden resultar en mayor carga externa, lo que genera menor desempeño.</td>
-  </tr>
-  <tr>
-    <td>Sistemas que usa para detectar o reducir el impacto de la carga laboral</td>
-    <td>Seguimiento y seminarios de Salud Ocupacional, uso de wearables (relojes), Ceprit de EsSalud</td>
-  </tr>
-  <tr>
-    <td>Preferencias</td>
-    <td>
-		<ul>
-			<li>Dispositivos tipo wearable (relojes digitales) que sean portátiles y accesibles.</li>
-			<li>Hardware con batería de larga duración (prolongada).</li>
-			<li>Software eficiente que no se "cuelgue" y que asegure el guardado de datos.</li>
-			<li>Alta prioridad en la privacidad y anonimización de datos personales y médicos.</li>
-			<li>Soluciones que reduzcan tiempos de espera y costos en comparación con los tamizajes actuales.</li>
-		</ul>
-	</td>
-  </tr>
-  <tr>
-    <td>Evidencia</td>
-    <td><div align="center"><img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Interview-evidences/interview-ricardo-huaman-proof.png?raw=true" alt="Entrevista Ricardo Huamán"></div></td>
-  </tr>
-  <tr>
-    <td>Link</td>
-    <td><p><a target="_blank" href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202411627_upc_edu_pe/IQADDB434c4aQIhGJ8gitSW8AboZ5iu2QFvya7_6TG5gfrw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=HIZ60a" title="Title">Ver grabación aquí</a></p></td>
-  </tr>
-  <tr>
-    <td>Duración / Timing:<br></td>
-    <td>00:00 min - 25:13 min</td>
-  </tr>
-  <tr>
-    <td>Resumen</td>
-    <td>Médico de emergencias con 150 horas mensuales de labor (incluyendo guardias de 12h). Identifica la fatiga y el estrés como factores que afectan el desempeño y generan ausentismo (aprox. 8-10% del personal). Valora positivamente el monitoreo biométrico (ritmo cardíaco, saturación de oxígeno) mediante tecnología portátil, siempre que sea rápida, segura y respete la confidencialidad de la información.</td>
-  </tr>
-</tbody>
+  <thead>
+    <tr>
+      <th colspan="2">Entrevista #1</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td width="30%"><b>Nombre</b></td>
+      <td>Ricardo</td>
+    </tr>
+    <tr>
+      <td><b>Apellidos</b></td>
+      <td>Huamán Ochoa</td>
+    </tr>
+    <tr>
+      <td><b>Edad</b></td>
+      <td>50 años</td>
+    </tr>
+    <tr>
+      <td><b>Distrito</b></td>
+      <td>Lince</td>
+    </tr>
+    <tr>
+      <td><b>Centro de trabajo</b></td>
+      <td>Hospital paraestatal</td>
+    </tr>
+    <tr>
+      <td><b>Área</b></td>
+      <td>Emergencias</td>
+    </tr>
+    <tr>
+      <td><b>Tecnologías usadas</b></td>
+      <td>Gmail, navegador Google Chrome, monitores cardíacos, desfibriladores, ventiladores mecánicos y oxímetros.</td>
+    </tr>
+    <tr>
+      <td><b>Motivación</b></td>
+      <td>El deseo de mejorar y acelerar los procesos de detección y atención de casos extremos de agotamiento por horas continuas o factores externos. Manifiesta la necesidad de que la solución sea rápida, segura y eficaz, lo cual considera vital para el personal novato (que puede resultar afectado por su inexperiencia en el manejo del estrés). Busca reducir los casos de somatización en sus colegas y mejorar el desempeño general del cuerpo médico.</td>
+    </tr>
+    <tr>
+      <td><b>Frustración</b></td>
+      <td>La falta de mecanismos ágiles para la detección de estrés laboral. Menciona que el programa de Salud Ocupacional realiza tamizajes, pero los resultados concretos demoran días. Explica que los médicos con cuadros de *burnout* suelen estar presentes físicamente pero ausentes mental y emocionalmente, lo que perjudica gravemente el flujo de trabajo del equipo.</td>
+    </tr>
+    <tr>
+      <td><b>Sistemas actuales</b></td>
+      <td>Seguimiento y seminarios de Salud Ocupacional, uso de *wearables* comerciales (relojes), CEPRIT de EsSalud.</td>
+    </tr>
+    <tr>
+      <td><b>Preferencias</b></td>
+      <td>
+        <ul>
+          <li>Dispositivos tipo <i>wearable</i> (relojes digitales) portátiles y accesibles.</li>
+          <li>Hardware con batería de larga duración.</li>
+          <li>Software eficiente que asegure el guardado de datos en tiempo real.</li>
+          <li>Alta prioridad en la privacidad y anonimización de datos médicos.</li>
+          <li>Soluciones que reduzcan los tiempos de espera frente a los tamizajes manuales actuales.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td><b>Evidencia</b></td>
+      <td>
+        <div align="center">
+          <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Interview-evidences/interview-ricardo-huaman-proof.png?raw=true" alt="Evidencia Entrevista Ricardo Huamán" width="400">
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td><b>Enlace de grabación</b></td>
+      <td><a target="_blank" href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202411627_upc_edu_pe/IQADDB434c4aQIhGJ8gitSW8AboZ5iu2QFvya7_6TG5gfrw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=HIZ60a">Ver grabación de la entrevista</a></td>
+    </tr>
+    <tr>
+      <td><b>Duración / Timing</b></td>
+      <td>25:13 min</td>
+    </tr>
+    <tr>
+      <td><b>Resumen</b></td>
+      <td>Médico de emergencias con 150 horas mensuales de labor (incluyendo guardias de 12h). Identifica la fatiga y el estrés como factores críticos que afectan el desempeño y generan ausentismo (aprox. 8-10% del personal). Valora positivamente el monitoreo biométrico mediante tecnología portátil, siempre que sea rápida, segura y respete absolutamente la confidencialidad de la información del médico.</td>
+    </tr>
+  </tbody>
 </table>
 
 <br>
 
 <table>
-<colgroup></colgroup>
-<thead>
-  <tr>
-    <th colspan="2">Entrevista #2<br></th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td>Nombre</td>
-    <td>Maribel</td>
-  </tr>
-  <tr>
-    <td>Apellidos</td>
-    <td>Fernandez Chauca</td>
-  </tr>
-  <tr>
-    <td>Edad</td>
-    <td>38 años</td>
-  </tr>
-  <tr>
-    <td>Distrito</td>
-    <td>Huanta - Ayacucho</td>
-  </tr>
-	<tr>
-    <td>Centro de trabajo</td>
-    <td>Hospital de Apoyo Huanta</td>
-  </tr>
-<tr>
-    <td>Área</td>
-    <td>Laboratorio Clínico</td>
-  </tr>
-  <tr>
-    <td>Tecnologías usadas en su campo laboral</td>
-    <td>Google como navegador, equipos de laboratorio integrados con el sistema LIS</td>
-  </tr>
-  <tr>
-    <td>Motivación</td>
-    <td>Su motivación es mejorar la atención a los pacientes, cuidando su bienestar físico y emocional para trabajar mejor. También busca visibilizar los riesgos laborales del personal de salud y que esto ayude a contratar más personal, reducir el estrés y distribuir mejor la carga de trabajo.</td>
-  </tr>
-  <tr>
-    <td>Frustración</td>
-    <td>Su principal frustración proviene del estrés emocional constante con el que trabaja, debido a la presión de atender emergencias y dar resultados inmediatos. A esto se suma la falta de personal, especialmente en las tardes y noches, lo que genera una gran sobrecarga laboral. Además, experimenta un agotamiento físico y mental extremo, y le frustra que la institución no brinde suficiente atención ni apoyo al bienestar emocional del personal.</td>
-  </tr>
-  <tr>
-    <td>Sistemas que usa para detectar o reducir el impacto de la carga laboral</td>
-    <td>No cuentan con un sistema formal para detectar o prevenir el agotamiento laboral. Antes recibían horas de salud mental, actualmente solo dependen del apoyo mutuo y el trabajo en equipo para sobrellevar la carga laboral.</td>
-  </tr>
-  <tr>
-    <td>Preferencias</td>
-    <td>
-		<ul>
-			<li>Dispositivos móviles pequeños y discretos, como relojes inteligentes o celulares.</li>
-			<li>Monitoreo de estado emocional, fatiga, estrés y presión laboral.</li>
-			<li>Confidencialidad total de la información personal.</li>
-			<li>Datos no públicos, usados solo en entornos cerrados de la clínica para estadísticas y mejora.</li>
-		</ul>
-	</td>
-  </tr>
-  <tr>
-    <td>Evidencia</td>
-    <td><div align="center"><img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Interview-evidences/interview-maribel-fernandez-chauca.png?raw=true" alt="Entrevista MaribelFernandez Chauca"></div></td>
-  </tr>
-  <tr>
-    <td>Link</td>
-    <td><p><a target="_blank" href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202411627_upc_edu_pe/IQB18MvosFgZQINiGc9cvQnfAXG5ZK7OiwVgO-8CayA1wvQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=rQg3Dk" title="Title">Ver grabación aquí</a></p></td>
-  </tr>
-  <tr>
-    <td>Duración / Timing<br></td>
-    <td>11:57 min</td>
-  </tr>
-  <tr>
-    <td>Resumen</td>
-    <td>Maribel Fernández trabaja en un laboratorio clínico de un hospital público, donde enfrenta largas jornadas y una fuerte presión laboral. En la entrevista comenta que la falta de personal y la exigencia de resultados inmediatos generan un gran desgaste físico y emocional. También señala que no existen medidas formales para prevenir este agotamiento, por lo que el apoyo entre compañeros se vuelve fundamental. Además, considera útil el uso de tecnología para monitorear fatiga y estrés, siempre que se garantice la privacidad de los datos.</td>
-  </tr>
-</tbody>
-</table>
-<table>
-<colgroup></colgroup>
-<thead>
-  <tr>
-    <th colspan="2">Entrevista #3<br></th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td>Nombre</td>
-    <td>Rusbel Arnaldo</td>
-  </tr>
-  <tr>
-    <td>Apellidos</td>
-    <td>Cajaleón Gámez</td>
-  </tr>
-  <tr>
-    <td>Edad</td>
-    <td>28 años</td>
-  </tr>
-  <tr>
-    <td>Distrito</td>
-    <td>San Borja - Lima</td>
-  </tr>
-  <tr>
-    <td>Centro de trabajo</td>
-    <td>Clínica privada</td>
-  </tr>
-  <tr>
-    <td>Área</td>
-    <td>Emergencias</td>
-  </tr>
-  <tr>
-    <td>Tecnologías usadas en su campo laboral</td>
-    <td>Celular, computadora del área, monitores de signos vitales</td>
-  </tr>
-  <tr>
-    <td>Motivación</td>
-    <td>Busca mejorar las condiciones de trabajo del personal de salud, reduciendo el impacto del agotamiento físico y mental durante las guardias, con el fin de evitar errores y brindar una mejor atención a los pacientes.</td>
-  </tr>
-  <tr>
-    <td>Frustración</td>
-    <td>La falta de descanso adecuado y la sobrecarga laboral generan un alto nivel de estrés y fatiga, lo que afecta el rendimiento del personal. Además, no existen protocolos estructurados ni sistemas formales para detectar o prevenir estos estados.</td>
-  </tr>
-  <tr>
-    <td>Sistemas que usa para detectar o reducir el impacto de la carga laboral</td>
-    <td>No cuenta con sistemas formales, solo pausas ocasionales y apoyo entre compañeros de trabajo.</td>
-  </tr>
-  <tr>
-    <td>Preferencias</td>
-    <td>
-      <ul>
-        <li>Dispositivos tipo wearable, como relojes o pulseras.</li>
-        <li>Monitoreo en tiempo real del nivel de fatiga o estrés.</li>
-        <li>Sistemas que generen alertas tempranas.</li>
-        <li>Privacidad y control total de sus datos personales.</li>
-        <li>Dispositivos pequeños, ligeros y no invasivos.</li>
-      </ul>
-    </td>
-  </tr>
-  <tr>
-    <td>Evidencia</td>
-    <td><div align="center"><img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Interview-evidences/interview-rusbel-arnaldo-cajaleon-gamez.jpg?raw=true" alt="Entrevista Rusbel Cajaleón"></div></td>
-  </tr>
-  <tr>
-    <td>Link</td>
-<td><p><a target="_blank" href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202411627_upc_edu_pe/IQAh9qQnYAJfTLFyl1U6gl93Add3hubSnpri3ceoPQX63j0?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=1Zf9c5" title="Title">Link del video</a></p></td>
-  </tr>
-  <tr>
-    <td>Duración / Timing<br></td>
-    <td>07:24 min</td>
-  </tr>
-  <tr>
-    <td>Resumen</td>
-    <td>Profesional de salud del área de emergencias que trabaja jornadas prolongadas de entre 12 y 24 horas, con alta frecuencia semanal. Identifica el agotamiento físico y mental como un problema crítico que afecta directamente su capacidad de concentración y desempeño, describiéndolo como un estado de “fatiga extrema” o “estar quemado”. Señala que, ante estos casos, no existe un protocolo estructurado, sino que el equipo actúa de manera reactiva redistribuyendo la carga laboral. Asimismo, menciona que no existen sistemas formales de monitoreo o prevención del agotamiento, lo que genera mayor riesgo de errores clínicos. Considera que la principal dificultad es la falta de descanso adecuado y la sobrecarga de trabajo. Valora positivamente la implementación de soluciones tecnológicas como dispositivos wearables que permitan detectar el nivel de fatiga en tiempo real, siempre que sean discretos, no interfieran con sus funciones y garanticen la privacidad de la información.</td>
-  </tr>
-</tbody>
+  <thead>
+    <tr>
+      <th colspan="2">Entrevista #2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td width="30%"><b>Nombre</b></td>
+      <td>Maribel</td>
+    </tr>
+    <tr>
+      <td><b>Apellidos</b></td>
+      <td>Fernández Chauca</td>
+    </tr>
+    <tr>
+      <td><b>Edad</b></td>
+      <td>38 años</td>
+    </tr>
+    <tr>
+      <td><b>Distrito</b></td>
+      <td>Huanta, Ayacucho</td>
+    </tr>
+    <tr>
+      <td><b>Centro de trabajo</b></td>
+      <td>Hospital de Apoyo Huanta</td>
+    </tr>
+    <tr>
+      <td><b>Área</b></td>
+      <td>Laboratorio Clínico</td>
+    </tr>
+    <tr>
+      <td><b>Tecnologías usadas</b></td>
+      <td>Navegador Google Chrome, equipos de laboratorio integrados con el sistema LIS.</td>
+    </tr>
+    <tr>
+      <td><b>Motivación</b></td>
+      <td>Su motivación principal es mejorar la atención a los pacientes mediante el cuidado del bienestar físico y emocional del equipo médico. Busca visibilizar los riesgos laborales del personal de salud para impulsar la contratación de más personal, logrando distribuir mejor la carga de trabajo.</td>
+    </tr>
+    <tr>
+      <td><b>Frustración</b></td>
+      <td>El estrés emocional constante, derivado de la presión por atender emergencias y entregar resultados inmediatos. A esto se suma la alarmante falta de personal (especialmente en turnos de tarde/noche), lo que genera una sobrecarga laboral que desemboca en agotamiento extremo. Le frustra que la institución no brinde apoyo preventivo para la salud mental.</td>
+    </tr>
+    <tr>
+      <td><b>Sistemas actuales</b></td>
+      <td>No cuentan con un sistema formal para detectar agotamiento. Dependen exclusivamente del apoyo mutuo y la solidaridad del equipo de guardia para sobrellevar los colapsos.</td>
+    </tr>
+    <tr>
+      <td><b>Preferencias</b></td>
+      <td>
+        <ul>
+          <li>Dispositivos móviles pequeños y muy discretos (relojes inteligentes).</li>
+          <li>Monitoreo no solo físico, sino del estado de tensión y presión laboral.</li>
+          <li>Confidencialidad total de la información personal (innegociable).</li>
+          <li>Datos cerrados: usados solo internamente en la clínica para generar estadísticas anónimas de mejora.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td><b>Evidencia</b></td>
+      <td>
+        <div align="center">
+          <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Interview-evidences/interview-maribel-fernandez-chauca.png?raw=true" alt="Evidencia Entrevista Maribel Fernández" width="400">
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td><b>Enlace de grabación</b></td>
+      <td><a target="_blank" href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202411627_upc_edu_pe/IQB18MvosFgZQINiGc9cvQnfAXG5ZK7OiwVgO-8CayA1wvQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=rQg3Dk">Ver grabación de la entrevista</a></td>
+    </tr>
+    <tr>
+      <td><b>Duración / Timing</b></td>
+      <td>11:57 min</td>
+    </tr>
+    <tr>
+      <td><b>Resumen</b></td>
+      <td>Profesional de laboratorio clínico de un hospital público, sometida a largas jornadas y fuerte presión. Señala que la falta de personal y la exigencia de resultados inmediatos generan un desgaste insostenible. Carecen de medidas formales para prevenir el agotamiento. Considera de altísima utilidad el uso de biometría para monitorear fatiga y estrés, con la condición de garantizar un control absoluto sobre la privacidad de sus datos.</td>
+    </tr>
+  </tbody>
 </table>
 
-
-**Segmento #2: Administradores y Directores Médicos**<br>
-
+<br>
 
 <table>
-<colgroup></colgroup>
-<thead>
-  <tr>
-    <th colspan="2">Entrevista #4<br></th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td>Nombre</td>
-    <td>Valeria</td>
-  </tr>
-  <tr>
-    <td>Apellidos</td>
-    <td>Vertiz Tejeda</td>
-  </tr>
-  <tr>
-    <td>Edad</td>
-    <td>46 años</td>
-  </tr>
-  <tr>
-    <td>Tipo de institución</td>
-    <td>Clínica Privada de Alta Complejidad</td>
-  </tr>
-  <tr>
-    <td>Área</td>
-    <td>Dirección Médica / Gestión de Personal</td>
-  </tr>
-  <tr>
-    <td>Tecnologías usadas en su campo laboral</td>
-    <td>Laptop institucional, Smartphone, Sistema HIS (Hospital Information System), Microsoft Excel, Firma digital/biométrica.</td>
-  </tr>
-  <tr>
-    <td>Motivación</td>
-    <td>Su principal motor es la transformación de la gestión hospitalaria reactiva en una proactiva basada en datos científicos. Busca eliminar el "factor adivinanza" en la asignación de turnos y tener argumentos técnicos (biomarcadores) para justificar ante la gerencia financiera la necesidad de mayor presupuesto o personal. Su meta final es reducir la tasa de eventos adversos y asegurar que el personal bajo su mando trabaje en condiciones humanas y seguras.</td>
-  </tr>
-  <tr>
-    <td>Frustración</td>
-    <td>La ineficiencia de los procesos manuales; le frustra depender de cuadros de Excel que no reflejan la realidad biológica del médico. Siente una gran presión por la responsabilidad de los errores médicos derivados del cansancio acumulado, los cuales solo detecta cuando el incidente ya ocurrió. Además, le preocupa la falta de protocolos formales de "burnout" y la desconexión entre los sistemas de asistencia actuales y el bienestar real del personal.</td>
-  </tr>
-  <tr>
-    <td>Sistemas que usa para detectar o reducir el impacto de la carga laboral</td>
-    <td>Uso de roles de retén (personal de reserva), reuniones de jefatura de guardia, y seguimiento manual por parte de Salud Ocupacional ante quejas o incidentes reportados.</td>
-  </tr>
-  <tr>
-    <td>Preferencias</td>
-    <td>
-		<ul>
-			<li>Dashboard administrativo con mapas de calor (rojo/amarillo/verde) por departamentos.</li>
-			<li>Alertas push inmediatas al smartphone en caso de niveles de fatiga roja en áreas críticas.</li>
-			<li>Integración total con el sistema HIS y planillas para automatizar reemplazos.</li>
-			<li>Cumplimiento estricto de la Ley de Protección de Datos Personales en Salud.</li>
-			<li>Reportes exportables para auditorías internas y sustento presupuestario.</li>
-		</ul>
-	</td>
-  </tr>
-  <tr>
-    <td>Evidencia</td>
-    <td><div align="center"><img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Interview-evidences/interview-valeria-vetiz.png?raw=true" alt="Entrevista Valeria Vertiz"></div></td>
-  </tr>
-  <tr>
-    <td>Link</td>
-    <td><p><a target="_blank" href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202411627_upc_edu_pe/IQDZTgqp5W-pS6Qdm8HwebVAAbx9cWTt3zYPFdL55WFWYfg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=PskfaI" title="Video de la entrevista">Ver grabación aquí</a></p></td>
-  </tr>
-  <tr>
-    <td>Duracion<br></td>
-    <td>10:57 min</td>
-  </tr>
-  <tr>
-    <td>Resumen</td>
-    <td>Directora Médica con amplia experiencia que supervisa a más de 100 profesionales. Describe un entorno de alta presión donde la gestión de turnos es arcaica y manual. Valora a CortiSense como una herramienta estratégica para la toma de decisiones gerenciales, destacando que la capacidad de ver la fatiga en tiempo real "salva vidas" al permitir retirar a un médico del área crítica antes de que ocurra un error. Considera indispensable la precisión del hardware y la confidencialidad de la data para la aprobación institucional.</td>
-  </tr>
-</tbody>
+  <thead>
+    <tr>
+      <th colspan="2">Entrevista #3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td width="30%"><b>Nombre</b></td>
+      <td>Rusbel Arnaldo</td>
+    </tr>
+    <tr>
+      <td><b>Apellidos</b></td>
+      <td>Cajaleón Gámez</td>
+    </tr>
+    <tr>
+      <td><b>Edad</b></td>
+      <td>28 años</td>
+    </tr>
+    <tr>
+      <td><b>Distrito</b></td>
+      <td>San Borja, Lima</td>
+    </tr>
+    <tr>
+      <td><b>Centro de trabajo</b></td>
+      <td>Clínica Privada</td>
+    </tr>
+    <tr>
+      <td><b>Área</b></td>
+      <td>Emergencias</td>
+    </tr>
+    <tr>
+      <td><b>Tecnologías usadas</b></td>
+      <td>Smartphone personal, estación clínica (PC), monitores de signos vitales hospitalarios.</td>
+    </tr>
+    <tr>
+      <td><b>Motivación</b></td>
+      <td>Reducir el impacto del agotamiento físico y mental durante las guardias para evitar errores clínicos graves y, en consecuencia, brindar una atención más humana y segura a los pacientes.</td>
+    </tr>
+    <tr>
+      <td><b>Frustración</b></td>
+      <td>La privación de sueño y la sobrecarga laboral generan un alto nivel de fatiga que afecta directamente el rendimiento cognitivo. Le frustra la inexistencia de protocolos estructurados o sistemas formales de alerta para prevenir estos estados antes de que ocurra una crisis.</td>
+    </tr>
+    <tr>
+      <td><b>Sistemas actuales</b></td>
+      <td>Pausas ocasionales no estructuradas y apoyo reactivo entre los compañeros de turno (cubrirse mutuamente).</td>
+    </tr>
+    <tr>
+      <td><b>Preferencias</b></td>
+      <td>
+        <ul>
+          <li>Dispositivos <i>wearable</i> ligeros, pequeños y no invasivos (relojes o pulseras).</li>
+          <li>Monitoreo de fatiga en estricto tiempo real.</li>
+          <li>Sistemas que generen <b>alertas tempranas</b> antes de llegar al límite.</li>
+          <li>Privacidad y control total por parte del usuario sobre su información biométrica.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td><b>Evidencia</b></td>
+      <td>
+        <div align="center">
+          <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Interview-evidences/interview-rusbel-arnaldo-cajaleon-gamez.jpg?raw=true" alt="Evidencia Entrevista Rusbel Cajaleón" width="400">
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td><b>Enlace de grabación</b></td>
+      <td><a target="_blank" href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202411627_upc_edu_pe/IQAh9qQnYAJfTLFyl1U6gl93Add3hubSnpri3ceoPQX63j0?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=1Zf9c5">Ver grabación de la entrevista</a></td>
+    </tr>
+    <tr>
+      <td><b>Duración / Timing</b></td>
+      <td>07:24 min</td>
+    </tr>
+    <tr>
+      <td><b>Resumen</b></td>
+      <td>Profesional joven del área de emergencias que realiza jornadas prolongadas (12 a 24 horas). Describe el agotamiento como "fatiga extrema" o "estar quemado", indicando que el equipo actúa de forma puramente reactiva cuando alguien colapsa. La falta de sistemas preventivos aumenta el riesgo de mala praxis. Considera fundamental la incorporación de alertas tempranas basadas en *wearables*, siempre que estos sean discretos y respeten la privacidad clínica.</td>
+    </tr>
+  </tbody>
 </table>
+
+<br>
+
+**Segmento #2: Administradores y Directores Médicos**
 
 <table>
-<colgroup></colgroup>
-<thead>
-  <tr>
-   <th colspan="2">Entrevista #5<br></th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td>Nombre</td>
-    <td>Carlos Jesús</td>
-  </tr>
-  <tr>
-    <td>Apellidos</td>
-    <td>Gutiérrez Ríos</td>
-  </tr>
-  <tr>
-    <td>Edad</td>
-    <td>30 años</td>
-  </tr>
-  <tr>
-    <td>Institución</td>
-    <td>Ministerio de Salud y clínica privada</td>
-  </tr>
-  <tr>
-    <td>Cargo</td>
-    <td>Coordinador de Recursos Humanos del personal médico de emergencias</td>
-  </tr>
-  <tr>
-    <td>Años de experiencia</td>
-    <td>5 a 6 años</td>
-  </tr>
-  <tr>
-    <td>Personal a cargo</td>
-    <td>20 personas en el área de emergencias</td>
-  </tr>
-  <tr>
-    <td>Tecnologías usadas en su campo laboral</td>
-    <td>Laptop, Google Drive, hojas de cálculo Excel, Google Chrome y suite de Google (Gmail con código de DNI como identificador institucional)</td>
-  </tr>
-  <tr>
-    <td>Motivación</td>
-    <td>Su principal motivación es contar con herramientas que le permitan detectar en tiempo real el nivel de fatiga de su personal, con el fin de proteger tanto la salud del médico como la seguridad del paciente. Reconoce que el problema de los turnos consecutivos de 24 horas es recurrente y urgente, y que actualmente carece de recursos tecnológicos para abordarlo de forma preventiva. Le interesa poder anticiparse a las crisis antes de que se manifiesten en errores clínicos, y utilizar los datos para diseñar políticas de horarios más sostenibles para su equipo.</td>
-  </tr>
-  <tr>
-    <td>Frustración</td>
-    <td>La mayor frustración del entrevistado es la ausencia total de herramientas tecnológicas para gestionar la fatiga del personal. La elaboración de horarios depende del acuerdo entre los propios médicos, y el coordinador solo valida lo que ellos proponen. Cuando ocurre un caso de agotamiento extremo, el evento no se tipifica como una crisis psicológica o psicosomática, sino que se registra simplemente como una ausencia, lo que impide visibilizar la magnitud real del problema. Además, las limitaciones presupuestarias propias de las entidades del Estado dificultan la adquisición de soluciones tecnológicas.</td>
-  </tr>
-  <tr>
-    <td>Sistemas que usa para detectar o reducir el impacto de la carga laboral</td>
-    <td>No dispone de ningún sistema formal de monitoreo de fatiga. La gestión de horarios se realiza mediante Excel en Google Drive. Ante casos de agotamiento, se orienta al personal hacia la Oficina de Medicina Ocupacional y al área de Psicología del Trabajo. Como medida operativa, se asigna más de un médico por turno para que puedan relevarse mutuamente ante situaciones de fatiga extrema.</td>
-  </tr>
-  <tr>
-    <td>Preferencias</td>
-    <td>
-      <ul>
-        <li>Panel de visualización de fatiga en tiempo real como funcionalidad prioritaria, por encima de alertas automáticas o reportes.</li>
-        <li>Resúmenes periódicos (mensuales o bimestrales) para identificar al personal con mayor riesgo acumulado y diseñar intervenciones preventivas.</li>
-        <li>Reportes exportables a Excel con datos de horas trabajadas, horas en estado de fatiga y productividad perdida.</li>
-        <li>Integración completa con la suite de Google (Drive, Gmail, Sheets) por ser la plataforma que ya utiliza la institución.</li>
-        <li>Seguridad y privacidad de datos como requisito mínimo no negociable, dado que los niveles de estrés y fatiga constituyen condiciones de salud de carácter privado según la normativa vigente.</li>
-        <li>Cumplimiento de las normativas del Ministerio de Salud.</li>
-        <li>Precio accesible o esquema de adquisición flexible, considerando las limitaciones presupuestarias del sector público.</li>
-      </ul>
-    </td>
-  </tr>
-  <tr>
-    <td>Evidencia</td>
-    <td><div align="center"><img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Interview-evidences/interview-carlos-gutierrez.png?raw=true" alt="Entrevista Carlos Gutierrez"></div></td>
-  </tr>
-  <tr>
-    <td>Link</td>
-    <td><p><a target="_blank" href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202411627_upc_edu_pe/IQCjqfWnIfanTYe_2pINO2hzASDZGzDGbIFZOnjg4WTOqzg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=9JC8wo" title="Video de la entrevista">Ver grabación aquí</a></p></td>
-  </tr>
-  <tr>
-    <td>Duración/ Timing</td>
-    <td>20:00 min</td>
-  </tr>
-  <tr>
-    <td>Resumen</td>
-    <td>Carlos Gutiérrez es coordinador de Recursos Humanos del área de emergencias en el Ministerio de Salud, con 5 a 6 años de experiencia gestionando un equipo de 20 médicos. En la entrevista describe un modelo de gestión de horarios completamente manual y dependiente del acuerdo entre el propio personal, sin ningún mecanismo tecnológico de monitoreo de fatiga. Identifica como problema crítico la práctica habitual de médicos que encadenan turnos de 12 horas en distintas instituciones, llegando a acumular 24 horas continuas de trabajo. Señala que estos casos no se registran formalmente como crisis de salud, sino únicamente como ausencias, lo que invisibiliza el problema ante la administración. Valora positivamente la implementación de un sistema de monitoreo biométrico en tiempo real, priorizando la visualización del nivel de fatiga por encima de cualquier otra funcionalidad, ya que considera que con esa información puede gestionar él mismo los relevos y notificaciones. Establece como requisitos mínimos indispensables la seguridad y privacidad de los datos biométricos, el cumplimiento normativo del MINSA, la compatibilidad con la suite de Google y un costo de adquisición accesible para entidades del Estado.</td>
-  </tr>
-</tbody>
+  <thead>
+    <tr>
+      <th colspan="2">Entrevista #4</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td width="30%"><b>Nombre</b></td>
+      <td>Valeria</td>
+    </tr>
+    <tr>
+      <td><b>Apellidos</b></td>
+      <td>Vertiz Tejeda</td>
+    </tr>
+    <tr>
+      <td><b>Edad</b></td>
+      <td>46 años</td>
+    </tr>
+    <tr>
+      <td><b>Centro de trabajo</b></td>
+      <td>Clínica Privada de Alta Complejidad</td>
+    </tr>
+    <tr>
+      <td><b>Cargo / Área</b></td>
+      <td>Dirección Médica / Gestión de Personal</td>
+    </tr>
+    <tr>
+      <td><b>Personal a cargo</b></td>
+      <td>Más de 100 profesionales</td>
+    </tr>
+    <tr>
+      <td><b>Tecnologías usadas</b></td>
+      <td>Laptop institucional, Smartphone, Sistema HIS (Hospital Information System), Microsoft Excel, Firma digital/biométrica.</td>
+    </tr>
+    <tr>
+      <td><b>Motivación</b></td>
+      <td>Transformar la gestión hospitalaria reactiva actual en un modelo proactivo basado en datos científicos. Busca eliminar el "factor adivinanza" en la logística de turnos y tener argumentos técnicos (biomarcadores de su equipo) para justificar presupuestos ante la gerencia financiera. Su meta es reducir eventos adversos y velar por condiciones laborales seguras.</td>
+    </tr>
+    <tr>
+      <td><b>Frustración</b></td>
+      <td>La ineficiencia de los procesos manuales; le frustra depender de mallas de Excel que no reflejan el estado fisiológico del médico. Siente una enorme presión por la responsabilidad legal de los errores médicos derivados del cansancio, los cuales suele detectar post mórtem (cuando el incidente ya ocurrió).</td>
+    </tr>
+    <tr>
+      <td><b>Sistemas actuales</b></td>
+      <td>Roles de "retén" (personal de reserva de guardia), reuniones de jefatura y seguimiento manual por Salud Ocupacional, pero solo tras recibir quejas o incidentes formales.</td>
+    </tr>
+    <tr>
+      <td><b>Preferencias</b></td>
+      <td>
+        <ul>
+          <li><i>Dashboard</i> administrativo con mapas de calor (rojo/amarillo/verde) seccionado por departamentos.</li>
+          <li>Alertas *push* inmediatas al smartphone en caso de niveles de fatiga roja en áreas críticas (UCI).</li>
+          <li>Integración de las API con el sistema HIS y nóminas para automatizar reemplazos.</li>
+          <li>Cumplimiento sumamente estricto de la Ley de Protección de Datos Personales en Salud.</li>
+          <li>Reportes exportables para auditorías internas de SUSALUD y sustento presupuestario.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td><b>Evidencia</b></td>
+      <td>
+        <div align="center">
+          <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Interview-evidences/interview-valeria-vetiz.png?raw=true" alt="Evidencia Entrevista Valeria Vertiz" width="400">
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td><b>Enlace de grabación</b></td>
+      <td><a target="_blank" href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202411627_upc_edu_pe/IQDZTgqp5W-pS6Qdm8HwebVAAbx9cWTt3zYPFdL55WFWYfg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=PskfaI">Ver grabación de la entrevista</a></td>
+    </tr>
+    <tr>
+      <td><b>Duración / Timing</b></td>
+      <td>10:57 min</td>
+    </tr>
+    <tr>
+      <td><b>Resumen</b></td>
+      <td>Directora Médica estratégica que opera en un entorno de alta exigencia legal y clínica. Valora profundamente la propuesta de CortiSense, argumentando que la capacidad de ver la fatiga real "salva vidas" al poder relevar a un especialista antes de cometer negligencias. Considera vital la integración con el ecosistema HIS de la clínica y la precisión absoluta del hardware para lograr la viabilidad comercial B2B.</td>
+    </tr>
+  </tbody>
 </table>
 
+<br>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="2">Entrevista #5</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td width="30%"><b>Nombre</b></td>
+      <td>Carlos Jesús</td>
+    </tr>
+    <tr>
+      <td><b>Apellidos</b></td>
+      <td>Gutiérrez Ríos</td>
+    </tr>
+    <tr>
+      <td><b>Edad</b></td>
+      <td>30 años</td>
+    </tr>
+    <tr>
+      <td><b>Centro de trabajo</b></td>
+      <td>Ministerio de Salud (MINSA) y Clínica Privada</td>
+    </tr>
+    <tr>
+      <td><b>Cargo / Área</b></td>
+      <td>Coordinador de RR.HH. del Personal Médico de Emergencias</td>
+    </tr>
+    <tr>
+      <td><b>Personal a cargo</b></td>
+      <td>20 médicos de emergencias</td>
+    </tr>
+    <tr>
+      <td><b>Tecnologías usadas</b></td>
+      <td>Laptop institucional, Google Drive, Microsoft Excel, Google Chrome, suite de Google Workspace.</td>
+    </tr>
+    <tr>
+      <td><b>Motivación</b></td>
+      <td>Contar con herramientas que permitan anticiparse a las crisis antes de que se manifiesten en errores clínicos. Desea utilizar datos biométricos objetivos para diseñar políticas de horarios más sostenibles que protejan la salud del médico y la seguridad del paciente.</td>
+    </tr>
+    <tr>
+      <td><b>Frustración</b></td>
+      <td>La gestión logística depende del acuerdo informal entre los propios médicos. Le frustra que los colapsos físicos no se tipifican formalmente como crisis de *burnout*, sino que se archivan administrativamente como simples "ausencias", invisibilizando la magnitud real de la sobrecarga. Las barreras presupuestarias del Estado también dificultan la innovación tecnológica.</td>
+    </tr>
+    <tr>
+      <td><b>Sistemas actuales</b></td>
+      <td>Plantillas de MS Excel alojadas en Google Drive. Orientación reactiva hacia el área de Psicología Laboral solo cuando el caso ya es insostenible. Asignan "médicos de retén" para relevos mutuos.</td>
+    </tr>
+    <tr>
+      <td><b>Preferencias</b></td>
+      <td>
+        <ul>
+          <li>Panel visual en tiempo real de los niveles de fatiga, por encima de otras funcionalidades.</li>
+          <li>Resúmenes analíticos periódicos para justificar intervenciones operativas tempranas.</li>
+          <li>Reportes exportables a Excel (horas trabajadas vs. productividad perdida por fatiga).</li>
+          <li>Integración fluida con Google Workspace (Drive, Sheets).</li>
+          <li>Esquema de precios B2G/B2B accesible y sustentable para licitaciones públicas (MINSA).</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td><b>Evidencia</b></td>
+      <td>
+        <div align="center">
+          <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Interview-evidences/interview-carlos-gutierrez.png?raw=true" alt="Evidencia Entrevista Carlos Gutiérrez" width="400">
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td><b>Enlace de grabación</b></td>
+      <td><a target="_blank" href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202411627_upc_edu_pe/IQCjqfWnIfanTYe_2pINO2hzASDZGzDGbIFZOnjg4WTOqzg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=9JC8wo">Ver grabación de la entrevista</a></td>
+    </tr>
+    <tr>
+      <td><b>Duración / Timing</b></td>
+      <td>20:00 min</td>
+    </tr>
+    <tr>
+      <td><b>Resumen</b></td>
+      <td>Coordinador logístico que gestiona a médicos que a menudo encadenan guardias de 12h en distintas clínicas hasta sumar 24h continuas. Revela una problemática grave: el agotamiento se encubre como ausentismo administrativo. Para él, un sistema de monitoreo en tiempo real le permitiría gestionar los relevos proactivamente, pero hace mucho énfasis en que la privacidad y la viabilidad económica son las grandes barreras para entrar al sector público.</td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2.2.3 Análisis de entrevistas
 
