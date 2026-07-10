@@ -4878,7 +4878,7 @@ A continuación, se presentan las estadísticas de colaboración obtenidas desde
 <colgroup></colgroup>
 <thead>
   <tr>
-    <th colspan="2">Entrevista #3<br></th>
+    <th colspan="2">Entrevista #4<br></th>
   </tr>
 </thead>
 <tbody>
@@ -4924,7 +4924,7 @@ A continuación, se presentan las estadísticas de colaboración obtenidas desde
     </tr>
   <tr>
     <td>Evidencia</td>
-    <td><div align="center"><img src="https://github.com/upc-pre-202610-1asi0730-12053-syncedh/cortisense-report/blob/main/Resources/Validation/validation-interview-valeria.PNG" alt="Entrevista Valeria Vertiz"></div></td>
+    <td><div align="center"><img src="https://github.com/upc-pre-202610-1asi0730-12053-syncedh/cortisense-report/blob/main/Resources/Validation/validation-interview-valeria.PNG?raw=true" alt="Entrevista Valeria Vertiz"></div></td>
   </tr>
   <tr>
     <td>Link</td>
@@ -4955,6 +4955,86 @@ A continuación, se presentan las estadísticas de colaboración obtenidas desde
 </tbody>
 </table>
 
+<table>
+  <thead>
+    <tr>
+      <th colspan="2">Entrevista #5<br></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Nombre</td>
+      <td>Ivan</td>
+    </tr>
+    <tr>
+      <td>Apellidos</td>
+      <td>No especificado</td>
+    </tr>
+    <tr>
+      <td>Edad</td>
+      <td>No especificada</td>
+    </tr>
+    <tr>
+      <td>Distrito</td>
+      <td>No especificado</td>
+    </tr>
+    <tr>
+      <td>Centro de Trabajo</td>
+      <td>Institución de salud (Evaluado como Administrador / Director Médico)</td>
+    </tr>
+    <tr>
+      <td>Área</td>
+      <td>Administración de la Salud / Dirección Médica</td>
+    </tr>
+    <tr>
+      <td>Tecnologías usadas en su campo laboral</td>
+      <td>Plataformas web de gestión hospitalaria, sistemas de facturación y monitoreo de personal</td>
+    </tr>
+    <tr>
+      <td>Motivación</td>
+      <td>A Ivan, desde el rol directivo, le motiva encontrar una plataforma que facilite la gestión integral de su centro médico. Valora enormemente la rapidez del flujo de "onboarding": poder crear equipos, asignar roles (supervisores y médicos) y enviar invitaciones de acceso automáticamente por correo electrónico. También le resulta crucial que la información sobre las suscripciones y la facturación de la clínica esté resumida y clara desde el primer vistazo.</td>
+    </tr>
+    <tr>
+      <td>Frustración</td>
+      <td>Como administrador, le frustran las herramientas de gestión que presentan interfaces recargadas o desordenadas ("muy densas"). Señala que funciones operativas como la gestión de turnos pueden volverse pesadas si tienen demasiados botones sueltos (Bloquear, Cancelar, Reasignar), ya que entorpecen el trabajo rápido. Prefiere la simplificación de tareas a través de menús desplegables para ahorrar espacio en la pantalla.</td>
+    </tr>
+    <tr>
+      <td>Sistemas que usa para detectar o reducir el impacto de la carga laboral</td>
+      <td>Durante la sesión, evalúa a CortiSense como la herramienta principal para monitorear la salud (fatiga, niveles de cortisol) de todo el personal a su cargo, previniendo así negligencias institucionales derivadas del agotamiento de sus médicos.</td>
+    </tr>
+    <tr>
+      <td>Preferencias Visuales</td>
+      <td>Como directivo, prefiere plataformas con una apariencia limpia, seria y estándar (fondos blancos), que transmitan institucionalidad. Le da mucha importancia a que las vistas comparativas (ej. los planes de suscripción) sean directas y fáciles de entender. Además, sugiere usar iconografía de apoyo (como íconos de hidratación o descanso) para hacer que las notificaciones dirigidas a su personal médico no se vean aburridas o monótonas.</td>
+    </tr>
+    <tr>
+      <td>Evidencia</td>
+      <td><div align="center"><img src="https://github.com/upc-pre-202610-1asi0730-12053-syncedh/cortisense-report/blob/main/Resources/Validation/validation-interview-ivan.png?raw=true" alt="Entrevista Ivan - Director Médico"></div>
+</td>
+    </tr>
+    <tr>
+      <td>Link</td>
+      <td><p><a target="_blank" href="" title="Title">Link del video</a></p></td>
+    </tr>
+    <tr>
+      <td>Duración<br></td>
+      <td>00:00 min - 26:03 min</td>
+    </tr>
+    <tr>
+      <td>Timing<br></td>
+      <td>
+        00:00 - 01:00: Presentación del objetivo de la validación y de la plataforma.<br>
+        01:00 - 18:45: Exploración del perfil de "Administrador". Ivan revisa el dashboard directivo, la gestión de equipos y el envío de invitaciones por email al personal. Además, analiza los planes de suscripción, sugiriendo mejoras para ver rápidamente qué ofrece cada plan para su clínica.<br>
+        18:45 - 22:15: Exploración del perfil "Supervisor Clínico". Revisa el panel de alertas y la gestión de turnos. En esta parte propone agrupar las acciones de los turnos en menús desplegables para no saturar la vista operativa.<br>
+        22:15 - 24:50: Exploración del perfil "Doctor" (Personal Médico). Revisa cómo los médicos verán su propio estado y recomienda añadir apoyo visual (íconos) a las acciones de mitigación de fatiga.<br>
+        24:50 - 26:03: Conclusiones finales sobre la utilidad del sistema para una institución de salud y cierre de la entrevista.
+      </td>
+    </tr>
+    <tr>
+      <td>Resumen</td>
+      <td>En esta entrevista, Ivan evaluó CortiSense bajo el perfil del <strong>Segmento Objetivo 2: Administradores y Directores Médicos</strong>. Validó que el sistema cumple adecuadamente con las necesidades de gestión de un centro de salud, destacando la facilidad para enviar invitaciones al personal y crear equipos de trabajo (Supervisores y Médicos). Entre sus sugerencias más valiosas como administrador, recomendó optimizar la densidad visual de las tablas de gestión (como la de turnos) usando menús desplegables en lugar de botones acumulados, mejorar la presentación comparativa de los planes de pago y suscripciones, y añadir iconografía para que la plataforma no resulte monótona para el personal médico que la utilice a diario.</td>
+    </tr>
+  </tbody>
+</table>
 
 ### 5.3.3. Evaluaciones según heurísticas.
 
