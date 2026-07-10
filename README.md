@@ -4968,15 +4968,15 @@ A continuación, se presentan las estadísticas de colaboración obtenidas desde
     </tr>
     <tr>
       <td>Apellidos</td>
-      <td>No especificado</td>
+      <td>Osco</td>
     </tr>
     <tr>
       <td>Edad</td>
-      <td>No especificada</td>
+      <td>50 años</td>
     </tr>
     <tr>
       <td>Distrito</td>
-      <td>No especificado</td>
+      <td>Santiago de Surco</td>
     </tr>
     <tr>
       <td>Centro de Trabajo</td>
@@ -5013,7 +5013,7 @@ A continuación, se presentan las estadísticas de colaboración obtenidas desde
     </tr>
     <tr>
       <td>Link</td>
-      <td><p><a target="_blank" href="" title="Title">Link del video</a></p></td>
+      <td><p><a target="_blank" href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202411627_upc_edu_pe/IQCNneFCABbXT4-TRU1FdoFmAeIBqZ0MuudMyzX0gTN6aok?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=HDH56L" title="Title">Link del video</a></p></td>
     </tr>
     <tr>
       <td>Duración<br></td>
