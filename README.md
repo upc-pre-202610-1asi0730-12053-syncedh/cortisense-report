@@ -849,6 +849,7 @@ En esta sección se abordará la investigación cualitativa en base a la informa
 El diseño de estas preguntas está alineado con la necesidad de validar nuestra hipótesis de usuario operativo. El objetivo es descubrir las barreras físicas y psicológicas reales frente al uso de *wearables* durante jornadas críticas, entender el flujo actual frente al agotamiento extremo y, sobre todo, identificar los resguardos de privacidad de datos necesarios para que el personal no perciba la herramienta como un instrumento de vigilancia punitiva, sino como un respaldo a su salud.
 
 **Preguntas de perfilamiento (Complementarias):**
+
 1. ¿Cuál es su nombre completo?
 2. ¿Cuántos años tiene?
 3. ¿En qué distrito o ciudad se ubica su centro de trabajo?
@@ -860,6 +861,7 @@ El diseño de estas preguntas está alineado con la necesidad de validar nuestra
 9. ¿Cuáles son los métodos que más utiliza para autenticarse en plataformas digitales? (correo institucional, Gmail, doble factor, etc.).
 
 **Preguntas de descubrimiento (Principales):** 
+
 10. ¿Cuántas horas seguidas trabaja en una guardia típica y con qué frecuencia se repiten a la semana?
 11. Cuando usted o un colega llega a un punto de agotamiento extremo durante una guardia, ¿cómo describiría ese momento? ¿Qué nombre le daría a ese estado dentro de su entorno de trabajo?
 12. ¿Qué sucede exactamente en su institución cuando un médico colapsa por fatiga durante un turno? ¿Qué pasos se siguen y quiénes intervienen?
@@ -882,6 +884,7 @@ El diseño de estas preguntas está alineado con la necesidad de validar nuestra
 El cuestionario para este segmento estratégico está alineado con la validación de nuestros supuestos de negocio B2B. Busca entender los procesos administrativos actuales de gestión de crisis de personal, los criterios financieros/operativos que motivarían la compra de la suscripción SaaS, y los requisitos técnicos (integraciones de *software*, reportes de auditoría) exigidos para una implementación a nivel hospitalario.
 
 **Preguntas de perfilamiento (Complementarias):**
+
 1. ¿Cuál es su nombre completo?
 2. ¿Cuántos años tiene?
 3. ¿En qué tipo de institución ejerce actualmente su cargo? (hospital público, clínica privada, red hospitalaria, etc.).
@@ -894,6 +897,7 @@ El cuestionario para este segmento estratégico está alineado con la validació
 10. ¿Cuáles son los métodos que utiliza más para autenticarse en sistemas institucionales? (correo corporativo, SSO, autenticación en dos pasos, etc.).
 
 **Preguntas de descubrimiento (Principales):** 
+
 11. ¿Cómo elabora actualmente los horarios y turnos del personal médico? ¿Qué criterios utiliza para distribuir la carga de trabajo entre los especialistas?
 12. Cuando ocurre una situación de agotamiento extremo del personal durante un turno, ¿cómo se llama ese evento dentro de su institución? ¿Existe un protocolo formal para manejarlo?
 13. ¿Qué pasos sigue usted desde que detecta que un médico está en riesgo de fatiga hasta que toma una acción correctiva? ¿Quiénes más intervienen en ese proceso?
