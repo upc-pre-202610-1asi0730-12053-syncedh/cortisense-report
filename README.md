@@ -979,7 +979,7 @@ En esta sección presentamos los registros de las entrevistas realizadas para ca
   </tr>
   <tr>
     <td>Link</td>
-    <td><p><a target="_blank" href="https://drive.google.com/file/d/19Fxu5Uje6tJ5yvmaLG-n29ecyy0aN1oS/view?usp=sharing" title="Title">Ver grabación aquí</a> https://drive.google.com/file/d/19Fxu5Uje6tJ5yvmaLG-n29ecyy0aN1oS/view?usp=sharing</p></td>
+    <td><p><a target="_blank" href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202411627_upc_edu_pe/IQADDB434c4aQIhGJ8gitSW8AboZ5iu2QFvya7_6TG5gfrw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=HIZ60a" title="Title">Ver grabación aquí</a></p></td>
   </tr>
   <tr>
     <td>Duración / Timing:<br></td>
@@ -1216,7 +1216,7 @@ En esta sección presentamos los registros de las entrevistas realizadas para ca
   </tr>
   <tr>
     <td>Link</td>
-    <td><p><a target="_blank" href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202418755_upc_edu_pe/IQCSJixvUAiVQYU7PPuGFn5QAeCNk1McHMV2_GJeQT7m8qI?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=vXh6If" title="Video de la entrevista">Ver grabación aquí</a>https://upcedupe-my.sharepoint.com/:v:/g/personal/u202418755_upc_edu_pe/IQCSJixvUAiVQYU7PPuGFn5QAeCNk1McHMV2_GJeQT7m8qI?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=vXh6If</p></td>
+    <td><p><a target="_blank" href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202411627_upc_edu_pe/IQDZTgqp5W-pS6Qdm8HwebVAAbx9cWTt3zYPFdL55WFWYfg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=PskfaI" title="Video de la entrevista">Ver grabación aquí</a></p></td>
   </tr>
   <tr>
     <td>Duracion<br></td>
@@ -5016,10 +5016,10 @@ World Health Organization. (2019). Patient safety: Global action on patient safe
 
 ## Anexo A. Entrevistas de Needfinding
 
-* **Entrevista 1:** [Ver video de entrevista 1](https://drive.google.com/file/d/19Fxu5Uje6tJ5yvmaLG-n29ecyy0aN1oS/view?usp=sharing)
+* **Entrevista 1:** [Ver video de entrevista 1 en Microsoft Stream](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202411627_upc_edu_pe/IQADDB434c4aQIhGJ8gitSW8AboZ5iu2QFvya7_6TG5gfrw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=HIZ60a)
 * **Entrevista 2:** [Ver video de entrevista 2 en Microsoft Stream](https://upcedupe-my.sharepoint.com/personal/u20231h055_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu20231h055%5Fupc%5Fedu%5Fpe%2FDocuments%2F5to%20Ciclo%2FOpenSource%2FRegistro%20de%20Entrevistas%2FEntrevista%20a%20Maribel%20Fernandez%20por%20Johan%20Yonel%20%28Personal%20Medico%20Operativo%29%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E703f7f77%2D7734%2D4bda%2Dac35%2Df8381afd44b1)
 * **Entrevista 3:** [Ver video de entrevista 3](https://drive.google.com/file/d/1UQImqgqti3vEYj3E6a5n4xnxFt9Vop8O/view?usp=sharing)
-* **Entrevista 4:** [Ver video de entrevista 4 en Microsoft Stream](https://upcedupe-my.sharepoint.com/personal/u202418755_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202418755%5Fupc%5Fedu%5Fpe%2FDocuments%2FEntrevista%2DSyncedHealth%2Fvideo3945078754%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E6e776555%2D8d61%2D486b%2D81a5%2D4367b6a10779)
+* **Entrevista 4:** [Ver video de entrevista 4 en Microsoft Stream](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202411627_upc_edu_pe/IQDZTgqp5W-pS6Qdm8HwebVAAbx9cWTt3zYPFdL55WFWYfg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=PskfaI)
 * **Entrevista 5:** [Ver video de entrevista 5](https://drive.google.com/file/d/1DsKAj6ceQ0UX6NWjwXI8-3jTV6jH7xYH/view?usp=drive_link)
 
 ## Anexo B. Repositorios de GitHub
