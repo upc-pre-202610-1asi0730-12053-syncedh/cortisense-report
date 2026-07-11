@@ -1397,13 +1397,13 @@ Finalmente, la privacidad de los datos biométricos emerge como el factor críti
 
 ## 2.3 Needfinding
 
-### 2.3.1. User Personas.
+### 2.3.1. User Personas
 
-En esta sección se presentan las fichas de User Persona correspondientes a los segmentos objetivo identificados en el proceso de investigación. La construcción de estos arquetipos se basa en el análisis de entrevistas realizadas a representantes del sector salud, así como en la evaluación de la competencia y el contexto del problema abordado.
+En esta sección se presentan las fichas de *User Persona* correspondientes a los segmentos objetivo identificados en el proceso de investigación. La construcción de estos arquetipos se basa en la metodología de modelado de usuarios propuesta originalmente por Cooper (1999), utilizando el análisis cualitativo de las entrevistas realizadas a representantes del sector salud, así como en la evaluación del contexto del problema abordado.
 
 A partir de la información recolectada, se identificaron patrones comunes en cuanto a características demográficas, comportamientos, necesidades, motivaciones y frustraciones de los usuarios. Estos elementos permitieron definir perfiles representativos que reflejan de manera realista a los actores clave dentro del dominio del problema.
 
-Los User Personas desarrollados permiten comprender de forma integral a los usuarios, facilitando la toma de decisiones en las etapas posteriores del diseño y desarrollo de la solución. Asimismo, estos arquetipos sirven como base para la elaboración de otros artefactos de experiencia de usuario, como el User Task Matrix, User Journey Mapping y Empathy Mapping, asegurando coherencia y alineación con las necesidades reales de los segmentos identificados.
+Los *User Personas* desarrollados permiten comprender de forma integral a los usuarios, facilitando la toma de decisiones en las etapas posteriores del diseño y desarrollo de la solución. Asimismo, estos arquetipos sirven como base fundamental para la elaboración de otros artefactos de experiencia de usuario (*UX*), como el *User Task Matrix*, el *User Journey Map* y el *Empathy Map*, asegurando coherencia y alineación con las necesidades reales de los segmentos identificados.
 
 #### 2.3.1.1. Segmento 1: Personal Sanitario Operativo
 
@@ -1415,39 +1415,44 @@ Los User Personas desarrollados permiten comprender de forma integral a los usua
 
 ---
 
-### 2.3.2. User Task Matrix.
-| Tareas del usuario                                         | Frecuencia (Liz) | Importancia (Liz) | Frecuencia (Luis) | Importancia (Luis) |
-|------------------------------------------------------------|------------------|-------------------|-------------------|--------------------|
-| Atender pacientes en situaciones de emergencia             | Alta             | Alta              | Baja              | Media              |
-| Monitorear signos vitales de los pacientes                 | Alta             | Alta              | Baja              | Media              |
-| Coordinar con el equipo médico                             | Alta             | Alta              | Alta              | Alta               |
-| Coordinar la atención de múltiples pacientes               | Alta             | Alta              | Media             | Alta               |
-| Mantener registros y reportes clínicos                     | Media            | Alta              | Alta              | Alta               |
-| Tomar decisiones bajo presión                              | Alta             | Alta              | Alta              | Alta               |
-| Mantener el rendimiento durante turnos prolongados         | Alta             | Alta              | Baja              | Media              |
-| Solicitar o brindar apoyo dentro del equipo                | Media            | Alta              | Alta              | Alta               |
-| Supervisar el desempeño del personal                       | Baja             | Media             | Alta              | Alta               |
-| Asignar turnos y distribuir la carga laboral               | Baja             | Media             | Alta              | Alta               |
-| Evaluar riesgos en la atención                             | Media            | Alta              | Alta              | Alta               |
-| Elaborar reportes para auditorías                          | Baja             | Media             | Alta              | Alta               |
+### 2.3.2. User Task Matrix
+
+A continuación, se presenta la matriz de tareas, evaluando la frecuencia e importancia de las actividades operativas y administrativas clave para **Liz López** (arquetipo del Personal Sanitario Operativo) y **Luis Ramírez** (arquetipo de los Administradores y Directores Médicos). El levantamiento de este artefacto se fundamenta en los principios de análisis de tareas para el diseño de interfaces (*Human-Computer Interaction*) detallados por Hackos y Redish (1998).
+
+| Tareas del usuario | Frecuencia (Liz) | Importancia (Liz) | Frecuencia (Luis) | Importancia (Luis) |
+| :--- | :---: | :---: | :---: | :---: |
+| Atender pacientes en situaciones de emergencia | Alta | Alta | Baja | Media |
+| Monitorear signos vitales de los pacientes | Alta | Alta | Baja | Media |
+| Coordinar con el equipo médico | Alta | Alta | Alta | Alta |
+| Coordinar la atención de múltiples pacientes | Alta | Alta | Media | Alta |
+| Mantener registros y reportes clínicos | Media | Alta | Alta | Alta |
+| Tomar decisiones bajo presión | Alta | Alta | Alta | Alta |
+| Mantener el rendimiento durante turnos prolongados | Alta | Alta | Baja | Media |
+| Solicitar o brindar apoyo dentro del equipo | Media | Alta | Alta | Alta |
+| Supervisar el desempeño del personal | Baja | Media | Alta | Alta |
+| Asignar turnos y distribuir la carga laboral | Baja | Media | Alta | Alta |
+| Evaluar riesgos en la atención institucional | Media | Alta | Alta | Alta |
+| Elaborar reportes para auditorías legales/internas | Baja | Media | Alta | Alta |
 
 #### 2.3.2.1 Análisis e interpretación del User Task Matrix
 
-A partir del análisis del User Task Matrix, construido en base a la información recolectada en las entrevistas, se observa que el personal sanitario operativo, representado por Liz López, concentra la mayoría de sus tareas en actividades de ejecución directa, como la atención de pacientes en emergencias, el monitoreo de signos vitales y la toma de decisiones bajo presión. Estas tareas presentan tanto una alta frecuencia como una alta importancia, lo que evidencia un entorno de trabajo exigente donde el desempeño individual impacta directamente en la seguridad del paciente.
+A partir del análisis del *User Task Matrix*, construido con la información recolectada en las entrevistas, se observa que el personal sanitario operativo (representado por Liz López) concentra la mayoría de sus tareas en actividades de ejecución directa clínica, como la atención de pacientes en emergencias, el monitoreo de signos vitales y la toma de decisiones bajo presión. Estas tareas presentan tanto una alta frecuencia como una alta importancia, lo que evidencia un entorno de trabajo hostil y exigente donde el desempeño individual impacta directamente en la seguridad vital del paciente.
 
-Por otro lado, el personal administrativo, representado por Luis Ramírez, desarrolla principalmente tareas de carácter estratégico y de gestión, como la asignación de turnos, la supervisión del desempeño del personal y la elaboración de reportes para auditorías. Estas actividades, aunque no son operativas, tienen un impacto crítico en la organización del servicio y en la eficiencia del sistema de salud.
+Por otro lado, el personal administrativo (representado por Luis Ramírez) desarrolla principalmente tareas de carácter estratégico y logístico, como la asignación de turnos, la supervisión del desempeño del personal y la elaboración de reportes para auditorías. Estas actividades, aunque no son clínicas, tienen un impacto crítico en la organización del servicio, los sobrecostos y la eficiencia operativa del sistema de salud.
 
-Se identifican coincidencias en tareas como la coordinación con el equipo médico y la toma de decisiones bajo presión, las cuales presentan alta frecuencia e importancia en ambos segmentos, evidenciando la interdependencia entre el personal operativo y administrativo. Sin embargo, la principal diferencia radica en el enfoque de sus responsabilidades: mientras el segmento operativo se enfoca en la ejecución de tareas clínicas, el segmento administrativo se orienta a la planificación, supervisión y optimización de los recursos humanos.
+Se identifican intersecciones críticas en tareas como "Coordinar con el equipo médico" y "Tomar decisiones bajo presión", las cuales presentan alta frecuencia e importancia en ambos segmentos, evidenciando la interdependencia entre el personal operativo y gerencial. Sin embargo, la principal diferencia radica en el enfoque de sus responsabilidades: mientras el segmento operativo se enfoca en la ejecución para salvar vidas, el segmento administrativo se orienta a la planificación, supervisión y mitigación de riesgos legales.
 
-En conjunto, el análisis permite identificar que las tareas críticas para ambos segmentos están relacionadas con la gestión eficiente del tiempo, la toma de decisiones y la coordinación del equipo. Esto evidencia la necesidad de contar con herramientas que mejoren la visibilidad del estado del personal, permitan anticipar riesgos asociados a la fatiga y optimicen la distribución de la carga laboral.
+En conjunto, el análisis permite identificar que las tareas críticas para ambos segmentos están intrínsecamente relacionadas con la gestión eficiente del tiempo, la toma de decisiones críticas y la logística de equipos. Esto evidencia y valida la necesidad urgente de contar con herramientas tecnológicas que mejoren la visibilidad del estado de salud del personal, permitan anticipar riesgos asociados a la fatiga y amparen la redistribución inteligente de la carga laboral.
 
-### 2.3.3. User Journey Mapping.
+---
 
-En esta sección se presentan los User Journey Maps correspondientes a los User Personas definidos para cada segmento objetivo. Estos mapas describen el recorrido actual (As-Is) de los usuarios en relación con sus actividades dentro del entorno laboral, permitiendo visualizar de manera integral las etapas, acciones, emociones y puntos críticos que experimentan en su día a día.
+### 2.3.3. User Journey Mapping
 
-A partir del análisis de entrevistas, se identificaron los momentos clave que definen la experiencia del usuario, así como los principales problemas asociados a la sobrecarga laboral, el estrés y la falta de mecanismos de monitoreo y prevención. El objetivo de estos mapas es comprender el contexto real en el que operan los usuarios antes de la implementación de la solución propuesta.
+En esta sección se presentan los *User Journey Maps* correspondientes a los arquetipos definidos para cada segmento objetivo. De acuerdo a la conceptualización de Kalbach (2021), estos mapas describen el recorrido actual (*As-Is*) de los usuarios, permitiendo visualizar de manera holística las etapas, acciones, emociones y puntos críticos que experimentan en un día de trabajo altamente exigente.
 
-Los User Journey Maps permiten evidenciar oportunidades de mejora en el proceso actual, sirviendo como base para el diseño de soluciones centradas en el usuario que respondan a sus necesidades reales.
+A partir del análisis cualitativo, se identificaron los momentos clave que definen la experiencia del usuario, así como los principales problemas asociados a la sobrecarga laboral, el estrés crónico y la total falta de mecanismos de monitoreo preventivo. El objetivo de estos mapas es comprender el contexto real y frustrante en el que operan los usuarios antes de la implementación de la solución propuesta.
+
+Los *User Journey Maps* permiten evidenciar inmensas oportunidades de mejora tecnológica en el proceso actual, sirviendo como mapa de ruta para el diseño de interfaces (*UI*) y funcionalidades que respondan exclusivamente a resolver sus puntos de dolor más severos.
 
 #### 2.3.3.1. Segmento 1: Personal Sanitario Operativo
 
@@ -1459,13 +1464,13 @@ Los User Journey Maps permiten evidenciar oportunidades de mejora en el proceso 
 
 ---
 
-### 2.3.4. Empathy Mapping.
+### 2.3.4. Empathy Mapping
 
-En esta sección se presentan los Empathy Maps correspondientes a los User Personas definidos para cada segmento objetivo. Estos mapas permiten profundizar en la comprensión de los usuarios, analizando sus pensamientos, emociones, comportamientos y percepciones dentro de su contexto laboral.
+En esta sección se presentan los *Empathy Maps* correspondientes a los *User Personas* definidos para cada segmento. Estos mapas, cuya metodología fue popularizada por Gray et al. (2010), permiten profundizar de manera psicológica en la comprensión de los usuarios, analizando sus pensamientos, emociones, comportamientos y percepciones dentro de su ecosistema laboral.
 
-El proceso de elaboración se basó en el análisis de entrevistas realizadas, a partir de las cuales se identificaron patrones relacionados con lo que los usuarios dicen, piensan, sienten, hacen, ven y escuchan. Asimismo, se determinaron los principales pain points (problemas) y gains (beneficios esperados), lo que permite comprender de manera más empática las necesidades reales de los segmentos.
+El proceso de elaboración se basó en el análisis de las entrevistas, a partir de las cuales se identificaron patrones relacionados con lo que los usuarios dicen, piensan, sienten, hacen, ven y escuchan en el hospital. Asimismo, se determinaron los principales *pain points* (puntos de dolor operativos) y *gains* (beneficios ideales esperados), lo que permite a nuestro equipo empatizar con las verdaderas limitaciones de los segmentos.
 
-Estos Empathy Maps complementan los artefactos previamente desarrollados, como los User Personas y User Journey Maps, y sirven como base para diseñar soluciones centradas en el usuario que respondan de manera efectiva a sus expectativas y problemáticas.
+Estos *Empathy Maps* complementan de manera perfecta los artefactos previamente desarrollados y sirven como piedra angular para diseñar una experiencia de usuario (*UX*) confiable, ética y no invasiva, que responda de manera efectiva a sus miedos y expectativas de privacidad.
 
 #### 2.3.4.1. Segmento 1: Personal Sanitario Operativo
 
@@ -5175,15 +5180,23 @@ Chatuev, M. (2020, 21 de setiembre). *Big Picture Event Storming*. Medium. https
 
 Colegio Médico del Perú. (2024). Conoce a tu médico: Registro Nacional de Médicos Colegiados. https://www.cmp.org.pe/conoce-a-tu-medico/
 
+Cooper, A. (1999). The inmates are running the asylum: Why high tech products drive us crazy and how to restore the sanity. Sams.
+
 Draft.io (s.f.). *EventStorming*. Draft.io. https://draft.io/example/eventstorming
 
 Dropstat. (2024). *Dropstat: AI-powered healthcare staffing and shift management*. https://dropstat.com/
 
 Firstbeat Technologies. (2024). *Firstbeat Life: Corporate wellness and stress management*. https://www.firstbeat.com/
 
+Gray, D., Brown, S., & Macanufo, J. (2010). Gamestorming: A playbook for innovators, rulebreakers, and changemakers. O'Reilly Media.
+
 Gothelf, J., & Seiden, J. (2021). Lean UX: Designing Great Products with Agile Teams (3ra ed.). O'Reilly Media, Inc.
 
+Hackos, J. T., & Redish, J. C. (1998). User and task analysis for interface design. Wiley.
+
 Han, S., Shanafelt, T. D., Sinsky, C. A., Awad, K. M., Dyrbye, L. N., Fiscus, L. C., Trockel, M., & Goh, J. (2019). Estimating the attributable cost of physician burnout in the United States. *Annals of Internal Medicine*, *170*(11), 784–790. https://doi.org/10.7326/M18-1422
+
+Kalbach, J. (2021). Mapping experiences: A guide to creating value through journeys, blueprints, and diagrams (2da ed.). O'Reilly Media.
 
 Landrigan, C. P., Rothschild, J. M., Cronin, J. W., Kaushal, R., Burdick, E., Katz, J. T., Lilly, C. M., Stone, P. H., Lockley, S. W., Bates, D. W., & Czeisler, C. A. (2004). Effect of reducing interns' work hours on serious medical errors in intensive care units. The New England Journal of Medicine, 351(18), 1838–1848. https://doi.org/10.1056/NEJMoa041406
 
