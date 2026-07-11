@@ -3202,6 +3202,7 @@ Para el desarrollo del ecosistema de CortiSense, el equipo integró las siguient
 
 + **Project Management**<br>La gestión de proyectos asegura que el desarrollo se entregue dentro de los plazos y presupuestos previstos. Según el Project Management Institute (2021), una gestión efectiva es fundamental para coordinar recursos, mitigar riesgos y alinear el trabajo colaborativo con los objetivos del negocio.<br><br>
   +	**Jira Software:** Herramienta de gestión de proyectos ágil (Atlassian, 2023) que permite planificar y gestionar el trabajo mediante tableros Scrum o Kanban, facilitando la colaboración transparente entre los equipos de desarrollo.<br>https://www.atlassian.com/software/jira<br><br>
+  + **Trello:** Herramienta visual basada en tableros Kanban (Atlassian, 2024), utilizada como complemento ágil para gestionar tareas rápidas, lluvia de ideas y organizar el flujo de trabajo diario de los desarrolladores.<br>https://trello.com/<br><br>
 
 + **Requirements Management**<br>Implica transformar las necesidades abstractas de los usuarios en requisitos de software medibles. La trazabilidad de estos requerimientos garantiza que el producto final no diverja del valor de negocio esperado por los *stakeholders* (Bourque & Fairley, 2014).<br><br>
   + **Jira Software:** En su función de gestión de backlog, permite estructurar Historias de Usuario (*User Stories*) y Épicas, priorizando el trabajo orientado a aportar valor continuo en cada iteración.<br>https://www.atlassian.com/software/jira<br><br>
@@ -3218,21 +3219,29 @@ Para el desarrollo del ecosistema de CortiSense, el equipo integró las siguient
 
 + **Software Development**<br>Etapa donde se materializa la arquitectura de software. Se seleccionaron lenguajes y frameworks tipados y de alto rendimiento para garantizar la tolerancia a fallos del sistema clínico.<br><br> 
   + **GitHub:** Plataforma base para el control de versiones distribuido mediante Git, permitiendo la integración y revisión de código asíncrona.<br>https://github.com/ <br><br> 
-  + **Visual Studio Code / Rider:** Entornos de desarrollo integrados (IDE) utilizados por su robustez en la depuración y autocompletado de los stacks tecnológicos del proyecto.<br>https://code.visualstudio.com/ <br><br>
+  + **Visual Studio Code:** Editor de código fuente ligero y versátil (Microsoft, 2024), utilizado por parte del equipo gracias a su amplio ecosistema de extensiones para múltiples lenguajes.<br>https://code.visualstudio.com/ <br><br>
+  + **JetBrains Rider:** Entorno de Desarrollo Integrado (IDE) multiplataforma y de alto rendimiento (JetBrains, 2024), utilizado como herramienta principal para el desarrollo de la lógica de negocio y la API en C# / .NET.<br>https://www.jetbrains.com/rider/<br><br>
+  + **JetBrains WebStorm:** IDE especializado en el desarrollo web moderno (JetBrains, 2024), empleado para la programación y depuración de todo el ecosistema frontend con Vue.js y TypeScript.<br>https://www.jetbrains.com/webstorm/<br><br>
+  + **HTML & CSS:** Lenguajes estándar web utilizados para estructurar el contenido (HTML) y definir la apariencia y diseño visual (CSS) de la Landing Page y la Web App.<br>https://developer.mozilla.org/es/docs/Web/HTML<br><br> 
   + **JavaScript / TypeScript:** Lenguajes web que dotan de tipado estricto y dinamismo al cliente web, reduciendo la incidencia de errores en tiempo de ejecución.<br>https://www.typescriptlang.org/<br><br> 
   + **C# y ASP.NET Core:** Lenguaje orientado a objetos y framework backend de Microsoft (2024), seleccionados por su alto rendimiento y seguridad nativa para construir la API RESTful de CortiSense.<br>https://learn.microsoft.com/es-es/aspnet/core/<br><br> 
   + **Entity Framework Core:** ORM (Object-Relational Mapper) oficial del ecosistema .NET empleado para administrar el modelo de dominio y la persistencia de datos relacionales.<br>https://learn.microsoft.com/es-es/ef/core/<br><br> 
+  + **SQL Server:** Sistema de gestión de bases de datos relacional robusto (Microsoft, 2023), utilizado como almacén central seguro de la información institucional y clínica.<br>https://www.microsoft.com/es-es/sql-server/<br><br>
+  + **Stripe:** Infraestructura financiera web (Stripe, 2024), integrada mediante su SDK de .NET para procesar de manera segura el pago y la gestión de suscripciones de los hospitales.<br>https://stripe.com/<br><br>
   + **Vue.js:** Framework progresivo de JavaScript seleccionado para construir el cliente SPA (*Single Page Application*). Su sistema de reactividad (Vue.js, 2024) es ideal para manejar telemetría en tiempo real.<br>https://vuejs.org/<br><br>
+  + **Vite:** Herramienta de compilación (*build tool*) de próxima generación (Vite, 2024) que proporciona un entorno de desarrollo ultrarrápido y un empaquetado optimizado para el frontend en Vue.<br>https://vitejs.dev/<br><br>
   + **PrimeVue y Pinia:** Librería de componentes UI accesible y gestor de estado global respectivamente, cruciales para estandarizar la usabilidad y manejar la sesión segura con JSON Web Tokens.<br>https://primevue.org/<br><br>
 
 + **Software Testing**<br>La evaluación de la calidad del software garantiza que la solución cumpla con los estándares médicos exigidos.<br><br> 
   + **Lenguaje Gherkin (Cucumber):** Lenguaje de dominio (DSL) implementado para el *Behavior-Driven Development* (BDD) (Smart, 2014). Permite traducir criterios de aceptación en pruebas legibles por negocio mediante sintaxis *Given-When-Then*.<br>https://cucumber.io/<br><br> 
+  + **Postman:** Plataforma y cliente API (Postman, 2024) empleada para desarrollar, probar y validar de forma iterativa el correcto funcionamiento y autenticación (JWT) de los *endpoints* del backend.<br>https://www.postman.com/<br><br>
 
 + **Software Deployment**<br>Consiste en la automatización y alojamiento de los artefactos compilados para su consumo público.<br><br> 
   + **Github Pages:** Servicio de *hosting* estático aprovechado para el despliegue automático de la *Landing Page* institucional.<br>https://pages.github.com/ <br><br>
 
 + **Software Documentation**<br>Mantenimiento de la información técnica esencial para reducir la curva de aprendizaje de nuevos desarrolladores e interesados en el proyecto.<br><br> 
   + **Markdown:** Lenguaje de marcado ligero, pilar de la documentación técnica moderna en repositorios, facilitando legibilidad humana y renderización web.<br>https://www.markdownguide.org/getting-started/<br><br>
+  + **Swagger (OpenAPI):** Herramienta integrada en ASP.NET Core para la generación automática de la documentación interactiva de la API (SmartBear, 2024), facilitando la integración con el equipo frontend.<br>https://swagger.io/<br><br>
   + **Microsoft Office 365:** Suite colaborativa en la nube para la gestión del reporte académico final y documentación adjunta.<br>https://www.microsoft.com/microsoft-365<br><br>
 
 ### 5.1.2. Source Code Management.
@@ -5194,15 +5203,17 @@ Los errores serán puntuados tomando en cuenta la siguiente escala de severidad
 
 # Bibliografía
 
-Atlassian. (2023). Agile project management with Jira Software. Recuperado de https://www.atlassian.com/agile/project-management
+Adzic, G. (2012). *Impact mapping: Making a big impact with software products and projects*. Provoking Thoughts.
 
-Adzic, G. (2012). Impact mapping: Making a big impact with software products and projects. Provoking Thoughts.
+Atlassian. (2023). *Agile project management with Jira Software*. https://www.atlassian.com/agile/project-management
 
-Bourque, P., & Fairley, R. E. (2014). Guide to the Software Engineering Body of Knowledge (SWEBOK) (Versión 3.0). IEEE Computer Society.
+Atlassian. (2024). *Trello: Manage Your Team’s Projects*. https://trello.com/
+
+Bourque, P., & Fairley, R. E. (2014). *Guide to the Software Engineering Body of Knowledge (SWEBOK)* (Versión 3.0). IEEE Computer Society.
 
 Brandolini, A. (2018). Introducing EventStorming: An act of deliberate collective learning. Leanpub.
 
-Brown, S. (2020). The C4 model for visualising software architecture. Recuperado de https://c4model.com/
+Brown, S. (2020). *The C4 model for visualising software architecture*. https://c4model.com/
 
 Chatuev, M. (2020, 21 de setiembre). *Big Picture Event Storming*. Medium. https://medium.com/@chatuev/big-picture-event-storming-7a1fe18ffabb
 
@@ -5228,33 +5239,47 @@ Hackos, J. T., & Redish, J. C. (1998). User and task analysis for interface desi
 
 Han, S., Shanafelt, T. D., Sinsky, C. A., Awad, K. M., Dyrbye, L. N., Fiscus, L. C., Trockel, M., & Goh, J. (2019). Estimating the attributable cost of physician burnout in the United States. *Annals of Internal Medicine*, *170*(11), 784–790. https://doi.org/10.7326/M18-1422
 
+JetBrains. (2024). JetBrains: Essential tools for software developers and teams. https://www.jetbrains.com/
+
 Kalbach, J. (2021). Mapping experiences: A guide to creating value through journeys, blueprints, and diagrams (2da ed.). O'Reilly Media.
 
 Landrigan, C. P., Rothschild, J. M., Cronin, J. W., Kaushal, R., Burdick, E., Katz, J. T., Lilly, C. M., Stone, P. H., Lockley, S. W., Bates, D. W., & Czeisler, C. A. (2004). Effect of reducing interns' work hours on serious medical errors in intensive care units. The New England Journal of Medicine, 351(18), 1838–1848. https://doi.org/10.1056/NEJMoa041406
 
 Maticorena-Quevedo, J., Beas, R., Anduaga-Beramendi, A., & Mayta-Tristán, P. (2016). Prevalencia del síndrome de burnout en médicos y enfermeras del Perú, Ensusalud 2014. Revista Peruana de Medicina Experimental y Salud Pública, 33(2), 241-247. https://doi.org/10.17843/rpmesp.2016.332.2170
 
-Mermaid. (2023). Mermaid: Diagramming and charting tool. Recuperado de https://mermaid.js.org/
+Mermaid. (2023). Mermaid: Diagramming and charting tool. https://mermaid.js.org/
 
-Microsoft. (2024). Introducción a ASP.NET Core. Recuperado de https://learn.microsoft.com/es-es/aspnet/core/
+Microsoft. (2023). SQL Server Technical Documentation. https://learn.microsoft.com/es-es/sql/sql-server/
 
-Norman, D. (2013). The Design of Everyday Things: Revised and Expanded Edition. Basic Books.
+Microsoft. (2024). Introducción a ASP.NET Core. https://learn.microsoft.com/es-es/aspnet/core/
+
+Microsoft. (2024). *Visual Studio Code*. https://code.visualstudio.com/
+
+Norman, D. (2013). *The Design of Everyday Things: Revised and Expanded Edition*. Basic Books.
 
 Oura Health Oy. (2024). *Oura for Business: Corporate wellness wearable*. https://ouraring.com/business
 
 Porter, M. E. (1980). *Competitive strategy: Techniques for analyzing industries and competitors*. Free Press.
 
-Project Management Institute. (2021). A Guide to the Project Management Body of Knowledge (PMBOK Guide) (7.ª ed.). Project Management Institute.
+Postman. (2024). *Postman API Platform*. https://www.postman.com/
+
+Project Management Institute. (2021). *A Guide to the Project Management Body of Knowledge (PMBOK Guide)* (7.ª ed.). Project Management Institute.
 
 Qlerify (s.f.). *What is Big Picture Event Storming?*. Qlerify. https://www.qlerify.com/event-storming-concepts/what-is-big-picture-event-storming
 
-Smart, J. F. (2014). BDD in Action: Behavior-driven development for the whole software lifecycle. Manning Publications.
+Smart, J. F. (2014). *BDD in Action: Behavior-driven development for the whole software lifecycle.* Manning Publications.
 
-Superintendencia Nacional de Salud. (2024). Registro Nacional de Instituciones Prestadoras de Servicios de Salud (RENIPRESS). Plataforma Digital Única del Estado Peruano. Recuperado de https://renipress.susalud.gob.pe/
+SmartBear. (2024). *Swagger: API Documentation & Design Tools.* https://swagger.io/
+
+Stripe. (2024). *Stripe API Documentation.* https://stripe.com/docs
+
+Superintendencia Nacional de Salud. (2024). Registro Nacional de Instituciones Prestadoras de Servicios de Salud (RENIPRESS). Plataforma Digital Única del Estado Peruano. https://renipress.susalud.gob.pe/
 
 Ultimate Kronos Group. (2024). *UKG for Healthcare: Workforce management solutions*. https://www.ukg.com/
 
-Vue.js. (2024). Vue.js: The Progressive JavaScript Framework. Recuperado de https://vuejs.org/
+Vite. (2024). *Vite: Next Generation Frontend Tooling.* https://vitejs.dev/
+
+Vue.js. (2024). *Vue.js: The Progressive JavaScript Framework.* https://vuejs.org/
 
 Waldman, J. D., Kelly, F., Arora, S., & Smith, H. L. (2004). The shocking cost of turnover in health care. Health care management review, 29(1), 2-7. https://doi.org/10.1097/00004010-200401000-00002
 
