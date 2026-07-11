@@ -1482,7 +1482,7 @@ Estos *Empathy Maps* complementan de manera perfecta los artefactos previamente 
 
 ## 2.4. Big Picture Event Storming.
 
-Según Qlerify (s.f.), el Big Picture Event Storming constituye una de las metodologías esenciales dentro de las variantes del Event Storming. Esta técnica se fundamenta en talleres colaborativos destinados al análisis y diseño de dominios de negocio complejos. El Event Storming fue concebido originalmente por Alberto Brandolini como un método para extraer y socializar el conocimiento sobre un dominio de forma rápida, siendo una herramienta clave para la implementación del Domain-Driven Design (DDD). En este sentido, el Big Picture Event Storming actúa como un punto de partida estratégico para una aplicación efectiva del DDD, ya que, como señala Chatuev (2020), resulta prioritario comenzar priorizando el descubrimiento del dominio, el intercambio de saberes y la consolidación del Lenguaje Ubicuo.
+Según Qlerify (s.f.), el Big Picture Event Storming constituye una de las metodologías esenciales dentro de las variantes del Event Storming. Esta técnica se fundamenta en talleres colaborativos destinados al análisis y diseño de dominios de negocio complejos. El Event Storming fue concebido originalmente por Alberto Brandolini (2018) como un método para extraer y socializar el conocimiento sobre un dominio de forma rápida, siendo una herramienta clave para la implementación del Domain-Driven Design (DDD). En este sentido, el Big Picture Event Storming actúa como un punto de partida estratégico para una aplicación efectiva del DDD, ya que, como señala Chatuev (2020), resulta prioritario comenzar priorizando el descubrimiento del dominio, el intercambio de saberes y la consolidación del Lenguaje Ubicuo.
 
 ### 2.4.1. Metodología aplicada
 La sesión fue desarrollada mediante el uso de la *Step by Step Guide to run your Big Picture Event Storming* de Philippe Bourgau (2022), coach de desarrollo de software, que fue adaptada al contexto del proyecto. También se recurrió a *EventStorming* de la compañía Draft.io. (s.f.) para la consulta de teoría referente a los Event Storming.
@@ -1506,8 +1506,7 @@ La sesión fue desarrollada mediante el uso de la *Step by Step Guide to run you
 
 ## 2.5. Ubiquitous Language
 Este glosario define los términos clave del dominio de CortiSense, alineados directamente con los Bounded Contexts (BC) reales descubiertos en la arquitectura del código, con el propósito de mantener un lenguaje común y sin ambigüedades entre desarrolladores, personal sanitario y stakeholders.
-
-El proceso de elaboración se realizó en conjunto con el equipo multidisciplinario, tomando como referencia el libro "Domain-Driven Design: Tackling Complexity in the Heart of Software" de Eric Evans (2003).
+El proceso de elaboración se realizó en conjunto con el equipo multidisciplinario, tomando como referencia el libro *"Domain-Driven Design: Tackling Complexity in the Heart of Software"* de Eric Evans (2003).
 
 ---
 
@@ -1591,7 +1590,7 @@ El Ubiquitous Language establece una base de comunicación compartida entre los 
 
 ## 3.1. User Stories.
 
-En esta sección, profundizaremos en la definición y elaboración de las User Stories relacionadas con nuestro proyecto. Las User Stories son una herramienta fundamental en el desarrollo de software y proyectos de diseño centrados en el usuario.
+En esta sección, profundizaremos en la definición y elaboración de las *User Stories* relacionadas con nuestro proyecto. Las historias de usuario son una herramienta fundamental en el desarrollo de software ágil, conceptualizadas formalmente bajo los principios propuestos por Cohn (2004), diseñadas para asegurar que las funcionalidades del sistema aporten valor directo a los objetivos del usuario final.
 <br><br>
 **EPICS**
 
@@ -1648,99 +1647,99 @@ En esta sección, profundizaremos en la definición y elaboración de las User S
 
 **TECHNICAL STORIES**
 
-|**Technical story ID**|**Título**|**Descripción**|**Criterios de Aceptación**|**Epica**|
-| - | - | - | - | - |
-|**TS-01**|Maquetación HTML semántica de la Landing Page|<p>**Como** desarrollador frontend,</p><p>**Quiero** estructurar el código HTML base de la landing,</p><p>**Para** asegurar accesibilidad y el correcto enrutamiento del menú.</p>|<p>**Escenario 1: Estructura DOM**</p><p>**Given** el inicio del desarrollo del frontend,</p><p>**When** se codifica el archivo index.html,</p><p>**Then** se deben utilizar etiquetas semánticas (`header`, `nav`, `section`, `footer`).</p>|**EP05**|
-|**TS-02**|Estilización y variables globales en CSS|<p>**Como** diseñador UI/UX,</p><p>**Quiero** definir la hoja de estilos base con colores institucionales,</p><p>**Para** estandarizar el diseño visual de SyncedHealth.</p>|<p>**Escenario 1: Diseño UI**</p><p>**Given** el archivo HTML estructurado,</p><p>**When** se vincula el archivo CSS con la paleta de colores (`--primary: #45DDE5`),</p><p>**Then** los componentes reflejan el diseño corporativo de forma responsiva.</p>|**EP05**|
-|**TS-03**|Lógica de búsqueda y navegación en JS|<p>**Como** desarrollador frontend,</p><p>**Quiero** programar eventos DOM en JavaScript puro,</p><p>**Para** habilitar el buscador interno y el scroll suave en la landing.</p>|<p>**Escenario 1: Scroll automático**</p><p>**Given** el diccionario de palabras clave cargado en el script,</p><p>**When** el usuario ejecuta una búsqueda válida,</p><p>**Then** JS hace un `scrollIntoView()` hacia la sección correspondiente.</p>|**EP05**|
-|**TS-04**|Sistema de internacionalización (i18n) JS|<p>**Como** desarrollador frontend,</p><p>**Quiero** crear un diccionario JSON en JavaScript,</p><p>**Para** traducir el contenido de la landing page sin recargar el navegador.</p>|<p>**Escenario 1: Cambio de idioma**</p><p>**Given** el estado global del idioma en 'en',</p><p>**When** se dispara la función `toggleLanguage()`,</p><p>**Then** el DOM reemplaza el texto iterando sobre los atributos `data-i18n`.</p>|**EP05**|
-|**TS-05**|Setup del servidor ASP.NET Core Web API|<p>**Como** backend developer,</p><p>**Quiero** inicializar la arquitectura en C# y .NET,</p><p>**Para** desplegar la API REST central del sistema SyncedHealth.</p>|<p>**Escenario 1: Arranque de API**</p><p>**Given** la solución creada en Visual Studio / Rider,</p><p>**When** se compila y ejecuta el proyecto,</p><p>**Then** el servidor Kestrel embebido inicia en el puerto designado (ej. 5000).</p>|**EP01**|
-|**TS-06**|Configuración de base de datos con Entity Framework Core|<p>**Como** Database Admin,</p><p>**Quiero** configurar el DbContext y las migraciones en C#,</p><p>**Para** gestionar la persistencia de datos en SQL Server o MySQL.</p>|<p>**Escenario 1: ORM Mapping**</p><p>**Given** la cadena de conexión correcta en `appsettings.json`,</p><p>**When** se ejecuta el comando `Update-Database`,</p><p>**Then** EF Core genera automáticamente las tablas DDL requeridas.</p>|**EP01**|
-|**TS-07**|Seguridad y generación de JWT en .NET|<p>**Como** fullstack developer,</p><p>**Quiero** implementar autenticación por JSON Web Tokens en C#,</p><p>**Para** proteger los endpoints de perfiles médicos.</p>|<p>**Escenario 1: Emisión de Token**</p><p>**Given** credenciales válidas enviadas al controlador de login,</p><p>**When** el backend verifica la identidad,</p><p>**Then** retorna un token JWT firmado mediante `JwtSecurityTokenHandler`.</p>|**EP01**|
-|**TS-08**|Hashing de contraseñas con ASP.NET Core Identity|<p>**Como** backend developer,</p><p>**Quiero** usar `PasswordHasher<TUser>`,</p><p>**Para** proteger la privacidad de las contraseñas de los médicos.</p>|<p>**Escenario 1: Hashing seguro**</p><p>**Given** un nuevo registro de profesional de salud,</p><p>**When** se guarda la entidad en la base de datos,</p><p>**Then** la contraseña se transforma irreversiblemente a un hash seguro.</p>|**EP01**|
-|**TS-09**|Setup de Vue.js SPA y Vue Router|<p>**Como** frontend developer,</p><p>**Quiero** inicializar el proyecto base en Vue 3,</p><p>**Para** construir el dashboard interactivo de monitoreo médico.</p>|<p>**Escenario 1: Compilación frontend**</p><p>**Given** el comando `npm run dev` ejecutado,</p><p>**When** el servidor de Vite arranca,</p><p>**Then** la aplicación web carga el componente principal en el navegador.</p>|**EP01**|
-|**TS-10**|Gestión de estado global con Pinia y Axios|<p>**Como** frontend developer,</p><p>**Quiero** configurar la store de Pinia y el cliente HTTP Axios en Vue,</p><p>**Para** consumir la API de C# y mantener los datos del usuario activos.</p>|<p>**Escenario 1: Fetch de datos**</p><p>**Given** el usuario autenticado en la SPA,</p><p>**When** el componente se monta,</p><p>**Then** Axios realiza una petición GET y Pinia guarda los datos en el store local.</p>|**EP01**|
-|**TS-11**|Simulador de telemetría IoT (BackgroundService)|<p>**Como** backend developer,</p><p>**Quiero** implementar una clase `BackgroundService` en .NET,</p><p>**Para** simular la llegada de datos de cortisol y HRV en segundo plano.</p>|<p>**Escenario 1: Inyección de datos**</p><p>**Given** el worker service activo en el backend,</p><p>**When** transcurre un delay de 1 minuto usando `Task.Delay`,</p><p>**Then** se inserta un nuevo registro biométrico aleatorio usando EF Core.</p>|**EP02**|
-|**TS-12**|Implementación de Vue-Chartjs para Biometría|<p>**Como** frontend developer,</p><p>**Quiero** integrar el wrapper de Chart.js para Vue,</p><p>**Para** visualizar las curvas de estrés del médico en tiempo real.</p>|<p>**Escenario 1: Renderizado visual**</p><p>**Given** un array reactivo de datos de estrés,</p><p>**When** los datos se actualizan desde Pinia,</p><p>**Then** el componente `<LineChart>` se redibuja en el dashboard.</p>|**EP02**|
-|**TS-13**|Motor de cálculo de umbrales de riesgo en C#|<p>**Como** backend developer,</p><p>**Quiero** programar la lógica de validación de biomarcadores,</p><p>**Para** detonar eventos cuando el cortisol alcance niveles críticos.</p>|<p>**Escenario 1: Evaluación lógica**</p><p>**Given** un nuevo ingreso de datos a través de la API,</p><p>**When** el valor supera la constante configurada por el usuario,</p><p>**Then** se dispara un evento interno de alerta crítica.</p>|**EP03**|
-|**TS-14**|Integración de correos electrónicos con MailKit/SendGrid|<p>**Como** backend developer,</p><p>**Quiero** configurar un servicio de SMTP en .NET,</p><p>**Para** enviar notificaciones formales de fatiga al usuario y director.</p>|<p>**Escenario 1: Despacho SMTP**</p><p>**Given** un evento de fatiga crítico detectado,</p><p>**When** se invoca la interfaz `IEmailService`,</p><p>**Then** el servidor despacha un correo HTML al email registrado del médico.</p>|**EP03**|
-|**TS-15**|Generador de reportes PDF en .NET|<p>**Como** backend developer,</p><p>**Quiero** integrar una librería como iTextSharp o DinkToPdf,</p><p>**Para** exportar los históricos de salud ocupacional del mes.</p>|<p>**Escenario 1: Conversión a documento**</p><p>**Given** la solicitud GET para descargar un reporte,</p><p>**When** el controlador de C# procesa la plantilla HTML/Datos,</p><p>**Then** retorna un `FileContentResult` con el tipo `application/pdf`.</p>|**EP03**|
-|**TS-16**|Algoritmo básico de mapas de calor con LINQ|<p>**Como** backend developer,</p><p>**Quiero** usar consultas LINQ avanzadas,</p><p>**Para** agrupar y promediar el estrés del personal por departamento clínico.</p>|<p>**Escenario 1: Agrupación en base de datos**</p><p>**Given** múltiples registros de médicos de un mismo hospital,</p><p>**When** el dashboard gerencial solicita las métricas,</p><p>**Then** EF Core y LINQ retornan un DTO con los promedios agrupados por área.</p>|**EP04**|
-|**TS-17**|Servicio de validación y simulación Web Bluetooth en Vue|<p>**Como** frontend developer,</p><p>**Quiero** utilizar la Web Bluetooth API en un componente Vue,</p><p>**Para** simular el emparejamiento real del smartwatch CortiSense.</p>|<p>**Escenario 1: Handshake virtual**</p><p>**Given** el médico hace clic en "Vincular dispositivo",</p><p>**When** se resuelve la promesa de la API de Bluetooth,</p><p>**Then** la interfaz de Vue actualiza el estado a "Conectado y transmitiendo".</p>|**EP02**|
+| ID | Título | Descripción | Criterios de Aceptación | Épica |
+| :--- | :--- | :--- | :--- | :---: |
+| **TS-01** | Maquetación HTML semántica de la Landing Page | **Como** desarrollador frontend,<br>**Quiero** estructurar el código HTML base de la landing,<br>**Para** asegurar accesibilidad y el correcto enrutamiento del menú. | **Escenario 1: Estructura DOM**<br>**Given** el inicio del desarrollo del frontend,<br>**When** se codifica el archivo index.html,<br>**Then** se deben utilizar etiquetas semánticas (`header`, `nav`, `section`, `footer`). | **EP00** |
+| **TS-02** | Estilización y variables globales en CSS | **Como** diseñador UI/UX,<br>**Quiero** definir la hoja de estilos base con colores institucionales,<br>**Para** estandarizar el diseño visual de SyncedHealth. | **Escenario 1: Diseño UI**<br>**Given** el archivo HTML estructurado,<br>**When** se vincula el archivo CSS con la paleta de colores (`--primary: #45DDE5`),<br>**Then** los componentes reflejan el diseño corporativo de forma responsiva. | **EP00** |
+| **TS-03** | Lógica de búsqueda y navegación en JS | **Como** desarrollador frontend,<br>**Quiero** programar eventos DOM en JavaScript puro,<br>**Para** habilitar el buscador interno y el scroll suave en la landing. | **Escenario 1: Scroll automático**<br>**Given** el diccionario de palabras clave cargado en el script,<br>**When** el usuario ejecuta una búsqueda válida,<br>**Then** JS hace un `scrollIntoView()` hacia la sección correspondiente. | **EP00** |
+| **TS-04** | Sistema de internacionalización (i18n) en JS | **Como** desarrollador frontend,<br>**Quiero** crear un diccionario JSON en JavaScript,<br>**Para** traducir el contenido de la landing page sin recargar el navegador. | **Escenario 1: Cambio de idioma**<br>**Given** el estado global del idioma en 'en',<br>**When** se dispara la función `toggleLanguage()`,<br>**Then** el DOM reemplaza el texto iterando sobre los atributos `data-i18n`. | **EP00** |
+| **TS-05** | Setup del servidor ASP.NET Core Web API | **Como** backend developer,<br>**Quiero** inicializar la arquitectura en C# y .NET,<br>**Para** desplegar la API REST central del sistema SyncedHealth. | **Escenario 1: Arranque de API**<br>**Given** la solución creada en Visual Studio / Rider,<br>**When** se compila y ejecuta el proyecto,<br>**Then** el servidor Kestrel embebido inicia en el puerto designado (ej. 5000). | **EP00** |
+| **TS-06** | Configuración de BD con Entity Framework Core | **Como** Database Admin,<br>**Quiero** configurar el DbContext y las migraciones en C#,<br>**Para** gestionar la persistencia de datos en SQL Server o MySQL. | **Escenario 1: ORM Mapping**<br>**Given** la cadena de conexión correcta en `appsettings.json`,<br>**When** se ejecuta el comando `Update-Database`,<br>**Then** EF Core genera automáticamente las tablas DDL requeridas. | **EP00** |
+| **TS-07** | Seguridad y generación de JWT en .NET | **Como** fullstack developer,<br>**Quiero** implementar autenticación por JSON Web Tokens en C#,<br>**Para** proteger los endpoints de perfiles médicos. | **Escenario 1: Emisión de Token**<br>**Given** credenciales válidas enviadas al controlador de login,<br>**When** el backend verifica la identidad,<br>**Then** retorna un token JWT firmado mediante `JwtSecurityTokenHandler`. | **EP02** |
+| **TS-08** | Hashing de contraseñas con Identity | **Como** backend developer,<br>**Quiero** usar `PasswordHasher<TUser>`,<br>**Para** proteger la privacidad de las contraseñas de los médicos. | **Escenario 1: Hashing seguro**<br>**Given** un nuevo registro de profesional de salud,<br>**When** se guarda la entidad en la base de datos,<br>**Then** la contraseña se transforma irreversiblemente a un hash seguro. | **EP02** |
+| **TS-09** | Setup de Vue.js SPA y Vue Router | **Como** frontend developer,<br>**Quiero** inicializar el proyecto base en Vue 3,<br>**Para** construir el dashboard interactivo de monitoreo médico. | **Escenario 1: Compilación frontend**<br>**Given** el comando `npm run dev` ejecutado,<br>**When** el servidor de Vite arranca,<br>**Then** la aplicación web carga el componente principal en el navegador. | **EP00** |
+| **TS-10** | Gestión de estado global con Pinia y Axios | **Como** frontend developer,<br>**Quiero** configurar la store de Pinia y el cliente HTTP Axios en Vue,<br>**Para** consumir la API de C# y mantener los datos del usuario activos. | **Escenario 1: Fetch de datos**<br>**Given** el usuario autenticado en la SPA,<br>**When** el componente se monta,<br>**Then** Axios realiza una petición GET y Pinia guarda los datos en el store local. | **EP00** |
+| **TS-12** | Implementación de Vue-Chartjs para Biometría | **Como** frontend developer,<br>**Quiero** integrar el wrapper de Chart.js para Vue,<br>**Para** visualizar las curvas de estrés del médico en tiempo real. | **Escenario 1: Renderizado visual**<br>**Given** un array reactivo de datos de estrés,<br>**When** los datos se actualizan desde Pinia,<br>**Then** el componente `<LineChart>` se redibuja en el dashboard. | **EP03** |
+| **TS-13** | Motor de cálculo de umbrales de riesgo en C# | **Como** backend developer,<br>**Quiero** programar la lógica de validación de biomarcadores,<br>**Para** detonar eventos cuando el cortisol alcance niveles críticos. | **Escenario 1: Evaluación lógica**<br>**Given** un nuevo ingreso de datos a través de la API,<br>**When** el valor supera la constante configurada por el usuario,<br>**Then** se dispara un evento interno de alerta crítica. | **EP03** |
+| **TS-16** | Algoritmo básico de mapas de calor con LINQ | **Como** backend developer,<br>**Quiero** usar consultas LINQ avanzadas,<br>**Para** agrupar y promediar el estrés del personal por departamento clínico. | **Escenario 1: Agrupación en BD**<br>**Given** múltiples registros de médicos de un hospital,<br>**When** el dashboard gerencial solicita las métricas,<br>**Then** EF Core y LINQ retornan un DTO con los promedios agrupados por área. | **EP04** |
 
 <br><br>
+
 ## 3.2. Impact Mapping
 
-En esta sección, nuestro equipo presenta el Impact Mapping, el cual es una herramienta visual y colaborativa que ayuda a los equipos a alinear sus objetivos con los resultados deseados.
+En esta sección, nuestro equipo presenta el *Impact Mapping*, una metodología estratégica diseñada por Adzic (2012). Constituye una herramienta visual y colaborativa que ayuda a los equipos a alinear sus objetivos técnicos de software con los resultados de negocio deseados, identificando a los actores clave y cómo sus comportamientos impactarán en la meta del proyecto.
 
-<b>Segmento 1: Personal Sanitario Operativo</b><br>
-
+**Segmento 1: Personal Sanitario Operativo**<br>
 <div align="center">
 <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/impact-mapping/impact-map-segmento1.png?raw=true" alt="Impact Map segmento 1 - Personal Sanitario Operativo">
 </div>
 
-<b>Segmento 2: Administradores y Directores Médicos</b><br>
-
+**Segmento 2: Administradores y Directores Médicos**<br>
 <div align="center">
-<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/impact-mapping/impact-map-segmento2.png?raw=true" alt="Impact Map segmento 1 - Personal Sanitario Operativo">
+<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/impact-mapping/impact-map-segmento2.png?raw=true" alt="Impact Map segmento 2 - Administradores y Directores Médicos">
 </div>
 
 
 ## 3.3. Product Backlog
 
-| Orden | User Story Id | Título | Descripción | Story Points |
-|---|---|---|---|---|
-| 1 | US-27 | Visualización de propuesta de valor | Como visitante quiero ver la propuesta de valor para entender cómo CortiSense previene el burnout médico | 3 |
-| 2 | US-33 | Header y Footer | Como visitante quiero usar un menú fijo y footer para acceder rápido a secciones importantes | 2 |
-| 3 | US-28 | Descripción de aplicación | Como director médico quiero conocer los módulos de la plataforma para entender su funcionamiento | 3 |
-| 4 | US-32 | Wearables | Como profesional sanitario quiero conocer las especificaciones del wearable para evaluar su uso médico | 3 |
-| 5 | US-29 | Metas de aplicación | Como administrador quiero conocer beneficios y metas para justificar la implementación | 3 |
-| 6 | US-30 | Planes de pago | Como tomador de decisiones quiero ver planes para evaluar la suscripción | 3 |
-| 7 | US-31 | Fidelización de clientes | Como usuario potencial quiero ver testimonios para confiar en la solución | 2 |
-| 8 | US-17 | Búsqueda interactiva en Landing Page | Como visitante quiero buscar secciones para encontrar información rápidamente | 3 |
-| 9 | US-18 | Cambio de idioma en Landing | Como visitante quiero cambiar idioma para comprender mejor el contenido | 2 |
-| 10 | US-19 | Navegación fluida por el Menú Principal | Como visitante quiero navegar por el menú para acceder a las características del sistema | 2 |
-| 11 | US-20 | Comparación de Planes de Bienestar | Como director hospitalario quiero comparar planes para elegir el más adecuado | 3 |
-| 12 | US-21 | Visualización de Testimonios Médicos | Como visitante quiero leer testimonios para ganar confianza en el producto | 2 |
-| 13 | US-22 | Acceso rápido a Contacto | Como visitante quiero acceder al contacto para solicitar información comercial | 2 |
-| 14 | US-39 | Visualización de demo del sistema | Como visitante quiero ver una demo para entender el funcionamiento del sistema | 3 |
-| 15 | US-40 | Descarga de brochure informativo | Como visitante quiero descargar información del producto para evaluarlo | 2 |
-| 16 | US-41 | Registro de interés comercial | Como visitante quiero dejar mis datos para ser contactado por el equipo comercial | 3 |
-| 17 | US-04 | Vinculación de wearable IoT | Como médico quiero sincronizar mi wearable para monitorear cortisol automáticamente | 5 |
-| 18 | US-05 | Visualización de HRV en tiempo real | Como médico quiero ver mi HRV para entender mi nivel de fatiga operativa | 5 |
-| 19 | US-23 | Alerta de Batería Baja del Wearable | Como médico quiero recibir alerta de batería baja para evitar perder datos | 2 |
-| 20 | US-06 | Personalización de umbrales de alerta | Como usuario quiero definir mis niveles de alerta para evitar notificaciones innecesarias | 3 |
-| 21 | US-07 | Recibir alerta de fatiga crítica | Como médico quiero recibir alertas de estrés para prevenir errores médicos | 5 |
-| 22 | US-08 | Consulta de descansos sugeridos | Como usuario quiero ver descansos recomendados para recuperar energías | 3 |
-| 23 | US-09 | Sugerencia de pausas activas | Como médico quiero ejercicios cortos para bajar mi estrés rápidamente | 3 |
-| 24 | US-34 | Historial de alertas | Como médico quiero revisar alertas pasadas para analizar patrones de estrés | 3 |
-| 25 | US-35 | Escalamiento automático de alertas | Como sistema quiero escalar alertas críticas para prevenir riesgos graves | 5 |
-| 26 | US-10 | Generación de reporte de bienestar | Como médico quiero generar reportes para sustentar mi estado ante la administración | 5 |
-| 27 | US-11 | Visualización de mapa de calor | Como director médico quiero ver un mapa de calor para identificar departamentos agotados | 5 |
-| 28 | US-12 | Identificación de médicos en riesgo | Como jefe de área quiero identificar médicos en fatiga crítica para prevenir errores | 5 |
-| 29 | US-36 | Filtrado de médicos por estado | Como administrador quiero filtrar médicos por estrés para priorizar decisiones | 3 |
-| 30 | US-37 | Visualización de estadísticas globales | Como administrador quiero ver métricas globales para tomar decisiones estratégicas | 3 |
-| 31 | US-38 | Notificaciones masivas | Como administrador quiero enviar alertas masivas para prevenir riesgos colectivos | 3 |
-| 32 | US-25 | Exportación de datos HRV a CSV | Como administrador quiero exportar datos históricos para integrarlos con Recursos Humanos | 3 |
-| 33 | US-13 | Sincronización de horarios médicos | Como administrador quiero sincronizar horarios para ajustar alertas a guardias reales | 5 |
-| 34 | US-14 | Recepción de resumen dominical | Como usuario quiero recibir un resumen semanal para planificar mis días libres | 3 |
-| 35 | US-42 | Optimización del modelo predictivo | Como sistema quiero mejorar el modelo de IA para predecir burnout con mayor precisión | 5 |
-| 36 | US-43 | Reentrenamiento del modelo IA | Como sistema quiero reentrenar el modelo con nuevos datos para adaptarme al usuario | 5 |
-| 37 | US-16 | Feedback de precisión | Como médico quiero calificar alertas para que la IA aprenda de mi percepción | 3 |
-| 38 | US-44 | Feedback negativo del usuario | Como usuario quiero reportar alertas incorrectas para mejorar el sistema | 3 |
-| 39 | US-15 | Acceso a biblioteca de técnicas | Como médico quiero acceder a técnicas de relajación para bajar mi cortisol | 3 |
-| 40 | US-45 | Guardar técnicas favoritas | Como usuario quiero guardar técnicas favoritas para acceder rápidamente | 2 |
-| 41 | US-46 | Recomendaciones personalizadas | Como sistema quiero recomendar técnicas basadas en biomarcadores para reducir estrés | 5 |
-| 42 | US-47 | Seguimiento de progreso | Como usuario quiero visualizar mi progreso para mejorar mi bienestar | 3 |
-| 43 | US-01 | Registro de Médico Colegiado | Como médico quiero registrarme para establecer mi cuenta profesional | 3 |
-| 44 | US-02 | Editar perfil del usuario | Como usuario quiero modificar mi información para mantener datos actualizados | 2 |
-| 45 | US-03 | Iniciar sesión biométrico | Como usuario quiero acceder con biometría para no perder tiempo en emergencias | 3 |
-| 46 | US-24 | Modo Oscuro para Guardias Nocturnas | Como médico quiero activar modo oscuro para evitar fatiga visual | 2 |
-| 47 | US-26 | Configuración de contacto de emergencia | Como médico quiero registrar un contacto de emergencia para casos críticos | 3 |
-| 48 | US-48 | Protección de datos sensibles | Como sistema quiero proteger datos médicos para garantizar privacidad | 5 |
-| 49 | US-49 | Control de acceso por roles | Como sistema quiero restringir accesos según roles para mayor seguridad | 5 |
-| 50 | US-50 | Registro de actividad del sistema | Como sistema quiero registrar acciones para auditoría | 3 |
+La siguiente tabla presenta el *Product Backlog* priorizado del proyecto CortiSense. Este artefacto unifica y ordena todas las historias de usuario (*User Stories*) y tareas técnicas (*Technical Stories*) definidas en la sección 3.1. Las estimaciones de esfuerzo (*Story Points*) han sido asignadas utilizando la sucesión de Fibonacci (1, 2, 3, 5, 8) en base a la complejidad arquitectónica y de negocio de cada requerimiento.
+
+## 3.3. Product Backlog
+
+La siguiente tabla presenta el *Product Backlog* priorizado del proyecto CortiSense. Este artefacto unifica y ordena todas las historias de usuario (*User Stories*) y tareas técnicas (*Technical Stories*) definidas en la sección 3.1. Las estimaciones de esfuerzo (*Story Points*) han sido asignadas utilizando la sucesión de Fibonacci (1, 2, 3, 5, 8) en base a la complejidad arquitectónica y de negocio de cada requerimiento.
+
+| Orden | ID | Título | Descripción | Story Points |
+| :---: | :--- | :--- | :--- | :---: |
+| 1 | **US-01** | Registro de Administrador Institucional | Como director del hospital, quiero registrar mi cuenta inicial para crear el HospitalWorkspace de mi institución. | 3 |
+| 2 | **US-02** | Invitación a Personal Médico | Como Administrador, quiero invitar a médicos al workspace para que puedan integrarse al monitoreo. | 2 |
+| 3 | **US-03** | Aceptación de Invitación | Como médico invitado, quiero aceptar la invitación para completar mi registro institucional. | 2 |
+| 4 | **US-04** | Asignación de Roles | Como Administrador, quiero asignar roles específicos (Clinical Supervisor, Medical Staff) para delimitar accesos. | 3 |
+| 5 | **US-05** | Autenticación Segura | Como usuario, quiero iniciar sesión mediante Firebase Auth para acceder a mis paneles correspondientes. | 5 |
+| 6 | **US-37** | Cierre de Sesión Seguro | Como usuario, quiero cerrar mi sesión explícitamente para asegurar mis datos al usar dispositivos del hospital. | 2 |
+| 7 | **US-06** | Selección de Plan de Suscripción | Como Administrador, quiero elegir el nivel de suscripción para habilitar las funcionalidades necesarias para mi hospital. | 3 |
+| 8 | **US-07** | Confirmación de Pago | Como Administrador, quiero procesar el pago para activar oficialmente el servicio. | 5 |
+| 9 | **US-08** | Habilitación de Funcionalidades | Como sistema, quiero habilitar características específicas basándome en el plan pagado. | 3 |
+| 10 | **US-09** | Restricción por Expiración | Como sistema, quiero restringir accesos si el periodo de suscripción ha culminado sin renovación. | 3 |
+| 11 | **US-38** | Consulta de Resumen de Suscripción | Como Administrador, quiero visualizar el estado comercial de mi institución para prever pagos. | 2 |
+| 12 | **US-11** | Cálculo de Puntaje de Fatiga | Como sistema, quiero evaluar los biomarcadores para determinar la fatiga acumulada del médico. | 8 |
+| 13 | **US-12** | Detección de Anomalías | Como sistema, quiero detectar comportamientos fisiológicos atípicos para prevenir colapsos. | 5 |
+| 14 | **US-13** | Clasificación de Nivel de Riesgo | Como sistema, quiero categorizar el riesgo clínico en niveles comprensibles (Bajo, Medio, Alto). | 3 |
+| 15 | **US-14** | Detección de Riesgo Extremo | Como sistema, quiero identificar situaciones de agotamiento severo para disparar respuestas automáticas de protección. | 5 |
+| 16 | **US-15** | Apertura de Incidente Clínico | Como sistema, quiero transformar un riesgo detectado en un incidente formal gestionable por el supervisor. | 5 |
+| 17 | **US-16** | Asignación de Prioridad | Como sistema, quiero priorizar los incidentes (Ej. Crítico, Advertencia) según la severidad del riesgo. | 2 |
+| 18 | **US-17** | Alerta a Supervisor | Como sistema, quiero alertar al supervisor de turno cuando se abre un incidente para garantizar respuesta rápida. | 5 |
+| 19 | **US-18** | Reconocimiento de Riesgo | Como Clinical Supervisor, quiero marcar un incidente como "En revisión" para indicar que estoy tomando cartas en el asunto. | 2 |
+| 20 | **US-19** | Resolución de Incidente | Como Clinical Supervisor, quiero cerrar un incidente una vez mitigado el riesgo del personal. | 3 |
+| 21 | **US-40** | Filtrado de Cola de Alertas | Como Clinical Supervisor, quiero filtrar mi Supervisor Alert Queue por prioridad para enfocarme en los riesgos extremos. | 3 |
+| 22 | **US-20** | Evaluación de Turno Crítico | Como Clinical Supervisor, quiero evaluar si un turno asignado representa un peligro por la fatiga del titular. | 5 |
+| 23 | **US-21** | Bloqueo de Turno | Como sistema, quiero bloquear preventivamente la asignación de un médico exhausto para proteger a los pacientes. | 5 |
+| 24 | **US-22** | Sugerencia de Reemplazos | Como sistema, quiero proponer a médicos disponibles y descansados cuando se bloquea un turno. | 8 |
+| 25 | **US-23** | Reasignación de Carga Laboral | Como Clinical Supervisor, quiero trasladar el turno bloqueado al reemplazo sugerido. | 5 |
+| 26 | **US-25** | Detección de Necesidad de Descanso | Como sistema, quiero determinar cuándo un médico necesita ser retirado temporalmente de la operación. | 3 |
+| 27 | **US-26** | Emisión de Recomendación | Como Clinical Supervisor, quiero sugerir un periodo de descanso específico para estabilizar al personal. | 3 |
+| 28 | **US-28** | Aceptación de Plan | Como Medical Staff, quiero aceptar la recomendación de descanso para iniciar mi recuperación fisiológica. | 2 |
+| 29 | **US-29** | Rechazo de Plan | Como Medical Staff, quiero poder rechazar la pausa si me encuentro en medio de un procedimiento ineludible. | 3 |
+| 30 | **US-30** | Confirmación de Recuperación | Como Clinical Supervisor, quiero confirmar que el médico está listo para volver al trabajo basándome en su nueva telemetría. | 3 |
+| 31 | **US-31** | Registro de Evaluación de Riesgo | Como sistema, quiero auditar cada cambio de riesgo clínico para mantener trazabilidad histórica. | 3 |
+| 32 | **US-32** | Auditoría de Decisión Crítica | Como sistema, quiero guardar de forma inmutable todas las decisiones críticas (ej. bloqueos y rechazos) para defensa legal del hospital. | 3 |
+| 33 | **US-33** | Trazabilidad de Acciones del Supervisor | Como sistema, quiero registrar qué supervisor tomó acción ante un incidente. | 2 |
+| 34 | **US-36** | Filtrado de Auditoría Avanzado | Como Administrador Institucional, quiero filtrar el log de auditoría por UUID de médico para revisar su historial completo de incidencias. | 3 |
+| 35 | **TS-01** | Maquetación HTML de Landing Page | Como desarrollador frontend, quiero estructurar el código HTML base de la landing para asegurar accesibilidad. | 3 |
+| 36 | **TS-02** | Estilización en CSS | Como diseñador UI/UX, quiero definir la hoja de estilos base con colores institucionales de SyncedHealth. | 2 |
+| 37 | **TS-03** | Lógica de búsqueda en JS | Como desarrollador frontend, quiero programar eventos DOM en JS para habilitar el buscador interno. | 3 |
+| 38 | **TS-04** | Sistema de internacionalización (i18n) | Como desarrollador frontend, quiero crear un diccionario JSON en JavaScript para traducir la landing page. | 5 |
+| 39 | **TS-05** | Setup de ASP.NET Core Web API | Como backend developer, quiero inicializar la arquitectura en C# y .NET para desplegar la API REST. | 3 |
+| 40 | **TS-06** | Configuración de Entity Framework Core | Como Database Admin, quiero configurar el DbContext y las migraciones en C# para SQL Server. | 5 |
+| 41 | **TS-07** | Generación de JWT en .NET | Como fullstack developer, quiero implementar autenticación por JSON Web Tokens en C#. | 5 |
+| 42 | **TS-08** | Hashing de contraseñas | Como backend developer, quiero usar PasswordHasher para proteger las contraseñas de los médicos. | 3 |
+| 43 | **TS-09** | Setup de Vue.js SPA | Como frontend developer, quiero inicializar el proyecto base en Vue 3 para construir el dashboard interactivo. | 3 |
+| 44 | **TS-10** | Gestión de estado con Pinia y Axios | Como frontend developer, quiero configurar la store de Pinia y Axios para consumir la API de C#. | 5 |
+| 45 | **TS-12** | Implementación de Chart.js | Como frontend developer, quiero integrar Vue-Chartjs para visualizar las curvas de estrés. | 5 |
+| 46 | **TS-13** | Cálculo de umbrales de riesgo | Como backend developer, quiero programar la lógica matemática de validación de biomarcadores en C#. | 8 |
+| 47 | **TS-16** | Algoritmo de mapas de calor con LINQ | Como backend developer, quiero usar consultas LINQ para promediar el estrés por departamento. | 5 |
+
 ---
+
 # Capítulo IV: Product Design
 ## 4.1. Style Guidelines.
 
@@ -5176,7 +5175,13 @@ Los errores serán puntuados tomando en cuenta la siguiente escala de severidad
 
 # Bibliografía
 
+Adzic, G. (2012). Impact mapping: Making a big impact with software products and projects. Provoking Thoughts.
+
+Brandolini, A. (2018). Introducing EventStorming: An act of deliberate collective learning. Leanpub.
+
 Chatuev, M. (2020, 21 de setiembre). *Big Picture Event Storming*. Medium. https://medium.com/@chatuev/big-picture-event-storming-7a1fe18ffabb
+
+Cohn, M. (2004). User stories applied: For agile software development. Addison-Wesley Professional.
 
 Colegio Médico del Perú. (2024). Conoce a tu médico: Registro Nacional de Médicos Colegiados. https://www.cmp.org.pe/conoce-a-tu-medico/
 
@@ -5185,6 +5190,8 @@ Cooper, A. (1999). The inmates are running the asylum: Why high tech products dr
 Draft.io (s.f.). *EventStorming*. Draft.io. https://draft.io/example/eventstorming
 
 Dropstat. (2024). *Dropstat: AI-powered healthcare staffing and shift management*. https://dropstat.com/
+
+Evans, E. (2003). Domain-driven design: Tackling complexity in the heart of software. Addison-Wesley Professional.
 
 Firstbeat Technologies. (2024). *Firstbeat Life: Corporate wellness and stress management*. https://www.firstbeat.com/
 
