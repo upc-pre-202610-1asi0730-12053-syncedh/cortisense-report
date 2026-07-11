@@ -105,133 +105,68 @@ URL de la Platform desplegada: [cortisense-platform](https://api.cortisense.spac
 
 **Entrega TB2:**
 
-+ Desarrollo de Actividades
-    Para el entregable TB1, el equipo utilizó Discord en todas sus reuniones virtuales y coordinaciones por consenso general. La carga de trabajo del informe se distribuyó equitativamente con plazos adecuados. Finalmente, las sesiones presenciales fueron clave para obtener retroalimentación del docente y resolver dudas, optimizando el avance frente a los horarios limitados del grupo.
+### Desarrollo de Actividades
 
-+ **Evidencias de colaboración y commits - Github:**
-    * **Análiticos de colaboración** <br><br>
-        + **Pulse Image of Github Insights**
-        	- **AV1**
-        	<div align="center"><img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Collaboration-Insights/Insight-1.png?raw=true"></div><br>
-        	
-			- **TB1**
-			<div align="center"><img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Collaboration-Insights/insights-webapp.png?raw=true"></img></div><br>
-			
-			- **AV2**
-			<div align="center"><img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Collaboration-Insights/insights-webapp.png?raw=true"></img></div><br><br>
+A lo largo del ciclo de vida del proyecto, el equipo ha mantenido una comunicación constante utilizando canales de voz en Discord para las reuniones virtuales y coordinaciones generales. La carga de trabajo del informe y del desarrollo del software se distribuyó equitativamente con plazos adecuados para cada iteración (AV1, TB1, AV2, TB2). Finalmente, las sesiones presenciales fueron clave para obtener retroalimentación del docente, resolver impedimentos técnicos y optimizar el avance frente a los horarios limitados del grupo.
 
-			- **TB2**
-			<div align="center"><img src="https://github.com/upc-pre-202610-1asi0730-12053-syncedh/cortisense-report/blob/main/Resources/Collaboration-Insights/insight-tb2.PNG?raw=true"></img></div><br><br>
+---
 
+### Evidencias de Colaboración (GitHub Insights)
 
+#### 1. Analíticas Globales del Equipo
 
-        + **Contributors Image of Github Insights**
-			- **AV1**
-     		<div align="center"><img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Collaboration-Insights/Insight-2.png?raw=true"></div><br>
-			
-			- **TB1**
-			<div align="center"><img src="https://github.com/upc-pre-202610-1asi0730-12053-syncedh/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Collaboration-Insights/insight-commits-over-time.png?raw=true"></img></div><br>
+**A. Pulse Insights (Actividad general de los repositorios)**
 
-			- **AV2**
-			<div align="center"><img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Collaboration-Insights/insights-webapp.png?raw=true"></img></div><br><br>
+| AV1 (Avance 1) | TB1 (Trabajo 1) |
+| :---: | :---: |
+| <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Collaboration-Insights/Insight-1.png?raw=true" width="100%"> | <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Collaboration-Insights/insights-webapp.png?raw=true" width="100%"> |
+| **AV2 (Avance 2)** | **TB2 (Trabajo Final)** |
+| <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Collaboration-Insights/insights-webapp.png?raw=true" width="100%"> | <img src="https://github.com/upc-pre-202610-1asi0730-12053-syncedh/cortisense-report/blob/main/Resources/Collaboration-Insights/insight-tb2.PNG?raw=true" width="100%"> |
 
-			- **TB2**
-			<div align="center"><img src="https://github.com/upc-pre-202610-1asi0730-12053-syncedh/cortisense-report/blob/main/Resources/Collaboration-Insights/contributors-insights-tb2.PNG?raw=true"></img></div><br><br>
+**B. Contributors Insights (Evolución de Aportes)**
 
+| AV1 (Avance 1) | TB1 (Trabajo 1) |
+| :---: | :---: |
+| <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Collaboration-Insights/Insight-2.png?raw=true" width="100%"> | <img src="https://github.com/upc-pre-202610-1asi0730-12053-syncedh/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Collaboration-Insights/insight-commits-over-time.png?raw=true" width="100%"> |
+| **AV2 (Avance 2)** | **TB2 (Trabajo Final)** |
+| <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Collaboration-Insights/insights-webapp.png?raw=true" width="100%"> | <img src="https://github.com/upc-pre-202610-1asi0730-12053-syncedh/cortisense-report/blob/main/Resources/Collaboration-Insights/contributors-insights-tb2.PNG?raw=true" width="100%"> |
 
+---
 
-    * **Commits**
+#### 2. Evidencias Individuales (Commits por Integrante)
 
-         A continuacion se muestran algunos commits realizados.
+A continuación, se detalla el progreso y la constancia de los *commits* realizados por cada miembro a lo largo del ciclo.
 
-        + **Marcelo Pareja**
-			- **AV1**
-     		<div style="display: flex; align-items: center;">
-				<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Collaboration-Insights/Insight-Marcelo-Commits.png?raw=true" >
-            </div><br>
-			
-			- **TB1**
-     		<div style="display: flex; align-items: center;">
-				<img src="https://github.com/upc-pre-202610-1asi0730-12053-syncedh/cortisense-report/blob/main/Resources/Collaboration-Insights/insight-marcelo-tb1.PNG?raw=true" >
-            </div><br>
-			
-			- **AV2**
-     		<div style="display: flex; align-items: center;">
-				<img src="https://github.com/upc-pre-202610-1asi0730-12053-syncedh/cortisense-report/blob/main/Resources/Collaboration-Insights/insight-marcelo-av2.PNG?raw=true" >
-            </div><br>
-			
-			- **TB2**
-     		<div style="display: flex; align-items: center;">
-				<img src="https://github.com/upc-pre-202610-1asi0730-12053-syncedh/cortisense-report/blob/main/Resources/Collaboration-Insights/insight-marcelo-tb2.PNG?raw=true" >
-            </div><br>
-			
-        + **Guiou Mauricio**
-			- **AV1**
-            <div style="display: flex; align-items: center;">
-				<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Collaboration-Insights/Insight-Justinn-Commits.png?raw=true">
-            </div><br>
-			
-			- **TB1**
-     		 <div style="display: flex; align-items: center;">
-				<img src="https://github.com/upc-pre-202610-1asi0730-12053-syncedh/cortisense-report/blob/main/Resources/Collaboration-Insights/justin-tb1.PNG?raw=true">
-            </div><br>
-			
-			- **AV2**
-
-			<div style="display: flex; align-items: center;">
-				<img src="https://github.com/upc-pre-202610-1asi0730-12053-syncedh/cortisense-report/blob/main/Resources/Collaboration-Insights/justin-av2.PNG?raw=true">
-            </div><br>
-
-			- **TB2**
-
-			<div style="display: flex; align-items: center;">
-				<img src=https://github.com/upc-pre-202610-1asi0730-12053-syncedh/cortisense-report/blob/main/Resources/Collaboration-Insights/justin-tb2.PNG?raw=true">
-            </div><br>
+**Marcelo Pareja Calloapaza**
+| AV1 | TB1 |
+| :---: | :---: |
+| <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Collaboration-Insights/Insight-Marcelo-Commits.png?raw=true" width="100%"> | <img src="https://github.com/upc-pre-202610-1asi0730-12053-syncedh/cortisense-report/blob/main/Resources/Collaboration-Insights/insight-marcelo-tb1.PNG?raw=true" width="100%"> |
+| **AV2** | **TB2** |
+| <img src="https://github.com/upc-pre-202610-1asi0730-12053-syncedh/cortisense-report/blob/main/Resources/Collaboration-Insights/insight-marcelo-av2.PNG?raw=true" width="100%"> | <img src="https://github.com/upc-pre-202610-1asi0730-12053-syncedh/cortisense-report/blob/main/Resources/Collaboration-Insights/insight-marcelo-tb2.PNG?raw=true" width="100%"> |
 
 
-        + **Johan Yonel**
-			- **AV1**
-     		<div style="display: flex; align-items: center;">
-				<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Collaboration-Insights/Insight-Johan-Commits.png?raw=true">
-            </div><br>
-			
-			- **TB1**
-			<div style="display: flex; align-items: center;">
-				<img src="https://github.com/upc-pre-202610-1asi0730-12053-syncedh/cortisense-report/blob/main/Resources/Collaboration-Insights/johan-av1.PNG?raw=true">
-            </div><br>
-
-			- **AV2**
-     		 <div style="display: flex; align-items: center;">
-				<img src=https://github.com/upc-pre-202610-1asi0730-12053-syncedh/cortisense-report/blob/main/Resources/Collaboration-Insights/johan-av2.PNG?raw=true">
-            </div><br>
-
-  			- **TB2**
-     		<div style="display: flex; align-items: center;">
-				<img src="https://github.com/upc-pre-202610-1asi0730-12053-syncedh/cortisense-report/blob/main/Resources/Collaboration-Insights/johan-tb2.PNG?raw=true">
-            </div><br>
+**Guiou Justinn Mauricio Silva**
+| AV1 | TB1 |
+| :---: | :---: |
+| <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Collaboration-Insights/Insight-Justinn-Commits.png?raw=true" width="100%"> | <img src="https://github.com/upc-pre-202610-1asi0730-12053-syncedh/cortisense-report/blob/main/Resources/Collaboration-Insights/justin-tb1.PNG?raw=true" width="100%"> |
+| **AV2** | **TB2** |
+| <img src="https://github.com/upc-pre-202610-1asi0730-12053-syncedh/cortisense-report/blob/main/Resources/Collaboration-Insights/justin-av2.PNG?raw=true" width="100%"> | <img src="https://github.com/upc-pre-202610-1asi0730-12053-syncedh/cortisense-report/blob/main/Resources/Collaboration-Insights/justin-tb2.PNG?raw=true" width="100%"> |
 
 
-        + **Jairo Santiago**
-			- **AV1**
-     		<div style="display: flex; align-items: center;">
-				<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Collaboration-Insights/Insight-Jairo-Commits.png?raw=true">
-            </div><br>
-			
-			- **TB1**
-     		<div style="display: flex; align-items: center;">
-				<img src="https://github.com/upc-pre-202610-1asi0730-12053-syncedh/cortisense-report/blob/main/Resources/Collaboration-Insights/jairo-tb1.PNG?raw=true">
-            </div><br>
-			
-			- **AV2**
-     		<div style="display: flex; align-items: center;">
-				<img src="https://github.com/upc-pre-202610-1asi0730-12053-syncedh/cortisense-report/blob/main/Resources/Collaboration-Insights/jairo-av2.PNG?raw=true">
-            </div><br>
+**Johan Yonel León Morales**
+| AV1 | TB1 |
+| :---: | :---: |
+| <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Collaboration-Insights/Insight-Johan-Commits.png?raw=true" width="100%"> | <img src="https://github.com/upc-pre-202610-1asi0730-12053-syncedh/cortisense-report/blob/main/Resources/Collaboration-Insights/johan-av1.PNG?raw=true" width="100%"> |
+| **AV2** | **TB2** |
+| <img src="https://github.com/upc-pre-202610-1asi0730-12053-syncedh/cortisense-report/blob/main/Resources/Collaboration-Insights/johan-av2.PNG?raw=true" width="100%"> | <img src="https://github.com/upc-pre-202610-1asi0730-12053-syncedh/cortisense-report/blob/main/Resources/Collaboration-Insights/johan-tb2.PNG?raw=true" width="100%"> |
 
-	  		- **TB2**
-     		<div style="display: flex; align-items: center;">
-				<img src="https://github.com/upc-pre-202610-1asi0730-12053-syncedh/cortisense-report/blob/main/Resources/Collaboration-Insights/jairo-tb2.PNG?raw=true">
-            </div><br>
-    
+
+**Jairo Mathias Santiago Atanacio**
+| AV1 | TB1 |
+| :---: | :---: |
+| <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Collaboration-Insights/Insight-Jairo-Commits.png?raw=true" width="100%"> | <img src="https://github.com/upc-pre-202610-1asi0730-12053-syncedh/cortisense-report/blob/main/Resources/Collaboration-Insights/jairo-tb1.PNG?raw=true" width="100%"> |
+| **AV2** | **TB2** |
+| <img src="https://github.com/upc-pre-202610-1asi0730-12053-syncedh/cortisense-report/blob/main/Resources/Collaboration-Insights/jairo-av2.PNG?raw=true" width="100%"> | <img src="https://github.com/upc-pre-202610-1asi0730-12053-syncedh/cortisense-report/blob/main/Resources/Collaboration-Insights/jairo-tb2.PNG?raw=true" width="100%"> |
 
 # Contenido
 
