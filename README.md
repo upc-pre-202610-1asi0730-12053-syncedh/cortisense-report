@@ -5126,8 +5126,6 @@ Los errores serán puntuados tomando en cuenta la siguiente escala de severidad:
 
 ***
 
-Con esto cerramos el ciclo completo. El informe está totalmente saneado de incongruencias técnicas (hardware/Angular) y posee una presentación gráfica, jerárquica y discursiva del más alto nivel académico. ¡Éxitos en la sustentación!
-
 # Bibliografía
 
 Adzic, G. (2012). *Impact mapping: Making a big impact with software products and projects*. Provoking Thoughts.
