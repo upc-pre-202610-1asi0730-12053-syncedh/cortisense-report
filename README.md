@@ -1741,127 +1741,148 @@ La siguiente tabla presenta el *Product Backlog* priorizado del proyecto CortiSe
 ---
 
 # Capítulo IV: Product Design
-## 4.1. Style Guidelines.
 
-### 4.1.1. General Style Guidelines.
+## 4.1. Style Guidelines
+
+### 4.1.1. General Style Guidelines
+
 **Branding** <br><br>
 Para la identidad visual de CortiSense, se ha desarrollado un logotipo moderno y minimalista que refleja el enfoque tecnológico y de bienestar de la plataforma. El diseño busca transmitir confianza, monitoreo continuo y seguridad en el cuidado del personal.<br>
-El logotipo está compuesto por un ícono representativo de salud, el cual integra un corazón con una línea de pulso y un símbolo de atención médica, representando el monitoreo del bienestar. Este elemento visual refuerza la funcionalidad principal del sistema, orientada a la supervisión del estado físico y emocional del personal de salud.<br>
+El logotipo está compuesto por un ícono representativo de salud, el cual integra un corazón con una línea de pulso y un símbolo de atención médica, representando el monitoreo del bienestar. Este elemento visual refuerza la funcionalidad principal del sistema, orientada a la supervisión del estado físico y emocional del personal de salud.
 
-<div align="center"> <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/Style-Guidelines/banner.png?raw=true" alt="Imagen del diseño del banner de CortiSense"/> </div> <div align="justify"><br>
+<div align="center">
+  <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/Style-Guidelines/banner.png?raw=true" alt="Imagen del diseño del banner de CortiSense"/>
+</div>
+<br>
 
 **Typography** <br><br>
-Para el desarrollo de CortiSense, se ha seleccionado la tipografía Plus Jakarta Sans, una fuente sans-serif moderna y legible que se adapta a la estética digital del producto. Esta tipografía permite mantener una apariencia limpia, profesional y fácil de leer en diferentes dispositivos.<br>
+Para el desarrollo de CortiSense, se ha seleccionado la tipografía *Plus Jakarta Sans*, una fuente sans-serif moderna y legible que se adapta a la estética digital del producto. Esta tipografía permite mantener una apariencia limpia, profesional y fácil de leer en diferentes dispositivos.<br>
 Para la jerarquía visual, se utilizan distintos pesos de la fuente con el fin de resaltar la información:
-+ **Bold - ExtraBold:** para títulos y encabezados
-+ **SemiBold:** para subtítulos
-+ **Regular - Medium:** para texto general
-+ **Light:** para contenido secundario <br>
+* **Bold - ExtraBold:** para títulos y encabezados
+* **SemiBold:** para subtítulos
+* **Regular - Medium:** para texto general
+* **Light:** para contenido secundario
 
 A continuación, se presentan los estilos tipográficos utilizados en CortiSense:
 
-<div align="center"> <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/Style-Guidelines/typography.png?raw=true" alt="Imagen de los estilos de la tipografía Plus Jakarta Sans"/> </div> <div align="justify"><br>
+<div align="center">
+  <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/Style-Guidelines/typography.png?raw=true" alt="Imagen de los estilos de la tipografía Plus Jakarta Sans"/>
+</div>
+<br>
 
 **Colors** <br><br>
-Para CortiSense, se ha definido una paleta de colores basada en tonos turquesa y celeste, los cuales transmiten calma, bienestar, tecnología y confianza. <br>
-El uso de estos colores permite mantener una estética moderna, amigable y profesional dentro de la plataforma. <br>
+Para CortiSense, se ha definido una paleta de colores basada en tonos turquesa y celeste, los cuales transmiten calma, bienestar, tecnología y confianza.<br>
+El uso de estos colores permite mantener una estética moderna, amigable y profesional dentro de la plataforma.
 
-<div align="center"> <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/Style-Guidelines/colors.png?raw=true" alt="Imagen de la paleta de colores de CortiSense"/> <br> </div> <div align="justify"><br>
+<div align="center">
+  <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/Style-Guidelines/colors.png?raw=true" alt="Imagen de la paleta de colores de CortiSense"/>
+</div>
+<br>
 
 **Spacing** <br><br>
 Para el diseño de CortiSense, se ha definido un sistema de espaciado basado en una escala consistente, con el objetivo de mantener una interfaz más ordenada, limpia y fácil de usar.<br>
-El sistema de spacing sigue una progresión que permite mantener uniformidad en todos los elementos de la interfaz.<br>
+El sistema de *spacing* sigue una progresión que permite mantener uniformidad en todos los elementos de la interfaz.
 
-<div align="center"> <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/Style-Guidelines/spacing.png?raw=true" alt="Imagen de los spacing referenciales"/> </div> <div align="justify"><br>
+<div align="center">
+  <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/Style-Guidelines/spacing.png?raw=true" alt="Imagen de los spacing referenciales"/>
+</div>
+<br>
 
 **Communication Style** <br><br>
 El estilo de comunicación de CortiSense se define como:
-+ **Serio:** por el contexto relacionado al bienestar y monitoreo del personal de salud.
-+ **Formal:** debido a que está dirigido a instituciones y profesionales del sector salud.
-+ **Respetuoso:** para transmitir confianza y cercanía con los usuarios.
-+ **Sereno:** evitando elementos visuales o comunicativos agresivos, priorizando una experiencia calmada y profesional. <br>
+* **Serio:** por el contexto relacionado al bienestar y monitoreo del personal de salud.
+* **Formal:** debido a que está dirigido a instituciones y profesionales del sector salud.
+* **Respetuoso:** para transmitir confianza y cercanía con los usuarios.
+* **Sereno:** evitando elementos visuales o comunicativos agresivos, priorizando una experiencia calmada y profesional.
 
 Este enfoque permite proyectar una identidad visual coherente con el propósito del sistema, centrado en el monitoreo inteligente para un bienestar seguro.
 
-### 4.1.2. Web Style Guidelines.
+### 4.1.2. Web Style Guidelines
 
 **Header** <br>
-
-En esta sección podremos encontrar el logo de CortiSence a la izquierda, acompañado del menú de navegación principal (*Home*, *Description*, *Goals*, *Pricing*, *Impact*, *IoT Systems*, *Support*, , *Language*) y el boton de acción *Join US* a la derecha. El fondo es de color blanco *#FFFFFF* y los botones de un cyan un poco mas claro *#41EFF2*.
+En esta sección podremos encontrar el logo de CortiSense a la izquierda, acompañado del menú de navegación principal (*Home*, *Description*, *Goals*, *Pricing*, *Impact*, *IoT Systems*, *Support*, *Language*) y el botón de acción *Join Us* a la derecha. El fondo es de color blanco `#FFFFFF` y los botones de un cyan un poco más claro `#41EFF2`.
 
 <div align="center">
-<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/Style-Guidelines/Web_Style/header.png?raw=true" alt="Imagen referencial del header"/> 
-<div align="justify"> <br>
+  <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/Style-Guidelines/Web_Style/header.png?raw=true" alt="Imagen referencial del header"/>
+</div>
+<br>
 
 **Main Section** <br>
-
-La sección principal de la landing page está diseñada para captar la atención del usuario desde el primer momento, mostrando un título llamativo, una breve descripción del servicio y un botón de búsqueda principal junto a un recurso visual ilustrativo. En su adaptación responsive, la composición se ajusta a un formato vertical propio de dispositivos móviles, conservando la claridad del mensaje y la facilidad de interacción.
-
-<div align="center">
-<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/Style-Guidelines/Web_Style/main_section.png?raw=true" alt="Imagen referencial del main section"/>
-<div align="justify"> <br>
-
-**Footer**<br>
-El footer de la landing page reúne la información complementaria de la plataforma, incluyendo la identidad visual de la marca. En la versión web, estos elementos se distribuyen de manera horizontal para aprovechar el espacio y mantener un orden visual equilibrado, mientras que, en la versión responsive, se reorganizan verticalmente para facilitar la lectura y conservar la claridad y accesibilidad del contenido en dispositivos móviles.
+La sección principal de la *landing page* está diseñada para captar la atención del usuario desde el primer momento, mostrando un título llamativo, una breve descripción del servicio y un botón de búsqueda principal junto a un recurso visual ilustrativo. En su adaptación *responsive*, la composición se ajusta a un formato vertical propio de dispositivos móviles, conservando la claridad del mensaje y la facilidad de interacción.
 
 <div align="center">
-<img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/Style-Guidelines/Web_Style/footer.png?raw=true" alt="Imagen referencial del footer""/>
-<div align="justify"> <br>
+  <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/Style-Guidelines/Web_Style/main_section.png?raw=true" alt="Imagen referencial del main section"/>
+</div>
+<br>
 
-## 4.2. Information Architecture.
-En CortiSense, la arquitectura de la información se ha diseñado para priorizar la rapidez y la precisión, factores críticos en entornos hospitalarios de alta intensidad. Organizamos el contenido de manera que tanto el personal médico como los administradores puedan acceder a indicadores biométricos y alertas de estrés sin fricciones. Implementamos sistemas de organización basados en la urgencia y la jerarquía visual, facilitando la interpretación de datos complejos de cortisol y HRV. Con una navegación estructurada y sistemas de búsqueda optimizados para la gestión de turnos, CortiSense garantiza que la toma de decisiones para prevenir el burnout sea inmediata, fluida y basada en evidencia científica.
+**Footer** <br>
+El footer de la *landing page* reúne la información complementaria de la plataforma, incluyendo la identidad visual de la marca. En la versión web, estos elementos se distribuyen de manera horizontal para aprovechar el espacio y mantener un orden visual equilibrado, mientras que, en la versión *responsive*, se reorganizan verticalmente para facilitar la lectura y conservar la claridad y accesibilidad del contenido en dispositivos móviles.
 
-### 4.2.1. Organization Systems.
+<div align="center">
+  <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/Style-Guidelines/Web_Style/footer.png?raw=true" alt="Imagen referencial del footer"/>
+</div>
+<br>
+
+## 4.2. Information Architecture
+
+En CortiSense, la arquitectura de la información se ha diseñado para priorizar la rapidez y la precisión, factores críticos en entornos hospitalarios de alta intensidad. Organizamos el contenido de manera que tanto el personal médico como los administradores puedan acceder a indicadores biométricos y alertas de estrés sin fricciones. Implementamos sistemas de organización basados en la urgencia y la jerarquía visual, facilitando la interpretación de datos complejos de cortisol y HRV. Con una navegación estructurada y sistemas de búsqueda optimizados para la gestión de turnos, CortiSense garantiza que la toma de decisiones para prevenir el *burnout* sea inmediata, fluida y basada en evidencia científica.
+
+### 4.2.1. Organization Systems
+
 En CortiSense, aplicaremos diversos sistemas de organización de información para garantizar que la fatiga no sea un obstáculo en el uso de la plataforma:
-**Organización Visual de Contanido:**
-- **Jerárquica:** Utilizaremos dicho sistema con el objetivo de destacar las alertas críticas de fatiga sobre las métricas de rutina. En el dashboard de cada médico, el lugar central será ocupado por el nivel de cortisol actual y el estado de "resiliencia". Los mismos serán fáciles de identificar mediante el uso de indicadores de color para facilitar la velocidad de lectura.
-- **Secuencial:** Será rigurosamente empleada en el flujo de calibración inicial, la sincronización de la línea base biológica y el proceso de solicitud de reemplazo de turno tras jornadas de alta fatiga.
-**Esquemas de categorización de contenido:**
-- **Según usuario:** Esta es nuestra categorización principal. El Personal Médico visualizará datos privados de salud y recomendaciones de autocuidado, mientras que los Directores Médicos accederán a mapas de calor de estrés por áreas (UCI, Emergencias) y herramientas de gestión de personal.
-- **Por tópicos:** La información ha de ser agrupada mediante el uso de módulos, los cuales poseerán objetos cuyas caracterísitcas son similares entre sí. Por ejemplo: Gestión de Guardias o Biometría y Reportes.
-- **Cronológico:** Será de gran vitalidad para el análisis de tendencias. Debido a que permite la evaluación de los niveles de cortisol al inicio de una guardia frente a su final, será de gran valor al momento de identificar patrones de agotamiento en la semana.
-- **Alfabético:** Será usado de manera secundaria en el directorio del personal médico para usuarios administradores y el la sección destinada como glosario para médicos y biomarcadores.
 
-### 4.2.2. Labeling Systems.
+**Organización Visual del Contenido:**
+* **Jerárquica:** Utilizaremos dicho sistema con el objetivo de destacar las alertas críticas de fatiga sobre las métricas de rutina. En el dashboard de cada médico, el lugar central será ocupado por el nivel de cortisol actual y el estado de "resiliencia". Los mismos serán fáciles de identificar mediante el uso de indicadores de color para facilitar la velocidad de lectura.
+* **Secuencial:** Será rigurosamente empleada en el flujo de calibración inicial, la sincronización de la línea base biológica y el proceso de solicitud de reemplazo de turno tras jornadas de alta fatiga.
+
+**Esquemas de categorización de contenido:**
+* **Según usuario:** Esta es nuestra categorización principal. El Personal Médico visualizará datos privados de salud y recomendaciones de autocuidado, mientras que los Directores Médicos accederán a mapas de calor de estrés por áreas (UCI, Emergencias) y herramientas de gestión de personal.
+* **Por tópicos:** La información ha de ser agrupada mediante el uso de módulos, los cuales poseerán objetos cuyas características son similares entre sí. Por ejemplo: *Gestión de Guardias* o *Biometría y Reportes*.
+* **Cronológico:** Será de gran vitalidad para el análisis de tendencias. Debido a que permite la evaluación de los niveles de cortisol al inicio de una guardia frente a su final, será de gran valor al momento de identificar patrones de agotamiento en la semana.
+* **Alfabético:** Será usado de manera secundaria en el directorio del personal médico para usuarios administradores y en la sección destinada como glosario para médicos y biomarcadores.
+
+### 4.2.2. Labeling Systems
+
 El sistema de etiquetado de CortiSense busca eliminar la carga cognitiva del personal sanitario mediante términos precisos y de grado médico.
-- **Inicio / Dashboard:** Pantalla principal con el resumen del estado biológico actual y la guardia en curso.
-- **Ciencia de Datos / Science:** Sección que explica el sustento clínico de la medición de cortisol y HRV para generar confianza en el usuario.
-- **Mi Salud / My Health:** Espacio privado del médico para ver sus métricas históricas y evolución de fatiga.
-- **Gestión de Turnos / Shift Manager:** Módulo para administradores donde se visualiza la disponibilidad y carga laboral del equipo.
-- **Alertas / Critical Alerts:** Centro de notificaciones sobre niveles de estrés que requieren intervención inmediata.
-- **Soporte Técnico / Support:** Información para la resolución de problemas con los dispositivos IoT.
-- **Ingresar / Log In:** Acceso seguro para usuarios registrados con protocolos de privacidad hospitalaria.
+* **Inicio / Dashboard:** Pantalla principal con el resumen del estado biológico actual y la guardia en curso.
+* **Ciencia de Datos / Science:** Sección que explica el sustento clínico de la medición de cortisol y HRV para generar confianza en el usuario.
+* **Mi Salud / My Health:** Espacio privado del médico para ver sus métricas históricas y evolución de fatiga.
+* **Gestión de Turnos / Shift Manager:** Módulo para administradores donde se visualiza la disponibilidad y carga laboral del equipo.
+* **Alertas / Critical Alerts:** Centro de notificaciones sobre niveles de estrés que requieren intervención inmediata.
+* **Soporte Técnico / Support:** Información para la resolución de problemas con los dispositivos IoT.
+* **Ingresar / Log In:** Acceso seguro para usuarios registrados con protocolos de privacidad hospitalaria.
 
 ### 4.2.3. SEO Tags and Meta Tags
+
 Para mejorar el posicionamiento en motores de búsqueda y brindar una experiencia optimizada a los usuarios, aquí están los SEO Tags y Meta Tags que se utilizarán en las plataformas de SyncedHealth:
 
 **Encabezado (Title):** Es vital en el encabezado del HTML ya que proporciona el título de la página web. Los motores de búsqueda lo utilizan para encabezar las entradas en los resultados de búsqueda, siendo fundamental para la visibilidad del sitio.
 
-**Descripción (Description):** Este campo permite ofrecer una descripción breve y clara del contenido del sitio web. Se muestra como un fragmento debajo de la URL en los resultados de búsqueda, resultando crucial para atraer la atención de los usuarios y mejorar el CTR (Click Through Rate).
+**Descripción (Description):** Este campo permite ofrecer una descripción breve y clara del contenido del sitio web. Se muestra como un fragmento debajo de la URL en los resultados de búsqueda, resultando crucial para atraer la atención de los usuarios y mejorar el CTR (*Click Through Rate*).
 
 **Palabras clave (Keywords):** Se utiliza para proporcionar términos clave relevantes para el contenido del sitio, enfocándose en la especialización de salud ocupacional y tecnología IoT.
 
 **Autor y Derechos de Autor:** Estas etiquetas identifican a SyncedHealth como el creador de la página y propietario de los derechos de propiedad intelectual, asegurando la autoría del código y la solución.
 
 **Landing Page:**
-- **Título:**
+* **Título:**
 ```html
 <title>CortiSense - Monitoreo inteligente para un bienestar seguro</title>
 ```
 - **Descripción:**
 ```html
-<meta name="description" content="Protegiendo a quienes nos protegen. El primer sistema de monitoreo de estrés y burnout eb tienpo real para profesionales de salud."/>
+<meta name="description" content="Protegiendo a quienes nos protegen. El primer sistema de monitoreo de estrés y burnout en tiempo real para profesionales de salud."/>
 ```
 - **Palabras clave (Keywords):**
 ```html
 <meta name="keywords" content="Burnout médico, monitoreo de cortisol, estrés hospitalario, salud ocupacional, IoT médica, gestión de turnos médicos, seguridad del paciente, SyncedHealth."/>
 ```
 - **Autor (author):**
-```
+```html
 <meta name="author" content="SyncedHealth Startup" />
 ```
 - **Copyright:**
-```
+```html
 <meta name="copyright" content="© SyncedHealth, 2026" />
 ```
 
@@ -1879,11 +1900,11 @@ Para mejorar el posicionamiento en motores de búsqueda y brindar una experienci
 <meta name="keywords" content="Dashboard médico, métricas de fatiga, HRV médico, optimización de guardias, telemetría de salud, control de cortisol."/>
 ```
 - **Autor (author):**
-```
+```html
 <meta name="author" content="SyncedHealth Startup" />
 ```
 - **Copyright:**
-```
+```html
 <meta name="copyright" content="© SyncedHealth, 2026" />
 ```
 
@@ -1893,7 +1914,7 @@ El sistema de búsqueda de CortiSense está diseñado para encontrar informació
 - **Filtros de Riesgo:** Opción de filtrar al personal por "Nivel de Estrés" (Bajo, Medio, Crítico), lo que permitirá identificar aquellos que requieren de un descanso inmediato.
 - **Filtros por Unidad:** Capacidad de segmentar los datos por áreas del hospital. Por ejemplo: Pabellón de Cirugía Cardiovascular o Triaje.
 - **Búsqueda de Eventos:** Filtro cronológico cuyo fin será buscar incidentes de fatiga en fechas y horas específicas de guardias pasadas.
-- **Sugerencias Inteligentes:** Al escribir un nombre, el sistema sugiere automáticamente el estado actual. Por ejemplo: Dr. García - En zona de fatiga crítica.
+- **Sugerencias Inteligentes:** Al escribir un nombre, el sistema sugiere automáticamente el estado actual. Por ejemplo: *Dr. García - En zona de fatiga crítica.*
 
 ### 4.2.5. Navigation Systems.
 Debido al entorno con el que CortiSense trabaja, su navegación ha de ser directa y eficiente, mientras minimiza los clics para evitar interacciones innecesarias.
@@ -1901,7 +1922,7 @@ Barra de Navegación Persistente: Menú lateral (App) y superior (Landing) que p
 - **Navegación por Contexto:** Si un médico recibe una alerta háptica en su wearable, al abrir la app será dirigido automáticamente a la sección de "Recomendación de Recuperación".
 - **Indicadores de Estado Global:** Un ícono persistente en la interfaz mostrará siempre el estado de conexión del wearable IoT (conectado/desconectado).
 - **Botones de Acción Rápida:** Son necesarias para buscar la eficiencia de protocolos regularizados. Acciones como "Solicitar Relevo" o "Marcar Incidencia" estarán siempre al alcance de un clic.
-- **Breadcrumbs:** Utilizadas en multiples áreas, sin embargo, destacan en la administrativa. Un ejemplo es la sección de reportes complejos, para que el administrador pueda retroceder fácilmente entre niveles siguiendo una ruta estable (Hospital > Área > Médico > Reporte).
+- **Breadcrumbs:** Utilizadas en multiples áreas, sin embargo, destacan en la administrativa. Un ejemplo es la sección de reportes complejos, para que el administrador pueda retroceder fácilmente entre niveles siguiendo una ruta estable *(Hospital > Área > Médico > Reporte).*
 
 ## 4.3. Landing Page UI Design.
 
@@ -2110,6 +2131,27 @@ En esta sección se detallan los esquemas de baja fidelidad, estructurados segú
 <br>
 
 ### 4.4.4. Web Applications User Flow Diagrams.
+A continuación, se presentan los diagramas de flujo de usuario modelados en sintaxis *Mermaid*. Estos diagramas mapean las rutas críticas de interacción dentro de la plataforma CortiSense, demostrando cómo los diferentes perfiles (Administradores, Supervisores y Médicos) navegan por el sistema para resolver las problemáticas del *Burnout*.
+
+**1. Flujo de Autenticación y Onboarding Institucional (IAM)**
+Este flujo ilustra el recorrido desde la *Landing Page* hasta el ingreso a la plataforma, diferenciando entre la creación de una nueva clínica y el acceso de un médico ya registrado.
+
+<img src="https://github.com/upc-pre-202610-1asi0730-12053-syncedh/cortisense-report/blob/main/Resources/web-app-ux-design/user-flow-diagrams/auth.svg?raw=true" alt=""/>
+
+---
+**2. Flujo de Detección de Riesgo y Reasignación de Turnos (Supervisor Core)**
+Este flujo representa el *Bounded Context* de *Shift Coordination*. Muestra cómo un supervisor clínico gestiona una alerta de estrés extremo y protege al paciente bloqueando un turno.
+
+<img src="https://github.com/upc-pre-202610-1asi0730-12053-syncedh/cortisense-report/blob/main/Resources/web-app-ux-design/user-flow-diagrams/detect.svg?raw=true" alt=""/>
+
+---
+**3. Flujo de Monitoreo de Fatiga en Guardia (Personal Médico)**
+Este flujo detalla la experiencia del usuario final (el médico) mientras se encuentra en su jornada laboral, interactuando con su salud en tiempo real.
+
+<img src="https://github.com/upc-pre-202610-1asi0730-12053-syncedh/cortisense-report/blob/main/Resources/web-app-ux-design/user-flow-diagrams/monitor.svg?raw=true" alt=""/>
+
+---
+
 ## 4.5. Web Applications Prototyping.
 
 [![Ver Prototipo Interactivo](https://github.com/upc-pre-202610-1asi0730-12053-syncedh/cortisense-report/blob/main/Resources/web-apps-prototyping/image.png?raw=true)](https://embed.figma.com/proto/w0FV2ep55UuqSE6KLTt37Z/Sin-t%C3%ADtulo?node-id=10-1085&p=f&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=10%3A1085&embed-host=share)
