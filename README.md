@@ -3213,36 +3213,36 @@ A continuación, se evidencia la correcta aplicación de estas ramas y los flujo
 
 ### 5.1.3. Source Code Style Guide & Conventions.
 
-Esta seccion define las reglas de codificación y nomenclatura definidas por el equipo de trabajo que serán aplicadas en CortiSense. De esta manera, el grupo asegura la conservación de la legibilidad, mantenibilidad y escalabilidad en las etapas de desarrollo de la solución.
+Esta sección define las reglas de codificación y nomenclatura definidas por el equipo de trabajo que serán aplicadas en CortiSense. De esta manera, el grupo asegura la conservación de la legibilidad, mantenibilidad y escalabilidad en las etapas de desarrollo de la solución.
 
-El proyecto utilizará HTML, CSS, JavaScript, Java y Gherkin con el propósito de favorecer a la implementación y validación de comportamiento. Para el código fuente, el idioma empleado será el inglésy el uso de estándares tecnológicos.
+El proyecto utilizará HTML, CSS, JavaScript, TypeScript, C# y Gherkin con el propósito de favorecer la implementación y validación de comportamiento. Para el código fuente, el idioma empleado será el inglés y se respetará el uso de estándares tecnológicos oficiales.
 
 #### 5.1.3.1 Principios generales para todos los lenguajes
 
 ##### 5.1.3.1.1 Nomenclatura obligatoria en inglés
 
-Todo el código (variables, clases, comentarios, commits) deben ser redactadas estrictamente en inglés.
+Todo el código (variables, clases, comentarios, commits) debe ser redactado estrictamente en inglés.
 
 Reglas transversales:
 
 - Los nombres deben ser descriptivos y orientados al dominio.
-- Las abreviaciones ambiguas (`tmp`, `obj`, `val`) serán prohibidas a excepción de tratarse de contextos locales muy acotados.
-- La semántica del nombre debe anticipar responsabilidad y tipo de dato.
+- Las abreviaciones ambiguas (`tmp`, `obj`, `val`) están prohibidas a excepción de tratarse de contextos locales muy acotados.
+- La semántica del nombre debe anticipar su responsabilidad y tipo de dato.
 - Los nombres de una sola letra se reservan para iteradores de alcance corto (`i`, `j`) o coordenadas matemáticas (`x`, `y`, `z`).
 
 ##### 5.1.3.1.2 Formato base de código
 
 - Los archivos serán guardados en UTF-8.
 - Las líneas de código excesivamente largas serán evitadas, debido a que se prioriza la legibilidad.
-- Los comentarios serán usados para la documentación de las clases.
+- Los comentarios serán usados para la documentación técnica de las clases y métodos complejos.
 
 ##### 5.1.3.1.3 Convenciones de estilo por tecnología
 
 Cada lenguaje conserva su convención estándar:
 
-- HTML/CSS/JavaScript/TypeScript: estilo de Google, MDN y recomendaciones del ecosistema Angular.
-- Java: convenciones oficiales de Google y del ecosistema Spring Boot.
-- Gherkin: enfoque de legibilidad y comportamiento orientado a negocio.
+- HTML/CSS/JavaScript/TypeScript: Estilo de Google, MDN y recomendaciones del ecosistema oficial de Vue.js.
+- C#: Convenciones oficiales de Microsoft y del ecosistema ASP.NET Core.
+- Gherkin: Enfoque de legibilidad y comportamiento orientado a negocio.
 
 #### 5.1.3.2 Convenciones para HTML
 
@@ -3257,7 +3257,7 @@ Se adoptará HTML5 con el objetivo de buscar un enfoque semántico y accesible.
 ##### 5.1.3.2.2 Semántica y accesibilidad
 
 - Se requerirá del uso de elementos semánticos (`header`, `main`, `nav`, `section`, `article`, `footer`) en lugar de `div` sin propósito.
-- Se prefiere evitar controladores inline (`onclick`, `onchange`); debido a que se busca que la lógica sea definida en TypeScript o JavaScript.
+- Se prefiere evitar controladores *inline* (`onclick`, `onchange`), debido a que se busca que la lógica sea delegada a los eventos de Vue.js (`@click`, `@change`).
 - Se exige la inclusión de texto alternativo significativo en imágenes.
 - Se desea asociar etiquetas y controles de formulario (`label` + `for`).
 
@@ -3265,7 +3265,7 @@ Ejemplo recomendado:
 
 ```html
 <!doctype html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -3273,8 +3273,8 @@ Ejemplo recomendado:
   </head>
   <body>
     <main>
-      <h1>Account settings</h1>
-      <img src="avatar.png?raw=true" alt="Profile avatar preview">
+      <h1>Account Settings</h1>
+      <img src="avatar.png" alt="Profile avatar preview">
       <a href="/comments">All comments</a>
     </main>
   </body>
@@ -3295,7 +3295,7 @@ Se adopta CSS con enfoque mantenible, predecible y escalable.
 
 - Se requiere del uso de un espacio después de `:` en cada declaración.
 - Se necesita finalizar cada declaración con `;`.
-- Se sugiere de usar las llaves de apertura en la misma línea del selector.
+- Se sugiere usar las llaves de apertura en la misma línea del selector.
 - Se recomienda evitar la sentencia `!important` salvo justificación técnica documentada.
 
 Ejemplo recomendado:
@@ -3319,30 +3319,30 @@ Complementación conveniente:
 
 #### 5.1.3.4 Convenciones para JavaScript y TypeScript
 
-Se adopta JavaScript moderno (ES202x) y TypeScript como lenguaje principal del frontend Angular.
+Se adopta JavaScript moderno (ES202x) y TypeScript como lenguajes principales del cliente web.
 
 ##### 5.1.3.4.1 Nomenclatura y estructura
 
 - Se exige el uso de identificadores en inglés.
 - Se sugiere la denominación de variables y funciones en `camelCase`.
-- Se sugiere la denominación de clases, componentes y constructores en `PascalCase`.
-- Se recomienda la denominación de constantes de módulo en `UPPER_SNAKE_CASE` solo cuando representen valores invariantes globales.
+- Se sugiere la denominación de clases y constructores en `PascalCase`.
+- Se recomienda la denominación de constantes globales en `UPPER_SNAKE_CASE`.
 
 ##### 5.1.3.4.2 Reglas de codificación
 
 - Preferir el uso de la igualdad estricta (`===`, `!==`).
 - Dejar espacios alrededor de operadores y después de comas.
 - Incorporar el uso del punto y coma al final de sentencias.
-- Usar comillas simples por defecto; reservar template literals para interpolación.
+- Usar comillas simples por defecto; reservar *template literals* (``) para interpolación.
 - Manejar errores de forma explícita (`try/catch` o propagación controlada).
 
-##### 5.1.3.4.3 Reglas específicas para TypeScript y Angular
+##### 5.1.3.4.3 Reglas específicas para TypeScript y Vue.js
 
-- Buscar el tipado de parámetros, retornos y estructuras de datos cuando el tipo no sea obvio.
-- Preferir `interface` para contratos de datos y `type` para composiciones puntuales.
+- Buscar el tipado explícito de parámetros, retornos y estructuras de datos cuando el tipo no sea obvio por inferencia.
+- Preferir `interface` para contratos de datos de la API.
 - Mantener el uso de componentes con una sola responsabilidad.
-- Nombrar archivos de Angular siguiendo la convención del framework (`feature.component.ts`, `feature.service.ts`, `feature.module.ts`).
-- Evitar lógica compleja en templates; mover cálculo y transformación a componentes, servicios o pipes.
+- Nombrar archivos de Vue.js siguiendo la convención *Single File Component (SFC)* en `PascalCase` (`DoctorDashboard.vue`, `MetricCard.vue`).
+- Evitar lógica compleja en templates HTML; mover cálculos y transformaciones a propiedades computadas (`computed`) o al store global (`Pinia`).
 
 Ejemplo recomendado:
 
@@ -3362,42 +3362,46 @@ function getGreeting(hour: number): string {
 }
 ```
 
-#### 5.1.3.5 Convenciones para Java
+#### 5.1.3.5 Convenciones para C# y .NET
 
-Se adoptan las convenciones oficiales de Java y buenas prácticas compatibles con Spring Boot.
+Se adoptan las convenciones oficiales de Microsoft y buenas prácticas compatibles con ASP.NET Core.
 
 ##### 5.1.3.5.1 Nomenclatura
 
 Todos los nombres serán escritos en el idioma inglés.
 
-- Los tipos, métodos, propiedades, eventos y constantes serán denominados bajo el `PascalCase`.
-- Las variables locales y parámetros serán nombradas bajo el `camelCase`.
-- Los campos privados serán nombrados mediante el `camelCase` con prefijo solo cuando sea necesario por compatibilidad del equipo.
-- En las interfaces, el prefijo `I` no es obligatorio; se prefiere `PascalCase` descriptivo (`OrderRepository`, `PaymentService`).
+- Las clases, registros (*records*), métodos, propiedades y eventos serán denominados bajo `PascalCase`.
+- Las variables locales y parámetros de métodos serán nombrados bajo `camelCase`.
+- Los campos privados de una clase deben llevar el prefijo guion bajo (`_camelCase`) para distinguirlos rápidamente de las variables locales.
+- En las interfaces, el prefijo `I` es **obligatorio** (`IOrderRepository`, `IPaymentService`).
 
 ##### 5.1.3.5.2 Formato y prácticas
 
-- Se recomienda el uso de llaves en la misma línea del bloque.
-- Se exige que los métodos posean una responsabilidad clara.
-- Las clases de servicio requieren nombres funcionales y orientados al dominio.
-- Los métodos asíncronos o de integración requieren sufijo descriptivo cuando aplique.
+- Se exige el uso de llaves `{}` en líneas separadas (convención Allman).
+- Se exige que los métodos posean una responsabilidad única y clara.
+- Las clases de servicio y repositorios requieren nombres orientados al modelo de dominio.
+- Los métodos asíncronos obligatoriamente deben llevar el sufijo `Async` (Ej. `SaveDataAsync`).
 
 Ejemplo recomendado:
 
-```java
-public class OrderService {
-    private final OrderRepository orderRepository;
+```csharp
+public class OrderService
+{
+    private readonly IOrderRepository _orderRepository;
 
-    public OrderService(OrderRepository orderRepository) {
-        this.orderRepository = orderRepository;
+    public OrderService(IOrderRepository orderRepository)
+    {
+        _orderRepository = orderRepository;
     }
 
-    public Order findById(UUID orderId) {
-        if (orderId == null) {
+    public async Task<Order?> FindByIdAsync(Guid orderId)
+    {
+        if (orderId == Guid.Empty)
+        {
             return null;
         }
 
-        return orderRepository.findById(orderId);
+        return await _orderRepository.FindByIdAsync(orderId);
     }
 }
 ```
@@ -3408,11 +3412,11 @@ Gherkin se utiliza para especificaciones legibles por negocio y equipo técnico.
 
 ##### 5.1.3.6.1 Reglas de legibilidad
 
-- Los escenarios presentan estructura clara, mendiante la denominación `Given-When-Then`.
+- Los escenarios presentan estructura clara, mediante la denominación `Given-When-Then`.
 - La sentencia `And` se usa para continuidad lógica dentro del mismo bloque.
-- Se exige steps concretos, observables y sin ruido irrelevante.
-- Cuando un step requiere tabla, finalizar con `:`.
-- Se recomienda dejar líneas en blanco entre escenarios para facilitar lectura.
+- Se exigen *steps* concretos, observables y sin ruido irrelevante.
+- Cuando un *step* requiere una tabla de datos, debe finalizar con `:`.
+- Se recomienda dejar líneas en blanco entre escenarios para facilitar su lectura.
 
 Ejemplo recomendado:
 
@@ -3429,7 +3433,7 @@ Feature: Contact channels
     Then the system confirms the request was received
 ```
 
-Estas referencias serán aplicadas de manera complementaria. Si existiera conflicto entre guías, se priorizará la convención oficial del framework o lenguaje principal del módulo implementado.
+Estas referencias serán aplicadas de manera complementaria. Si existiera conflicto entre guías, se priorizará la convención oficial de Microsoft (.NET) o Vue.js según el módulo implementado.
 
 ### 5.1.4. Software Deployment Configuration.
 
