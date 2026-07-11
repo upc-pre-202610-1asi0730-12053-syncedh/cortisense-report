@@ -170,118 +170,263 @@ A continuación, se detalla el progreso y la constancia de los *commits* realiza
 
 # Contenido
 
+- [Universidad Peruana de Ciencias Aplicadas](#universidad-peruana-de-ciencias-aplicadas)
+  - [Carrera de Ingeniería de Software](#carrera-de-ingeniería-de-software)
+    - [1ASI0730](#1asi0730)
+    - [Aplicaciones Web](#aplicaciones-web)
+      - [Relación de integrantes](#relación-de-integrantes)
+  - [REGISTRO DE VERSIONES DEL INFORME](#registro-de-versiones-del-informe)
+- [Project Report Collaboration Insights](#project-report-collaboration-insights)
+    - [Desarrollo de Actividades](#desarrollo-de-actividades)
+    - [Evidencias de Colaboración (GitHub Insights)](#evidencias-de-colaboración-github-insights)
+      - [1. Analíticas Globales del Equipo](#1-analíticas-globales-del-equipo)
+      - [2. Evidencias Individuales (Commits por Integrante)](#2-evidencias-individuales-commits-por-integrante)
 - [Contenido](#contenido)
 - [Student Outcome](#student-outcome)
 - [Capítulo I: Introducción](#capítulo-i-introducción)
-  - [1.1. Startup Profile](#11-startup-profile)
-    - [1.1.1. Descripción de la StartUp](#111-descripción-de-la-startup)
-    - [1.1.2. Perfiles de integrantes del equipo](#112-perfiles-de-integrantes-del-equipo)
-  - [1.2. Solution Profile](#12-solution-profile)
+  - [1.1 Startup Profile](#11-startup-profile)
+    - [1.1.1 Descripción de la Startup](#111-descripción-de-la-startup)
+    - [1.1.2 Perfiles de integrantes del equipo](#112-perfiles-de-integrantes-del-equipo)
+  - [1.2 Solution Profile](#12-solution-profile)
     - [1.2.1 Antecedentes y problemática](#121-antecedentes-y-problemática)
     - [1.2.2 Lean UX Process](#122-lean-ux-process)
       - [1.2.2.1 Lean UX Problem Statement](#1221-lean-ux-problem-statement)
       - [1.2.2.2 Lean UX Assumptions](#1222-lean-ux-assumptions)
       - [1.2.2.3 Lean UX Hypothesis Statements](#1223-lean-ux-hypothesis-statements)
       - [1.2.2.4 Lean UX Canvas](#1224-lean-ux-canvas)
-  - [1.3. Segmentos Objetivo](#13-segmentos-objetivo)
+  - [1.3 Segmentos Objetivo](#13-segmentos-objetivo)
 - [Capítulo II: Requirements Elicitation \& Analysis](#capítulo-ii-requirements-elicitation--analysis)
-  - [2.1. Competidores](#21-competidores)
-    - [2.1.1. Análisis competitivo](#211-análisis-competitivo)
-    - [2.1.2. Estrategias y tácticas frente a competidores](#212-estrategias-y-tácticas-frente-a-competidores)
+  - [2.1 Competidores](#21-competidores)
+    - [2.1.1 Análisis Competitivo](#211-análisis-competitivo)
+    - [2.1.2. Estrategias y tácticas frente a competidores.](#212-estrategias-y-tácticas-frente-a-competidores)
   - [2.2 Entrevistas](#22-entrevistas)
     - [2.2.1 Diseño de entrevistas](#221-diseño-de-entrevistas)
-    - [2.2.2 Registro de Entrevistas](#222-registro-de-entrevistas)
-    - [2.2.3. Análisis de entrevistas](#223-análisis-de-entrevistas)
-  - [2.3. Needfinding](#23-needfinding)
+      - [Segmento #1: Personal Sanitario Operativo (Médicos Residentes, Especialistas y Enfermeros)](#segmento-1-personal-sanitario-operativo-médicos-residentes-especialistas-y-enfermeros)
+      - [Segmento #2: Administradores y Directores Médicos](#segmento-2-administradores-y-directores-médicos)
+    - [2.2.2 Registro de entrevistas](#222-registro-de-entrevistas)
+    - [2.2.3 Análisis de entrevistas](#223-análisis-de-entrevistas)
+      - [Segmento #1: Personal Sanitario Operativo](#segmento-1-personal-sanitario-operativo)
+      - [Segmento #2: Administradores y Directores Médicos](#segmento-2-administradores-y-directores-médicos-1)
+      - [Conclusiones del análisis](#conclusiones-del-análisis)
+  - [2.3 Needfinding](#23-needfinding)
     - [2.3.1. User Personas](#231-user-personas)
-    - [2.3.2 User Task Matrix](#232-user-task-matrix)
+      - [2.3.1.1. Segmento 1: Personal Sanitario Operativo](#2311-segmento-1-personal-sanitario-operativo)
+      - [2.3.1.2. Segmento 2: Administradores y Directores Médicos](#2312-segmento-2-administradores-y-directores-médicos)
+    - [2.3.2. User Task Matrix](#232-user-task-matrix)
+      - [2.3.2.1 Análisis e interpretación del User Task Matrix](#2321-análisis-e-interpretación-del-user-task-matrix)
     - [2.3.3. User Journey Mapping](#233-user-journey-mapping)
+      - [2.3.3.1. Segmento 1: Personal Sanitario Operativo](#2331-segmento-1-personal-sanitario-operativo)
+      - [2.3.3.2. Segmento 2: Administradores y Directores Médicos](#2332-segmento-2-administradores-y-directores-médicos)
     - [2.3.4. Empathy Mapping](#234-empathy-mapping)
+      - [2.3.4.1. Segmento 1: Personal Sanitario Operativo](#2341-segmento-1-personal-sanitario-operativo)
+      - [2.3.4.2. Segmento 2: Administradores y Directores Médicos](#2342-segmento-2-administradores-y-directores-médicos)
   - [2.4. Big Picture Event Storming.](#24-big-picture-event-storming)
+    - [2.4.1. Metodología aplicada](#241-metodología-aplicada)
+    - [2.4.2. Big Picture Event Storming - Mapa](#242-big-picture-event-storming---mapa)
   - [2.5. Ubiquitous Language](#25-ubiquitous-language)
+    - [2.5.1. Clinical Risk Assessment](#251-clinical-risk-assessment)
+    - [2.5.2. Shift Coordination](#252-shift-coordination)
+    - [2.5.3. Staff Recovery](#253-staff-recovery)
+    - [2.5.4. Audit \& Compliance](#254-audit--compliance)
+    - [2.5.5. Subscription Management](#255-subscription-management)
+    - [2.5.6. Identity \& Access Management (IAM)](#256-identity--access-management-iam)
+    - [2.5.7. Conclusión](#257-conclusión)
 - [Capítulo III: Requirements Specification](#capítulo-iii-requirements-specification)
-  - [3.1. User Stories](#31-user-stories)
+  - [3.1. User Stories.](#31-user-stories)
   - [3.2. Impact Mapping](#32-impact-mapping)
   - [3.3. Product Backlog](#33-product-backlog)
+  - [3.3. Product Backlog](#33-product-backlog-1)
 - [Capítulo IV: Product Design](#capítulo-iv-product-design)
-  - [4.1 Style Guidelines](#41-style-guidelines)
+  - [4.1. Style Guidelines](#41-style-guidelines)
     - [4.1.1. General Style Guidelines](#411-general-style-guidelines)
     - [4.1.2. Web Style Guidelines](#412-web-style-guidelines)
   - [4.2. Information Architecture](#42-information-architecture)
     - [4.2.1. Organization Systems](#421-organization-systems)
     - [4.2.2. Labeling Systems](#422-labeling-systems)
     - [4.2.3. SEO Tags and Meta Tags](#423-seo-tags-and-meta-tags)
-    - [4.2.4. Searching Systems](#424-searching-systems)
-    - [4.2.5. Navigation Systems](#425-navigation-systems)
-  - [4.3 Landing Page UI Design](#43-landing-page-ui-design)
-    - [4.3.1. Landing Page Wireframe](#431-landing-page-wireframe)
-    - [4.3.2. Landing Page Mock-up](#432-landing-page-mock-up)
-  - [4.4 Web Applications UX/UI Design](#44-web-applications-uxui-design)
-    - [4.4.1. Web Applications Wireframes](#441-web-applications-wireframes)
-    - [4.4.2. Web Applications Wireflow Diagrams](#442-web-applications-wireflow-diagrams)
-    - [4.4.3. Web Applications Mock-ups](#443-web-applications-mock-ups)
-    - [4.4.4. Web Applications User Flow Diagrams](#444-web-applications-user-flow-diagrams)
-  - [4.5. Web Applications Prototyping](#45-web-applications-prototyping)
-  - [4.6. Domain-Driven Software Architecture](#46-domain-driven-software-architecture)
+    - [4.2.4. Searching Systems.](#424-searching-systems)
+    - [4.2.5. Navigation Systems.](#425-navigation-systems)
+  - [4.3. Landing Page UI Design.](#43-landing-page-ui-design)
+    - [4.3.1. Landing Page Wireframe.](#431-landing-page-wireframe)
+    - [4.3.2. Landing Page Mock-up.](#432-landing-page-mock-up)
+  - [4.4. Web Applications UX/UI Design.](#44-web-applications-uxui-design)
+    - [4.4.1. Web Applications Wireframes.](#441-web-applications-wireframes)
+    - [4.4.2. Web Applications Wireflow Diagrams.](#442-web-applications-wireflow-diagrams)
+    - [4.4.3. Web Applications Mock-ups.](#443-web-applications-mock-ups)
+    - [4.4.4. Web Applications User Flow Diagrams.](#444-web-applications-user-flow-diagrams)
+  - [4.5. Web Applications Prototyping.](#45-web-applications-prototyping)
+  - [4.6. Domain-Driven Software Architecture.](#46-domain-driven-software-architecture)
     - [4.6.1. Design-Level Event Storming.](#461-design-level-event-storming)
-    - [4.6.2. Software Architecture Context Diagram](#462-software-architecture-context-diagram)
-    - [4.6.3. Software Architecture Container Diagrams](#463-software-architecture-container-diagrams)
-    - [4.6.4. Software Architecture Components Diagrams](#464-software-architecture-components-diagrams)
+      - [4.6.1.1. Event Storming Notation Guide.](#4611-event-storming-notation-guide)
+      - [4.6.1.2. Domain Event Discovery](#4612-domain-event-discovery)
+      - [4.6.1.3. Operational Event Flows](#4613-operational-event-flows)
+      - [4.6.1.4. Friction and Risk Points](#4614-friction-and-risk-points)
+      - [4.6.1.5. Critical Decision Events](#4615-critical-decision-events)
+      - [4.6.1.6. Actor and System Commands](#4616-actor-and-system-commands)
+      - [4.6.1.7. Business Policies and Automated Reactions](#4617-business-policies-and-automated-reactions)
+      - [4.6.1.8. Decision Support Read Models](#4618-decision-support-read-models)
+      - [4.6.1.9. Integrated External Services](#4619-integrated-external-services)
+      - [4.6.1.10. Domain Aggregates and Responsibility Boundaries](#46110-domain-aggregates-and-responsibility-boundaries)
+      - [4.6.1.11. Bounded Contexts](#46111-bounded-contexts)
+    - [4.6.2. Software Architecture Context Diagram.](#462-software-architecture-context-diagram)
+    - [4.6.3. Software Architecture Container Diagrams.](#463-software-architecture-container-diagrams)
+    - [4.6.4. Software Architecture Components Diagrams.](#464-software-architecture-components-diagrams)
+    - [4.6.4.1. Frontend Components Diagram](#4641-frontend-components-diagram)
+      - [**SPA Component Diagram**](#spa-component-diagram)
+      - [Clinical Risk Assessment](#clinical-risk-assessment)
+      - [Shift Coordination](#shift-coordination)
+      - [Staff Recovery](#staff-recovery)
+      - [Audit \& Compliance](#audit--compliance)
+      - [Subscription \& Plan Management](#subscription--plan-management)
+      - [Identity and Access Management](#identity-and-access-management)
+      - [Shared](#shared)
+    - [4.6.4.2. Backend Components Diagram](#4642-backend-components-diagram)
+      - [REST API Component Diagram](#rest-api-component-diagram)
+      - [Clinical Risk Assessment](#clinical-risk-assessment-1)
+      - [Shift Coordination](#shift-coordination-1)
+      - [Staff Recovery](#staff-recovery-1)
+      - [Audit \& Compliance](#audit--compliance-1)
+      - [Subscription \& Plan Management](#subscription--plan-management-1)
+      - [Identity \& Access Management](#identity--access-management)
+      - [Shared Kernel](#shared-kernel)
+    - [4.6.5. Vue Components by Presentation Layer](#465-vue-components-by-presentation-layer)
+      - [Clinical Risk Assessment - Presentation Layer](#clinical-risk-assessment---presentation-layer)
+      - [Shift Coordination - Presentation Layer](#shift-coordination---presentation-layer)
+      - [Staff Recovery - Presentation Layer](#staff-recovery---presentation-layer)
+      - [Audit \& Compliance - Presentation Layer](#audit--compliance---presentation-layer)
+      - [Subscription and Payment Management - Presentation Layer](#subscription-and-payment-management---presentation-layer)
+      - [Identity and Access Management - Presentation Layer](#identity-and-access-management---presentation-layer)
+      - [Shared UI Components - Presentation Layer](#shared-ui-components---presentation-layer)
   - [4.7. Software Object-Oriented Design](#47-software-object-oriented-design)
     - [4.7.1. Class Diagrams](#471-class-diagrams)
-  - [4.8. Database Design](#48-database-design)
+      - [Diagramas de Clases del Frontend](#diagramas-de-clases-del-frontend)
+        - [General - Arquitectura Completa del Frontend](#general---arquitectura-completa-del-frontend)
+        - [Clinical Risk Assessment - Diagrama de Clases del Frontend](#clinical-risk-assessment---diagrama-de-clases-del-frontend)
+        - [Shift Coordination - Diagrama de Clases del Frontend](#shift-coordination---diagrama-de-clases-del-frontend)
+        - [Staff Recovery - Diagrama de Clases del Frontend](#staff-recovery---diagrama-de-clases-del-frontend)
+        - [Audit and Compliance - Diagrama de Clases del Frontend](#audit-and-compliance---diagrama-de-clases-del-frontend)
+        - [Subscription and Plan Management - Diagrama de Clases del Frontend](#subscription-and-plan-management---diagrama-de-clases-del-frontend)
+        - [Identity and Access Management (IAM) - Diagrama de Clases del Frontend](#identity-and-access-management-iam---diagrama-de-clases-del-frontend)
+        - [Shared](#shared-1)
+      - [Diagramas de Clases del Backend](#diagramas-de-clases-del-backend)
+        - [General - Diagrama de Clases del Backend](#general---diagrama-de-clases-del-backend)
+        - [Clinical Risk Assessment - Diagrama de Clases del Backend](#clinical-risk-assessment---diagrama-de-clases-del-backend)
+        - [Shift Coordination - Diagrama de Clases del Backend](#shift-coordination---diagrama-de-clases-del-backend)
+        - [Staff Recovery - Diagrama de Clases del Backend](#staff-recovery---diagrama-de-clases-del-backend)
+        - [Audit and Compliance - Diagrama de Clases del Backend](#audit-and-compliance---diagrama-de-clases-del-backend)
+        - [Subscription and Plan Management - Diagrama de Clases del Backend](#subscription-and-plan-management---diagrama-de-clases-del-backend)
+        - [Identity and Access Management - Diagrama de Clases del Backend](#identity-and-access-management---diagrama-de-clases-del-backend)
+        - [Shared Kernel - Diagrama de Clases del Backend](#shared-kernel---diagrama-de-clases-del-backend)
+  - [4.8. Database Design.](#48-database-design)
     - [4.8.1. Database Diagrams](#481-database-diagrams)
-- [Capítulo V: Product Implementation, Validation & Deployment](#capítulo-v-product-implementation-validation--deployment)
-  - [5.1. Software Configuration Management](#51-software-configuration-management)
-    - [5.1.1. Software Development Environment Configuration](#511-software-development-environment-configuration)
-    - [5.1.2. Source Code Management](#512-source-code-management)
-    - [5.1.3. Source Code Style Guide & Conventions](#513-source-code-style-guide--conventions)
-    - [5.1.4. Software Deployment Configuration](#514-software-deployment-configuration)
-  - [5.2. Landing Page, Services & Applications Implementation](#52-landing-page-services--applications-implementation)
+- [Capítulo V: Product Implementation, Validation \& Deployment.](#capítulo-v-product-implementation-validation--deployment)
+  - [5.1. Software Configuration Management.](#51-software-configuration-management)
+    - [5.1.1. Software Development Environment Configuration.](#511-software-development-environment-configuration)
+    - [5.1.2. Source Code Management.](#512-source-code-management)
+    - [5.1.3. Source Code Style Guide \& Conventions.](#513-source-code-style-guide--conventions)
+      - [5.1.3.1 Principios generales para todos los lenguajes](#5131-principios-generales-para-todos-los-lenguajes)
+        - [5.1.3.1.1 Nomenclatura obligatoria en inglés](#51311-nomenclatura-obligatoria-en-inglés)
+        - [5.1.3.1.2 Formato base de código](#51312-formato-base-de-código)
+        - [5.1.3.1.3 Convenciones de estilo por tecnología](#51313-convenciones-de-estilo-por-tecnología)
+      - [5.1.3.2 Convenciones para HTML](#5132-convenciones-para-html)
+        - [5.1.3.2.1 Estructura y sintaxis](#51321-estructura-y-sintaxis)
+        - [5.1.3.2.2 Semántica y accesibilidad](#51322-semántica-y-accesibilidad)
+      - [5.1.3.3 Convenciones para CSS](#5133-convenciones-para-css)
+        - [5.1.3.3.1 Nomenclatura](#51331-nomenclatura)
+        - [5.1.3.3.2 Reglas de estilo](#51332-reglas-de-estilo)
+      - [5.1.3.4 Convenciones para JavaScript y TypeScript](#5134-convenciones-para-javascript-y-typescript)
+        - [5.1.3.4.1 Nomenclatura y estructura](#51341-nomenclatura-y-estructura)
+        - [5.1.3.4.2 Reglas de codificación](#51342-reglas-de-codificación)
+        - [5.1.3.4.3 Reglas específicas para TypeScript y Vue.js](#51343-reglas-específicas-para-typescript-y-vuejs)
+      - [5.1.3.5 Convenciones para C# y .NET](#5135-convenciones-para-c-y-net)
+        - [5.1.3.5.1 Nomenclatura](#51351-nomenclatura)
+        - [5.1.3.5.2 Formato y prácticas](#51352-formato-y-prácticas)
+      - [5.1.3.6 Convenciones para Gherkin](#5136-convenciones-para-gherkin)
+        - [5.1.3.6.1 Reglas de legibilidad](#51361-reglas-de-legibilidad)
+    - [5.1.4. Software Deployment Configuration.](#514-software-deployment-configuration)
+      - [5.1.4.1. Landing Page](#5141-landing-page)
+        - [5.1.4.1.1.  Ingresamos al repositorio de la landing page](#51411--ingresamos-al-repositorio-de-la-landing-page)
+        - [5.1.4.1.2.  Nos dirigimos al apartado de settings](#51412--nos-dirigimos-al-apartado-de-settings)
+        - [5.1.4.1.3.  Vamos a la sección de Github Pages](#51413--vamos-a-la-sección-de-github-pages)
+        - [5.1.4.1.4.  Seleccionamos la rama main de github-pages en el apartado de source y damos click en save para desplegar.](#51414--seleccionamos-la-rama-main-de-github-pages-en-el-apartado-de-source-y-damos-click-en-save-para-desplegar)
+        - [5.1.4.1.5.  Finalmente estaría todo listo.](#51415--finalmente-estaría-todo-listo)
+      - [5.1.4.2. Web App (Frontend)](#5142-web-app-frontend)
+        - [5.1.4.2.1. Ingresamos al portal de Azure y creamos un nuevo recurso de Static Web App.](#51421-ingresamos-al-portal-de-azure-y-creamos-un-nuevo-recurso-de-static-web-app)
+        - [5.1.4.2.2. Conectamos nuestro repositorio de GitHub (`cortisense-webapp`) y seleccionamos la rama `main`.](#51422-conectamos-nuestro-repositorio-de-github-cortisense-webapp-y-seleccionamos-la-rama-main)
+        - [5.1.4.2.3. Configuramos los detalles de construcción (App location: `/`, Output location: `dist`) y generamos el token de despliegue.](#51423-configuramos-los-detalles-de-construcción-app-location--output-location-dist-y-generamos-el-token-de-despliegue)
+        - [5.1.4.2.4. Agregamos el Token y la URL de nuestra API (`VITE_CORTISENSE_API_URL`) a los Secrets de GitHub para que el archivo YAML de CI/CD los consuma durante el build.](#51424-agregamos-el-token-y-la-url-de-nuestra-api-vite_cortisense_api_url-a-los-secrets-de-github-para-que-el-archivo-yaml-de-cicd-los-consuma-durante-el-build)
+        - [5.1.4.2.5. El Action de GitHub completa exitosamente el `build_and_deploy_job`, exponiendo nuestra Web App en producción.](#51425-el-action-de-github-completa-exitosamente-el-build_and_deploy_job-exponiendo-nuestra-web-app-en-producción)
+      - [5.1.4.3. Platform (Backend)](#5143-platform-backend)
+        - [5.1.4.3.1. Creamos nuestro Container Registry (`cortisenseacr2026`) y nuestro Web App en el grupo de recursos de Azure.](#51431-creamos-nuestro-container-registry-cortisenseacr2026-y-nuestro-web-app-en-el-grupo-de-recursos-de-azure)
+        - [5.1.4.3.2. Obtenemos las credenciales de acceso del Registry y el perfil de publicación (Publish Profile) del Web App.](#51432-obtenemos-las-credenciales-de-acceso-del-registry-y-el-perfil-de-publicación-publish-profile-del-web-app)
+        - [5.1.4.3.3. Guardamos estas credenciales como Secrets dentro de nuestro repositorio `cortisense-platform` en GitHub.](#51433-guardamos-estas-credenciales-como-secrets-dentro-de-nuestro-repositorio-cortisense-platform-en-github)
+        - [5.1.4.3.4. Configuramos el archivo `deploy.yml` para que inicie sesiòn en Docker, construya la imagen con el tag del `github.sha` y la suba a Azure Container Registry.](#51434-configuramos-el-archivo-deployyml-para-que-inicie-sesiòn-en-docker-construya-la-imagen-con-el-tag-del-githubsha-y-la-suba-a-azure-container-registry)
+        - [5.1.4.3.5. El job `Deploy to Azure Web App` finaliza exitosamente lanzando la imagen Docker actualizada, habilitando nuestros endpoints de la API en producción.](#51435-el-job-deploy-to-azure-web-app-finaliza-exitosamente-lanzando-la-imagen-docker-actualizada-habilitando-nuestros-endpoints-de-la-api-en-producción)
+  - [5.2. Landing Page, Services \& Applications Implementation.](#52-landing-page-services--applications-implementation)
     - [5.2.1. Sprint 1](#521-sprint-1)
-      - [5.2.1.1. Sprint Planning 1](#5211-sprint-planning-1)
+      - [5.2.1.1. Sprint Planning 1.](#5211-sprint-planning-1)
       - [5.2.1.2. Aspect Leaders and Collaborators.](#5212-aspect-leaders-and-collaborators)
-      - [5.2.1.3. Sprint Backlog 1](#5213-sprint-backlog-1)
-      - [5.2.1.4. Development Evidence for Sprint Review](#5214-development-evidence-for-sprint-review)
-      - [5.2.1.5. Execution Evidence for Sprint Review](#5215-execution-evidence-for-sprint-review)
-      - [5.2.1.6. Services Documentation Evidence for Sprint Review](#5216-services-documentation-evidence-for-sprint-review)
-      - [5.2.1.7. Software Deployment Evidence for Sprint Review](#5217-software-deployment-evidence-for-sprint-review)
-      - [5.2.1.8. Team Collaboration Insights during Sprint](#5218-team-collaboration-insights-during-sprint)
+      - [5.2.1.3. Sprint Backlog 1.](#5213-sprint-backlog-1)
+      - [5.2.1.4. Development Evidence for Sprint Review.](#5214-development-evidence-for-sprint-review)
+      - [5.2.1.5. Execution Evidence for Sprint Review.](#5215-execution-evidence-for-sprint-review)
+      - [5.2.1.6. Services Documentation Evidence for Sprint Review.](#5216-services-documentation-evidence-for-sprint-review)
+      - [5.2.1.7. Software Deployment Evidence for Sprint Review.](#5217-software-deployment-evidence-for-sprint-review)
+      - [5.2.1.8. Team Collaboration Insights during Sprint.](#5218-team-collaboration-insights-during-sprint)
     - [5.2.2. Sprint 2](#522-sprint-2)
-      - [5.2.2.1. Sprint Planning 2](#5221-sprint-planning-2)
+      - [5.2.2.1. Sprint Planning 2.](#5221-sprint-planning-2)
       - [5.2.2.2. Aspect Leaders and Collaborators.](#5222-aspect-leaders-and-collaborators)
-      - [5.2.2.3. Sprint Backlog 2](#5223-sprint-backlog-2)
-      - [5.2.2.4. Development Evidence for Sprint Review](#5224-development-evidence-for-sprint-review)
-      - [5.2.2.5. Execution Evidence for Sprint Review](#5225-execution-evidence-for-sprint-review)
-      - [5.2.2.6. Services Documentation Evidence for Sprint Review](#5226-services-documentation-evidence-for-sprint-review)
-      - [5.2.2.7. Software Deployment Evidence for Sprint Review](#5227-software-deployment-evidence-for-sprint-review)
-      - [5.2.2.8. Team Collaboration Insights during Sprint](#5228-team-collaboration-insights-during-sprint)
+      - [5.2.2.3. Sprint Backlog 2.](#5223-sprint-backlog-2)
+      - [5.2.2.4. Development Evidence for Sprint Review.](#5224-development-evidence-for-sprint-review)
+      - [5.2.2.5. Execution Evidence for Sprint Review.](#5225-execution-evidence-for-sprint-review)
+      - [5.2.2.6. Services Documentation Evidence for Sprint Review.](#5226-services-documentation-evidence-for-sprint-review)
+      - [5.2.2.7. Software Deployment Evidence for Sprint Review.](#5227-software-deployment-evidence-for-sprint-review)
+      - [5.2.2.8. Team Collaboration Insights during Sprint.](#5228-team-collaboration-insights-during-sprint)
     - [5.2.3. Sprint 3](#523-sprint-3)
-      - [5.2.3.1. Sprint Planning 3](#5231-sprint-planning-3)
+      - [5.2.3.1. Sprint Planning 3.](#5231-sprint-planning-3)
       - [5.2.3.2. Aspect Leaders and Collaborators.](#5232-aspect-leaders-and-collaborators)
-      - [5.2.3.3. Sprint Backlog 3](#5233-sprint-backlog-3)
-      - [5.2.3.4. Development Evidence for Sprint Review](#5234-development-evidence-for-sprint-review)
-      - [5.2.3.5. Execution Evidence for Sprint Review](#5235-execution-evidence-for-sprint-review)
-      - [5.2.3.6. Services Documentation Evidence for Sprint Review](#5236-services-documentation-evidence-for-sprint-review)
-      - [5.2.3.7. Software Deployment Evidence for Sprint Review](#5237-software-deployment-evidence-for-sprint-review)
-      - [5.2.3.8. Team Collaboration Insights during Sprint](#5238-team-collaboration-insights-during-sprint)
+      - [5.2.3.3. Sprint Backlog 3.](#5233-sprint-backlog-3)
+      - [5.2.3.4. Development Evidence for Sprint Review.](#5234-development-evidence-for-sprint-review)
+      - [5.2.3.5. Execution Evidence for Sprint Review.](#5235-execution-evidence-for-sprint-review)
+      - [5.2.3.6. Services Documentation Evidence for Sprint Review.](#5236-services-documentation-evidence-for-sprint-review)
+      - [5.2.3.7. Software Deployment Evidence for Sprint Review.](#5237-software-deployment-evidence-for-sprint-review)
+      - [5.2.3.8. Team Collaboration Insights during Sprint.](#5238-team-collaboration-insights-during-sprint)
+    - [Top Commits](#top-commits)
+    - [Commits](#commits)
     - [5.2.4. Sprint 4](#524-sprint-4)
-      - [5.2.4.1. Sprint Planning 4](#5241-sprint-planning-4)
+      - [5.2.4.1. Sprint Planning 4.](#5241-sprint-planning-4)
       - [5.2.4.2. Aspect Leaders and Collaborators.](#5242-aspect-leaders-and-collaborators)
-      - [5.2.4.3. Sprint Backlog 4](#5243-sprint-backlog-4)
-      - [5.2.4.4. Development Evidence for Sprint Review](#5244-development-evidence-for-sprint-review)
-      - [5.2.4.5. Execution Evidence for Sprint Review](#5245-execution-evidence-for-sprint-review)
-      - [5.2.4.6. Services Documentation Evidence for Sprint Review](#5246-services-documentation-evidence-for-sprint-review)
-      - [5.2.4.7. Software Deployment Evidence for Sprint Review](#5247-software-deployment-evidence-for-sprint-review)
-      - [5.2.4.8. Team Collaboration Insights during Sprint](#5248-team-collaboration-insights-during-sprint)
-  - [5.3 Validation Interviews.](#53-validation-interviews)
-    - [5.3.1 Diseño de entrevistas](#531-diseño-de-entrevistas)
-    - [5.3.2 Registro de Entrevistas](#532-registro-de-entrevistas)
-    - [5.3.3 Evaluaciones Según Heurísticas](#533-evaluaciones-según-heurísticas)
-  - [5.4 Video About-the-Product](#54-video-about-the-product)
+      - [5.2.4.3. Sprint Backlog 4.](#5243-sprint-backlog-4)
+      - [5.2.4.4. Development Evidence for Sprint Review.](#5244-development-evidence-for-sprint-review)
+      - [5.2.4.5. Execution Evidence for Sprint Review.](#5245-execution-evidence-for-sprint-review)
+      - [5.2.4.6. Services Documentation Evidence for Sprint Review.](#5246-services-documentation-evidence-for-sprint-review)
+        - [Bounded Context: IAM (Identity \& Access Management)](#bounded-context-iam-identity--access-management)
+        - [Bounded Context: Clinical Risk Assessment](#bounded-context-clinical-risk-assessment)
+        - [Bounded Context: Shift Coordination](#bounded-context-shift-coordination)
+        - [Bounded Context: Staff Recovery](#bounded-context-staff-recovery)
+        - [Bounded Context: Audit \& Compliance](#bounded-context-audit--compliance)
+        - [Bounded Context: Subscription \& Billing](#bounded-context-subscription--billing)
+      - [5.2.4.7. Software Deployment Evidence for Sprint Review.](#5247-software-deployment-evidence-for-sprint-review)
+      - [5.2.4.8. Team Collaboration Insights during Sprint.](#5248-team-collaboration-insights-during-sprint)
+    - [Top Commits](#top-commits-1)
+    - [Commits](#commits-1)
+    - [5.3.1. Diseño de Entrevistas.](#531-diseño-de-entrevistas)
+      - [Segmento #1: Personal Sanitario Operativo (Médicos Residentes, Especialistas y Enfermeros)](#segmento-1-personal-sanitario-operativo-médicos-residentes-especialistas-y-enfermeros-1)
+      - [Segmento #2: Administradores y Directores Médicos](#segmento-2-administradores-y-directores-médicos-2)
+    - [5.3.2. Registro de Entrevistas.](#532-registro-de-entrevistas)
+    - [5.3.3. Evaluaciones según heurísticas.](#533-evaluaciones-según-heurísticas)
+  - [5.4. Video About-the-Product.](#54-video-about-the-product)
 - [Conclusiones](#conclusiones)
+  - [Conclusiones y Recomendaciones](#conclusiones-y-recomendaciones)
+    - [Conclusiones del Proyecto](#conclusiones-del-proyecto)
+    - [Recomendaciones del Proyecto](#recomendaciones-del-proyecto)
+  - [Video About-The-Team](#video-about-the-team)
 - [Bibliografía](#bibliografía)
 - [Anexos](#anexos)
+  - [Anexo A. Entrevistas de Needfinding](#anexo-a-entrevistas-de-needfinding)
+  - [Anexo B. Repositorios de GitHub](#anexo-b-repositorios-de-github)
+  - [Anexo C. Despliegues y servicios API](#anexo-c-despliegues-y-servicios-api)
+  - [Anexo D. Credenciales de prueba](#anexo-d-credenciales-de-prueba)
+  - [Anexo E. Videos de Exposiciones](#anexo-e-videos-de-exposiciones)
 
 
 
@@ -374,12 +519,12 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
 
 **Nombre:**  SyncedHealth
 
-**Área:**  HealthTech / Internet of Things (IoT) B2B
+**Área:**  HealthTech / Internet of Things (Software) B2B
 
-SyncedHealth es una startup emergente conformada por estudiantes de la facultad de ingeniería de la Universidad Peruana de Ciencias Aplicadas (UPC). La compañía nace con el objetivo de optimizar la eficiencia operativa del sistema de salud a través de una correcta gestión de los horarios de trabajo del personal médico de alta intensidad. A través de la integración de dispositivos IoT avanzados, monitoreamos biomarcadores críticos en tiempo real, como los niveles de cortisol y la variabilidad de la frecuencia cardíaca, para prevenir de forma proactiva el agotamiento profesional (burnout). De esta manera, buscamos potenciar el desempeño del talento clínico, reducir los costos de rotación y, por sobre todo, garantizar la máxima seguridad del paciente.
+SyncedHealth es una startup emergente conformada por estudiantes de la facultad de ingeniería de la Universidad Peruana de Ciencias Aplicadas (UPC). La compañía nace con el objetivo de optimizar la eficiencia operativa del sistema de salud a través de una correcta gestión de los horarios de trabajo del personal médico de alta intensidad. A través de la integración de plataformas de software avanzadas, monitoreamos biomarcadores críticos en tiempo real, como los niveles de cortisol y la variabilidad de la frecuencia cardíaca, para prevenir de forma proactiva el agotamiento profesional (burnout). De esta manera, buscamos potenciar el desempeño del talento clínico, reducir los costos de rotación y, por sobre todo, garantizar la máxima seguridad del paciente.
 
 * **Misión:**
-La misión de SyncedHealth es salvaguardar el bienestar del personal sanitario mediante la implementación de soluciones tecnológicas de vanguardia que permitan una gestión humana y científica de la carga laboral. Nos dedicamos a transformar la cultura de trabajo en las instituciones de salud, sustituyendo la respuesta reactiva ante la fatiga crónica por un monitoreo preventivo basado en datos reales. A través de nuestros sistemas de medición IoT, proporcionamos diagnósticos precisos sobre el estado físico y mental del médico en tiempo real, permitiendo que la toma de decisiones administrativas se traduzca en una atención médica de mayor calidad, con menos errores y un personal más resiliente.
+La misión de SyncedHealth es salvaguardar el bienestar del personal sanitario mediante la implementación de soluciones tecnológicas de vanguardia que permitan una gestión humana y científica de la carga laboral. Nos dedicamos a transformar la cultura de trabajo en las instituciones de salud, sustituyendo la respuesta reactiva ante la fatiga crónica por un monitoreo preventivo basado en datos reales. A través de nuestros sistemas de monitoreo biométrico, proporcionamos diagnósticos precisos sobre el estado físico y mental del médico en tiempo real, permitiendo que la toma de decisiones administrativas se traduzca en una atención médica de mayor calidad, con menos errores y un personal más resiliente.
 
 * **Visión:**
 La visión de SyncedHealth es consolidarse como el estándar global en el monitoreo de la salud ocupacional médica, liderando la transición hacia hospitales inteligentes y proactivos. Nos proyectamos como el aliado tecnológico indispensable para los sistemas de salud en la región, donde la integración de biotecnología e inteligencia de datos permita erradicar el estrés crónico en el personal de salud. Aspiramos a ser la plataforma que no solo gestione horarios, sino que dicte las pautas para una práctica médica sostenible, equilibrada y tecnológicamente optimizada.
@@ -387,7 +532,7 @@ La visión de SyncedHealth es consolidarse como el estándar global en el monito
 * **Valores:**
 	* **Rigor Científico:** Nos comprometemos con la precisión absoluta de los datos. Valoramos el rigor científico de nuestras mediciones de cortisol y signos vitales, entendiendo que de su exactitud depende la salud de quienes cuidan a los demás.
 	* **Prevención Proactiva:** Creemos en la detección temprana antes que en la corrección. Nuestra filosofía se centra en anticipar el agotamiento del personal para evitar consecuencias críticas tanto para el profesional como para el paciente.
-	* **Innovación Continua:** Buscamos constantemente la mejora de nuestros dispositivos IoT. No nos conformamos con lo existente, sino que adaptamos la tecnología más reciente para solucionar los desafíos más complejos del sector salud.
+	* **Innovación Continua:** Buscamos constantemente la mejora de nuestros sistemas de software. No nos conformamos con lo existente, sino que adaptamos la tecnología más reciente para solucionar los desafíos más complejos del sector salud.
 	* **Ética y Privacidad:** Valoramos la privacidad y el manejo responsable de la información sensible. Garantizamos que el monitoreo de salud se realice bajo estándares éticos, asegurando que la tecnología sea siempre una herramienta de apoyo y protección para el trabajador.
 	* **Humanidad Centralizada:** Fomentamos un equilibrio donde la tecnología sirve a la humanidad. Entendemos que un sistema de salud eficiente solo es posible cuando el personal médico está en sus plenas capacidades físicas y mentales.
 	* **Orientación a Resultados:** Nos enfocamos en resultados tangibles. Nuestra plataforma de pago garantiza un soporte continuo y una actualización constante, asegurando que las instituciones de salud cuenten con una herramienta de alta disponibilidad para la gestión de su capital más valioso: su gente.
@@ -466,7 +611,7 @@ En el marco de Lean UX, las declaraciones de problemas de negocio reemplazan a l
 
 **Lo que los productos y servicios existentes no logran abordar es** la brecha entre la exigencia de la carga laboral asignada y los niveles de fatiga reales del médico, lo que deriva en millonarias fugas de capital para las clínicas debido a la alta rotación de especialistas y demandas por negligencias médicas inducidas por el cansancio.
 
-**Nuestro producto, CortiSense, abordará esta brecha mediante** una plataforma IoT acoplada a un algoritmo predictivo que redistribuirá turnos basándose en biometría en tiempo real (Cortisol y HRV), operando bajo un modelo de negocio SaaS (Software as a Service) B2B.
+**Nuestro producto, CortiSense, abordará esta brecha mediante** una plataforma Software acoplada a un algoritmo predictivo que redistribuirá turnos basándose en biometría en tiempo real (Cortisol y HRV), operando bajo un modelo de negocio SaaS (Software as a Service) B2B.
 
 **Nuestro enfoque inicial será** en directores médicos y administradores de clínicas privadas de alta complejidad con áreas de cuidados críticos (UCI y Urgencias).
 
@@ -490,9 +635,9 @@ En el desarrollo de software, rara vez se cuenta con certezas absolutas. Por ell
 
 6.  **Vamos a adquirir la mayoría de nuestros clientes a través de:** Congresos de gestión hospitalaria B2B y pilotos institucionales.
 
-7.  **Haremos dinero a través de:** Venta de hardware IoT y un modelo SaaS (Software as a Service) mensual por usuario monitoreado.
+7.  **Haremos dinero a través de:** Venta de hardware Software y un modelo SaaS (Software as a Service) mensual por usuario monitoreado.
 
-8.  **Nuestras competencias principales son:** Sistemas de RR.HH. hospitalarios tradicionales y wearables genéricos (Apple Watch, Fitbit).
+8.  **Nuestras competencias principales son:** Sistemas de RR.HH. hospitalarios tradicionales y herramientas de software genéricos (Apple Watch, Fitbit).
 
 9.  **Los venceremos debido a:** Nuestra integración clínica orientada específicamente a prevenir el burnout y mejorar la seguridad del paciente.
 
@@ -527,7 +672,7 @@ Una hipótesis es una solución empresarial propuesta que debe validarse de la m
 - **Creemos que lograremos** reducir los costos de rotación y reclutamiento de talento clínico en un 20% (Business Outcome)
 - **Si** el personal médico de alta intensidad (Personas)
 - **Alcanzan** a prevenir colapsos físicos (burnout) y proteger su prestigio/licencia profesional (User Benefit)
-- **Con** un wearable IoT que monitorea sus niveles de fatiga en tiempo real y sugiere descansos obligatorios. (Feature)
+- **Con** un monitoreo Software que monitorea sus niveles de fatiga en tiempo real y sugiere descansos obligatorios. (Feature)
 
 #### 1.2.2.4 Lean UX Canvas
 
@@ -541,7 +686,7 @@ El *Lean UX Canvas* consolida los métodos y procesos de esta metodología en un
         </td>
         <td rowspan="2" valign="top">
             <div align="center"><br><b>5. Solutions</b> </div><br>
-            <p>- Wearables IoT para el monitoreo continuo de biomarcadores de estrés (Cortisol y HRV).<br>- Plataforma SaaS con algoritmos para la redistribución inteligente de turnos basados en la fatiga médica en tiempo real.
+            <p>- herramientas de software Software para el monitoreo continuo de biomarcadores de estrés (Cortisol y HRV).<br>- Plataforma SaaS con algoritmos para la redistribución inteligente de turnos basados en la fatiga médica en tiempo real.
             </p><br>
         </td>
             <td valign="top">
@@ -565,7 +710,7 @@ El *Lean UX Canvas* consolida los métodos y procesos de esta metodología en un
             <p>1. Proveer biometría en tiempo real permitirá a los administradores reducir el riesgo de demandas.<br> 2. Implementar descansos automatizados en base a la fatiga aumentará la retención del talento clave y reducirá costos operativos institucionales.</p> <br>
         </td>
         <td valign="top">
-            <div align="center"> <br><b>7. What’s the most important thing we need to learn first?</b> </div><br><p>Riesgos de Valor y Adopción:<br>- ¿Estarán dispuestos los directores a alterar su logística de turnos basándose en las alertas del software? <br> - ¿Aceptarán los médicos usar los dispositivos IoT sin percibirlo como vigilancia corporativa punitiva?</p> <br>
+            <div align="center"> <br><b>7. What’s the most important thing we need to learn first?</b> </div><br><p>Riesgos de Valor y Adopción:<br>- ¿Estarán dispuestos los directores a alterar su logística de turnos basándose en las alertas del software? <br> - ¿Aceptarán los médicos usar los sistemas de software sin percibirlo como vigilancia corporativa punitiva?</p> <br>
         </td>
         <td valign="top">
             <div align="center">  <br><b>8. What's the least amount of work we need to do to learn the next most important thing?</b> </div><br><p>- Ejecutar un <i>Wizard of Oz MVP</i>: simular alertas de fatiga manualmente (sin hardware funcional real) y enviarlas por email a un supervisor de guardia para medir si reasigna tareas. <br>- Entrevistas a profundidad con médicos sobre resguardos de privacidad.</p> <br>
@@ -577,7 +722,7 @@ El *Lean UX Canvas* consolida los métodos y procesos de esta metodología en un
 ## 1.3 Segmentos Objetivo
 
 + **Personal Sanitario Operativo**
-    + **Características demográficas:** Médicos asistentes, médicos residentes y profesionales de enfermería de entre 24 y 50 años. Soportan jornadas laborales extensas (a menudo guardias de 24 horas) y rotativas en áreas de alta intensidad clínica como UCI, Emergencias y Cirugía. Son profesionales con formación universitaria avanzada, alto nivel de responsabilidad y exposición constante a situaciones de estrés agudo y crónico. En su mayoría son nativos digitales o adoptantes tempranos que utilizan dispositivos móviles (smartphones y wearables) y plataformas digitales institucionales en su rutina laboral.
+    + **Características demográficas:** Médicos asistentes, médicos residentes y profesionales de enfermería de entre 24 y 50 años. Soportan jornadas laborales extensas (a menudo guardias de 24 horas) y rotativas en áreas de alta intensidad clínica como UCI, Emergencias y Cirugía. Son profesionales con formación universitaria avanzada, alto nivel de responsabilidad y exposición constante a situaciones de estrés agudo y crónico. En su mayoría son nativos digitales o adoptantes tempranos que utilizan dispositivos móviles (smartphones y herramientas de software) y plataformas digitales institucionales en su rutina laboral.
     + **Características geográficas:** Profesionales que ejercen principalmente en hospitales públicos de alta complejidad (MINSA, EsSalud) y clínicas privadas especializadas ubicadas en Lima Metropolitana, con potencial de expansión hacia otras ciudades con infraestructura hospitalaria desarrollada como Arequipa, Trujillo y Cusco.
     + **Información estadítica de sustento:** Según el Colegio Médico del Perú [CMP] (2024), existen más de 90,000 médicos colegiados a nivel nacional, concentrándose cerca del 55% en Lima. Diversos estudios locales e internacionales sobre salud ocupacional revelan que casi la mitad de los médicos especialistas en áreas críticas en Perú padecen del Síndrome de Burnout o agotamiento profesional grave (Maticorena-Quevedo et al., 2016), un factor directamente correlacionado con el incremento de la ideación suicida y la comisión de errores médicos adversos.
 
@@ -601,10 +746,10 @@ Según la investigación, se descubrieron *apps*, webs y/o aplicaciones similare
 Firstbeat es el líder mundial en análisis de la Variabilidad de la Frecuencia Cardíaca (HRV) con un enfoque de alto rigor científico. Su modelo de negocio es del tipo SaaS corporativo, donde proporcionan un sensor de grado profesional y una plataforma de análisis para empresas (Firstbeat Technologies, 2024). Su similitud con CortiSense reside en la identificación de estados de estrés y recuperación; sin embargo, se centran en el bienestar corporativo general y carecen de una integración directa con la gestión de horarios críticos o la medición de cortisol que SyncedHealth propone.
 
 * **Dropstat**<br>
-Dropstat es una plataforma de gestión de personal diseñada específicamente para el sector salud y la retención de personal en hospitales. Su modelo de negocio se basa en una suscripción institucional por centro médico (Dropstat, 2024). Es un competidor directo frente a nuestra aplicación en el ámbito operativo, ya que utiliza IA para predecir cuándo una unidad hospitalaria está en riesgo de fatiga y sugiere rotaciones de turnos. A diferencia de CortiSense, Dropstat se apoya más en datos administrativos e históricos que en biomarcadores fisiológicos en tiempo real (IoT).
+Dropstat es una plataforma de gestión de personal diseñada específicamente para el sector salud y la retención de personal en hospitales. Su modelo de negocio se basa en una suscripción institucional por centro médico (Dropstat, 2024). Es un competidor directo frente a nuestra aplicación en el ámbito operativo, ya que utiliza IA para predecir cuándo una unidad hospitalaria está en riesgo de fatiga y sugiere rotaciones de turnos. A diferencia de CortiSense, Dropstat se apoya más en datos administrativos e históricos que en biomarcadores fisiológicos en tiempo real (Software).
 
 * **Oura Bussiness / Oura Teams**<br>
-Oura es el referente en *wearables* de formato discreto (anillos inteligentes) que monitorean sueño, temperatura y HRV. A través de su división corporativa, ofrecen *dashboards* para que los administradores vean el estado de preparación ("Readiness") de sus miembros (Oura Health Oy, 2024). Es un competidor fuerte por la comodidad de su *hardware*. No obstante, su enfoque es de bienestar preventivo general y no está optimizado para la gestión técnica de guardias médicas ni posee la especificidad química para medir cortisol que caracteriza a CortiSense.
+Oura es el referente en *sistemas de software* de formato discreto (anillos inteligentes) que monitorean sueño, temperatura y HRV. A través de su división corporativa, ofrecen *dashboards* para que los administradores vean el estado de preparación ("Readiness") de sus miembros (Oura Health Oy, 2024). Es un competidor fuerte por la comodidad de su *hardware*. No obstante, su enfoque es de bienestar preventivo general y no está optimizado para la gestión técnica de guardias médicas ni posee la especificidad química para medir cortisol que caracteriza a CortiSense.
 
 * **UKG (Kronos) - Healthcare Solutions**<br>
 UKG es un gigante global en *software* de gestión de capital humano (HCM) y control de horarios a gran escala (Ultimate Kronos Group, 2024). Su nicho es la eficiencia administrativa y el cumplimiento de normativas laborales en instituciones masivas. Si bien es el estándar en muchos hospitales para marcar asistencia, carece de la capa de biotecnología aplicada que ofrece SyncedHealth; es decir, gestiona horarios de forma estática sin considerar el estado fisiológico real del médico.
@@ -655,10 +800,10 @@ En esta sección se realizará el análisis competitivo de los competidores iden
 		<tr>
 			<td rowspan="2"><b>Perfil</b></td>
 			<td>Overview</td>
-			<td>Ecosistema IoT que mide cortisol y HRV para optimizar horarios médicos y prevenir burnout.</td>
+			<td>Ecosistema Software que mide cortisol y HRV para optimizar horarios médicos y prevenir burnout.</td>
 			<td>Plataforma de análisis fisiológico basada en HRV para bienestar corporativo y alto rendimiento.</td>
 			<td>Software de análisis predictivo para cubrir turnos y reducir la fatiga en enfermería.</td>
-			<td>Wearable en formato de anillo para monitorear recuperación, sueño y estrés en equipos.</td>
+			<td>monitoreo en formato de anillo para monitorear recuperación, sueño y estrés en equipos.</td>
 			<td>Solución masiva de gestión de capital humano y control de asistencia hospitalaria.</td>
 		</tr>
 		<tr>
@@ -689,7 +834,7 @@ En esta sección se realizará el análisis competitivo de los competidores iden
 		<tr>
 			<td rowspan="3"><b>Perfil de Producto</b></td>
 			<td>Productos & Servicios</td>
-			<td>Wearable IoT + Dashboard de gestión de horarios + Alertas en tiempo real.</td>
+			<td>monitoreo Software + Dashboard de gestión de horarios + Alertas en tiempo real.</td>
 			<td>Sensor ECG profesional + App de reporte de salud trimestral.</td>
 			<td>Plataforma SaaS de programación de turnos y comunicación de personal.</td>
 			<td>Anillo inteligente + Dashboard de preparación del equipo (Readiness).</td>
@@ -739,7 +884,7 @@ En esta sección se realizará el análisis competitivo de los competidores iden
 		<tr>
 			<td>Amenazas</td>
 			<td>Gigantes tecnológicos (Apple/Google) lanzando funciones de estrés clínico.</td>
-			<td>Saturación del mercado de wearables de bienestar corporativo.</td>
+			<td>Saturación del mercado de herramientas de software de bienestar corporativo.</td>
 			<td>Competidores locales que ofrecen gestión de turnos a precios muy bajos.</td>
 			<td>Regulaciones estrictas de privacidad de datos sensibles (Ley de Protección de Datos).</td>
 			<td>Cambios bruscos en las leyes laborales que afecten el control de horarios.</td>
@@ -759,7 +904,7 @@ En esta sección, se llevará a cabo el análisis de las estrategias y tácticas
 **Estrategia de Liderazgo en Costos:**
 * Con el objetivo de ganar tracción institucional, se ofrecerán modelos de implementación escalonados por niveles de criticidad. Esto permitirá que los hospitales adopten CortiSense de manera inicial en sectores donde se evidencia un riesgo clínico altísimo (UCI, Emergencia, Centro Quirúrgico) sin comprometer el presupuesto general de la institución. Al demostrar en la práctica una reducción significativa de los costos operativos derivados de bajas médicas, absentismo o errores clínicos, facilitaremos el escalamiento horizontal de la solución a toda la red hospitalaria de manera orgánica.
 
-* Para lograr la convicción de las instituciones de salud, la estrategia comercial se sustentará en el Retorno de Inversión (ROI) por mitigación de riesgos. Diversos estudios demuestran que el agotamiento médico (*burnout*) cuesta miles de millones al año debido a la reducción de productividad y la altísima rotación de especialistas **(Han et al., 2019)**. En lugar de competir en precio por el hardware IoT, nuestra monetización se justificará en el inmenso valor financiero que nuestro modelo SaaS aporta al prevenir pérdidas masivas por juicios de mala praxis y eliminar los sobrecostos por rotación de talento crítico.
+* Para lograr la convicción de las instituciones de salud, la estrategia comercial se sustentará en el Retorno de Inversión (ROI) por mitigación de riesgos. Diversos estudios demuestran que el agotamiento médico (*burnout*) cuesta miles de millones al año debido a la reducción de productividad y la altísima rotación de especialistas **(Han et al., 2019)**. En lugar de competir en precio por el hardware Software, nuestra monetización se justificará en el inmenso valor financiero que nuestro modelo SaaS aporta al prevenir pérdidas masivas por juicios de mala praxis y eliminar los sobrecostos por rotación de talento crítico.
 
 **Estrategia de Marketing y Tácticas Operativas:**
 * Para ambos segmentos, la estrategia de comunicación estará centrada en el concepto de *"Seguridad Clínica basada en la Resiliencia del Personal"*. Teniendo esta premisa como eje central, desarrollaremos casos de estudio piloto en instituciones de salud de Lima Metropolitana; así, demostraremos con métricas cómo el monitoreo de CortiSense reduce la fatiga crónica y mejora directamente los indicadores de seguridad del paciente. El mensaje rector será claro: **un médico sano es la mejor garantía para un hospital eficiente.**
@@ -773,14 +918,14 @@ En esta sección se abordará la investigación cualitativa en base a la informa
 ### 2.2.1 Diseño de entrevistas
 
 > **Script de introducción (para ambos segmentos):**
-> "Buenos días / tardes / noches. Agradecemos mucho que haya aceptado esta entrevista. Somos estudiantes de Ingeniería de Software de la UPC y estamos desarrollando **CortiSense**, una plataforma IoT para la prevención del agotamiento profesional (*burnout*) en el personal médico, mediante el monitoreo de biomarcadores de estrés y la variabilidad de la frecuencia cardíaca (HRV). Su perspectiva es fundamental para que podamos construir una solución útil, ética y adaptada a la realidad del sector salud en el Perú. No hay respuestas correctas o incorrectas; solo queremos conocer su experiencia real."
+> "Buenos días / tardes / noches. Agradecemos mucho que haya aceptado esta entrevista. Somos estudiantes de Ingeniería de Software de la UPC y estamos desarrollando **CortiSense**, una plataforma Software para la prevención del agotamiento profesional (*burnout*) en el personal médico, mediante el monitoreo de biomarcadores de estrés y la variabilidad de la frecuencia cardíaca (HRV). Su perspectiva es fundamental para que podamos construir una solución útil, ética y adaptada a la realidad del sector salud en el Perú. No hay respuestas correctas o incorrectas; solo queremos conocer su experiencia real."
 
 ---
 
 #### Segmento #1: Personal Sanitario Operativo (Médicos Residentes, Especialistas y Enfermeros)
 
 **Objetivo y alineamiento:** 
-El diseño de estas preguntas está alineado con la necesidad de validar nuestra hipótesis de usuario operativo. El objetivo es descubrir las barreras físicas y psicológicas reales frente al uso de *wearables* durante jornadas críticas, entender el flujo actual frente al agotamiento extremo y, sobre todo, identificar los resguardos de privacidad de datos necesarios para que el personal no perciba la herramienta como un instrumento de vigilancia punitiva, sino como un respaldo a su salud.
+El diseño de estas preguntas está alineado con la necesidad de validar nuestra hipótesis de usuario operativo. El objetivo es descubrir las barreras físicas y psicológicas reales frente al uso de *sistemas de software* durante jornadas críticas, entender el flujo actual frente al agotamiento extremo y, sobre todo, identificar los resguardos de privacidad de datos necesarios para que el personal no perciba la herramienta como un instrumento de vigilancia punitiva, sino como un respaldo a su salud.
 
 **Preguntas de perfilamiento (Complementarias):**
 
@@ -805,7 +950,7 @@ El diseño de estas preguntas está alineado con la necesidad de validar nuestra
 7. Si un sistema detectara automáticamente que usted ha superado ese umbral de riesgo, ¿qué debería ocurrir a continuación? ¿Qué acción del sistema consideraría que resuelve correctamente esa situación?
 8. ¿Cómo sabría usted que esa acción automática del sistema funcionó bien? ¿Qué resultado esperaría ver para considerarla exitosa?
 9. ¿Qué información sobre su propia salud durante la guardia le resultaría más valiosa consultar? Si tuviera que ordenarlas por importancia, ¿cuál iría primero?
-10. ¿Qué tan dispuesto estaría a usar un *wearable* durante sus horas de servicio si este le ayudara a prevenir un error clínico o un colapso físico?
+10. ¿Qué tan dispuesto estaría a usar un *monitoreo* durante sus horas de servicio si este le ayudara a prevenir un error clínico o un colapso físico?
 11. ¿Qué condiciones serían indispensables para que usted aceptara este tipo de monitoreo continuo? (Privacidad de datos, anonimización, control sobre quién accede a su información, etc.).
 12. ¿Cómo debería ser físicamente el dispositivo para que no interfiera con su trabajo clínico? (Tamaño, peso, zona del cuerpo, discreción visual).
 13. ¿Existe alguna funcionalidad que definitivamente NO querría que tuviera el sistema? ¿Por qué?
@@ -900,13 +1045,13 @@ En esta sección presentamos los registros de las entrevistas realizadas para ca
     </tr>
     <tr>
       <td><b>Sistemas actuales</b></td>
-      <td>Seguimiento y seminarios de Salud Ocupacional, uso de *wearables* comerciales (relojes), CEPRIT de EsSalud.</td>
+      <td>Seguimiento y seminarios de Salud Ocupacional, uso de *sistemas de software* comerciales (relojes), CEPRIT de EsSalud.</td>
     </tr>
     <tr>
       <td><b>Preferencias</b></td>
       <td>
         <ul>
-          <li>Dispositivos tipo <i>wearable</i> (relojes digitales) portátiles y accesibles.</li>
+          <li>Dispositivos tipo <i>monitoreo</i> (relojes digitales) portátiles y accesibles.</li>
           <li>Hardware con batería de larga duración.</li>
           <li>Software eficiente que asegure el guardado de datos en tiempo real.</li>
           <li>Alta prioridad en la privacidad y anonimización de datos médicos.</li>
@@ -990,7 +1135,7 @@ En esta sección presentamos los registros de las entrevistas realizadas para ca
       <td><b>Preferencias</b></td>
       <td>
         <ul>
-          <li>Dispositivos móviles pequeños y muy discretos (relojes inteligentes).</li>
+          <li>Dispositivos móviles pequeños y muy discretos (monitores de salud).</li>
           <li>Monitoreo no solo físico, sino del estado de tensión y presión laboral.</li>
           <li>Confidencialidad total de la información personal (innegociable).</li>
           <li>Datos cerrados: usados solo internamente en la clínica para generar estadísticas anónimas de mejora.</li>
@@ -1073,7 +1218,7 @@ En esta sección presentamos los registros de las entrevistas realizadas para ca
       <td><b>Preferencias</b></td>
       <td>
         <ul>
-          <li>Dispositivos <i>wearable</i> ligeros, pequeños y no invasivos (relojes o pulseras).</li>
+          <li>Dispositivos <i>monitoreo</i> ligeros, pequeños y no invasivos (monitores biométricos).</li>
           <li>Monitoreo de fatiga en estricto tiempo real.</li>
           <li>Sistemas que generen <b>alertas tempranas</b> antes de llegar al límite.</li>
           <li>Privacidad y control total por parte del usuario sobre su información biométrica.</li>
@@ -1098,7 +1243,7 @@ En esta sección presentamos los registros de las entrevistas realizadas para ca
     </tr>
     <tr>
       <td><b>Resumen</b></td>
-      <td>Profesional joven del área de emergencias que realiza jornadas prolongadas (12 a 24 horas). Describe el agotamiento como "fatiga extrema" o "estar quemado", indicando que el equipo actúa de forma puramente reactiva cuando alguien colapsa. La falta de sistemas preventivos aumenta el riesgo de mala praxis. Considera fundamental la incorporación de alertas tempranas basadas en *wearables*, siempre que estos sean discretos y respeten la privacidad clínica.</td>
+      <td>Profesional joven del área de emergencias que realiza jornadas prolongadas (12 a 24 horas). Describe el agotamiento como "fatiga extrema" o "estar quemado", indicando que el equipo actúa de forma puramente reactiva cuando alguien colapsa. La falta de sistemas preventivos aumenta el riesgo de mala praxis. Considera fundamental la incorporación de alertas tempranas basadas en *sistemas de software*, siempre que estos sean discretos y respeten la privacidad clínica.</td>
     </tr>
   </tbody>
 </table>
@@ -1293,7 +1438,7 @@ El hallazgo más relevante y transversal a los tres entrevistados es la inexiste
 Los entrevistados describen el agotamiento en términos como "fatiga extrema", "estar quemado" o "presencia física sin presencia mental", vocabulario que coincide directamente con la definición clínica del *burnout* y que refuerza la pertinencia del *Ubiquitous Language* definido en el dominio de CortiSense. Todos reconocen que este estado afecta drásticamente la capacidad de concentración, la toma de decisiones y el desempeño clínico, incrementando exponencialmente el riesgo de errores médicos.
 
 **Disposición hacia la tecnología de monitoreo**
-Los tres entrevistados manifiestan una disposición sumamente favorable hacia el uso de *wearables* para el monitoreo biométrico, siempre que se cumplan condiciones mínimas innegociables: la absoluta privacidad y confidencialidad de los datos, la discreción física del dispositivo (pequeño, ligero, no invasivo) y la confiabilidad del *software*. Existe consenso en que el dispositivo ideal sería similar a un reloj inteligente que no interfiera con los procedimientos clínicos y cuente con una batería prolongada.
+Los tres entrevistados manifiestan una disposición sumamente favorable hacia el uso de *sistemas de software* para el monitoreo biométrico, siempre que se cumplan condiciones mínimas innegociables: la absoluta privacidad y confidencialidad de los datos, la discreción física del dispositivo (pequeño, ligero, no invasivo) y la confiabilidad del *software*. Existe consenso en que el dispositivo ideal sería similar a un reloj inteligente que no interfiera con los procedimientos clínicos y cuente con una batería prolongada.
 
 **Funcionalidades prioritarias identificadas**
 Del análisis cualitativo se desprende que las funcionalidades más valoradas por este segmento son: el monitoreo en tiempo real de biomarcadores, las alertas tempranas ante niveles críticos de estrés y la visualización de su propio estado de salud durante la guardia. La privacidad de los datos aparece no solo como una preferencia, sino como una condición *sine qua non* para aceptar el uso del sistema.
@@ -1404,7 +1549,7 @@ En esta sección se presentan los *Empathy Maps* correspondientes a los *User Pe
 
 El proceso de elaboración se basó en el análisis de las entrevistas, a partir de las cuales se identificaron patrones relacionados con lo que los usuarios dicen, piensan, sienten, hacen, ven y escuchan en el hospital. Asimismo, se determinaron los principales *pain points* (puntos de dolor operativos) y *gains* (beneficios ideales esperados), lo que permite a nuestro equipo empatizar con las verdaderas limitaciones de los segmentos.
 
-Estos *Empathy Maps* complementan de manera perfecta los artefactos previamente desarrollados y sirven como piedra angular para diseñar una experiencia de usuario (*UX*) confiable, ética y no invasiva, que responda de manera efectiva a sus miedos y expectativas de privacidad.
+Estos *Empathy Maps* complementan de manera perfecta los artefactos previamente desarrollados y sirven como piedra Vue 3 para diseñar una experiencia de usuario (*UX*) confiable, ética y no invasiva, que responda de manera efectiva a sus miedos y expectativas de privacidad.
 
 #### 2.3.4.1. Segmento 1: Personal Sanitario Operativo
 
@@ -1449,7 +1594,7 @@ El proceso de elaboración se realizó en conjunto con el equipo multidisciplina
 | Term (English) | Definición (Español) |
 | - | - |
 | Risk Assessment (Evaluación de riesgo) | Registro unificado del estado actual de fatiga y riesgo del personal en un momento dado, generado por el algoritmo de CortiSense. |
-| Vital Sign Reading (Lectura de signos vitales) | Captura de telemetría proveniente del wearable (IoT) que incluye frecuencia cardíaca (Heart Rate) y variabilidad cardíaca (HRV). |
+| Vital Sign Reading (Lectura de signos vitales) | Captura de telemetría proveniente del monitoreo (Software) que incluye frecuencia cardíaca (Heart Rate) y variabilidad cardíaca (HRV). |
 | Fatigue Level (Nivel de fatiga) | Puntuación biométrica (ej. 0-100) que determina el grado de cansancio acumulado u operativo del médico. |
 | Risk Level (Nivel de riesgo) | Clasificación categórica (LOW, MEDIUM, HIGH) derivada de la correlación entre el nivel de fatiga y las lecturas vitales. |
 | Vital Sign Anomaly (Anomalía de signo vital) | Detección automática de una métrica (ej. taquicardia) que supera un umbral de seguridad (Threshold) predefinido por el sistema. |
@@ -1532,7 +1677,7 @@ En esta sección, profundizaremos en la definición y elaboración de las *User 
 | --- | --- | --- | --- |
 | **EP01** | **Gestión de Suscripciones y Planes** | Como administrador institucional, quiero gestionar los planes de pago y la activación de suscripciones para habilitar las funcionalidades contratadas por el hospital. | **Escenario 1: Activación tras confirmación de pago**<br>**Given** que el administrador ha completado el pago de un plan,<br>**When** Stripe Sandbox confirma la transacción exitosa,<br>**Then** la plataforma cambia el estado de la suscripción a 'Activa' y notifica al usuario.<br><br>**Escenario 2: Restricción automática por expiración**<br>**Given** que la suscripción de la institución ha llegado a su fecha de vencimiento sin renovación,<br>**When** un usuario intenta ingresar a los tableros del hospital,<br>**Then** el sistema blocks el acceso a las herramientas premium y muestra una alerta de renovación de plan. |
 | **EP02** | **Gestión de Identidad y Accesos** | Como usuario de la plataforma, quiero registrarme, autenticarme y recibir roles dentro del sistema para acceder de manera segura a mi espacio de trabajo hospitalario. | **Escenario 1: Verificación de usuario invitado**<br>**Given** que un profesional médico recibe un correo de invitación,<br>**When** acepta los términos y completa su registro a través de Firebase Auth,<br>**Then** el sistema lo asocia correctamente al workspace de su hospital con su estado activo.<br><br>**Escenario 2: Denegación por permisos insuficientes**<br>**Given** que un usuario con el rol 'Medical Staff' intenta ingresar a la configuración de la organización,<br>**When** el sistema evalúa su perfil,<br>**Then** la política de accesos deniega la entrada y registra un intento no autorizado en el sistema. |
-| **EP03** | **Evaluación de Riesgo Clínico** | Como sistema, quiero procesar los datos biométricos del personal médico para calcular su puntaje de fatiga e identificar riesgos clínicos inminentes. | **Escenario 1: Cálculo en tiempo real**<br>**Given** que el flujo de datos biométricos del wearable se está transmitiendo activamente,<br>**When** el motor de análisis aplica la política de evaluación,<br>**Then** actualiza el puntaje de fatiga y refresca el nivel de riesgo en el panel del usuario.<br><br>**Escenario 2: Identificación de riesgo extremo**<br>**Given** que un médico presenta variabilidad cardíaca y cortisol fuera de los umbrales tolerables,<br>**When** se excede el límite crítico preestablecido,<br>**Then** el sistema emite un evento de alerta por riesgo clínico extremo. |
+| **EP03** | **Evaluación de Riesgo Clínico** | Como sistema, quiero procesar los datos biométricos del personal médico para calcular su puntaje de fatiga e identificar riesgos clínicos inminentes. | **Escenario 1: Cálculo en tiempo real**<br>**Given** que el flujo de datos biométricos del monitoreo se está transmitiendo activamente,<br>**When** el motor de análisis aplica la política de evaluación,<br>**Then** actualiza el puntaje de fatiga y refresca el nivel de riesgo en el panel del usuario.<br><br>**Escenario 2: Identificación de riesgo extremo**<br>**Given** que un médico presenta variabilidad cardíaca y cortisol fuera de los umbrales tolerables,<br>**When** se excede el límite crítico preestablecido,<br>**Then** el sistema emite un evento de alerta por riesgo clínico extremo. |
 | **EP04** | **Gestión de Incidentes y Escalamiento** | Como supervisor clínico, quiero que el sistema registre incidentes de riesgo y me alerte de forma inmediata para poder mitigar el agotamiento del personal. | **Escenario 1: Apertura automática de incidentes**<br>**Given** que el motor de riesgo detecta una anomalía fisiológica grave en un médico,<br>**When** se dispara el evento de riesgo clínico,<br>**Then** el sistema abre automáticamente un incidente formal y le asigna prioridad alta.<br><br>**Escenario 2: Notificación al supervisor**<br>**Given** un nuevo incidente de prioridad crítica abierto en el sistema,<br>**When** se ejecuta la política de despacho,<br>**Then** se envía una alerta push/email inmediata al supervisor en turno utilizando Resend Email API. |
 | **EP05** | **Coordinación de Turnos** | Como supervisor clínico, quiero evaluar turnos críticos, bloquear asignaciones peligrosas y coordinar reemplazos para salvaguardar al personal y asegurar la continuidad operativa. | **Escenario 1: Bloqueo preventivo de turno**<br>**Given** que un médico programado para un turno nocturno entra en estado de riesgo extremo,<br>**When** se evalúa la asignación del turno,<br>**Then** el sistema bloquea automáticamente dicho turno para evitar incidentes laborales.<br><br>**Escenario 2: Proposición automática de suplentes**<br>**Given** que un turno ha sido bloqueado de forma preventiva,<br>**When** el supervisor consulta las alternativas disponibles,<br>**Then** el sistema muestra una lista filtrada de médicos con bajo nivel de fatiga aptos para el reemplazo. |
 | **EP06** | **Recuperación del Personal** | Como profesional médico o supervisor, quiero recibir y gestionar recomendaciones de descanso para recuperarme fisiológicamente de la fatiga. | **Escenario 1: Notificación de descanso sugerido**<br>**Given** que se ha detectado la necesidad imperativa de un descanso para un médico,<br>**When** el supervisor aprueba la pausa activa,<br>**Then** el sistema envía una alerta de recuperación directamente a la aplicación del profesional.<br><br>**Escenario 2: Seguimiento de rechazo de plan**<br>**Given** que un médico decide denegar la recomendación de pausa por una urgencia,<br>**When** presiona la opción de rechazar plan,<br>**Then** el sistema cambia el estado del plan de recuperación a 'Rechazado' y levanta un punto de fricción para su revisión. |
@@ -1734,7 +1879,7 @@ Este enfoque permite proyectar una identidad visual coherente con el propósito 
 ### 4.1.2. Web Style Guidelines
 
 **Header** <br>
-En esta sección podremos encontrar el logo de CortiSense a la izquierda, acompañado del menú de navegación principal (*Home*, *Description*, *Goals*, *Pricing*, *Impact*, *IoT Systems*, *Support*, *Language*) y el botón de acción *Join Us* a la derecha. El fondo es de color blanco `#FFFFFF` y los botones de un cyan un poco más claro `#41EFF2`.
+En esta sección podremos encontrar el logo de CortiSense a la izquierda, acompañado del menú de navegación principal (*Home*, *Description*, *Goals*, *Pricing*, *Impact*, *Platform Features*, *Support*, *Language*) y el botón de acción *Join Us* a la derecha. El fondo es de color blanco `#FFFFFF` y los botones de un cyan un poco más claro `#41EFF2`.
 
 <div align="center">
   <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/Style-Guidelines/Web_Style/header.png?raw=true" alt="Imagen referencial del header"/>
@@ -1783,7 +1928,7 @@ El sistema de etiquetado de CortiSense busca eliminar la carga cognitiva del per
 * **Mi Salud / My Health:** Espacio privado del médico para ver sus métricas históricas y evolución de fatiga.
 * **Gestión de Turnos / Shift Manager:** Módulo para administradores donde se visualiza la disponibilidad y carga laboral del equipo.
 * **Alertas / Critical Alerts:** Centro de notificaciones sobre niveles de estrés que requieren intervención inmediata.
-* **Soporte Técnico / Support:** Información para la resolución de problemas con los dispositivos IoT.
+* **Soporte Técnico / Support:** Información para la resolución de problemas con los sistemas de software.
 * **Ingresar / Log In:** Acceso seguro para usuarios registrados con protocolos de privacidad hospitalaria.
 
 ### 4.2.3. SEO Tags and Meta Tags
@@ -1794,7 +1939,7 @@ Para mejorar el posicionamiento en motores de búsqueda y brindar una experienci
 
 **Descripción (Description):** Este campo permite ofrecer una descripción breve y clara del contenido del sitio web. Se muestra como un fragmento debajo de la URL en los resultados de búsqueda, resultando crucial para atraer la atención de los usuarios y mejorar el CTR (*Click Through Rate*).
 
-**Palabras clave (Keywords):** Se utiliza para proporcionar términos clave relevantes para el contenido del sitio, enfocándose en la especialización de salud ocupacional y tecnología IoT.
+**Palabras clave (Keywords):** Se utiliza para proporcionar términos clave relevantes para el contenido del sitio, enfocándose en la especialización de salud ocupacional y tecnología de software.
 
 **Autor y Derechos de Autor:** Estas etiquetas identifican a SyncedHealth como el creador de la página y propietario de los derechos de propiedad intelectual, asegurando la autoría del código y la solución.
 
@@ -1809,7 +1954,7 @@ Para mejorar el posicionamiento en motores de búsqueda y brindar una experienci
 ```
 - **Palabras clave (Keywords):**
 ```html
-<meta name="keywords" content="Burnout médico, monitoreo de cortisol, estrés hospitalario, salud ocupacional, IoT médica, gestión de turnos médicos, seguridad del paciente, SyncedHealth."/>
+<meta name="keywords" content="Burnout médico, monitoreo de cortisol, estrés hospitalario, salud ocupacional, software médico, gestión de turnos médicos, seguridad del paciente, SyncedHealth."/>
 ```
 - **Autor (author):**
 ```html
@@ -1853,8 +1998,8 @@ El sistema de búsqueda de CortiSense está diseñado para encontrar informació
 ### 4.2.5. Navigation Systems.
 Debido al entorno con el que CortiSense trabaja, su navegación ha de ser directa y eficiente, mientras minimiza los clics para evitar interacciones innecesarias.
 Barra de Navegación Persistente: Menú lateral (App) y superior (Landing) que permite saltar entre el Dashboard y las Alertas de forma instantánea.
-- **Navegación por Contexto:** Si un médico recibe una alerta háptica en su wearable, al abrir la app será dirigido automáticamente a la sección de "Recomendación de Recuperación".
-- **Indicadores de Estado Global:** Un ícono persistente en la interfaz mostrará siempre el estado de conexión del wearable IoT (conectado/desconectado).
+- **Navegación por Contexto:** Si un médico recibe una alerta en su dispositivo móvil, al abrir la app será dirigido automáticamente a la sección de "Recomendación de Recuperación".
+- **Indicadores de Estado Global:** Un ícono persistente en la interfaz mostrará siempre el estado de conexión del sistema biométrico (conectado/desconectado).
 - **Botones de Acción Rápida:** Son necesarias para buscar la eficiencia de protocolos regularizados. Acciones como "Solicitar Relevo" o "Marcar Incidencia" estarán siempre al alcance de un clic.
 - **Breadcrumbs:** Utilizadas en multiples áreas, sin embargo, destacan en la administrativa. Un ejemplo es la sección de reportes complejos, para que el administrador pueda retroceder fácilmente entre niveles siguiendo una ruta estable *(Hospital > Área > Médico > Reporte).*
 
@@ -2170,7 +2315,7 @@ En esta etapa, se identificaron los principales puntos de fricción que pueden a
 Los principales friction and risk points identificados fueron:
 
 + **Incomplete Biometric Data:**  
-Ocurre cuando los datos de telemetría (IoT) recibidos son incompletos, desactualizados o inconsistentes, afectando el cálculo de la fatiga o el riesgo del personal.
+Ocurre cuando los datos de telemetría recibidos son incompletos, desactualizados o inconsistentes, afectando el cálculo de la fatiga o el riesgo del personal.
 
 + **Risk Misclassification:**  
 Puede generarse cuando el sistema clasifica incorrectamente el nivel de riesgo, provocando alertas innecesarias o la omisión de un caso crítico de agotamiento.
@@ -2350,7 +2495,7 @@ Enlace: https://miro.com/app/board/uXjVHfjcSSw=/
 A partir de nuestro análisis y la reestructuración del backend, consolidamos CortiSense en 6 Bounded Contexts core (más un Shared Kernel). Cada uno delimita una responsabilidad específica del dominio:
 
 +  **Clinical Risk Assessment:**  
-El núcleo analítico. Ingiere telemetría IoT, evalúa fatiga, calcula niveles de riesgo y dispara Alertas Clínicas que los supervisores deben atender de inmediato.
+El núcleo analítico. Ingiere telemetría biométrica, evalúa fatiga, calcula niveles de riesgo y dispara Alertas Clínicas que los supervisores deben atender de inmediato.
 
 + **Shift Coordination:**  
 Logística hospitalaria. Gestiona equipos (Care Teams), especialidades y turnos (Shift Records).
@@ -2387,7 +2532,7 @@ El Container Diagram detalla la estructura principal de CortiSense a nivel de co
 
 <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Images/C4-Diagrams/Frontend-Diagrams/FrontendComponents.svg?raw=true" alt="Diseño del diagrama de componentes del frontend de CortiSense"/> <br>
 
-Este diagrama muestra la organización interna del frontend de CortiSense. La Web App carga la aplicación Angular, que se apoya en un Shared para navegación, servicios comunes y componentes reutilizables. Cada bounded context del frontend representa un módulo funcional independiente que consume endpoints de la REST API.
+Este diagrama muestra la organización interna del frontend de CortiSense. La Web App carga la aplicación Vue 3, que se apoya en un Shared para navegación, servicios comunes y componentes reutilizables. Cada bounded context del frontend representa un módulo funcional independiente que consume endpoints de la REST API.
 
 #### Clinical Risk Assessment
 
@@ -3613,7 +3758,7 @@ De esta forma, logramos implementar un flujo CI/CD altamente escalable. Cualquie
 | **Ubicación** | Reunión presencial después de clase |
 | **Preparada por** | Pareja Calloapaza, Marcelo Fausto |
 | **Asistentes (a la reunión de planificación)** | León Morales, Johan Yonel; Gutierrez Santillán, Sebastián Augusto; Mauricio Silva, Guiou Justinn; Santiago Atanacio, Jairo Mathias |
-| **Objetivo del Sprint 1** | El equipo de CortiSense ha decidido lanzar su página de destino inicial para presentar su propuesta de valor al sector sanitario y captar los primeros contactos de centros médicos y hospitales. El objetivo es consolidar la credibilidad de la monitorización del cortisol y la fatiga mediante tecnología IoT. Buscamos generar interés directo entre los administradores hospitalarios y los responsables de recursos humanos del sector sanitario, ofreciendo una solución clara para reducir el agotamiento profesional. El éxito se confirmará cuando la página registre al menos 10 solicitudes de demostración o registros válidos a través de los formularios de contacto. |
+| **Objetivo del Sprint 1** | El equipo de CortiSense ha decidido lanzar su página de destino inicial para presentar su propuesta de valor al sector sanitario y captar los primeros contactos de centros médicos y hospitales. El objetivo es consolidar la credibilidad de la monitorización del cortisol y la fatiga mediante tecnología de software. Buscamos generar interés directo entre los administradores hospitalarios y los responsables de recursos humanos del sector sanitario, ofreciendo una solución clara para reducir el agotamiento profesional. El éxito se confirmará cuando la página registre al menos 10 solicitudes de demostración o registros válidos a través de los formularios de contacto. |
 | **Velocidad del Sprint 1** | 14 Story Points (Horas estimadas) |
 
 #### 5.2.1.2. Aspect Leaders and Collaborators.
@@ -3646,7 +3791,7 @@ Nuestro objetivo principal con este Sprint 1 es desplegar la versión inicial de
 | **US-29** | Metas de aplicación | TK-03 | Goals Section | Implementación de la sección Goals | 1 | Guiou Mauricio | Done |
 | **US-30** | Planes de pago | TK-04 | Pricing Section | Implementación de la sección Pricing | 1 | Marcelo Pareja | Done |
 | **US-31** | Fidelización de clientes | TK-05 | Impact | Implementación de la sección Impact | 1 | Marcelo Pareja | Done |
-| **US-32** | Wearables | TK-06 | IoT Systems | Implementación de la sección IoT Systems | 1 | Guiou Mauricio | Done |
+| **US-32** | herramientas de software | TK-06 | Platform Features | Implementación de la sección Platform Features | 1 | Guiou Mauricio | Done |
 | **US-33** | Header y Footer | TK-07 | Sticky Header | Implementación de la sección del Header | 1 | Jairo Santiago | Done |
 | **US-33** | Header y Footer | TK-08 | Accesibilidad del Footer | Implementación de la seccion del Footer | 1 | Jairo Santiago | Done |
 
@@ -4569,15 +4714,6 @@ A continuación, se presentan las estadísticas de colaboración obtenidas desde
     1. Pensando en el Retorno de la Inversión (ROI), ¿cree que contar con este panel de visualización en tiempo real justifica la adopción de la plataforma para reducir costos por negligencias, bajas médicas y rotación de personal?
     2. ¿Qué integraciones técnicas consideraría indispensables agregar a la aplicación web antes de implementarla formalmente en su hospital (ej. sincronización con su sistema HIS o planillas de nómina)?
 
-Siguiendo la misma directriz estricta del proyecto (**cero menciones a hardware, IoT, wearables o smartwatches**), he realizado la depuración completa de todas tus entrevistas de validación. 
-
-Habían varias respuestas y resúmenes (sobre todo en las entrevistas de Rusbel, Max y Valeria) que detallaban que el flujo funcionaba gracias a un smartwatch o pulsera IoT. Todo eso ha sido reescrito para enfocarse netamente en que la **Web App** es la que procesa los datos biométricos y genera las alertas (asumiendo que los datos ingresan por integración de software), manteniendo la coherencia total con lo que realmente desarrollaron. 
-
-Además, he respetado la estructura en formato de tablas HTML que enviaste para que encaje perfecto en tu archivo `.md`.
-
-Aquí tienes tu **Sección 5.3.2.** corregida y lista para copiar:
-
-***
 
 ### 5.3.2. Registro de Entrevistas.
 
@@ -5126,6 +5262,8 @@ Los errores serán puntuados tomando en cuenta la siguiente escala de severidad:
 
 ***
 
+
+
 # Bibliografía
 
 Adzic, G. (2012). *Impact mapping: Making a big impact with software products and projects*. Provoking Thoughts.
@@ -5182,7 +5320,7 @@ Microsoft. (2024). *Visual Studio Code*. https://code.visualstudio.com/
 
 Norman, D. (2013). *The Design of Everyday Things: Revised and Expanded Edition*. Basic Books.
 
-Oura Health Oy. (2024). *Oura for Business: Corporate wellness wearable*. https://ouraring.com/business
+Oura Health Oy. (2024). *Oura for Business: Corporate wellness monitoreo*. https://ouraring.com/business
 
 Porter, M. E. (1980). *Competitive strategy: Techniques for analyzing industries and competitors*. Free Press.
 
