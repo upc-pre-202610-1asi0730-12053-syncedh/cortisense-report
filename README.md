@@ -3667,16 +3667,6 @@ Para alojar nuestra API y lógica de negocio, utilizamos una arquitectura basada
 De esta forma, logramos implementar un flujo CI/CD altamente escalable. Cualquier integración hacia la rama `main` actualiza el contenedor de Docker asegurando que los usuarios de CortiSense consuman siempre la última versión estable del Platform.
 
 ## 5.2. Landing Page, Services & Applications Implementation.
-¡Con esto completamos la colección! He revisado el **Sprint 1** para alinear todo su formato con los Sprints 2, 3 y 4. 
-
-Además de los arreglos estéticos, hice una **corrección crítica** en la sección *5.2.1.6*: en tu texto original decía *"repositorios específicos de los microservicios en Spring Boot"*. ¡Cuidado con eso! Como el proyecto usa C# y ASP.NET, dejé esa mención limpia y ajustada a `.NET`. 
-
-También reordené las secciones finales, ya que la *5.2.1.7* debería hablar sobre el **despliegue** (Deployment) y habías puesto ahí gráficas de Github (eso pertenece a la *5.2.1.8* de Insights). 
-
-Aquí tienes tu **Sprint 1 perfecto y profesional**:
-
-***
-
 ### 5.2.1. Sprint 1
 #### 5.2.1.1. Sprint Planning 1.
 
