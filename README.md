@@ -127,9 +127,9 @@ A lo largo del ciclo de vida del proyecto, el equipo ha mantenido una comunicaci
 
 | AV1 (Avance 1) | TB1 (Trabajo 1) |
 | :---: | :---: |
-| <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Collaboration-Insights/Insight-2.png?raw=true" width="100%"> | <img src="https://github.com/upc-pre-202610-1asi0730-12053-syncedh/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Collaboration-Insights/insight-commits-over-time.png?raw=true" width="100%"> |
+| <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Collaboration-Insights/commits-av1.png?raw=true" width="100%"> | <img src="https://github.com/upc-pre-202610-1asi0730-12053-syncedh/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Collaboration-Insights/commits-tb1.png?raw=true" width="100%"> |
 | **AV2 (Avance 2)** | **TB2 (Trabajo Final)** |
-| <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Sprint-3/Commits.png?raw=true" width="100%"> | <img src="https://github.com/upc-pre-202610-1asi0730-12053-syncedh/cortisense-report/blob/main/Resources/Collaboration-Insights/contributors-insights-tb2.PNG?raw=true" width="100%"> |
+| <img src="https://github.com/SyncedHealth-AplicacionesWeb/upc-pre-202610-1asi0730-12053-SyncedHealth-report/blob/main/Resources/Collaboration-Insights/commits-av2.png?raw=true" width="100%"> | <img src="https://github.com/upc-pre-202610-1asi0730-12053-syncedh/cortisense-report/blob/main/Resources/Collaboration-Insights/commits-tb2.PNG?raw=true" width="100%"> |
 
 ---
 
